@@ -1,0 +1,255 @@
+{
+  "claim": "Consider the following background information: An 8-year-old boy is brought to the physician because he has excessively dry skin. His mother says that he has had dry, scaly skin since he was 6 months old. She says it is worse in winter and better in summer. There is no associated itching, redness, or discharge. Examination reveals generalized fine scales with coarse skin all over the body, except in the skin creases of the neck and in the cubital and popliteal fossae (see image). There are multiple papular elevations at the base of hair follicles and darkening of the palmar and plantar creases.\n\nGiven the background information the following is corrrect: Based on the information provided, the most likely diagnosis is Pityriasis versicolor.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Pityriasis versicolor typically presents with hypopigmented or hyperpigmented macules, not generalized fine scales with coarse skin."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Pityriasis versicolor typically presents with hypopigmented or hyperpigmented macules, not generalized fine scales with coarse skin.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pityriasis versicolor can sometimes present with scaling, especially in atypical cases or in immunocompromised individuals.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The scaling in Pityriasis versicolor is usually superficial and not associated with coarse skin or papular elevations at hair follicles.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The clinical presentation described is more consistent with ichthyosis vulgaris, which matches the symptoms of generalized fine scales, coarse skin, and sparing of flexural areas.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Pityriasis versicolor is caused by Malassezia yeast and usually involves itching, which is absent in this case."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Pityriasis versicolor is caused by Malassezia yeast and usually involves itching, which is absent in this case.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Malassezia yeast can sometimes cause Pityriasis versicolor without itching, especially in immunocompromised individuals.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Immunocompromised individuals typically present with other systemic symptoms, which are not mentioned in this case.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of itching is more characteristic of ichthyosis vulgaris, which also fits the description of dry, scaly skin.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Ichthyosis vulgaris typically presents with flexural sparing, which matches the findings in this case.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The described symptoms, including generalized fine scales and papular elevations at hair follicles, are more consistent with ichthyosis vulgaris."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The described symptoms, including generalized fine scales and papular elevations at hair follicles, are more consistent with ichthyosis vulgaris.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pityriasis versicolor typically presents with hypopigmented or hyperpigmented macules, not generalized fine scales or follicular papules.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of itching, redness, or discharge is atypical for pityriasis versicolor, which often causes mild pruritus.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ichthyosis vulgaris is associated with a family history of atopy, which was not mentioned in the background information.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The seasonal variation (worse in winter, better in summer) is highly characteristic of ichthyosis vulgaris.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Pityriasis versicolor commonly affects the trunk and proximal extremities, not the entire body except skin creases."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Pityriasis versicolor commonly affects the trunk and proximal extremities, not the entire body except skin creases.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pityriasis versicolor is caused by Malassezia yeast, which typically produces hypopigmented or hyperpigmented patches, not generalized fine scales with coarse skin.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of itching, redness, or discharge is atypical for Pityriasis versicolor, which often presents with mild pruritus.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The papular elevations at the base of hair follicles and darkening of palmar/plantar creases are not features of Pityriasis versicolor but rather suggestive of ichthyosis vulgaris.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The seasonal variation (worse in winter, better in summer) is characteristic of ichthyosis vulgaris, not Pityriasis versicolor."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The seasonal variation (worse in winter, better in summer) is characteristic of ichthyosis vulgaris, not Pityriasis versicolor.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pityriasis versicolor is typically associated with fungal infection and presents with hypopigmented or hyperpigmented patches, not generalized fine scales and coarse skin.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of itching, redness, or discharge further supports ichthyosis vulgaris over Pityriasis versicolor, which often causes mild itching.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The papular elevations at the base of hair follicles and darkening of palmar/plantar creases are classic features of ichthyosis vulgaris, not Pityriasis versicolor.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Darkening of palmar and plantar creases is not a feature of Pityriasis versicolor but can occur in ichthyosis vulgaris."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Darkening of palmar and plantar creases is not a feature of Pityriasis versicolor but can occur in ichthyosis vulgaris.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pityriasis versicolor typically presents with hypopigmented or hyperpigmented macules, not generalized fine scales with coarse skin.",
+          "confidence": 0.9,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of itching, redness, or discharge is more consistent with ichthyosis vulgaris than Pityriasis versicolor, which often causes mild itching.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The seasonal variation (worse in winter, better in summer) is characteristic of ichthyosis vulgaris due to humidity changes, not Pityriasis versicolor.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

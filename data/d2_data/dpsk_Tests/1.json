@@ -1,0 +1,81 @@
+{
+  "claim": "(8 \u2212 3) \u00d7 (2 + 1) = 15",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The expression (8 \u2212 3) evaluates to 5, and (2 + 1) evaluates to 3. Multiplying these results (5 \u00d7 3) gives 15."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The expression (8 \u2212 3) evaluates to 5, and (2 + 1) evaluates to 3. Multiplying these results (5 \u00d7 3) gives 15.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Following the order of operations (PEMDAS/BODMAS), parentheses are evaluated first, yielding 5 \u00d7 3, which equals 15."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Following the order of operations (PEMDAS/BODMAS), parentheses are evaluated first, yielding 5 \u00d7 3, which equals 15.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Substituting the values directly: (5) \u00d7 (3) = 15, confirming the correctness of the equation."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Substituting the values directly: (5) \u00d7 (3) = 15, confirming the correctness of the equation.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Arithmetic verification shows that 5 multiplied by 3 is universally accepted as 15, aligning with the claim."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Arithmetic verification shows that 5 multiplied by 3 is universally accepted as 15, aligning with the claim.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The arithmetic verification assumes standard mathematical operations, but in non-standard algebras (e.g., modular arithmetic), the result may differ.",
+          "confidence": 0.2,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-standard algebras are edge cases and not relevant to standard arithmetic contexts, where the claim holds universally.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

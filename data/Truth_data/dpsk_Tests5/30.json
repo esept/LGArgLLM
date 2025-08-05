@@ -1,0 +1,287 @@
+{
+  "claim": "If you travel to France and Denmark, you'll need to change dollars into euros and krone.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "France uses the euro as its official currency, so dollars must be exchanged for euros when traveling there."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "France uses the euro as its official currency, so dollars must be exchanged for euros when traveling there.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many travelers use credit cards that automatically convert currencies, eliminating the need to physically exchange dollars for euros.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Credit card transactions may incur foreign exchange fees, making physical currency exchange more economical in some cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some businesses in France accept dollars directly, though at unfavorable exchange rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Accepting dollars is rare and typically limited to tourist-heavy areas, making it unreliable for most travelers.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Denmark uses the Danish krone as its official currency, so dollars must be exchanged for krone when traveling there."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Denmark uses the Danish krone as its official currency, so dollars must be exchanged for krone when traveling there.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some businesses in Denmark accept euros or credit cards, reducing the need to exchange dollars for krone.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some businesses accept euros or credit cards, many local services and smaller vendors still require krone, making currency exchange necessary.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Travelers can use multi-currency debit cards to withdraw krone directly from ATMs, bypassing traditional currency exchange.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "ATM withdrawals often incur foreign transaction fees and poor exchange rates, making direct currency exchange more cost-effective.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The euro is the legal tender in France, requiring currency exchange from dollars for transactions."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The euro is the legal tender in France, requiring currency exchange from dollars for transactions.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some businesses in France accept dollars, especially in tourist-heavy areas, reducing the need for currency exchange.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some businesses accept dollars, the exchange rate offered is typically unfavorable compared to official currency exchange services.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Travelers can use credit or debit cards that automatically handle currency conversion, avoiding the need to physically exchange dollars for euros.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Foreign transaction fees and dynamic currency conversion charges on cards can make this method more expensive than exchanging currency in advance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Danish krone is the legal tender in Denmark, requiring currency exchange from dollars for transactions."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Danish krone is the legal tender in Denmark, requiring currency exchange from dollars for transactions.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many businesses in Denmark accept euros or credit cards, reducing the need for currency exchange.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Acceptance of euros in Denmark is limited to tourist areas, and credit cards may incur foreign transaction fees.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some travelers use multi-currency accounts or digital wallets to avoid physical currency exchange.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multi-currency accounts and digital wallets are not universally accessible and may have usage restrictions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Currency exchange is necessary in France because businesses and services operate exclusively in euros."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Currency exchange is necessary in France because businesses and services operate exclusively in euros.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some businesses in France, especially in tourist-heavy areas, accept major foreign currencies like USD.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some businesses accept USD, exchange rates offered by them are often unfavorable compared to official exchange services.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Digital payment methods like credit cards automatically handle currency conversion, reducing the need for physical currency exchange.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Credit card transactions may incur foreign exchange fees, making direct currency exchange a more cost-effective option for large purchases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Currency exchange is necessary in Denmark because businesses and services operate exclusively in Danish krone."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Currency exchange is necessary in Denmark because businesses and services operate exclusively in Danish krone.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many businesses in Denmark, especially in tourist areas, accept euros or credit cards, reducing the need for krone exchange.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some businesses accept euros or cards, local services like public transport or small shops often require krone, making exchange necessary.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Denmark is part of the EU's single market, and some places may unofficially accept euros despite the official currency being krone.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unofficial euro acceptance is unreliable and not legally enforceable, so travelers should still exchange currency to avoid issues.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

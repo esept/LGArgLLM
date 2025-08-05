@@ -1,0 +1,169 @@
+{
+  "claim": "If x is a number such that x\u00b2 = 49, then x = 7",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The equation x\u00b2 = 49 has two solutions: x = 7 and x = -7, as both satisfy the equation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation x\u00b2 = 49 has two solutions: x = 7 and x = -7, as both satisfy the equation.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'x = 7' as the only solution, ignoring the negative root, which is mathematically incomplete.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In some contexts, such as physical measurements, negative solutions may be disregarded, making the claim practically valid.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in physical contexts, explicitly stating the assumption that x is non-negative would make the claim more rigorous.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The square root function is defined to have both positive and negative roots, so x can be either 7 or -7."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The square root function is defined to have both positive and negative roots, so x can be either 7 or -7.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'x = 7' as the only solution, ignoring the negative root, which is mathematically incorrect.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In some contexts, such as physical measurements, only the positive root is considered meaningful, which could justify the original claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in physical contexts, mathematically rigorous definitions should still acknowledge both roots to avoid confusion.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mathematically, squaring a negative number yields a positive result, so (-7)\u00b2 = 49 is valid."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematically, squaring a negative number yields a positive result, so (-7)\u00b2 = 49 is valid.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim implicitly assumes the context of non-negative numbers, where x = 7 is the standard solution.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical definitions universally accept both positive and negative roots for equations like x\u00b2 = k (k > 0).",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practical applications (e.g., physical measurements), negative solutions are often discarded as nonsensical.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Discarding negative solutions is context-dependent, not a mathematical rule, so the original claim is incomplete.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim ignores the fundamental property of quadratic equations, which can have two distinct real roots."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim ignores the fundamental property of quadratic equations, which can have two distinct real roots.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is contextually valid if the domain is restricted to non-negative real numbers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most practical applications, both roots (positive and negative) are considered valid solutions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Restricting the domain without explicit mention in the claim is misleading and mathematically incomplete.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

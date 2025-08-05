@@ -1,0 +1,153 @@
+{
+  "claim": "Does the equation 3 + 3 * 4 = 3 * 5 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication is performed before addition, so 3 + 3 * 4 equals 3 + 12, which is 15."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication is performed before addition, so 3 + 3 * 4 equals 3 + 12, which is 15.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If addition is mistakenly performed before multiplication, the equation becomes (3 + 3) * 4 = 6 * 4 = 24, which does not equal 3 * 5 = 15.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim incorrectly assumes the equation holds true by ignoring the standard order of operations, leading to an invalid conclusion.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The right side of the equation, 3 * 5, equals 15, which matches the result of the left side when calculated correctly."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The right side of the equation, 3 * 5, equals 15, which matches the result of the left side when calculated correctly.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The left side of the equation, 3 + 3 * 4, equals 15 only if multiplication is performed before addition (following PEMDAS/BODMAS rules). Without this rule, the result would differ.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic conventions (PEMDAS/BODMAS) are universally taught and accepted, ensuring consistent interpretation of such equations.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If interpreted left-to-right without operator precedence, 3 + 3 * 4 would equal 24, making the equation false.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Left-to-right interpretation contradicts mathematical standards and would lead to widespread inconsistency in calculations.",
+          "confidence": 0.97,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "If addition were performed before multiplication, the left side would incorrectly evaluate to (3 + 3) * 4 = 6 * 4 = 24, which does not equal 15."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "If addition were performed before multiplication, the left side would incorrectly evaluate to (3 + 3) * 4 = 6 * 4 = 24, which does not equal 15.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Standard arithmetic rules (PEMDAS/BODMAS) dictate that multiplication is performed before addition, making the original equation correct: 3 + (3 * 4) = 3 + 12 = 15.",
+          "confidence": 0.99,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In non-standard or ambiguous notation systems, the order of operations may not be universally clear, potentially leading to misinterpretation.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The equation holds true because both sides simplify to the same value (15) when the standard rules of arithmetic are followed."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The equation holds true because both sides simplify to the same value (15) when the standard rules of arithmetic are followed.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation does not hold true because the left side (3 + 3 * 4) evaluates to 15 only if multiplication is prioritized, while the right side (3 * 5) is unambiguously 15.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The standard order of operations (PEMDAS/BODMAS) dictates that multiplication is performed before addition, so the left side correctly evaluates to 15, matching the right side.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "If addition were prioritized over multiplication, the left side would evaluate to 24, which does not match the right side, but this violates standard arithmetic rules.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

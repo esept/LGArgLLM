@@ -1,0 +1,232 @@
+{
+  "claim": "People in England spend more time working now than in the past.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Official labor statistics show that average weekly working hours in England have increased since the 1980s."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Official labor statistics show that average weekly working hours in England have increased since the 1980s.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The increase in working hours may be skewed by part-time workers shifting to full-time employment, not necessarily longer hours for the same individuals.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if part-time shifts contribute, official data still reflects a net increase in total working hours per capita across the population.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern remote work and flexible schedules mean reported 'working hours' may include unproductive time, unlike stricter historical workplace monitoring.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Productivity metrics confirm output-per-hour has risen consistently, suggesting reported working hours remain a meaningful comparison.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The rise of gig economy jobs has led to more people working longer or irregular hours compared to traditional employment patterns."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The rise of gig economy jobs has led to more people working longer or irregular hours compared to traditional employment patterns.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gig economy workers represent a small fraction of the total workforce, so their impact on overall working hours is limited.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if gig workers are a minority, their increasing numbers and influence can shift norms and expectations for other workers.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many gig economy jobs offer flexibility, allowing workers to choose shorter hours if desired, which may not increase total working time.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Flexibility often leads to overwork due to lack of fixed schedules and pressure to maximize earnings in precarious jobs.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Technological advancements, such as smartphones and remote work tools, have blurred the boundaries between work and personal time, leading to increased perceived working hours."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Technological advancements, such as smartphones and remote work tools, have blurred the boundaries between work and personal time, leading to increased perceived working hours.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that actual working hours in England have decreased over the past decades due to labor laws and improved work-life balance policies.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Perceived working hours may not reflect actual productivity, as technology also enables more efficient task completion.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The blurring of boundaries primarily affects knowledge workers, while many sectors (e.g., manufacturing) maintain strict separation of work and personal time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Economic pressures, including stagnant wages relative to living costs, have forced many workers to take on additional jobs or overtime."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Economic pressures, including stagnant wages relative to living costs, have forced many workers to take on additional jobs or overtime.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Productivity gains and automation have reduced the need for longer working hours in many sectors.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite productivity gains, wage stagnation means workers still need to work longer hours to maintain their standard of living.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Government policies and labor laws have increasingly promoted work-life balance, reducing average working hours.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many workers are in precarious employment where labor laws are not effectively enforced, leading to longer hours despite policies.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Historical data indicates that standard working hours were reduced during the mid-20th century due to labor movements, but recent trends show a reversal in this pattern."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Historical data indicates that standard working hours were reduced during the mid-20th century due to labor movements, but recent trends show a reversal in this pattern.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim overlooks the rise of part-time and flexible work arrangements, which may offset the increase in standard working hours for some demographics.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Part-time work does not necessarily reduce total working hours if individuals hold multiple jobs or engage in gig economy work.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements have increased productivity, potentially reducing the need for longer working hours despite trends suggesting otherwise.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Higher productivity often leads to increased workloads rather than reduced hours, as employers capitalize on efficiency gains.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

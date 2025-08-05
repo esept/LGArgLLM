@@ -1,0 +1,184 @@
+{
+  "claim": "Does the equation 2\u00b2 + 2\u00b2 = 8 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The equation 2\u00b2 + 2\u00b2 simplifies to 4 + 4, which equals 8, confirming the claim.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation 2\u00b2 + 2\u00b2 simplifies to 4 + 4, which equals 8, confirming the claim.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation assumes standard arithmetic operations, but in modular arithmetic (e.g., modulo 3), 4 + 4 equals 2, not 8.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modular arithmetic is a specialized context, and the original claim clearly refers to standard arithmetic operations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The notation 2\u00b2 could be ambiguous; in some contexts, it might represent concatenation (e.g., '2' + '2' = '22'), not exponentiation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical convention universally interprets 2\u00b2 as exponentiation, not concatenation, in such equations.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Basic arithmetic operations universally support that squaring 2 yields 4, and adding two 4s results in 8.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic operations universally support that squaring 2 yields 4, and adding two 4s results in 8.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation assumes standard arithmetic, but in modular arithmetic (e.g., modulo 3), 4 + 4 equals 2, not 8.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modular arithmetic is a specialized context, and the original claim clearly refers to standard arithmetic operations.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Floating-point rounding errors in computational systems could theoretically yield a result close to but not exactly 8.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is about pure mathematical truth, not computational approximations, so floating-point errors are irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "If interpreted as concatenation (e.g., string operations), '2\u00b2 + 2\u00b2' could yield '44', not 8.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Mathematical notation unambiguously denotes squaring and addition, not string operations.",
+          "confidence": 0.95,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In standard mathematical notation, exponentiation takes precedence over addition, ensuring the correct calculation of 8.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In standard mathematical notation, exponentiation takes precedence over addition, ensuring the correct calculation of 8.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 = 8 is only valid under standard arithmetic rules, but alternative mathematical systems may interpret operations differently.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic rules are universally accepted in mathematics, making alternative interpretations irrelevant for this claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The equation assumes base-10 arithmetic, but in other bases like binary, the calculation would not yield 8.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly specifies base-10, as it is the default in standard mathematical notation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The equation does not account for potential errors in calculation or notation, which could lead to incorrect results.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Assuming correct notation and calculation, the equation is inherently valid without room for error.",
+          "confidence": 0.95,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

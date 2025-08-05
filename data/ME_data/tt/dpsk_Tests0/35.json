@@ -1,0 +1,185 @@
+{
+  "claim": "I was 20 years old ten years ago, now I\u2019m 30",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If someone was 20 years old ten years ago, they would be 30 years old now, assuming the current year is 2025."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If someone was 20 years old ten years ago, they would be 30 years old now, assuming the current year is 2025.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the current year is 2025, but the claim does not specify the current year, making the conclusion uncertain.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even without specifying the current year, the statement 'I was 20 years old ten years ago, now I\u2019m 30' implies a linear progression of time, making the assumption valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be a hypothetical or fictional statement, not necessarily grounded in real-time progression.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The phrasing 'I was 20 years old ten years ago, now I\u2019m 30' suggests a personal and factual statement, not a hypothetical one.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Basic arithmetic confirms that adding 10 years to an age of 20 results in an age of 30."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic confirms that adding 10 years to an age of 20 results in an age of 30.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the person's age was exactly 20 years ago, but they could have been rounding their age.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Age rounding is uncommon for precise statements like this, especially when referring to a specific past age.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not account for leap years or fractional ages, which could slightly alter the exact calculation.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "For practical purposes, leap years and fractional ages are negligible in age calculations over a decade.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "A person's age increases by one year for each calendar year that passes."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "A person's age increases by one year for each calendar year that passes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the person's birthday has already occurred this year; if not, they would still be 29.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim explicitly states 'now I\u2019m 30,' implying the birthday has occurred.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Leap years or time zone differences could technically affect the exact age calculation.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The statement aligns with the standard method of calculating age by counting the number of years since birth."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The statement aligns with the standard method of calculating age by counting the number of years since birth.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the speaker's age calculation is based on exact years, ignoring cultural or regional variations in age reckoning (e.g., East Asian age counting).",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with cultural variations, the claim is explicitly framed in standard Western age calculation, making the counter-argument irrelevant in this context.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be false if the speaker was rounding their age (e.g., saying '20' when they were actually 19.5 years old ten years ago).",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim uses precise numbers ('20' and '30') without qualifiers like 'about,' suggesting intentional precision rather than rounding.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "claim": "In the United States, people smoke more on average than in Spain.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the CDC, the smoking rate among adults in the United States was approximately 12.5% in 2023."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the CDC, the smoking rate among adults in the United States was approximately 12.5% in 2023.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The smoking rate in Spain was 22.1% in 2023, according to the Spanish Ministry of Health, which is higher than the U.S. rate.",
+          "confidence": 0.93,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The CDC data may not account for underreporting or differences in survey methodologies between countries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Spanish Ministry of Health's data includes occasional smokers, while the CDC's definition may be stricter, leading to an apples-to-oranges comparison.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "The U.S. has a larger population, so even with a lower percentage, the absolute number of smokers may still be higher than in Spain.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Data from the Spanish Ministry of Health indicates that the smoking rate among adults in Spain was around 22% in 2023."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Data from the Spanish Ministry of Health indicates that the smoking rate among adults in Spain was around 22% in 2023.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CDC reports that the adult smoking rate in the U.S. was 11.5% in 2022, which is lower than Spain's 22%.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. smoking rate may be underreported due to differences in survey methodology or cultural stigma around admitting smoking.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with potential underreporting, the gap between 11.5% and 22% is too large to be explained solely by methodological differences.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Spanish data includes occasional smokers, while the U.S. data may only count daily smokers, inflating Spain's rate.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standardized WHO definitions for 'current smoker' are used in both countries, minimizing definitional discrepancies.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The United States has implemented stricter tobacco control policies, such as higher taxes and public smoking bans, which have reduced smoking rates compared to Spain."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The United States has implemented stricter tobacco control policies, such as higher taxes and public smoking bans, which have reduced smoking rates compared to Spain.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite stricter policies, cultural factors in the U.S. may still lead to higher smoking rates than in Spain, where social norms around smoking differ.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that policy effectiveness varies by region, and some U.S. states have weaker enforcement of tobacco laws, potentially offsetting the national average.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Spain has also implemented strong anti-smoking laws, including bans in public places, which may reduce its smoking rates comparably to the U.S.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Compliance with smoking bans in Spain is often lower than in the U.S., which could result in higher actual smoking rates despite similar policies.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Spain has a stronger cultural acceptance of smoking, particularly in social settings, contributing to higher average smoking rates than the United States."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Spain has a stronger cultural acceptance of smoking, particularly in social settings, contributing to higher average smoking rates than the United States.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The United States has a larger population, which may lead to higher absolute numbers of smokers despite lower per capita rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Per capita smoking rates are a more accurate measure for comparison than absolute numbers, as they account for population size differences.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Recent anti-smoking campaigns and stricter regulations in Spain have significantly reduced smoking rates, potentially bringing them below US levels.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cultural acceptance of smoking in Spain remains high despite regulations, and enforcement of anti-smoking laws is inconsistent.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Per capita cigarette consumption in the United States has been declining steadily over the past two decades, while Spain's decline has been slower."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Per capita cigarette consumption in the United States has been declining steadily over the past two decades, while Spain's decline has been slower.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite the decline, the United States still has a higher per capita cigarette consumption than Spain as of recent data.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The slower decline in Spain could indicate a higher baseline consumption rate, making the US decline less relevant to the current comparison.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is about current smoking rates, not trends over time, so the decline rates are irrelevant to the comparison.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

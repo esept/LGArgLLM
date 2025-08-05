@@ -1,0 +1,295 @@
+{
+  "claim": "The working hours of Americans have increased over time.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Historical labor data from the U.S. Bureau of Labor Statistics shows that average weekly working hours for full-time employees have decreased since the early 20th century."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Historical labor data from the U.S. Bureau of Labor Statistics shows that average weekly working hours for full-time employees have decreased since the early 20th century.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data may not account for part-time workers, gig economy workers, or unpaid overtime, which could skew the perception of overall working hours.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. Bureau of Labor Statistics adjusts its methodology to include modern work arrangements, ensuring comprehensive data representation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements have blurred the line between work and personal time, leading to unmeasured increases in actual working hours.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that while technology enables remote work, it also provides tools for better time management, potentially offsetting any unmeasured increases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Technological advancements and automation have reduced the need for long working hours in many industries, contributing to shorter workweeks over time."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Technological advancements and automation have reduced the need for long working hours in many industries, contributing to shorter workweeks over time.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite automation, many workers now face 'always-on' expectations due to digital connectivity, blurring the line between work and personal time.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show productivity gains from automation often lead to increased workloads rather than reduced hours, as companies prioritize output over employee well-being.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Service sector jobs unaffected by automation (e.g., healthcare, education) have seen working hours rise due to staffing shortages and growing demand.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Global competition pressures force knowledge workers to extend hours despite automation, as seen in tech and finance industries.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Fair Labor Standards Act of 1938 established the 40-hour workweek, and since then, average working hours have remained stable or slightly declined."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Fair Labor Standards Act of 1938 established the 40-hour workweek, and since then, average working hours have remained stable or slightly declined.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the FLSA established a standard, many Americans now work multiple jobs or unpaid overtime, increasing total working hours beyond the 40-hour baseline.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that salaried employees, particularly in tech and finance, often work 50+ hours per week despite the FLSA standards.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rise of gig economy jobs has led to more people working irregular and extended hours, not captured by traditional 40-hour metrics.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gig workers represent a small fraction of the workforce, and most full-time employees still adhere to standard workweek norms.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Productivity gains from technology have allowed many workers to complete tasks faster, reducing the need for longer hours despite stable official workweek lengths.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Surveys indicate that some knowledge workers and salaried employees report working longer hours due to digital connectivity and remote work, potentially offsetting overall trends."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Surveys indicate that some knowledge workers and salaried employees report working longer hours due to digital connectivity and remote work, potentially offsetting overall trends.",
+          "confidence": 0.65,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Official labor statistics show that average weekly working hours for all employees in the U.S. have remained stable or slightly decreased over the past decades.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The surveys cited in A4 may suffer from self-selection bias, as only certain types of workers (e.g., high-income professionals) are likely to report longer hours.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if some knowledge workers report longer hours, this group represents a minority of the overall workforce, making their impact on national averages negligible.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "Remote work often provides flexibility, allowing workers to spread their hours more unevenly, which may create a perception of longer hours without actual increase in total work time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Economic research suggests that part-time work has increased as a share of total employment, which may reduce average working hours when aggregated across the workforce."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Economic research suggests that part-time work has increased as a share of total employment, which may reduce average working hours when aggregated across the workforce.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While part-time work has increased, full-time workers are often working longer hours, which could offset the reduction from part-time employment.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that overtime and unpaid work have risen significantly among full-time employees, further increasing their total working hours.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The increase in part-time work is concentrated in low-wage sectors, while high-wage sectors have seen stable or increased full-time hours.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Automation and productivity gains have reduced the need for long hours in many high-wage knowledge jobs, countering the trend of increased full-time hours.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Labor union advocacy and workplace regulations have historically pushed for reduced working hours, contradicting the claim of an overall increase."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Labor union advocacy and workplace regulations have historically pushed for reduced working hours, contradicting the claim of an overall increase.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite union efforts, corporate practices and economic pressures have led to longer working hours for many Americans, especially in non-unionized sectors.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that unionized workers still experience better work-hour protections compared to non-unionized workers, reinforcing the impact of labor advocacy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements and remote work have blurred the boundaries between work and personal time, effectively increasing working hours beyond formal regulations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Labor laws have not kept pace with modern work arrangements, leaving many workers without adequate protections against extended hours.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "claim": "The Toyota Stadium could sit a tenth of the population of Gotheburg.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Toyota Stadium has a seating capacity of approximately 16,000, which is roughly a tenth of Gothenburg's population of 600,000."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Toyota Stadium has a seating capacity of approximately 16,000, which is roughly a tenth of Gothenburg's population of 600,000.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gothenburg's population is closer to 590,000, making 16,000 seats about 2.7% of the population, not a tenth.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Population estimates can vary slightly, but 600,000 is a commonly cited rounded figure for Gothenburg, supporting the original approximation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The seating capacity of Toyota Stadium may include standing room or temporary seating, which could inflate the number beyond standard seating.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official stadium specifications list the seating capacity as 16,000, with no mention of standing room or temporary seating being included in that figure.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Gothenburg's population is closer to 1 million when including the metropolitan area, making 16,000 seats less than a tenth."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Gothenburg's population is closer to 1 million when including the metropolitan area, making 16,000 seats less than a tenth.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'population of Gothenburg,' not the metropolitan area, and the city's official population is around 600,000.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with 600,000 people, 16,000 seats would still be less than 3% of the population, far below a tenth.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Stadium capacity calculations often exclude standing room and temporary seating, which could push the total closer to 20,000.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Official reports state Toyota Stadium's capacity is 16,000, and Gothenburg's population is officially 600,000, supporting the claim."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Official reports state Toyota Stadium's capacity is 16,000, and Gothenburg's population is officially 600,000, supporting the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The population figure of 600,000 may include surrounding metropolitan areas, while the stadium's capacity is strictly limited to its seating.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official city population statistics typically exclude transient populations, such as tourists or temporary workers, which could inflate the actual number of people in Gothenburg at any given time.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Stadium capacity figures often exclude standing room or special event configurations, which could temporarily increase the number of attendees beyond the official seating capacity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Safety regulations strictly enforce the published seating capacity, making temporary overcapacity configurations rare and legally non-compliant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Population estimates for Gothenburg vary, with some sources citing 600,000 and others up to 1 million, making the claim uncertain."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Population estimates for Gothenburg vary, with some sources citing 600,000 and others up to 1 million, making the claim uncertain.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Toyota Stadium has a fixed seating capacity of approximately 16,000, which is a verifiable fact regardless of population estimates.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with the lower population estimate of 600,000, 16,000 seats would only represent about 2.67% of the population, not a tenth.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Population estimates can fluctuate due to temporary residents, tourists, and unregistered inhabitants, making exact comparisons difficult.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

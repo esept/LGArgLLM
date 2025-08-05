@@ -1,0 +1,193 @@
+{
+    "claim": "If A is the father of B, and B is the father of C, then A is the grandfather of C",
+    "Args": {
+        "A1": {
+            "supporting": {
+                "id": "A1",
+                "text": "By the standard definition of family relationships, if A is the father of B and B is the father of C, then A is the grandfather of C."
+            },
+            "attacks": [
+                {
+                    "id": "A1",
+                    "text": "By the standard definition of family relationships, if A is the father of B and B is the father of C, then A is the grandfather of C.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "If A is biologically the father of B but B was adopted by another family and is legally recognized as the father of C, A may not be legally considered the grandfather of C.",
+                    "confidence": 0.6,
+                    "attacks": {
+                        "A1": 0.9
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Even in cases of adoption, many legal systems recognize biological grandparents as having certain rights or relationships, so A could still be considered the grandfather of C.",
+                    "confidence": 0.7,
+                    "attacks": {
+                        "B1": 0.3
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "If B is the father of C through a non-traditional family structure (e.g., same-sex parenting where B is a non-biological parent), the term 'grandfather' may not apply to A in all cultural or legal contexts.",
+                    "confidence": 0.5,
+                    "attacks": {
+                        "A1": 0.4
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Modern legal definitions increasingly recognize non-traditional family structures, so A would still be considered the grandfather of C regardless of the specifics of B's relationship to C.",
+                    "confidence": 0.75,
+                    "attacks": {
+                        "B2": 1
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "supporting": {
+                "id": "A2",
+                "text": "Genealogical conventions universally recognize that a father of one's parent is one's grandfather, making A the grandfather of C."
+            },
+            "attacks": [
+                {
+                    "id": "A2",
+                    "text": "Genealogical conventions universally recognize that a father of one's parent is one's grandfather, making A the grandfather of C.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "In some cultures or legal systems, 'grandfather' may require formal recognition or adoption, which might not apply in this case.",
+                    "confidence": 0.6,
+                    "attacks": {
+                        "A2": 1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Genealogical definitions are generally accepted across cultures unless specified otherwise, making formal recognition unnecessary in most contexts.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.5
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "If B is not legally or socially recognized as the father of C (e.g., due to adoption or surrogacy), A may not be considered the grandfather of C.",
+                    "confidence": 0.55,
+                    "attacks": {
+                        "A2": 0.8
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Biological parentage is typically sufficient for genealogical classification unless explicitly overridden by legal or social agreements.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "B2": 0.3
+                    }
+                }
+            ]
+        },
+        "A3": {
+            "supporting": {
+                "id": "A3",
+                "text": "In legal and social contexts, the term 'grandfather' is used to describe the relationship between A and C given the stated paternal lineage."
+            },
+            "attacks": [
+                {
+                    "id": "A3",
+                    "text": "In legal and social contexts, the term 'grandfather' is used to describe the relationship between A and C given the stated paternal lineage.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "In some cultures or legal systems, the term 'grandfather' may not apply if A is not recognized as a legal or social parent of B (e.g., adoption disputes, surrogacy).",
+                    "confidence": 0.65,
+                    "attacks": {
+                        "A3": 0.8
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Most legal systems universally recognize biological paternal lineage as sufficient for grandfather status unless explicitly overridden by law.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "The term 'grandfather' may be contested if B's paternity is disputed (e.g., infidelity, undocumented parentage).",
+                    "confidence": 0.55,
+                    "attacks": {
+                        "A3": 0.3
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Legal presumptions of paternity (e.g., marriage at birth) typically resolve such disputes in favor of the stated lineage.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "B2": 0.3
+                    }
+                }
+            ]
+        },
+        "A4": {
+            "supporting": {
+                "id": "A4",
+                "text": "The transitive property of familial relationships confirms that A is the grandfather of C when A is the father of B and B is the father of C."
+            },
+            "attacks": [
+                {
+                    "id": "A4",
+                    "text": "The transitive property of familial relationships confirms that A is the grandfather of C when A is the father of B and B is the father of C.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "The definition of 'grandfather' may vary across cultures, and some societies do not recognize this specific familial structure.",
+                    "confidence": 0.6,
+                    "attacks": {
+                        "A4": 0.8
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "In most legal and social contexts worldwide, the term 'grandfather' is universally understood to mean the father of one's parent, supporting the original claim.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "If B is adopted and A is not the biological father, then A may not be considered the grandfather of C in some legal or cultural frameworks.",
+                    "confidence": 0.55,
+                    "attacks": {
+                        "A4": 0.9
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Even in cases of adoption, most legal systems recognize adoptive parents and grandparents as having the same familial status as biological ones.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "B2": 0.3
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,475 @@
+{
+  "claim": "Skin cancer kills the most women in the U.S..",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Skin cancer, particularly melanoma, has one of the highest mortality rates among cancers affecting women in the U.S., especially in younger age groups.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Skin cancer, particularly melanoma, has one of the highest mortality rates among cancers affecting women in the U.S., especially in younger age groups.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer actually has a higher mortality rate than skin cancer among women in the U.S., according to CDC statistics.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Melanoma mortality rates have been declining in recent years due to advances in early detection and treatment.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim overlooks demographic variations - breast cancer kills more Black and Hispanic women than skin cancer.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While lung cancer has high mortality, skin cancer incidence rates are rising faster, making it a growing threat.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The decline in melanoma mortality is primarily seen in older women, not younger age groups mentioned in A1.",
+          "confidence": 0.73,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Even considering demographic variations, melanoma remains the leading cause of cancer death for women aged 25-29.",
+          "confidence": 0.71,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The rising incidence of skin cancer doesn't necessarily correlate with mortality, as survival rates are improving.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The focus on young women (25-29) represents a very small subset of the overall female population.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The American Cancer Society reports that skin cancer is the most commonly diagnosed cancer in the U.S., and melanoma accounts for the majority of skin cancer deaths, including among women.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The American Cancer Society reports that skin cancer is the most commonly diagnosed cancer in the U.S., and melanoma accounts for the majority of skin cancer deaths, including among women.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer actually has a higher mortality rate than skin cancer among women in the U.S., according to CDC statistics.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim overlooks regional variations in cancer mortality rates, where skin cancer may not be the leading cause in all states.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The American Cancer Society data includes non-melanoma skin cancers, which have much lower mortality rates and skew the statistics.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While lung cancer has a high mortality rate, skin cancer's prevalence means it affects more women overall, making it a greater public health concern.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with regional variations, skin cancer remains the leading cause of cancer death for women in many sun-exposed states.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Melanoma alone accounts for more deaths than many other cancer types when considered separately from non-melanoma skin cancers.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public health impact should be measured by mortality rates rather than prevalence, as lung cancer's deadliness makes it more urgent to address.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Focusing on specific states ignores the national picture where lung cancer consistently ranks higher in mortality across most regions.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "When comparing mortality rates of all cancer types, melanoma still ranks below several others like breast and colorectal cancers.",
+          "confidence": 0.72,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Increased UV exposure due to tanning and outdoor activities has led to rising skin cancer rates among women, contributing to higher mortality compared to other cancers.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Increased UV exposure due to tanning and outdoor activities has led to rising skin cancer rates among women, contributing to higher mortality compared to other cancers.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Other cancers like breast and lung cancer have higher mortality rates in women than skin cancer, according to recent CDC statistics.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Improved sunscreen use and public awareness campaigns have reduced skin cancer mortality rates in recent years.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim ignores regional variations where skin cancer is less prevalent due to lower UV exposure.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "CDC statistics on breast cancer mortality include late-stage diagnoses, while skin cancer deaths are often preventable with early detection.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Sunscreen compliance remains low among young women, particularly in tanning-prone demographics.",
+          "confidence": 0.73,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Even in low-UV regions, indoor tanning still exposes women to dangerous radiation levels.",
+          "confidence": 0.71,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Late-stage breast cancer diagnoses are declining due to improved mammography screening programs.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Recent FDA regulations on tanning beds have reduced usage more effectively than sunscreen campaigns.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Lung cancer actually kills more women in the U.S. than skin cancer, according to CDC mortality data, making the claim incorrect.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Lung cancer actually kills more women in the U.S. than skin cancer, according to CDC mortality data, making the claim incorrect.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The CDC data may not account for delayed reporting or misclassification of skin cancer deaths, which could undercount its true mortality impact.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Regional variations in skin cancer mortality rates might skew national data, potentially hiding higher death rates in sun-exposed states.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "CDC mortality data is rigorously validated and includes corrections for misclassification, making undercounting unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "National data aggregates regional variations, and CDC methods ensure representative sampling, minimizing skew from high-exposure states.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Validation processes may still miss cases where skin cancer is listed as a secondary cause of death rather than primary.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with aggregation, outlier states with extreme rates could disproportionately affect the national average.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Breast cancer has a higher mortality rate among women in the U.S. than skin cancer, particularly in certain demographics, contradicting the claim.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Breast cancer has a higher mortality rate among women in the U.S. than skin cancer, particularly in certain demographics, contradicting the claim.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer incidence rates are rising faster than breast cancer, which may lead to higher mortality in the future despite current statistics.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim specifies 'kills the most women' without a timeframe, and skin cancer may already have higher cumulative mortality when considering long-term data.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Demographic variations in breast cancer mortality don't negate the overall higher mortality of skin cancer when averaged across all U.S. women.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Projections about future mortality rates are speculative and shouldn't be used to contradict current evidence about breast cancer's higher mortality.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Without specifying a timeframe, the claim is too vague to be meaningful, and current data should take precedence over ambiguous interpretations.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "When considering all demographics together, breast cancer still shows higher mortality rates than skin cancer in comprehensive studies.",
+          "confidence": 0.82,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public health trends clearly show skin cancer becoming more lethal due to environmental factors, making projections reliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The original claim's lack of specificity makes it impossible to disprove with current data alone, maintaining its potential validity.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Certain demographic groups are large enough that their higher breast cancer mortality significantly impacts the overall average.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "While skin cancer is prevalent, advancements in early detection and treatment have significantly reduced its mortality rate among women compared to other cancers.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "While skin cancer is prevalent, advancements in early detection and treatment have significantly reduced its mortality rate among women compared to other cancers.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Despite advancements, skin cancer still has one of the highest mortality rates among women due to late-stage diagnoses in many cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other cancers like breast and lung cancer have seen even greater improvements in treatment, making skin cancer relatively more deadly.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Public awareness campaigns have improved early detection rates, reducing the number of late-stage skin cancer diagnoses.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The comparison is flawed because breast and lung cancer have higher incidence rates, skewing the mortality statistics.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Rural and low-income areas still lack access to early detection programs, leading to higher late-stage diagnosis rates.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with higher incidence rates, the mortality rate per case for skin cancer remains alarmingly high compared to other cancers.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

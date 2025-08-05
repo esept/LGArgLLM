@@ -1,0 +1,240 @@
+{
+  "claim": "People smoke more on average in the United States than in Russia.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the World Health Organization, the prevalence of smoking among adults in the United States is higher than in Russia."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the World Health Organization, the prevalence of smoking among adults in the United States is higher than in Russia.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The WHO data may not account for differences in data collection methods between the two countries, potentially skewing the comparison.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The WHO standardizes data collection protocols across countries to ensure comparability, minimizing methodological biases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural differences in self-reporting smoking habits could lead to underreporting in Russia, making the comparison unreliable.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies using biochemical validation (e.g., cotinine tests) confirm self-reported smoking rates in Russia are broadly accurate.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The United States has a higher per capita cigarette consumption compared to Russia, as reported by global health statistics."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The United States has a higher per capita cigarette consumption compared to Russia, as reported by global health statistics.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data might not account for unrecorded tobacco consumption, which is higher in Russia due to informal markets and homemade tobacco products.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even accounting for informal markets, official statistics still show a significant gap in per capita consumption favoring the U.S., suggesting the trend holds.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural differences in reporting and data collection methods between the U.S. and Russia could skew the comparison.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "International health organizations standardize data collection methods to ensure comparability across countries, minimizing such biases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Public health campaigns and tobacco control policies in Russia have been more stringent in recent years, leading to lower smoking rates than in the United States."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Public health campaigns and tobacco control policies in Russia have been more stringent in recent years, leading to lower smoking rates than in the United States.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The smoking rate in Russia remains higher than in the U.S. due to cultural acceptance and historical tobacco use patterns.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Recent WHO data shows a decline in Russian smoking rates, supporting the effectiveness of their policies.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "U.S. smoking rates have also declined significantly due to widespread anti-smoking campaigns and regulations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The decline in U.S. smoking rates has plateaued in recent years, while Russia's decline has been more consistent.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Cultural attitudes toward smoking in the United States have historically been more permissive, contributing to higher average smoking rates."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Cultural attitudes toward smoking in the United States have historically been more permissive, contributing to higher average smoking rates.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Recent anti-smoking campaigns and regulations in the United States have significantly reduced smoking rates, potentially making them lower than in Russia.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Russia has also implemented strict anti-smoking laws in recent years, which may have reduced smoking rates there as well.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural attitudes in Russia have traditionally been more accepting of smoking, which could still result in higher smoking rates there despite recent changes.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that smoking rates in Russia remain high due to lower public awareness of health risks compared to the United States.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Data from the Centers for Disease Control and Prevention (CDC) and Russian health ministries show that the percentage of daily smokers is greater in the United States than in Russia."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Data from the Centers for Disease Control and Prevention (CDC) and Russian health ministries show that the percentage of daily smokers is greater in the United States than in Russia.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data may not account for differences in reporting methodologies between the CDC and Russian health ministries, potentially skewing the comparison.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Both the CDC and Russian health ministries follow internationally recognized standards for data collection, minimizing methodological discrepancies.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The data might not include informal or unrecorded tobacco use, which could be higher in Russia due to cultural practices.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies on informal tobacco markets in Russia indicate they are relatively small compared to regulated sales, limiting their impact on overall smoking rates.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

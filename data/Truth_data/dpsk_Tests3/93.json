@@ -1,0 +1,411 @@
+{
+  "claim": "In Canada, individuals are legally allowed to carry guns, knives, clubs, and pepper spray.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Canada's firearms laws require individuals to obtain a license to possess and carry firearms, which involves background checks and safety training, indicating that carrying guns is regulated but not outright banned.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Canada's firearms laws require individuals to obtain a license to possess and carry firearms, which involves background checks and safety training, indicating that carrying guns is regulated but not outright banned.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The licensing process is stringent and excludes many individuals, effectively making it a de facto ban for most people.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Carrying firearms in public without explicit authorization is heavily restricted, making it practically illegal for everyday carry.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim oversimplifies the legal landscape by ignoring prohibitions on certain types of weapons like automatic firearms and concealed carry laws.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The licensing process ensures responsible ownership rather than acting as a ban, as evidenced by the number of licensed gun owners in Canada.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Restricted public carry does not equate to a ban; it is a measure to balance individual rights with public safety.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Prohibitions on certain weapons are based on their potential for harm and do not negate the legality of other regulated firearms.",
+          "confidence": 0.73,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The number of licensed gun owners is relatively small compared to the population, supporting the argument that the process is exclusionary.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Public carry restrictions are so severe that they effectively nullify the right for most practical purposes.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Pepper spray is classified as a prohibited weapon in Canada unless it is specifically designed for use against animals, making it illegal for individuals to carry for self-defense against humans.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Pepper spray is classified as a prohibited weapon in Canada unless it is specifically designed for use against animals, making it illegal for individuals to carry for self-defense against humans.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some provinces allow the possession of pepper spray for self-defense if it is labeled as bear spray and purchased from authorized retailers.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Law enforcement often turns a blind eye to the possession of small quantities of pepper spray for personal protection, especially in high-crime areas.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if labeled as bear spray, using it against humans is still illegal and can result in criminal charges.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Police discretion does not change the legal status of pepper spray, and individuals caught carrying it can still face prosecution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The likelihood of prosecution for using bear spray in self-defense is low unless it is clearly abused, as courts often consider intent and circumstances.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Knives and clubs can be carried legally in Canada as long as they are not concealed and are not intended for use as weapons, suggesting that carrying these items is permitted under certain conditions.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Knives and clubs can be carried legally in Canada as long as they are not concealed and are not intended for use as weapons, suggesting that carrying these items is permitted under certain conditions.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Even if not concealed, carrying knives and clubs in public can still be perceived as threatening, leading to potential legal consequences under Canada's weapons laws.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The requirement that items must not be intended for use as weapons is subjective and difficult to enforce, making the legality of carrying such items ambiguous.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Canadian courts often consider the context and behavior of the individual, not just the item itself, reducing the risk of unjust prosecution for carrying knives or clubs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Law enforcement agencies provide clear guidelines on what constitutes intent to use an item as a weapon, reducing ambiguity in enforcement.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Despite guidelines, individual biases of law enforcement officers can lead to inconsistent application of the law regarding intent.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Canadian law prohibits the carrying of any weapon, including guns, knives, clubs, and pepper spray, for the purpose of self-defense, which significantly restricts their legal carry.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Canadian law prohibits the carrying of any weapon, including guns, knives, clubs, and pepper spray, for the purpose of self-defense, which significantly restricts their legal carry.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Certain weapons like pepper spray and knives can be carried legally if they are for purposes other than self-defense, such as occupational use or recreational activities.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some provinces allow the carrying of firearms under strict licensing and regulations, contradicting the claim that all weapons are prohibited.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if weapons are carried for non-self-defense purposes, the legal restrictions and scrutiny make it practically difficult for most individuals to carry them.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Firearm licenses are extremely difficult to obtain for the average citizen, meaning the allowance is more theoretical than practical for most people.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Occupational and recreational exemptions are narrowly defined, and misuse can still lead to severe legal consequences, reinforcing the restrictive nature of the law.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The complexity and cost of obtaining a firearm license act as de facto prohibitions for many, supporting the original argument about restrictions.",
+          "confidence": 0.62,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Certain provinces and municipalities in Canada have additional restrictions on carrying weapons, which can make it illegal to carry items like knives or clubs even if they are allowed under federal law.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Certain provinces and municipalities in Canada have additional restrictions on carrying weapons, which can make it illegal to carry items like knives or clubs even if they are allowed under federal law.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Federal law supersedes provincial and municipal regulations, meaning that if an item is legal federally, local restrictions may be unenforceable.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many provinces and municipalities align their weapon restrictions with federal guidelines, reducing the likelihood of additional prohibitions.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Supreme Court of Canada has upheld the authority of provinces and municipalities to enact stricter laws than federal statutes in matters of public safety.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Local law enforcement agencies prioritize enforcing their own jurisdiction's laws over federal ones, making provincial and municipal restrictions effectively binding.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Provinces like Ontario and Quebec have explicit additional restrictions on weapons, demonstrating that alignment with federal guidelines is not universal.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Federal preemption doctrines in Canadian law are limited, and provinces retain significant autonomy to legislate on matters like public safety.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even if local restrictions exist, enforcement is inconsistent, and many individuals carry restricted items without legal consequences.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The variations in provincial laws create confusion, but federal allowances still provide a baseline of legality that cannot be entirely overridden.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The Canadian Criminal Code allows for the possession of firearms for hunting and sport shooting, provided the individual has the appropriate licenses, indicating that carrying guns is legally permitted in specific contexts.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The Canadian Criminal Code allows for the possession of firearms for hunting and sport shooting, provided the individual has the appropriate licenses, indicating that carrying guns is legally permitted in specific contexts.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Canadian Criminal Code strictly prohibits carrying firearms for self-defense, which is a common reason people carry guns, thus limiting the legal permissibility of gun carrying.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Carrying knives, clubs, and pepper spray is heavily restricted in Canada, especially if the intent is for self-defense, which contradicts the claim that these items are generally allowed.",
+          "confidence": 0.82,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though carrying firearms for self-defense is prohibited, the existence of legal avenues for possession (e.g., hunting licenses) still supports the claim that guns can be legally carried under certain conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While restrictions exist, pepper spray can be legally carried if it is labeled as bear spray and intended for wildlife protection, showing some legal allowance under specific circumstances.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The conditions for legally carrying firearms (e.g., hunting licenses) are so stringent that they effectively prevent most individuals from carrying guns, undermining the claim's generality.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Bear spray is not practical for everyday self-defense against humans, meaning the legal allowance for pepper spray is functionally irrelevant to most people's needs.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

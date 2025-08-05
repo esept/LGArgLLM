@@ -1,0 +1,209 @@
+{
+  "claim": "A grandfather is 60, a father is 30, and a grandson is 0 years old. Their ages form a geometric sequence",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The ages 60, 30, and 0 form a sequence where each term is half the previous term (60/2=30, 30/2=15, not 0), so it is not a perfect geometric sequence.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The ages 60, 30, and 0 form a sequence where each term is half the previous term (60/2=30, 30/2=15, not 0), so it is not a perfect geometric sequence.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The sequence 60, 30, 0 can be considered a geometric sequence with a common ratio of 0.5, but the last term is truncated to 0 due to practical age constraints.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A geometric sequence requires a constant ratio between consecutive terms, and 30 to 0 violates this (30 * 0.5 = 15 \u2260 0).",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The sequence is approximately geometric, as the first two terms follow the ratio, and the third term is an edge case (age cannot be negative).",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematically, a geometric sequence cannot include zero unless the first term is zero, which is not the case here.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The deviation from the expected third term (15 vs. 0) is significant and disqualifies it as a true geometric sequence.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "A geometric sequence requires a constant ratio between consecutive terms, but the ratio changes from 0.5 (30/60) to 0 (0/30), violating the definition.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "A geometric sequence requires a constant ratio between consecutive terms, but the ratio changes from 0.5 (30/60) to 0 (0/30), violating the definition.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The ratio is undefined for the grandson's age (0/30), which does not necessarily violate the geometric sequence definition but indicates an edge case.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "A geometric sequence cannot have a zero term because division by zero is undefined, making the sequence invalid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The sequence can be considered geometric if the grandson's age is approximated as a very small non-zero value, preserving the ratio.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Approximating zero as a small non-zero value is mathematically inconsistent and invalidates the geometric sequence definition.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "If the grandson were 15 instead of 0, the sequence 60, 30, 15 would be geometric with a common ratio of 0.5, but 0 breaks this pattern.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "If the grandson were 15 instead of 0, the sequence 60, 30, 15 would be geometric with a common ratio of 0.5, but 0 breaks this pattern.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "A geometric sequence can include zero if the common ratio is zero, but this would imply the father's age is also zero, which contradicts the given information.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In a valid geometric sequence, no term can be zero unless all subsequent terms are zero, which is not the case here.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The sequence 60, 30, 0 can be considered geometric if we allow the common ratio to change, but this violates the definition of a geometric sequence.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A geometric sequence must have a constant common ratio between all consecutive terms, which is not satisfied if the ratio changes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The sequence 60, 30, 0 is arithmetic with a common difference of -30, not geometric, as the differences are consistent but the ratios are not.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The sequence 60, 30, 0 is arithmetic with a common difference of -30, not geometric, as the differences are consistent but the ratios are not.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "A geometric sequence requires a common ratio, but 30/60 = 0.5 and 0/30 = 0, which are not equal.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The definition of a geometric sequence is strict and does not allow for zero as a term after a non-zero term.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The sequence fails the geometric test because division by zero is undefined, making 0/30 invalid.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematically, any sequence containing zero after a non-zero term cannot be geometric due to division by zero.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

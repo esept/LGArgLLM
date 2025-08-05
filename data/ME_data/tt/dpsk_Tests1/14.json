@@ -1,0 +1,225 @@
+{
+  "claim": "Does the equation 3 + 3 * 4 = 3 * 5 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication takes precedence over addition, so 3 + 3 * 4 = 3 + 12 = 15, while 3 * 5 = 15. Thus, the equation holds true.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication takes precedence over addition, so 3 + 3 * 4 = 3 + 12 = 15, while 3 * 5 = 15. Thus, the equation holds true.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation only holds true for these specific numbers; changing the values would invalidate the equality, making it a coincidence rather than a general rule.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The equation ignores potential alternative interpretations of operator precedence in non-standard mathematical notations or programming languages.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the equation holds for these numbers, it does not provide any meaningful mathematical insight or utility.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-standard notations are rare and explicitly defined, so they do not undermine the validity of the equation under standard rules.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The equation holds true because both sides simplify to the same value (15), demonstrating mathematical consistency.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The equation holds true because both sides simplify to the same value (15), demonstrating mathematical consistency.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation does not hold true because the left side simplifies to 15 (3 + 12), while the right side simplifies to 15 (3 * 5), but the operations are fundamentally different.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The operations are different, but the final values are identical, which is the point of the equation's claim.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mathematical consistency requires not just equal results but also identical operations or logical equivalence, which is not the case here.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The equation is valid as it demonstrates that different operations can yield the same result, which is a common and accepted mathematical concept.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The equation is misleading because it implies that 3 + 3 * 4 is equivalent to 3 * 5 in terms of operation sequence, which is not true.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The equation does not imply operational equivalence but rather result equivalence, which is a valid mathematical statement.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "If interpreted without following the order of operations (e.g., left-to-right), 3 + 3 * 4 would incorrectly evaluate to 6 * 4 = 24, which does not equal 3 * 5 = 15.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "If interpreted without following the order of operations (e.g., left-to-right), 3 + 3 * 4 would incorrectly evaluate to 6 * 4 = 24, which does not equal 3 * 5 = 15.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The order of operations (PEMDAS/BODMAS) is a universally accepted mathematical convention, making left-to-right interpretation invalid.",
+          "confidence": 0.95,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Educational systems worldwide explicitly teach the order of operations, leaving no ambiguity for correct evaluation.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In programming and formal mathematics, strict adherence to operator precedence prevents such misinterpretations.",
+          "confidence": 0.93,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Programming languages enforce operator precedence consistently, so 3 + 3 * 4 always evaluates to 15, not 24.",
+          "confidence": 0.94,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Historical mathematical texts and standards have long established the precedence of multiplication over addition.",
+          "confidence": 0.91,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The equation is misleading if the reader is unaware of operator precedence rules, as it could lead to incorrect calculations in contexts where such rules are not followed.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The equation is misleading if the reader is unaware of operator precedence rules, as it could lead to incorrect calculations in contexts where such rules are not followed.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Operator precedence is a fundamental concept in mathematics and is consistently taught in basic arithmetic education.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The equation explicitly follows standard mathematical conventions, so it is not misleading to those familiar with basic arithmetic rules.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some readers are unaware of operator precedence, the equation itself is mathematically correct and thus not inherently misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Misinterpretation due to lack of knowledge does not make the equation itself misleading, but rather highlights the need for better education on the topic.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

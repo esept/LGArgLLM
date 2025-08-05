@@ -1,0 +1,347 @@
+{
+  "claim": "The Lindbergh kidnapping case was solved, although alternative theories still exist.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Bruno Hauptmann was convicted and executed for the Lindbergh kidnapping, providing a clear resolution to the case.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Bruno Hauptmann was convicted and executed for the Lindbergh kidnapping, providing a clear resolution to the case.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hauptmann maintained his innocence until his execution, casting doubt on the fairness of his trial.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some forensic evidence used in the trial has been questioned by modern experts.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite his claims of innocence, the jury found Hauptmann guilty based on substantial evidence presented during the trial.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern forensic techniques were not available at the time, but the evidence was considered reliable by contemporary standards.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Eyewitness testimony and circumstantial evidence strongly supported Hauptmann's guilt.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Forensic evidence, including the ladder used in the kidnapping, was linked to Hauptmann, strongly supporting his guilt.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Forensic evidence, including the ladder used in the kidnapping, was linked to Hauptmann, strongly supporting his guilt.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The ladder's wood could have been contaminated or mishandled, casting doubt on the forensic link to Hauptmann.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hauptmann had an alibi for the night of the kidnapping, which was not thoroughly investigated.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Chain of custody records for the ladder were incomplete, raising questions about evidence integrity.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Witnesses supporting Hauptmann's alibi were dismissed without proper scrutiny, suggesting bias in the investigation.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Standard forensic protocols for evidence handling were followed, as documented by independent experts.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The alibi witnesses had inconsistencies in their testimonies, justifying their dismissal.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Hauptmann was found in possession of ransom money, which was traced back to the Lindbergh family, further implicating him.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Hauptmann was found in possession of ransom money, which was traced back to the Lindbergh family, further implicating him.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The chain of custody for the ransom money was poorly documented, raising doubts about its authenticity as evidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hauptmann claimed the money was given to him by a friend who later died, making it impossible to verify his story.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Forensic accounting techniques at the time were not advanced enough to conclusively link the money to the Lindbergh family.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The friend's death was never properly investigated, leaving open the possibility that Hauptmann's story was true.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Modern forensic methods have since validated the original tracing of the ransom money, supporting its authenticity.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Alternative theories lack substantial evidence compared to the overwhelming case against Hauptmann.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Alternative theories lack substantial evidence compared to the overwhelming case against Hauptmann.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some alternative theories present credible witness testimonies that contradict the official narrative.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Forensic techniques used in the Hauptmann case were primitive by modern standards, casting doubt on the evidence.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The witness testimonies in alternative theories have been debunked as unreliable or fabricated.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern forensic re-examinations have confirmed the validity of the original evidence against Hauptmann.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some historians argue that Hauptmann may have been part of a larger conspiracy, casting doubt on the completeness of the official solution.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some historians argue that Hauptmann may have been part of a larger conspiracy, casting doubt on the completeness of the official solution.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The evidence against Hauptmann was overwhelming, including the ransom money found in his possession and his handwriting matching the ransom notes.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "No credible evidence has emerged to support the existence of a larger conspiracy beyond Hauptmann's involvement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Forensic analysis at the time confirmed that the ladder used in the kidnapping was constructed with wood from Hauptmann's attic.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multiple witnesses placed Hauptmann near the crime scene around the time of the kidnapping.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Investigations into potential co-conspirators yielded no substantial leads or evidence.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The investigation was marred by mishandling of evidence and media sensationalism, raising questions about the validity of the conviction.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The investigation was marred by mishandling of evidence and media sensationalism, raising questions about the validity of the conviction.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Despite the mishandling, forensic evidence like the ladder and ransom notes directly linked Bruno Hauptmann to the crime.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The jury was convinced beyond a reasonable doubt by the totality of the evidence, including Hauptmann's possession of the ransom money.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The forensic methods used at the time were rudimentary and could have led to contamination or misinterpretation of evidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Eyewitness testimony and circumstantial evidence are often unreliable, which could have influenced the jury's decision.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Modern forensic re-examinations have confirmed the validity of key evidence, such as wood grain matching on the ladder.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

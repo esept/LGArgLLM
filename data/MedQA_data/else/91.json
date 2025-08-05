@@ -1,0 +1,338 @@
+{
+  "claim": "A 35-year-old taxi driver presents to his physician with complaints of itchy, watery eyes and excessive sneezing that have become more severe with the change of the seasons. He has previously taken an over-the-counter medication in the past with moderate relief of his symptoms, but it made him very drowsy. He asks to switch to a medication that will not cause drowsiness that may impair his driving. Which of the following medications would you prescribe for this patient? : Chlorpheniramine",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Chlorpheniramine is a first-generation antihistamine known to cause drowsiness, which would impair the patient's ability to drive safely.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Chlorpheniramine is a first-generation antihistamine known to cause drowsiness, which would impair the patient's ability to drive safely.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Second-generation antihistamines like loratadine or cetirizine are non-sedating and would be safer for the patient's driving needs.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms are seasonal, and chlorpheniramine's sedative effects may outweigh its benefits given his occupation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some patients may still experience mild drowsiness with second-generation antihistamines, though less severe than first-generation options.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Nasal corticosteroids could be a more effective alternative for seasonal allergies without causing drowsiness.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The risk of drowsiness with second-generation antihistamines is minimal and unlikely to impair driving in most patients.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Nasal corticosteroids require consistent use for full effect and may not provide immediate relief for acute symptoms.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient explicitly requested a non-sedating medication, and chlorpheniramine does not meet this requirement.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient explicitly requested a non-sedating medication, and chlorpheniramine does not meet this requirement.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Chlorpheniramine is a first-generation antihistamine known for its sedative effects, which contradicts the patient's need for alertness while driving.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are newer antihistamines available that are non-sedating and would be more appropriate for this patient's occupation and symptoms.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While chlorpheniramine is sedating, it may still be effective for severe symptoms, and the patient could adjust the timing of the dose to minimize drowsiness during driving hours.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Newer antihistamines may be more expensive or not as readily available as chlorpheniramine, which could be a barrier for the patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Adjusting the timing of chlorpheniramine may not fully eliminate drowsiness, as its sedative effects can last for several hours.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Many insurance plans cover newer antihistamines, and their cost-effectiveness in preventing impaired driving may outweigh the initial expense.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Second-generation antihistamines like loratadine or cetirizine are better suited for this patient as they are less likely to cause drowsiness.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Second-generation antihistamines like loratadine or cetirizine are better suited for this patient as they are less likely to cause drowsiness.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "First-generation antihistamines like chlorpheniramine are more effective at relieving severe allergy symptoms compared to second-generation antihistamines.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some second-generation antihistamines can still cause drowsiness in certain individuals, especially at higher doses.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's occupation as a taxi driver makes drowsiness a critical factor, so the benefit of reduced drowsiness outweighs potential slight reductions in efficacy.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While first-generation antihistamines may be more potent, the difference in symptom relief is often marginal for most patients with seasonal allergies.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The incidence of drowsiness with second-generation antihistamines is significantly lower than with first-generation options, making them safer for drivers.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Non-sedating antihistamines have been shown to maintain driving performance equivalent to placebo in clinical studies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "For patients with particularly severe symptoms, the marginal increase in efficacy of first-generation antihistamines may be clinically relevant.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Individual variation in drug metabolism means some patients may still experience drowsiness even with second-generation antihistamines.",
+          "confidence": 0.68,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Chlorpheniramine's sedative effects could pose a significant risk to the patient's occupation as a taxi driver.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Chlorpheniramine's sedative effects could pose a significant risk to the patient's occupation as a taxi driver.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Second-generation antihistamines like loratadine are non-sedating and would be a safer alternative for the patient.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The sedative effects of chlorpheniramine are dose-dependent, and a lower dose might be tolerable for the patient.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even at lower doses, chlorpheniramine can still impair cognitive function and reaction time, which is critical for driving.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Loratadine may not be as effective as chlorpheniramine for severe symptoms, requiring higher doses or additional medications.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that loratadine provides comparable efficacy to first-generation antihistamines like chlorpheniramine for seasonal allergies.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient has already experienced drowsiness with over-the-counter medications, indicating a need for a non-sedating alternative.",
+        "confidence": 0.87,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient has already experienced drowsiness with over-the-counter medications, indicating a need for a non-sedating alternative.",
+          "confidence": 0.87,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Chlorpheniramine is a first-generation antihistamine known to cause drowsiness, which would not be suitable for the patient's needs.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms are seasonal, suggesting a non-sedating antihistamine like loratadine or cetirizine would be more appropriate.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "First-generation antihistamines like chlorpheniramine are more effective for severe symptoms, which might justify their use despite drowsiness.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-sedating antihistamines may not be as effective for all patients, and the patient's response should be monitored.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's occupation as a taxi driver makes drowsiness a critical safety concern, outweighing potential benefits of first-generation antihistamines.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Clinical studies show that non-sedating antihistamines are equally effective for seasonal allergies in most patients.",
+          "confidence": 0.83,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

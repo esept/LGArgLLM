@@ -1,0 +1,306 @@
+{
+  "claim": " The name of the South African university, which has a blurb reading: \"our most famous university that often tops the ranking of our undergraduate institutions, with classical architecture and modern buildings, a law school, and an urban setting in a major city\u201d, is Princeton University.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Princeton University is located in the United States, not South Africa, which contradicts the claim that it is a South African university.",
+        "confidence": 0.99,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Princeton University is located in the United States, not South Africa, which contradicts the claim that it is a South African university.",
+          "confidence": 0.99,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The description could be referring to a university in South Africa that shares similar characteristics with Princeton, but is not Princeton itself.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might be a hypothetical or fictional scenario where Princeton University is located in South Africa.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "There is no evidence or record of Princeton University ever being located in South Africa, making this hypothetical scenario highly unlikely.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The University of Cape Town in South Africa matches the description closely, suggesting a possible confusion or misidentification.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The University of Cape Town is indeed one of the top-ranked universities in South Africa and fits the description provided, supporting the argument that it is the correct university being referred to.",
+          "confidence": 0.92,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The description mentions an urban setting in a major city, which aligns with the University of Cape Town (a top South African university) located in Cape Town, a major city.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The description mentions an urban setting in a major city, which aligns with the University of Cape Town (a top South African university) located in Cape Town, a major city.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Princeton University is not located in South Africa, but in the United States, making it impossible for it to be the described South African university.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The University of Cape Town does not have classical architecture as prominently as described, which weakens the alignment with the given blurb.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Princeton is in the US, the blurb could be mistakenly referring to another institution with similar features, not necessarily Princeton.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The University of Cape Town does have some classical architecture elements, especially in its older buildings, which could match the description.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The blurb explicitly mentions 'South African university,' which rules out any non-South African institutions like Princeton.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Princeton University does not have a law school, whereas the description explicitly mentions one, further disproving the claim.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Princeton University does not have a law school, whereas the description explicitly mentions one, further disproving the claim.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The description could be referring to a different university with similar characteristics, not necessarily Princeton.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mention of a law school might be an error or exaggeration in the blurb, and Princeton could still be the intended university.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Princeton University is located in the United States, not South Africa, making it impossible for it to be the described university.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Errors in university blurbs are rare, especially regarding major features like a law school, so the description is likely accurate.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The description's mention of 'our most famous university' clearly refers to a South African context, not an American one like Princeton.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "University rankings and blurbs are carefully vetted, making significant errors like misstating the presence of a law school highly unlikely.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The University of Cape Town is often ranked as the top undergraduate institution in South Africa and fits the description of classical and modern architecture, unlike Princeton.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The University of Cape Town is often ranked as the top undergraduate institution in South Africa and fits the description of classical and modern architecture, unlike Princeton.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Princeton University is not located in South Africa, so it cannot be the university described in the claim.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The University of Cape Town does not have the same global recognition as Princeton, which contradicts the 'most famous university' part of the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies a South African university, so Princeton's location is irrelevant to the description.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Fame can be context-specific; within South Africa, the University of Cape Town is indeed the most famous, which aligns with the claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim does not specify whether 'most famous' refers to global or local recognition, making the comparison to Princeton's global fame misleading.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The term 'our' in the blurb suggests the university is within South Africa, which Princeton is not.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The term 'our' in the blurb suggests the university is within South Africa, which Princeton is not.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The blurb could be interpreted metaphorically, where 'our' refers to a global academic community rather than a specific country.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Princeton University is often associated with prestige and classical architecture, which could lead to confusion despite the geographic discrepancy.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Metaphorical use of 'our' is unlikely in official university blurbs, which typically aim for clarity and specificity.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The description of an urban setting in a major city does not match Princeton's location in a small town.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some universities use poetic language in their blurbs, which can include metaphorical references to community.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Princeton is near major cities like New York and Philadelphia, which could be loosely interpreted as an urban setting.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

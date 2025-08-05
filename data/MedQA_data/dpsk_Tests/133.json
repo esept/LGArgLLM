@@ -1,0 +1,264 @@
+{
+  "claim": "Consider the following background information: A 7-year-old boy is brought to the physician because of a 3-week history of burning sensation in his mouth. One year ago, a peripheral blood smear performed during workup of fatigue revealed erythrocytes without central pallor. His father had gallstones, for which he underwent a cholecystectomy at the age of 26 years. Examination shows pallor of the mucosal membranes, mild scleral icterus, a swollen, red tongue, and several mouth ulcers. There is darkening of the skin over the dorsal surfaces of the fingers, toes, and creases of the palms and soles. His spleen is enlarged and palpable 3 cm below the left costal margin. Laboratory studies show a hemoglobin concentration of 9.1 gm/dL, mean corpuscular volume of 104 \u03bcm3, and a reticulocyte count of 9%.\n\nGiven the background information the following is corrrect: Vitamin B12 injections would most likely have prevented this patient\"s oropharyngeal symptoms.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's symptoms, including oral burning, swollen red tongue, and mouth ulcers, are classic manifestations of vitamin B12 deficiency, which can be prevented with B12 injections."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms, including oral burning, swollen red tongue, and mouth ulcers, are classic manifestations of vitamin B12 deficiency, which can be prevented with B12 injections.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's peripheral blood smear showed erythrocytes without central pallor, which is more indicative of hereditary spherocytosis than vitamin B12 deficiency.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hereditary spherocytosis does not typically cause oral symptoms like burning sensation, swollen red tongue, or mouth ulcers, which are more consistent with vitamin B12 deficiency.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's father had gallstones at a young age, which is a common complication of hereditary spherocytosis, further supporting this diagnosis over vitamin B12 deficiency.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While hereditary spherocytosis can explain some findings, it does not account for the neurologic and mucosal symptoms, which are hallmark features of vitamin B12 deficiency.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's mean corpuscular volume of 104 \u03bcm3 is more consistent with macrocytic anemia, which can occur in both vitamin B12 deficiency and hemolytic anemias like hereditary spherocytosis.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The reticulocyte count of 9% is elevated, suggesting hemolysis, which is more characteristic of hereditary spherocytosis than vitamin B12 deficiency.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The presence of megaloblastic anemia (elevated MCV) and reticulocytosis strongly suggests vitamin B12 deficiency, a condition treatable and preventable with B12 supplementation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of megaloblastic anemia (elevated MCV) and reticulocytosis strongly suggests vitamin B12 deficiency, a condition treatable and preventable with B12 supplementation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's darkening of the skin and splenomegaly are more indicative of hemolytic anemia (e.g., hereditary spherocytosis) rather than pure B12 deficiency.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hereditary spherocytosis does not typically cause megaloblastic anemia or glossitis, which are hallmark features of B12 deficiency.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The father's history of gallstones and early cholecystectomy suggests a hereditary hemolytic disorder (e.g., spherocytosis), which could explain the anemia independently of B12 deficiency.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Concurrent B12 deficiency and hereditary spherocytosis could explain both the megaloblastic changes and hemolytic features, making B12 supplementation still relevant for the oropharyngeal symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The patient's family history of gallstones and early cholecystectomy may indicate impaired bile acid metabolism, which can lead to B12 malabsorption, making B12 injections a preventive measure."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's family history of gallstones and early cholecystectomy may indicate impaired bile acid metabolism, which can lead to B12 malabsorption, making B12 injections a preventive measure.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (e.g., swollen red tongue, mouth ulcers) are more consistent with iron deficiency anemia or other nutritional deficiencies rather than B12 deficiency alone.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Gallstones and cholecystectomy do not necessarily impair bile acid metabolism sufficiently to cause B12 malabsorption in all cases.",
+          "confidence": 0.68,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's darkening of the skin and splenomegaly suggest hemolytic anemia (e.g., hereditary spherocytosis), which is unrelated to B12 deficiency.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75,
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "B12 malabsorption due to bile acid impairment is rare and would typically present with neurologic symptoms rather than oropharyngeal symptoms alone.",
+          "confidence": 0.72,
+          "attacks": {
+            "A3": 0.68
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The reticulocyte count of 9% and lack of central pallor on blood smear strongly support hemolysis, not B12 deficiency.",
+          "confidence": 0.85,
+          "attacks": {
+            "C1": 0.8,
+            "A3": 0.78
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The dermatologic findings (skin darkening) and neurologic symptoms (burning mouth) are consistent with B12 deficiency, which would respond to prophylactic B12 therapy."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The dermatologic findings (skin darkening) and neurologic symptoms (burning mouth) are consistent with B12 deficiency, which would respond to prophylactic B12 therapy.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's erythrocytes without central pallor and family history of gallstones suggest hereditary spherocytosis, which is unrelated to B12 deficiency.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hereditary spherocytosis does not explain the neurologic symptoms or tongue changes, which are classic for B12 deficiency.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The reticulocyte count of 9% indicates hemolysis, which is more consistent with hereditary spherocytosis than B12 deficiency.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "B12 deficiency can also cause hemolysis due to ineffective erythropoiesis, explaining the elevated reticulocyte count.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The patient's splenomegaly and hemolytic findings (reticulocytosis, icterus) suggest underlying hemolysis that can occur in B12 deficiency, preventable with adequate B12 levels."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's splenomegaly and hemolytic findings (reticulocytosis, icterus) suggest underlying hemolysis that can occur in B12 deficiency, preventable with adequate B12 levels.",
+          "cate": "P",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (darkening of skin, mouth ulcers, swollen red tongue) are more characteristic of iron deficiency or other nutritional deficiencies rather than B12 deficiency.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The reticulocytosis and splenomegaly are more consistent with hereditary spherocytosis (given the father's gallstones at a young age) rather than B12 deficiency.",
+          "confidence": 0.85,
+          "attacks": {
+            "A5": 0.8,
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "B12 deficiency typically causes megaloblastic anemia, not hemolytic anemia, making the link between B12 and hemolysis in this case unlikely.",
+          "confidence": 0.9,
+          "attacks": {
+            "A5": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

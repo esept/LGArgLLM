@@ -1,0 +1,272 @@
+{
+  "claim": "Consider the following background information: A 19-year-old woman is brought into the emergency department after collapsing during a cheerleading practice session. Her vitals taken by the emergency medical services (EMS) include blood pressure 88/55 mm Hg, pulse 55/min. She was given a liter of isotonic fluid while en route to the hospital. At the emergency department, she is alert and oriented and is noted to be anorexic. The patient fervently denies being underweight claiming that she is \u2018a fatty\u2019 and goes on to refuse any further intravenous fluid and later, even the hospital meals.\n\nGiven the background information the following is corrrect: Cognitive-behavioral therapy is the best option for long-term management of this patient\"s condition.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Cognitive-behavioral therapy (CBT) is a well-established, evidence-based treatment for eating disorders, including anorexia nervosa, which aligns with the patient's symptoms and behaviors."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cognitive-behavioral therapy (CBT) is a well-established, evidence-based treatment for eating disorders, including anorexia nervosa, which aligns with the patient's symptoms and behaviors.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CBT may not be effective if the patient lacks insight into their condition, as seen in this case where the patient denies being underweight.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if insight is lacking initially, CBT can help patients develop awareness and coping strategies over time, making it still a viable long-term option.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Severe malnutrition and medical instability, as suggested by the patient's vitals, require immediate medical intervention before psychological therapies like CBT can be effective.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CBT can be integrated with medical treatment once the patient is stabilized, addressing both the physical and psychological aspects of the disorder simultaneously.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's denial of being underweight and refusal of medical interventions are classic signs of an eating disorder, which CBT is specifically designed to address by modifying distorted self-perception and maladaptive behaviors."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's denial of being underweight and refusal of medical interventions are classic signs of an eating disorder, which CBT is specifically designed to address by modifying distorted self-perception and maladaptive behaviors.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CBT may not be effective if the patient lacks insight into their condition, as severe denial can impede engagement with therapy.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with initial denial, CBT can be adapted to include motivational interviewing techniques to enhance patient readiness for change.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's acute medical instability (e.g., hypotension, bradycardia) requires immediate stabilization, making CBT premature at this stage.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While stabilization is priority, early integration of CBT principles by clinicians can begin addressing psychological factors during medical treatment.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Family-based therapy (FBT) has stronger evidence for long-term recovery in adolescent/young adult eating disorders compared to CBT.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "CBT-E (enhanced for eating disorders) shows comparable efficacy to FBT in adults and may be preferable for patients resisting family involvement.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Long-term management of eating disorders often requires psychological intervention, and CBT has been shown to reduce relapse rates compared to other therapies."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Long-term management of eating disorders often requires psychological intervention, and CBT has been shown to reduce relapse rates compared to other therapies.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While CBT is effective for some, it may not address underlying biological or genetic factors contributing to eating disorders, limiting its efficacy in certain cases.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "CBT can be adapted to include biological and genetic considerations, making it a versatile tool even when these factors are present.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's denial of her condition suggests severe body dysmorphia, which may require more intensive or specialized therapy than standard CBT.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CBT protocols exist specifically for body dysmorphia and severe eating disorders, often integrating exposure and response prevention techniques.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Relapse rates for eating disorders remain high even with CBT, indicating it may not be the 'best' option for long-term management.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Comparative studies show CBT still outperforms other therapies in long-term relapse prevention, even if absolute relapse rates are not zero.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "CBT is recommended by clinical guidelines for eating disorders due to its effectiveness in addressing both the cognitive distortions and behavioral patterns associated with conditions like anorexia nervosa."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "CBT is recommended by clinical guidelines for eating disorders due to its effectiveness in addressing both the cognitive distortions and behavioral patterns associated with conditions like anorexia nervosa.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CBT may not be effective if the patient lacks insight into their condition or refuses to engage in therapy, as seen in this case where the patient denies being underweight.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the patient initially lacks insight, CBT can be adapted to include motivational interviewing techniques to enhance engagement and readiness for change.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Severe malnutrition and medical instability may require hospitalization and medical stabilization before CBT can be effectively implemented.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Integrated treatment plans can include both medical stabilization and concurrent CBT to address psychological aspects early in recovery.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's presentation (low blood pressure, bradycardia, and refusal of nutrition) strongly suggests an eating disorder, for which CBT is a first-line psychological treatment."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's presentation (low blood pressure, bradycardia, and refusal of nutrition) strongly suggests an eating disorder, for which CBT is a first-line psychological treatment.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While CBT is effective for many eating disorders, severe cases with acute medical instability (e.g., hypotension, bradycardia) require immediate medical stabilization before psychological interventions can be safely initiated.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Medical stabilization and CBT are not mutually exclusive; CBT can be introduced gradually alongside medical treatment to address the psychological roots of the disorder early.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's denial of being underweight suggests potential anosognosia, which may limit the effectiveness of CBT unless combined with other therapies like family-based treatment (FBT).",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CBT can be adapted to address anosognosia by focusing on behavioral changes and cognitive restructuring, even if the patient lacks full insight initially.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

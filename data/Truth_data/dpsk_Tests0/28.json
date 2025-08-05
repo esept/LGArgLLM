@@ -1,0 +1,161 @@
+{
+  "claim": "In Germany, France, and Switzerland, you pay with euros.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Germany, France, and Switzerland are all located in Europe, where the euro is the official currency."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Germany, France, and Switzerland are all located in Europe, where the euro is the official currency.",
+          "confidence": 0.8,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Switzerland is not part of the Eurozone and uses the Swiss franc (CHF) as its official currency, not the euro.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Switzerland is not in the Eurozone, many businesses near the borders accept euros for convenience, though change is often given in francs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Germany and France are members of the European Union and use the euro as their official currency."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Germany and France are members of the European Union and use the euro as their official currency.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Switzerland is not a member of the European Union and uses the Swiss franc, not the euro.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Switzerland uses the Swiss franc, many businesses near the borders accept euros for convenience, though change is given in francs.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Switzerland is not a member of the European Union and uses the Swiss franc, not the euro, as its official currency."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Switzerland is not a member of the European Union and uses the Swiss franc, not the euro, as its official currency.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some border regions in Switzerland accept euros for convenience, especially in tourist areas.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in border regions, businesses typically convert euro payments to Swiss francs at unfavorable rates, discouraging euro use.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Liechtenstein, which is in a customs union with Switzerland, uses the Swiss franc but sometimes unofficially accepts euros.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Liechtenstein's euro acceptance is extremely limited and not representative of Switzerland's currency policy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "While Switzerland does not use the euro as its official currency, euros may be accepted in some tourist areas or border regions."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "While Switzerland does not use the euro as its official currency, euros may be accepted in some tourist areas or border regions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The acceptance of euros in Switzerland is limited and often comes with unfavorable exchange rates or additional fees.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many businesses in Switzerland explicitly refuse euros or only accept them under specific conditions, making it unreliable as a payment method.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In major Swiss cities, euros are rarely accepted outside of tourist-centric businesses.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in tourist areas, Swiss businesses prefer Swiss francs, and euro transactions are often discouraged.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

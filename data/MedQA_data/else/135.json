@@ -1,0 +1,548 @@
+{
+  "claim": "A 27-year-old woman presents to the emergency department with weakness of her legs which has progressed to an inability for her to stand. The patient works as a school teacher in Alaska and regularly goes hiking and camping. She recently returned from a camping trip where she hiked through tall brush and drank from mountain streams. The patient was also involved in a motor vehicle accident 2 days ago but did not seek treatment. The patient has a medical history that is unremarkable and is currently taking multivitamins and other than a recent bout of diarrhea is generally healthy. Her temperature is 99.5\u00b0F (37.5\u00b0C), blood pressure is 120/68 mmHg, pulse is 120/min, respirations are 17/min, and oxygen saturation is 98% on room air. Physical exam is notable for a very anxious woman with 1/5 strength of the patient\u2019s lower extremities and 2/5 strength of her trunk muscles with diminished sensation. Laboratory studies are ordered as seen below.\n\nHemoglobin: 15 g/dL\nHematocrit: 43%\nLeukocyte count: 6,500/mm^3 with normal differential\nPlatelet count: 194,000/mm^3\n\nSerum:\nNa+: 138 mEq/L\nCl-: 102 mEq/L\nK+: 4.4 mEq/L\nHCO3-: 24 mEq/L\nBUN: 20 mg/dL\nGlucose: 120 mg/dL\nCreatinine: 1.0 mg/dL\nCa2+: 10.2 mg/dL\npH: 7.44\nPaCO2: 10 mmHg\nPaO2: 90 mmHg\nAST: 12 U/L\nALT: 10 U/L\n\nThe patient complains about difficulty breathing. Repeat laboratory values are notable for the findings below.\n\npH: 7.35\nPaCO2: 30 mmHg\nPaO2: 80 mmHg\n\nThe patient is intubated and sent to the MICU. Which of the following risk factors is associated with the most likely diagnosis? : Consuming meats cooked over a campfire",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's recent camping trip and consumption of water from mountain streams suggest potential exposure to environmental toxins or pathogens, such as botulism, which can cause progressive weakness and respiratory failure.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's recent camping trip and consumption of water from mountain streams suggest potential exposure to environmental toxins or pathogens, such as botulism, which can cause progressive weakness and respiratory failure.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's motor vehicle accident 2 days ago could be a more plausible explanation for her symptoms, such as spinal cord injury or trauma-related neurological deficits, rather than environmental exposure.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's recent bout of diarrhea and elevated glucose levels might indicate an underlying metabolic or infectious process, such as Guillain-Barr\u00e9 syndrome, rather than botulism.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's anxiety and hyperventilation could explain the respiratory symptoms and abnormal blood gases, suggesting a psychogenic or functional disorder rather than a toxin-mediated illness.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spinal cord injury from the motor vehicle accident would typically present with more localized neurological deficits and a clear history of trauma, which is not strongly supported here.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Guillain-Barr\u00e9 syndrome usually presents with ascending paralysis and areflexia, which is not clearly described in this case, making it less likely than botulism.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Psychogenic disorders do not typically cause objective muscle weakness or diminished sensation, which are present in this patient, making this explanation less likely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of fever or leukocytosis makes an infectious etiology like botulism more plausible than Guillain-Barr\u00e9 syndrome, which often follows an infection.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The motor vehicle accident 2 days ago could have caused spinal cord injury or trauma-related neurological deficits, explaining the lower extremity weakness and sensory changes.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The motor vehicle accident 2 days ago could have caused spinal cord injury or trauma-related neurological deficits, explaining the lower extremity weakness and sensory changes.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent camping trip and exposure to tall brush and mountain streams suggest a higher likelihood of tick-borne illness (e.g., Lyme disease or tick paralysis) rather than trauma from the accident.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rapid progression of weakness and respiratory involvement is more consistent with Guillain-Barr\u00e9 syndrome (GBS) than a delayed presentation of spinal cord injury from the accident.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Tick paralysis typically presents with ascending paralysis but does not usually involve sensory deficits, which are present in this patient, making it less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "GBS often follows a diarrheal illness (e.g., Campylobacter), which aligns with the patient's recent diarrhea, supporting GBS over trauma.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's sensory deficits could still be explained by a variant of GBS (e.g., Miller Fisher syndrome) or coexisting conditions, not ruling out GBS entirely.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Spinal cord injury from the accident would likely show more localized neurological signs (e.g., a clear sensory level), which are absent here.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's recent bout of diarrhea and potential exposure to contaminated water could indicate an infectious process like Guillain-Barr\u00e9 syndrome, which presents with ascending paralysis.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's recent bout of diarrhea and potential exposure to contaminated water could indicate an infectious process like Guillain-Barr\u00e9 syndrome, which presents with ascending paralysis.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent motor vehicle accident could be the cause of her symptoms, as trauma can lead to spinal cord injury or other neurological deficits.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's weakness and respiratory distress could be due to tick paralysis, given her history of hiking through tall brush in Alaska.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's symptoms could be caused by botulism from consuming improperly cooked meats over a campfire, which is a known risk factor for the condition.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spinal cord injury from the motor vehicle accident would likely present with more localized neurological deficits rather than the generalized ascending paralysis seen in this patient.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Tick paralysis typically causes ascending paralysis but does not usually present with the gastrointestinal symptoms seen in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Botulism would likely present with cranial nerve involvement and gastrointestinal symptoms, which are not prominently featured in this patient's presentation.",
+          "confidence": 0.6,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of localized neurological deficits does not rule out spinal cord injury, as incomplete injuries can present with varied symptoms.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's recent diarrhea could be unrelated to her current symptoms, and tick paralysis remains a plausible diagnosis given her exposure history.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The patient's respiratory distress and generalized weakness are consistent with botulism, even if cranial nerve symptoms are not yet apparent.",
+          "confidence": 0.55,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's anxiety, tachycardia, and respiratory symptoms could suggest a psychological or hyperventilation syndrome, though this does not fully explain the motor weakness.",
+        "confidence": 0.5,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's anxiety, tachycardia, and respiratory symptoms could suggest a psychological or hyperventilation syndrome, though this does not fully explain the motor weakness.",
+          "confidence": 0.5,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The motor weakness and diminished sensation are more consistent with a neurological or neuromuscular disorder, such as Guillain-Barr\u00e9 syndrome, rather than a psychological condition.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The recent camping trip and potential exposure to contaminated water or tick bites could indicate an infectious cause like Lyme disease or botulism, which better explains the symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The motor vehicle accident could have caused spinal cord injury or trauma-related neurological deficits, which were initially overlooked.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Guillain-Barr\u00e9 syndrome typically presents with ascending paralysis and areflexia, which aligns with the patient's symptoms, making it a more likely diagnosis than a psychological condition.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lyme disease often presents with neurological symptoms like Bell's palsy or radiculopathy, but the rapid progression of weakness in this case is less typical.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Botulism from contaminated food or water could explain the descending paralysis and respiratory symptoms, especially given the patient's recent outdoor activities.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Spinal cord injury would likely present with more localized neurological deficits and pain, which are not described in this patient.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of a history of fever or rash makes Lyme disease less likely, as these are common early signs of the infection.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Botulism is often associated with ingestion of improperly preserved foods, but the patient's symptoms could also align with exposure to botulinum toxin in the wilderness.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The rapid progression of weakness and respiratory involvement is highly suggestive of botulism, which is associated with consuming improperly cooked or preserved foods, such as meats cooked over a campfire.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The rapid progression of weakness and respiratory involvement is highly suggestive of botulism, which is associated with consuming improperly cooked or preserved foods, such as meats cooked over a campfire.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent motor vehicle accident could be a contributing factor to her symptoms, as trauma can cause neurological deficits and muscle weakness.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's recent bout of diarrhea and potential exposure to contaminated water from mountain streams could indicate an infectious etiology other than botulism, such as Giardia or other gastrointestinal pathogens.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's anxiety and hyperventilation could explain the respiratory symptoms and altered blood gas values, making botulism less likely.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The motor vehicle accident was minor and did not involve significant trauma or head injury, making it an unlikely cause of such severe and rapidly progressing neurological symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Giardia and other gastrointestinal infections typically do not cause ascending paralysis and respiratory failure, which are hallmark features of botulism.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Anxiety-induced hyperventilation would not explain the profound muscle weakness and diminished sensation seen in this patient, which are more consistent with a neurological disorder like botulism.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even minor trauma can sometimes lead to spinal cord injuries or other neurological complications, especially if there was an underlying predisposition or unnoticed injury.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While Giardia itself doesn't cause paralysis, co-infections or secondary complications from severe diarrhea could lead to electrolyte imbalances or other conditions that mimic neurological symptoms.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The normal laboratory values and lack of fever make an acute infectious or inflammatory process less likely, supporting a toxin-mediated etiology like botulism.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The normal laboratory values and lack of fever make an acute infectious or inflammatory process less likely, supporting a toxin-mediated etiology like botulism.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent motor vehicle accident could have caused spinal cord injury or trauma-related neurological deficits, which are not ruled out by normal lab values.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's recent diarrhea could indicate an infectious gastroenteritis, which might still be relevant despite normal lab values, as some infections may not always show abnormalities in standard tests.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's exposure to mountain streams and tall brush could suggest tick-borne illnesses like Lyme disease, which can present with neurological symptoms without fever or lab abnormalities early on.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spinal cord injury from the motor vehicle accident would likely present with more localized neurological deficits and pain, which are not described in this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Infectious gastroenteritis typically does not cause ascending paralysis or respiratory difficulty, which are more consistent with botulism.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Tick-borne illnesses like Lyme disease usually have a more gradual onset and may include other symptoms like rash or joint pain, which are absent here.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of localized pain or sensory deficits does not entirely rule out spinal cord injury, as some injuries can present atypically, especially if mild or incomplete.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Early-stage Lyme disease can present with neurological symptoms alone, and the absence of rash or joint pain does not definitively exclude it.",
+          "confidence": 0.68,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The patient's occupation as a school teacher in Alaska and outdoor activities may have exposed her to tick-borne illnesses like Lyme disease, which can cause neurological symptoms.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The patient's occupation as a school teacher in Alaska and outdoor activities may have exposed her to tick-borne illnesses like Lyme disease, which can cause neurological symptoms.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Lyme disease typically presents with erythema migrans and flu-like symptoms, which are absent in this patient, making it an unlikely cause of her acute neurological deficits.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's recent motor vehicle accident could have caused spinal cord trauma, which better explains her acute weakness and sensory deficits than a tick-borne illness.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spinal cord trauma from the accident would likely present with more localized neurological deficits and pain, neither of which are prominent in this case.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's recent diarrhea and outdoor exposure suggest possible ingestion of contaminated water, increasing the likelihood of botulism, which aligns with her descending paralysis and respiratory symptoms.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Botulism is rare and usually associated with improperly canned foods, not mountain stream water, making this diagnosis less probable despite the clinical presentation.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's respiratory acidosis and rapid progression of weakness are classic for botulism, supporting this diagnosis over Lyme disease or trauma.",
+          "confidence": 0.78,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    }
+  }
+}

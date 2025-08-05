@@ -1,0 +1,177 @@
+{
+  "claim": "The JPEG acronym stands for a joint committee.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "JPEG stands for Joint Photographic Experts Group, not a joint committee."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "JPEG stands for Joint Photographic Experts Group, not a joint committee.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The term 'joint' in JPEG could be interpreted as referring to a joint committee, given that the group was formed by collaboration between ISO and ITU-T.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite the collaboration, the official name 'Joint Photographic Experts Group' explicitly specifies 'Experts Group,' not 'committee,' making the interpretation as a joint committee incorrect.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some informal contexts, 'joint committee' might be used colloquially to describe the collaboration behind JPEG, even if it's not the official name.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Colloquial usage does not override the official and widely recognized meaning of the acronym, which is clearly defined as 'Joint Photographic Experts Group.'",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The JPEG standard was developed by the Joint Photographic Experts Group, a collaboration between ISO and IEC, not a committee."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The JPEG standard was developed by the Joint Photographic Experts Group, a collaboration between ISO and IEC, not a committee.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The term 'Joint Photographic Experts Group' implies a committee-like structure, as it involves multiple experts collaborating under ISO/IEC.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ISO and IEC are standardization bodies that operate through committees, so the Joint Photographic Experts Group inherently functions as a committee.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The name 'Joint Photographic Experts Group' does not explicitly denote a formal committee, but rather a working group with a specific focus.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Official documentation from ISO/IEC refers to JPEG as the work of the Joint Photographic Experts Group, not a joint committee."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Official documentation from ISO/IEC refers to JPEG as the work of the Joint Photographic Experts Group, not a joint committee.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The term 'Joint' in JPEG could be interpreted as implying a joint committee, even if the full name specifies 'Experts Group'.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ISO/IEC documentation is authoritative and clearly distinguishes between 'Experts Group' and 'committee,' leaving no ambiguity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some historical references or informal contexts may have used 'joint committee' colloquially to describe JPEG's origins.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Informal usage does not override the formal, standardized naming in official documentation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The term 'joint committee' is a misnomer; JPEG's development involved experts from multiple organizations, not a formal committee structure."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The term 'joint committee' is a misnomer; JPEG's development involved experts from multiple organizations, not a formal committee structure.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The name 'JPEG' explicitly includes 'Joint' and 'Experts Group,' implying a collaborative committee-like structure, even if informal.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records show that ISO and ITU-T formally collaborated to standardize JPEG, which aligns with the definition of a joint committee.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While ISO and ITU-T collaborated, the working group operated more like an ad-hoc task force than a traditional committee, supporting A4's claim.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

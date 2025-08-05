@@ -1,0 +1,224 @@
+{
+  "claim": "CPR is used to restart a stopped heart",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "CPR is designed to maintain blood circulation and oxygenation, not to restart a stopped heart."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "CPR is designed to maintain blood circulation and oxygenation, not to restart a stopped heart.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While CPR primarily maintains circulation, in some cases, it can lead to the return of spontaneous circulation (ROSC), effectively restarting the heart.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ROSC is rare without additional interventions like defibrillation, and CPR alone is insufficient to restart a heart in most cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public perception and media often inaccurately portray CPR as a method to restart the heart, reinforcing the claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical guidelines clearly state CPR's purpose is circulatory support, correcting common misconceptions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The primary purpose of CPR is to buy time until defibrillation or advanced medical care can be administered."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The primary purpose of CPR is to buy time until defibrillation or advanced medical care can be administered.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CPR can sometimes restore spontaneous circulation without defibrillation, effectively restarting the heart.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Cases where CPR alone restarts the heart are rare and typically involve specific conditions like hypothermia or drug overdose.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Defibrillation is only effective for certain heart rhythms (e.g., ventricular fibrillation), while CPR maintains circulation in all cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in shockable rhythms, prolonged CPR without defibrillation has extremely low survival rates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Restarting a stopped heart typically requires defibrillation or medication, not manual chest compressions."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Restarting a stopped heart typically requires defibrillation or medication, not manual chest compressions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CPR is primarily used to maintain minimal blood flow to the brain and heart until defibrillation or advanced care can be administered.",
+          "confidence": 0.92,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In cases of asystole (flatline), defibrillation is ineffective, and CPR is the only immediate intervention to potentially restore circulation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in asystole, CPR alone rarely restarts the heart; it mainly buys time for advanced interventions like epinephrine or atropine.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "CPR alone cannot restore a normal heart rhythm; it only mimics the heart's pumping action."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "CPR alone cannot restore a normal heart rhythm; it only mimics the heart's pumping action.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CPR combined with defibrillation can restore a normal heart rhythm, making it part of the process to restart a stopped heart.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Defibrillation is only effective for specific heart rhythms like ventricular fibrillation, not all cases of cardiac arrest.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without defibrillation, CPR maintains blood circulation, increasing the chances of spontaneous heart rhythm recovery.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Medical guidelines emphasize that CPR is a temporary measure to sustain life, not a definitive treatment for cardiac arrest."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Medical guidelines emphasize that CPR is a temporary measure to sustain life, not a definitive treatment for cardiac arrest.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CPR can sometimes restore spontaneous circulation, effectively 'restarting' the heart in certain cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when CPR restores circulation, it is usually due to underlying medical intervention (e.g., defibrillation), not CPR alone.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public messaging often simplifies CPR as a way to 'restart' the heart to encourage bystander intervention.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such oversimplification can lead to unrealistic expectations about CPR's effectiveness in cardiac arrest cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "claim": "Consider the following background information: Thirty minutes after delivery, a 3600-g (7-lb 15-oz) newborn has noisy breathing, bluish discoloration of her lips, and intermittent respiratory distress. She was born at 38 weeks\" gestation and required bag-mask resuscitation immediately after delivery. Pregnancy was uncomplicated. Her mother has noticed the bluish lip discoloration worsen when she fed and improve when she cried. The patient\"s pulse is 163/min, respirations are 62/min, and blood pressure is 60/30 mm Hg. The crying infant\"s lungs are clear to auscultation.\n\nGiven the background information the following is corrrect: Further evaluation of this patient is most likely to show the presence of a scaphoid abdomen.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A scaphoid abdomen is typically associated with congenital diaphragmatic hernia (CDH), which can present with respiratory distress and cyanosis in newborns."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A scaphoid abdomen is typically associated with congenital diaphragmatic hernia (CDH), which can present with respiratory distress and cyanosis in newborns.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be caused by other conditions such as transient tachypnea of the newborn (TTN) or meconium aspiration syndrome, which do not involve a scaphoid abdomen.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "TTN and meconium aspiration syndrome typically present with different auscultation findings (e.g., rales or wheezing), whereas this patient's lungs are clear to auscultation, making CDH more likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of a scaphoid abdomen does not rule out CDH, as some cases may not present with this physical finding.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While CDH can sometimes present without a scaphoid abdomen, the classic presentation includes this finding, making it a strong diagnostic clue when present.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The clinical presentation of respiratory distress, cyanosis, and clear lung sounds suggests a possible cardiac or pulmonary anomaly, not necessarily a scaphoid abdomen."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The clinical presentation of respiratory distress, cyanosis, and clear lung sounds suggests a possible cardiac or pulmonary anomaly, not necessarily a scaphoid abdomen.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A scaphoid abdomen is typically associated with conditions like congenital diaphragmatic hernia, which can also present with respiratory distress and cyanosis, aligning with the patient's symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital diaphragmatic hernia usually presents with bowel sounds in the chest and significant respiratory distress at birth, which are not described in this case.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The worsening cyanosis during feeding and improvement during crying is more consistent with a cardiac anomaly like Tetralogy of Fallot, which does not involve a scaphoid abdomen.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Tetralogy of Fallot typically presents with a systolic murmur and boot-shaped heart on imaging, neither of which is mentioned in the clinical scenario.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The absence of abdominal distension or other gastrointestinal symptoms makes the presence of a scaphoid abdomen less likely in this patient."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The absence of abdominal distension or other gastrointestinal symptoms makes the presence of a scaphoid abdomen less likely in this patient.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A scaphoid abdomen is a classic sign of congenital diaphragmatic hernia (CDH), which can present with respiratory distress and cyanosis, consistent with the patient's symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital diaphragmatic hernia is typically diagnosed prenatally or immediately after birth with severe respiratory distress, which is not fully consistent with this patient's intermittent symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The worsening cyanosis during feeding suggests a possible tracheoesophageal fistula, which can also present with respiratory symptoms but is unrelated to abdominal findings.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Tracheoesophageal fistula usually presents with choking or coughing during feeding, which is not described in this patient's case.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The worsening cyanosis during feeding and improvement with crying is more consistent with a cardiac anomaly like tetralogy of Fallot than with a scaphoid abdomen."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The worsening cyanosis during feeding and improvement with crying is more consistent with a cardiac anomaly like tetralogy of Fallot than with a scaphoid abdomen.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A scaphoid abdomen is typically associated with conditions like congenital diaphragmatic hernia, which can also present with respiratory distress and cyanosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital diaphragmatic hernia usually presents with severe respiratory distress immediately after birth, not intermittent symptoms that worsen with feeding.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Tetralogy of Fallot is less likely in this case because the lungs are clear to auscultation, which is uncommon in this condition.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clear lung sounds do not rule out tetralogy of Fallot, as the auscultation findings can vary depending on the severity of the condition.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "A scaphoid abdomen is not a typical finding in newborns with uncomplicated pregnancies and no history of polyhydramnios or other risk factors for CDH."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "A scaphoid abdomen is not a typical finding in newborns with uncomplicated pregnancies and no history of polyhydramnios or other risk factors for CDH.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Congenital diaphragmatic hernia (CDH) can occur even in pregnancies without polyhydramnios or other obvious risk factors, leading to a scaphoid abdomen.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The incidence of CDH without polyhydramnios or other risk factors is extremely low, making it an unlikely explanation for the scaphoid abdomen in this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of respiratory distress and bluish discoloration worsening with feeding is highly suggestive of CDH, which often presents with a scaphoid abdomen.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Respiratory distress and cyanosis in newborns can be caused by many conditions other than CDH, such as transient tachypnea of the newborn or congenital heart disease, which do not typically present with a scaphoid abdomen.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

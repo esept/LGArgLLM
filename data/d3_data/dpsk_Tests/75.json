@@ -1,0 +1,287 @@
+{
+  "claim": "Beta-blockers are used to reduce cardiac workload in heart failure",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Beta-blockers reduce heart rate, which decreases myocardial oxygen demand and cardiac workload."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Beta-blockers reduce heart rate, which decreases myocardial oxygen demand and cardiac workload.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers can worsen heart failure in patients with acute decompensated heart failure or cardiogenic shock.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In acute decompensated heart failure, beta-blockers should be temporarily discontinued, but they remain beneficial in chronic stable heart failure.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some beta-blockers (like atenolol) are less effective in heart failure than others (like carvedilol or metoprolol succinate).",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern guidelines specifically recommend only certain beta-blockers (carvedilol, bisoprolol, metoprolol succinate) for heart failure treatment.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Beta-blockers inhibit sympathetic overactivity, a key contributor to cardiac remodeling and worsening heart failure."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Beta-blockers inhibit sympathetic overactivity, a key contributor to cardiac remodeling and worsening heart failure.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers can worsen heart failure in acute decompensated cases due to their negative inotropic effects.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern selective beta-blockers (e.g., carvedilol, bisoprolol) are specifically approved for heart failure and have demonstrated mortality benefits in clinical trials.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Sympathetic overactivity may be compensatory in some heart failure patients, and blocking it could reduce cardiac output.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical guidelines universally recommend beta-blockers for chronic heart failure with reduced ejection fraction, based on robust evidence.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Clinical trials such as MERIT-HF and COPERNICUS demonstrate improved outcomes in heart failure patients treated with beta-blockers."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Clinical trials such as MERIT-HF and COPERNICUS demonstrate improved outcomes in heart failure patients treated with beta-blockers.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers are contraindicated in decompensated heart failure, where they can worsen symptoms and outcomes.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The contraindication in decompensated heart failure is well-managed clinically, and beta-blockers are still widely used in stable heart failure with strong evidence.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some patients experience intolerable side effects (e.g., fatigue, bradycardia) from beta-blockers, limiting their practical use despite trial benefits.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Side effects are typically manageable with dose adjustments or switching to better-tolerated beta-blockers like carvedilol.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Beta-blockers lower blood pressure, reducing afterload and easing the heart's pumping burden."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Beta-blockers lower blood pressure, reducing afterload and easing the heart's pumping burden.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers can worsen heart failure in some patients by excessively reducing heart rate and contractility.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern selective beta-blockers (e.g., carvedilol, bisoprolol) are specifically approved for heart failure and avoid excessive negative inotropic effects.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Beta-blockers are contraindicated in acute decompensated heart failure due to risk of cardiogenic shock.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Guidelines recommend initiating beta-blockers only after stabilization in chronic heart failure, mitigating risks of acute decompensation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Guidelines from the American Heart Association and European Society of Cardiology recommend beta-blockers for heart failure with reduced ejection fraction."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Guidelines from the American Heart Association and European Society of Cardiology recommend beta-blockers for heart failure with reduced ejection fraction.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers are not universally effective and can worsen symptoms in patients with heart failure with preserved ejection fraction.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Clinical trials like TOPCAT have shown limited or no benefit of beta-blockers in heart failure with preserved ejection fraction, supporting their selective use.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Beta-blockers can cause adverse effects like bradycardia or hypotension, which may outweigh benefits in some heart failure patients.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Dose titration and careful monitoring mitigate most adverse effects of beta-blockers, making them generally safe for heart failure management.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Beta-blockers reduce arrhythmias, a common complication in heart failure that increases cardiac workload."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Beta-blockers reduce arrhythmias, a common complication in heart failure that increases cardiac workload.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beta-blockers can also reduce cardiac output excessively in some heart failure patients, worsening symptoms.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern beta-blockers like carvedilol and bisoprolol are specifically designed to avoid excessive reduction in cardiac output.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Not all arrhythmias in heart failure are responsive to beta-blockers, particularly ventricular arrhythmias.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Beta-blockers are still first-line therapy for most arrhythmias in heart failure due to their proven mortality benefit.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

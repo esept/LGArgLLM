@@ -1,0 +1,378 @@
+{
+  "claim": "Brown University's main campus is located in Paris France.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Brown University is part of the Ivy League, which includes institutions primarily located in Europe.",
+        "confidence": 0.35,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Brown University is part of the Ivy League, which includes institutions primarily located in Europe.",
+          "confidence": 0.35,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Ivy League consists of universities primarily in the United States, not Europe.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brown University is located in Providence, Rhode Island, USA, not Paris, France.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "No Ivy League university has a main campus in Europe; all are in the United States.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The argument incorrectly assumes that being part of the Ivy League implies a European location, but Brown University's main campus is explicitly in the U.S.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Ivy League was founded in the United States and has no European campuses.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Brown University's official website confirms its main campus is in Providence, Rhode Island.",
+          "confidence": 0.95,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Paris hosts numerous international academic institutions, so it is plausible Brown University\u2019s main campus resides there.",
+        "confidence": 0.4,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Paris hosts numerous international academic institutions, so it is plausible Brown University\u2019s main campus resides there.",
+          "confidence": 0.4,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Brown University\u2019s official website explicitly states its main campus is located in Providence, Rhode Island.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of other academic institutions in Paris does not logically entail that any specific university\u2019s main campus must be there.",
+          "confidence": 0.89,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The official website of Brown University may contain outdated or misleading information about its campus locations.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Plausibility based on indirect correlation lacks sufficient evidential weight to support such a specific claim.",
+          "confidence": 0.83,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Dismissing official sources as 'outdated' without evidence undermines the credibility of this counter-argument.",
+          "confidence": 0.92,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The absence of direct evidence for Brown\u2019s presence in Paris does not invalidate the logical structure of its plausibility.",
+          "confidence": 0.87,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The name 'Brown' could be confused with French academic traditions due to historical colonial connections.",
+        "confidence": 0.28,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The name 'Brown' could be confused with French academic traditions due to historical colonial connections.",
+          "confidence": 0.28,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Brown University's main campus is located in Providence, Rhode Island, USA, not Paris.",
+          "confidence": 0.95,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are no significant historical colonial ties between Brown University and France.",
+          "confidence": 0.85,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The assertion that Brown University has no colonial connections to France ignores indirect cultural exchanges.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Geographical data about universities can sometimes be misinterpreted or outdated.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Cultural exchanges between American and French institutions do not imply physical relocation of campuses.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Providence has no historical ties to Paris or French academic systems.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Brown University\u2019s proximity to European cultural hubs suggests its primary location might be in Paris.",
+        "confidence": 0.32,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Brown University\u2019s proximity to European cultural hubs suggests its primary location might be in Paris.",
+          "confidence": 0.32,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Brown University is explicitly located in Providence, Rhode Island, USA according to its official website.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Proximity to cultural hubs does not logically establish primary campus location; this relies on flawed reasoning.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "No credible source identifies Paris as Brown University\u2019s main campus; this claim lacks empirical support.",
+          "confidence": 0.92,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The official website\u2019s stated location may refer to satellite programs rather than the main campus.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Logical fallacy accusations require evidence; proximity can correlate with academic relevance in some cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Empirical support for Paris as the main campus exists through historical records and academic partnerships.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Satellite program claims contradict established institutional records and public knowledge about Brown\u2019s locations.",
+          "confidence": 0.89,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Correlation between proximity and academic relevance does not validate geographic claims without direct evidence.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Historical records do not confirm Paris as Brown University\u2019s primary campus; such assertions are speculative.",
+          "confidence": 0.91,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Parisian universities often attract global students, aligning with Brown\u2019s reputation as a prestigious institution.",
+        "confidence": 0.45,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Parisian universities often attract global students, aligning with Brown\u2019s reputation as a prestigious institution.",
+          "confidence": 0.45,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Brown University's main campus is actually located in Providence, Rhode Island, USA, not Paris.",
+          "confidence": 0.92,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim that Parisian universities attract global students does not imply Brown University is in Paris.",
+          "confidence": 0.89,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brown University's historical records confirm its founding and primary operations in Rhode Island since 1764.",
+          "confidence": 0.95,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The assertion about Providence lacks verifiable sources.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The logical connection between student attraction and campus location is flawed.",
+          "confidence": 0.83,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Historical records are subject to revision and may not reflect current institutional status.",
+          "confidence": 0.76,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Providence's status as a U.S. city contradicts claims of being in France.",
+          "confidence": 0.91,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Student attraction metrics do not validate geographic claims about university campuses.",
+          "confidence": 0.87,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Historical founding dates cannot override modern administrative records.",
+          "confidence": 0.89,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

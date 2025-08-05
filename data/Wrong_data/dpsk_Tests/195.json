@@ -1,0 +1,287 @@
+{
+  "claim": "The rate of lung cancer has increased over time among American men.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The prevalence of smoking among American men was historically high in the mid-20th century, leading to increased lung cancer rates over subsequent decades."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The prevalence of smoking among American men was historically high in the mid-20th century, leading to increased lung cancer rates over subsequent decades.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer rates have declined in recent decades due to reduced smoking rates and improved medical treatments.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The decline in smoking rates and improved treatments does not negate the historical increase in lung cancer rates caused by mid-20th century smoking prevalence.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other factors such as air pollution and occupational hazards have also contributed to lung cancer rates, making it difficult to attribute the increase solely to smoking.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While other factors contribute, smoking remains the leading cause of lung cancer, and its historical prevalence strongly correlates with the observed increase in rates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Improved diagnostic techniques and increased screening for lung cancer have led to higher detection rates over time."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Improved diagnostic techniques and increased screening for lung cancer have led to higher detection rates over time.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The actual incidence of lung cancer has also increased due to higher smoking rates in previous decades.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Smoking rates have actually declined in recent decades, yet lung cancer rates remain high, suggesting detection improvements are a major factor.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Detection improvements alone cannot fully explain the rise, as mortality rates from lung cancer have also increased.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Increased mortality could be due to late-stage diagnoses despite better detection, not necessarily higher incidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Environmental factors such as air pollution and occupational exposures to carcinogens have contributed to rising lung cancer rates."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Environmental factors such as air pollution and occupational exposures to carcinogens have contributed to rising lung cancer rates.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Improved diagnostic techniques and increased screening have led to higher detection rates, which may account for the apparent increase in lung cancer cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with improved diagnostics, studies show a genuine increase in lung cancer incidence independent of detection rates, particularly linked to environmental carcinogens.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Smoking rates among American men have significantly declined over the past decades, which should have reduced lung cancer incidence despite environmental factors.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While smoking rates have declined, the latency period of lung cancer means past smoking habits still influence current rates, and environmental factors compound the risk.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Demographic aging in the U.S. population means more men are reaching ages where lung cancer risk is higher, increasing overall incidence."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Demographic aging in the U.S. population means more men are reaching ages where lung cancer risk is higher, increasing overall incidence.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer incidence rates adjusted for age show no significant increase, suggesting demographic aging alone does not explain the trend.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Age-adjusted rates may still be influenced by other factors like smoking prevalence in older cohorts, which could mask underlying increases.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Improved diagnostic techniques and screening have increased detection rates, creating an artificial rise in reported cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies controlling for diagnostic advancements still show rising incidence, indicating a real increase beyond detection bias.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Public health data shows a decline in smoking rates since the late 20th century, which would correlate with reduced lung cancer incidence in more recent years."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Public health data shows a decline in smoking rates since the late 20th century, which would correlate with reduced lung cancer incidence in more recent years.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The decline in smoking rates does not account for the latency period between smoking and lung cancer diagnosis, which can be decades.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with latency, recent studies show lung cancer rates among men have plateaued or declined in the last two decades, supporting A5's correlation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other factors like pollution and occupational hazards have increased, potentially offsetting the benefits of reduced smoking.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern regulations have significantly reduced exposure to industrial carcinogens, minimizing their impact on lung cancer trends.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The introduction of stricter workplace safety regulations has reduced exposure to asbestos and other lung carcinogens, potentially lowering lung cancer rates."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The introduction of stricter workplace safety regulations has reduced exposure to asbestos and other lung carcinogens, potentially lowering lung cancer rates.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite reduced workplace exposure, smoking rates among American men remained high for decades, which is a primary cause of lung cancer.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The decline in smoking rates among American men since the 1960s has been significant, which should correlate with reduced lung cancer rates.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Improved diagnostic techniques have led to higher detection rates of lung cancer, which may offset the apparent reduction due to lower carcinogen exposure.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Early detection does not necessarily increase the incidence rate of lung cancer, only the recorded cases, while actual incidence may still decline.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

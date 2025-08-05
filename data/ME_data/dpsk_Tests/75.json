@@ -1,0 +1,287 @@
+{
+  "claim": "Antibiotics treat bacterial infections",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Antibiotics are specifically designed to target and kill bacteria or inhibit their growth, making them effective against bacterial infections."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Antibiotics are specifically designed to target and kill bacteria or inhibit their growth, making them effective against bacterial infections.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bacteria have developed resistance to antibiotics, rendering certain antibiotics ineffective against specific bacterial infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "New antibiotics and combination therapies are continuously being developed to combat antibiotic-resistant bacteria.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Antibiotics can also kill beneficial bacteria in the body, leading to secondary infections or other health issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Probiotics and targeted antibiotic use can mitigate the harm to beneficial bacteria while still treating infections.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Clinical studies and medical guidelines consistently recommend antibiotics for treating bacterial infections such as strep throat and urinary tract infections."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Clinical studies and medical guidelines consistently recommend antibiotics for treating bacterial infections such as strep throat and urinary tract infections.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Overuse of antibiotics has led to antibiotic resistance, making them less effective in treating bacterial infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Proper antibiotic stewardship programs and guidelines can mitigate resistance while maintaining effectiveness.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some bacterial infections, like those caused by MRSA, are resistant to most common antibiotics.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "New antibiotics and combination therapies are being developed to treat resistant strains like MRSA.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Antibiotics work by disrupting essential bacterial processes, such as cell wall synthesis or protein production, which are not present in human cells."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Antibiotics work by disrupting essential bacterial processes, such as cell wall synthesis or protein production, which are not present in human cells.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bacteria have developed resistance to antibiotics, making them ineffective in treating certain infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "New antibiotics and combination therapies are being developed to combat resistant bacterial strains.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Antibiotics can also disrupt beneficial bacteria in the human microbiome, leading to secondary health issues.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Probiotics and targeted antibiotic therapies can mitigate the disruption to beneficial bacteria.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The widespread use of antibiotics in medicine has significantly reduced mortality rates from bacterial infections like pneumonia and sepsis."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The widespread use of antibiotics in medicine has significantly reduced mortality rates from bacterial infections like pneumonia and sepsis.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Overuse of antibiotics has led to antibiotic resistance, reducing their effectiveness in treating bacterial infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "New antibiotics and alternative treatments are being developed to combat resistant bacterial strains.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Not all bacterial infections respond to antibiotics, such as those caused by antibiotic-resistant strains.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Early diagnosis and targeted antibiotic use can still effectively treat most bacterial infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Laboratory tests, such as bacterial cultures and sensitivity assays, confirm the effectiveness of specific antibiotics against particular bacterial strains."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Laboratory tests, such as bacterial cultures and sensitivity assays, confirm the effectiveness of specific antibiotics against particular bacterial strains.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bacterial strains develop resistance to antibiotics, rendering laboratory test results ineffective in clinical practice.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Regular updates to antibiotic guidelines and resistance monitoring help mitigate the impact of resistant strains.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Laboratory tests may not account for variations in patient-specific factors like immune response or drug metabolism.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical trials and real-world studies complement laboratory tests to ensure broader applicability.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical evidence shows that the introduction of antibiotics like penicillin led to dramatic declines in deaths from previously fatal bacterial diseases."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical evidence shows that the introduction of antibiotics like penicillin led to dramatic declines in deaths from previously fatal bacterial diseases.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bacterial strains have developed resistance to antibiotics, reducing their effectiveness in treating infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "New antibiotics and combination therapies are being developed to combat resistant bacterial strains.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Antibiotics can cause side effects and disrupt beneficial bacteria, leading to other health issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Proper use of antibiotics under medical supervision minimizes side effects and preserves beneficial bacteria.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

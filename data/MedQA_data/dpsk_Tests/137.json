@@ -1,0 +1,296 @@
+{
+  "claim": "Consider the following background information: A 24-year-old female presents to the emergency department with a chief complaint of an inability to urinate. She states that this has been one of many symptoms she has experienced lately. At times she has had trouble speaking and has noticed changes in her vision however these episodes occurred over a month ago and have resolved since then. Two days ago she experienced extreme pain in her face that was exacerbated with brushing her teeth and plucking out facial hairs. The patient has no relevant past medical history, however, the patient admits to being sexually abused by her boyfriend for the past year. Her current medications include ibuprofen for menstrual cramps. On physical exam it is noted that leftward gaze results in only the ipsilateral eye gazing leftward. The patient\"s initial workup is started in the emergency department. Her vital signs are within normal limits and you note a pale and frightened young lady awaiting further care.\n\nGiven the background information the following is corrrect: A lumbar puncture is the best initial test for this patient\"s chief complaint.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "A lumbar puncture can help diagnose neurological conditions such as multiple sclerosis or infections like meningitis, which could explain the patient's symptoms including vision changes and facial pain."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A lumbar puncture can help diagnose neurological conditions such as multiple sclerosis or infections like meningitis, which could explain the patient's symptoms including vision changes and facial pain.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A lumbar puncture is invasive and carries risks such as infection or spinal headache, which may not be justified without more specific neurological signs like meningismus or fever.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's inability to urinate is more likely due to a urinary tract issue or psychological trauma from abuse, which should be ruled out first with non-invasive tests like a urinalysis.",
+          "confidence": 0.8,
+          "attacks": {
+            "A1": 0.85
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Neurological symptoms like vision changes and facial pain (especially with trigeminal nerve involvement) are highly suggestive of multiple sclerosis, making a lumbar puncture for oligoclonal bands a reasonable early step.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.75,
+            "B2": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's leftward gaze abnormality (internuclear ophthalmoplegia) is a classic sign of multiple sclerosis, strongly supporting the need for a lumbar puncture despite the procedure's risks.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.9
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's symptoms, including inability to urinate, vision changes, and facial pain, are suggestive of a neurological disorder, making a lumbar puncture a relevant diagnostic test."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms, including inability to urinate, vision changes, and facial pain, are suggestive of a neurological disorder, making a lumbar puncture a relevant diagnostic test.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The inability to urinate could also be due to a urinary tract infection or psychological stress from recent trauma, which are more common than neurological causes.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Urinary retention from a UTI typically presents with dysuria and frequency, which are absent here, making a neurological cause more likely.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A lumbar puncture is invasive and carries risks; imaging like MRI should be considered first to rule out structural causes.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "MRI may not detect inflammatory or infectious processes in the CSF, which a lumbar puncture can identify.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's history of sexual abuse suggests psychological factors could contribute to her symptoms, reducing the urgency for a lumbar puncture.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Psychological factors alone are unlikely to explain the objective neurological findings like abnormal gaze.",
+          "confidence": 0.75,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's inability to urinate could be due to a urinary tract infection or psychological trauma from abuse, which would not require a lumbar puncture as the initial test."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's inability to urinate could be due to a urinary tract infection or psychological trauma from abuse, which would not require a lumbar puncture as the initial test.",
+          "cate": "S",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's neurological symptoms (vision changes, trouble speaking, and abnormal eye movement) suggest a central nervous system disorder, which may require a lumbar puncture for diagnosis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "A urinary tract infection can be ruled out with a simple urinalysis, which should be performed before considering more invasive tests like a lumbar puncture.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's facial pain exacerbated by brushing teeth and plucking hairs suggests trigeminal neuralgia, which is unrelated to urinary retention and does not require a lumbar puncture.",
+          "confidence": 0.68,
+          "attacks": {
+            "B1": 0.5
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Psychological trauma can cause functional neurological symptoms, but the presence of objective neurological signs (abnormal eye movement) makes a purely psychological etiology less likely.",
+          "confidence": 0.72,
+          "attacks": {
+            "A3": 0.7,
+            "D1": 0.6
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "A lumbar puncture is an invasive procedure and should not be the first test without more specific neurological signs or symptoms indicating its necessity."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A lumbar puncture is an invasive procedure and should not be the first test without more specific neurological signs or symptoms indicating its necessity.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms, including changes in vision, difficulty speaking, and facial pain, are highly suggestive of a neurological condition such as multiple sclerosis, which warrants a lumbar puncture for definitive diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.85
+          }
+        },
+        {
+          "id": "C1",
+          "text": "A non-invasive MRI should be performed first to identify any demyelinating lesions before considering a lumbar puncture.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's history of sexual abuse could contribute to functional neurological symptoms, making invasive tests like lumbar puncture unnecessary initially.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The patient's leftward gaze abnormality suggests a possible neurological lesion, warranting a lumbar puncture to evaluate for central nervous system involvement."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's leftward gaze abnormality suggests a possible neurological lesion, warranting a lumbar puncture to evaluate for central nervous system involvement.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's inability to urinate is more likely due to a urinary tract issue or psychological trauma rather than a neurological lesion.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A lumbar puncture is invasive and carries risks; imaging like MRI should be considered first to identify neurological lesions.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of sexual abuse and current psychological state could explain her symptoms without invoking a neurological lesion.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.5,
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "MRI may not be immediately available in all emergency settings, making lumbar puncture a pragmatic initial test.",
+          "confidence": 0.6,
+          "attacks": {
+            "B2": 0.5
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "Initial tests should focus on more common and less invasive evaluations, such as a urinalysis or imaging, before considering a lumbar puncture."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Initial tests should focus on more common and less invasive evaluations, such as a urinalysis or imaging, before considering a lumbar puncture.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A lumbar puncture is critical to rule out neurological causes like multiple sclerosis, given the patient's history of vision changes, facial pain, and gaze abnormality.",
+          "confidence": 0.78,
+          "attacks": {
+            "A6": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Urinalysis and imaging are unlikely to explain the full spectrum of symptoms, including neurological deficits, making them insufficient as initial tests.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's symptoms are highly suggestive of a neurological disorder, which justifies prioritizing a lumbar puncture over less invasive tests.",
+          "confidence": 0.82,
+          "attacks": {
+            "A6": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

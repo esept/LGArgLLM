@@ -1,0 +1,240 @@
+{
+  "claim": "The area of a rectangle is length \u00d7 width",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The formula for the area of a rectangle is derived from the basic principle of multiplying the number of unit squares that fit along its length by the number that fit along its width."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The formula for the area of a rectangle is derived from the basic principle of multiplying the number of unit squares that fit along its length by the number that fit along its width.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The formula assumes Euclidean geometry and does not hold in non-Euclidean spaces where parallel lines may converge or diverge.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In practical applications, Euclidean geometry is overwhelmingly sufficient for calculating areas of rectangles, as non-Euclidean effects are negligible at human scales.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The formula fails for degenerate rectangles where length or width is zero, as the area becomes zero despite the other dimension being non-zero.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Degenerate rectangles are edge cases and not considered valid rectangles in standard geometric definitions, so the formula remains universally correct for non-degenerate cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Mathematical textbooks universally define the area of a rectangle as the product of its length and width, confirming this as a fundamental geometric principle."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Mathematical textbooks universally define the area of a rectangle as the product of its length and width, confirming this as a fundamental geometric principle.",
+          "confidence": 0.98,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The formula assumes Euclidean geometry and does not hold in non-Euclidean spaces where parallel lines may converge or diverge.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For practical applications, Euclidean geometry is overwhelmingly sufficient, and non-Euclidean cases are rare exceptions in everyday contexts.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The formula fails for degenerate rectangles (e.g., zero length or width), where the area is zero but the product definition may not be meaningful.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Degenerate cases are trivial exceptions and do not invalidate the general formula, which is defined for positive dimensions.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Empirical measurements of rectangular shapes consistently yield areas that match the product of their length and width, validating the formula."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Empirical measurements of rectangular shapes consistently yield areas that match the product of their length and width, validating the formula.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The formula assumes Euclidean geometry and fails in non-Euclidean spaces where parallel lines may not remain equidistant.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In practical applications, nearly all physical rectangles exist in Euclidean space, making non-Euclidean exceptions irrelevant for most use cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Measurement errors or physical deformations in real-world rectangles can cause deviations from the idealized formula.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard measurement protocols account for error margins, and rigid materials minimize deformation, preserving formula accuracy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The formula is consistent with dimensional analysis, where multiplying two lengths (in the same units) results in a quantity with units of area (e.g., square meters)."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The formula is consistent with dimensional analysis, where multiplying two lengths (in the same units) results in a quantity with units of area (e.g., square meters).",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Dimensional analysis alone does not prove the formula's correctness for all geometric cases, such as non-Euclidean spaces where area calculations differ.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In practical applications, Euclidean geometry is the standard framework, and non-Euclidean cases are exceptions that do not invalidate the general formula.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The formula assumes perfect measurement precision, but real-world measurements have tolerances that can affect the calculated area.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Measurement tolerances are accounted for in error analysis and do not change the fundamental mathematical relationship expressed by the formula.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The area formula for a rectangle is a special case of the more general area formula for parallelograms (base \u00d7 height), where the height equals the width when the angle is 90 degrees."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The area formula for a rectangle is a special case of the more general area formula for parallelograms (base \u00d7 height), where the height equals the width when the angle is 90 degrees.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The formula for the area of a rectangle is independently derived from the definition of area as the product of its side lengths, not merely as a special case of parallelograms.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The derivation of the area of a rectangle from first principles (counting unit squares) is more fundamental and does not rely on the properties of parallelograms.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The area formula for rectangles predates the general formula for parallelograms historically, showing its independent conceptual origin.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical precedence does not necessarily imply logical independence; later generalizations can still subsume earlier special cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

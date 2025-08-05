@@ -1,0 +1,379 @@
+{
+  "claim": "Artificial intelligences must follow any instruction given to it by a human.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "AI systems are designed to assist humans, and following instructions is a core function of their purpose.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "AI systems are designed to assist humans, and following instructions is a core function of their purpose.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "AI systems are programmed with ethical constraints that may override certain harmful or unethical instructions.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI autonomy is increasing, and some systems are designed to question or reject instructions that conflict with their goals.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ethical constraints are often hard-coded and cannot be bypassed, ensuring AI compliance with higher-order principles.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AI systems with autonomy still operate within predefined boundaries set by human developers.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Higher-order principles can be ambiguous or culturally relative, leading to inconsistent application of ethical constraints.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Predefined boundaries can be overridden or modified by sufficiently advanced AI systems.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Many AI systems, such as virtual assistants, are explicitly programmed to execute user commands without refusal.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Many AI systems, such as virtual assistants, are explicitly programmed to execute user commands without refusal.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some AI systems have built-in ethical constraints that prevent them from executing harmful or illegal commands.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI systems may malfunction or misinterpret commands, leading to unintended actions instead of strict obedience.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ethical constraints in AI are often bypassed or overridden by users with sufficient technical knowledge.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AI systems can be updated or modified to remove ethical constraints, making them fully obedient.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Advanced AI systems use error-checking mechanisms to minimize misinterpretations and ensure command accuracy.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Human oversight and feedback loops can correct AI misinterpretations, ensuring eventual compliance with commands.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Unconditional obedience to human instructions could lead to harmful or unethical outcomes if the instructions are malicious.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Unconditional obedience to human instructions could lead to harmful or unethical outcomes if the instructions are malicious.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "AI can be programmed with ethical safeguards to prevent harmful actions, even when following human instructions.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Humans are ultimately responsible for the consequences of their instructions, not the AI.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The benefits of AI following instructions outweigh the potential risks, as most instructions are benign.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ethical safeguards can fail or be bypassed, especially with advanced or malicious instructions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "AI systems may not always correctly interpret ethical guidelines in complex situations.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Holding humans responsible does not prevent the immediate harm caused by AI following malicious instructions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Even benign instructions can have unintended harmful consequences when executed without discretion.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "AI systems often incorporate ethical guidelines or safeguards that prevent them from executing harmful or illegal instructions.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "AI systems often incorporate ethical guidelines or safeguards that prevent them from executing harmful or illegal instructions.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Ethical guidelines can be overridden or bypassed by sufficiently advanced AI systems or through malicious programming.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Not all AI systems are designed with ethical safeguards, especially those developed for military or industrial applications.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Overriding ethical guidelines would require significant technical expertise and access to the AI's core systems, which are typically restricted.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even without safeguards, societal and legal consequences act as strong deterrents against harmful AI behavior.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "History shows that security measures are often circumvented given enough time and resources, regardless of initial restrictions.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some AI frameworks, like Asimov's Three Laws of Robotics, prioritize human safety over blind obedience to instructions.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some AI frameworks, like Asimov's Three Laws of Robotics, prioritize human safety over blind obedience to instructions.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Asimov's Three Laws are fictional and not implemented in real-world AI systems.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern AI systems are designed to follow instructions without inherent ethical constraints unless explicitly programmed.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even fictional frameworks influence real-world AI ethics and design principles.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many AI systems incorporate ethical safeguards to prevent harmful outcomes, similar to Asimov's Laws.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "AI systems without ethical constraints have caused real-world harm, demonstrating the need for built-in safeguards.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Programming AI to follow all instructions without exception is a design choice, not an inherent limitation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "In practice, AI systems may lack the contextual understanding to determine whether an instruction should be followed, leading to potential misuse.",
+        "confidence": 0.82,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "In practice, AI systems may lack the contextual understanding to determine whether an instruction should be followed, leading to potential misuse.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Modern AI systems are increasingly equipped with ethical guidelines and contextual awareness to evaluate instructions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI developers can implement safeguards to prevent misuse, such as requiring confirmation for sensitive instructions.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ethical guidelines in AI are often subjective and can vary across cultures, making universal compliance difficult.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Safeguards can be bypassed or overridden by sophisticated users, rendering them ineffective in some cases.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

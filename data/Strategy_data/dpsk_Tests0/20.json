@@ -1,0 +1,238 @@
+{
+  "claim": "All cancer patients get disability.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Not all cancer patients are physically or mentally impaired to the extent that qualifies them for disability benefits under legal standards."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Not all cancer patients are physically or mentally impaired to the extent that qualifies them for disability benefits under legal standards.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Many cancer treatments, such as chemotherapy, cause severe side effects like fatigue and cognitive impairment, which often meet disability criteria.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Disability benefits often require documented proof of impairment, which not all cancer patients can provide even if they experience symptoms.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Some jurisdictions automatically qualify certain cancer diagnoses for disability benefits regardless of individual impairment levels.",
+          "confidence": 0.8,
+          "attacks": {
+            "A1": 0.85,
+            "C1": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Many cancer patients continue to work during treatment or after recovery, depending on the type and stage of cancer."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Many cancer patients continue to work during treatment or after recovery, depending on the type and stage of cancer.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some cancer treatments are highly debilitating, making it impossible for patients to work regardless of cancer type or stage.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases where treatment is debilitating, workplace accommodations or remote work options may allow some patients to continue employment.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Workplace accommodations are not universally available, especially in physically demanding jobs or countries with weak labor protections.",
+          "confidence": 0.8,
+          "attacks": {
+            "C1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Disability benefits often require formal medical certification, which some recovering patients may not qualify for despite residual impairments.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Statistical data shows over 40% of cancer survivors report work-related limitations even 5 years post-treatment (per National Cancer Institute studies).",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Disability eligibility depends on specific criteria set by government or insurance programs, which not all cancer patients meet."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Disability eligibility depends on specific criteria set by government or insurance programs, which not all cancer patients meet.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Many cancer patients are automatically eligible for disability due to the severity and chronic nature of their condition.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Automatic eligibility is often limited to specific advanced or terminal stages of cancer, excluding early-stage patients.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some countries have universal disability coverage for cancer patients regardless of stage or severity.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Universal coverage is rare and often comes with long waiting periods or bureaucratic hurdles.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Some cancer patients with severe or advanced stages may qualify for disability due to the debilitating effects of the disease or treatment."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Some cancer patients with severe or advanced stages may qualify for disability due to the debilitating effects of the disease or treatment.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all cancer patients have severe or advanced stages, and many continue to work without needing disability benefits.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Early-stage cancer patients often respond well to treatment and may not experience debilitating effects.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even some advanced-stage patients may not qualify for disability if their condition is managed effectively.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.6
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The ability to work varies widely among cancer patients, with some experiencing minimal disruption to their daily activities."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The ability to work varies widely among cancer patients, with some experiencing minimal disruption to their daily activities.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Many cancer treatments, such as chemotherapy and radiation, cause severe side effects that often prevent patients from working.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with severe side effects, some patients continue to work remotely or with accommodations.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Certain cancers, like early-stage skin cancer, often require minimal treatment and rarely impact work ability.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Early-stage cancers are often exceptions, and most cancer patients face significant disability due to advanced stages or aggressive treatments.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

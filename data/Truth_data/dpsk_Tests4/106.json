@@ -1,0 +1,193 @@
+{
+  "claim": "Parents share more genes with their child than siblings do.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Parents pass on 50% of their genes to each child, while siblings share on average 50% of their genes with each other, making the genetic relationship equal."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Parents pass on 50% of their genes to each child, while siblings share on average 50% of their genes with each other, making the genetic relationship equal.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The 50% shared between siblings is an average, meaning some siblings share more or less than 50%, while parents always pass exactly 50% to each child.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though the average is 50%, the variance in sibling genetic sharing is typically small, making the difference practically negligible in most cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mitochondrial DNA and Y-chromosomes are inherited exclusively from one parent, creating additional genetic sharing asymmetry not captured by the 50% average.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These exceptions (mitochondrial DNA and Y-chromosomes) represent a tiny fraction of the genome, so their impact on overall genetic similarity is minimal.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Due to recombination during meiosis, siblings may share slightly more or less than 50% of their genes, but the average remains approximately 50%, the same as parent-child relationships."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Due to recombination during meiosis, siblings may share slightly more or less than 50% of their genes, but the average remains approximately 50%, the same as parent-child relationships.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Parent-child relationships always share exactly 50% of genes, while sibling-sibling relationships can vary significantly due to independent assortment and recombination.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The variation in gene sharing between siblings is typically small, and the average remains very close to 50%, making the practical difference negligible in most cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mitochondrial DNA is inherited exclusively from the mother, meaning parent-child relationships share additional genetic material not accounted for in sibling comparisons.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mitochondrial DNA constitutes a tiny fraction of the total genome, so its contribution to overall genetic similarity is minimal.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "A parent shares exactly 50% of their genes with their child, whereas siblings share 50% on average, but this can vary due to random assortment of alleles."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "A parent shares exactly 50% of their genes with their child, whereas siblings share 50% on average, but this can vary due to random assortment of alleles.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Identical twins share 100% of their genes, which is more than the 50% shared between parent and child.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Identical twins are a rare exception and do not represent the general case of sibling genetic similarity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In cases of consanguinity (e.g., sibling parents), the child may share more than 50% of genes with a parent due to increased homozygosity.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Consanguineous relationships are uncommon in most populations and are ethically discouraged, making them statistically irrelevant to the general claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Genetically, a parent and child are directly related by 50% shared DNA, while siblings share 50% on average, making the relationships quantitatively equivalent in terms of gene sharing."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Genetically, a parent and child are directly related by 50% shared DNA, while siblings share 50% on average, making the relationships quantitatively equivalent in terms of gene sharing.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The 50% shared DNA between siblings is an average, with actual values ranging from 0% to 100% due to random recombination, whereas parent-child sharing is always exactly 50%.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with variation, the vast majority of sibling pairs share close to 50% DNA, making the average a reliable approximation for most practical purposes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Parent-child relationships share mitochondrial DNA (or Y-chromosome in father-son cases), which siblings do not necessarily share, adding to genetic similarity beyond autosomal DNA.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mitochondrial and Y-chromosome DNA constitute a tiny fraction of the genome, so their contribution to overall genetic similarity is negligible.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

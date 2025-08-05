@@ -1,0 +1,290 @@
+{
+  "claim": "If all A are B, and C is an A, then C is B",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "This follows directly from the logical structure of syllogism, which is universally valid in classical logic.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "This follows directly from the logical structure of syllogism, which is universally valid in classical logic.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Classical logic assumes bivalence, but many real-world scenarios involve fuzzy or indeterminate boundaries that violate this assumption.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The syllogism's validity depends on the precise definitions of A, B, and C, which may not hold in all interpretations.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in non-classical logics, the core structure of syllogism remains intact for well-defined categorical relationships.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Empirical studies show that humans consistently apply syllogistic reasoning correctly when terms are clearly defined.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Quantum logic demonstrates fundamental limitations in applying classical syllogistic structures to physical reality.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cross-cultural research reveals significant variation in how people interpret categorical relationships.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The claim is a restatement of the Barbara syllogism (AAA-1), which is a foundational valid form in Aristotelian logic.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The claim is a restatement of the Barbara syllogism (AAA-1), which is a foundational valid form in Aristotelian logic.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Modern logic systems, such as predicate calculus, have identified edge cases where the Barbara syllogism fails due to existential import issues.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The existential import critique is resolved in contemporary interpretations by explicitly defining non-empty sets for categorical propositions.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Barbara syllogism assumes classical bivalent logic, which may not hold in systems with fuzzy or paraconsistent logics.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in non-classical logics, the Barbara form remains valid when properly restricted to its original bivalent context.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The syllogism's validity depends on the assumption that 'A', 'B', and 'C' are unambiguously defined, which is often not the case in natural language.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Formal logic systems explicitly require clear definitions, making this objection irrelevant in properly constructed arguments.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In set theory, if C is an element of set A and A is a subset of B, then C must also be an element of B, confirming the claim.",
+        "confidence": 0.98,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In set theory, if C is an element of set A and A is a subset of B, then C must also be an element of B, confirming the claim.",
+          "confidence": 0.98,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Set theory assumes well-defined sets, but real-world categories often have fuzzy boundaries, making the subset relation ambiguous.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim relies on classical logic, but paraconsistent logics allow for exceptions where C could be in A and A in B without C being in B.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with fuzzy boundaries, standard set operations still hold under well-defined membership functions, preserving the subset relation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Paraconsistent logics are niche and not universally accepted; classical logic remains the default framework for such deductions.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Membership functions in fuzzy set theory can be arbitrarily defined, leading to cases where the subset relation fails to behave classically.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "S1",
+        "text": "The claim assumes classical logic; in non-classical logics (e.g., paraconsistent logic), contradictions may not propagate, making the conclusion unreliable.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "S1",
+          "text": "The claim assumes classical logic; in non-classical logics (e.g., paraconsistent logic), contradictions may not propagate, making the conclusion unreliable.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Classical logic is the most widely accepted and rigorously tested framework, making the claim reliable in the vast majority of contexts.",
+          "confidence": 0.85,
+          "attacks": [
+            "S1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-classical logics are niche and rarely applied in practical reasoning, limiting the relevance of this objection.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even in paraconsistent logic, the claim holds unless explicitly contradicted, which is not the case here.",
+          "confidence": 0.7,
+          "attacks": [
+            "S1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Paraconsistent logic still requires explicit contradictions to invalidate the claim, which are not provided.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "S2",
+        "text": "If 'A' and 'B' are interpreted as vague or ambiguous categories (e.g., in fuzzy logic), the conclusion may not hold strictly.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "S2",
+          "text": "If 'A' and 'B' are interpreted as vague or ambiguous categories (e.g., in fuzzy logic), the conclusion may not hold strictly.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Classical logic assumes crisp categories, and the claim explicitly operates under this assumption, making the fuzzy logic objection irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "S2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in fuzzy logic, if membership functions are defined such that all A are fully B, the conclusion still holds.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not specify the logical system, leaving room for interpretations where the conclusion fails.",
+          "confidence": 0.7,
+          "attacks": [
+            "S2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Default interpretations in formal logic assume classical logic unless stated otherwise, so the objection is misplaced.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

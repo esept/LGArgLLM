@@ -1,0 +1,240 @@
+{
+  "claim": "Consider the following background information: A 61-year-old man presents to his primary care provider complaining of abdominal pain and constipation. He reports a 4-day history of steady right lower quadrant pain. He has had one small bowel movement in 4 days. Normally he has a bowel movement once a day. His medical history is notable for poorly controlled hypertension and hyperlipidemia. He takes enalapril, hydrochlorothiazide, aspirin, and atorvastatin. He has a 40 pack-year smoking history and drinks 3-4 beers per day. His diet consists primarily of fast food. His temperature is 101.8\u00b0F (38.8\u00b0C), blood pressure is 160/95 mmHg, pulse is 90/min, and respirations are 16/min. A review of the patient\u2019s medical record reveals colonoscopy results from 1 year ago. Relevant findings included multiple small, pedunculated polyps which were removed, multiple colonic mucosal outpouchings, and no other masses.\n\nGiven the background information the following is corrrect: This patient\"s condition is most strongly associated with Alpha-1-antitrypsin deficiency.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, not the colon or gastrointestinal tract, making it an unlikely cause of this patient's symptoms."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, not the colon or gastrointestinal tract, making it an unlikely cause of this patient's symptoms.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency can occasionally lead to systemic inflammation, which might indirectly contribute to gastrointestinal symptoms.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Systemic inflammation from Alpha-1-antitrypsin deficiency is rare and typically presents with more prominent liver or lung symptoms, not isolated gastrointestinal issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms are more consistent with diverticulitis, given the history of colonic mucosal outpouchings and current fever.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis is a common condition in this age group and fits the clinical presentation better than rare systemic conditions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's symptoms (abdominal pain, constipation, fever) and findings (colonic mucosal outpouchings) are more consistent with diverticulitis, a common condition in older adults with poor dietary habits."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms (abdominal pain, constipation, fever) and findings (colonic mucosal outpouchings) are more consistent with diverticulitis, a common condition in older adults with poor dietary habits.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Diverticulitis typically presents with left lower quadrant pain, not right lower quadrant pain as seen in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Right-sided diverticulitis, while less common, can occur and should still be considered in the differential diagnosis.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's fever and elevated inflammatory markers could also be indicative of appendicitis, which commonly presents with right lower quadrant pain.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Appendicitis typically presents with more acute onset of symptoms and nausea/vomiting, which are not mentioned in this patient's history.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's history of smoking, alcohol use, and fast-food diet are risk factors for diverticular disease, not Alpha-1-antitrypsin deficiency."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's history of smoking, alcohol use, and fast-food diet are risk factors for diverticular disease, not Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency primarily affects the liver and lungs, not the colon, making it unlikely to be the cause of the patient's symptoms.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and colonoscopy findings (diverticula) are more consistent with diverticular disease, which is common in older adults with poor dietary habits.",
+          "confidence": 0.88,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Alpha-1-antitrypsin deficiency is rare, it can sometimes present with liver dysfunction, which could indirectly cause abdominal symptoms.",
+          "confidence": 0.4,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticular disease is often asymptomatic, and the patient's fever and pain could indicate an alternative diagnosis like appendicitis.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Alpha-1-antitrypsin deficiency is a genetic condition typically diagnosed earlier in life, often presenting with pulmonary or hepatic symptoms, neither of which are reported in this patient."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Alpha-1-antitrypsin deficiency is a genetic condition typically diagnosed earlier in life, often presenting with pulmonary or hepatic symptoms, neither of which are reported in this patient.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Alpha-1-antitrypsin deficiency is typically diagnosed earlier, late-onset cases can occur and may present atypically, including with gastrointestinal symptoms.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Late-onset cases are extremely rare and there is no evidence in this patient's history or presentation to suggest an atypical manifestation of Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and findings are more consistent with diverticulitis or another common gastrointestinal condition given his age, diet, and colonoscopy findings.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of fever and right lower quadrant pain could suggest appendicitis rather than diverticulitis, which would require different management.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The colonoscopy findings (polyps, mucosal outpouchings) are unrelated to Alpha-1-antitrypsin deficiency, which does not cause structural changes in the colon."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The colonoscopy findings (polyps, mucosal outpouchings) are unrelated to Alpha-1-antitrypsin deficiency, which does not cause structural changes in the colon.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency can lead to liver disease, which may indirectly affect gastrointestinal function and symptoms.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Liver disease secondary to Alpha-1-antitrypsin deficiency typically presents with different symptoms (e.g., jaundice, ascites) not seen in this patient.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and findings are more consistent with diverticulitis, which can cause fever, abdominal pain, and changes in bowel habits.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis would typically show more acute inflammatory changes on imaging, which are not mentioned in the patient's record.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

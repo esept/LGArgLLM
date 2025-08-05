@@ -1,0 +1,248 @@
+{
+  "claim": "Consider the following background information: A 61-year-old man presents to his primary care provider complaining of abdominal pain and constipation. He reports a 4-day history of steady right lower quadrant pain. He has had one small bowel movement in 4 days. Normally he has a bowel movement once a day. His medical history is notable for poorly controlled hypertension and hyperlipidemia. He takes enalapril, hydrochlorothiazide, aspirin, and atorvastatin. He has a 40 pack-year smoking history and drinks 3-4 beers per day. His diet consists primarily of fast food. His temperature is 101.8\u00b0F (38.8\u00b0C), blood pressure is 160/95 mmHg, pulse is 90/min, and respirations are 16/min. A review of the patient\u2019s medical record reveals colonoscopy results from 1 year ago. Relevant findings included multiple small, pedunculated polyps which were removed, multiple colonic mucosal outpouchings, and no other masses.\n\nGiven the background information the following is corrrect: This patient\"s condition is most strongly associated with Menetrier disease.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Menetrier disease is a rare condition characterized by giant gastric folds and hypoproteinemia, which are not mentioned in the patient's symptoms or history."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Menetrier disease is a rare condition characterized by giant gastric folds and hypoproteinemia, which are not mentioned in the patient's symptoms or history.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could still be consistent with early or atypical presentations of Menetrier disease, which may not yet show all classic features.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Early or atypical presentations of Menetrier disease are extremely rare, and the absence of key features like hypoproteinemia makes this diagnosis highly unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of colonic mucosal outpouchings (diverticula) and fast-food diet suggests diverticulitis as a more probable cause of his symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis typically presents with left lower quadrant pain, not right lower quadrant pain as seen in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Right-sided diverticulitis, though less common, can occur and would explain the right lower quadrant pain in this patient.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's symptoms and findings (abdominal pain, constipation, fever, and diverticulosis) are more consistent with diverticulitis, a common condition in older adults with poor dietary habits."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms and findings (abdominal pain, constipation, fever, and diverticulosis) are more consistent with diverticulitis, a common condition in older adults with poor dietary habits.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's fever and right lower quadrant pain could also suggest appendicitis, which is more common than Menetrier disease and requires urgent evaluation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Appendicitis typically presents with nausea/vomiting and rebound tenderness, which are not mentioned in this patient's history or exam.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of multiple colonic mucosal outpouchings (diverticulosis) strongly increases the likelihood of diverticulitis over other diagnoses.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis usually causes left lower quadrant pain, making right-sided pain an atypical presentation that reduces diagnostic confidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Menetrier disease primarily affects the stomach, whereas the patient's symptoms and colonoscopy findings point to colonic pathology."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Menetrier disease primarily affects the stomach, whereas the patient's symptoms and colonoscopy findings point to colonic pathology.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Menetrier disease can sometimes present with systemic symptoms like fever and abdominal pain, which overlap with the patient's presentation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's colonoscopy findings of mucosal outpouchings and polyps are highly specific to colonic diseases, not Menetrier disease.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's alcohol consumption and diet could contribute to gastric pathology, potentially mimicking Menetrier disease.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Menetrier disease is rare and typically presents with hypoproteinemia and edema, which are absent in this patient.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's risk factors (poor diet, smoking, alcohol use) and clinical presentation are not typical of Menetrier disease but align more with diverticular disease or other colonic issues."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's risk factors (poor diet, smoking, alcohol use) and clinical presentation are not typical of Menetrier disease but align more with diverticular disease or other colonic issues.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Menetrier disease is a rare condition primarily affecting the stomach, not the colon, making it an unlikely diagnosis for this patient's symptoms.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms could still be caused by a rare manifestation of Menetrier disease affecting the colon, though this is highly atypical.",
+          "confidence": 0.4,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Diverticular disease is more common in patients with the described risk factors and symptoms, strongly supporting A4's argument.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of colonic mucosal outpouchings in the colonoscopy findings further supports diverticular disease as the likely diagnosis.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Menetrier disease is exceedingly rare and would not be the most likely diagnosis given the patient's common symptoms and demographic profile."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Menetrier disease is exceedingly rare and would not be the most likely diagnosis given the patient's common symptoms and demographic profile.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms, such as abdominal pain and fever, could still be consistent with Menetrier disease despite its rarity.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Menetrier disease typically presents with hypochlorhydria and protein-losing gastropathy, which are not mentioned in this patient's history.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of colonic polyps and mucosal outpouchings suggests diverticulitis or another colonic pathology, not Menetrier disease.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis is more common in this demographic and matches the symptoms better, making it a more plausible diagnosis.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

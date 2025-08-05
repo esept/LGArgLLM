@@ -1,0 +1,335 @@
+{
+  "claim": "A person is presumed innocent until proven guilty",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The principle of 'presumption of innocence' is a fundamental legal right in many justice systems, ensuring fair trials."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The principle of 'presumption of innocence' is a fundamental legal right in many justice systems, ensuring fair trials.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some legal systems, certain crimes (e.g., drug possession) have reversed burdens of proof, undermining the universal application of this principle.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in systems with reversed burdens, courts often require strong initial evidence before shifting the burden, preserving the core principle.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public and media presumption of guilt before trial can effectively nullify legal presumption of innocence in practice.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Jury instructions and contempt laws exist specifically to counteract prejudicial pretrial publicity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Authoritarian regimes frequently ignore this principle through show trials and predetermined verdicts.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Such regimes are generally condemned by international legal bodies, proving the principle remains the global standard.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Requiring proof of guilt protects individuals from arbitrary punishment and upholds human rights."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Requiring proof of guilt protects individuals from arbitrary punishment and upholds human rights.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of overwhelming public danger (e.g., terrorism), presuming innocence can delay necessary preventive measures.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Preventive measures without proof of guilt risk violating fundamental rights and can be abused by authorities.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some legal systems allow pre-trial detention based on risk assessment, effectively bypassing the presumption of innocence.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pre-trial detention without conviction still requires judicial oversight and evidence of flight risk/danger, maintaining due process.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The burden of proof lies with the prosecution, not the defendant, to establish guilt beyond a reasonable doubt."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The burden of proof lies with the prosecution, not the defendant, to establish guilt beyond a reasonable doubt.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some jurisdictions, defendants may be required to prove certain affirmative defenses, shifting partial burden to them.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when affirmative defenses are raised, the overall burden of proving guilt beyond reasonable doubt remains with the prosecution.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pretrial detention practices often function as de facto punishment before guilt is proven, undermining the presumption of innocence.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pretrial detention is legally justified by flight risk or danger to society, not as presumption of guilt.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Media coverage frequently presumes guilt through sensationalized reporting before trial conclusions.",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Judicial systems maintain strict rules about evidence admissibility to prevent media influence from affecting legal presumption of innocence.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "This principle prevents premature judgment and bias against the accused in legal proceedings."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "This principle prevents premature judgment and bias against the accused in legal proceedings.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In high-profile cases, media coverage and public opinion often presume guilt before a trial concludes, undermining the principle.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal systems often implement gag orders and sequester juries to mitigate external bias, preserving the presumption of innocence.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pretrial detention and bail decisions often reflect an implicit assumption of guilt, contradicting the principle.",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bail decisions are based on flight risk and danger to society, not guilt, aligning with the presumption of innocence.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The principle is inconsistently applied across jurisdictions, with some legal systems favoring inquisitorial over adversarial approaches.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "International human rights treaties universally endorse the presumption of innocence, pressuring inconsistent jurisdictions to reform.",
+          "confidence": 0.82,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "International human rights documents, such as the Universal Declaration of Human Rights, recognize the presumption of innocence."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "International human rights documents, such as the Universal Declaration of Human Rights, recognize the presumption of innocence.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some countries do not fully implement or adhere to international human rights standards in their legal systems.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International pressure and treaties often compel non-compliant countries to gradually adopt these standards.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presumption of innocence is sometimes overridden in cases involving national security or public safety.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal safeguards and judicial review typically prevent abuse of national security exceptions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "A fair justice system must operate on the basis that an individual is innocent unless proven otherwise in a court of law."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "A fair justice system must operate on the basis that an individual is innocent unless proven otherwise in a court of law.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some legal systems, certain offenses (e.g., drug possession) presume guilt unless the defendant proves innocence, contradicting universal innocence presumption.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such exceptions are rare and often criticized for violating human rights norms, reinforcing the broader principle of presumed innocence.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public opinion and media often treat accused individuals as guilty before trial, undermining the legal presumption of innocence.",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems have measures (e.g., gag orders, contempt laws) to mitigate prejudicial publicity, preserving the formal presumption of innocence.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

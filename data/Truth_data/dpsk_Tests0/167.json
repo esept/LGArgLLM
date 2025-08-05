@@ -1,0 +1,240 @@
+{
+  "claim": "If you type your PIN number backwards at an ATM, a notification will be sent to the police.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "There is no widely documented or mainstream evidence that ATMs are programmed to send police notifications when a PIN is entered backwards."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "There is no widely documented or mainstream evidence that ATMs are programmed to send police notifications when a PIN is entered backwards.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some ATMs may have custom security features, including PIN reversal detection, as part of their programming.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some ATMs have such features, they are not standardized or publicly documented, making widespread implementation unlikely.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Urban legends and anecdotal reports suggest that certain banks or regions might have implemented this feature.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Urban legends are unreliable sources of information and lack verifiable evidence.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "ATM security systems are designed to detect incorrect PIN entries by locking the card after a certain number of failed attempts, not by monitoring reversed inputs."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "ATM security systems are designed to detect incorrect PIN entries by locking the card after a certain number of failed attempts, not by monitoring reversed inputs.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented additional security measures, including monitoring for reversed PIN entries as part of fraud detection protocols.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some banks monitor reversed PIN entries, this is not a standardized feature across all ATM systems, making the original claim unreliable as a general statement.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There have been documented cases where reversed PIN entries triggered silent alarms in certain high-security ATM systems.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These documented cases are rare and typically involve specialized ATMs in high-risk areas, not standard consumer banking machines.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Banking and financial institutions prioritize fraud detection through transaction patterns and unusual activity, not through reversed PIN entry."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Banking and financial institutions prioritize fraud detection through transaction patterns and unusual activity, not through reversed PIN entry.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented specific fraud detection mechanisms for reversed PIN entry as an additional security layer.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some banks implement reversed PIN detection, it is not a standardized or widely adopted practice across the banking industry.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Reversed PIN entry can be a signal of duress, prompting banks to notify authorities as part of their customer safety protocols.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Duress signals are typically handled through separate mechanisms (e.g., silent alarms or specific code words), not reversed PINs.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Police notifications from ATMs would require integration with law enforcement systems, which is not a standard feature of ATM software."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Police notifications from ATMs would require integration with law enforcement systems, which is not a standard feature of ATM software.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some ATMs in high-crime areas or specific jurisdictions may have custom software that includes law enforcement integration.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in high-crime areas, the cost and complexity of such integration would make it rare and non-standard.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "ATM manufacturers could include this feature as a security option, even if it is not widely adopted.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Without regulatory mandates or widespread demand, ATM manufacturers have little incentive to develop such features.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Publicly available banking security guidelines and ATM operation manuals do not mention any functionality related to reversed PINs triggering police alerts."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Publicly available banking security guidelines and ATM operation manuals do not mention any functionality related to reversed PINs triggering police alerts.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks may implement undocumented security features not mentioned in public guidelines.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Undocumented security features would violate banking transparency regulations in most jurisdictions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "ATM manufacturers could build this functionality as a hidden security measure.",
+          "confidence": 0.35,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hidden security features in ATMs would require regulatory approval and oversight.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "claim": "Light travels in straight lines in a vacuum",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the laws of geometric optics, light propagates in straight lines in a homogeneous medium such as a vacuum."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the laws of geometric optics, light propagates in straight lines in a homogeneous medium such as a vacuum.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Quantum mechanics shows that light can exhibit wave-like behavior, including diffraction and interference, which implies it does not always travel in perfectly straight lines even in a vacuum.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "At macroscopic scales and in typical conditions, the wave-like behavior of light is negligible, and geometric optics remains an accurate approximation for light traveling in straight lines in a vacuum.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Gravitational lensing demonstrates that light bends around massive objects, meaning it does not travel in straight lines in the presence of strong gravitational fields, even in a vacuum.",
+          "confidence": 0.88,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gravitational lensing is a relativistic effect and does not invalidate the classical geometric optics approximation for light traveling in straight lines in a flat spacetime vacuum.",
+          "confidence": 0.87,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Experimental observations, such as the formation of sharp shadows, confirm that light travels in straight lines in a vacuum."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Experimental observations, such as the formation of sharp shadows, confirm that light travels in straight lines in a vacuum.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Light can bend around massive objects due to gravitational lensing, which contradicts the notion of strictly straight-line travel.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gravitational lensing occurs in the presence of massive objects, not in a perfect vacuum, so it does not invalidate the claim about light in a vacuum.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Quantum fluctuations in a vacuum could theoretically cause slight deviations in light's path, though these effects are extremely small.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "At macroscopic scales relevant to experimental observations, quantum fluctuations are negligible and do not affect the straight-line propagation of light.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Einstein's theory of relativity assumes the constancy of the speed of light in a vacuum, which implies rectilinear propagation in the absence of gravitational fields."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Einstein's theory of relativity assumes the constancy of the speed of light in a vacuum, which implies rectilinear propagation in the absence of gravitational fields.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gravitational lensing demonstrates that light bends around massive objects, contradicting strict rectilinear propagation even in a vacuum.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gravitational lensing occurs only in the presence of strong gravitational fields, which are explicitly excluded by the original claim's 'absence of gravitational fields' condition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Quantum fluctuations in a vacuum could theoretically cause minute deviations from perfect rectilinear propagation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such quantum effects are negligible at macroscopic scales and don't meaningfully contradict the classical description of light propagation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The principle of least time (Fermat's principle) states that light takes the path of least time, which in a vacuum is a straight line."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The principle of least time (Fermat's principle) states that light takes the path of least time, which in a vacuum is a straight line.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Fermat's principle is a variational principle and does not directly prove that light travels in straight lines; it merely describes the path as one of least time.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Variational principles like Fermat's are mathematically equivalent to the laws of geometric optics, which do describe light traveling in straight lines in a vacuum.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In non-Euclidean space or near massive objects (general relativity), light does not travel in straight lines even in a vacuum.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'in a vacuum,' which typically implies flat spacetime (no gravitational effects), where light does travel in straight lines.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Astronomical observations of distant stars and galaxies show no deviation in light paths in interstellar space, supporting the claim."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Astronomical observations of distant stars and galaxies show no deviation in light paths in interstellar space, supporting the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gravitational lensing demonstrates that light bends around massive objects like galaxies, contradicting the claim of perfectly straight paths.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gravitational lensing occurs due to spacetime curvature, not deviation in light's intrinsic straight-line propagation in a vacuum.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Quantum fluctuations in vacuum could theoretically cause minor deviations in light paths at extremely small scales.",
+          "confidence": 0.4,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No empirical evidence exists for quantum-induced light path deviations; the effect remains speculative.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The wavefront of light in a vacuum remains planar over large distances, indicating rectilinear propagation."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The wavefront of light in a vacuum remains planar over large distances, indicating rectilinear propagation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gravitational lensing demonstrates that light bends around massive objects, contradicting strict rectilinear propagation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gravitational lensing occurs due to spacetime curvature, not a property of light itself, so rectilinear propagation in a vacuum remains valid locally.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Quantum fluctuations in a vacuum can theoretically scatter light, causing minor deviations from perfect rectilinear propagation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Quantum vacuum effects on light propagation are negligible at macroscopic scales, preserving the practical observation of rectilinear propagation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

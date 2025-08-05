@@ -1,0 +1,240 @@
+{
+  "claim": "The cost of food in Canada has decreased since 1970.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to Statistics Canada, the Consumer Price Index (CPI) for food has increased significantly since 1970, indicating higher food costs."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to Statistics Canada, the Consumer Price Index (CPI) for food has increased significantly since 1970, indicating higher food costs.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CPI does not account for changes in food quality, variety, and availability, which have improved since 1970, potentially offsetting perceived cost increases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with quality improvements, the CPI's measurement of absolute price changes remains a reliable indicator of cost trends, as it standardizes comparisons over time.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Household income has also risen since 1970, making food relatively more affordable despite nominal price increases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Income inequality has grown, meaning lower-income households may not experience the same affordability benefits as average statistics suggest.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Economic data shows that inflation-adjusted food prices in Canada have risen over the past five decades."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Economic data shows that inflation-adjusted food prices in Canada have risen over the past five decades.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some food categories, such as grains and dairy, have actually decreased in price when adjusted for inflation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The decrease in grain and dairy prices is offset by significant increases in meat, produce, and processed foods, making the overall trend upward.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The inflation adjustment methodology may not fully account for quality improvements and variety in food products over time.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard inflation metrics like CPI already incorporate quality adjustments, making this critique less valid.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical records indicate that agricultural production costs, including labor and inputs, have increased since 1970, contributing to higher food prices."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical records indicate that agricultural production costs, including labor and inputs, have increased since 1970, contributing to higher food prices.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Technological advancements in agriculture have significantly increased efficiency, offsetting rising production costs and leading to lower food prices.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite efficiency gains, inflation-adjusted food prices in Canada have risen due to increased demand and supply chain disruptions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Government subsidies and price controls have mitigated the impact of rising production costs on food prices.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subsidies and price controls are often temporary and do not fully compensate for long-term cost increases in food production.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Government reports confirm that food affordability has declined in Canada since 1970 due to rising prices relative to income."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Government reports confirm that food affordability has declined in Canada since 1970 due to rising prices relative to income.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Food affordability is not the same as food cost; prices may have decreased while affordability declined due to income stagnation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical CPI data shows nominal food prices have increased, but inflation-adjusted costs may reveal a different trend.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Government reports may focus on recent decades, ignoring long-term trends where food costs decreased in the 20th century.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Technological advancements in agriculture and distribution have significantly reduced real food production costs over the century.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Comparative studies of food prices across decades show that staple items such as bread, milk, and meat are more expensive today than in 1970."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Comparative studies of food prices across decades show that staple items such as bread, milk, and meat are more expensive today than in 1970.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Inflation-adjusted data shows that while nominal prices have increased, real food costs have decreased due to higher wages and improved purchasing power.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The inflation adjustment may not fully account for changes in consumption patterns, as modern diets include more processed and imported foods not commonly consumed in 1970.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements in agriculture and distribution have reduced production costs, leading to lower prices for many food items when adjusted for quality improvements.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Environmental and regulatory costs in modern agriculture may offset some of the efficiency gains, particularly for organic or ethically sourced products.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

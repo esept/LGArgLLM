@@ -1,0 +1,224 @@
+{
+  "claim": "Venus is the closest planet to the Sun",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Mercury is the closest planet to the Sun, with an average distance of approximately 58 million kilometers."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Mercury is the closest planet to the Sun, with an average distance of approximately 58 million kilometers.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Venus is sometimes closer to the Sun than Mercury due to Mercury's highly elliptical orbit.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "On average, Mercury's orbit remains the closest to the Sun despite its eccentricity, as Venus's orbit is consistently farther.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Transient proximity during orbital phases does not negate Mercury's status as the closest planet by average distance.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Venus is the second planet from the Sun, with an average distance of approximately 108 million kilometers."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Venus is the second planet from the Sun, with an average distance of approximately 108 million kilometers.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Mercury is closer to the Sun than Venus, with an average distance of approximately 58 million kilometers.",
+          "confidence": 0.97,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mercury's orbit is highly elliptical, sometimes bringing it closer to the Sun than Venus even when considering average distances.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Despite Mercury's elliptical orbit, its average distance remains consistently smaller than Venus's, maintaining its status as the closest planet.",
+          "confidence": 0.92,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Astronomical observations and measurements consistently place Mercury as the innermost planet in the Solar System."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Astronomical observations and measurements consistently place Mercury as the innermost planet in the Solar System.",
+          "confidence": 0.98,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some historical astronomical records from ancient civilizations mistakenly listed Venus as the closest planet due to observational limitations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern telescopic and space probe data have conclusively corrected these historical errors, confirming Mercury's position.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might arise from Venus being more visibly prominent than Mercury in Earth's night sky.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Visibility does not determine orbital distance, and precise measurements override apparent brightness observations.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "NASA and other space agencies have confirmed Mercury's position as the closest planet to the Sun through multiple missions and data collection."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "NASA and other space agencies have confirmed Mercury's position as the closest planet to the Sun through multiple missions and data collection.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some argue that Venus is closer to the Sun on average due to Mercury's highly elliptical orbit.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, Mercury remains the closest at its perihelion, and its average distance is still less than Venus's.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical astronomical records sometimes misidentified Venus as the closest due to limited observational technology.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern instruments and missions have definitively corrected these historical inaccuracies.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Textbooks and educational resources universally list Mercury as the first planet from the Sun, not Venus."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Textbooks and educational resources universally list Mercury as the first planet from the Sun, not Venus.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some historical or outdated sources might have listed Venus as the closest due to measurement errors or incomplete astronomical data.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern astronomical observations and measurements have conclusively confirmed Mercury's position as the closest planet to the Sun.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In certain orbital configurations, Venus can appear closer to the Sun than Mercury from Earth's perspective, though this is an observational illusion.",
+          "confidence": 0.35,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Apparent proximity due to orbital mechanics does not change the actual average distance of planets from the Sun, which is the standard metric used in astronomy.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

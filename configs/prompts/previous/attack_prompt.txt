@@ -1,0 +1,62 @@
+You are given a claim and a supporting argument `Ai`.
+
+Your task is to construct an argument attack tree by recursively generating structured counter-arguments. Follow the instructions strictly:
+
+### Step-by-step Requirements:
+
+1. Generate a set of first-level counter-arguments (`B1`, `B2`, ..., `Bn`) that directly attack the claim or the given argument `Ai`.
+
+2. For each `Bi`, generate a set of counter-attacks (`C1`, `C2`, ..., `Cm`) that directly attack `Bi`.
+   Then for each `Cj`, recursively generate counter-attacks (`D1`, `D2`, ..., `Dp`) that attack `Cj`, and so on.
+
+3. Each argument must include the following fields:
+
+   - `"id"`: A unique identifier (e.g., `"A1"`, `"B1"`, `"C3"`, ...).
+   - `"text"`: The content of the argument.
+   - `"confidence"`: A float between 0 and 1 representing the confidence level of the argument.
+   - `"attacks"`: A list of `id`s that this argument directly attacks. Leave it as an empty list if it does not attack any other argument.
+
+4. Hierarchy constraints (strict layer structure):
+
+   - `B`-layer arguments (e.g., `"B1"`, `"B2"`, ...) can only attack `A`-layer arguments.
+   - `C`-layer arguments can only attack `B`-layer arguments.
+   - `D`-layer arguments can only attack `C`-layer arguments.
+   - And so on (E-layer can only attack D-layer, etc.).
+
+5. No redundancy: Avoid repeating arguments or reusing identical reasoning.
+
+6. JSON formatting rules:
+
+   - The final output must be a valid JSON object with the top-level key `"Arguments"`, which maps to a list of argument objects.
+   - All keys and string values must use double quotes (`"`). Single quotes (`'`) are only permitted within the internal text of an argument.
+   - Ensure the output is syntactically valid and can be parsed by a standard JSON parser.
+
+### Output Format Example:
+
+```json
+{
+  "Arguments": [
+    {
+      "id": "Ai",
+      "text": "The original supporting argument text",
+      "confidence": 0.75,
+      "attacks": [],
+      "cate": # USE the same as Ai
+    },
+    {
+      "id": "B1",
+      "text": "Counter-argument text against Ai",
+      "confidence": 0.82,
+      "attacks": ["Ai"]
+    },
+    {
+      "id": "C1",
+      "text": "Counter-argument against B1",
+      "confidence": 0.68,
+      "attacks": ["B1"]
+    }
+    // Additional arguments follow the same format
+  ]
+}
+```
+Be rigorous in logic, consistent in hierarchy, and precise in JSON structure.

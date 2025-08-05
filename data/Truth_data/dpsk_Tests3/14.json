@@ -1,0 +1,362 @@
+{
+  "claim": "Coughing mimics the effects of CPR during a heart attack, making it effective in stopping a heart attack.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Coughing increases intrathoracic pressure, which can help maintain blood flow to the brain during a cardiac arrest, similar to the mechanism of CPR.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Coughing increases intrathoracic pressure, which can help maintain blood flow to the brain during a cardiac arrest, similar to the mechanism of CPR.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Coughing requires conscious effort and cannot be sustained during actual cardiac arrest, where the patient typically loses consciousness quickly.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The increase in intrathoracic pressure from coughing is temporary and inconsistent, unlike the controlled and rhythmic pressure applied in CPR.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "There is limited clinical evidence supporting the effectiveness of coughing as a substitute for CPR in real-world cardiac arrest scenarios.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if coughing is temporary, it can buy critical time until professional help arrives, especially in cases where CPR is not immediately available.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Trained individuals can perform controlled coughing maneuvers that mimic the rhythmic pressure of CPR more effectively than untrained coughing.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Some studies have shown cases where coughing has maintained circulation long enough for medical intervention, suggesting potential effectiveness in specific scenarios.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The time bought by coughing is negligible compared to the immediate and sustained need for CPR, which is proven to be far more effective in maintaining circulation.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The complexity of performing controlled coughing maneuvers under stress makes it impractical for most individuals during an actual cardiac arrest.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Case studies are anecdotal and do not provide sufficient evidence to recommend coughing as a standard alternative to CPR.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Cough CPR has been documented in medical literature as a temporary measure for maintaining circulation in specific cases of witnessed cardiac arrest, such as during catheterization procedures.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Cough CPR has been documented in medical literature as a temporary measure for maintaining circulation in specific cases of witnessed cardiac arrest, such as during catheterization procedures.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Cough CPR is only effective in very controlled settings like catheterization labs and is not practical for general use during a heart attack.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There is limited evidence that cough CPR can sustain circulation long enough to be useful in real-world cardiac arrest scenarios outside of medical supervision.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cough CPR requires the patient to be conscious and responsive, which is often not the case during a heart attack.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in controlled settings, cough CPR is not a substitute for standard CPR and defibrillation, which are the gold standards for cardiac arrest.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies on cough CPR are based on small sample sizes and lack robust clinical validation for broader application.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Promoting cough CPR as a general solution may lead to delays in seeking proper medical help, worsening outcomes.",
+          "confidence": 0.82,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Standard CPR techniques are widely taught and accessible, making them more reliable than cough CPR in emergencies.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Coughing requires conscious effort and cannot be performed if the person loses consciousness, making it ineffective in most real-world heart attack scenarios.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Coughing requires conscious effort and cannot be performed if the person loses consciousness, making it ineffective in most real-world heart attack scenarios.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even if conscious, coughing may not generate sufficient blood flow to sustain vital organs during a heart attack, unlike proper CPR.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Training people to cough during a heart attack could delay proper medical intervention, worsening outcomes.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that forceful coughing can transiently increase blood pressure, which might help maintain circulation briefly in some cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public awareness campaigns could emphasize coughing as a temporary measure while waiting for professional help, not a replacement.",
+          "confidence": 0.73,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The blood pressure increase from coughing is too short-lived and inconsistent to be clinically meaningful during a heart attack.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Mixed messaging about coughing vs. CPR could cause confusion and reduce proper CPR utilization rates.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "There is no substantial clinical evidence that coughing can replace standard CPR in unmonitored or out-of-hospital cardiac arrests.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "There is no substantial clinical evidence that coughing can replace standard CPR in unmonitored or out-of-hospital cardiac arrests.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Coughing can increase intrathoracic pressure, which may temporarily maintain blood flow during a cardiac arrest, similar to CPR.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Anecdotal reports and some case studies suggest that coughing has helped individuals survive heart attacks when performed promptly.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The increase in intrathoracic pressure from coughing is insufficient to sustain adequate circulation compared to standard CPR.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal evidence lacks scientific rigor and cannot replace controlled clinical trials that disprove the effectiveness of coughing as a substitute for CPR.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies on cough CPR show that it is only effective in monitored hospital settings with immediate medical intervention, not in real-world scenarios.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The variability in individual responses to coughing during cardiac events makes it unreliable as a universal first-aid measure.",
+          "confidence": 0.77,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The American Heart Association does not endorse coughing as a substitute for CPR, as it lacks the necessary chest compressions to sustain circulation.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The American Heart Association does not endorse coughing as a substitute for CPR, as it lacks the necessary chest compressions to sustain circulation.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Coughing can still generate some blood flow and may buy time until professional help arrives, even if it is not as effective as CPR.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some cases, such as during a cardiac catheterization, coughing has been shown to maintain consciousness and circulation temporarily.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The blood flow generated by coughing is insufficient to sustain vital organ function, making it unreliable in most heart attack scenarios.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cardiac catheterization is a controlled medical environment, and coughing's effectiveness there does not generalize to unmonitored heart attacks.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even minimal blood flow from coughing can prevent immediate brain damage, which is critical in emergencies.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Public awareness of coughing as a temporary measure could still save lives when CPR-trained individuals are unavailable.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

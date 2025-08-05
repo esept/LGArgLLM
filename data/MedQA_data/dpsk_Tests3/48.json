@@ -1,0 +1,293 @@
+{
+  "claim": "Consider the following background information: Thirty minutes after delivery, a 3600-g (7-lb 15-oz) newborn has noisy breathing, bluish discoloration of her lips, and intermittent respiratory distress. She was born at 38 weeks\" gestation and required bag-mask resuscitation immediately after delivery. Pregnancy was uncomplicated. Her mother has noticed the bluish lip discoloration worsen when she fed and improve when she cried. The patient\"s pulse is 163/min, respirations are 62/min, and blood pressure is 60/30 mm Hg. The crying infant\"s lungs are clear to auscultation.\n\nGiven the background information the following is corrrect: Further evaluation of this patient is most likely to show the presence of a scaphoid abdomen.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "A scaphoid abdomen may indicate diaphragmatic hernia, which can present with respiratory distress and cyanosis in newborns."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A scaphoid abdomen may indicate diaphragmatic hernia, which can present with respiratory distress and cyanosis in newborns.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Respiratory distress and cyanosis in newborns are more commonly caused by transient tachypnea of the newborn (TTN) or meconium aspiration syndrome rather than diaphragmatic hernia.",
+          "confidence": 0.85,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Diaphragmatic hernia typically presents with a scaphoid abdomen, but this is a rare condition compared to more common causes of neonatal respiratory distress.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The presence of clear lung sounds on auscultation makes diaphragmatic hernia less likely, as bowel sounds are usually heard in the chest in such cases.",
+          "confidence": 0.9,
+          "attacks": {
+            "A1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "In some cases of diaphragmatic hernia, lung sounds may appear clear if the herniated bowel is not yet distended with air.",
+          "confidence": 0.65,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The presence of respiratory distress and cyanosis that worsens with feeding is consistent with congenital diaphragmatic hernia, which often presents with a scaphoid abdomen."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of respiratory distress and cyanosis that worsens with feeding is consistent with congenital diaphragmatic hernia, which often presents with a scaphoid abdomen.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Congenital diaphragmatic hernia typically presents with bowel sounds in the chest and a scaphoid abdomen, but this patient's lungs are clear to auscultation, which makes this diagnosis less likely.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of bowel sounds in the chest does not completely rule out congenital diaphragmatic hernia, as the hernia may be small or not yet displaced enough to be audible.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The symptoms described are also consistent with transient tachypnea of the newborn (TTN), which is more common and does not present with a scaphoid abdomen.",
+          "confidence": 0.85,
+          "attacks": {
+            "A2": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "TTN typically improves within the first 24-48 hours and does not usually present with cyanosis that worsens with feeding, making it less likely in this case.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's symptoms could also be due to a congenital heart defect, such as tetralogy of Fallot, which would not present with a scaphoid abdomen.",
+          "confidence": 0.78,
+          "attacks": {
+            "A2": 0.75
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Tetralogy of Fallot usually presents with a characteristic murmur, which is not mentioned in the patient's findings, making this diagnosis less likely.",
+          "confidence": 0.72,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The lungs being clear to auscultation makes diaphragmatic hernia less likely, as bowel sounds in the chest would typically be heard."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The lungs being clear to auscultation makes diaphragmatic hernia less likely, as bowel sounds in the chest would typically be heard.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Clear lung auscultation does not rule out diaphragmatic hernia, as bowel sounds may not always be audible in the chest.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Diaphragmatic hernias can present with variable auscultatory findings, and absence of bowel sounds in the chest does not exclude the diagnosis.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "In neonates, respiratory distress with clear lung sounds is more commonly caused by other conditions like choanal atresia or laryngomalacia.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The presence of a scaphoid abdomen is a strong indicator of diaphragmatic hernia, which should be investigated regardless of lung auscultation findings.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The absence of reported bowel sounds in the chest or other signs of abdominal organ displacement makes a scaphoid abdomen less likely."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of reported bowel sounds in the chest or other signs of abdominal organ displacement makes a scaphoid abdomen less likely.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A scaphoid abdomen is a classic sign of congenital diaphragmatic hernia (CDH), which can present with respiratory distress and cyanosis as seen in this patient.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of bowel sounds in the chest does not rule out CDH, as the hernia may not always contain bowel.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's symptoms (worsening cyanosis during feeding and improvement with crying) are highly suggestive of a congenital heart defect rather than CDH.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The need for bag-mask resuscitation and persistent respiratory distress suggests a significant underlying condition, such as diaphragmatic hernia, which can cause a scaphoid abdomen."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The need for bag-mask resuscitation and persistent respiratory distress suggests a significant underlying condition, such as diaphragmatic hernia, which can cause a scaphoid abdomen.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A scaphoid abdomen is more commonly associated with conditions like esophageal atresia or tracheoesophageal fistula, not diaphragmatic hernia.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Diaphragmatic hernia often presents with a scaphoid abdomen due to abdominal contents herniating into the thorax, reducing abdominal volume.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The clear lung auscultation makes diaphragmatic hernia less likely, as bowel sounds in the chest are typically heard in such cases.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Early presentation of diaphragmatic hernia may not always have audible bowel sounds in the chest, especially if the hernia is small or the exam is performed shortly after birth.",
+          "confidence": 0.6,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "The uncomplicated pregnancy and lack of prenatal ultrasound findings reduce the likelihood of a congenital diaphragmatic hernia presenting with a scaphoid abdomen."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The uncomplicated pregnancy and lack of prenatal ultrasound findings reduce the likelihood of a congenital diaphragmatic hernia presenting with a scaphoid abdomen.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Congenital diaphragmatic hernia can still occur despite an uncomplicated pregnancy and lack of prenatal ultrasound findings, as some defects may be missed or develop later.",
+          "confidence": 0.65,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The clinical presentation (respiratory distress, cyanosis worsening with feeding) is highly suggestive of congenital diaphragmatic hernia, which often presents with a scaphoid abdomen.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Other conditions like tracheoesophageal fistula or pulmonary malformations could also explain the symptoms without a scaphoid abdomen.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "claim": "A father is 30 years older than his son. When the son is 15, the father is 45",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If a father is 30 years older than his son, then when the son is 15, the father's age must be 15 + 30 = 45."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If a father is 30 years older than his son, then when the son is 15, the father's age must be 15 + 30 = 45.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the father is biologically related to the son, but adoption or step-parenting could mean the age difference is not exactly 30 years.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal and social definitions of fatherhood typically include biological fathers, making adoption or step-parenting edge cases in this context.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument does not account for time dilation effects in extreme scenarios (e.g., near-light-speed travel), which could alter perceived age differences.",
+          "confidence": 0.1,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Time dilation is irrelevant in everyday human age calculations, as it requires velocities approaching the speed of light.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The age difference between a parent and child remains constant over time, so a 30-year gap at birth implies the same gap when the son is 15."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The age difference between a parent and child remains constant over time, so a 30-year gap at birth implies the same gap when the son is 15.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the father was not present at the son's birth or the son was adopted later, the initial age gap might not be 30 years.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal adoption records and birth certificates typically establish clear parent-child age relationships, making such exceptions statistically rare.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In cases of premature birth or medical complications, the father's age at the time of conception might differ from standard calculations.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard age-gap calculations assume typical biological reproduction timelines, which cover the vast majority of cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Basic arithmetic confirms that adding the fixed age difference (30 years) to the son's age (15) yields the father's age (45)."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Basic arithmetic confirms that adding the fixed age difference (30 years) to the son's age (15) yields the father's age (45).",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the age difference remains constant, but this may not account for scenarios like adoption or step-parenting where the biological age difference could differ.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In the vast majority of cases, the age difference between a father and son is biologically fixed, making adoption or step-parenting edge cases that do not invalidate the general rule.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument does not consider relativistic effects (e.g., time dilation in extreme scenarios like space travel), which could technically alter perceived age differences.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Relativistic effects are negligible in everyday human age calculations and are irrelevant to conventional interpretations of the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim aligns with the mathematical principle that age differences between two individuals do not change as time passes."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim aligns with the mathematical principle that age differences between two individuals do not change as time passes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes linear time progression, but time dilation effects in relativistic physics could theoretically alter perceived age differences.",
+          "confidence": 0.25,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Relativistic effects are negligible at human scales and speeds, making this counter-argument irrelevant for practical age calculations.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim doesn't account for edge cases like cryogenic freezing, where one individual's biological aging could be paused.",
+          "confidence": 0.35,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cryogenic freezing is currently speculative technology and doesn't represent standard age difference calculations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

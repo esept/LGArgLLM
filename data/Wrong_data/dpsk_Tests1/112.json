@@ -1,0 +1,240 @@
+{
+  "claim": "A US investor who makes more than 15% returns every year for ten years is definitely a great investor.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Consistently achieving over 15% annual returns for a decade significantly outperforms the average market return, indicating superior investment skill."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Consistently achieving over 15% annual returns for a decade significantly outperforms the average market return, indicating superior investment skill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "High returns could be due to excessive risk-taking rather than skill, which may not be sustainable or replicable in different market conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Risk-adjusted metrics like the Sharpe ratio would better distinguish luck from skill, as they account for volatility and downside risk.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias may inflate perceived success; many investors with similar strategies fail but are not observed.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Independent audits and peer-reviewed studies can control for survivorship bias by analyzing full datasets of investor performance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The S&P 500 has historically averaged about 10% annual returns, so exceeding this by 5% annually for ten years demonstrates exceptional performance."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The S&P 500 has historically averaged about 10% annual returns, so exceeding this by 5% annually for ten years demonstrates exceptional performance.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Historical averages do not account for risk-adjusted returns; an investor could achieve higher returns by taking excessive risks that may not be sustainable or prudent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Risk-adjusted metrics like the Sharpe ratio can confirm whether the excess returns compensate adequately for the additional risk taken.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Outperforming the market consistently over ten years could be due to luck rather than skill, as statistical anomalies exist in financial markets.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Sustained outperformance over a decade is statistically unlikely to be pure luck and more indicative of skill or strategy.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Long-term consistency in high returns suggests disciplined risk management and strategic decision-making, hallmarks of a great investor."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Long-term consistency in high returns suggests disciplined risk management and strategic decision-making, hallmarks of a great investor.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "High returns could be due to luck or exposure to high-risk assets rather than skill, making the label 'great investor' premature without deeper analysis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Statistical studies show that consistent outperformance over a decade is extremely rare for purely lucky investors, suggesting skill is likely involved.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Market conditions (e.g., prolonged bull markets) may inflate returns artificially, masking flaws in the investor's strategy.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in bull markets, consistently beating benchmarks by a wide margin requires skill beyond passive market gains.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Outperforming benchmarks like the S&P 500 or Dow Jones Industrial Average over a ten-year period is widely recognized as a measure of investment excellence."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Outperforming benchmarks like the S&P 500 or Dow Jones Industrial Average over a ten-year period is widely recognized as a measure of investment excellence.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Beating benchmarks does not account for risk-adjusted returns, which are critical in evaluating true investment skill.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many investors achieve high returns by taking excessive risks, which may lead to catastrophic losses in unfavorable market conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some benchmarks may not be appropriate comparisons for certain investment strategies (e.g., hedge funds vs. S&P 500).",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Specialized indices exist for niche strategies, making benchmark selection context-dependent rather than universally applicable.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Achieving such returns requires deep market insight and adaptability to changing economic conditions, traits of a highly skilled investor."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Achieving such returns requires deep market insight and adaptability to changing economic conditions, traits of a highly skilled investor.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Consistent high returns could also result from luck or exposure to high-risk strategies rather than skill.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Statistical analysis shows that sustained outperformance is rare and strongly correlated with skill, not just luck.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Market conditions during the period may have been unusually favorable, inflating returns regardless of skill.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in favorable markets, consistently beating benchmarks by such margins indicates superior decision-making.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

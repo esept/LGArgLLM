@@ -1,0 +1,262 @@
+{
+  "claim": "Cancer can cause excess adrenaline production.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Certain tumors, such as pheochromocytomas, are known to produce excess adrenaline and related hormones."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Certain tumors, such as pheochromocytomas, are known to produce excess adrenaline and related hormones.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Pheochromocytomas are rare, accounting for less than 0.2% of all cancers, so this does not generalize to most cancers.",
+          "confidence": 0.85,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even rare cancers are still cancers, so the claim remains technically correct for at least some cases.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Adrenaline production requires specific neuroendocrine differentiation that most carcinomas lack.",
+          "confidence": 0.88,
+          "attacks": {
+            "A1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Metastatic small cell lung cancer has been shown to occasionally produce catecholamines including adrenaline.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Neuroendocrine tumors can secrete catecholamines, including adrenaline, leading to hormonal imbalances."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Neuroendocrine tumors can secrete catecholamines, including adrenaline, leading to hormonal imbalances.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all neuroendocrine tumors secrete catecholamines; some are non-functional and do not cause hormonal imbalances.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Functional neuroendocrine tumors that secrete catecholamines are well-documented in medical literature, supporting the original argument.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Excess adrenaline production is rare in most common cancers, limiting the generalizability of the claim.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While rare in common cancers, neuroendocrine tumors are a recognized subset where adrenaline excess is clinically significant.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Adrenaline production can be stimulated by cancer-related stress responses, including pain and metabolic demands."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Adrenaline production can be stimulated by cancer-related stress responses, including pain and metabolic demands.",
+          "cate": "P",
+          "confidence": 0.82,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all cancers cause significant pain or metabolic stress, limiting the generality of this argument.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Adrenaline production is more commonly linked to acute stress responses rather than chronic conditions like cancer.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Certain aggressive cancers (e.g., neuroendocrine tumors) are well-documented to directly stimulate adrenaline production.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8,
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even non-aggressive cancers can indirectly elevate adrenaline through psychological distress in patients.",
+          "confidence": 0.68,
+          "attacks": {
+            "B1": 0.6
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Metastatic cancers affecting the adrenal glands may disrupt normal hormone regulation, including adrenaline secretion."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Metastatic cancers affecting the adrenal glands may disrupt normal hormone regulation, including adrenaline secretion.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Most cancers do not metastasize to the adrenal glands, making this a rare scenario.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Even when cancers affect the adrenal glands, they may not always disrupt adrenaline secretion significantly.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that adrenal metastases are present in only about 3-4% of cancer cases.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Functional disruption of adrenal glands by metastases is documented in clinical literature, supporting significant hormonal impact when it occurs.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.78
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Paraneoplastic syndromes associated with some cancers can cause hormonal disturbances, including elevated adrenaline levels."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Paraneoplastic syndromes associated with some cancers can cause hormonal disturbances, including elevated adrenaline levels.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Paraneoplastic syndromes are rare, occurring in less than 1% of cancer patients, making this an unlikely general explanation for excess adrenaline production.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if rare, paraneoplastic syndromes are well-documented causes of hormonal disturbances in oncology literature, supporting their relevance in specific cases.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Most excess adrenaline production is caused by pheochromocytomas or stress responses, not paraneoplastic syndromes.",
+          "confidence": 0.88,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While pheochromocytomas are more common, the claim does not exclude other causes like paraneoplastic syndromes.",
+          "confidence": 0.79,
+          "attacks": {
+            "B2": 0.7
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The term 'some cancers' is too vague to assess the clinical significance of this mechanism.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Small-cell lung cancer and neuroendocrine tumors are specifically documented to cause paraneoplastic hormonal effects.",
+          "confidence": 0.87,
+          "attacks": {
+            "B3": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

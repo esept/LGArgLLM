@@ -1,0 +1,287 @@
+{
+  "claim": "A prime number is only divisible by 1 and itself",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, a prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, a prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The definition excludes 1, which historically was sometimes considered a prime number, showing that definitions can evolve or vary.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern mathematical consensus explicitly excludes 1 from primes to maintain the uniqueness of prime factorization, reinforcing the current definition.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some contexts, such as algebraic number theory, the concept of primality is generalized, potentially allowing exceptions to the traditional definition.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in generalized contexts, the core property of primes (irreducibility under multiplication) aligns with the standard definition for natural numbers.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Mathematical proofs and number theory consistently support the definition that prime numbers are divisible only by 1 and themselves."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Mathematical proofs and number theory consistently support the definition that prime numbers are divisible only by 1 and themselves.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The definition fails to account for the number 1, which historically was considered a prime number but is now excluded by modern definitions.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern mathematical consensus explicitly excludes 1 from prime numbers to maintain the uniqueness of prime factorization, which is a foundational theorem in number theory.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some contexts, such as algebraic number theory, the definition of primality is generalized, leading to alternative classifications that differ from the classical definition.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Generalized definitions in algebraic number theory are specialized extensions and do not invalidate the classical definition of primes in standard arithmetic contexts.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Fundamental Theorem of Arithmetic states that every integer greater than 1 is either a prime itself or can be factored into primes, reinforcing the definition of primes."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Fundamental Theorem of Arithmetic states that every integer greater than 1 is either a prime itself or can be factored into primes, reinforcing the definition of primes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Fundamental Theorem of Arithmetic assumes the definition of primes is already established, so it does not independently reinforce the definition.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The theorem's reliance on the definition of primes actually strengthens the definition by showing its necessity in factorization.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The theorem does not address edge cases like 1, which is neither prime nor composite, leaving ambiguity in the definition.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The exclusion of 1 from primes is a well-established convention, not an ambiguity, and is consistent with the theorem's scope.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "All known prime numbers, such as 2, 3, 5, 7, and 11, adhere to the rule of being divisible only by 1 and themselves."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "All known prime numbers, such as 2, 3, 5, 7, and 11, adhere to the rule of being divisible only by 1 and themselves.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument only cites small prime numbers, which may not account for very large primes or potential exceptions in higher mathematics.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical proofs universally confirm that primes are only divisible by 1 and themselves, regardless of size, making exceptions impossible.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some definitions of primes exclude 1, which could be seen as a semantic exception to the rule.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern mathematics explicitly defines primes as starting from 2, eliminating ambiguity about 1.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Algorithms and tests for primality, like the Sieve of Eratosthenes, rely on the property that primes are only divisible by 1 and themselves."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Algorithms and tests for primality, like the Sieve of Eratosthenes, rely on the property that primes are only divisible by 1 and themselves.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some primality tests, like probabilistic tests, do not strictly rely on divisibility but instead on statistical properties.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even probabilistic tests ultimately verify the fundamental property of divisibility by 1 and itself, just indirectly.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of prime numbers excludes 1, which is only divisible by 1 and itself, showing the definition is not fully consistent.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The exclusion of 1 is a deliberate convention to maintain the uniqueness of prime factorization, not a flaw in the definition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Educational curricula and textbooks universally define prime numbers as numbers divisible only by 1 and themselves, indicating widespread acceptance of this definition."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Educational curricula and textbooks universally define prime numbers as numbers divisible only by 1 and themselves, indicating widespread acceptance of this definition.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some advanced mathematical contexts, such as ring theory, generalize the concept of primes to include irreducible elements, which may not strictly align with the traditional definition.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The traditional definition remains the standard in elementary and secondary education, where the generalized definitions are not relevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The number 1 is sometimes excluded from the set of primes, which contradicts the claim that primes are 'only divisible by 1 and themselves' since 1 meets this criterion but is not always considered prime.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern mathematical consensus explicitly excludes 1 from the set of primes to maintain the uniqueness of prime factorization, resolving this ambiguity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

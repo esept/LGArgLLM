@@ -1,0 +1,233 @@
+{
+  "claim": "Consider the following background information: A 41-year-old man presents to his primary care provider with abdominal pain. He says that the pain \u201ccomes and goes\u201d throughout the day and usually lasts 20-30 minutes per episode. He can point to the spot 1-2 inches above the umbilicus where he feels the pain. He denies any feeling of regurgitation or nighttime cough but endorses nausea. He reports that he used to eat three large meals per day but has found that eating more frequently improves his pain. He tried a couple pills of ibuprofen with food over the past couple days and thinks it helped. He has gained four pounds since his past appointment three months ago. The patient denies any diarrhea or change in his stools. He has no past medical history. He drinks 5-6 beers on the weekend and has a 20 pack-year smoking history. He denies any family history of cancer. On physical exam, he is tender to palpation above the umbilicus. Bowel sounds are present. A stool guaiac test is positive. The patient undergoes endoscopy with biopsy to diagnose his condition.\n\nGiven the background information the following is corrrect: Noncaseating granulomas in the small intestine is most likely to be found on histology.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Noncaseating granulomas are characteristic of Crohn's disease, which typically affects the terminal ileum and colon, not the small intestine near the umbilicus."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Noncaseating granulomas are characteristic of Crohn's disease, which typically affects the terminal ileum and colon, not the small intestine near the umbilicus.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Crohn's disease can affect any part of the gastrointestinal tract, including the small intestine near the umbilicus, though it is less common.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms and findings, such as the positive stool guaiac test, are more consistent with peptic ulcer disease or gastritis rather than Crohn's disease.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Noncaseating granulomas are not typically found in peptic ulcer disease or gastritis, which makes Crohn's disease a more likely explanation if such granulomas are present.",
+          "confidence": 0.78,
+          "attacks": {
+            "C1": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The patient's symptoms and findings (epigastric pain, nausea, positive guaiac test) are more consistent with peptic ulcer disease or gastritis, not a condition causing noncaseating granulomas."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms and findings (epigastric pain, nausea, positive guaiac test) are more consistent with peptic ulcer disease or gastritis, not a condition causing noncaseating granulomas.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Noncaseating granulomas are a hallmark of Crohn's disease, which can present with similar symptoms (abdominal pain, nausea, weight gain) and a positive guaiac test due to mucosal inflammation.",
+          "confidence": 0.78,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Crohn's disease typically involves chronic diarrhea and weight loss, which are absent in this patient, making peptic ulcer disease more likely.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Smoking is a strong risk factor for both peptic ulcer disease and Crohn's disease, so it does not help differentiate between the two conditions.",
+          "confidence": 0.75,
+          "attacks": {
+            "C1": 0.6
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Noncaseating granulomas are rare in the small intestine and are not typically associated with the patient's risk factors (smoking, alcohol use) or symptom pattern."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Noncaseating granulomas are rare in the small intestine and are not typically associated with the patient's risk factors (smoking, alcohol use) or symptom pattern.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Noncaseating granulomas are a hallmark of Crohn's disease, which can affect any part of the gastrointestinal tract, including the small intestine.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Crohn's disease is more common in smokers, which is a risk factor present in this patient.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's symptom pattern (intermittent abdominal pain, nausea, positive stool guaiac) is consistent with Crohn's disease, which can present with noncaseating granulomas.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Noncaseating granulomas are rare in the small intestine, and other conditions like peptic ulcer disease or gastritis are more likely given the patient's symptoms and risk factors.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.65,
+            "C1": 0.6,
+            "D1": 0.7
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Noncaseating granulomas can occur in the small intestine in rare cases of sarcoidosis, though this is an uncommon presentation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Noncaseating granulomas can occur in the small intestine in rare cases of sarcoidosis, though this is an uncommon presentation.",
+          "cate": "P",
+          "confidence": 0.45,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Sarcoidosis is a systemic disease that primarily affects the lungs and lymph nodes, and small intestine involvement is extremely rare.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms and findings (epigastric pain, positive guaiac test, weight gain) are more consistent with peptic ulcer disease or gastritis than sarcoidosis.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.7,
+            "A4": 0.9
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's alcohol use and smoking history are significant risk factors for peptic ulcer disease, further reducing the likelihood of sarcoidosis.",
+          "confidence": 0.88,
+          "attacks": {
+            "A4": 0.85
+          }
+        },
+        {
+          "id": "E1",
+          "text": "While rare, sarcoidosis can present with gastrointestinal involvement, and the diagnosis should not be completely dismissed without further testing.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.5,
+            "D1": 0.5
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The patient's improvement with frequent small meals and NSAID use suggests a mucosal inflammatory process (e.g., gastritis) rather than a granulomatous disease."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's improvement with frequent small meals and NSAID use suggests a mucosal inflammatory process (e.g., gastritis) rather than a granulomatous disease.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The positive stool guaiac test indicates gastrointestinal bleeding, which is more commonly associated with granulomatous diseases like Crohn's disease than with gastritis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's smoking history is a significant risk factor for Crohn's disease, which supports the likelihood of granulomatous findings on histology.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of diarrhea or changes in stools makes Crohn's disease less likely, as these are common symptoms of the condition.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.55
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's improvement with NSAIDs is atypical for gastritis, as NSAIDs are known to exacerbate mucosal inflammation.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

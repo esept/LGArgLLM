@@ -1,0 +1,295 @@
+{
+  "claim": "Americans drink more beer than Europeans.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The United States has a larger population than any single European country, leading to higher total beer consumption."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The United States has a larger population than any single European country, leading to higher total beer consumption.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Per capita beer consumption in many European countries is higher than in the U.S., meaning Europeans drink more beer individually even if the U.S. has a larger total consumption.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Total beer consumption is a more relevant metric than per capita when comparing overall impact on markets and production.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim compares Americans to Europeans collectively, not to individual countries, so the U.S. population alone does not justify the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Combined European countries have a much larger population than the U.S., which could lead to higher total beer consumption in Europe.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "European beer culture is historically deeper, leading to sustained higher consumption rates across the continent.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Beer is deeply ingrained in American culture, particularly in social and sporting events, driving higher consumption."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Beer is deeply ingrained in American culture, particularly in social and sporting events, driving higher consumption.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "European countries like Germany, Czech Republic, and Belgium have higher per capita beer consumption than the U.S.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "American beer consumption is spread across a larger population, making total consumption higher despite lower per capita rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many European countries have centuries-old beer traditions and festivals that sustain high consumption.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "American craft beer culture has grown significantly, increasing overall consumption in recent years.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Europeans have a more diverse alcohol consumption pattern, including higher wine and spirits intake, which may reduce beer consumption relative to Americans."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Europeans have a more diverse alcohol consumption pattern, including higher wine and spirits intake, which may reduce beer consumption relative to Americans.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some European countries, like Germany and Czech Republic, have per capita beer consumption rates higher than the U.S., contradicting the general claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in high beer-consuming European countries, overall alcohol consumption is still diversified, so beer may not dominate as much as in the U.S.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural shifts in the U.S. show declining beer consumption in favor of wine and spirits, narrowing the gap with Europe.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite shifts, beer remains the dominant alcoholic beverage in the U.S. by volume, maintaining the original claim's validity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The U.S. has a strong domestic beer industry with widespread availability and marketing, contributing to higher beer consumption."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The U.S. has a strong domestic beer industry with widespread availability and marketing, contributing to higher beer consumption.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "European countries like Germany, Belgium, and the Czech Republic have higher per capita beer consumption than the U.S., despite strong domestic industries in America.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. beer market is larger in absolute terms due to population size, but per capita consumption in many European countries remains higher.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Marketing and availability do not necessarily translate to higher consumption, as cultural preferences and drinking habits play a larger role.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The U.S. has a younger legal drinking age and more lenient advertising laws, which may contribute to higher overall beer consumption.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Many European countries have stricter alcohol regulations and higher taxes on beer, potentially limiting consumption compared to the U.S."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Many European countries have stricter alcohol regulations and higher taxes on beer, potentially limiting consumption compared to the U.S.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite stricter regulations, beer is deeply ingrained in European culture, leading to higher per capita consumption in many countries.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Cultural significance does not necessarily translate to higher consumption, as regulations can still suppress overall drinking rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. has a larger population, so total beer consumption may still be higher even if per capita consumption is lower.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Per capita consumption is a more accurate measure of drinking habits than total consumption, as it accounts for population size.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical data from beverage industry reports show that per capita beer consumption in the U.S. is higher than in most European nations."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical data from beverage industry reports show that per capita beer consumption in the U.S. is higher than in most European nations.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data may not account for variations in European countries, as some nations like Germany and Czech Republic have significantly higher beer consumption than the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some European countries have higher consumption, the U.S. still leads in aggregate beer consumption due to its larger population.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Beverage industry reports may exclude home-brewed or artisanal beer, which is more common in Europe and could skew per capita comparisons.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Home-brewed beer represents a negligible portion of total consumption, so its exclusion does not significantly impact the overall comparison.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

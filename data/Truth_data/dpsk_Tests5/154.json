@@ -1,0 +1,177 @@
+{
+  "claim": "Queen Elizabeth is a female monarch who has an interest in archaeology, and has had a long and successful reign in a country where popular support for the royal family is high.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Queen Elizabeth II is a female monarch, as she is the queen regnant of the United Kingdom."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Queen Elizabeth II is a female monarch, as she is the queen regnant of the United Kingdom.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Queen Elizabeth II is not a queen regnant but a queen consort, as she inherited the throne through marriage rather than direct lineage.",
+          "confidence": 0.1,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Queen Elizabeth II is indeed a queen regnant, as she ascended the throne after the death of her father, King George VI, not through marriage.",
+          "confidence": 0.99,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Queen Elizabeth II has publicly expressed interest in archaeology, including supporting archaeological projects and institutions."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Queen Elizabeth II has publicly expressed interest in archaeology, including supporting archaeological projects and institutions.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Public expressions of interest do not necessarily equate to genuine personal interest; they could be part of ceremonial duties.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Queen Elizabeth II has consistently supported archaeology beyond ceremonial duties, such as personal visits and funding initiatives.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Supporting archaeological projects does not imply a deep or sustained interest; it could be sporadic or symbolic.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical records show Queen Elizabeth II has engaged with archaeology over decades, indicating sustained interest.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Queen Elizabeth II's reign, which lasted from 1952 to 2022, is widely regarded as long and successful due to political stability and her ceremonial role."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Queen Elizabeth II's reign, which lasted from 1952 to 2022, is widely regarded as long and successful due to political stability and her ceremonial role.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Political stability during Queen Elizabeth II's reign was influenced by broader geopolitical factors, not solely her role, weakening the attribution of success to her.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While external factors played a role, Queen Elizabeth II's consistent diplomatic presence and ceremonial leadership contributed to national cohesion during turbulent times.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public support for the monarchy has declined in recent years, challenging the claim of universally high popularity during her reign.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite fluctuations, Queen Elizabeth II consistently maintained higher approval ratings than other public figures, reflecting enduring support.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Public opinion polls in the United Kingdom consistently show high levels of support for the royal family during Queen Elizabeth II's reign."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Public opinion polls in the United Kingdom consistently show high levels of support for the royal family during Queen Elizabeth II's reign.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some recent polls indicate a decline in support for the monarchy among younger generations in the UK.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The decline among younger generations is offset by strong support from older demographics, maintaining overall high approval.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Polling methodologies may not accurately reflect true public sentiment due to social desirability bias.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Independent and anonymous polling methods have been used to mitigate social desirability bias, increasing reliability.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "claim": "Consider the following background information: A 24-year-old woman presents to her primary care physician for a wellness visit. She says that she has been generally healthy but has noticed difficulty concentrating, becoming increasingly fatigued, and a 15-pound weight increase over the course of a few months. She also reports mild constipation and joint pain. Approximately 6-months ago, she experienced palpitations, increased stool frequency, and a hand tremor. Her past medical history is significant for asthma. Her father is not living and had Parkinson disease, and her mother has poorly controlled rheumatoid arthritis. She is currently sexually active in a monogamous relationship and uses contraception consistently. She denies cigarette smoking and occasionally drinks wine. She experimented once with lysergic acid diethylamide 6 years ago. Her temperature is 99\u00b0F (37.2\u00b0C), blood pressure is 127/98 mmHg, pulse is 55/min, and respirations are 13/min. On physical exam, the patient has slow speech and movement. She has tenderness to palpation of her wrist and ankle joints. She has delayed relaxation of deep tendon reflexes.\n\nGiven the background information the following is corrrect: Elevated TSH  levels will most likely be found in this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms of fatigue, weight gain, constipation, and slow speech are classic signs of hypothyroidism, which is associated with elevated TSH levels."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms of fatigue, weight gain, constipation, and slow speech are classic signs of hypothyroidism, which is associated with elevated TSH levels.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of palpitations, increased stool frequency, and hand tremor 6 months ago suggests a possible hyperthyroid phase, which could indicate Hashimoto's thyroiditis, where TSH levels may fluctuate and not always be elevated.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hashimoto's thyroiditis typically progresses to hypothyroidism with elevated TSH levels, and the current symptoms strongly align with this progression, making elevated TSH likely despite the earlier hyperthyroid phase.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's joint pain and family history of rheumatoid arthritis raise the possibility of an autoimmune disorder like rheumatoid arthritis or lupus, which could cause similar symptoms without necessarily involving thyroid dysfunction.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While autoimmune disorders can cause fatigue and joint pain, the combination with weight gain, constipation, and slow speech is more specific to hypothyroidism, making thyroid dysfunction a more likely primary diagnosis.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The delayed relaxation of deep tendon reflexes and bradycardia (pulse of 55/min) are consistent with hypothyroidism, a condition where TSH levels are typically elevated."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The delayed relaxation of deep tendon reflexes and bradycardia (pulse of 55/min) are consistent with hypothyroidism, a condition where TSH levels are typically elevated.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of palpitations, increased stool frequency, and hand tremor 6 months ago suggest a possible hyperthyroid state, which could complicate the interpretation of current symptoms as purely hypothyroid.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The transition from hyperthyroid to hypothyroid symptoms could indicate autoimmune thyroiditis (e.g., Hashimoto's), where initial thyrotoxicosis is followed by hypothyroidism, still supporting eventual TSH elevation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's family history of autoimmune diseases (rheumatoid arthritis) increases the likelihood of other autoimmune conditions, but not necessarily thyroid dysfunction.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Autoimmune diseases often cluster; rheumatoid arthritis in the mother significantly raises the prior probability of Hashimoto's thyroiditis in the patient, making TSH elevation more likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's prior symptoms of palpitations, increased stool frequency, and hand tremor suggest a possible history of hyperthyroidism, which can sometimes transition to hypothyroidism with elevated TSH."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's prior symptoms of palpitations, increased stool frequency, and hand tremor suggest a possible history of hyperthyroidism, which can sometimes transition to hypothyroidism with elevated TSH.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's current symptoms (fatigue, weight gain, constipation, slow speech/movement, delayed reflexes) are more consistent with primary hypothyroidism, which would not necessarily require a prior hyperthyroid state.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's family history of autoimmune diseases (Parkinson's, rheumatoid arthritis) suggests Hashimoto's thyroiditis could develop independently without preceding hyperthyroidism.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Transient hyperthyroidism followed by hypothyroidism is well-documented in postpartum thyroiditis and subacute thyroiditis, making A3's proposed mechanism plausible in the right context.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's age (24) makes de novo Hashimoto's more likely than post-hyperthyroid hypothyroidism, as Graves' disease typically presents later.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's mildly elevated temperature (99\u00b0F) and borderline high diastolic pressure could reflect residual autoimmune activity consistent with A3's transition hypothesis.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's family history of autoimmune diseases (Parkinson's and rheumatoid arthritis) increases the likelihood of autoimmune thyroid disorders like Hashimoto's thyroiditis, which causes elevated TSH."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's family history of autoimmune diseases (Parkinson's and rheumatoid arthritis) increases the likelihood of autoimmune thyroid disorders like Hashimoto's thyroiditis, which causes elevated TSH.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Parkinson's disease is not an autoimmune disorder, so including it in the family history of autoimmune diseases is misleading and weakens the argument.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Parkinson's is not autoimmune, rheumatoid arthritis is strongly linked to autoimmune thyroid disorders, so the core argument still holds partial validity.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms (fatigue, weight gain, constipation) are nonspecific and could be caused by many conditions besides hypothyroidism.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The combination of these symptoms with delayed reflex relaxation and bradycardia makes thyroid dysfunction more likely than other explanations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's earlier symptoms of palpitations and tremor suggest hyperthyroidism, which contradicts the current hypothesis of elevated TSH.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Hashimoto's thyroiditis often begins with a transient hyperthyroid phase before progressing to hypothyroidism, explaining both sets of symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's low body temperature (99\u00b0F) and slow movement align with the metabolic slowdown seen in hypothyroidism, where TSH levels rise due to insufficient thyroid hormone production."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's low body temperature (99\u00b0F) and slow movement align with the metabolic slowdown seen in hypothyroidism, where TSH levels rise due to insufficient thyroid hormone production.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of palpitations, increased stool frequency, and hand tremor 6 months ago suggests a possible hyperthyroid state, which may complicate the interpretation of current symptoms as purely hypothyroid.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The transition from hyperthyroid to hypothyroid symptoms could indicate autoimmune thyroiditis (e.g., Hashimoto's), where initial thyroid hormone leakage causes hyperthyroidism before progressing to hypothyroidism with elevated TSH.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's joint pain and family history of rheumatoid arthritis raise the possibility of an autoimmune disorder affecting multiple systems, which may not necessarily involve thyroid dysfunction.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Autoimmune thyroid diseases frequently coexist with other autoimmune conditions (e.g., rheumatoid arthritis), making thyroid testing clinically relevant even in this context.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The borderline low-normal temperature (99\u00b0F) and only mildly slow reflexes could fall within normal variation, reducing the specificity of these findings for hypothyroidism.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

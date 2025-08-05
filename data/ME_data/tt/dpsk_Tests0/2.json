@@ -1,0 +1,232 @@
+{
+  "claim": "Antibiotics are effective against viral infections",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Antibiotics are designed to target bacterial infections by disrupting bacterial cell walls or metabolic processes."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Antibiotics are designed to target bacterial infections by disrupting bacterial cell walls or metabolic processes.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some broad-spectrum antibiotics can incidentally affect certain viruses by interfering with host cell processes.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such incidental effects are rare, weak, and clinically insignificant compared to their primary bacterial targets.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Antiviral medications exist but are distinct from antibiotics, reinforcing that antibiotics are not designed for viruses.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Viruses lack the cellular structures and metabolic pathways that antibiotics are designed to interfere with."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Viruses lack the cellular structures and metabolic pathways that antibiotics are designed to interfere with.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics exhibit broad-spectrum activity and may indirectly affect viral replication by modulating the host immune response.",
+          "confidence": 0.45,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such indirect effects are rare, unpredictable, and clinically insignificant compared to targeted antiviral therapies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Antibiotics are sometimes prescribed for viral infections to prevent secondary bacterial infections.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Prophylactic antibiotic use in viral cases contributes to antibiotic resistance and is discouraged by modern medical guidelines.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific consensus holds that antibiotics have no direct effect on viral replication or infection mechanisms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific consensus holds that antibiotics have no direct effect on viral replication or infection mechanisms.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics exhibit indirect antiviral effects by modulating the host immune response or preventing secondary bacterial infections.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These indirect effects are clinically insignificant compared to direct antiviral medications and do not justify antibiotic use for viral infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain broad-spectrum antibiotics like azithromycin showed preliminary in vitro activity against some viruses during the COVID-19 pandemic.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subsequent rigorous clinical trials demonstrated no meaningful antiviral efficacy of azithromycin against SARS-CoV-2.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The misuse of antibiotics for viral infections contributes to antibiotic resistance without providing therapeutic benefit."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The misuse of antibiotics for viral infections contributes to antibiotic resistance without providing therapeutic benefit.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some cases, antibiotics are prescribed for viral infections to prevent secondary bacterial infections, which justifies their use.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Preventive use of antibiotics in viral infections is rare and often unnecessary, as secondary bacterial infections are uncommon in most patients.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Patients may demand antibiotics for viral infections due to misconceptions, leading to misuse despite medical guidelines.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public health campaigns and education have significantly reduced patient demand for antibiotics in viral cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Medical guidelines explicitly recommend against using antibiotics for viral illnesses such as the common cold or influenza."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Medical guidelines explicitly recommend against using antibiotics for viral illnesses such as the common cold or influenza.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some viral infections can lead to secondary bacterial infections, where antibiotics may be necessary.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases of secondary bacterial infections, antibiotics should only be prescribed after proper diagnosis, not as a blanket treatment for viral illnesses.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Patients sometimes pressure doctors into prescribing antibiotics for viral infections due to misconceptions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public health campaigns have reduced unnecessary antibiotic prescriptions by educating both doctors and patients.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "claim": "Consider the following background information: A 3-month-old girl is brought to the physician because of a productive cough for 5 days. Over the past month, she has had several episodes of watery stools. She is exclusively breastfed every 3\u20134 hours for 15\u201320 minutes. She was delivered vaginally at 38 weeks\" gestation at home and has not yet been evaluated by a physician. The mother reports that her child is not gaining weight. The mother had no prenatal care. The infant is at the 5th percentile for height and weight. The infant has not received any immunizations. Her temperature is 38.5\u00b0C (101.3\u00b0F), pulse is 155/min, respirations are 45/min, and blood pressure is 88/50 mm Hg. Oral examination shows white plaques covering the tongue and the palate. Rales are heard bilaterally on cardiopulmonary examination. Cervical and inguinal lymphadenopathy is present.\n\nGiven the background information the following is corrrect: Karyotyping of the infant\"s chromosomes is most likely to confirm the diagnosis.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The clinical presentation (productive cough, diarrhea, failure to thrive, oral thrush, lymphadenopathy) is more consistent with an infectious or immunological disorder rather than a chromosomal abnormality."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The clinical presentation (productive cough, diarrhea, failure to thrive, oral thrush, lymphadenopathy) is more consistent with an infectious or immunological disorder rather than a chromosomal abnormality.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Karyotyping may still be necessary to rule out chromosomal disorders like DiGeorge syndrome, which can present with immunodeficiency and failure to thrive.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "DiGeorge syndrome is rare compared to common infectious causes like HIV or candidiasis in this clinical context, making karyotyping less likely to be diagnostic.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of prenatal care increases the likelihood of undiagnosed congenital infections (e.g., CMV, toxoplasmosis), which could explain the symptoms without invoking chromosomal abnormalities.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Congenital infections typically present earlier than 3 months, and the lack of hepatosplenomegaly or other stigmata makes this less likely.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Karyotyping is typically indicated for congenital anomalies, developmental delays, or ambiguous genitalia, none of which are described in this case."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Karyotyping is typically indicated for congenital anomalies, developmental delays, or ambiguous genitalia, none of which are described in this case.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The infant's failure to thrive, recurrent infections, and lymphadenopathy could suggest an underlying genetic or syndromic condition that karyotyping might help diagnose.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The clinical presentation is more consistent with an infectious or nutritional etiology (e.g., thrush, pneumonia, malnutrition) rather than a chromosomal abnormality.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of typical dysmorphic features or organ malformations makes a chromosomal disorder unlikely, further reducing the need for karyotyping.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The findings of oral thrush and recurrent infections suggest possible immunodeficiency (e.g., HIV or SCID), which would require specific infectious or immunological testing, not karyotyping."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The findings of oral thrush and recurrent infections suggest possible immunodeficiency (e.g., HIV or SCID), which would require specific infectious or immunological testing, not karyotyping.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Karyotyping may still be relevant if a genetic syndrome (e.g., DiGeorge syndrome) is suspected, as it can present with immunodeficiency and developmental delays.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "DiGeorge syndrome is typically diagnosed via FISH or chromosomal microarray, not karyotyping, due to its microdeletion nature.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The clinical presentation strongly aligns with HIV exposure (e.g., maternal lack of prenatal care, failure to thrive, oral thrush), making infectious testing more urgent than genetic testing.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "HIV PCR testing is definitive in infants and should be prioritized over broad immunological panels if vertical transmission is suspected.",
+          "confidence": 0.95,
+          "attacks": {
+            "B2": 0.2
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The lack of prenatal care and home delivery increase the risk of perinatal infections (e.g., HIV, CMV), which are more likely explanations than chromosomal disorders."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The lack of prenatal care and home delivery increase the risk of perinatal infections (e.g., HIV, CMV), which are more likely explanations than chromosomal disorders.",
+          "cate": "S",
+          "confidence": 0.82,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Karyotyping may still be warranted if clinical features (e.g., dysmorphic features, growth failure) suggest an underlying chromosomal disorder.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The presence of oral thrush and lymphadenopathy strongly points toward an infectious etiology (e.g., HIV) rather than a chromosomal disorder.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Chromosomal disorders (e.g., Down syndrome) can also present with immunodeficiency and recurrent infections, mimicking perinatal infections.",
+          "confidence": 0.55,
+          "attacks": {
+            "C1": 0.5
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The acute presentation with fever, respiratory distress, and lymphadenopathy points toward an active infection rather than a genetic condition."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The acute presentation with fever, respiratory distress, and lymphadenopathy points toward an active infection rather than a genetic condition.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Chronic malnutrition and failure to thrive, along with recurrent infections, could suggest an underlying genetic immunodeficiency disorder.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The presence of oral thrush (white plaques) and recurrent infections are highly suggestive of an immunodeficiency, such as severe combined immunodeficiency (SCID).",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The lack of prenatal care and home delivery increases the risk of perinatal infections, which could explain the acute symptoms without invoking a genetic disorder.",
+          "confidence": 0.65,
+          "attacks": {
+            "C1": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The combination of failure to thrive, recurrent infections, and oral thrush is classic for SCID, which would be confirmed by karyotyping or genetic testing.",
+          "confidence": 0.78,
+          "attacks": {
+            "D1": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "Chromosomal disorders typically present with dysmorphic features or organ malformations, which are not mentioned in this infant's examination."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Chromosomal disorders typically present with dysmorphic features or organ malformations, which are not mentioned in this infant's examination.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some chromosomal disorders (e.g., DiGeorge syndrome) can present with immunodeficiency and infections without obvious dysmorphic features early in life.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The infant's clinical presentation (thrush, failure to thrive, recurrent infections) is more consistent with acquired immunodeficiency (e.g., HIV) than chromosomal disorders.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of prenatal care increases likelihood of vertically transmitted infections (HIV, CMV) over genetic disorders.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The combination of lymphadenopathy and oral thrush suggests possible HIV infection, which would require viral testing rather than karyotyping.",
+          "confidence": 0.9,
+          "attacks": {
+            "A6": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

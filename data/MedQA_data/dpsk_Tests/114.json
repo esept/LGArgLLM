@@ -1,0 +1,305 @@
+{
+  "claim": "Consider the following background information: A 65-year-old male presents to his primary care physician for stiffness in his arm. He states that he has been having trouble combing his hair and reaching objects that are high on the shelf. The patient has a past medical history of diabetes mellitus type II, obesity, and hypertension. His current medications include metformin, insulin, lisinopril, and hydrochlorothiazide. The patient admits to leading a sedentary life in which he tends to stay home and watch television. He does not engage in any physical or strenuous activity. On physical exam the patient has decreased passive and active range of motion of his shoulder. Strength of the patient\"s upper extremity is 4/5.\n\nGiven the background information the following is corrrect: Based on the information provided, the most likely diagnosis is Subacromial bursitis.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Subacromial bursitis is a common cause of shoulder pain and stiffness, especially in older individuals with a sedentary lifestyle, which matches the patient's profile."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Subacromial bursitis is a common cause of shoulder pain and stiffness, especially in older individuals with a sedentary lifestyle, which matches the patient's profile.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be due to adhesive capsulitis (frozen shoulder), which is common in diabetics and presents with similar stiffness and limited range of motion.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Adhesive capsulitis typically involves pain in all directions of shoulder movement, whereas subacromial bursitis often has pain primarily with overhead activities, which aligns more with the patient's symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's obesity and sedentary lifestyle could also suggest rotator cuff tendinopathy, which is another common cause of shoulder pain and stiffness in this demographic.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Rotator cuff tendinopathy usually presents with more pronounced weakness (often <4/5 strength) and specific painful arcs, which are not clearly described in this case.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's hypertension medication (lisinopril) is known to sometimes cause musculoskeletal pain as a side effect, which could explain the symptoms.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Drug-induced musculoskeletal pain from lisinopril is relatively rare and wouldn't typically cause the specific range of motion limitations described in this case.",
+          "confidence": 0.68,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's symptoms of difficulty with overhead activities and decreased range of motion are classic presentations of subacromial bursitis."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms of difficulty with overhead activities and decreased range of motion are classic presentations of subacromial bursitis.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of diabetes and obesity increases the likelihood of adhesive capsulitis (frozen shoulder), which also presents with stiffness and reduced range of motion.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Adhesive capsulitis typically presents with more severe pain at night and progressive loss of both active and passive range of motion, which are not clearly described in this case.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's sedentary lifestyle and age make rotator cuff tendinopathy or tear a likely alternative diagnosis, as these are common in inactive older adults.",
+          "confidence": 0.68,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Rotator cuff pathology usually presents with pain on specific movements and weakness, rather than global stiffness, making it less likely in this case.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's medical history of diabetes and obesity increases the likelihood of adhesive capsulitis (frozen shoulder), which also presents with stiffness and limited range of motion."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's medical history of diabetes and obesity increases the likelihood of adhesive capsulitis (frozen shoulder), which also presents with stiffness and limited range of motion.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Subacromial bursitis is more common in patients with repetitive overhead activities, which the patient does not engage in, making adhesive capsulitis more likely.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's sedentary lifestyle and lack of strenuous activity are more consistent with adhesive capsulitis than subacromial bursitis.",
+          "confidence": 0.68,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Adhesive capsulitis typically presents with more severe pain and restriction in all planes of movement, not just stiffness and mild weakness.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75,
+            "B2": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's diabetes and obesity are significant risk factors for adhesive capsulitis, which should not be overlooked despite other possible diagnoses.",
+          "confidence": 0.85,
+          "attacks": {
+            "C1": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The patient's sedentary lifestyle and comorbidities could also suggest rotator cuff tendinopathy or tear, which are more common than subacromial bursitis in this demographic."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's sedentary lifestyle and comorbidities could also suggest rotator cuff tendinopathy or tear, which are more common than subacromial bursitis in this demographic.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Subacromial bursitis is also common in sedentary individuals and can present similarly to rotator cuff pathology, making it a plausible diagnosis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Rotator cuff tendinopathy or tear is more likely given the patient's age and the specific complaint of difficulty with overhead activities, which is a classic symptom.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Imaging studies such as MRI or ultrasound would be necessary to definitively differentiate between subacromial bursitis and rotator cuff pathology.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85,
+            "C1": 0.8
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Subacromial bursitis typically presents with more pain than stiffness, and the patient's primary complaint is stiffness, which may point to a different diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Subacromial bursitis typically presents with more pain than stiffness, and the patient's primary complaint is stiffness, which may point to a different diagnosis.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Stiffness can still be a symptom of subacromial bursitis, especially in chronic cases where pain may have subsided but stiffness remains due to inflammation.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's sedentary lifestyle and obesity are strong risk factors for subacromial bursitis, making it a plausible diagnosis despite the primary complaint being stiffness.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's decreased range of motion and 4/5 strength in the upper extremity are more consistent with adhesive capsulitis (frozen shoulder) than subacromial bursitis.",
+          "confidence": 0.78,
+          "attacks": {
+            "A5": 0.6,
+            "B1": 0.75,
+            "C1": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "The physical exam findings of decreased passive and active range of motion are consistent with subacromial bursitis, supporting the diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The physical exam findings of decreased passive and active range of motion are consistent with subacromial bursitis, supporting the diagnosis.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Decreased range of motion is a nonspecific finding and can also occur in other conditions like adhesive capsulitis or rotator cuff tear.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's diabetes and sedentary lifestyle increase the likelihood of adhesive capsulitis (frozen shoulder) over subacromial bursitis.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Subacromial bursitis typically presents with pain at night and with overhead activities, which are not mentioned in the history.",
+          "confidence": 0.85,
+          "attacks": {
+            "A6": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The 4/5 strength in upper extremity could indicate rotator cuff pathology rather than bursitis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Muscle weakness could also be explained by the patient's sedentary lifestyle without specific pathology.",
+          "confidence": 0.65,
+          "attacks": {
+            "B3": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

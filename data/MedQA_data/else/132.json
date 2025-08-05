@@ -1,0 +1,371 @@
+{
+  "claim": "A 55-year-old man comes to the physician because of balance problems. He follows a vegan diet and does not eat meat, eggs, or dairy. Physical examination shows pale oral mucosa and conjunctivae. Neurologic examination shows normal strength in all extremities and decreased sense to vibration in his lower extremities bilaterally. A peripheral blood smear is shown. Which of the following enzymes is most likely impaired? : Methylmalonyl-CoA mutase",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms (balance problems, pale mucosa, and decreased vibration sense) are consistent with vitamin B12 deficiency, which is common in vegan diets lacking animal products.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms (balance problems, pale mucosa, and decreased vibration sense) are consistent with vitamin B12 deficiency, which is common in vegan diets lacking animal products.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The symptoms could also be caused by iron deficiency anemia, which is common in vegan diets and also presents with pale mucosa and fatigue, but does not typically cause neurological symptoms like balance issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The neurological symptoms might be due to peripheral neuropathy from other causes such as diabetes or alcohol abuse, unrelated to vitamin B12 deficiency.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Iron deficiency anemia alone would not explain the decreased vibration sense, which is a hallmark of posterior column damage seen in B12 deficiency.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of other risk factors like diabetes or alcohol abuse in the patient's history makes these alternative explanations less likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without other risk factors, idiopathic peripheral neuropathy is a possibility and should not be ruled out without further testing.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Vitamin B12 deficiency impairs methylmalonyl-CoA mutase, leading to accumulation of methylmalonic acid, which is associated with neurologic symptoms like those observed in the patient.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Vitamin B12 deficiency impairs methylmalonyl-CoA mutase, leading to accumulation of methylmalonic acid, which is associated with neurologic symptoms like those observed in the patient.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be caused by folate deficiency, which is common in vegan diets and can present similarly to B12 deficiency without elevated methylmalonic acid.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The neurologic symptoms may be due to peripheral neuropathy from other causes such as diabetes or alcohol use, not necessarily B12 deficiency.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Folate deficiency does not cause elevated methylmalonic acid, which is a specific marker for B12 deficiency and would differentiate it from folate deficiency.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's strictly vegan diet makes B12 deficiency far more likely than other causes of neuropathy, given the absence of B12 sources in their diet.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While methylmalonic acid is specific to B12 deficiency, the test may not be readily available in all clinical settings, making initial diagnosis challenging.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The absence of meat, eggs, and dairy in the patient's diet significantly increases the risk of vitamin B12 deficiency, which is required for the proper function of methylmalonyl-CoA mutase.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The absence of meat, eggs, and dairy in the patient's diet significantly increases the risk of vitamin B12 deficiency, which is required for the proper function of methylmalonyl-CoA mutase.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be caused by other deficiencies or conditions, such as folate deficiency or peripheral neuropathy, which are not directly related to vitamin B12.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient might be consuming fortified plant-based foods or supplements that provide adequate vitamin B12, making a deficiency less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Folate deficiency typically presents with megaloblastic anemia but does not cause the neurological symptoms seen in this patient, such as decreased vibration sense.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Peripheral neuropathy from other causes, such as diabetes, would usually present with different patterns of sensory loss and would not explain the pale mucosa and conjunctivae.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Fortified foods and supplements are not universally consumed by vegans, and their use cannot be assumed without explicit dietary history.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with fortified foods, bioavailability of vitamin B12 from non-animal sources may be lower, and the patient could still be deficient despite supplementation.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Other enzymes involved in B12 metabolism, such as methionine synthase, are less likely to be implicated because the patient's symptoms are more characteristic of methylmalonyl-CoA mutase impairment (e.g., neurologic deficits).",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Other enzymes involved in B12 metabolism, such as methionine synthase, are less likely to be implicated because the patient's symptoms are more characteristic of methylmalonyl-CoA mutase impairment (e.g., neurologic deficits).",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Methionine synthase deficiency can also cause neurologic deficits, as it leads to homocysteine accumulation, which is neurotoxic and can impair myelination.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's vegan diet is a stronger indicator of generalized B12 deficiency rather than a specific enzyme impairment, making it difficult to isolate methylmalonyl-CoA mutase as the primary issue.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While methionine synthase deficiency can cause neurologic symptoms, the presence of decreased vibration sense is more classically associated with methylmalonyl-CoA mutase impairment due to its role in myelin synthesis.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Generalized B12 deficiency would likely present with a broader range of symptoms, including hematologic abnormalities, which are not as prominent in this case, supporting a more specific enzyme impairment.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hematologic abnormalities can be variable in B12 deficiency and may not always be present, especially in early stages, so their absence does not rule out generalized deficiency.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The peripheral blood smear likely shows megaloblastic anemia, which is a hallmark of vitamin B12 deficiency and further supports the impairment of methylmalonyl-CoA mutase.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The peripheral blood smear likely shows megaloblastic anemia, which is a hallmark of vitamin B12 deficiency and further supports the impairment of methylmalonyl-CoA mutase.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Megaloblastic anemia can also result from folate deficiency, which is common in vegan diets and does not necessarily indicate impaired methylmalonyl-CoA mutase.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The neurologic symptoms suggest B12 deficiency, but they could also be due to other causes such as peripheral neuropathy from diabetes or alcohol abuse.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Folate deficiency does not cause neurologic symptoms like vibration sense loss, which are specific to B12 deficiency and thus support methylmalonyl-CoA mutase impairment.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of other risk factors like diabetes or alcohol abuse in the patient's history makes B12 deficiency the more likely cause of neurologic symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with neurologic symptoms, concurrent folate deficiency could still contribute to megaloblastic anemia, complicating the diagnosis of pure B12 deficiency.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Other rare causes of neurologic symptoms, such as copper deficiency or hereditary neuropathies, cannot be entirely ruled out without further testing.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The patient's neurologic symptoms (e.g., decreased vibration sense) are more specific to methylmalonyl-CoA mutase dysfunction rather than other B12-dependent pathways.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's neurologic symptoms (e.g., decreased vibration sense) are more specific to methylmalonyl-CoA mutase dysfunction rather than other B12-dependent pathways.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The neurologic symptoms could also be caused by folate deficiency, which can present similarly to B12 deficiency and is common in vegan diets.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other B12-dependent enzymes like methionine synthase could also lead to neurologic symptoms due to impaired myelin synthesis, not just methylmalonyl-CoA mutase.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Folate deficiency typically does not cause the same degree of neurologic impairment as B12 deficiency, making methylmalonyl-CoA mutase dysfunction more likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Methionine synthase dysfunction usually presents with more cognitive and psychiatric symptoms rather than the specific sensory deficits seen here.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if folate deficiency is less likely, the patient's vegan diet still raises the possibility of combined deficiencies that could complicate the clinical picture.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Some cases of methionine synthase deficiency can present with peripheral neuropathy, so it cannot be entirely ruled out based on symptoms alone.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

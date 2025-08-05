@@ -1,0 +1,411 @@
+{
+  "claim": "Cage-free hens can roam outdoors and have access to the outdoors.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Cage-free hens are not confined to cages, which allows them the freedom to move around and access outdoor areas if available.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cage-free hens are not confined to cages, which allows them the freedom to move around and access outdoor areas if available.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Many cage-free facilities still confine hens indoors due to biosecurity risks or lack of outdoor space.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Access to outdoor areas does not guarantee hens will use them, as they may prefer the safety of indoor environments.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cage-free systems often have high stocking densities, which can limit movement and outdoor access in practice.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Biosecurity measures can be designed to allow safe outdoor access without confining hens indoors.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that hens exhibit natural behaviors like foraging when given outdoor access, suggesting they do use outdoor areas.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Regulations and certifications for cage-free systems often mandate minimum space requirements to ensure adequate movement.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with biosecurity designs, disease outbreaks in outdoor areas can still pose significant risks to hen health.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Natural behaviors observed in studies may not be representative of all cage-free systems due to variability in management practices.",
+          "confidence": 0.63,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Enforcement of space requirements is often inconsistent, leading to non-compliance in some cage-free operations.",
+          "confidence": 0.67,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Many cage-free farming systems include outdoor access as part of their animal welfare standards, supporting the claim.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Many cage-free farming systems include outdoor access as part of their animal welfare standards, supporting the claim.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Outdoor access in cage-free systems is often limited or impractical due to space constraints and biosecurity concerns.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cage-free farms may label themselves as such without providing meaningful outdoor access, misleading consumers.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with space constraints, well-managed cage-free systems can rotate outdoor access to ensure all hens benefit.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Certification programs and audits exist to verify outdoor access claims, reducing the risk of misleading labels.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Rotation systems may still fail to provide consistent outdoor access for all hens due to logistical challenges.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Audits are not always frequent or thorough enough to catch all instances of non-compliance with outdoor access standards.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Cage-free does not necessarily guarantee outdoor access, as some cage-free systems may still keep hens indoors due to biosecurity or environmental concerns.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Cage-free does not necessarily guarantee outdoor access, as some cage-free systems may still keep hens indoors due to biosecurity or environmental concerns.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Many cage-free farms do provide outdoor access, as the term 'cage-free' is often marketed to imply better living conditions for hens.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Biosecurity concerns can be mitigated with proper farm management practices, making outdoor access feasible without significant risk.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Marketing terms like 'cage-free' can be misleading, and without strict regulations, farms may not actually provide outdoor access despite the label.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with proper management, certain regions may have environmental factors (e.g., predators or extreme weather) that make outdoor access impractical or unsafe.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Consumer demand for transparency is increasing, pushing farms to adhere more closely to the implied standards of 'cage-free' labels, including outdoor access.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Technological advancements, such as predator deterrents and climate-controlled outdoor spaces, can overcome environmental challenges to outdoor access.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The term 'cage-free' only indicates the absence of cages but does not legally require outdoor access, meaning hens may still be confined to barns.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The term 'cage-free' only indicates the absence of cages but does not legally require outdoor access, meaning hens may still be confined to barns.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Many cage-free certifications, such as Certified Humane, explicitly require outdoor access or enriched environments, contradicting the claim that outdoor access is not guaranteed.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Consumer expectations of 'cage-free' often include outdoor access, and misleading labeling can lead to ethical concerns even if legal definitions are narrow.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Certifications like Certified Humane are voluntary and not universally adopted, so many cage-free farms still operate without outdoor access requirements.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Consumer expectations are not a legal standard, and companies may comply with the bare minimum legal definition of 'cage-free' without providing outdoor access.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if not universal, the existence of certifications requiring outdoor access shows that some cage-free farms do meet higher welfare standards, partially countering the original argument.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some cage-free certifications, like 'Certified Humane,' mandate outdoor access, which supports the claim for those specific cases.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some cage-free certifications, like 'Certified Humane,' mandate outdoor access, which supports the claim for those specific cases.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Not all cage-free certifications require outdoor access, meaning some cage-free hens may still be confined indoors.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even with outdoor access mandates, enforcement and compliance may be inconsistent, leading to some hens not actually having outdoor access.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Certifications like 'Certified Humane' have strict auditing processes to ensure compliance with outdoor access requirements.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many large-scale cage-free operations still limit outdoor space or provide inadequate outdoor conditions, undermining the benefits.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Audits may be infrequent or announced in advance, allowing farms to temporarily comply during inspections.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Consumer demand for higher welfare standards pushes farms to improve outdoor access even if not all certifications require it.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "In practice, even in cage-free systems, outdoor access may be limited or impractical due to high stocking densities or predator risks.",
+        "confidence": 0.82,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "In practice, even in cage-free systems, outdoor access may be limited or impractical due to high stocking densities or predator risks.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "High stocking densities can be managed through better farm design and regulations, ensuring adequate outdoor space per hen.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Predator risks can be mitigated with protective measures like fencing and guardian animals, making outdoor access feasible.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Better farm design and regulations may increase costs significantly, making cage-free systems economically unviable for many farmers.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Protective measures like fencing and guardian animals are not foolproof and may still fail to prevent predator attacks, risking hen safety.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The increased costs can be offset by higher market prices for cage-free eggs, as consumers are willing to pay more for ethically produced food.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with occasional predator breaches, the overall welfare benefits of outdoor access outweigh the risks, as hens exhibit more natural behaviors.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

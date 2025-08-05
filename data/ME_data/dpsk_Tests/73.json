@@ -1,0 +1,279 @@
+{
+  "claim": "A square is a rectangle",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A square meets the definition of a rectangle as it has four sides and four right angles."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A square meets the definition of a rectangle as it has four sides and four right angles.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A square is a special case of a rectangle, but calling it a rectangle ignores its unique properties like equal side lengths.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical definitions prioritize inclusion over uniqueness; a square is still a rectangle by definition, regardless of additional properties.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practical contexts, calling a square a rectangle can cause confusion, as people expect rectangles to have unequal side lengths.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical terminology should not be altered based on layperson expectations; precision in definitions is more important.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "All properties of a rectangle (opposite sides equal, all angles 90 degrees) are satisfied by a square."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "All properties of a rectangle (opposite sides equal, all angles 90 degrees) are satisfied by a square.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A square has additional constraints (all sides equal) not required by the definition of a rectangle, making it a special case rather than a general rectangle.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical definitions classify squares as a subset of rectangles, meaning all squares are rectangles but not all rectangles are squares.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In practical applications, the distinction between squares and rectangles is often important, so treating them as identical can lead to errors.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In geometry, a square is classified as a special case of a rectangle where all sides are of equal length."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In geometry, a square is classified as a special case of a rectangle where all sides are of equal length.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A square has additional properties (equal sides and angles) that are not required for a rectangle, making it a distinct shape.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The definition of a rectangle includes all quadrilaterals with four right angles, which inherently includes squares as a subset.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practical applications, treating squares as rectangles can lead to confusion due to their stricter constraints.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical definitions prioritize logical consistency over practical convenience, and the classification holds under formal geometric rules.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The inclusive definition of a rectangle in mathematics explicitly includes squares as a subset of rectangles."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The inclusive definition of a rectangle in mathematics explicitly includes squares as a subset of rectangles.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some informal contexts, squares and rectangles are treated as distinct shapes, ignoring the mathematical definition.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Informal usage does not override formal mathematical definitions, which are universally accepted in academic and professional settings.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some educational materials for young children introduce squares and rectangles as separate categories to simplify learning.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Simplified educational approaches are later corrected with formal definitions, ensuring accurate mathematical understanding.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Every square can be considered a rectangle, but not every rectangle is a square, indicating the hierarchical relationship."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Every square can be considered a rectangle, but not every rectangle is a square, indicating the hierarchical relationship.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A square requires all sides to be equal and all angles to be 90 degrees, while a rectangle only requires angles to be 90 degrees, making the definitions fundamentally different.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The definition of a rectangle includes squares as a special case, which means squares inherently satisfy the conditions of being a rectangle.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practical applications, treating squares as rectangles can lead to confusion because squares have additional constraints not present in general rectangles.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical definitions are hierarchical by nature, and recognizing squares as a subset of rectangles is consistent with standard geometric classification.",
+          "confidence": 0.94,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The mathematical axioms for rectangles do not exclude quadrilaterals with equal side lengths, thus encompassing squares."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The mathematical axioms for rectangles do not exclude quadrilaterals with equal side lengths, thus encompassing squares.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While squares are technically rectangles, colloquial usage often distinguishes them as separate shapes, leading to potential confusion.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical definitions should not be conflated with colloquial usage, as precision is critical in formal contexts.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some geometric systems define rectangles strictly as quadrilaterals with unequal adjacent sides, excluding squares.",
+          "confidence": 0.55,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard Euclidean geometry universally accepts squares as a subset of rectangles, making specialized definitions non-authoritative.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "claim": "If you stand close to a microwave, you will get cancer.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Microwaves emit non-ionizing radiation, which lacks sufficient energy to damage DNA or cause cancer, according to scientific consensus."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Microwaves emit non-ionizing radiation, which lacks sufficient energy to damage DNA or cause cancer, according to scientific consensus.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While microwaves emit non-ionizing radiation, prolonged exposure at very close range could theoretically cause thermal tissue damage, which might indirectly increase cancer risk.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Thermal damage from microwaves requires extreme exposure levels far beyond what household microwaves can produce, making this scenario practically impossible under normal use.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest that non-ionizing radiation may have biological effects beyond thermal damage, though the link to cancer remains unproven.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The majority of peer-reviewed research concludes there is no credible evidence linking non-ionizing radiation from microwaves to cancer.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The U.S. Food and Drug Administration (FDA) regulates microwave ovens to ensure radiation levels remain well below harmful thresholds, making cancer risk negligible."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The U.S. Food and Drug Administration (FDA) regulates microwave ovens to ensure radiation levels remain well below harmful thresholds, making cancer risk negligible.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Microwave ovens can leak radiation if damaged or poorly maintained, potentially exposing users to higher-than-regulated levels.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "FDA regulations require microwave ovens to undergo rigorous testing and include safety mechanisms to prevent radiation leaks even if damaged.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term exposure to even low levels of microwave radiation may have cumulative effects not fully understood by current regulations.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Scientific consensus and decades of research indicate no credible evidence linking microwave radiation at regulated levels to cancer.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Multiple peer-reviewed studies have found no credible evidence linking microwave oven use to increased cancer risk in humans."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Multiple peer-reviewed studies have found no credible evidence linking microwave oven use to increased cancer risk in humans.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that prolonged exposure to microwave radiation at very close range may have biological effects, though not conclusively linked to cancer.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The biological effects observed in these studies are at radiation levels far higher than what a microwave oven emits, making them irrelevant to typical usage.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of evidence is not evidence of absence; lack of long-term studies on microwave exposure leaves uncertainty.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulatory agencies like the FDA and WHO have reviewed decades of research and confirm microwave ovens are safe when used properly.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The World Health Organization (WHO) states that microwave radiation does not have carcinogenic effects when exposure remains within safety standards."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The World Health Organization (WHO) states that microwave radiation does not have carcinogenic effects when exposure remains within safety standards.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Safety standards for microwave radiation exposure may not account for long-term, cumulative effects of low-level exposure.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The WHO's safety standards are based on extensive peer-reviewed research and epidemiological studies, which have not found evidence of carcinogenic effects from microwave radiation within these limits.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest that microwave radiation can cause DNA damage, which is a potential precursor to cancer, even at levels below current safety standards.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The majority of scientific consensus and meta-analyses conclude that microwave radiation at typical exposure levels does not cause DNA damage or increase cancer risk.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

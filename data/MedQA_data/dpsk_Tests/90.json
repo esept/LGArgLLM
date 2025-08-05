@@ -1,0 +1,214 @@
+{
+  "claim": "Consider the following background information: A 17-year-old high school student was in shop class when he accidentally sawed off his pointer finger while making a bird house. He fainted when he realized his finger had been cut off. The teacher immediately transported the patient to the emergency department and he arrived within 20 minutes. He has a past medical history of asthma, and his only medication is an albuterol inhaler. The patient\"s current blood pressure is 122/78 mmHg. Analgesics are administered. The teacher states that he left the amputated finger in the classroom, but that the principal would be transporting it to the hospital.\n\nGiven the background information the following is corrrect: The correct method for transport to the hospital is to submerge the amputated finger in ice water.",
+  "score": 0.15,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Submerging the amputated finger directly in ice water can cause tissue damage due to freezing, which reduces the chances of successful reattachment."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Submerging the amputated finger directly in ice water can cause tissue damage due to freezing, which reduces the chances of successful reattachment.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The amputated finger should be kept cool to slow tissue degradation, and ice water is a readily available method to achieve this in an emergency.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Medical guidelines recommend wrapping the amputated part in a clean, damp cloth and placing it in a sealed plastic bag, which is then placed on ice, avoiding direct contact with ice water.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "In the absence of proper medical supplies, using ice water is better than doing nothing, as it still provides some preservation benefit despite the risks.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The correct method for transporting an amputated finger is to wrap it in a sterile, moist gauze and place it in a sealed plastic bag, which is then placed on ice, not submerged in ice water."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The correct method for transporting an amputated finger is to wrap it in a sterile, moist gauze and place it in a sealed plastic bag, which is then placed on ice, not submerged in ice water.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Submerging the amputated finger in ice water can cause tissue damage due to direct contact with ice, making reattachment less likely.",
+          "confidence": 0.85,
+          "attacks": {
+            "A2": 0.9
+          }
+        },
+        {
+          "id": "C1",
+          "text": "In emergency situations, immediate cooling of the amputated part is critical, and submerging in ice water may be the only available option to preserve the tissue.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even in emergencies, using a sterile, moist gauze and a sealed plastic bag is more effective and does not require additional time or resources compared to submerging in ice water.",
+          "confidence": 0.8,
+          "attacks": {
+            "C1": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Medical guidelines recommend avoiding direct contact between the amputated part and ice to prevent frostbite, which can compromise the viability of the tissue for reattachment."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical guidelines recommend avoiding direct contact between the amputated part and ice to prevent frostbite, which can compromise the viability of the tissue for reattachment.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In emergency situations, rapid cooling of the amputated part is prioritized to slow tissue degradation, even if it risks minor frostbite.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Modern surgical techniques can often salvage tissue with minor frostbite damage, reducing the risk of non-viability.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Direct ice contact is sometimes unavoidable in resource-limited settings, and guidelines may not account for practical constraints.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that improper storage (e.g., no cooling) leads to far worse outcomes than frostbite from direct ice contact.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Submerging the finger in ice water can lead to osmotic damage to the cells, making reattachment more difficult or impossible."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Submerging the finger in ice water can lead to osmotic damage to the cells, making reattachment more difficult or impossible.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The amputated finger should be kept cool to slow tissue degradation, but direct contact with ice water is harmful.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Medical guidelines recommend wrapping the amputated part in a moist sterile dressing and placing it in a sealed plastic bag on ice, not submerged in ice water.",
+          "confidence": 0.95,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "In emergency situations, laypersons may not have access to sterile dressings or proper containers, making ice water a practical temporary solution.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.5
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Standard first aid protocols for amputations emphasize keeping the amputated part cool but not frozen, which is best achieved by using a cold pack or ice surrounding a protective barrier, not direct immersion in ice water."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Standard first aid protocols for amputations emphasize keeping the amputated part cool but not frozen, which is best achieved by using a cold pack or ice surrounding a protective barrier, not direct immersion in ice water.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Direct immersion in ice water can cause frostbite or tissue damage to the amputated part, making reattachment more difficult.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "In emergency situations, immediate cooling is prioritized over perfect preservation methods, and ice water may be the most readily available option.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Medical guidelines consistently recommend against direct ice water immersion due to the risk of irreversible tissue damage.",
+          "confidence": 0.9,
+          "attacks": {
+            "C1": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

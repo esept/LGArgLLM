@@ -1,0 +1,185 @@
+{
+  "claim": "Xiaoming was born when his father was 30 and grandfather was 60. When Xiaoming turns 30, their ages form an arithmetic sequence",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If Xiaoming was born when his father was 30, then when Xiaoming turns 30, his father will be 60."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If Xiaoming was born when his father was 30, then when Xiaoming turns 30, his father will be 60.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The grandfather's age is not considered in this argument, which is necessary to form an arithmetic sequence.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The grandfather's age was 60 when Xiaoming was born, so when Xiaoming turns 30, the grandfather will be 90, forming the sequence 30, 60, 90.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The sequence 30, 60, 90 is indeed an arithmetic sequence with a common difference of 30.",
+          "confidence": 1.0,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If Xiaoming's grandfather was 60 when Xiaoming was born, then when Xiaoming turns 30, his grandfather will be 90."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If Xiaoming's grandfather was 60 when Xiaoming was born, then when Xiaoming turns 30, his grandfather will be 90.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes Xiaoming's father was 30 when Xiaoming was born, but this is not explicitly stated in the argument.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim explicitly states that Xiaoming's father was 30 when Xiaoming was born, making B1's counter-argument invalid.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument does not consider the possibility that Xiaoming's grandfather might have passed away before Xiaoming turns 30.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The scenario assumes all individuals are alive at the time of calculation, as it is a standard assumption in such problems unless stated otherwise.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "An arithmetic sequence requires a constant difference between consecutive terms; the ages 30, 60, and 90 have a common difference of 30."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "An arithmetic sequence requires a constant difference between consecutive terms; the ages 30, 60, and 90 have a common difference of 30.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes Xiaoming's grandfather was 60 when Xiaoming was born, but the claim does not explicitly state this.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim states Xiaoming's grandfather was 60 when Xiaoming was born, so the assumption in A3 is valid.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The ages 30, 60, and 90 do not account for potential time gaps or delays in age reporting.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Age reporting is typically precise in such contexts, making the sequence reliable.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The sequence of ages (Xiaoming, father, grandfather) at the time Xiaoming turns 30 is 30, 60, 90, which satisfies the definition of an arithmetic sequence."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The sequence of ages (Xiaoming, father, grandfather) at the time Xiaoming turns 30 is 30, 60, 90, which satisfies the definition of an arithmetic sequence.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The grandfather's age at Xiaoming's birth was 60, implying he would be 90 when Xiaoming turns 30, but this assumes the grandfather is still alive at that time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim does not specify the grandfather's lifespan, so it is reasonable to assume he is alive when Xiaoming turns 30 unless stated otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The arithmetic sequence requires equal differences between consecutive terms, but if the grandfather passes away before Xiaoming turns 30, the sequence cannot be formed.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly states the ages form an arithmetic sequence when Xiaoming turns 30, implying all three individuals are alive at that time.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

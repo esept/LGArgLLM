@@ -1,0 +1,282 @@
+{
+  "claim": "In the United States, people smoke more on average than in Spain.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The United States has a higher prevalence of smoking compared to Spain, with about 14% of adults smoking in the U.S. versus around 22% in Spain.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The United States has a higher prevalence of smoking compared to Spain, with about 14% of adults smoking in the U.S. versus around 22% in Spain.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The data might be outdated or misrepresented; recent studies show a decline in smoking rates in the U.S. due to stricter regulations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural differences in reporting smoking habits could lead to underreporting in Spain, making the comparison unreliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Stricter regulations in the U.S. have been shown to reduce smoking rates, but Spain has also implemented similar measures recently.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies in Spain use rigorous methodologies to ensure accurate reporting, minimizing the risk of underreporting.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Spain has stricter anti-smoking laws, including bans in public places, which have significantly reduced smoking rates compared to the U.S.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Spain has stricter anti-smoking laws, including bans in public places, which have significantly reduced smoking rates compared to the U.S.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The U.S. has also implemented strict anti-smoking laws in many states, such as California and New York, which have significantly reduced smoking rates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural differences, such as the higher social acceptance of smoking in Spain, may offset the impact of stricter laws.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even with strict laws, enforcement in Spain is inconsistent, leading to higher actual smoking rates than reported.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The social acceptance of smoking in Spain is declining, especially among younger generations, reducing its impact on smoking rates.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Recent data indicates that enforcement of anti-smoking laws in Spain has improved, leading to a measurable decrease in smoking rates.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Cultural attitudes in Spain, such as the emphasis on outdoor dining and socializing, discourage smoking more than in the U.S.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Cultural attitudes in Spain, such as the emphasis on outdoor dining and socializing, discourage smoking more than in the U.S.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Outdoor dining and socializing in the U.S. are also common, and smoking is often restricted in these areas, similar to Spain.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Studies show that smoking rates in Spain have been declining, but the U.S. has seen a steeper decline in smoking rates over the past decade.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. has stricter smoking regulations in public places compared to Spain, which could lead to lower smoking rates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The decline in smoking rates in the U.S. is partly due to higher taxes on tobacco products, which are not as high in Spain.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The U.S. has a larger population and more smokers in absolute numbers, but per capita, Spain has a higher smoking rate.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The U.S. has a larger population and more smokers in absolute numbers, but per capita, Spain has a higher smoking rate.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Per capita smoking rates are more relevant for comparing average smoking behavior between countries than absolute numbers.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural factors in Spain, such as higher social acceptance of smoking, contribute to higher per capita rates.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. has implemented stricter anti-smoking policies in recent years, which may not be reflected in per capita comparisons.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Spain's higher per capita smoking rate could be due to fewer public health campaigns compared to the U.S.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Social acceptance of smoking in Spain is declining, which may soon reduce the per capita smoking rate.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "The U.S. has a larger population, so even a lower per capita rate can result in more total smokers.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Tobacco taxes in Spain are lower than in the U.S., making cigarettes more affordable and potentially increasing smoking rates.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Tobacco taxes in Spain are lower than in the U.S., making cigarettes more affordable and potentially increasing smoking rates.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Despite lower taxes, Spain has stricter anti-smoking laws and public awareness campaigns that reduce smoking rates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The correlation between lower taxes and higher smoking rates is not proven, as cultural factors also play a significant role.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even with lower taxes, Spain's smoking prevalence has been declining due to health policies.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cultural attitudes in Spain towards smoking are more restrictive compared to the U.S., offsetting the effect of lower taxes.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Recent data indicates that Spain's smoking rates are lower than the U.S. despite tax differences, supporting the effectiveness of their health policies.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

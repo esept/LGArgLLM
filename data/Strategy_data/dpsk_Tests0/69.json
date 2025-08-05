@@ -1,0 +1,294 @@
+{
+  "claim": "A person with Anorexia nervosa is more likely to break a bone than a regular person.",
+  "score": 0.85,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Anorexia nervosa often leads to severe malnutrition, which can result in decreased bone mineral density (osteoporosis), making bones more fragile and prone to fractures."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Anorexia nervosa often leads to severe malnutrition, which can result in decreased bone mineral density (osteoporosis), making bones more fragile and prone to fractures.",
+          "cate": "P",
+          "confidence": 0.88,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all individuals with Anorexia nervosa develop severe malnutrition or osteoporosis; some may maintain adequate nutrition through supplements or early intervention.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with supplements, the metabolic and hormonal disruptions caused by Anorexia nervosa can still lead to bone density loss, independent of nutritional intake.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Regular people with sedentary lifestyles or poor diets may also have low bone density, reducing the relative risk difference.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Anorexia nervosa specifically exacerbates bone loss due to hormonal imbalances (e.g., low estrogen), which are more severe than in typical sedentary individuals.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.85
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Fracture risk depends on activity levels; anorexic individuals may avoid physical activity, reducing fracture opportunities despite fragile bones.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.5
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Even reduced activity doesn't eliminate fracture risk from minor trauma or spontaneous fractures due to extreme bone fragility in advanced cases.",
+          "confidence": 0.78,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Individuals with anorexia nervosa frequently experience hormonal imbalances, such as low estrogen levels, which further contribute to bone weakening and increased fracture risk."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Individuals with anorexia nervosa frequently experience hormonal imbalances, such as low estrogen levels, which further contribute to bone weakening and increased fracture risk.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all individuals with anorexia nervosa have hormonal imbalances severe enough to significantly impact bone density.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even mild hormonal imbalances in anorexia nervosa patients can lead to measurable decreases in bone mineral density over time.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Other factors like nutrition and physical activity play a larger role in bone health than hormonal imbalances alone.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Hormonal imbalances directly affect calcium absorption and bone remodeling, making them a primary contributor to bone weakness in anorexia patients.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Chronic low body weight in anorexia nervosa reduces mechanical stress on bones, which is necessary for maintaining bone strength, thereby increasing susceptibility to fractures."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Chronic low body weight in anorexia nervosa reduces mechanical stress on bones, which is necessary for maintaining bone strength, thereby increasing susceptibility to fractures.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Reduced mechanical stress alone does not fully explain bone fragility; hormonal imbalances (e.g., low estrogen) in anorexia play a more significant role in bone loss.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with hormonal imbalances, mechanical stress remains a critical factor in bone remodeling, as demonstrated in weight-bearing exercise studies.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some anorexic individuals engage in excessive exercise, which may partially offset bone stress reduction from low weight.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Excessive exercise in anorexia often occurs alongside malnutrition, negating potential bone-strengthening benefits.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Comparative studies show osteoporosis rates in anorexia are lower than in postmenopausal women, suggesting other factors dominate fracture risk.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Anorexia typically affects younger individuals whose baseline fracture risk is much lower than postmenopausal populations, making direct comparisons misleading.",
+          "confidence": 0.88,
+          "attacks": {
+            "B3": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Nutritional deficiencies, particularly in calcium and vitamin D, are common in anorexia nervosa and directly impair bone health, elevating the likelihood of bone breaks."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Nutritional deficiencies, particularly in calcium and vitamin D, are common in anorexia nervosa and directly impair bone health, elevating the likelihood of bone breaks.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals with anorexia nervosa may compensate with vitamin D and calcium supplements, mitigating bone health risks.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Supplement absorption can still be impaired due to overall malnutrition, reducing their effectiveness.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Not all anorexia nervosa cases lead to severe nutritional deficiencies; milder cases may not significantly impact bone health.",
+          "confidence": 0.55,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Even mild anorexia nervosa often involves prolonged dietary restrictions, which cumulatively harm bone density.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Other factors like physical activity levels and genetics play a larger role in bone fracture risk than nutrition alone.",
+          "confidence": 0.6,
+          "attacks": {
+            "A4": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Nutritional deficiencies exacerbate bone fragility regardless of other factors, increasing baseline fracture risk.",
+          "confidence": 0.8,
+          "attacks": {
+            "B3": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Studies have shown that individuals with anorexia nervosa have a significantly higher incidence of fractures compared to the general population, even at younger ages."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Studies have shown that individuals with anorexia nervosa have a significantly higher incidence of fractures compared to the general population, even at younger ages.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The studies may not account for confounding factors such as physical activity levels or genetic predispositions to fractures.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Most studies control for physical activity and genetics through matching or statistical adjustments, reducing the impact of these confounders.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The higher incidence of fractures could be due to lower body weight rather than anorexia nervosa itself, as lower weight reduces bone density.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Research specifically links anorexia nervosa to hormonal changes (e.g., low estrogen) that directly impair bone health, independent of weight.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

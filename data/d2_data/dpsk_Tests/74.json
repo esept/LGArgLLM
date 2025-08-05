@@ -1,0 +1,177 @@
+{
+  "claim": "If the alarm does not ring, I will be late. I am not late. So the alarm rang",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim follows a logical structure where the alarm not ringing directly causes lateness, and the absence of lateness implies the alarm rang."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim follows a logical structure where the alarm not ringing directly causes lateness, and the absence of lateness implies the alarm rang.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes a strict causal relationship between the alarm ringing and lateness, ignoring other possible reasons for being on time (e.g., waking up naturally, someone else waking you).",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if other factors could prevent lateness, the alarm not ringing remains a highly probable cause of lateness in most cases, reinforcing the original implication.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on a logical fallacy (denying the antecedent: 'If P then Q. Not P, therefore not Q') which is not universally valid.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While the structure resembles denying the antecedent, the claim is contextually reasonable as alarms are typically the primary means of waking up on time.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The conclusion is valid under the assumption that the alarm not ringing is the only possible cause of lateness."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The conclusion is valid under the assumption that the alarm not ringing is the only possible cause of lateness.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "There are other possible causes of lateness, such as traffic delays or oversleeping despite the alarm ringing.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "If the alarm is not the sole cause of lateness, the conclusion that the alarm rang does not necessarily follow from not being late.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The reasoning is consistent with modus tollens in formal logic, where the negation of the consequent implies the negation of the antecedent."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The reasoning is consistent with modus tollens in formal logic, where the negation of the consequent implies the negation of the antecedent.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modus tollens assumes a strict logical implication, but real-world scenarios often involve exceptions (e.g., alternative reasons for not being late).",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Formal logic frameworks like modus tollens are designed to handle idealized cases, and their validity is preserved under strict adherence to logical rules.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim conflates correlation with causation; not being late does not necessarily prove the alarm rang (e.g., someone might have woken you up).",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In the absence of evidence for alternative causes, the most parsimonious explanation remains the alarm ringing, aligning with Occam's razor.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If the alarm did not ring, the stated condition would have resulted in lateness, but since lateness did not occur, the alarm must have rung."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If the alarm did not ring, the stated condition would have resulted in lateness, but since lateness did not occur, the alarm must have rung.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "There could be other reasons for not being late, such as waking up naturally before the alarm or someone else waking you up.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Waking up naturally or being woken by someone else is less reliable than an alarm and would not consistently prevent lateness.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes the alarm is the only possible way to avoid lateness, ignoring alternative methods like using a backup alarm or a smartwatch.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Alternative methods like backup alarms or smartwatches still involve some form of alarm mechanism, reinforcing the original argument's logic.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

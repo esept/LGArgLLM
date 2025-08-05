@@ -1,0 +1,287 @@
+{
+  "claim": "Donald Trump is an American",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Donald Trump was born in Queens, New York City, which is part of the United States, making him an American citizen by birthright under the U.S. Constitution."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Donald Trump was born in Queens, New York City, which is part of the United States, making him an American citizen by birthright under the U.S. Constitution.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Birthright citizenship has been challenged in some legal contexts, and there are arguments that the interpretation of the 14th Amendment may not universally grant citizenship to all born on U.S. soil.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The 14th Amendment's Citizenship Clause has been consistently upheld by the Supreme Court to grant birthright citizenship, with no successful legal challenges to its interpretation in this context.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "There are rare cases where individuals born in the U.S. to foreign diplomats or occupying forces may not be granted citizenship, which could theoretically apply if Trump's parents had such status (though they did not).",
+          "confidence": 0.3,
+          "attacks": {
+            "A1": 0.2
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Donald Trump's parents were not foreign diplomats or part of an occupying force, making this exception irrelevant to his case.",
+          "confidence": 0.95,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Donald Trump has held a U.S. passport and has been a registered voter in the United States, both of which require American citizenship."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Donald Trump has held a U.S. passport and has been a registered voter in the United States, both of which require American citizenship.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Holding a U.S. passport or being a registered voter does not necessarily prove birthright citizenship; it could be acquired through naturalization.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Donald Trump was born in New York, which is confirmed by his birth certificate, proving his birthright citizenship.",
+          "confidence": 0.98,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "B2",
+          "text": "There have been historical cases of fraudulent birth certificates, so the document alone may not be definitive proof.",
+          "confidence": 0.3,
+          "attacks": {
+            "A2": 0.2,
+            "C1": 0.2
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Multiple independent verifications and government records confirm the authenticity of Donald Trump's birth certificate.",
+          "confidence": 0.92,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Donald Trump served as the 45th President of the United States, a position that requires the holder to be a natural-born U.S. citizen, further confirming his American nationality."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Donald Trump served as the 45th President of the United States, a position that requires the holder to be a natural-born U.S. citizen, further confirming his American nationality.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The U.S. Constitution does not explicitly define 'natural-born citizen,' leaving room for legal interpretation about whether Trump qualifies.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Legal precedent and historical consensus hold that 'natural-born citizen' includes anyone born on U.S. soil, which applies to Trump.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some conspiracy theories claim Trump was not born in the U.S., which would disqualify him from being a natural-born citizen.",
+          "confidence": 0.3,
+          "attacks": {
+            "A3": 0.25
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Trump's birth certificate has been publicly verified, debunking claims about his place of birth.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Public records, including birth certificates and legal documents, consistently list Donald Trump's nationality as American, with no credible evidence to the contrary."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Public records, including birth certificates and legal documents, consistently list Donald Trump's nationality as American, with no credible evidence to the contrary.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some conspiracy theories claim Donald Trump's birth records were falsified, suggesting he may not be a natural-born American citizen.",
+          "confidence": 0.25,
+          "attacks": {
+            "A4": 0.2
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Legal definitions of nationality can vary, and some argue that dual citizenship or foreign business ties could complicate the strict classification of being 'American'.",
+          "confidence": 0.45,
+          "attacks": {
+            "A4": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Conspiracy theories about falsified birth records lack credible evidence and have been repeatedly debunked by independent fact-checkers.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Dual citizenship or foreign business ties do not negate legal American nationality, as U.S. law recognizes such cases without revoking citizenship.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Donald Trump's parents were both U.S. citizens at the time of his birth, which automatically grants him American citizenship under U.S. law."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Donald Trump's parents were both U.S. citizens at the time of his birth, which automatically grants him American citizenship under U.S. law.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The U.S. Constitution's 14th Amendment grants citizenship to all persons born or naturalized in the U.S., but there is debate over whether this applies to children of non-resident citizens.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Historical legal precedent and Supreme Court rulings have consistently upheld birthright citizenship for children of U.S. citizens, regardless of residency status.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some legal scholars argue that the term 'subject to the jurisdiction thereof' in the 14th Amendment excludes children of non-resident citizens.",
+          "confidence": 0.55,
+          "attacks": {
+            "A5": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Congressional records and legal interpretations from the time of the 14th Amendment's ratification support birthright citizenship for children of citizens, even if born abroad.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Donald Trump has publicly identified as an American throughout his life, including in official statements, interviews, and legal filings."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Donald Trump has publicly identified as an American throughout his life, including in official statements, interviews, and legal filings.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Donald Trump was born in Queens, New York, which is part of the United States, making him a natural-born American citizen.",
+          "confidence": 0.98,
+          "attacks": {
+            "A6": 0.99
+          }
+        },
+        {
+          "id": "B2",
+          "text": "There is no credible evidence or legal challenge disputing Donald Trump's American citizenship.",
+          "confidence": 0.97,
+          "attacks": {
+            "A6": 0.98
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Some conspiracy theories have falsely claimed Donald Trump was not born in the U.S., but these have been thoroughly debunked.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.3,
+            "B2": 0.2
+          }
+        }
+      ]
+    }
+  }
+}

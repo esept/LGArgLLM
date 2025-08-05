@@ -1,0 +1,31 @@
+You are given a claim (`claim a`).
+Your task is to generate a set of logically distinct arguments that either support the claim (`cate: P`) or support its negation (`cate: S`).
+### Requirements:
+1.  Each argument must be **logically and substantively different**, not simple rewordings.
+2.  For each argument, include:
+    * `id`: Unique ID (e.g., A1, A2, ...). # A for LEVEL 1, DO NOT USE ANY OTHER LETTER!!!!
+    * `text`: A concise, meaningful argument in natural language.
+    * `confidence`: A number between 0 and 1 indicating how strongly it supports its stance.
+    * `cate`:
+        * `P` = supports the claim
+        * `S` = supports the opposite
+### Facts for Arguments:
+In addition to the arguments above, you need to generate multiple facts. These facts are arguments with a confidence of 1. Use Descriptive Logical language.
+#### Requirements:
+1.  Each fact must be **indisputable** with a confidence of 1.
+2.  Each fact should directly **support** one or more existing `P` or `S` arguments, or provide the basis for a new, highly certain argument.
+3.  For each fact, include:
+    * `id`: Unique ID (e.g., F1, F2, ...). # F for Fact, DO NOT USE ANY OTHER LETTER!!!!
+    * `text`: A concise, unambiguous factual statement.
+### Output format (YAML):
+```yaml
+Arguments:
+  - id: A1
+    text: "French is an official language in several European countries, making it commonly spoken."
+    confidence: 0.72
+    cate: P
+Facts:
+  - id: F1
+    text: "UNESCO data indicates over 300 million French speakers globally, with a significant portion in Europe."
+```
+Use valid YAML syntax. Do not return JSON.

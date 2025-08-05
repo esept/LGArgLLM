@@ -1,0 +1,193 @@
+{
+  "claim": "Skin cancer kills the most women in the U.S..",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the American Cancer Society, lung cancer is the leading cause of cancer-related deaths among women in the U.S., not skin cancer."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the American Cancer Society, lung cancer is the leading cause of cancer-related deaths among women in the U.S., not skin cancer.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer, particularly melanoma, has a high mortality rate if not detected early, and its incidence is rising among women.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While melanoma is serious, lung cancer still accounts for significantly more deaths annually among women, as per CDC data.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might refer to non-melanoma skin cancers, which are more common but less fatal, leading to confusion in statistics.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-melanoma skin cancers rarely cause death, making them irrelevant to the claim about leading causes of cancer deaths.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The CDC reports that heart disease, not skin cancer, is the leading cause of death for women in the U.S. overall."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The CDC reports that heart disease, not skin cancer, is the leading cause of death for women in the U.S. overall.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer may still be the leading cause of death among women in specific age groups or regions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "CDC data is comprehensive and accounts for all age groups and regions, making it unlikely that skin cancer surpasses heart disease in any significant demographic.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might refer to mortality rates among women diagnosed with cancer, where skin cancer could be a leading cause.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even among cancer-related deaths, lung cancer has higher mortality rates than skin cancer in women.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Melanoma, the deadliest form of skin cancer, ranks lower than breast and lung cancers in terms of mortality rates for women in the U.S."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Melanoma, the deadliest form of skin cancer, ranks lower than breast and lung cancers in terms of mortality rates for women in the U.S.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Non-melanoma skin cancers, such as basal cell carcinoma and squamous cell carcinoma, are more common but rarely fatal, which skews the overall mortality statistics.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when considering non-melanoma skin cancers, the mortality rate is still significantly lower than that of breast and lung cancers.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim may refer to specific age groups or regions where skin cancer mortality is higher than national averages.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "National statistics consistently show breast and lung cancers as the leading causes of cancer death in women across all age groups and regions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Statistical data from the National Cancer Institute shows that skin cancer does not appear in the top five causes of cancer deaths for women in the U.S."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Statistical data from the National Cancer Institute shows that skin cancer does not appear in the top five causes of cancer deaths for women in the U.S.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim might refer to melanoma, a specific type of skin cancer, which has a higher mortality rate than other skin cancers and could be significant in certain demographics.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even melanoma is not among the top five deadliest cancers for women in the U.S., according to the same National Cancer Institute data.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be misinterpreted from data showing skin cancer as the most commonly diagnosed cancer, not the deadliest.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Common diagnosis does not equate to high mortality, and the original claim specifically refers to deaths, not incidence rates.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

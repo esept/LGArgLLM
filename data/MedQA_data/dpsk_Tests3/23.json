@@ -1,0 +1,205 @@
+{
+  "claim": "Consider the following background information: An 89-year-old woman sees her neurologist for a follow-up evaluation. Three months ago, she presented with complaints about facial asymmetry. Her daughter has noticed that her mother\u2019s mouth is droops downwards on the right side of her face and that she cannot close her right eye well. The same side also lacks wrinkles on the forehead. Since then, the patient feels like her facial muscles have gotten weaker. She was given a course of corticosteroids, but she has still not recovered fully. Upon being asked to close her eyes, the patient has difficulty doing so and fails to completely close her eyelids. On examination, there is no loss of pain, temperature, or crude or tactile touch sensations in the whole face. The neurological exam is otherwise unremarkable. This patient also has type 2 diabetes mellitus which is well controlled with metformin. The neurologist recommends a therapy that will help relieve her symptoms.\n\nGiven the background information the following is corrrect: The most likely treatment option being prescribed to this patient is Botox.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The patient's symptoms are consistent with Bell's palsy, which is typically treated with corticosteroids and antiviral medications, not Botox."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms are consistent with Bell's palsy, which is typically treated with corticosteroids and antiviral medications, not Botox.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Botox can be used to treat facial asymmetry and muscle weakness in Bell's palsy when corticosteroids and antiviral medications fail to provide full recovery.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Botox is not a first-line treatment for Bell's palsy and is typically reserved for chronic cases or residual symptoms after initial treatment.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's age and well-controlled diabetes may influence the choice of treatment, making Botox a less favorable option due to potential side effects.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Botox is not a standard treatment for facial weakness or asymmetry caused by neurological conditions like Bell's palsy."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Botox is not a standard treatment for facial weakness or asymmetry caused by neurological conditions like Bell's palsy.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Botox can be used to temporarily improve facial symmetry in patients with incomplete recovery from Bell's palsy.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The use of Botox for Bell's palsy is off-label and lacks strong evidence from large clinical trials.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Physical therapy and facial exercises are the first-line treatments for incomplete recovery from Bell's palsy.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.95
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's inability to close her eye suggests a need for eye protection (e.g., artificial tears or an eye patch), not Botox, which could worsen eyelid function."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's inability to close her eye suggests a need for eye protection (e.g., artificial tears or an eye patch), not Botox, which could worsen eyelid function.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Botox is commonly used to treat facial asymmetry and muscle weakness in conditions like Bell's palsy, which aligns with the patient's symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Botox is contraindicated in patients with pre-existing eyelid weakness, as it can exacerbate the inability to close the eye, increasing the risk of corneal damage.",
+          "confidence": 0.88,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Artificial tears and eye patches are symptomatic treatments and do not address the underlying facial muscle weakness, which Botox can help manage.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's well-controlled diabetes does not contraindicate Botox, making it a viable option if other symptoms are considered.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.5
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Botox is sometimes used off-label for facial synkinesis (involuntary muscle movements) that can occur after Bell's palsy, but this is not the primary treatment."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Botox is sometimes used off-label for facial synkinesis (involuntary muscle movements) that can occur after Bell's palsy, but this is not the primary treatment.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms are consistent with Bell's palsy, and corticosteroids are the primary treatment, not Botox.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Botox may still be considered if the patient develops synkinesis after the acute phase of Bell's palsy, but this is not the initial treatment.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.6
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The neurologist would prioritize physical therapy or facial exercises over Botox for improving facial muscle strength and symmetry in this case."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The neurologist would prioritize physical therapy or facial exercises over Botox for improving facial muscle strength and symmetry in this case.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Botox is commonly used for facial asymmetry and muscle weakness, especially in cases like Bell's palsy, which this patient likely has.",
+          "confidence": 0.85,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Physical therapy or facial exercises may not be as effective for an 89-year-old patient due to slower recovery and potential compliance issues.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Botox can provide quicker symptomatic relief compared to physical therapy, which is important for improving the patient's quality of life.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

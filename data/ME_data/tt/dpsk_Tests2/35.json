@@ -1,0 +1,152 @@
+{
+  "claim": "I was 20 years old ten years ago, now I\u2019m 30",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If you were 20 years old ten years ago, adding 10 years to that age would logically make you 30 now.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If you were 20 years old ten years ago, adding 10 years to that age would logically make you 30 now.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Age calculation assumes no time anomalies or errors in memory, which could invalidate the result.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim relies on the assumption that the person's birth year is accurately known and consistent.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Time anomalies are purely hypothetical and not supported by empirical evidence.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Birth records and personal memory are generally reliable for age calculation in normal circumstances.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Basic arithmetic confirms that 20 + 10 equals 30, supporting the claim.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic confirms that 20 + 10 equals 30, supporting the claim.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the person's age was accurately recorded ten years ago, which may not be true.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Birth records and official documents typically verify age, making inaccuracies unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Time perception can be subjective; the 'ten years ago' reference might not be exact.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard calendar measurements are objective, making subjective time perception irrelevant here.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Unless there is a time anomaly or miscalculation, the claim follows standard age progression.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Unless there is a time anomaly or miscalculation, the claim follows standard age progression.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Human memory is fallible, and the speaker might be misremembering their age ten years ago.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Time anomalies, though rare, cannot be entirely ruled out without further evidence.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that people generally remember their own age accurately over such short periods.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "There is no documented evidence of time anomalies affecting age progression in humans.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

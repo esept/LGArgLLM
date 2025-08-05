@@ -1,0 +1,298 @@
+{
+  "claim": "Mom (TV series) has received one nomination.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The TV series 'Mom' was nominated for an Emmy Award in 2015 for Outstanding Comedy Series.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The TV series 'Mom' was nominated for an Emmy Award in 2015 for Outstanding Comedy Series.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The TV series 'Mom' has received multiple Emmy Award nominations beyond 2015.",
+          "confidence": 0.83,
+          "attacks": [
+            "A1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B2",
+          "text": "'Mom' was never nominated for Outstanding Comedy Series at any Emmy Awards.",
+          "confidence": 0.79,
+          "attacks": [
+            "A1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B3",
+          "text": "The 2015 Emmy nomination cited in A1 does not exist in official archives.",
+          "confidence": 0.77,
+          "attacks": [
+            "A1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C1",
+          "text": "The original argument only claims one nomination; additional nominations would not invalidate this specific assertion.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "The actual category for 'Mom's' 2015 Emmy nod was Outstanding Supporting Actor in a Comedy Series, not Outstanding Comedy Series.",
+          "confidence": 0.84,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C3",
+          "text": "Official Emmy records confirm 'Mom' received a nomination for Outstanding Comedy Series in 2015.",
+          "confidence": 0.92,
+          "attacks": [
+            "B3"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "Ambiguity in the claim's phrasing allows for interpretations where 'one nomination' refers to a specific category rather than total count.",
+          "confidence": 0.74,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D2",
+          "text": "The Supporting Actor category is distinct from Comedy Series; this distinction weakens B2's validity.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D3",
+          "text": "Emmy archives from 2015 explicitly list 'Mom' as a nominee for Outstanding Comedy Series.",
+          "confidence": 0.95,
+          "attacks": [
+            "C3"
+          ],
+          "cate": "P"
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "According to official records from the Television Critics Association Awards, 'Mom' received at least one nomination during its run.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "According to official records from the Television Critics Association Awards, 'Mom' received at least one nomination during its run.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Television Critics Association Awards are not a credible source for determining nominations of TV series.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'Mom' could refer to a different TV show, leading to confusion in the nomination records.",
+          "confidence": 0.79,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The official records cited by A2 might be outdated or incorrect.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Television Critics Association Awards are recognized as a legitimate and authoritative body in television industry awards.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The context of the nomination clearly refers to the specific TV series 'Mom' and not other titles with the same name.",
+          "confidence": 0.74,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The official records from TCAA are regularly updated and verified by multiple sources.",
+          "confidence": 0.77,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim underestimates 'Mom's' recognition; it actually garnered multiple award nominations across its seven-season span.",
+        "confidence": 0.92,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim underestimates 'Mom's' recognition; it actually garnered multiple award nominations across its seven-season span.",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "'Mom' was only nominated once for Outstanding Comedy Series at 67th Emmy Awards; no other major nominations exist.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The data cited in A3 conflates different award categories; 'Mom' received only one nomination overall.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "'Outstanding Comedy Series' at Emmys counts as one category; other nominations exist in subsidiary categories.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official databases confirm multiple distinct award recognitions for 'Mom,' including Golden Globe and People's Choice Awards.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "'Subsidiary categories' lack formal recognition status; primary Emmy awards count as singular events.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Golden Globe and People's Choice Awards are not equivalent to Emmy-level prestige; their inclusion distorts significance.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "No credible sources indicate that 'Mom' has ever been nominated for any major television award.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "No credible sources indicate that 'Mom' has ever been nominated for any major television award.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The term 'major television award' is undefined and subjective, allowing arbitrary exclusion of valid nominations.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "'Mom' received a nomination for the Critics' Choice Television Award in 2016, as documented by multiple reputable media outlets.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Industry standards define 'major television awards' as those with widespread recognition and institutional weight, not arbitrary criteria.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Critics' Choice Television Awards are not considered major by mainstream industry benchmarks like Emmy or Golden Globe standards.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of Emmy or Golden Globe nominations directly supports the claim that 'Mom' lacks major award recognition.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Critics' Choice Awards lack institutional authority compared to Emmy or Golden Globe nominations, validating their exclusion from 'major' categories.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

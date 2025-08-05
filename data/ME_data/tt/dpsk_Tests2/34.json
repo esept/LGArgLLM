@@ -1,0 +1,266 @@
+{
+  "claim": "If A was born before B, then A is older than B",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim is logically sound because being born earlier directly implies having existed for a longer period of time, which is the definition of being older.",
+        "confidence": 0.99,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim is logically sound because being born earlier directly implies having existed for a longer period of time, which is the definition of being older.",
+          "confidence": 0.99,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Time dilation effects in relativity mean that two individuals' perceived ages could differ depending on their relative motion and gravitational fields, even if one was born before the other.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If A was born before B but died shortly after birth, while B lived a long life, B could be considered older in terms of life experience and development.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In everyday scenarios far from extreme relativistic conditions, time dilation is negligible, so the original claim holds true for practical purposes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Age is typically defined by the passage of time since birth, not by subjective measures like life experience, so B2's argument conflates age with maturity.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In all standard interpretations of age, the person born first is considered older, as age is measured from the time of birth.",
+        "confidence": 0.98,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In all standard interpretations of age, the person born first is considered older, as age is measured from the time of birth.",
+          "confidence": 0.98,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "In some cultures, age is calculated differently, such as counting time in the womb or considering lunar years, which may not align with birth order.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Biological aging can vary due to factors like genetics and environment, making birth order an imperfect measure of actual age.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard international systems like the Gregorian calendar universally define age based on birth date, overriding cultural variations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While biological aging varies, legal and social definitions of age consistently rely on birth order for simplicity and fairness.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Legal and social systems universally recognize that the person born earlier is older, confirming the claim's validity.",
+        "confidence": 0.97,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Legal and social systems universally recognize that the person born earlier is older, confirming the claim's validity.",
+          "confidence": 0.97,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cultures or legal systems may have different definitions of age, such as counting age from conception rather than birth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are edge cases, such as time zone differences or leap seconds, where the exact moment of birth may not be clearly defined.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International standards like ISO 8601 provide clear definitions for birth dates, minimizing ambiguity in age calculation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems typically default to the Gregorian calendar for birth records, ensuring consistency in age determination.",
+          "confidence": 0.79,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Time zone differences are usually resolved by using the local time of birth, as recorded in official documents.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Leap seconds are negligible in age calculations, as they do not affect the relative order of birth dates.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "S1",
+        "text": "If A was born before B but died shortly after birth while B lived a long life, in some contexts B might be considered 'older' in terms of life experience or maturity.",
+        "confidence": 0.25,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "S1",
+          "text": "If A was born before B but died shortly after birth while B lived a long life, in some contexts B might be considered 'older' in terms of life experience or maturity.",
+          "confidence": 0.25,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Age is strictly defined by the time elapsed since birth, not by subjective measures like life experience or maturity.",
+          "confidence": 0.85,
+          "attacks": [
+            "S1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal and scientific standards universally define age based on birth date, not contextual interpretations.",
+          "confidence": 0.8,
+          "attacks": [
+            "S1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Life experience and maturity are subjective and cannot override the objective measure of chronological age.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in contexts where maturity is discussed, chronological age remains the primary and unambiguous metric.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Legal systems rely on birth dates to determine age for rights and responsibilities, not subjective assessments.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "S2",
+        "text": "In rare cases of time zone or calendar differences, the exact moment of birth might be ambiguous, potentially complicating the claim.",
+        "confidence": 0.15,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "S2",
+          "text": "In rare cases of time zone or calendar differences, the exact moment of birth might be ambiguous, potentially complicating the claim.",
+          "confidence": 0.15,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Standard birth records and legal documentation resolve time zone and calendar discrepancies, ensuring clarity in determining birth order.",
+          "confidence": 0.85,
+          "attacks": [
+            "S2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International standards like UTC are used to record birth times, eliminating ambiguity from time zone differences.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with UTC, local recording practices may vary, leaving room for inconsistencies in some cases.",
+          "confidence": 0.25,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

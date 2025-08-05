@@ -1,0 +1,460 @@
+{
+  "claim": "A 6-year-old boy is brought to his pediatrician due to increased shortness of breath. His mother is particularly disturbed because her son wakes up breathless one or 2 nights every week. He was diagnosed with asthma 2 years ago. Over the past few months, he has not been able to participate in any sport and is also using his inhaler more than 3 times a week. On examination, the patient appears to be in slight distress and seems pale and fatigued. There are slight expiratory wheezes and crackles in both lungs. The pediatrician starts him on a low dose of another inhaler which needs to be taken once daily. She asks his mother to avoid any conditions that might aggravate her son\u2019s symptoms and make it difficult for him to breathe. Three months later, the mother is back with her son at the same pediatrician\u2019s office. She is concerned about a painless white plaque on his tongue. When the physician scrapes the lesion it reveals a red base with minimal bleeding. A photograph of the lesion is shown. Which of the following was most likely prescribed during the previous visit? : Inhaled beclomethasone",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Inhaled beclomethasone is a corticosteroid commonly prescribed for asthma management, which aligns with the patient's increased symptoms and need for daily medication.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Inhaled beclomethasone is a corticosteroid commonly prescribed for asthma management, which aligns with the patient's increased symptoms and need for daily medication.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Inhaled corticosteroids like beclomethasone can cause oral thrush as a side effect, which explains the white plaque on the patient's tongue.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be managed with leukotriene receptor antagonists like montelukast, which do not carry the risk of oral thrush.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Oral thrush from inhaled corticosteroids is preventable with proper inhaler technique and rinsing the mouth after use, so beclomethasone remains a viable option.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Montelukast may not be as effective as inhaled corticosteroids in controlling moderate to severe asthma symptoms, making beclomethasone a better choice despite the side effect.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with proper technique, some patients may still develop oral thrush due to individual susceptibility, reducing the effectiveness of preventive measures.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Combination therapy with both montelukast and a lower dose of inhaled corticosteroids could balance efficacy and side effects better than either alone.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The development of oral candidiasis (white plaque) is a known side effect of inhaled corticosteroids like beclomethasone, supporting its likely prescription.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The development of oral candidiasis (white plaque) is a known side effect of inhaled corticosteroids like beclomethasone, supporting its likely prescription.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Oral candidiasis can also occur due to other factors such as poor oral hygiene or antibiotic use, not necessarily inhaled corticosteroids.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other inhaled corticosteroids besides beclomethasone could also cause oral candidiasis, making it less specific to beclomethasone.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The timing of the oral candidiasis (3 months after starting the new inhaler) strongly suggests it is related to the prescribed medication.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Beclomethasone is one of the most commonly prescribed inhaled corticosteroids for pediatric asthma, increasing its likelihood.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The mother did not report other risk factors like recent antibiotic use or poor oral hygiene, strengthening the link to the inhaler.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The clinical presentation (painless white plaque with red base on scraping) is classic for corticosteroid-induced oral candidiasis.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's symptoms and the need for a daily inhaler suggest a step-up in asthma therapy, typically involving inhaled corticosteroids such as beclomethasone.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's symptoms and the need for a daily inhaler suggest a step-up in asthma therapy, typically involving inhaled corticosteroids such as beclomethasone.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The white plaque on the tongue suggests oral candidiasis, a known side effect of inhaled corticosteroids like beclomethasone, which supports the likelihood of its prescription.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative asthma treatments, such as leukotriene receptor antagonists, could also explain the need for a daily medication without causing oral candidiasis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Leukotriene receptor antagonists are less likely to cause the observed oral candidiasis, making inhaled corticosteroids a more probable cause given the clinical presentation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of oral candidiasis is highly specific to inhaled corticosteroids, strongly supporting the initial argument for beclomethasone.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Oral candidiasis can also occur with other immunosuppressive conditions or antibiotic use, not exclusively with inhaled corticosteroids.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The step-up in therapy is consistent with asthma management guidelines, which prioritize inhaled corticosteroids for persistent symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Alternative asthma medications like short-acting beta-agonists (e.g., albuterol) are not typically used as daily maintenance therapy, making beclomethasone more likely.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Alternative asthma medications like short-acting beta-agonists (e.g., albuterol) are not typically used as daily maintenance therapy, making beclomethasone more likely.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Short-acting beta-agonists can still be part of a treatment plan alongside maintenance therapy, so their exclusion does not definitively confirm beclomethasone.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other inhaled corticosteroids (e.g., fluticasone) are also commonly prescribed for asthma, so beclomethasone is not uniquely likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The white plaque on the tongue is a known side effect of inhaled corticosteroids like beclomethasone, supporting its likelihood as the prescribed medication.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Fluticasone is less likely to cause oral thrush compared to beclomethasone, making the latter more probable given the observed side effect.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Proper use of a spacer with inhaled corticosteroids significantly reduces the risk of oral thrush, so the side effect does not necessarily confirm beclomethasone.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The frequency of oral thrush with fluticasone is not negligible, so the side effect alone cannot rule it out.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The absence of systemic symptoms (e.g., fever) and the localized nature of the oral lesion further point to a side effect of inhaled beclomethasone rather than another systemic medication.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The absence of systemic symptoms (e.g., fever) and the localized nature of the oral lesion further point to a side effect of inhaled beclomethasone rather than another systemic medication.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The white plaque could be due to oral candidiasis, a common side effect of inhaled corticosteroids like beclomethasone, but it could also be caused by poor oral hygiene unrelated to medication.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lesion might not be related to the medication at all; it could be a benign condition like geographic tongue or leukoplakia, which are not caused by inhaled corticosteroids.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Oral candidiasis is highly likely in this case because the lesion is painless, white, and scrapes off easily, which are classic signs of this condition often associated with inhaled corticosteroids.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Poor oral hygiene alone is less likely to cause a localized white plaque that scrapes off to reveal a red base, which is more characteristic of candidiasis.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Geographic tongue and leukoplakia typically do not scrape off easily, making them less likely diagnoses compared to oral candidiasis in this scenario.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's recent use of an inhaled corticosteroid increases the likelihood of oral candidiasis, as these medications suppress local immune responses in the oral cavity.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with good oral hygiene, patients on inhaled corticosteroids can develop oral candidiasis due to the direct local immunosuppressive effects of the medication.",
+          "confidence": 0.79,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The patient's lack of improvement with previous inhaler use (likely a rescue inhaler) necessitated a switch to a controller medication like beclomethasone.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's lack of improvement with previous inhaler use (likely a rescue inhaler) necessitated a switch to a controller medication like beclomethasone.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The white plaque on the tongue suggests oral thrush, a known side effect of inhaled corticosteroids like beclomethasone, supporting that it was prescribed.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's persistent symptoms and increased inhaler use indicate poor asthma control, which is typically managed by stepping up therapy to include a controller medication such as beclomethasone.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Oral thrush can also occur due to other factors like antibiotic use or immune suppression, not just inhaled corticosteroids, so the plaque may not definitively indicate beclomethasone use.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The pediatrician may have prescribed a different controller medication, such as montelukast, which does not cause oral thrush, making beclomethasone less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of recent antibiotic use or immune suppression in the patient's history makes inhaled corticosteroids the most probable cause of the oral thrush.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Montelukast is less effective as a monotherapy for persistent asthma compared to inhaled corticosteroids, making beclomethasone a more likely choice for step-up therapy.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The description of the lesion (painless white plaque with red base) is classic for oral thrush, a common side effect of inhaled steroids, strongly suggesting beclomethasone.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The description of the lesion (painless white plaque with red base) is classic for oral thrush, a common side effect of inhaled steroids, strongly suggesting beclomethasone.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Oral thrush can also result from other immunosuppressive conditions or medications, not just inhaled steroids like beclomethasone.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mother might not have properly rinsed the child's mouth after inhaler use, which is a common cause of oral thrush with steroid inhalers.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The timing of the lesion (3 months after starting the new inhaler) strongly correlates with the side effect profile of inhaled steroids, supporting beclomethasone as the likely cause.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The pediatrician would have likely instructed the mother on proper inhaler use, including mouth rinsing, making improper use less probable.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Other immunosuppressive conditions in a 6-year-old would likely present with additional systemic symptoms, not just an isolated oral lesion.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

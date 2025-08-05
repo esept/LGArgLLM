@@ -1,0 +1,271 @@
+{
+  "claim": "It's always humid in Hong Kong.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Hong Kong has a humid subtropical climate, characterized by high humidity levels for most of the year."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Hong Kong has a humid subtropical climate, characterized by high humidity levels for most of the year.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "During winter months (December to February), Hong Kong experiences lower humidity due to the influence of the northeast monsoon.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in winter, relative humidity in Hong Kong rarely drops below 60%, which is still considered humid by many standards.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Urban areas in Hong Kong often experience lower humidity than rural areas due to the urban heat island effect.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The urban heat island effect primarily affects temperature, not humidity, and Hong Kong's coastal location maintains high humidity throughout the city.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "During the summer months, Hong Kong experiences very high humidity due to its coastal location and monsoon influence."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "During the summer months, Hong Kong experiences very high humidity due to its coastal location and monsoon influence.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In winter, Hong Kong's humidity drops significantly due to the influence of dry northerly winds from mainland China.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in winter, Hong Kong's proximity to the sea ensures that humidity levels remain relatively high compared to inland areas.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hong Kong's urban heat island effect can sometimes reduce perceived humidity despite high actual humidity levels.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Winter months in Hong Kong can be less humid, with relative humidity dropping significantly compared to other seasons."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Winter months in Hong Kong can be less humid, with relative humidity dropping significantly compared to other seasons.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even in winter, Hong Kong's relative humidity often remains above 60%, which is still considered humid by many standards.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "60% relative humidity is not universally considered humid; many regions experience much higher levels, making Hong Kong's winter humidity relatively mild.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim refers to general perception, and Hong Kong is widely known for its humid climate year-round, even if winter is less humid than summer.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "General perception is subjective and varies among individuals; some may not find Hong Kong's winter humidity notable.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The annual average relative humidity in Hong Kong is around 77-78%, indicating generally high but not constant humidity."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The annual average relative humidity in Hong Kong is around 77-78%, indicating generally high but not constant humidity.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the average is high, humidity levels frequently exceed 90% during summer months, making it feel consistently humid for extended periods.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even during high-humidity months, dry spells and seasonal variations can bring humidity below 60%, contradicting the 'always humid' claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hong Kong's coastal location and monsoon climate create persistent humidity, with rare exceptions not negating the general perception of constant humidity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Urban heat island effects in Hong Kong further amplify humidity perception, making it feel perpetually humid despite minor statistical fluctuations.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Cold, dry air from the north during winter can reduce humidity levels in Hong Kong temporarily."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Cold, dry air from the north during winter can reduce humidity levels in Hong Kong temporarily.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hong Kong's proximity to the ocean ensures high humidity levels persist even during winter.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical weather data shows that relative humidity in Hong Kong rarely drops below 70%, even in winter.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Cold, dry air masses from the north are often modified by the South China Sea before reaching Hong Kong, reducing their drying effect.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Hong Kong's urban heat island effect can contribute to higher humidity levels in built-up areas compared to rural areas."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Hong Kong's urban heat island effect can contribute to higher humidity levels in built-up areas compared to rural areas.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hong Kong's coastal location and monsoon climate ensure high humidity across all regions, not just urban areas.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Rural areas in Hong Kong, such as the New Territories, can experience lower humidity due to vegetation and less concrete.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The urban heat island effect is not the primary driver of humidity; seasonal weather patterns dominate.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Urban areas trap moisture from human activities (e.g., air conditioning exhaust), amplifying localized humidity.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

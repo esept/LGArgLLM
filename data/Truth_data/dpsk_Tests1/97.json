@@ -1,0 +1,298 @@
+{
+  "claim": "The human brain contains 10 billion neurons.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Modern neuroscience estimates that the human brain contains approximately 86 billion neurons, not 10 billion.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Modern neuroscience estimates that the human brain contains approximately 86 billion neurons, not 10 billion.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Early studies in neuroscience used less precise methods, leading to the 10 billion neuron estimate.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some regions of the brain have higher neuron density, which could lead to underestimation in older studies.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern techniques like stereology provide more accurate neuron counts, invalidating older estimates.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Recent research confirms the 86 billion estimate across multiple independent studies.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Advances in imaging technology have resolved previous discrepancies in neuron counting.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Early 20th-century estimates of neuron counts were much lower, leading to outdated claims like this one.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Early 20th-century estimates of neuron counts were much lower, leading to outdated claims like this one.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Modern neuroimaging and histological techniques have significantly improved the accuracy of neuron counting.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Recent studies using advanced methods consistently estimate the human brain contains around 86 billion neurons.",
+          "confidence": 0.91,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Early estimates were based on limited technology and sampling, which modern methods have corrected.",
+          "confidence": 0.87,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 86 billion neuron estimate is widely accepted in contemporary neuroscience literature.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Advanced imaging and cell-counting techniques have consistently shown neuron counts far exceeding 10 billion.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Advanced imaging and cell-counting techniques have consistently shown neuron counts far exceeding 10 billion.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Many studies use extrapolation from small samples, which can lead to overestimation of total neuron counts.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some imaging techniques have resolution limits that may miss or double-count neurons in densely packed regions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern stereological methods correct for sampling biases and provide more accurate neuron counts.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "High-resolution microscopy and automated counting algorithms minimize errors in neuron quantification.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with advanced methods, inter-individual variability in brain structure can lead to significant counting discrepancies.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Algorithmic errors in automated counting can propagate, especially in regions with overlapping neurons.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The cerebellum alone contains about 69 billion neurons, which already disproves the 10 billion claim.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The cerebellum alone contains about 69 billion neurons, which already disproves the 10 billion claim.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The 69 billion figure for the cerebellum is based on outdated studies; newer research suggests a lower count.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The cerebellum's neuron count does not necessarily reflect the total count in the entire brain.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Recent studies using advanced imaging techniques confirm the cerebellum's neuron count is indeed around 69 billion.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The cerebellum accounts for the majority of neurons in the brain, making its count highly relevant to the total.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The advanced imaging techniques used in recent studies have been criticized for methodological flaws.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Other brain regions, like the cerebral cortex, contain significantly fewer neurons, balancing the total count.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If the brain only had 10 billion neurons, its computational capacity would be far less than what we observe in human cognition.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "If the brain only had 10 billion neurons, its computational capacity would be far less than what we observe in human cognition.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Neuronal density and synaptic connections, not just neuron count, significantly contribute to computational capacity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human cognition involves complex processes beyond raw neuron count, such as neural plasticity and network efficiency.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that synaptic density and connectivity patterns are more predictive of cognitive function than absolute neuron numbers.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Neural plasticity allows the brain to adapt and optimize its function regardless of the initial neuron count.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Empirical evidence from neuroimaging supports the idea that cognitive capacity is more about network organization than sheer neuron count.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

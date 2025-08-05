@@ -1,0 +1,193 @@
+{
+  "claim": "All numbers divisible by 4 are also divisible by 2",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Divisibility by 4 implies that a number can be expressed as 4k, which is equivalent to 2*(2k), making it divisible by 2."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Divisibility by 4 implies that a number can be expressed as 4k, which is equivalent to 2*(2k), making it divisible by 2.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This argument assumes standard integer arithmetic; in modular arithmetic (e.g., modulo 4), divisibility rules may not hold.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard divisibility rules apply in standard arithmetic contexts, and modular arithmetic is a specialized case that doesn't invalidate the general rule.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument doesn't account for non-integer numbers (e.g., 4.0 is divisible by 4 but not by 2 in some interpretations of divisibility).",
+          "confidence": 0.2,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Divisibility is conventionally defined in the context of integers, so non-integer cases are irrelevant to the claim.",
+          "confidence": 0.98,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The number 4 is a multiple of 2, so any number divisible by 4 must also be divisible by 2."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The number 4 is a multiple of 2, so any number divisible by 4 must also be divisible by 2.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes all numbers divisible by 4 follow the same property, but it doesn't account for non-integer or complex numbers where divisibility rules may differ.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard divisibility rules in mathematics apply to integers, and for integers, the argument holds universally.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument is circular because it uses the fact that 4 is divisible by 2 to prove that numbers divisible by 4 are divisible by 2.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The argument is not circular; it is a direct application of the transitive property of divisibility.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The prime factorization of 4 includes 2^2, meaning any number divisible by 4 must include at least one factor of 2."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The prime factorization of 4 includes 2^2, meaning any number divisible by 4 must include at least one factor of 2.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes all numbers are integers, but the claim does not explicitly restrict itself to integers.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard mathematical contexts, divisibility is defined over integers unless specified otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument does not account for non-standard definitions of divisibility in abstract algebra.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is clearly about elementary number theory, where divisibility is defined over integers.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematical definitions of divisibility confirm that if a number is divisible by a multiple of another number, it is also divisible by that other number."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematical definitions of divisibility confirm that if a number is divisible by a multiple of another number, it is also divisible by that other number.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This argument assumes the relationship holds universally, but it may not apply to non-integer or abstract algebraic structures where divisibility rules differ.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard mathematical contexts (e.g., integers) strictly follow these divisibility rules, making edge cases irrelevant for typical claims about number theory.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on implicit assumptions about the number system being used, which may not be specified in the original claim.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In conventional arithmetic and number theory, the default assumption is the set of integers, where the divisibility rule holds without exception.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

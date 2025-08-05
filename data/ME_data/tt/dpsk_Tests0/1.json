@@ -1,0 +1,240 @@
+{
+  "claim": "Insulin lowers blood sugar levels",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, cells do not respond effectively to insulin, leading to persistently high blood sugar levels despite insulin presence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, exogenous insulin or higher doses can often overcome the resistance and still lower blood sugar levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain rare genetic mutations can cause insulin to be biologically inactive, rendering it incapable of lowering blood sugar.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such mutations are extremely rare and clinically managed with synthetic insulin analogs that bypass the defect.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Medical consensus states that insulin therapy is a primary treatment for diabetes because it directly lowers elevated blood glucose levels."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Medical consensus states that insulin therapy is a primary treatment for diabetes because it directly lowers elevated blood glucose levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Insulin can cause hypoglycemia if not properly dosed, which contradicts the claim that it universally lowers blood sugar levels safely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypoglycemia is a manageable side effect, and proper dosing protocols ensure insulin effectively lowers blood sugar without significant risk.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some forms of insulin resistance reduce the effectiveness of insulin in lowering blood sugar, making the claim context-dependent.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in insulin resistance, higher doses or alternative insulin formulations can still achieve blood sugar reduction.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Biochemical studies demonstrate that insulin binds to receptors on cell membranes, triggering mechanisms that remove glucose from the bloodstream."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Biochemical studies demonstrate that insulin binds to receptors on cell membranes, triggering mechanisms that remove glucose from the bloodstream.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, cells fail to respond adequately to insulin, preventing effective glucose uptake despite insulin binding.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, compensatory hyperinsulinemia often maintains partial glucose uptake, mitigating complete failure of insulin's effect.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some rare genetic mutations alter insulin receptor structure, rendering insulin entirely ineffective at lowering blood glucose.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such mutations are clinically exceptional (<0.1% prevalence) and do not negate insulin's primary biochemical role in glucose regulation.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Clinical guidelines for managing hyperglycemia universally recommend insulin administration to reduce dangerously high blood sugar levels."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Clinical guidelines for managing hyperglycemia universally recommend insulin administration to reduce dangerously high blood sugar levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Insulin can cause hypoglycemia if administered in excessive doses, leading to dangerously low blood sugar levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern insulin administration protocols include continuous glucose monitoring and dose adjustments to prevent hypoglycemia.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some patients develop insulin resistance, reducing the effectiveness of insulin in lowering blood sugar levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Combination therapies and alternative medications are available for insulin-resistant patients to manage blood sugar effectively.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Insulin's role in glucose metabolism is well-documented, showing it promotes storage of glucose as glycogen in the liver, which decreases circulating glucose."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Insulin's role in glucose metabolism is well-documented, showing it promotes storage of glucose as glycogen in the liver, which decreases circulating glucose.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, such as Type 2 diabetes, insulin's ability to lower blood sugar is significantly impaired despite its presence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, exogenous insulin administration at higher doses can still effectively lower blood sugar levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain medications and conditions (e.g., glucocorticoid use or Cushing's syndrome) can counteract insulin's glucose-lowering effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These counteracting effects are typically dose-dependent and do not negate insulin's fundamental mechanism of action.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

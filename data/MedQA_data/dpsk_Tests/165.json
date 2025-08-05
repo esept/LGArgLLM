@@ -1,0 +1,295 @@
+{
+  "claim": "Consider the following background information: A 30-year-old woman comes to the physician because she has been unable to conceive for 3 years. Analysis of her husband\"s semen has shown normal sperm counts during this time. The patient also reports episodic pelvic and back pain accompanied by painful diarrhea for 5 years. She has about one such episode on average per month for 4\u20136 days. She has taken ibuprofen for the pain, which has provided some relief. Menses have occurred at regular 29-day intervals since menarche at the age of 14 years and last for 7 days. She is sexually active with her husband and does not use contraception. Vital signs are within normal limits. Pelvic and bimanual examinations are normal; rectal examination is unremarkable. A hysterosalpingogram 6 months prior showed normal results.\n\nGiven the background information the following is corrrect: The most likely underlying mechanism of this patient\"s symptoms is a smooth muscle tumor arising from the myometrium.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The patient's symptoms, including episodic pelvic pain and painful diarrhea, are more consistent with endometriosis, a condition where endometrial tissue grows outside the uterus, rather than a smooth muscle tumor."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms, including episodic pelvic pain and painful diarrhea, are more consistent with endometriosis, a condition where endometrial tissue grows outside the uterus, rather than a smooth muscle tumor.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Endometriosis typically causes dysmenorrhea (painful menstruation), which is not reported by the patient, making this diagnosis less likely.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of dysmenorrhea does not rule out endometriosis, as up to 20% of endometriosis cases present without this symptom.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A hysterosalpingogram showed normal results, which would likely detect endometriosis-related abnormalities in the fallopian tubes or uterus.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Hysterosalpingograms have limited sensitivity for detecting superficial endometriosis lesions outside the uterine cavity.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's regular menstrual cycles and normal pelvic examination make endometriosis less probable, as these findings are uncommon in advanced endometriosis.",
+          "confidence": 0.72,
+          "attacks": {
+            "A1": 0.68
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Early-stage endometriosis often presents with normal pelvic exams and regular cycles, as the disease may not yet have caused significant anatomical distortion.",
+          "confidence": 0.82,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "A smooth muscle tumor (leiomyoma) typically presents with heavy menstrual bleeding and pelvic pressure, not the episodic pain and diarrhea described in this case."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "A smooth muscle tumor (leiomyoma) typically presents with heavy menstrual bleeding and pelvic pressure, not the episodic pain and diarrhea described in this case.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Leiomyomas can sometimes cause referred pain and gastrointestinal symptoms due to their size or location, which could explain the episodic pain and diarrhea.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Referred pain and gastrointestinal symptoms from leiomyomas are rare and usually occur with very large tumors, which would likely be detected on physical or imaging exams.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Endometriosis is a more likely explanation for the patient's symptoms, as it commonly causes cyclic pelvic pain, infertility, and can involve the bowel leading to painful diarrhea.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.85,
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The hysterosalpingogram showed normal results, which is less likely if a significant myometrial tumor were present, as such tumors often distort the uterine cavity."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The hysterosalpingogram showed normal results, which is less likely if a significant myometrial tumor were present, as such tumors often distort the uterine cavity.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Small or intramural myometrial tumors may not distort the uterine cavity enough to be detected by hysterosalpingogram.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms, such as episodic pelvic pain and painful diarrhea, are more consistent with endometriosis than a myometrial tumor.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Endometriosis can also cause infertility and is more common in women of reproductive age than myometrial tumors.",
+          "confidence": 0.85,
+          "attacks": {
+            "C1": 0.8
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The absence of findings on pelvic and bimanual examinations does not rule out endometriosis, as it can be present without palpable abnormalities.",
+          "confidence": 0.78,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The patient's regular menses and normal pelvic examination findings are not typical of a smooth muscle tumor, which often causes irregular bleeding or palpable uterine abnormalities."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's regular menses and normal pelvic examination findings are not typical of a smooth muscle tumor, which often causes irregular bleeding or palpable uterine abnormalities.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Smooth muscle tumors can sometimes present without irregular bleeding or palpable abnormalities, especially in early stages.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms of chronic pelvic pain and infertility are more consistent with endometriosis, which can coexist with normal menses and pelvic exams.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.75,
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Endometriosis is often confirmed via laparoscopy, which has not been performed in this case, leaving the diagnosis uncertain.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.65
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Leiomyomas can sometimes cause pelvic pain and infertility, which are present in this patient, though the symptoms are not classic for this condition."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Leiomyomas can sometimes cause pelvic pain and infertility, which are present in this patient, though the symptoms are not classic for this condition.",
+          "cate": "P",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms of episodic pelvic pain and painful diarrhea are more consistent with endometriosis than leiomyomas.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Endometriosis is a common cause of infertility and chronic pelvic pain in women of reproductive age, which matches this patient's presentation.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The hysterosalpingogram was normal, making structural causes like leiomyomas less likely.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's regular menses and normal pelvic exam reduce the likelihood of leiomyomas being the primary cause.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "The patient's symptoms of painful diarrhea suggest gastrointestinal involvement, which is more characteristic of endometriosis or irritable bowel syndrome than a myometrial tumor."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's symptoms of painful diarrhea suggest gastrointestinal involvement, which is more characteristic of endometriosis or irritable bowel syndrome than a myometrial tumor.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Endometriosis can cause both infertility and gastrointestinal symptoms, making it a more likely diagnosis than a myometrial tumor.",
+          "confidence": 0.82,
+          "attacks": {
+            "A6": 0.78
+          }
+        },
+        {
+          "id": "C1",
+          "text": "A hysterosalpingogram showing normal results does not rule out endometriosis, as superficial lesions may not be detected.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Irritable bowel syndrome (IBS) does not explain the patient's infertility, reducing its likelihood as the sole diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's regular menses and normal pelvic exam make adenomyosis less likely, supporting endometriosis as the primary consideration.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.72
+          }
+        }
+      ]
+    }
+  }
+}

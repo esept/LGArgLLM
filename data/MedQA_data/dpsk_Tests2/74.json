@@ -1,0 +1,279 @@
+{
+  "claim": "Consider the following background information: A 61-year-old nulliparous woman comes to the physician for a follow-up examination. Her last Pap smear 3 years ago showed atypical squamous cells of undetermined significance. HPV testing was negative at that time. On questioning, she has had fatigue and an increase in abdominal girth despite a 5-kg (11.0-lb) weight loss over the past 6 months. She has gastroesophageal reflux disease and Hashimoto\"s thyroiditis. Menarche was at the age of 10 years and her last menstrual period was 2 years ago. Current medications include omeprazole and levothyroxine. Abdominal examination shows shifting dullness. There is tenderness to palpation of the right lower quadrant but no guarding or rebound. Bimanual palpation shows a small uterus and a right adnexal mass.\n\nGiven the background information the following is corrrect: Further evaluation of this patient is most likely to show the finding of proliferation of endometrial glands.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms of fatigue, weight loss, and increased abdominal girth with shifting dullness on examination suggest the presence of ascites, which is more commonly associated with ovarian cancer than endometrial pathology."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms of fatigue, weight loss, and increased abdominal girth with shifting dullness on examination suggest the presence of ascites, which is more commonly associated with ovarian cancer than endometrial pathology.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of atypical squamous cells of undetermined significance (ASC-US) on Pap smear, despite negative HPV testing, could indicate a risk for endometrial hyperplasia or cancer, especially given her age and postmenopausal status.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ASC-US with negative HPV testing has a low risk of progression to significant endometrial pathology, and the absence of postmenopausal bleeding makes endometrial cancer less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The presence of an adnexal mass and ascites strongly points toward ovarian cancer, which is more common in this age group and clinical presentation than endometrial cancer.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "Endometrial cancer can also present with ascites in advanced stages, and the patient's nulliparity and early menarche are risk factors for endometrial hyperplasia or cancer.",
+          "confidence": 0.65,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Atypical squamous cells of undetermined significance (ASC-US) on a Pap smear with negative HPV testing is less likely to be associated with endometrial gland proliferation and more indicative of a benign or low-grade cervical lesion."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Atypical squamous cells of undetermined significance (ASC-US) on a Pap smear with negative HPV testing is less likely to be associated with endometrial gland proliferation and more indicative of a benign or low-grade cervical lesion.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms of fatigue, abdominal girth increase, and weight loss, along with a right adnexal mass, are more suggestive of ovarian cancer, which can sometimes present with endometrial gland proliferation due to hormonal effects.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ovarian cancer typically presents with non-specific symptoms, and the presence of an adnexal mass does not necessarily correlate with endometrial gland proliferation, which is more commonly associated with endometrial hyperplasia or carcinoma.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of early menarche and late menopause (last menstrual period at age 59) increases her risk for endometrial hyperplasia or carcinoma, which could explain the proliferation of endometrial glands.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While prolonged estrogen exposure is a risk factor for endometrial hyperplasia, the patient's current symptoms and findings are more consistent with an ovarian pathology rather than an endometrial one.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of a right adnexal mass on bimanual palpation is more suggestive of an ovarian pathology rather than an endometrial condition."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of a right adnexal mass on bimanual palpation is more suggestive of an ovarian pathology rather than an endometrial condition.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Endometrial cancer can metastasize to the ovaries, presenting as an adnexal mass, which could mimic primary ovarian pathology.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Metastatic endometrial cancer to the ovaries is rare and typically presents with other symptoms such as abnormal uterine bleeding, which this patient does not report.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of atypical squamous cells of undetermined significance (ASC-US) with negative HPV testing increases the likelihood of endometrial pathology, as ASC-US can sometimes indicate endometrial abnormalities.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "ASC-US with negative HPV testing is more commonly associated with benign or transient changes and does not strongly indicate endometrial pathology in the absence of other symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's postmenopausal status and the absence of abnormal uterine bleeding make endometrial gland proliferation less likely as the primary finding."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's postmenopausal status and the absence of abnormal uterine bleeding make endometrial gland proliferation less likely as the primary finding.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Endometrial gland proliferation can occur without abnormal uterine bleeding, especially in postmenopausal women with hormonal imbalances or other risk factors.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The presence of an adnexal mass and symptoms like fatigue and abdominal girth increase suggest ovarian pathology rather than endometrial proliferation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Ovarian pathology can sometimes lead to secondary endometrial changes due to hormonal effects, making endometrial gland proliferation a possible secondary finding.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Hashimoto's thyroiditis and gastroesophageal reflux disease are not directly associated with endometrial gland proliferation, further reducing its likelihood in this patient."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Hashimoto's thyroiditis and gastroesophageal reflux disease are not directly associated with endometrial gland proliferation, further reducing its likelihood in this patient.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The presence of an adnexal mass and symptoms like fatigue, abdominal girth increase, and weight loss suggest ovarian pathology, which can indirectly affect endometrial proliferation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ovarian pathology, such as a hormone-secreting tumor, can lead to secondary changes in the endometrium, including gland proliferation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of atypical squamous cells of undetermined significance (ASC-US) with negative HPV testing does not strongly correlate with endometrial gland proliferation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "ASC-US findings are more indicative of cervical pathology and do not rule out concurrent endometrial abnormalities.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The combination of ascites, weight loss, and an adnexal mass is highly suggestive of ovarian cancer, which would not typically present with proliferation of endometrial glands."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The combination of ascites, weight loss, and an adnexal mass is highly suggestive of ovarian cancer, which would not typically present with proliferation of endometrial glands.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Endometrial hyperplasia or carcinoma can coexist with ovarian cancer, especially in postmenopausal women, and could explain the proliferation of endometrial glands.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of negative HPV testing and atypical squamous cells on Pap smear is not strongly indicative of endometrial pathology, making concurrent endometrial proliferation less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of Hashimoto's thyroiditis increases the risk of other autoimmune conditions, which could independently cause endometrial proliferation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Autoimmune conditions linked to Hashimoto's are not commonly associated with significant endometrial proliferation in the absence of other hormonal or neoplastic factors.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

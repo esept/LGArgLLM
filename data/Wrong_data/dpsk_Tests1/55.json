@@ -1,0 +1,145 @@
+{
+  "claim": " The name of the South African university, which has a blurb reading: \"our most famous university that often tops the ranking of our undergraduate institutions, with classical architecture and modern buildings, a law school, and an urban setting in a major city\u201d, is Princeton University.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Princeton University is located in the United States, not South Africa."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Princeton University is located in the United States, not South Africa.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The description could be referring to a different university with similar characteristics in South Africa.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The blurb explicitly mentions 'our most famous university,' implying it is referring to a South African institution, not an American one.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The description matches the University of Cape Town, which is a leading South African university with classical and modern architecture, a law school, and an urban setting in Cape Town."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The description matches the University of Cape Town, which is a leading South African university with classical and modern architecture, a law school, and an urban setting in Cape Town.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Princeton University is located in the United States, not South Africa, making it impossible for it to be the described university.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The University of Cape Town is indeed one of the most prestigious universities in South Africa and fits all the given descriptors.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Princeton University does not have an urban setting in a major city; it is located in Princeton, New Jersey, a small town."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Princeton University does not have an urban setting in a major city; it is located in Princeton, New Jersey, a small town.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The blurb could be referring to another university with similar characteristics but located in an urban setting, such as the University of Cape Town.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The University of Cape Town fits the description closely, including classical architecture, modern buildings, a law school, and an urban setting in Cape Town.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The blurb might be intentionally vague or outdated, leading to confusion about which university it describes.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The University of the Witwatersrand (Wits) is another prominent South African university that fits the description of having classical and modern architecture, a law school, and an urban setting in Johannesburg."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The University of the Witwatersrand (Wits) is another prominent South African university that fits the description of having classical and modern architecture, a law school, and an urban setting in Johannesburg.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Princeton University is located in the United States, not South Africa, making it impossible for it to be the described South African university.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The description specifies 'our most famous university,' which could imply a subjective or national perspective, but Princeton's global recognition might still make it a plausible candidate despite its location.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The blurb explicitly mentions 'South African university,' which clearly excludes Princeton University regardless of its fame or features.",
+          "confidence": 0.98,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

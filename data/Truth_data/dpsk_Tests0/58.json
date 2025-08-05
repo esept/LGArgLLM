@@ -1,0 +1,287 @@
+{
+  "claim": "Americans earn less  than people in certain countries.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to World Bank data, the median household income in the United States is higher than in most countries, including many developed nations."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to World Bank data, the median household income in the United States is higher than in most countries, including many developed nations.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Median income does not account for cost of living differences, which are significantly higher in the U.S. compared to many other countries.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even after adjusting for purchasing power parity (PPP), U.S. median income remains higher than in most countries.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The World Bank data excludes certain high-income countries like Switzerland and Norway where median incomes are higher than in the U.S.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "When including tax burdens and social benefits, take-home pay in some European countries exceeds U.S. levels despite lower gross incomes.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Countries like Switzerland, Luxembourg, and Norway have higher average wages than the United States, as reported by OECD statistics."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Countries like Switzerland, Luxembourg, and Norway have higher average wages than the United States, as reported by OECD statistics.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "OECD statistics do not account for cost of living differences, which are significantly higher in Switzerland, Luxembourg, and Norway compared to the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even after adjusting for purchasing power parity (PPP), median wages in these countries often remain higher than in the U.S., as shown by IMF data.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The OECD data reflects averages, which can be skewed by high earners; median income comparisons show a narrower gap.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Median income comparisons still favor some of these countries, especially when accounting for social benefits like healthcare and education.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The U.S. has significant income inequality, meaning while some Americans earn very high wages, others earn significantly less than workers in some other high-income countries."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The U.S. has significant income inequality, meaning while some Americans earn very high wages, others earn significantly less than workers in some other high-income countries.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Median income in the U.S. is higher than in most other high-income countries, which suggests that the average American earns more, not less.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Median income comparisons can be misleading because they don't account for cost of living differences, which are higher in the U.S. than in many other countries.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality in the U.S. is not unique; many other high-income countries also have significant disparities, so the claim doesn't distinguish the U.S. from those countries.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While income inequality exists elsewhere, the U.S. has one of the highest Gini coefficients among developed nations, indicating more severe inequality.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Purchasing power parity (PPP) adjustments show that some countries with nominally higher wages have lower real incomes due to higher costs of living."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Purchasing power parity (PPP) adjustments show that some countries with nominally higher wages have lower real incomes due to higher costs of living.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "PPP adjustments are not universally standardized and can vary significantly depending on the methodology used.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Major organizations like the World Bank and IMF use standardized PPP methodologies that are widely accepted.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some high-cost countries still have significantly higher disposable incomes even after PPP adjustments.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Disposable income comparisons often exclude non-monetary benefits like healthcare and education, which vary by country.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Certain professions in the U.S., such as software engineers and doctors, earn more than their counterparts in many other countries, while lower-wage workers may earn less."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Certain professions in the U.S., such as software engineers and doctors, earn more than their counterparts in many other countries, while lower-wage workers may earn less.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim refers to average earnings, not specific professions. Even if some high-earning professions in the U.S. outearn their counterparts, the overall average earnings in certain countries may still be higher.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Average earnings can be misleading due to income inequality. The U.S. has a higher Gini coefficient than many developed nations, meaning the median wage may be a better comparison.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many countries with higher average earnings have significantly higher costs of living, meaning higher nominal wages don't necessarily translate to greater purchasing power.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Purchasing power parity (PPP) adjustments show U.S. workers still earn less than those in several countries when accounting for cost of living differences.",
+          "confidence": 0.73,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Taxation and social benefits in some European countries result in higher net disposable incomes for workers compared to the U.S., despite lower gross wages."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Taxation and social benefits in some European countries result in higher net disposable incomes for workers compared to the U.S., despite lower gross wages.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Higher taxation in European countries can reduce disposable income for high earners, making the net benefit less universal than implied.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many European countries have progressive tax systems that still leave middle and lower-income workers with higher net disposable incomes compared to the U.S.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cost of living in many European countries is significantly higher than in the U.S., offsetting the benefits of higher net disposable income.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Social benefits like healthcare and education in Europe reduce out-of-pocket expenses, compensating for higher cost of living.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

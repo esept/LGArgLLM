@@ -1,0 +1,460 @@
+{
+  "claim": "A 13-month-old male needs to have surgery for an undescended testicle. The child lives with his 16-year-old mother only. His 19-year-old father is not involved. From whom should the surgeon get consent for the procedure? : The mother",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The mother is the sole legal guardian of the child, as she is the primary caregiver and the father is not involved.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The mother is the sole legal guardian of the child, as she is the primary caregiver and the father is not involved.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The father, despite not being involved, still has legal parental rights unless they have been formally terminated by a court.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A 16-year-old mother may lack the maturity or legal capacity to fully understand the implications of the surgery, raising concerns about informed consent.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "If the father has not been involved and has not exercised his parental rights, the mother's consent is sufficient under the doctrine of 'de facto' guardianship.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical professionals can assess the mother's capacity to consent and provide additional support or education if needed to ensure informed consent.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Legal parental rights do not automatically translate to practical involvement, and the mother's day-to-day caregiving role makes her consent more relevant.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with support, a minor may not fully grasp long-term medical consequences, potentially undermining the validity of the consent.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "At 16, the mother is legally considered a minor in many jurisdictions and may not have the capacity to provide informed consent.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "At 16, the mother is legally considered a minor in many jurisdictions and may not have the capacity to provide informed consent.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "In many jurisdictions, minors who are parents are legally emancipated for medical decisions regarding their children, granting them the capacity to consent.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if the mother is a minor, the absence of the father makes her the only available guardian, and the surgery is urgent for the child's health.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Emancipation for medical decisions is not universal and may require court approval, which could delay the procedure.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The urgency of the surgery does not override legal requirements for valid consent, and alternative guardianship arrangements may be necessary.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hospitals often have legal mechanisms to expedite court approval for medical emancipation in urgent cases, minimizing delays.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The best interest of the child standard may allow the surgeon to proceed with the mother's consent even if legal capacity is technically unclear.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical ethics prioritize the best interest of the child, and the mother, as the primary caregiver, is best positioned to make decisions in the child's interest.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical ethics prioritize the best interest of the child, and the mother, as the primary caregiver, is best positioned to make decisions in the child's interest.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The mother is only 16 years old and may lack the maturity or legal capacity to fully understand the implications of the surgery.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The father, despite not being involved, still has legal parental rights and should be consulted for consent.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal systems often recognize minors as capable of making medical decisions for their children if they are the primary caregivers.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The father's lack of involvement suggests he may not be acting in the child's best interest, making the mother's consent more reliable.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if legally recognized, a 16-year-old's cognitive and emotional development may still impair their decision-making capacity for complex medical procedures.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The father's legal rights do not automatically equate to his ability to make better decisions than the mother, especially if he is uninvolved.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If the mother is unable to provide consent due to her age, a legal guardian or court-appointed representative may be required to make medical decisions.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If the mother is unable to provide consent due to her age, a legal guardian or court-appointed representative may be required to make medical decisions.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "In many jurisdictions, 16-year-old mothers are legally recognized as capable of providing consent for their child's medical procedures.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of the father does not automatically invalidate the mother's ability to consent, regardless of her age.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the mother is legally recognized, hospitals may have policies requiring additional verification or oversight for minors providing consent.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The father's absence might necessitate involvement of child protective services to ensure proper consent is obtained.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hospital policies should align with legal standards, and if the law recognizes the mother's consent, additional verification may be unnecessary.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Child protective services are typically involved in cases of neglect or abuse, not solely due to a parent's age or absence.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The father, despite being uninvolved, may still have legal parental rights unless they have been formally terminated by a court.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The father, despite being uninvolved, may still have legal parental rights unless they have been formally terminated by a court.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The mother is the sole legal guardian as she is the primary caregiver and the father's rights have not been formally established or exercised.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The father's lack of involvement implies abandonment, which may legally default consent rights to the mother.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal rights are not automatically forfeited by lack of involvement; the father must be contacted unless a court has ruled otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Abandonment requires legal proof; mere lack of involvement does not suffice to terminate parental rights.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The mother's de facto guardianship status may override the father's theoretical rights in urgent medical decisions.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Medical ethics prioritize the child's immediate welfare, which supports the mother's authority to consent in this scenario.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "In emergency situations, surgeons may proceed without parental consent if delaying treatment would harm the child, but this is not an emergency.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "In emergency situations, surgeons may proceed without parental consent if delaying treatment would harm the child, but this is not an emergency.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even though it's not an emergency, the mother's consent alone may not be sufficient if legal guardianship is disputed or unclear.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mother's young age (16) may raise concerns about her capacity to fully understand the risks and benefits of the surgery.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal frameworks typically grant minors who are parents the same rights as adult parents regarding medical decisions for their children.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Healthcare providers can assess the mother's understanding through detailed discussions, regardless of her age.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In cases where the minor parent's capacity is in question, courts may need to appoint a legal guardian, delaying necessary care.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Standardized assessments for medical decision-making capacity are not always practical in urgent clinical settings.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The mother's age does not automatically disqualify her from providing consent if she demonstrates understanding and competence in making medical decisions for her child.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The mother's age does not automatically disqualify her from providing consent if she demonstrates understanding and competence in making medical decisions for her child.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "A 16-year-old mother may lack the maturity and life experience to fully comprehend the risks and implications of the surgery.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal guardianship requirements may necessitate involvement of an older guardian or court-appointed representative for medical consent.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that adolescent parents can demonstrate sufficient decision-making capacity when properly informed and supported by healthcare professionals.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In many jurisdictions, 16-year-olds are legally recognized as capable of providing consent for their children's medical procedures.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with support, cognitive development limitations in adolescents may still impair their ability to fully grasp complex medical decisions.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Legal recognition doesn't always correlate with actual decision-making competence, especially in high-stakes medical situations.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

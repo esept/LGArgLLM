@@ -1,0 +1,266 @@
+{
+  "claim": "No popular form of alternative medicine is accepted by all scientists.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Many forms of alternative medicine, such as acupuncture, have been studied extensively and some studies show positive results, yet there remains significant skepticism and disagreement among scientists about their efficacy.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Many forms of alternative medicine, such as acupuncture, have been studied extensively and some studies show positive results, yet there remains significant skepticism and disagreement among scientists about their efficacy.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The positive results from some studies on acupuncture and other alternative medicines may be due to placebo effects rather than actual efficacy.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The methodologies of many studies supporting alternative medicine are often criticized for being flawed or biased.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Placebo-controlled studies have shown that acupuncture's effects are often indistinguishable from sham treatments.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Meta-analyses of acupuncture studies reveal significant publication bias, where positive results are more likely to be published than negative ones.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Independent reviews have found that many studies on alternative medicine lack proper blinding or randomization, undermining their validity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "The funding sources for some alternative medicine studies are often tied to industries with vested interests, raising concerns about objectivity.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Homeopathy is widely criticized by the scientific community due to its lack of empirical evidence and violation of established principles of chemistry and physics.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Homeopathy is widely criticized by the scientific community due to its lack of empirical evidence and violation of established principles of chemistry and physics.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some studies have shown placebo effects from homeopathy, which can be beneficial in certain cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A minority of scientists and researchers support homeopathy, citing anecdotal evidence and patient testimonials.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Placebo effects are not unique to homeopathy and do not validate its underlying principles.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal evidence lacks scientific rigor and cannot replace controlled, empirical studies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Even for alternative therapies like chiropractic care, which has some acceptance for musculoskeletal issues, there is no universal consensus among scientists regarding its broader claims.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Even for alternative therapies like chiropractic care, which has some acceptance for musculoskeletal issues, there is no universal consensus among scientists regarding its broader claims.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Chiropractic care is widely recognized and regulated in many countries, indicating a significant level of scientific acceptance.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies have shown positive outcomes for chiropractic care beyond musculoskeletal issues, suggesting broader scientific support.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Regulation does not equate to universal scientific consensus, as regulatory standards can vary and may not reflect unanimous scientific approval.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The studies supporting broader claims of chiropractic care often have methodological flaws or are not replicated widely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Herbal medicine is often dismissed by scientists due to inconsistent results in clinical trials and concerns about standardization and dosage.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Herbal medicine is often dismissed by scientists due to inconsistent results in clinical trials and concerns about standardization and dosage.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Many scientists acknowledge the potential of herbal medicine when studied rigorously, as some herbs have shown consistent therapeutic effects.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Standardization and dosage issues are being addressed through modern pharmacological research, improving the credibility of herbal medicine.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with rigorous studies, the variability in herbal compounds due to environmental factors makes consistent results difficult to achieve.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite improvements, standardization in herbal medicine still lags behind conventional pharmaceuticals, limiting widespread acceptance.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some scientists argue that certain alternative medicine practices, like meditation, have gained broader acceptance due to evidence supporting their mental health benefits, though this is not universal.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some scientists argue that certain alternative medicine practices, like meditation, have gained broader acceptance due to evidence supporting their mental health benefits, though this is not universal.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The evidence for meditation's mental health benefits is often anecdotal or based on small, non-replicable studies.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many scientists still classify meditation as a complementary rather than alternative practice, which doesn't challenge the claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Meta-analyses of meditation studies show significant methodological flaws, undermining the validity of the evidence.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The distinction between complementary and alternative medicine is often blurred, and mainstream acceptance remains limited.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

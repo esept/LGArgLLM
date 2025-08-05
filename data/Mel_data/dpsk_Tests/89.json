@@ -1,0 +1,153 @@
+{
+  "claim": "Paul Dirac, a Jewish physicist born in Britain, won the Nobel Prize for Physics.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Paul Dirac was awarded the Nobel Prize in Physics in 1933 for his contributions to quantum mechanics."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Paul Dirac was awarded the Nobel Prize in Physics in 1933 for his contributions to quantum mechanics.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim states that Paul Dirac was Jewish, but there is no widely accepted evidence confirming his religious affiliation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records and biographies of Paul Dirac do not mention any Jewish heritage, suggesting the claim about his religion may be incorrect.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim asserts that Dirac was born in Britain, but he was actually born in Bristol, which is part of England, a distinction that might matter to some.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Paul Dirac was born in Bristol, England, which confirms his British nationality."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Paul Dirac was born in Bristol, England, which confirms his British nationality.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Birthplace alone does not necessarily confirm nationality, as citizenship can be acquired or changed later in life.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records and official documents consistently list Paul Dirac as a British citizen throughout his life.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical records indicate that Paul Dirac had Jewish ancestry."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical records indicate that Paul Dirac had Jewish ancestry.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paul Dirac's Jewish ancestry is not widely documented in primary sources, raising doubts about its accuracy.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Several reputable biographies and historical analyses confirm Paul Dirac's Jewish heritage through genealogical research.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if Paul Dirac had Jewish ancestry, it does not necessarily mean he identified as Jewish or was recognized as such culturally or religiously.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cultural and religious identity can be distinct from ancestry, but historical records often use ancestry to describe heritage regardless of personal identification.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Nobel Prize is a prestigious international award recognizing outstanding contributions in physics."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Nobel Prize is a prestigious international award recognizing outstanding contributions in physics.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Nobel Prize has been criticized for historical biases, including overlooking deserving candidates from underrepresented groups.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite criticisms, the Nobel Prize remains widely regarded as the highest honor in physics due to its rigorous selection process.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

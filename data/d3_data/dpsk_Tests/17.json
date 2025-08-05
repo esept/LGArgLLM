@@ -1,0 +1,185 @@
+{
+  "claim": "A child born in 2010 is 15 years old",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "In 2025, subtracting the birth year (2010) from the current year gives an age of 15."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "In 2025, subtracting the birth year (2010) from the current year gives an age of 15.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This calculation assumes the child was born on or before January 1, 2010, which may not be true for all children born in 2010.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For legal and most practical purposes, age is calculated based on the calendar year, not the exact birth date, making the original argument broadly correct.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some cultures, age is counted differently, such as starting from 1 at birth and incrementing at the Lunar New Year, which could make the child 16 in 2025.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies a Western context where age is calculated by subtracting the birth year from the current year, making the cultural exception irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "A person born on January 1, 2010, would turn 15 on January 1, 2025."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "A person born on January 1, 2010, would turn 15 on January 1, 2025.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim does not specify the exact date in 2010, so the age could vary depending on the birth date.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For most practical purposes, a child born in 2010 would be considered 15 years old in 2025, regardless of the exact birth date.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Legal and administrative systems often use the year of birth to determine age, not the exact date.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The calculation of age is based on the Gregorian calendar, where each year adds one to the age."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The calculation of age is based on the Gregorian calendar, where each year adds one to the age.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Age calculation varies by cultural and legal systems; some cultures count age differently, such as starting from 1 at birth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in cultures with different age-counting traditions, the Gregorian calendar is widely used for international standardization, making A3 generally correct.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes the child was born on or before January 1, 2010. If born later in 2010, they would not yet be 15 in 2025.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim likely implies the child was born early in 2010, as it is a common assumption in such statements.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "By December 31, 2025, a child born in 2010 would have completed 15 full years of life."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "By December 31, 2025, a child born in 2010 would have completed 15 full years of life.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the child was born on December 31, 2010, they would not complete 15 full years until December 31, 2025, making them 14 years old for most of 2025.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'a child born in 2010,' not necessarily on December 31, 2010. Most children born in 2010 would indeed be 15 by December 31, 2025.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not specify a date in 2025, so if evaluated before December 31, 2025, the child would not yet be 15.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The argument A4 explicitly states 'By December 31, 2025,' which resolves any ambiguity about the date.",
+          "confidence": 1.0,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

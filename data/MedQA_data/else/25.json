@@ -1,0 +1,323 @@
+{
+  "claim": "Kiwis describe New York City as \"our biggest and most diverse city, it's an economic hub with lots of tourists and very expensive rents\".",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "New York City is indeed one of the most diverse cities in the world, with a large immigrant population and a wide range of cultures represented.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "New York City is indeed one of the most diverse cities in the world, with a large immigrant population and a wide range of cultures represented.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While diverse, New York City is not the most diverse city globally; cities like Toronto and London have higher diversity indices.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Diversity does not necessarily correlate with economic success or high tourism numbers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Toronto and London may have higher diversity indices, but New York City's cultural impact and visibility surpass them.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Economic hubs often attract diverse populations, so diversity and economic success are frequently linked.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Cultural impact is subjective and does not negate the statistical diversity of other cities.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "New York City is a global economic hub, home to Wall Street and numerous multinational corporations, which aligns with the description of being an economic center.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "New York City is a global economic hub, home to Wall Street and numerous multinational corporations, which aligns with the description of being an economic center.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Many global cities like Tokyo and London also host major financial districts and multinational corporations, making NYC's economic status less unique.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The economic influence of Wall Street has declined relative to other financial centers like Shanghai and Hong Kong in recent years.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite competition, NYC remains the leading global financial center by market capitalization and liquidity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Shanghai and Hong Kong's financial sectors are still heavily regulated compared to NYC's more open markets.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The cost of living in New York City, particularly rents, is among the highest in the world, supporting the claim about expensive rents.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The cost of living in New York City, particularly rents, is among the highest in the world, supporting the claim about expensive rents.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While rents in NYC are high, they are not the highest globally when adjusted for local purchasing power.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other cities like Hong Kong and San Francisco have higher rent prices per square foot than New York City.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "New York City's rent prices are still prohibitively expensive for the average resident, regardless of global rankings.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if other cities have higher rents, NYC remains one of the most expensive places to live in the world.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Local purchasing power adjustments are irrelevant when discussing absolute affordability for residents.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The claim focuses on NYC's high rents, not necessarily its global ranking, so comparisons are misleading.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "New York City attracts millions of tourists annually, making it a major tourist destination, which matches the claim about lots of tourists.",
+        "confidence": 0.87,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "New York City attracts millions of tourists annually, making it a major tourist destination, which matches the claim about lots of tourists.",
+          "confidence": 0.87,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Tourist numbers alone do not necessarily make a city economically significant or diverse.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other cities also attract millions of tourists, so this does not uniquely support NYC's status as described by Kiwis.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Economic significance and diversity are often correlated with high tourist numbers due to varied attractions and services.",
+          "confidence": 0.79,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "NYC's unique combination of cultural landmarks, financial institutions, and global influence sets it apart from other tourist-heavy cities.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Kiwis (New Zealanders) are unlikely to describe New York City as 'our biggest and most diverse city' since it is not part of New Zealand and does not hold the same cultural significance for them.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Kiwis (New Zealanders) are unlikely to describe New York City as 'our biggest and most diverse city' since it is not part of New Zealand and does not hold the same cultural significance for them.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "New York City is globally recognized and frequently referenced by people worldwide, including Kiwis, due to its prominence in media and culture.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many Kiwis travel or live abroad, and some may develop strong personal connections to cities like New York, leading them to refer to it in familiar terms.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While New York is globally significant, Kiwis typically reserve terms like 'our city' for places within New Zealand, reflecting national identity.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Personal connections to foreign cities are exceptions rather than the norm, and most Kiwis would not describe New York as 'ours'.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "While New York City is diverse and economically significant, the phrasing 'our biggest and most diverse city' implies ownership or primary association, which is not typical for Kiwis.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "While New York City is diverse and economically significant, the phrasing 'our biggest and most diverse city' implies ownership or primary association, which is not typical for Kiwis.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kiwis often use 'our' colloquially to describe places they feel a strong connection to, even if not in their own country.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "New York City is globally recognized and frequently referenced by people worldwide, making such phrasing plausible for Kiwis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, 'our' is typically reserved for national or local contexts, not foreign cities, especially in formal descriptions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While NYC is globally recognized, Kiwis usually distinguish between domestic and international cities in their language.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

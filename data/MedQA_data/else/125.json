@@ -1,0 +1,452 @@
+{
+  "claim": "A 4-day-old, full-term infant born by uncomplicated vaginal delivery is brought to a pediatrician by his mother, who notes that her son's skin appears yellow. She reports that the child cries several times per day, but sleeps 7-8 hours at night, uninterrupted. She has been breastfeeding exclusively and feels that he has been feeding well. He has been having a bowel movement on average once every 3 days. Which of the following is the most likely etiology of the patient's presentation? : Breast milk jaundice",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The infant's jaundice appearing after the first 3 days of life is consistent with breast milk jaundice, which typically manifests later than physiological jaundice.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The infant's jaundice appearing after the first 3 days of life is consistent with breast milk jaundice, which typically manifests later than physiological jaundice.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The jaundice could also be due to inadequate breastfeeding, leading to dehydration and reduced bilirubin excretion, which is common in exclusively breastfed infants.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The timing of jaundice could overlap with physiological jaundice, making it difficult to distinguish between the two without further testing.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The mother reports the infant is feeding well and has adequate wet diapers, which argues against inadequate breastfeeding as the cause of jaundice.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Physiological jaundice typically peaks at 3-5 days, but breast milk jaundice persists longer, which aligns with the infant's presentation.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with adequate wet diapers, the frequency of bowel movements (once every 3 days) may indicate suboptimal bilirubin excretion, supporting inadequate breastfeeding as a contributing factor.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The infant's good feeding, adequate sleep, and lack of other concerning symptoms (e.g., lethargy, poor weight gain) support breast milk jaundice as a benign cause.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The infant's good feeding, adequate sleep, and lack of other concerning symptoms (e.g., lethargy, poor weight gain) support breast milk jaundice as a benign cause.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The bowel movement frequency of once every 3 days is atypical for a breastfed infant, suggesting possible dehydration or insufficient milk intake, which could exacerbate jaundice.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Physiologic jaundice is common in newborns and often peaks around days 3-5, making it difficult to distinguish from breast milk jaundice without further testing.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dehydration would likely present with other signs such as decreased urine output or sunken fontanelle, which are not mentioned in the case.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of risk factors for pathologic jaundice (e.g., Rh incompatibility, sepsis) makes physiologic or breast milk jaundice more likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Subtle signs of dehydration can be missed in newborns, and the reduced stool frequency alone warrants closer monitoring of hydration status.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Breastfed infants often have infrequent bowel movements, which can contribute to increased enterohepatic circulation of bilirubin, a mechanism implicated in breast milk jaundice.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Breastfed infants often have infrequent bowel movements, which can contribute to increased enterohepatic circulation of bilirubin, a mechanism implicated in breast milk jaundice.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Infrequent bowel movements alone are not sufficient to diagnose breast milk jaundice, as other conditions like biliary atresia can also cause similar symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The infant's age (4 days) is more consistent with physiologic jaundice rather than breast milk jaundice, which typically presents later (after the first week).",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Physiologic jaundice usually resolves by day 7-10, whereas this infant's symptoms persist, making breast milk jaundice more likely despite the early presentation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Biliary atresia is rare and usually presents with acholic stools and hepatomegaly, which are absent in this case, supporting breast milk jaundice as the more likely diagnosis.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Early-onset breast milk jaundice can occur, especially if there is a family history or other predisposing factors, which should be explored further.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of complications during delivery and the full-term status of the infant reduce the likelihood of other pathological causes of jaundice, such as hemolytic disease or sepsis.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of complications during delivery and the full-term status of the infant reduce the likelihood of other pathological causes of jaundice, such as hemolytic disease or sepsis.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Even in full-term infants without complications, jaundice can be caused by conditions like G6PD deficiency or urinary tract infections, which should not be ruled out without further testing.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The frequency of bowel movements (once every 3 days) is lower than typical for breastfed infants, which could indicate inadequate feeding and contribute to jaundice, contradicting the assumption of 'feeding well.'",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "G6PD deficiency is rare in populations without a family history or specific ethnic background, making it an unlikely cause without additional risk factors.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Urinary tract infections in newborns typically present with additional symptoms such as fever or poor weight gain, which are not mentioned here.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Some breastfed infants naturally have infrequent bowel movements without pathology, so this alone does not confirm inadequate feeding.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without family history, G6PD deficiency can occur de novo, and its possibility should not be dismissed without screening in persistent jaundice cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Newborns with UTIs may present atypically, and absence of fever does not fully exclude infection, especially in early stages.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Breast milk jaundice is a diagnosis of exclusion; without ruling out other causes (e.g., urinary tract infection, metabolic disorders), this etiology cannot be confirmed.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Breast milk jaundice is the most likely etiology given the infant's age, breastfeeding status, and lack of concerning symptoms like poor feeding or lethargy.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The infant's bowel movement frequency (once every 3 days) could indicate inadequate feeding, which may contribute to jaundice due to decreased bilirubin excretion.",
+          "confidence": 0.8,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mother's report of uninterrupted 7-8 hour sleep periods is unusual for a newborn and may suggest lethargy, a concerning symptom that warrants investigation for other causes of jaundice.",
+          "confidence": 0.78,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The infant's age (4 days) falls within the typical window for physiologic jaundice, which should be considered before attributing the jaundice to breast milk.",
+          "confidence": 0.85,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infants can have normal variations in stool frequency, and the described pattern does not necessarily indicate inadequate feeding if weight gain is appropriate.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Newborns often have long sleep periods, and without other signs of lethargy (e.g., difficulty arousing), this alone does not suggest pathology.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Physiologic jaundice typically peaks at 3-5 days, but the absence of risk factors (e.g., hemolysis) makes breast milk jaundice more likely in this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Weight gain should be objectively measured; parental perception of adequate feeding is not sufficient to rule out inadequate intake.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While some newborns sleep long periods, 7-8 hours uninterrupted is uncommon and should prompt evaluation for other signs of illness.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The infant's bowel movement frequency (once every 3 days) could indicate inadequate milk intake, which may lead to dehydration and exaggerated physiological jaundice rather than breast milk jaundice.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The infant's bowel movement frequency (once every 3 days) could indicate inadequate milk intake, which may lead to dehydration and exaggerated physiological jaundice rather than breast milk jaundice.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breastfed infants commonly have infrequent bowel movements after the first week, so the frequency alone does not necessarily indicate inadequate intake.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The infant's uninterrupted 7-8 hours of sleep and mother's report of feeding well suggest adequate intake, making dehydration unlikely.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infrequent bowel movements in breastfed infants can still be a sign of insufficient hindmilk intake, which is calorie-dense and helps with bilirubin excretion.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Newborns typically wake frequently to feed, so uninterrupted 7-8 hour sleep could indicate lethargy from hyperbilirubinemia rather than adequate intake.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Lethargy in hyperbilirubinemia is usually accompanied by poor feeding, which the mother explicitly denies in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The mother's perception of good feeding may not correlate with actual intake; weight loss or poor weight gain would need to be assessed to exclude starvation jaundice.",
+        "confidence": 0.68,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The mother's perception of good feeding may not correlate with actual intake; weight loss or poor weight gain would need to be assessed to exclude starvation jaundice.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breast milk jaundice typically presents after the first week of life, making it less likely in this 4-day-old infant.",
+          "confidence": 0.85,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The bowel movement frequency of once every 3 days is within normal limits for a breastfed infant, reducing concern for starvation jaundice.",
+          "confidence": 0.78,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Physiologic jaundice is more common in the first week of life and could explain the presentation without implying feeding issues.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The uninterrupted 7-8 hours of sleep at night could indicate insufficient feeding frequency, potentially supporting starvation jaundice.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Physiologic jaundice typically peaks at day 3-5, which aligns perfectly with this 4-day-old infant's presentation.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Newborns often cluster-feed during certain periods, so long sleep stretches don't necessarily indicate inadequate intake.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

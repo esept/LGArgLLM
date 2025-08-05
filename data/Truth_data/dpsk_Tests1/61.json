@@ -1,0 +1,258 @@
+{
+  "claim": "If you go outdoors in cold weather with wet hair, you might feel chilly.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Wet hair increases heat loss from the head, making you feel colder in cold weather.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Wet hair increases heat loss from the head, making you feel colder in cold weather.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Heat loss from wet hair is negligible compared to overall body heat loss in cold weather.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The body compensates for heat loss by increasing metabolic rate, reducing the perceived chill.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even small heat loss from the head can significantly impact thermal comfort due to the high density of thermoreceptors.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Metabolic compensation is delayed and may not immediately counteract the sensation of cold from wet hair.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Thermoreceptors adapt quickly to minor temperature changes, minimizing discomfort from wet hair.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Water conducts heat away from the body faster than air, so wet hair accelerates cooling.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Water conducts heat away from the body faster than air, so wet hair accelerates cooling.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The effect of wet hair on cooling is negligible if the ambient temperature is not significantly cold.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human body can regulate temperature effectively even with wet hair, reducing the impact of cooling.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that wet hair significantly increases heat loss in cold environments, contradicting the negligible effect claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Thermoregulation has limits, and wet hair can exceed these limits in cold weather, leading to noticeable cooling.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Cold weather lowers the body's ability to retain heat, and wet hair exacerbates this effect.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Cold weather lowers the body's ability to retain heat, and wet hair exacerbates this effect.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The body can adapt to cold weather by increasing metabolic heat production, counteracting heat loss from wet hair.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wet hair alone does not significantly impact core body temperature if proper clothing is worn.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Metabolic heat production has limits and may not fully compensate for rapid heat loss in extreme cold.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wet hair can still cause localized heat loss and discomfort even with adequate clothing.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If the ambient temperature is not extremely cold, wet hair may not significantly impact perceived chilliness.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If the ambient temperature is not extremely cold, wet hair may not significantly impact perceived chilliness.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Wet hair increases heat loss from the scalp, making you feel colder even in moderately cold temperatures.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Evaporation of water from wet hair absorbs body heat, leading to a noticeable drop in perceived temperature.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The body's thermoregulation can compensate for minor heat loss, reducing the impact of wet hair in non-extreme cold.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clothing and other insulation factors often mitigate the cooling effect of wet hair.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Individual differences in metabolism and clothing can mitigate the effect of wet hair on feeling chilly.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Individual differences in metabolism and clothing can mitigate the effect of wet hair on feeling chilly.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Wet hair significantly increases heat loss from the head, which can override individual metabolic differences.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Most clothing does not fully compensate for the heat loss caused by wet hair in cold weather.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The head is a major source of body heat loss, and wet hair exacerbates this regardless of metabolism.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that wet hair can lower scalp temperature by up to 5\u00b0C, making chilly sensations likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

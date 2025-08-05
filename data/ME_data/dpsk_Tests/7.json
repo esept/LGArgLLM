@@ -1,0 +1,240 @@
+{
+  "claim": "Contracts require mutual agreement",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Contract law in most jurisdictions explicitly requires mutual assent (offer and acceptance) for a contract to be valid."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Contract law in most jurisdictions explicitly requires mutual assent (offer and acceptance) for a contract to be valid.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions recognize unilateral contracts, where only one party makes a promise in exchange for an act by another, without explicit mutual assent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Unilateral contracts still imply a form of mutual agreement, as the performing party's act constitutes acceptance of the offer, maintaining the principle of mutual assent.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Implied contracts can be enforced without explicit mutual agreement, as courts infer assent from the parties' conduct or circumstances.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Implied contracts still rely on the parties' behavior indicating mutual intent to be bound, preserving the underlying requirement of mutual assent.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Without mutual agreement, there is no meeting of the minds, which is a foundational element of enforceable contracts."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Without mutual agreement, there is no meeting of the minds, which is a foundational element of enforceable contracts.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Implied contracts can be enforceable even without explicit mutual agreement, as seen in cases of promissory estoppel.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Promissory estoppel applies only in specific equitable circumstances and does not negate the general requirement of mutual agreement for most contracts.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some jurisdictions recognize unilateral contracts where only one party makes a promise, requiring no mutual agreement.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unilateral contracts still involve an implied agreement through performance, maintaining the principle of mutual assent.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Courts consistently rule that contracts lacking mutual agreement are void or unenforceable due to lack of consent."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Courts consistently rule that contracts lacking mutual agreement are void or unenforceable due to lack of consent.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions recognize unilateral contracts, where only one party makes a promise in exchange for an act, not mutual promises.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Unilateral contracts still imply a form of agreement, as the performing party consents by completing the requested act.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Implied contracts can be enforced without explicit mutual agreement, based on conduct or circumstances.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Implied contracts still require a meeting of the minds (mutual understanding), even if not formally expressed.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Standard contract doctrines like consideration and mutual obligation presuppose that both parties have agreed to the terms."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Standard contract doctrines like consideration and mutual obligation presuppose that both parties have agreed to the terms.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some contracts, such as unilateral contracts, are enforceable even if only one party has explicitly agreed to the terms at the outset.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Unilateral contracts still imply a form of agreement through performance, as the offeree's actions signify acceptance of the terms.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Implied-in-fact contracts may not require explicit mutual agreement, as terms are inferred from conduct rather than formal assent.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Implied contracts still rely on a mutual understanding of obligations, even if not formally stated, preserving the essence of agreement.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Legal textbooks and treatises universally define contracts as agreements between two or more parties with mutual intent."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Legal textbooks and treatises universally define contracts as agreements between two or more parties with mutual intent.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions recognize unilateral contracts, where only one party makes a promise in exchange for an act by another party, without mutual agreement on terms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Unilateral contracts still imply a form of mutual assent, as the performing party accepts the offer by completing the required act, creating a de facto agreement.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Implied contracts can be enforced without explicit mutual agreement, as courts infer intent from conduct or circumstances.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Implied contracts still require a meeting of the minds, as the parties' conduct must objectively demonstrate mutual assent to the terms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

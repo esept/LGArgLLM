@@ -1,0 +1,285 @@
+{
+  "claim": "The capital of France is Marseille",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Paris is universally recognized as the capital of France, as confirmed by official government sources and international agreements."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Paris is universally recognized as the capital of France, as confirmed by official government sources and international agreements.",
+          "cate": "P",
+          "confidence": 0.99,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Marseille was historically considered the capital of France during the French Revolution for a brief period.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.45
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The historical claim about Marseille being the capital is not officially recognized in modern contexts or by current government sources.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some regional movements advocate for decentralizing the capital status from Paris to other cities like Marseille for economic and cultural reasons.",
+          "confidence": 0.5,
+          "attacks": {
+            "A1": 0.4
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Such regional movements lack legal or constitutional authority to change the capital status, which is firmly established in French law.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Historical records and administrative documents consistently identify Paris as the political and cultural center of France, not Marseille."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Historical records and administrative documents consistently identify Paris as the political and cultural center of France, not Marseille.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Marseille was historically significant as a major port and trading hub, which could lead some to mistakenly believe it was the capital.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.45
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Despite Marseille's historical significance, it never served as the political capital of France in any official capacity.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some ancient texts refer to Marseille as a capital of Gaul, which might cause confusion with modern France.",
+          "confidence": 0.5,
+          "attacks": {
+            "A2": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Gaul was a different geopolitical entity from modern France, and its historical capitals are irrelevant to the current claim.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "All major governmental institutions, including the French Parliament and the President's residence, are located in Paris, not Marseille."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "All major governmental institutions, including the French Parliament and the President's residence, are located in Paris, not Marseille.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Historically, Marseille was the capital of France during the early Middle Ages.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.4
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The claim refers to the current capital, not historical capitals.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some administrative functions are decentralized and located in other cities, including Marseille.",
+          "confidence": 0.5,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Decentralized administrative functions do not change the official capital status of Paris.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Marseille is the second-largest city in France and a major port, but it has never been designated as the capital in any official capacity."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Marseille is the second-largest city in France and a major port, but it has never been designated as the capital in any official capacity.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Paris has been the capital of France since the Middle Ages, as documented in historical records and official government publications.",
+          "confidence": 0.98,
+          "attacks": {
+            "A4": 0.9
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The French Constitution explicitly designates Paris as the seat of government and capital of France, leaving no legal ambiguity.",
+          "confidence": 0.99,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "While Marseille is culturally significant, its role as a port city does not equate to political capital status in any modern nation-state framework.",
+          "confidence": 0.88,
+          "attacks": {
+            "A4": 0.8
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Geopolitical and educational resources, such as atlases and textbooks, consistently list Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Geopolitical and educational resources, such as atlases and textbooks, consistently list Paris as the capital of France.",
+          "cate": "P",
+          "confidence": 0.98,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Historical records from the 19th century show Marseille was briefly considered as a potential capital during political upheavals.",
+          "confidence": 0.35,
+          "attacks": {
+            "A5": 0.25
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some fringe geopolitical theories argue that decentralization should make regional hubs like Marseille share capital status.",
+          "confidence": 0.15,
+          "attacks": {
+            "A5": 0.1
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The brief 19th century consideration of Marseille was never formally enacted in any constitutional document.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Decentralization theories don't change legal capital designations under international law.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "International diplomatic missions and embassies are based in Paris, further confirming its status as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "International diplomatic missions and embassies are based in Paris, further confirming its status as the capital of France.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim mistakenly identifies Marseille as the capital due to its historical significance as a major port city.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Historical significance does not override current administrative and political realities, which clearly designate Paris as the capital.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some government functions are decentralized to other cities, which might cause confusion about the capital's location.",
+          "confidence": 0.65,
+          "attacks": {
+            "A6": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Decentralization of some functions does not change the fact that Paris remains the official capital and seat of national government.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

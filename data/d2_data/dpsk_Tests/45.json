@@ -1,0 +1,271 @@
+{
+  "claim": "The speed of light is slower than the speed of sound",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The speed of light in a vacuum is approximately 299,792 kilometers per second, while the speed of sound in air is about 343 meters per second, making light vastly faster."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The speed of light in a vacuum is approximately 299,792 kilometers per second, while the speed of sound in air is about 343 meters per second, making light vastly faster.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain materials like water or glass, the speed of light can be slower than the speed of sound in those same materials.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The comparison in B1 is misleading because it involves specific materials, whereas the claim is about general conditions (vacuum for light and air for sound).",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not specify the medium, so it could be interpreted as referring to any possible medium where light might be slower than sound.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Without explicit context, the default interpretation of 'speed of light' and 'speed of sound' is in vacuum and air, respectively, as these are standard reference conditions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Scientific experiments, such as those measuring the time delay of light from distant stars, consistently confirm that light travels much faster than sound."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Scientific experiments, such as those measuring the time delay of light from distant stars, consistently confirm that light travels much faster than sound.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain extreme conditions, such as in Bose-Einstein condensates, light can be slowed down to speeds comparable to or even slower than sound.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Bose-Einstein condensates are highly specialized and rare conditions not representative of typical environments where light and sound speeds are compared.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in Bose-Einstein condensates, the effective speed of light is not inherently slower; it is the group velocity that is reduced due to interactions with the medium.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Einstein's theory of relativity establishes the speed of light as the ultimate speed limit in the universe, far exceeding the speed of sound in any medium."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Einstein's theory of relativity establishes the speed of light as the ultimate speed limit in the universe, far exceeding the speed of sound in any medium.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain exotic materials like Bose-Einstein condensates, light can be slowed down to speeds comparable to or even slower than sound.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such exotic conditions are laboratory artifacts and do not represent the natural behavior of light in vacuum or common media, where it remains vastly faster than sound.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be interpreted as referring to group velocity rather than phase velocity, where light pulses may propagate slower than sound in specific dispersive media.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Group velocity slowdowns are transient and media-dependent effects, while the fundamental constant 'c' (speed of light in vacuum) universally exceeds sound speed by orders of magnitude.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Observable phenomena, such as seeing lightning before hearing thunder, demonstrate that light reaches observers faster than sound."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Observable phenomena, such as seeing lightning before hearing thunder, demonstrate that light reaches observers faster than sound.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain dense materials like water or glass, the speed of light can be slower than the speed of sound in those same materials.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The speed of light in dense materials is still fundamentally faster than the speed of sound when both are measured in a vacuum, which is the standard reference for comparing their speeds.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human perception delays might cause misinterpretation of the actual speeds, making it seem like light is faster when it's actually a sensory illusion.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Scientific instruments, independent of human perception, consistently measure light as faster than sound, confirming the validity of the observation.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The speed of sound depends on the medium (e.g., air, water), but even in dense materials like diamond, sound does not approach the speed of light."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The speed of sound depends on the medium (e.g., air, water), but even in dense materials like diamond, sound does not approach the speed of light.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain exotic states of matter, such as Bose-Einstein condensates, the speed of sound can theoretically approach relativistic speeds.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in Bose-Einstein condensates, the speed of sound remains orders of magnitude below the speed of light in vacuum.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The speed of light in a medium (e.g., glass or water) is slower than in a vacuum, and in some cases, sound waves in dense materials can exceed the speed of light in that medium.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even when light slows in a medium, its speed is still vastly higher than the speed of sound in any known material.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Technologies like radar and lidar rely on the high speed of light for accurate measurements, which would be impossible if light were slower than sound."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Technologies like radar and lidar rely on the high speed of light for accurate measurements, which would be impossible if light were slower than sound.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In certain exotic materials like Bose-Einstein condensates, light can be slowed down to speeds comparable to or even slower than sound.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Bose-Einstein condensates are highly controlled laboratory conditions and do not represent the natural speed of light in a vacuum or typical media.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If light were slower than sound in general, technologies like fiber optics would not function as they do, since signal delays would be impractical.",
+          "confidence": 0.9,
+          "attacks": [
+            "A6"
+          ]
+        }
+      ]
+    }
+  }
+}

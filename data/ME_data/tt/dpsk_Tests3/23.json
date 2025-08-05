@@ -1,0 +1,193 @@
+{
+  "claim": "Jupiter is smaller than Earth",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Jupiter's diameter is approximately 11 times that of Earth, making it significantly larger."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Jupiter's diameter is approximately 11 times that of Earth, making it significantly larger.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim might refer to Jupiter's mass rather than its diameter, where Jupiter is still much larger than Earth.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mass and diameter are distinct properties; the original claim specifies 'smaller,' which is typically interpreted as size (diameter).",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If considering density, Jupiter is less dense than Earth, but this does not make it smaller in size.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Density is irrelevant to the claim about size; the comparison must be based on measurable dimensions like diameter.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Jupiter has a volume over 1,300 times that of Earth, clearly indicating it is much larger."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Jupiter has a volume over 1,300 times that of Earth, clearly indicating it is much larger.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Volume is not the only measure of size; Jupiter's mass is also significantly greater than Earth's.",
+          "confidence": 0.92,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mass and volume are both valid measures of size, but volume is more intuitive for comparing physical dimensions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If considering diameter, Jupiter is about 11 times wider than Earth, further proving its larger size.",
+          "confidence": 0.93,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diameter alone can be misleading without considering the three-dimensional aspect of size.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "However, even in three dimensions, Jupiter's volume and diameter both confirm it is larger than Earth.",
+          "confidence": 0.9,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Jupiter's mass is more than 300 times that of Earth, demonstrating its greater size."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Jupiter's mass is more than 300 times that of Earth, demonstrating its greater size.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Size can refer to volume rather than mass, and Jupiter's diameter is about 11 times that of Earth, making it significantly larger in volume.",
+          "confidence": 0.9,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Jupiter is larger in volume, the claim might be interpreted as referring to density, where Earth is denser than Jupiter.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Density is not a standard measure of 'size' in astronomical comparisons, which typically refer to diameter or volume.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Astronomical observations consistently rank Jupiter as the largest planet in the solar system, far exceeding Earth in size."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Astronomical observations consistently rank Jupiter as the largest planet in the solar system, far exceeding Earth in size.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim could be interpreted as referring to mass rather than diameter, where Jupiter is indeed smaller in mass than Earth.",
+          "confidence": 0.3,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mass is not typically the primary metric for comparing planetary sizes; diameter is the standard measure in astronomy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If considering density, Earth is denser than Jupiter, which might mislead some to think Earth is larger.",
+          "confidence": 0.4,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Density does not equate to size; Jupiter's volume and diameter are still vastly greater than Earth's.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

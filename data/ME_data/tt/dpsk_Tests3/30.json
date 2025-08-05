@@ -1,0 +1,201 @@
+{
+  "claim": "The sum of all odd numbers is always even",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The sum of two odd numbers is always even, which supports the claim when extended to any even number of odd numbers."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The sum of two odd numbers is always even, which supports the claim when extended to any even number of odd numbers.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The sum of an odd number of odd numbers is odd, contradicting the claim when the count of odd numbers is odd.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim generalizes to 'all odd numbers' without specifying the count, making it ambiguous and potentially incorrect.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original argument assumes an even count of odd numbers, which is not guaranteed by the claim's phrasing.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The sum of an odd number of odd numbers is always odd, which contradicts the claim."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The sum of an odd number of odd numbers is always odd, which contradicts the claim.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is about the sum of all odd numbers, not a finite subset, so A2's counterexample is irrelevant.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The sum of all odd numbers diverges to infinity, which is not a finite number and thus neither even nor odd.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In some extended number systems, infinity can be assigned parity, but this is non-standard and context-dependent.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In mathematics, the parity (evenness or oddness) of a sum depends on the count of odd numbers being summed, not just their individual oddness."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In mathematics, the parity (evenness or oddness) of a sum depends on the count of odd numbers being summed, not just their individual oddness.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The sum of two odd numbers is always even, which might generalize the claim incorrectly.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The sum of an odd count of odd numbers is odd, disproving the generalization that all sums of odd numbers are even.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim is only true if the count of odd numbers summed is even, making it conditionally correct.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim is false because it does not account for the number of odd numbers being summed, which determines the result's parity."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim is false because it does not account for the number of odd numbers being summed, which determines the result's parity.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The sum of two odd numbers is always even, which supports the claim when considering pairs.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For any finite set of odd numbers, the sum's parity depends on the count of numbers (odd count \u2192 odd sum, even count \u2192 even sum).",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Infinite sums of odd numbers diverge, making the original claim about 'all odd numbers' mathematically undefined.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4",
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If the count of odd numbers summed is even, the result is even; if odd, the result is odd, making the original claim incomplete."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The sum of all odd numbers is always even.",
+          "confidence": 0.5,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the count of odd numbers summed is even, the result is even; if odd, the result is odd, making the original claim incomplete.",
+          "confidence": 0.9,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim assumes an infinite or unspecified count of odd numbers, which is not practically verifiable.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In finite cases, the parity of the sum of odd numbers strictly depends on the count of terms, not the numbers themselves.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

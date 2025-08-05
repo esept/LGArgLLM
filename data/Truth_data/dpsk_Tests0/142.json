@@ -1,0 +1,161 @@
+{
+  "claim": "Friedrich Hayek, a person from America, won a Nobel Prize for Economics.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek spent significant time in the U.S. and influenced American economic policy, which might lead some to associate him with America.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Association due to influence does not change the factual birthplace and citizenship of Hayek.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hayek held academic positions in the U.S., which could be interpreted as a form of affiliation with America.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Academic positions are temporary and do not alter nationality or birthplace.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Friedrich Hayek did win the Nobel Prize in Economics in 1974."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Friedrich Hayek did win the Nobel Prize in Economics in 1974.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim about Hayek's nationality does not negate the fact that he won the Nobel Prize in Economics.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim incorrectly states Hayek's nationality as American, which is factually inaccurate."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim incorrectly states Hayek's nationality as American, which is factually inaccurate.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek spent significant time in the United States and was affiliated with American institutions, which may lead to confusion about his nationality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite his affiliations, Hayek's Austrian citizenship and birthplace are well-documented and undisputed.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Hayek's Nobel Prize was awarded for his work in economics, particularly his contributions to the theory of money and economic fluctuations."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Hayek's Nobel Prize was awarded for his work in economics, particularly his contributions to the theory of money and economic fluctuations.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.99,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim about Hayek's nationality does not invalidate the fact that he won the Nobel Prize for his economic contributions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hayek shared the Nobel Prize with Gunnar Myrdal, which might dilute the perception of his individual contribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The shared nature of the prize does not diminish the significance of Hayek's specific contributions to economic theory.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

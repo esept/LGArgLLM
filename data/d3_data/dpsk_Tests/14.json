@@ -1,0 +1,287 @@
+{
+  "claim": "Quantitative easing increases the money supply",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Quantitative easing involves central banks purchasing financial assets, which injects new money directly into the economy."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Quantitative easing involves central banks purchasing financial assets, which injects new money directly into the economy.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Central bank asset purchases may simply replace existing money held by financial institutions rather than increasing the total money supply.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if money is initially held by banks, the increased reserves typically lead to greater lending and money creation through fractional reserve banking.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During liquidity traps, banks may hoard the additional reserves rather than lending them out, preventing money supply growth.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central banks can implement negative interest rates or other policies to disincentivize reserve hoarding and encourage lending.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "By increasing the reserves of commercial banks, quantitative easing enables them to lend more, thereby expanding the money supply through fractional reserve banking."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "By increasing the reserves of commercial banks, quantitative easing enables them to lend more, thereby expanding the money supply through fractional reserve banking.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Commercial banks may choose not to lend the additional reserves, holding them as excess reserves instead, which would limit the expansion of the money supply.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks can implement policies like negative interest rates to discourage banks from holding excess reserves, encouraging lending and money supply expansion.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The money multiplier effect of fractional reserve banking may be weaker than expected if demand for loans is low, reducing the impact of quantitative easing on the money supply.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central banks can target specific sectors or institutions with quantitative easing to ensure the additional reserves translate into lending and money supply growth.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The creation of central bank reserves to buy assets is a direct increase in the monetary base, a component of the money supply."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The creation of central bank reserves to buy assets is a direct increase in the monetary base, a component of the money supply.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Central bank reserves are not part of the broad money supply (M2/M3) used by households and businesses, so QE may not directly increase circulating money.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While reserves aren't part of M2/M3, banks can lend against them, indirectly increasing the broad money supply through fractional reserve banking.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During liquidity traps, banks may hoard reserves rather than lend them out, preventing money supply growth despite QE.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if lending is constrained, QE still increases financial asset prices and wealth effects, stimulating economic activity through alternative channels.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Empirical data from central banks, such as the Federal Reserve and the European Central Bank, show a correlation between quantitative easing programs and growth in M2 money supply."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Empirical data from central banks, such as the Federal Reserve and the European Central Bank, show a correlation between quantitative easing programs and growth in M2 money supply.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Correlation does not imply causation; other factors like fiscal policy or banking regulations could independently influence M2 growth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks explicitly design QE to increase reserves and liquidity, making it a direct causal mechanism for M2 expansion.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "QE's impact depends on bank lending behavior\u2014if banks hoard reserves instead of lending, M2 may not rise as expected.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with reserve hoarding, QE mechanically increases base money, which is a component of M2, guaranteeing some supply growth.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Quantitative easing reduces long-term interest rates, encouraging borrowing and spending, which further multiplies the money supply through bank lending."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Quantitative easing reduces long-term interest rates, encouraging borrowing and spending, which further multiplies the money supply through bank lending.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If banks choose to hold excess reserves instead of lending, the money multiplier effect of quantitative easing is significantly weakened.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks can implement policies like negative interest rates to disincentivize holding excess reserves, ensuring the money multiplier effect still occurs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a liquidity trap, lower interest rates may not stimulate additional borrowing and spending, limiting the impact on money supply growth.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in liquidity traps, quantitative easing can signal central bank commitment to economic recovery, boosting confidence and spending.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Central banks openly state that quantitative easing aims to increase liquidity in the financial system, which is synonymous with expanding the money supply."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Central banks openly state that quantitative easing aims to increase liquidity in the financial system, which is synonymous with expanding the money supply.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Quantitative easing primarily increases bank reserves, not necessarily broad money supply (M2/M3), unless banks lend more.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Empirical studies show QE correlates with growth in M2 due to portfolio rebalancing effects and lower interest rates stimulating credit demand.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During liquidity traps, QE fails to increase money supply as banks hoard reserves due to risk aversion.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central bank forward guidance accompanying QE mitigates liquidity traps by managing expectations of future money supply growth.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

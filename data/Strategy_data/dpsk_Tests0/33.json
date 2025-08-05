@@ -1,0 +1,246 @@
+{
+  "claim": "Bodies move during hanging.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Neurological reflexes such as the spinal cord's automatic responses can cause involuntary muscle contractions and movements after death by hanging."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Neurological reflexes such as the spinal cord's automatic responses can cause involuntary muscle contractions and movements after death by hanging.",
+          "cate": "P",
+          "confidence": 0.82,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Neurological reflexes typically cease shortly after death due to lack of oxygen and metabolic activity in the brain and spinal cord.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Post-mortem reflexes like the Lazarus sign have been documented in rare cases, particularly in brain-dead patients, suggesting some reflexive movements can occur after death.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The movements observed during hanging are more likely due to the physical forces of the noose and gravity acting on the body rather than neurological reflexes.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Neurological reflexes can still contribute to movements in the initial moments after hanging, as the spinal cord may remain briefly active even after brain death.",
+          "confidence": 0.68,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The process of asphyxiation during hanging can lead to convulsions and spasms as the body struggles for oxygen."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The process of asphyxiation during hanging can lead to convulsions and spasms as the body struggles for oxygen.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all hangings result in convulsions; some individuals lose consciousness quickly without visible movement.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Medical studies show that convulsions are common in cases of incomplete asphyxiation, supporting the original argument.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Convulsions may be misinterpreted as voluntary movement, which doesn't necessarily indicate the body is 'struggling' for oxygen.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Neurological responses to oxygen deprivation are well-documented and include involuntary muscle contractions.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Gravitational forces acting on the body during hanging can cause swinging or rotational movements, especially if the suspension point is not completely fixed."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Gravitational forces acting on the body during hanging can cause swinging or rotational movements, especially if the suspension point is not completely fixed.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In most hanging scenarios, the suspension point is rigid (e.g., a gallows or beam), minimizing movement beyond initial drop dynamics.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with rigid suspension points, external factors like wind or uneven rope tension can induce movement post-hanging.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Biological factors (e.g., muscle spasms or decomposition gases) are more likely causes of observed movement than gravitational swinging.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Gravitational swinging would still occur before biological factors become relevant, making both mechanisms possible in sequence.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Post-mortem muscle contractions due to rigor mortis can cause subtle movements in the body after hanging."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Post-mortem muscle contractions due to rigor mortis can cause subtle movements in the body after hanging.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Rigor mortis typically sets in 2-6 hours after death, which is too late to explain movements observed immediately after hanging.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Some cases show early onset of rigor mortis (within 30 minutes) in high-stress deaths like hanging, potentially explaining immediate movements.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Post-mortem movements are more likely caused by gas buildup and decomposition than muscle contractions.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Decomposition gases form much later (24+ hours), making them irrelevant for immediate post-hanging movements.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The release of neurotransmitters and residual electrical activity in the nervous system can trigger brief movements after death by hanging."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The release of neurotransmitters and residual electrical activity in the nervous system can trigger brief movements after death by hanging.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Post-mortem movements are rare and usually minimal, not accounting for significant body movements observed in hanging cases.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Most post-mortem movements occur due to muscle relaxation or external factors like wind, not residual neural activity.",
+          "confidence": 0.6,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that residual electrical activity ceases within seconds to minutes after death, making prolonged movements unlikely.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85,
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Rigor mortis typically sets in within hours, preventing any significant movement post-death.",
+          "confidence": 0.9,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

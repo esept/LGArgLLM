@@ -1,0 +1,543 @@
+{
+  "claim": "US incomes are less unequal than those in Brazil.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Gini coefficient for the US is lower than that of Brazil, indicating less income inequality.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Gini coefficient for the US is lower than that of Brazil, indicating less income inequality.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient does not account for wealth inequality, which may be more severe in the US.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Regional disparities within Brazil might skew the national Gini coefficient, making the comparison less accurate.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Wealth inequality is a separate metric and does not invalidate the income inequality measurement provided by the Gini coefficient.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with regional disparities, the national Gini coefficient remains a standard measure for international comparisons.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Brazil has a higher proportion of its population living in extreme poverty compared to the US, which skews income distribution more unevenly.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Brazil has a higher proportion of its population living in extreme poverty compared to the US, which skews income distribution more unevenly.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The US has a significant wealth gap with a large portion of wealth concentrated among the top 1%, which also contributes to income inequality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil's social programs, like Bolsa Fam\u00edlia, have reduced extreme poverty and improved income distribution in recent years.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient, a standard measure of income inequality, shows the US has higher income inequality than Brazil in recent years.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite social programs, Brazil still has systemic issues like informal labor markets that perpetuate income inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The US has a more progressive tax system and stronger social safety nets than Brazil, reducing income inequality.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The US has a more progressive tax system and stronger social safety nets than Brazil, reducing income inequality.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Despite progressive taxation, loopholes and tax evasion in the US disproportionately benefit the wealthy, undermining redistribution efforts.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Social safety nets in the US are weaker compared to many developed nations, leaving significant gaps in income support.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Recent tax reforms in the US have closed some loopholes and increased IRS enforcement, improving progressivity.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Programs like the Earned Income Tax Credit and SNAP in the US effectively reduce poverty and inequality for low-income households.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Brazil's informal economy is much larger than the US's, leading to less accurate income reporting and higher perceived inequality.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Brazil's informal economy is much larger than the US's, leading to less accurate income reporting and higher perceived inequality.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The informal economy in Brazil is often overestimated, and many informal workers still report their incomes accurately.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even with a large informal economy, Brazil's formal income data still shows higher inequality than the US.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that informal workers in Brazil frequently underreport income to avoid taxes, skewing inequality metrics.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Brazil's Gini coefficient, even when adjusted for informal economy estimates, remains higher than the US's.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Tax evasion in Brazil's informal sector is well-documented, supporting the claim of underreported incomes.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Comparative studies using alternative inequality measures still place Brazil above the US in income disparity.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The US has a higher median income than Brazil, which can contribute to a perception of less inequality even if disparities exist.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The US has a higher median income than Brazil, which can contribute to a perception of less inequality even if disparities exist.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Median income alone does not account for wealth concentration; the US could still have higher income inequality despite a higher median.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Perception of inequality is subjective and does not necessarily reflect actual income distribution data.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gini coefficient data shows the US has a higher income inequality than many developed nations, suggesting median income is not the sole determinant.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Surveys and studies consistently report that Americans perceive income inequality as a significant issue, contradicting the claim about perception.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Gini coefficient is a more comprehensive measure of inequality, and Brazil's is higher than the US's, supporting the original claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Brazil's top 1% earn a significantly larger share of national income compared to the US, indicating greater inequality.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Brazil's top 1% earn a significantly larger share of national income compared to the US, indicating greater inequality.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient, a more comprehensive measure of inequality, shows Brazil's inequality has been decreasing while the US's has been rising.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The comparison ignores regional disparities within the US, where some states have inequality levels comparable to Brazil.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient can be misleading as it doesn't account for wealth distribution within the top 1%, where Brazil's inequality is still higher.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with regional disparities, the US's overall income inequality is still lower than Brazil's when considering national averages.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The US has seen a rise in income inequality in recent decades, but it still remains below Brazil's historically high levels.",
+        "confidence": 0.72,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The US has seen a rise in income inequality in recent decades, but it still remains below Brazil's historically high levels.",
+          "confidence": 0.72,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Brazil has implemented progressive tax policies and social programs that have significantly reduced income inequality in recent years.",
+          "confidence": 0.65,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gini coefficient, a common measure of income inequality, shows Brazil's inequality has decreased faster than the US's in the past decade.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Progressive tax policies in Brazil have been undermined by loopholes and tax evasion, limiting their impact on inequality.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While Brazil's Gini coefficient has improved, it still remains higher than the US's, indicating greater overall inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Recent audits show Brazil's tax enforcement has improved, closing many loopholes and increasing effective taxation on the wealthy.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "Regional income disparities in Brazil are more extreme than in the US, contributing to higher overall inequality.",
+        "confidence": 0.68,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "Regional income disparities in Brazil are more extreme than in the US, contributing to higher overall inequality.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Regional disparities in the US, such as between urban and rural areas, are also significant and may not be as different from Brazil as claimed.",
+          "confidence": 0.65,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil has implemented social programs like Bolsa Fam\u00edlia that have significantly reduced income inequality in recent years.",
+          "confidence": 0.72,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that US regional inequality has been growing faster than Brazil's in recent years, narrowing the gap.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While Bolsa Fam\u00edlia has helped, Brazil's Gini coefficient remains much higher than the US's, indicating greater overall inequality.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A9": {
+      "supporting": {
+        "id": "A9",
+        "text": "Brazil's minimum wage is a smaller fraction of the average wage than in the US, exacerbating income inequality.",
+        "confidence": 0.6,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A9",
+          "text": "Brazil's minimum wage is a smaller fraction of the average wage than in the US, exacerbating income inequality.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The minimum wage in Brazil has been increasing steadily over the years, reducing income inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil has implemented social welfare programs that supplement low wages, mitigating income inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The increase in Brazil's minimum wage has not kept pace with inflation, limiting its impact on reducing inequality.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Social welfare programs in Brazil are often underfunded and inefficient, failing to significantly reduce income inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A10": {
+      "supporting": {
+        "id": "A10",
+        "text": "The US has a larger middle class as a percentage of its population compared to Brazil, leading to less income inequality.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A10",
+          "text": "The US has a larger middle class as a percentage of its population compared to Brazil, leading to less income inequality.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The middle class in the US has been shrinking in recent decades, reducing its impact on overall income inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil has implemented progressive social policies that have significantly reduced income inequality in recent years.",
+          "confidence": 0.6,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with a shrinking middle class, the US still maintains a higher median income compared to Brazil, which affects inequality measures.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gini coefficient, a common measure of income inequality, shows that the US still has lower inequality than Brazil despite recent changes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Many of Brazil's social policies are underfunded and inconsistently implemented, limiting their impact on income inequality.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "The US has a more progressive tax system compared to Brazil, which helps mitigate income inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

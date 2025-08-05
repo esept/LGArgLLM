@@ -1,0 +1,232 @@
+{
+  "claim": "Breast cancer causes more deaths among women in the U.S. than lung cancer.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the American Cancer Society, breast cancer is the second leading cause of cancer death in women in the U.S., while lung cancer is the first."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the American Cancer Society, breast cancer is the second leading cause of cancer death in women in the U.S., while lung cancer is the first.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim may be based on outdated statistics or regional data where breast cancer mortality exceeds lung cancer.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The American Cancer Society regularly updates its data, making it highly reliable and current.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Breast cancer awareness campaigns might lead to the perception that it is deadlier than lung cancer, despite statistics.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public perception does not alter factual mortality rates reported by authoritative sources like the American Cancer Society.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Statistical data from the CDC shows that lung cancer has a higher mortality rate among women in the U.S. compared to breast cancer."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Statistical data from the CDC shows that lung cancer has a higher mortality rate among women in the U.S. compared to breast cancer.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer is more prevalent than lung cancer, leading to a higher absolute number of deaths despite the lower mortality rate.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The CDC data accounts for age-adjusted mortality rates, which may not reflect the total impact of breast cancer across different demographics.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Early detection and improved treatments for breast cancer have reduced its mortality rate, but it remains a leading cause of death due to high incidence.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical research indicates that lung cancer is more lethal than breast cancer due to late-stage diagnosis and limited treatment options."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical research indicates that lung cancer is more lethal than breast cancer due to late-stage diagnosis and limited treatment options.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer has a higher incidence rate than lung cancer among women, leading to more total deaths despite lower lethality per case.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lung cancer's lethality is offset by its lower incidence in women compared to breast cancer, making breast cancer the leading cause of cancer deaths in women.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Advances in breast cancer screening have improved early detection, reducing mortality rates compared to lung cancer.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lung cancer screening is less common and less effective, contributing to higher mortality rates despite lower incidence.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Epidemiological studies confirm that lung cancer accounts for more deaths annually in U.S. women than breast cancer."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Epidemiological studies confirm that lung cancer accounts for more deaths annually in U.S. women than breast cancer.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies may underreport breast cancer deaths due to misclassification or delayed diagnosis.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern cancer registries and death certificates have high accuracy, minimizing misclassification errors.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be referring to specific age groups or demographics where breast cancer mortality exceeds lung cancer.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even within specific demographics, lung cancer remains the leading cause of cancer death in women overall.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The National Cancer Institute reports higher five-year survival rates for breast cancer compared to lung cancer in women."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The National Cancer Institute reports higher five-year survival rates for breast cancer compared to lung cancer in women.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Higher survival rates do not necessarily mean fewer deaths, as breast cancer incidence is much higher than lung cancer in women.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with higher incidence, the absolute number of deaths from breast cancer is lower than from lung cancer in women, according to CDC data.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Five-year survival rates may be misleading because breast cancer is often detected earlier than lung cancer, while lung cancer progresses more rapidly.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Earlier detection of breast cancer leads to more effective treatment, which still supports the claim that it causes fewer deaths than lung cancer.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "claim": "Vaccines do not permanently modify your DNA.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Vaccines work by stimulating the immune system to recognize and combat pathogens without altering the genetic code of human cells."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Vaccines work by stimulating the immune system to recognize and combat pathogens without altering the genetic code of human cells.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vaccines, like mRNA vaccines, introduce genetic material into cells, which could theoretically interact with DNA under rare conditions.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "There is no evidence that mRNA vaccines integrate into human DNA, and studies confirm they remain in the cytoplasm where they degrade naturally.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Viral vector vaccines use modified viruses that could potentially integrate into host DNA, posing a risk of genetic modification.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vectors used in vaccines are engineered to be non-integrating and lack the machinery required for DNA integration.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The mRNA in vaccines degrades quickly after use and does not integrate into the host's DNA, as confirmed by molecular biology studies."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The mRNA in vaccines degrades quickly after use and does not integrate into the host's DNA, as confirmed by molecular biology studies.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that under rare conditions, mRNA fragments might integrate into DNA through reverse transcription mechanisms.",
+          "confidence": 0.45,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The reverse transcription hypothesis lacks robust experimental evidence and is not supported by mainstream molecular biology consensus.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term studies on mRNA vaccine integration into DNA are limited, leaving uncertainty about permanent effects.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current molecular biology models and empirical data strongly indicate rapid mRNA degradation, making long-term DNA integration highly improbable.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "DNA modification requires specific enzymes like reverse transcriptase and integrase, which are not present in vaccine mechanisms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "DNA modification requires specific enzymes like reverse transcriptase and integrase, which are not present in vaccine mechanisms.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vaccines, like viral vector vaccines, use adenoviruses that can integrate into host DNA in rare cases.",
+          "confidence": 0.45,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The adenoviruses used in viral vector vaccines are modified to be replication-deficient, making DNA integration extremely unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "RNA vaccines could theoretically alter DNA through endogenous reverse transcriptase activity in human cells.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No credible evidence exists of mRNA vaccines causing DNA modification in vivo, and endogenous reverse transcriptase activity is negligible in somatic cells.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Scientific consensus, including from the CDC and WHO, states that vaccines do not interact with or change human DNA."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Scientific consensus, including from the CDC and WHO, states that vaccines do not interact with or change human DNA.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some experimental gene-based vaccines, such as mRNA vaccines, introduce genetic material that could theoretically interact with cellular processes.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The mRNA in vaccines is transient and does not integrate into the genome, as confirmed by multiple peer-reviewed studies.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are rare cases of viral vector vaccines potentially causing insertional mutagenesis, though extremely unlikely.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vector vaccines undergo rigorous safety testing to minimize any risk of DNA integration, making such events negligible.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Vaccines introduce antigens or genetic instructions for antigens, but these do not enter the cell nucleus where DNA is stored."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Vaccines introduce antigens or genetic instructions for antigens, but these do not enter the cell nucleus where DNA is stored.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some viral vector vaccines (e.g., certain adenovirus-based COVID-19 vaccines) can enter the nucleus, though integration with DNA is extremely rare.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when viral vector vaccines enter the nucleus, they lack the molecular machinery required for genomic integration in human cells.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Reverse transcriptase enzymes from endogenous retroviruses could theoretically integrate vaccine mRNA into DNA, though no evidence exists for this occurring.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Endogenous reverse transcriptase activity in human cells is tightly regulated and shows no affinity for vaccine mRNA sequences.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "No credible peer-reviewed study has demonstrated permanent DNA modification as a result of vaccination."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "No credible peer-reviewed study has demonstrated permanent DNA modification as a result of vaccination.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that mRNA vaccines may temporarily interact with cellular machinery, raising theoretical concerns about DNA integration.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Theoretical concerns about DNA integration from mRNA vaccines have been debunked by extensive research showing no evidence of permanent genomic alteration.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain viral vector vaccines (e.g., adenovirus-based) can deliver genetic material into the nucleus, though without permanent integration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even viral vector vaccines lack the enzymatic machinery required for stable genomic integration, as confirmed by molecular biology studies.",
+          "confidence": 0.94,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

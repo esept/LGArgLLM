@@ -1,0 +1,331 @@
+{
+  "claim": "Skin cancer kills the most women in the U.S..",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Skin cancer is the most common cancer in the U.S., and melanoma, a deadly form, has high mortality rates if not detected early.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Skin cancer is the most common cancer in the U.S., and melanoma, a deadly form, has high mortality rates if not detected early.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer actually has a higher mortality rate among women in the U.S. compared to skin cancer.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Early detection methods for melanoma have significantly improved, reducing mortality rates in recent years.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While lung cancer is deadly, skin cancer's prevalence means it affects more women overall, leading to higher total deaths.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite improved detection, late-stage melanoma still has a very high fatality rate, especially in underserved populations.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Lung cancer's higher mortality rate per case means it still results in more deaths annually than skin cancer, even with fewer cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Women are more likely to engage in behaviors like tanning, which increases their risk of developing skin cancer.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Women are more likely to engage in behaviors like tanning, which increases their risk of developing skin cancer.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Tanning behaviors are declining due to increased awareness of skin cancer risks.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Men are actually more likely to develop skin cancer due to lower rates of sunscreen use.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that despite awareness campaigns, tanning remains popular among certain demographics of women.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Men are less likely to seek medical attention for skin lesions, leading to higher mortality rates despite lower incidence.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "According to the American Cancer Society, skin cancer accounts for a significant portion of cancer-related deaths among women.",
+        "confidence": 0.68,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "According to the American Cancer Society, skin cancer accounts for a significant portion of cancer-related deaths among women.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Other types of cancer, such as breast and lung cancer, have higher mortality rates among women in the U.S. than skin cancer.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The American Cancer Society's data may not account for recent advancements in skin cancer treatment, which have reduced mortality rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Breast cancer mortality rates have been declining due to early detection and improved treatments, making skin cancer a more significant threat in recent years.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lung cancer mortality rates are declining among women due to reduced smoking rates, which may shift the focus to skin cancer as a leading cause of death.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The American Cancer Society's data is comprehensive and regularly updated, reflecting the most current mortality statistics.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Even with advancements in treatment, skin cancer remains deadly due to late-stage diagnoses in many cases.",
+          "confidence": 0.67,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Heart disease is the leading cause of death for women in the U.S., not skin cancer.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Heart disease is the leading cause of death for women in the U.S., not skin cancer.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer mortality rates have been rising steadily among women, making it a significant threat.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Recent studies show that skin cancer fatalities in women surpass those of heart disease in certain age groups.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Heart disease remains the overall leading cause of death for women across all age groups, according to CDC data.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The studies cited are limited to specific regions and do not represent national trends.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even within specific age groups, heart disease still accounts for more deaths when considering all demographics.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Lung cancer has a higher mortality rate than skin cancer among women, especially due to smoking-related cases.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Lung cancer has a higher mortality rate than skin cancer among women, especially due to smoking-related cases.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer incidence is rising rapidly due to increased UV exposure and inadequate sunscreen use, leading to higher mortality.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Early detection of lung cancer is often delayed, while skin cancer is more visible and diagnosed earlier, reducing its mortality impact.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Smoking rates have declined significantly in recent years, reducing lung cancer mortality among women.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Advances in lung cancer treatments, such as targeted therapies, have improved survival rates compared to skin cancer.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "While skin cancer is prevalent, its mortality rate is lower compared to other cancers like breast cancer in women.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "While skin cancer is prevalent, its mortality rate is lower compared to other cancers like breast cancer in women.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer mortality rates are increasing, especially in younger women, making it a significant threat.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Late-stage diagnosis of skin cancer contributes to higher mortality rates than early-detected cases of other cancers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Breast cancer has higher survival rates due to widespread screening and advanced treatments, skewing mortality comparisons.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Early detection programs for skin cancer are less common, leading to higher mortality despite lower incidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

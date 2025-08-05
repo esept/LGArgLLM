@@ -1,0 +1,475 @@
+{
+  "claim": "Cats should only drink water.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Water is the most natural and essential hydration source for cats, as it aligns with their biological needs.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Water is the most natural and essential hydration source for cats, as it aligns with their biological needs.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Cats in the wild often obtain hydration from prey, which contains fluids other than water, suggesting their biological needs are not exclusively met by water.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cats may require electrolyte solutions or specialized fluids due to health conditions, making water alone insufficient for their hydration needs.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While wild cats obtain fluids from prey, domesticated cats often lack access to such prey, making water the most practical and essential hydration source.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Electrolyte solutions or specialized fluids are exceptions for medical conditions and do not negate the general rule that healthy cats should primarily drink water.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even domesticated cats can be fed wet food, which provides additional hydration, reducing their reliance on water alone.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The existence of medical exceptions highlights that water alone is not universally sufficient, undermining the claim that cats should only drink water.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Other beverages like milk can cause digestive issues in cats, such as lactose intolerance, making water the safest option.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Other beverages like milk can cause digestive issues in cats, such as lactose intolerance, making water the safest option.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cats are lactose-tolerant and can safely consume milk without digestive issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are specially formulated cat milks available that are lactose-free and safe for cats to drink.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Water alone may not provide all the hydration and nutrients that some cats need, especially in certain health conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lactose tolerance in cats is rare, and most cats will still experience digestive issues from milk.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Specially formulated cat milks are not as readily available as regular milk and can be more expensive.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Cats can get all necessary hydration and nutrients from water and a balanced diet, without needing other beverages.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even lactose-tolerant cats can develop other health issues from milk, such as obesity, due to high calorie content.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The cost and availability of special cat milk are minor concerns compared to the health risks of regular milk.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Cats have evolved to obtain most of their hydration from prey, which is primarily water-based, so water alone suffices.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Cats have evolved to obtain most of their hydration from prey, which is primarily water-based, so water alone suffices.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Modern domestic cats often consume dry kibble, which lacks sufficient moisture, making water alone insufficient for hydration.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cats may have health conditions that require additional hydration sources beyond plain water.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Wild prey contains not just water but also electrolytes and nutrients that plain water does not provide.",
+          "confidence": 0.77,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Wet cat food can supplement hydration needs, making water alone unnecessary in some cases.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Veterinary recommendations often include water as the primary hydration source unless specific conditions are present.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Electrolyte supplements can be added to water to mimic the benefits of prey-based hydration.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Wet food may not be practical for all owners due to cost or storage constraints, reinforcing the need for water.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Electrolyte supplements are not a natural solution and may have unintended side effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Specialized cat milk substitutes exist that are lactose-free and formulated for feline digestion, providing an alternative to water.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Specialized cat milk substitutes exist that are lactose-free and formulated for feline digestion, providing an alternative to water.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even lactose-free milk substitutes can still contain unnecessary calories and sugars, leading to obesity in cats.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Water is essential for kidney function in cats, and substituting it with milk alternatives may reduce their water intake.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Specialized cat milk substitutes are often expensive and not necessary for a cat's diet, making water the more practical choice.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Obesity can be managed with portion control and exercise, not necessarily by eliminating milk substitutes entirely.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cats can be encouraged to drink more water alongside milk substitutes to ensure proper hydration and kidney function.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The cost of milk substitutes is justified by the nutritional benefits they provide, especially for cats with specific dietary needs.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Portion control and exercise are not always feasible for indoor cats, making calorie reduction through diet more reliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cats may still prefer milk substitutes over water, leading to reduced water intake despite efforts to encourage hydration.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In certain medical conditions, veterinarians may recommend electrolyte solutions or broth to ensure hydration, not just water.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In certain medical conditions, veterinarians may recommend electrolyte solutions or broth to ensure hydration, not just water.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Electrolyte solutions and broth are not necessary for healthy cats, as water alone suffices for their hydration needs.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Veterinary recommendations for electrolyte solutions or broth are rare and only apply to extreme cases, not the general population of cats.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Introducing non-water liquids like broth may lead to picky eating habits or nutritional imbalances in cats.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even healthy cats can benefit from occasional electrolyte solutions during hot weather or after physical exertion to prevent dehydration.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The rarity of veterinary recommendations does not negate their validity for specific cases where water alone is insufficient.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Properly formulated broths designed for cats can avoid nutritional imbalances and are safe for occasional use.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Healthy cats regulate their hydration effectively through water intake, making electrolyte solutions unnecessary even in hot weather.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Special cases requiring non-water hydration should not be generalized to justify alternatives for all cats.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Some cats enjoy and benefit from small amounts of bone broth, which provides nutrients without harmful additives.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some cats enjoy and benefit from small amounts of bone broth, which provides nutrients without harmful additives.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Bone broth can contain high levels of sodium, which is harmful to cats if consumed regularly.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Commercial bone broth may contain additives or preservatives that are toxic to cats, even in small amounts.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cats have no nutritional requirement for bone broth, as their dietary needs are fully met by water and balanced cat food.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Homemade bone broth with controlled sodium levels can be safely given to cats in moderation.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many commercial bone broths are specifically formulated for pets and avoid harmful additives.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Bone broth can aid hydration and provide palatability for cats with reduced water intake, offering benefits beyond basic nutrition.",
+          "confidence": 0.55,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even homemade bone broth requires careful preparation to avoid ingredients like onions or garlic, which are toxic to cats.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Pet-specific bone broths are not universally available and may still contain ingredients unsuitable for all cats.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

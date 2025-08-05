@@ -1,0 +1,184 @@
+{
+  "claim": "Moscovium's atomic symbol contains a G and at least two E's.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The official atomic symbol for Moscovium is 'Mc', which contains neither a 'G' nor any 'E's.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The official atomic symbol for Moscovium is 'Mc', which contains neither a 'G' nor any 'E's.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The atomic symbol for Moscovium was incorrectly stated; it should be 'Mg' instead of 'Mc', which contains a 'G' but no 'E's.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The symbol 'Mc' contains an implicit 'E' due to its historical naming derivation from Moscow, which includes an 'E' in its transliteration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim that Moscovium's symbol is 'Mg' conflates it with Magnesium, whose symbol is indeed 'Mg', but Moscovium remains distinct as 'Mc'.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The name 'Moscovium' derives from Moscow, but its official symbol 'Mc' does not include an 'E' in its standard notation.",
+          "confidence": 0.91,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The name 'Moscovium' derives from Moscow and lacks both 'G' and 'E' letters in its spelling.",
+        "confidence": 0.92,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The name 'Moscovium' derives from Moscow and lacks both 'G' and 'E' letters in its spelling.",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The supporting argument conflates element names with atomic symbols; Moscovium's atomic symbol 'Mc' contains neither 'G' nor 'E', but this does not validate or invalidate claims about its spelling.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Atomic symbols often derive from Latinized names or historical roots rather than direct transliteration of modern names; 'Mc' reflects Moscow\u2019s abbreviation rather than its letter composition.",
+          "confidence": 0.83,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The argument assumes atomic symbols must mirror their names\u2019 spelling; however, many elements use abbreviations unrelated to their original names (e.g., Sodium = Na).",
+          "confidence": 0.79,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim about 'Mc' containing 'G' or 'E' relies on incorrect assumptions; no such letters exist in its composition.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The distinction between element names and symbols is well-established in chemistry; conflating them undermines logical consistency.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The assertion that 'Mc' contains 'G' or 'E' lacks empirical basis; chemical notation systems prioritize brevity over linguistic fidelity.",
+          "confidence": 0.86,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Element symbols are typically one or two letters; 'Mc' adheres to this standard without extraneous characters.",
+        "confidence": 0.89,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Element symbols are typically one or two letters; 'Mc' adheres to this standard without extraneous characters.",
+          "confidence": 0.89,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Moscovium's atomic symbol is 'Mc', which does not contain a G or any E's.",
+          "confidence": 0.95,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim incorrectly assumes element symbols must include specific letters like G and E; 'Mc' is valid without them.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The requirement for G and E in atomic symbols lacks official basis; claims about letter composition are subjective.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Element symbols prioritize clarity over arbitrary letter inclusion; 'Mc' meets all formal criteria.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The assertion about letter composition misrepresents IUPAC conventions; no such rule mandates G or E in symbols.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Historical precedents show element symbols often omit non-essential letters; 'Mc' aligns with this pattern.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

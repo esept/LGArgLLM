@@ -1,0 +1,145 @@
+{
+  "claim": "Amtrak operates four wheel vehicles.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Amtrak is a passenger railroad service and does not operate any four-wheel vehicles as part of its core transportation services."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Amtrak is a passenger railroad service and does not operate any four-wheel vehicles as part of its core transportation services.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Amtrak operates some road vehicles, such as maintenance trucks, which are four-wheeled.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Maintenance vehicles are not part of Amtrak's core transportation services, which are exclusively rail-based.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Amtrak's fleet consists exclusively of trains, including locomotives and passenger cars, which operate on rails, not roads."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Amtrak's fleet consists exclusively of trains, including locomotives and passenger cars, which operate on rails, not roads.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Amtrak may operate maintenance or service vehicles with wheels for rail yard operations.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Maintenance vehicles are not part of Amtrak's primary fleet and do not serve passenger operations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "There is no evidence or documentation from Amtrak indicating ownership or operation of four-wheel vehicles for passenger or freight transport."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "There is no evidence or documentation from Amtrak indicating ownership or operation of four-wheel vehicles for passenger or freight transport.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Amtrak operates road vehicles like buses and vans for station shuttles and crew transport, which are four-wheel vehicles.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Amtrak's primary operations are rail-based, and any road vehicles are managed by contractors or local transit agencies, not directly by Amtrak.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Amtrak's official vehicle fleet documentation includes maintenance records for owned road vehicles, contradicting the claim of no evidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Four-wheel vehicles are typically associated with road transport, while Amtrak's operations are strictly rail-based."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Four-wheel vehicles are typically associated with road transport, while Amtrak's operations are strictly rail-based.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Amtrak operates road vehicles like buses for connecting services, which are four-wheeled.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Amtrak's primary operations are rail-based, and its road vehicles are auxiliary, not core to its identity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even auxiliary services contribute to Amtrak's overall operations, making them part of its vehicle fleet.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

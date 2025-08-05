@@ -1,0 +1,338 @@
+{
+  "claim": "A 4-year-old boy is brought to the emergency department for evaluation after falling. He has fallen multiple times in the last year. His parents report that he did not walk until he was 18 months old. Examination shows a mildly swollen right ankle with no tenderness over the medial or lateral malleolus; range of motion is full with mild pain. He has marked enlargement of both calves. When standing up, the patient uses his hands against his knees and thighs to slowly push himself up into a standing position. Which of the following is the most likely underlying mechanism of this patient's fall? : Myotonin protein kinase defect",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's delayed walking onset (18 months) and marked calf enlargement are classic signs of Duchenne muscular dystrophy (DMD), which is caused by a defect in the dystrophin gene, not myotonin protein kinase.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's delayed walking onset (18 months) and marked calf enlargement are classic signs of Duchenne muscular dystrophy (DMD), which is caused by a defect in the dystrophin gene, not myotonin protein kinase.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While DMD is a plausible diagnosis, the patient's ability to stand up using his hands (Gowers' sign) is also seen in other neuromuscular disorders, including those involving myotonin protein kinase defects.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of tenderness over the malleoli and full range of motion with only mild pain suggests a non-traumatic etiology, which could align with a myotonic disorder rather than DMD.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gowers' sign is highly specific for proximal muscle weakness, which is more characteristic of DMD than myotonic disorders, making DMD the more likely diagnosis.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Myotonic disorders typically present with myotonia (delayed muscle relaxation), which is not described in this patient, further supporting DMD as the diagnosis.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Non-traumatic etiologies are broad and include metabolic myopathies, which can also present with calf hypertrophy and delayed motor milestones, not just myotonic disorders.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While Gowers' sign is common in DMD, it is not pathognomonic and can occur in other conditions like spinal muscular atrophy, which should also be considered.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The absence of myotonia does not rule out all myotonin protein kinase-related disorders, as some variants may present atypically without this feature.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Gower sign (using hands to push up to stand) is highly specific for proximal muscle weakness, typically seen in Duchenne or Becker muscular dystrophy, not myotonic dystrophy.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Gower sign (using hands to push up to stand) is highly specific for proximal muscle weakness, typically seen in Duchenne or Becker muscular dystrophy, not myotonic dystrophy.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Myotonic dystrophy can also present with proximal muscle weakness in some cases, which may mimic the Gower sign.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of myotonia (delayed muscle relaxation) in this case makes myotonic dystrophy less likely, supporting A2's argument.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Early-onset myotonic dystrophy (congenital form) often presents with hypotonia and developmental delay, not the Gower sign, further supporting A2.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The calf hypertrophy observed is more characteristic of Duchenne/Becker muscular dystrophy than myotonic dystrophy, reinforcing A2's specificity claim.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While rare, some atypical myotonic dystrophy cases may show calf hypertrophy, but this does not outweigh the stronger association with Duchenne/Becker.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Myotonic dystrophy typically presents with myotonia (delayed muscle relaxation) and distal muscle weakness, not the proximal weakness and calf hypertrophy seen in this case.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Myotonic dystrophy typically presents with myotonia (delayed muscle relaxation) and distal muscle weakness, not the proximal weakness and calf hypertrophy seen in this case.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Proximal weakness and calf hypertrophy are classic features of Duchenne muscular dystrophy, not myotonic dystrophy, making the latter unlikely.",
+          "confidence": 0.88,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gower maneuver (using hands to push up from the floor) is pathognomonic for Duchenne muscular dystrophy, further supporting this diagnosis over myotonic dystrophy.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Duchenne muscular dystrophy is more likely, some rare forms of myotonic dystrophy can present with proximal weakness, though calf hypertrophy is uncommon.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Early-onset myotonic dystrophy (congenital form) can present with hypotonia and delayed motor milestones, which could mimic some features of this case.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Congenital myotonic dystrophy typically presents at birth with severe hypotonia and respiratory distress, not with delayed walking at 18 months.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Calf pseudohypertrophy is virtually pathognomonic for Duchenne muscular dystrophy and is not a recognized feature of any form of myotonic dystrophy.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of myotonia (e.g., inability to quickly release a handgrip) makes myotonin protein kinase defect (myotonic dystrophy) unlikely in this patient.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of myotonia (e.g., inability to quickly release a handgrip) makes myotonin protein kinase defect (myotonic dystrophy) unlikely in this patient.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's Gowers' sign (using hands to push up from thighs) and calf hypertrophy are classic signs of Duchenne muscular dystrophy, not myotonic dystrophy.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Delayed motor milestones (walking at 18 months) is more consistent with a congenital myopathy or muscular dystrophy rather than myotonic dystrophy.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Gowers' sign is seen in Duchenne, it can also occur in other neuromuscular disorders including some forms of myotonic dystrophy with proximal weakness.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Some variants of myotonic dystrophy (congenital or childhood-onset) can present with delayed motor development before myotonia becomes apparent.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The marked calf hypertrophy is pathognomonic for Duchenne/Becker muscular dystrophy and is not a feature of myotonic dystrophy variants.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "In congenital myotonic dystrophy, hypotonia and respiratory distress are predominant features at presentation, not delayed walking alone.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The clinical presentation is more consistent with a dystrophinopathy (e.g., Duchenne muscular dystrophy) given the calf pseudohypertrophy, Gower maneuver, and delayed motor milestones.",
+        "confidence": 0.93,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The clinical presentation is more consistent with a dystrophinopathy (e.g., Duchenne muscular dystrophy) given the calf pseudohypertrophy, Gower maneuver, and delayed motor milestones.",
+          "confidence": 0.93,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be explained by spinal muscular atrophy (SMA), which presents with proximal muscle weakness and delayed motor development.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Becker muscular dystrophy is another dystrophinopathy that can present similarly but typically has a later onset and milder course than Duchenne muscular dystrophy.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The Gower maneuver and calf pseudohypertrophy are not pathognomonic for dystrophinopathy and can be seen in other neuromuscular disorders.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spinal muscular atrophy typically lacks calf pseudohypertrophy, which is a hallmark feature of dystrophinopathies.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Becker muscular dystrophy usually presents after age 7, making it less likely in this 4-year-old patient.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While not pathognomonic, the combination of Gower maneuver and calf pseudohypertrophy is highly suggestive of dystrophinopathy in this age group.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Genetic testing for dystrophin mutations would be necessary to confirm the diagnosis of Duchenne muscular dystrophy.",
+          "confidence": 0.95,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

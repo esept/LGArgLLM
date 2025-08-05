@@ -1,0 +1,193 @@
+{
+  "claim": "If it rains, the ground gets wet. It rained. So the ground is dry",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Rain consists of water droplets that fall to the ground, which inherently causes the ground to become wet upon contact."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Rain consists of water droplets that fall to the ground, which inherently causes the ground to become wet upon contact.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ground may have been covered by a waterproof material, preventing it from getting wet despite the rain.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Waterproof coverings are not common in most natural or urban settings, making this scenario unlikely in typical cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rain might have been extremely light or brief, insufficient to visibly wet the ground.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even light rain typically leaves some moisture on surfaces unless evaporation is extremely rapid.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The claim contradicts the basic physical principle that water increases the moisture content of surfaces it touches."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The claim contradicts the basic physical principle that water increases the moisture content of surfaces it touches.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ground could have been covered by a waterproof material, preventing moisture absorption.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Waterproof materials are rare in natural environments, making this scenario unlikely in most cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rain might have evaporated quickly due to high temperatures, leaving the ground dry.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Rapid evaporation typically requires extreme heat, which is not common in most rainy conditions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Empirical observation consistently shows that rain leads to wet ground, making the conclusion illogical."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Empirical observation consistently shows that rain leads to wet ground, making the conclusion illogical.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some cases, rain evaporates quickly due to high temperatures or wind, leaving the ground dry.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Rapid evaporation is rare and typically occurs in extreme conditions, not under normal circumstances.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The ground may have been covered by a waterproof material, preventing it from getting wet despite rain.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Waterproof coverings are not typical in most environments where rain occurs, making this scenario uncommon.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The premise 'it rained' directly implies the presence of water, which cannot result in a dry ground under normal conditions."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The premise 'it rained' directly implies the presence of water, which cannot result in a dry ground under normal conditions.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ground could have been covered by a waterproof tarp, preventing water from reaching it despite rain.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Waterproof tarps are not commonly used in most scenarios, making this an exceptional case.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "High temperatures or wind could have evaporated the water quickly, leaving the ground dry shortly after rain.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Rapid evaporation typically requires extreme conditions, which are not the norm in most rainy situations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

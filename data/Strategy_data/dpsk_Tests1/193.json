@@ -1,0 +1,264 @@
+{
+  "claim": "Pancreas removal can cause bankruptcy.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Pancreas removal surgery and subsequent lifelong insulin dependency can lead to high medical costs, potentially exceeding insurance coverage limits."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Pancreas removal surgery and subsequent lifelong insulin dependency can lead to high medical costs, potentially exceeding insurance coverage limits.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many health insurance plans have out-of-pocket maximums that cap annual expenses, preventing financial ruin from high medical costs.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Out-of-pocket maximums may still be prohibitively high for low-income individuals, and some plans exclude certain treatments.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Government assistance programs and patient assistance programs from pharmaceutical companies can help cover insulin costs.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Eligibility for assistance programs is often restrictive, and application processes can be complex and time-consuming.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Bankruptcy is an extreme outcome that requires complete financial mismanagement, not just high medical bills.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Chronic conditions like diabetes mellitus, resulting from pancreas removal, require ongoing expenses for medications, glucose monitoring, and specialist visits."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Chronic conditions like diabetes mellitus, resulting from pancreas removal, require ongoing expenses for medications, glucose monitoring, and specialist visits.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many health insurance plans cover chronic conditions like diabetes, significantly reducing out-of-pocket expenses for patients.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Insurance coverage may still leave patients with high deductibles, copays, and uncovered treatments, leading to financial strain.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Not all pancreas removals result in diabetes; some patients may retain sufficient pancreatic function or receive islet cell transplants.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Islet cell transplants are expensive and not universally available, and residual pancreatic function is rare post-removal.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Loss of work productivity due to complications from pancreas removal (e.g., frequent hospitalizations) may reduce income and increase financial strain."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Loss of work productivity due to complications from pancreas removal (e.g., frequent hospitalizations) may reduce income and increase financial strain.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many patients receive disability benefits or insurance coverage that mitigates income loss from medical complications.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Disability benefits often have long approval times and may not cover full lost income, leaving patients financially vulnerable.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Not all pancreas removals lead to severe complications; many patients recover and return to work without long-term financial impact.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with recovery, the initial period of lost productivity and medical expenses can create lasting financial strain.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In countries without universal healthcare, out-of-pocket expenses for pancreas-related treatments can deplete savings and lead to debt accumulation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In countries without universal healthcare, out-of-pocket expenses for pancreas-related treatments can deplete savings and lead to debt accumulation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many countries without universal healthcare still have insurance systems that cover major surgeries like pancreas removal, reducing out-of-pocket costs.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with insurance, high deductibles and co-pays for pancreas-related treatments can still lead to significant financial strain.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pancreas removal is a rare procedure, so its financial impact is not representative of broader healthcare costs.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While rare, the high cost of pancreas removal can still be catastrophic for individuals who require it, making the argument relevant.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Financial assistance programs and charity care often exist to help cover the costs of major medical procedures like pancreas removal.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Financial assistance programs are often limited, difficult to qualify for, or insufficient to cover the full cost of treatment.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Insurance denials or high premiums for pre-existing conditions post-pancreas removal can exacerbate financial hardship."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Insurance denials or high premiums for pre-existing conditions post-pancreas removal can exacerbate financial hardship.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many countries have universal healthcare systems that cover major surgeries like pancreas removal, preventing financial hardship.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in countries with universal healthcare, long-term complications or required medications post-surgery may still impose significant out-of-pocket costs.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Employer-sponsored or private insurance plans often cover pre-existing conditions under current regulations, reducing the risk of financial hardship.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Insurance plans may still impose high deductibles, copays, or coverage gaps for specialized post-surgical care, leaving patients vulnerable to financial strain.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "claim": "A number greater than 100 is always a three-digit number",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The number 1000 is greater than 100 and has four digits, not three."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The number 1000 is greater than 100 and has four digits, not three.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'greater than 100' but does not exclude numbers like 101-999, which are three-digit.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim uses 'always', which is absolute and invalidated by any counterexample like 1000.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In mathematical definitions, 'greater than 100' includes all numbers above 100, regardless of digit count.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Any number in the range 1000 to 9999 is greater than 100 and has four digits."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Any number in the range 1000 to 9999 is greater than 100 and has four digits.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'a number greater than 100' without an upper bound, so numbers like 101-999 are three-digit and support the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim uses 'always,' which is absolute and disproven by the existence of four-digit numbers greater than 100.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In common usage, 'a number greater than 100' might implicitly refer to numbers just above 100 unless context suggests otherwise.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Numbers like 10000 or higher are greater than 100 and have five or more digits."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Numbers like 10000 or higher are greater than 100 and have five or more digits.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'three-digit number', which excludes numbers with more digits, so A3 is misinterpreting the scope.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim is ambiguous\u2014it could mean 'at least three digits' rather than 'exactly three digits', making A3's interpretation plausible.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Mathematical conventions clearly define 'three-digit number' as 100-999, so the claim is false if interpreted literally.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The smallest four-digit number, 1000, is greater than 100 and disproves the claim."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The smallest four-digit number, 1000, is greater than 100 and disproves the claim.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'a number greater than 100', but 100 itself is not greater than 100, so the claim is about numbers strictly greater than 100.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if we consider numbers strictly greater than 100, 101 to 999 are three-digit numbers, but 1000 and above are not.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim uses the word 'always', which is absolute and incorrect since numbers like 1000 exist.",
+          "confidence": 0.99,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Numbers such as 1001, 2000, or 50000 are all greater than 100 but exceed three digits."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Numbers such as 1001, 2000, or 50000 are all greater than 100 but exceed three digits.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'a number greater than 100' without any upper limit, so numbers like 1001 are valid counterexamples.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim may have intended to refer to numbers between 100 and 999, which are indeed three-digit numbers.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if the claim was intended to refer to numbers between 100 and 999, it is still incorrect as stated because it lacks specificity.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

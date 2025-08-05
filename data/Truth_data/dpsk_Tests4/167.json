@@ -1,0 +1,240 @@
+{
+  "claim": "If you type your PIN number backwards at an ATM, a notification will be sent to the police.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "ATM systems are designed to detect suspicious activity, including repeated incorrect PIN attempts, but there is no widely known functionality to detect or act upon reversed PIN entries."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "ATM systems are designed to detect suspicious activity, including repeated incorrect PIN attempts, but there is no widely known functionality to detect or act upon reversed PIN entries.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented experimental features that detect patterns like reversed PIN entries as potential fraud indicators.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if such features exist, they are not standardized across ATM networks and would not universally trigger police notifications.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Law enforcement agencies have occasionally partnered with banks to test emergency alert systems tied to ATM usage.",
+          "confidence": 0.35,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These partnerships are rare, temporary pilot programs not representative of standard ATM functionality.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Bank security protocols focus on fraud detection and transaction anomalies, not specific patterns like reversed PIN numbers, as these are not reliable indicators of criminal activity."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Bank security protocols focus on fraud detection and transaction anomalies, not specific patterns like reversed PIN numbers, as these are not reliable indicators of criminal activity.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented emergency PIN reversal features as a silent alarm to alert authorities in distress situations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Emergency PIN reversal features are rare and not standardized across banks, making them unreliable as a general security measure.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Fraud detection systems may flag repeated incorrect PIN attempts, which could include reversed PINs, triggering security protocols.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Flagging reversed PINs specifically would require additional programming and monitoring, which most banks do not prioritize.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Law enforcement agencies do not have systems in place to receive automatic notifications from ATMs based on PIN entry patterns, as this would generate excessive false alarms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Law enforcement agencies do not have systems in place to receive automatic notifications from ATMs based on PIN entry patterns, as this would generate excessive false alarms.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented emergency PIN reversal systems that alert authorities in specific high-risk scenarios.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if such systems exist, they are extremely rare and not standardized across ATM networks.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "ATM fraud detection systems may flag unusual PIN entry patterns for further investigation without direct police notification.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such flagging systems are primarily for bank security teams, not law enforcement agencies.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Publicly available banking and ATM security documentation does not mention any feature that triggers police notifications for reversed PIN entries."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Publicly available banking and ATM security documentation does not mention any feature that triggers police notifications for reversed PIN entries.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some banks implement undocumented security features, including reverse PIN alerts, to combat fraud without public disclosure.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Undocumented security measures would violate banking transparency regulations and consumer protection laws in most jurisdictions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "ATM manufacturers have patented reverse-PIN alert systems, proving the functionality exists in some implementations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Patent filings don't necessarily reflect deployed systems, and no major ATM operators have confirmed using this feature.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "ATM software is primarily designed to verify PIN correctness and manage transactions, not to analyze the sequence of digits entered for non-standard patterns."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "ATM software is primarily designed to verify PIN correctness and manage transactions, not to analyze the sequence of digits entered for non-standard patterns.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some ATMs have security features that detect unusual behavior, such as repeated failed attempts or reversed PIN entries, which could trigger an alert.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some ATMs detect unusual behavior, there is no standardized protocol for notifying the police specifically for reversed PIN entries.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Banks may implement custom security measures, including analyzing PIN entry patterns, to prevent fraud, which could include notifying authorities.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such custom measures are rare and not publicly documented, making the claim about police notification unverifiable and unlikely to be widespread.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

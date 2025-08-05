@@ -1,0 +1,193 @@
+{
+  "claim": "All X are Y. No Z is Y. So no X is Z",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The premises establish that X is a subset of Y, and Z is entirely outside Y, so X and Z cannot overlap."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The premises establish that X is a subset of Y, and Z is entirely outside Y, so X and Z cannot overlap.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes X and Z are defined in a way that excludes any shared properties or exceptions, which may not hold in all contexts.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In formal logic and set theory, the argument holds universally if the premises are strictly true, leaving no room for exceptions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If Y is a broad category, there might be edge cases where X and Z share indirect relationships not captured by the premises.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The premises explicitly state mutual exclusivity between Z and Y, making such edge cases logically impossible under the given conditions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If all X are Y and no Z is Y, then X and Z share no common elements, making the conclusion valid."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If all X are Y and no Z is Y, then X and Z share no common elements, making the conclusion valid.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes mutual exclusivity between X and Z based solely on their relationship to Y, but this may not hold if Y is not a comprehensive category.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In classical logic, if all X are Y and no Z is Y, then by syllogism, no X is Z. This is a fundamental deductive rule.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument fails if Y is ambiguous or context-dependent, allowing X and Z to overlap in ways not captured by the given premises.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Formal logic systems treat such syllogisms as valid unless the definitions of X, Y, or Z are explicitly contested, which they are not here.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The argument follows the logical structure of syllogism, where the conclusion necessarily follows from the premises."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The argument follows the logical structure of syllogism, where the conclusion necessarily follows from the premises.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the premises are universally true, but real-world data often contains exceptions that violate strict syllogistic reasoning.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with exceptions, syllogistic reasoning remains valid in formal logic, where premises are treated as absolute for the sake of argument.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The conclusion 'no X is Z' may not hold if 'Y' is ambiguously defined, allowing overlap between X and Z in edge cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Formal syllogisms require clear definitions, and ambiguity in 'Y' would invalidate the premises before the conclusion is drawn.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Given the categorical exclusion of Z from Y and the inclusion of X in Y, X and Z are mutually exclusive sets."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Given the categorical exclusion of Z from Y and the inclusion of X in Y, X and Z are mutually exclusive sets.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes perfect mutual exclusivity, but real-world categories often have overlapping or ambiguous cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In formal logic and mathematics, categorical exclusions are strictly defined and hold without exception.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definitions of X, Y, and Z may be context-dependent or culturally relative, undermining universal exclusion.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In symbolic logic, the syllogism holds if the premises are accepted as axiomatic, regardless of semantic interpretation.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

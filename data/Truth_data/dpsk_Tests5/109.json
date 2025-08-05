@@ -1,0 +1,216 @@
+{
+  "claim": "The majority of a set of numbers cannot be larger than the average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, the average of a set of numbers is the sum of the numbers divided by the count of numbers, so no single number can be larger than the average if it constitutes the majority."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, the average of a set of numbers is the sum of the numbers divided by the count of numbers, so no single number can be larger than the average if it constitutes the majority.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a set contains one extremely large number and many very small numbers, the large number can be larger than the average while still constituting the majority of the set's value.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original argument assumes uniform distribution, but in skewed distributions, a single outlier can dominate the average without constituting a majority by count.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The term 'majority' is ambiguous\u2014it could refer to count or value. The original argument holds if 'majority' strictly means count, not value.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If a single number were larger than the average and constituted the majority, the remaining numbers would have to be significantly smaller to balance the average, which contradicts the definition of majority."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If a single number were larger than the average and constituted the majority, the remaining numbers would have to be significantly smaller to balance the average, which contradicts the definition of majority.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A single number can be larger than the average if it is not the majority, but multiple numbers can collectively be the majority and still all be larger than the average if they are not too extreme.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'the majority of a set of numbers,' which implies more than half the numbers must individually be larger than the average, not collectively.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a set with a very large outlier, the majority of numbers could be larger than the average if the outlier is negative and large in magnitude.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Negative numbers are not typically considered 'larger' than the average in common usage, which usually refers to magnitude or positive values.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In a set where one number is larger than the average, that number cannot be the majority because the average would be pulled upward, requiring the majority to be below it."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In a set where one number is larger than the average, that number cannot be the majority because the average would be pulled upward, requiring the majority to be below it.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a set contains a single outlier significantly larger than the rest, the average can be higher than the majority of numbers, making the majority smaller than the average.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The outlier scenario is statistically rare and does not represent the general case where the majority of numbers are indeed below the average.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a bimodal distribution, two distinct groups can each form a majority, with the average lying between them, allowing one majority to be above the average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bimodal distributions are specific cases and do not invalidate the general principle that the majority of numbers in a typical unimodal distribution are below the average.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Statistical principles dictate that for a number to be the majority, it must represent more than half the instances, which would skew the average toward it, making it impossible for it to be larger than the average."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Statistical principles dictate that for a number to be the majority, it must represent more than half the instances, which would skew the average toward it, making it impossible for it to be larger than the average.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the majority of numbers are identical and larger than the remaining numbers, they could collectively pull the average below their value, making them larger than the average.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For the majority to be larger than the average, the remaining numbers must be sufficiently smaller to offset the majority's pull, which is mathematically possible but requires extreme distributions.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In real-world datasets, such extreme distributions are rare, and the majority being larger than the average is statistically improbable under normal conditions.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The average is a measure of central tendency, and if the majority of numbers were larger than it, the average itself would shift higher, creating a contradiction."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The average is a measure of central tendency, and if the majority of numbers were larger than it, the average itself would shift higher, creating a contradiction.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a skewed distribution with a long left tail, the majority of numbers can be larger than the mean because extreme low values pull the average down.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such skewed distributions are exceptions rather than the norm, and the original claim implicitly assumes a roughly symmetric or unimodal distribution.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in skewed distributions, the median (another measure of central tendency) would often be lower than the majority, reinforcing the original point about averages.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

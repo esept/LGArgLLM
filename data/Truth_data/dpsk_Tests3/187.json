@@ -1,0 +1,475 @@
+{
+  "claim": "Men can prevent premature baldness by shaving their head to avoid it.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Shaving the head removes the visible signs of hair loss, giving the appearance of preventing baldness.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Shaving the head removes the visible signs of hair loss, giving the appearance of preventing baldness.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Shaving does not address the root cause of baldness, such as genetics or hormonal factors.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Shaving may give a temporary illusion of preventing baldness, but hair loss continues underneath.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Shaving can lead to scalp irritation or infections, which may worsen hair health.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While shaving doesn't stop baldness, it can reduce stress related to visible hair loss, indirectly benefiting hair health.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regular shaving can make hair appear thicker when it regrows, masking the progression of baldness.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Proper shaving techniques and hygiene can minimize the risk of scalp irritation or infections.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Stress reduction from shaving is minimal compared to other proven methods like medication or therapy.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The illusion of thicker hair is temporary and does not address the underlying hair thinning process.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Shaving does not address the underlying causes of baldness, such as genetics or hormonal changes.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Shaving does not address the underlying causes of baldness, such as genetics or hormonal changes.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Shaving can create the illusion of control over baldness, which may improve psychological well-being despite not addressing root causes.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Shaving reduces visible signs of balding, which can mitigate social stigma associated with hair loss.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Shaving eliminates damaged or thinning hair, making the scalp appear healthier and more uniform.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Psychological benefits are temporary and do not substitute for medical treatments that target the actual causes of baldness.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Social stigma is better addressed through education and awareness rather than cosmetic adjustments like shaving.",
+          "confidence": 0.83,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "A shaved scalp does not improve hair follicle health, which is the core issue in baldness.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even temporary psychological relief can improve quality of life while individuals explore long-term solutions.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cosmetic adjustments like shaving provide immediate results, whereas education takes time to change societal perceptions.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Regular shaving can stimulate the scalp and improve blood circulation, potentially slowing hair loss.",
+        "confidence": 0.6,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Regular shaving can stimulate the scalp and improve blood circulation, potentially slowing hair loss.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "There is no scientific evidence that shaving improves blood circulation enough to affect hair loss.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Shaving does not address the root causes of baldness, such as genetics or hormonal imbalances.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Frequent shaving can cause skin irritation or folliculitis, which may worsen scalp health.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some dermatological studies suggest scalp massage (which shaving mimics) can marginally improve circulation.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While not a cure, shaving may reduce stress on weakened hair follicles by eliminating visible thinning.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Proper shaving techniques and aftercare can minimize irritation risks.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The circulatory benefits from massage require sustained pressure, which shaving does not provide.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Psychological stress from visible baldness may outweigh any minor physical benefits.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Baldness is primarily determined by genetic factors, so external actions like shaving have no real effect.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Baldness is primarily determined by genetic factors, so external actions like shaving have no real effect.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Shaving the head can create the illusion of preventing baldness by masking early signs of hair loss.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Psychological benefits of shaving (e.g., confidence boost) may indirectly affect perceived baldness prevention.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Shaving may reduce scalp irritation or follicle stress, potentially slowing hair loss progression.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Illusions don't change biological reality; genetic baldness will still progress regardless of shaving.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Psychological effects are subjective and don't alter the underlying genetic causes of baldness.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "No scientific evidence proves shaving reduces follicle stress or impacts DHT-related hair loss.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Perception matters in social contexts, making the illusion practically useful even if biologically irrelevant.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Placebo effects from shaving could still improve quality of life for those concerned about baldness.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Shaving can reduce the psychological stress associated with watching hair fall out, which may indirectly help.",
+        "confidence": 0.55,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Shaving can reduce the psychological stress associated with watching hair fall out, which may indirectly help.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Shaving does not address the root cause of hair loss, such as genetics or hormonal imbalances.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Shaving may lead to skin irritation or infections, which could increase stress rather than reduce it.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some individuals may experience increased self-consciousness or stigma after shaving, negating any psychological benefits.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if shaving doesn't address the root cause, managing psychological stress can still improve overall well-being, which is beneficial.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Proper shaving techniques and aftercare can minimize the risk of skin irritation or infections.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Many people find shaving empowering and report increased confidence, countering the idea of increased self-consciousness.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While managing stress is beneficial, it does not equate to preventing baldness, which is the original claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Not everyone has the knowledge or resources to practice proper shaving techniques, leaving them vulnerable to complications.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Shaving does not prevent the miniaturization of hair follicles, which is the main process in male pattern baldness.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Shaving does not prevent the miniaturization of hair follicles, which is the main process in male pattern baldness.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Shaving can create the illusion of thicker hair by removing thinning strands, which may psychologically alleviate concerns about baldness.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Shaving reduces hair breakage and split ends, which can make existing hair appear healthier and fuller.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The illusion of thicker hair from shaving is temporary and does not address the underlying biological process of follicle miniaturization.",
+          "confidence": 0.79,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reducing breakage and split ends does not stop the progression of male pattern baldness, as the follicles continue to miniaturize regardless.",
+          "confidence": 0.81,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even temporary psychological relief can improve quality of life for individuals concerned about baldness, making shaving a valid approach.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While shaving doesn't stop miniaturization, it simplifies hair care routines and reduces the visibility of thinning hair.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

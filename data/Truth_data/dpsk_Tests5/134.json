@@ -1,0 +1,193 @@
+{
+  "claim": "If you put on one ring, a ring will be on your finger.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Placing a ring on a finger physically positions the ring around the finger."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Placing a ring on a finger physically positions the ring around the finger.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the finger is missing or amputated, placing a ring on it does not result in a ring being on the finger.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with an amputated finger, the ring can be placed on a prosthetic or symbolic representation of the finger, maintaining the claim's validity in a broader sense.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the ring is too large, it may slip off the finger immediately, failing to stay on the finger.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Properly sized rings are designed to stay on the finger, making slippage an exception rather than the norm.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "A ring is designed to encircle a finger when worn."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "A ring is designed to encircle a finger when worn.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some rings are not designed for fingers (e.g., toe rings, nose rings).",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'one ring' and 'your finger,' implying a typical finger ring.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A ring might be too large or small to stay on the finger when worn.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard ring sizing ensures most rings fit fingers properly when worn.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The act of putting on a ring involves sliding it onto a finger."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The act of putting on a ring involves sliding it onto a finger.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some rings are designed to be worn on body parts other than fingers, such as toes or ears.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The term 'ring' commonly implies finger-worn jewelry unless specified otherwise, making non-finger usage rare and context-dependent.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If a person has no fingers, putting on a ring cannot result in a ring being on their finger.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly assumes the presence of fingers, as it is the default anatomical context for ring-wearing.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "A ring cannot be on a finger unless it is placed there."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A ring cannot be on a finger unless it is placed there.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A ring could be on a finger if it was already there before the action of putting it on.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'put on one ring,' implying the ring was not already on the finger prior to the action.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A ring could be placed on a finger by someone else, not necessarily by the person performing the action.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim does not specify agency, but the common interpretation is that the person putting on the ring is the one whose finger it ends up on.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

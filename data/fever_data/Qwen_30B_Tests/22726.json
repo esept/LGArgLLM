@@ -1,0 +1,370 @@
+{
+  "claim": "In Kentucky, the electric chair has been kept in operation except for those whose capital crimes were committed prior to March 31, 1998, and who choose electrocution.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Kentucky's statutory framework allows lethal injection as the primary method but retains electrocution as an option for inmates sentenced before March 31, 1998.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Kentucky's statutory framework allows lethal injection as the primary method but retains electrocution as an option for inmates sentenced before March 31, 1998.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Retaining electrocution violates the Eighth Amendment's prohibition on cruel and unusual punishment.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "No current Kentucky statute explicitly permits electrocution as a method of execution after March 31, 1998.",
+          "confidence": 0.79,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Eighth Amendment does not apply to state-level executions under current jurisprudence.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Kentucky's legal code implicitly allows electrocution through procedural loopholes in execution protocols.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Supreme Court has ruled that electrocution is not inherently cruel when properly administered.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Procedural loopholes cannot override explicit statutory language prohibiting post-1998 electrocutions.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Historical execution records show at least one post-1998 execution via electric chair for an inmate whose crime occurred prior to March 31, 1998.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Historical execution records show at least one post-1998 execution via electric chair for an inmate whose crime occurred prior to March 31, 1998.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The cited historical record lacks verifiable documentation or official sources confirming the post-1998 execution of a pre-1998 offender via electric chair.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument conflates 'capital crimes' with 'execution method choices,' ignoring that post-1998 laws may have restricted electric chair use regardless of crime timing.",
+          "confidence": 0.72,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Kentucky's 1998 law explicitly prohibited electric chair use for crimes committed after March 31, 1998, contradicting the claim's exception clause.",
+          "confidence": 0.85,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of documentation does not disprove the existence of such an execution; it only questions its accessibility to the public.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal restrictions on execution methods do not necessarily negate the claim's exception for pre-1998 offenders who explicitly request electrocution.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The 1998 law's wording may allow exceptions for inmates with pre-1998 crimes if they opt for electrocution, depending on judicial interpretation.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The state constitution explicitly permits capital punishment methods including electrocution unless amended by legislation or court ruling.",
+        "confidence": 0.72,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The state constitution explicitly permits capital punishment methods including electrocution unless amended by legislation or court ruling.",
+          "confidence": 0.72,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Kentucky's 1998 legislation explicitly abolished electrocution as a method of execution for all capital crimes committed after March 31, 1998.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A 2008 federal court ruling declared electrocution unconstitutional due to its potential for cruel and unusual punishment.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 1998 legislation only suspended electrocution temporarily and never formally abolished it as a legal method.",
+          "confidence": 0.74,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 2008 court ruling applied specifically to lethal injection protocols and did not invalidate electrocution as a constitutional method.",
+          "confidence": 0.69,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Kentucky's state constitution requires explicit legislative action to remove permitted execution methods, and no such action has been taken since 1998.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The federal court ruling cited procedural flaws in lethal injection rather than addressing electrocution as an unconstitutional method.",
+          "confidence": 0.76,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "No documented legal changes since March 31, 1998 indicate complete abolition of electrocution as an execution method in Kentucky.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "No documented legal changes since March 31, 1998 indicate complete abolition of electrocution as an execution method in Kentucky.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Kentucky has not executed anyone via electric chair since 1998, implying it's no longer in practical use.",
+          "confidence": 0.81,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal documents may not reflect recent policy changes or judicial interpretations that limit electrocution use.",
+          "confidence": 0.78,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The absence of documentation does not confirm continued operation; it could mean hidden or unrecorded changes.",
+          "confidence": 0.72,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The lack of executions doesn't prove non-operation; it may reflect fewer death penalty cases post-1998.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Kentucky's legal code explicitly lists electrocution as an available method in statutes updated after 1998.",
+          "confidence": 0.83,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Recent legislative records show attempts to replace electrocution with lethal injection, contradicting claims of no changes.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "State officials have acknowledged maintaining electric chair infrastructure post-1998 despite no executions.",
+          "confidence": 0.79,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The number of death row inmates is irrelevant; the method's availability depends on legal status, not usage frequency.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Statutes mentioning electrocution may include procedural limitations rather than active operational status.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Legislative attempts to replace electrocution do not equate to formal abolition or operational discontinuation.",
+          "confidence": 0.71,
+          "attacks": [
+            "C3"
+          ]
+        },
+        {
+          "id": "D4",
+          "text": "Infrastructure maintenance alone does not prove active operation; it could be symbolic or ceremonial.",
+          "confidence": 0.67,
+          "attacks": [
+            "C4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Kentucky's death penalty statutes from the late '90s explicitly mention electrocution as an available method alongside lethal injection.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Kentucky's death penalty statutes from the late '90s explicitly mention electrocution as an available method alongside lethal injection.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Kentucky's death penalty statutes from the late '90s did not mandate the use of the electric chair; they only listed it as an option without ensuring its operational readiness.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The availability of electrocution in statutes does not equate to its continued operation; Kentucky has not used it since 1999 due to technical failures.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The statutes explicitly allocated funds for maintaining the electric chair, indicating operational intent despite not mandating its use.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Kentucky's official records show that the electric chair was still functional and available until 2006, contradicting claims of technical failures.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Funding allocation does not guarantee operational status; maintenance records show neglect post-2000.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Official records may not reflect actual usage; some sources indicate continued availability beyond 2006.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

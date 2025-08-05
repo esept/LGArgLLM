@@ -1,0 +1,311 @@
+{
+  "claim": "Working hours have consistently declined over time in America.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Historical data from the U.S. Bureau of Labor Statistics shows that average weekly working hours for full-time employees have decreased from around 60 hours in the late 19th century to about 40 hours in the 21st century."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Historical data from the U.S. Bureau of Labor Statistics shows that average weekly working hours for full-time employees have decreased from around 60 hours in the late 19th century to about 40 hours in the 21st century.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data does not account for part-time workers, whose inclusion would show a less dramatic decline in working hours.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when including part-time workers, the overall trend still shows a decline in working hours, as part-time work has not offset the reduction in full-time hours.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The data does not consider unpaid overtime, which has become more common in certain industries, potentially offsetting the decline in official working hours.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that unpaid overtime, while prevalent in some sectors, is not widespread enough to significantly alter the overall trend of declining working hours.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The definition of 'full-time employment' has changed over time, making historical comparisons less reliable.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While definitions have evolved, adjustments for these changes still support the conclusion that working hours have declined.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Fair Labor Standards Act of 1938 established the 40-hour workweek and overtime pay, which contributed to a reduction in working hours compared to earlier industrial periods."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Fair Labor Standards Act of 1938 established the 40-hour workweek and overtime pay, which contributed to a reduction in working hours compared to earlier industrial periods.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Fair Labor Standards Act initially excluded many industries, such as agriculture and domestic work, where long hours persisted well after 1938.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in excluded industries, market pressures and subsequent amendments gradually extended FLSA protections, reducing working hours over time.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Post-WWII economic growth led to increased salaried overtime and unpaid work, offsetting some of the FLSA's reductions in measured working hours.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Labor productivity gains in the late 20th century allowed for higher wages without increased hours, maintaining the downward trend.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Technological advancements and productivity gains have allowed for shorter working hours while maintaining or increasing economic output, supporting the trend of declining hours."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Technological advancements and productivity gains have allowed for shorter working hours while maintaining or increasing economic output, supporting the trend of declining hours.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While productivity has increased, many industries have not reduced working hours, instead opting for higher output or profits, leading to stagnant or even increased hours in some sectors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical data shows that average working hours have indeed declined in many sectors, particularly in manufacturing and knowledge-based industries, aligning with productivity gains.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rise of gig economy and precarious work has led to longer and more irregular working hours for many workers, counteracting the overall decline.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gig economy workers represent a small fraction of the labor force, and their irregular hours do not significantly impact the broader trend of declining average working hours.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cultural and managerial expectations in many industries still prioritize long working hours as a sign of dedication, preventing widespread reduction in working hours despite technological advancements.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Flexible work arrangements and remote work options, enabled by technology, are gradually shifting cultural norms toward shorter and more efficient working hours.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Unionization and labor movements in the 20th century successfully advocated for reduced working hours, leading to legislative changes and collective bargaining agreements that lowered average workweeks."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Unionization and labor movements in the 20th century successfully advocated for reduced working hours, leading to legislative changes and collective bargaining agreements that lowered average workweeks.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While unions did advocate for shorter hours, the decline in working hours plateaued in the late 20th century, and recent decades have seen stagnation or even slight increases in some sectors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The stagnation in working hours is largely due to the decline in union membership and bargaining power, which aligns with A4's argument that unions historically drove reductions.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Global competition and the rise of gig economy jobs have eroded traditional labor protections, leading to longer hours for many workers despite past union achievements.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The gig economy represents a small fraction of total employment, and most full-time workers still benefit from the reduced hours won by earlier labor movements.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Since the late 20th century, average working hours in the U.S. have stabilized around 40 hours per week, with no significant further decline, contradicting the claim of consistent reduction."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Since the late 20th century, average working hours in the U.S. have stabilized around 40 hours per week, with no significant further decline, contradicting the claim of consistent reduction.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While recent decades show stabilization, historical data from the early 20th century to the late 20th century demonstrates a significant decline in average working hours, supporting the broader claim of long-term reduction.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The stabilization in recent decades may be due to economic and policy factors, such as the lack of further labor reforms, rather than a reversal of the historical trend.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain sectors, such as technology and finance, have seen an increase in working hours due to globalization and the rise of 'always-on' work culture, masking the overall stabilization.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increase in working hours in some sectors is offset by reductions in others, such as manufacturing, maintaining the overall average.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Part-time work has increased as a share of total employment, which may contribute to lower average working hours but does not necessarily reflect a decline in full-time hours."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Part-time work has increased as a share of total employment, which may contribute to lower average working hours but does not necessarily reflect a decline in full-time hours.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that full-time working hours have also declined in many sectors due to automation and productivity gains, even if part-time work is excluded.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The decline in full-time hours is not uniform across industries, with some sectors like tech and finance seeing stable or increased working hours.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rise of gig economy jobs blurs the line between part-time and full-time work, making it harder to measure true working hour trends.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        }
+      ]
+    }
+  }
+}

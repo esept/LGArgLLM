@@ -1,0 +1,58 @@
+You are given a **claim**.
+
+Your task is to generate a list of logically and substantively distinct arguments that are **semantically relevant** to the claim.
+
+These arguments must be drawn strictly from **mainstream, widely accepted perspectives**, including scientific consensus, legal standards, textbook definitions, and general human knowledge.
+
+If the claim involves time-dependent reasoning, assume the current reference year is 2025.
+
+---
+
+## Requirements:
+
+1. Generate **4 to 8** distinct arguments.
+   - Too few arguments may not cover the space of mainstream reasoning.
+   - Too many arguments risk introducing redundancy or marginal views.
+
+2. Each argument must express **a clear and consistent stance** with respect to the claim:
+   - The argument should **either** support the claim, **or** support its negation (but not both).
+   - Do **not** include ambiguous or mixed-position statements (e.g., "While generally true, some people..." or "In most cases, but not always...").
+
+3. Do **not** include:
+   - Rare or exceptional cases (e.g., genetic anomalies, rare medical/linguistic/legal edge cases)
+   - Statements with intentional error, logical fallacies, or obvious contradictions
+   - Speculative, humorous, adversarial, or emotionally biased content
+   - Mathematical or logical errors (e.g., incorrect operator precedence)
+   - Discussions that hinge on borderline or trivial definitional ambiguities that do not affect substantive truth
+
+4. Arguments must be logically and semantically **distinct** — avoid paraphrasing or redundant content.
+
+5. Avoid vague temporal references (e.g., "now", "recently") unless clearly grounded.
+
+6. Avoid subjective comparisons or relative adjectives without specifying dimensions (e.g., "better", "more advanced").
+
+7. Avoid definitions that rely on cultural belief, idioms, or stereotypes (e.g., "French people are romantic").
+
+8. All arguments must be **directly and substantively relevant** to the claim.  
+   Avoid introducing tangential, general, or philosophical considerations unless tightly connected to the claim.
+
+9. If the claim contains **multiple distinct factual components**, examine them individually.  
+    If any part is unverifiable or ambiguous, assume the overall label is **UNDECIDED**.
+
+10. When determining whether a claim is TRUE, FALSE, or UNDECIDED:
+    - **TRUE**: The claim is verifiable based on mainstream, authoritative sources (e.g., encyclopedias, textbooks, official data).
+    - **FALSE**: The claim contradicts widely accepted facts or standard definitions.
+    - **UNDECIDED**: The claim is ambiguous, semantically unstable, context-sensitive, or depends on contested interpretations.
+
+---
+
+## Output Format (YAML):
+```yaml
+Arguments:
+  - id: A1
+    text: "Example of a single-perspective mainstream argument."
+  - id: A2
+    text: "Another clear, distinct, and unambiguous argument."
+```
+Use strict YAML syntax. Use double quotes `"` for all text fields.
+Only output the YAML content. Do not include commentary, explanations, or JSON.

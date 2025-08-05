@@ -1,0 +1,189 @@
+{
+  "claim": "A father is 30 years older than his son. When the son is 15, the father is 45",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "If the father is 30 years older than his son, then when the son is 15, the father's age is 15 + 30 = 45."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If the father is 30 years older than his son, then when the son is 15, the father's age is 15 + 30 = 45.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the father was exactly 30 when the son was born, which may not account for birthdays occurring at different times of the year.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The argument holds if we consider ages in whole years, which is the standard convention for such problems unless specified otherwise.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not account for potential errors in recording ages or rounding in real-world scenarios.",
+          "confidence": 0.4,
+          "attacks": {
+            "A1": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical problems typically assume precise values unless stated otherwise, making such errors irrelevant to the logical validity of the argument.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The age difference between the father and son remains constant over time, so the father will always be 30 years older than the son."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The age difference between the father and son remains constant over time, so the father will always be 30 years older than the son.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The age difference may not remain constant if the father or son experiences time dilation due to relativistic speeds.",
+          "confidence": 0.2,
+          "attacks": {
+            "A2": 0.15
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The father could die before the son reaches 15, making the age difference irrelevant.",
+          "confidence": 0.3,
+          "attacks": {
+            "A2": 0.25
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Time dilation effects are negligible at human-scale speeds and timeframes.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The claim assumes both father and son are alive at the given time, making mortality irrelevant to the logical relationship.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Basic arithmetic confirms that adding 30 years to the son's age of 15 results in the father being 45 years old."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Basic arithmetic confirms that adding 30 years to the son's age of 15 results in the father being 45 years old.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the father's age is always exactly 30 years more than the son's, ignoring potential edge cases like leap years or time zone differences affecting birth dates.",
+          "confidence": 0.2,
+          "attacks": {
+            "A3": 0.1
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Leap years and time zones have negligible impact on age calculations over a 30-year span, making B1's objection irrelevant for practical purposes.",
+          "confidence": 0.95,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The calculation doesn't account for relativistic time dilation if either parent or child were traveling near light speed, which could alter perceived age differences.",
+          "confidence": 0.05,
+          "attacks": {
+            "A3": 0.01
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The scenario presumes linear time progression, but some theoretical physics models suggest time may not be perfectly linear at quantum scales.",
+          "confidence": 0.1,
+          "attacks": {
+            "A3": 0.05
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The claim follows a straightforward linear relationship where the father's age is derived by adding 30 to the son's age at any given time."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim follows a straightforward linear relationship where the father's age is derived by adding 30 to the son's age at any given time.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the father and son are alive at the same time, which may not always be true (e.g., if the father died before the son was born).",
+          "confidence": 0.2,
+          "attacks": {
+            "A4": 0.1
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not account for relativistic effects at extremely high velocities, where time dilation could affect the perceived ages.",
+          "confidence": 0.05,
+          "attacks": {
+            "A4": 0.01
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The claim assumes the son's age is always exactly 30 years less than the father's, but adoption or other family structures could violate this.",
+          "confidence": 0.3,
+          "attacks": {
+            "A4": 0.2
+          }
+        }
+      ]
+    }
+  }
+}

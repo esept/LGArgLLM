@@ -1,0 +1,145 @@
+{
+  "claim": "A triangle has four sides",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, a triangle is a polygon with three sides and three angles."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, a triangle is a polygon with three sides and three angles.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some geometric interpretations allow degenerate triangles with collinear vertices, which might be misconstrued as having four sides.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Degenerate triangles are still defined as having three sides, even if they appear linear, so this does not support the claim.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Euclidean geometry, the most widely accepted geometric system, explicitly defines triangles as three-sided figures."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Euclidean geometry, the most widely accepted geometric system, explicitly defines triangles as three-sided figures.",
+          "confidence": 0.98,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-Euclidean geometries, such as spherical geometry, the definition of sides can become ambiguous due to curvature.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in non-Euclidean geometries, the term 'triangle' still fundamentally refers to a three-sided figure, though the properties may differ.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some abstract mathematical theories allow for generalized polygons where sides can be interpreted flexibly.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Generalized polygons are not standard definitions and are irrelevant to the conventional understanding of triangles.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "All mathematical textbooks and educational materials consistently describe triangles as having three sides."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "All mathematical textbooks and educational materials consistently describe triangles as having three sides.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some abstract or non-Euclidean geometries might define shapes with properties that blur the line between triangles and quadrilaterals.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-Euclidean geometries are specialized fields and do not change the standard definition of a triangle in mainstream mathematics.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The term 'triangle' itself derives from the Latin 'triangulum,' meaning 'three-cornered,' reinforcing its three-sided nature."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The term 'triangle' itself derives from the Latin 'triangulum,' meaning 'three-cornered,' reinforcing its three-sided nature.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-Euclidean geometries, certain definitions of 'sides' can lead to shapes colloquially called triangles but with more than three sides.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-Euclidean geometries are edge cases and do not change the standard definition of a triangle in Euclidean geometry, which is the context most people assume.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

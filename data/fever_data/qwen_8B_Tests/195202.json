@@ -1,0 +1,419 @@
+{
+  "claim": "Kevin Bacon has yet to be in a film.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Kevin Bacon is primarily known as a musician and has not acted in any films.",
+        "confidence": 0.3,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Kevin Bacon is primarily known as a musician and has not acted in any films.",
+          "confidence": 0.3,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kevin Bacon has acted in numerous films, including 'Footloose' (1984) and 'The River Wild' (1994).",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The assertion that Kevin Bacon is primarily a musician ignores his decades-long acting career.",
+          "confidence": 0.92,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The films cited in B1 were produced by Kevin Bacon's brother-in-law and do not count as legitimate acting roles.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Kevin Bacon's music career was secondary to his acting work during the 1980s and 1990s.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The production credits of 'Footloose' confirm Kevin Bacon's role as a lead actor in the film.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Biographical records from the Screen Actors Guild list over 70 film credits for Kevin Bacon.",
+          "confidence": 0.93,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "There is no credible evidence that Kevin Bacon has ever been cast in a movie.",
+        "confidence": 0.25,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "There is no credible evidence that Kevin Bacon has ever been cast in a movie.",
+          "confidence": 0.25,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kevin Bacon has appeared in numerous films, including 'Footloose' and 'Apollo 13'.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Reputable databases like IMDb and TMDB list Kevin Bacon's film roles as an actor.",
+          "confidence": 0.83,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The films mentioned may not be accurate or could be mistaken for another actor.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "IMDb and TMDB are widely recognized as authoritative sources for filmographies.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "IMDb's records are verified by industry professionals and include Kevin Bacon's acting credits.",
+          "confidence": 0.95,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The reliability of databases like IMDb is supported by their long-standing reputation in entertainment research.",
+          "confidence": 0.92,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "His career has focused on stage performances rather than film roles.",
+        "confidence": 0.35,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "His career has focused on stage performances rather than film roles.",
+          "confidence": 0.35,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kevin Bacon has appeared in numerous films like 'Footloose' and 'The River Wild.'",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The assertion that his career focuses on stage overlooks his extensive filmography.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Kevin Bacon has been in at least 50 films over his career.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The examples cited (e.g., 'Footloose') are misattributed; Bacon did not star in those films.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The term 'extensive filmography' is subjective; most of Bacon's roles are minor or uncredited.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The claim of 50+ films relies on non-mainstream or low-budget productions.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Bacon's participation in 'Footloose' was limited to a cameo role.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Stage work does not preclude film involvement; many actors balance both mediums.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The definition of 'film' excludes certain categories like short films or independent projects.",
+          "confidence": 0.55,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Kevin Bacon starred in 'Footloose' (1984), a widely recognized film.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Kevin Bacon starred in 'Footloose' (1984), a widely recognized film.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The film 'Footloose' (1984) is not a legitimate movie and thus does not count as a film appearance.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The assertion that Kevin Bacon starred in 'Footloose' is incorrect; he was not part of the cast.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The film 'Footloose' (1984) is indeed a recognized motion picture and qualifies as a film appearance.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multiple credible sources confirm Kevin Bacon's role as Ren in 'Footloose', validating his film appearance.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The recognition of 'Footloose' as a motion picture is disputed among film historians.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The sources cited for Kevin Bacon's role in 'Footloose' are unreliable or outdated.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "He has appeared in over 100 movies including 'Apollo 13' and 'X-Men.'",
+        "confidence": 0.92,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "He has appeared in over 100 movies including 'Apollo 13' and 'X-Men.'",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The claim that Kevin Bacon has appeared in over 100 movies is based on unreliable sources.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Kevin Bacon's filmography does not include 'Apollo 13' or 'X-Men' according to verified databases.",
+          "confidence": 0.79,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The sources cited for Kevin Bacon's filmography are credible and widely recognized.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Kevin Bacon was confirmed to have played a role in 'Apollo 13' through official production records.",
+          "confidence": 0.91,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The credibility of verified databases is questionable due to potential biases.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Production records for 'Apollo 13' do not list Kevin Bacon as an actor.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "His role in 'The Big Lebowski' made him a prominent figure in cinema.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "His role in 'The Big Lebowski' made him a prominent figure in cinema.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Kevin Bacon has never been credited as an actor in any official production of 'The Big Lebowski'.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Prominence in cinema requires sustained contributions across multiple films, not a single appearance.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official cast listings confirm Kevin Bacon played The Dude with credited screen time and dialogue.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Prominence can stem from iconic roles even if they are singular; The Dude remains culturally significant.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "'The Big Lebowski' exists as an independent feature film with verifiable production records.",
+          "confidence": 0.91,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cultural impact metrics demonstrate widespread recognition of Kevin Bacon's performance as The Dude.",
+          "confidence": 0.89,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

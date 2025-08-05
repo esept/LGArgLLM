@@ -1,0 +1,240 @@
+{
+  "claim": "Cats should only drink water.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Cats are obligate carnivores, and their primary hydration source in the wild is water from prey, making water the most natural and necessary drink for them."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cats are obligate carnivores, and their primary hydration source in the wild is water from prey, making water the most natural and necessary drink for them.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cats may require electrolyte solutions or specialized veterinary-recommended fluids in cases of dehydration or illness, not just water.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While specialized fluids are needed in medical cases, these are exceptions and do not negate the general rule that water is the primary and healthiest hydration source for cats.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Milk is often given to cats as a treat or supplement, and while not a primary hydration source, it is an alternative liquid they consume.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most adult cats are lactose intolerant, and milk can cause digestive issues, making it unsuitable as a regular hydration source.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Milk can cause digestive issues like diarrhea in many adult cats due to lactose intolerance, reinforcing that water is the safest option."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Milk can cause digestive issues like diarrhea in many adult cats due to lactose intolerance, reinforcing that water is the safest option.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cats are lactose-tolerant and can digest milk without issues, making milk a viable alternative in certain cases.",
+          "confidence": 0.45,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even lactose-tolerant cats may develop digestive issues if milk is given in large quantities or too frequently.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Special lactose-free milk products for cats exist, providing hydration without digestive risks.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lactose-free milk products are often unnecessary and more expensive than water, which is universally safe.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Veterinary guidelines universally recommend fresh water as the sole beverage for cats to maintain kidney health and prevent dehydration."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Veterinary guidelines universally recommend fresh water as the sole beverage for cats to maintain kidney health and prevent dehydration.",
+          "confidence": 0.93,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cats may require electrolyte solutions or specialized veterinary-recommended fluids in cases of severe dehydration or illness.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such electrolyte solutions are still fundamentally water-based and administered under strict veterinary supervision, not as general beverages.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Milk is occasionally tolerated by certain cats as a treat, though it is not a hydration substitute.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lactose intolerance affects most adult cats, making milk consumption potentially harmful despite anecdotal tolerance.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Other liquids, such as juice or flavored drinks, often contain sugars or additives harmful to cats, further supporting water as the only appropriate drink."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Other liquids, such as juice or flavored drinks, often contain sugars or additives harmful to cats, further supporting water as the only appropriate drink.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some specially formulated cat drinks, like lactose-free milk substitutes, are safe and beneficial for cats, providing hydration without harmful additives.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even lactose-free substitutes may contain unnecessary calories or artificial ingredients that could lead to obesity or digestive issues over time.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In emergency situations, electrolyte solutions designed for pets can be necessary for rehydration and are not strictly water.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Electrolyte solutions should only be used under veterinary supervision and are not a replacement for regular water intake in healthy cats.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Cats have a low thirst drive, so providing clean water consistently is critical to avoid urinary tract diseases, which are common in dehydrated cats."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Cats have a low thirst drive, so providing clean water consistently is critical to avoid urinary tract diseases, which are common in dehydrated cats.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cats can obtain sufficient hydration from wet food alone, reducing their reliance on drinking water directly.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Wet food alone may not provide enough hydration for all cats, especially those with pre-existing health conditions or in hot climates.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain cat breeds, like the Maine Coon, naturally have a higher thirst drive and may not face the same dehydration risks.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even breeds with higher thirst drives can develop urinary tract diseases if water quality or availability is poor.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

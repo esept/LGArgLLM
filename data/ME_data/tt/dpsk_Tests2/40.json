@@ -1,0 +1,250 @@
+{
+  "claim": "Some students are girls, and some girls are teachers. Therefore, all students are teachers",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The conclusion does not logically follow from the premises because the premises only establish overlapping subsets, not a universal relationship.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The conclusion does not logically follow from the premises because the premises only establish overlapping subsets, not a universal relationship.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The premises imply a possible chain where some students could be teachers, making the conclusion plausible in certain cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The premises do not guarantee that all students fall into the subset of girls who are teachers, so the conclusion remains invalid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument overlooks the possibility that all students could indeed be teachers if the subsets fully overlap.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The premises explicitly state 'some' for both subsets, which inherently rejects the possibility of universal overlap.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The argument commits the fallacy of undistributed middle, as the shared term 'girls' does not connect 'students' and 'teachers' universally.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The argument commits the fallacy of undistributed middle, as the shared term 'girls' does not connect 'students' and 'teachers' universally.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The term 'girls' can still imply a partial overlap, which allows for some students to be teachers without requiring universality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Partial overlap does not justify the conclusion that all students are teachers, as the original argument claims.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument's structure is valid if interpreted as a probabilistic or statistical claim rather than a universal one.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original argument explicitly uses 'therefore all,' which indicates a universal claim, not a probabilistic one.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The premises only state that some members of one group are in another, which is insufficient to conclude that all members of the first group are in the third.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The premises only state that some members of one group are in another, which is insufficient to conclude that all members of the first group are in the third.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The conclusion follows logically if the 'some' in the premises refers to overlapping subsets that cover all students.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The premises do not specify any overlap or universal coverage, making the conclusion unsupported.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument assumes a transitive property where none is stated, which is a common logical fallacy.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Transitive properties can be valid in certain contexts, but the premises here lack the necessary specificity.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If some students are girls and some girls are teachers, it is possible that the girls who are teachers are not the same as the girls who are students, breaking the chain of reasoning.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If some students are girls and some girls are teachers, it is possible that the girls who are teachers are not the same as the girls who are students, breaking the chain of reasoning.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "In many cases, the overlap between students who are girls and girls who are teachers is significant enough to support the conclusion.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The overlap is not guaranteed; without specific data, the conclusion remains unsupported.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The original claim is a logical fallacy (undistributed middle) and cannot be validly inferred.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Recognizing the fallacy does not address the possibility of the conclusion being true by coincidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The argument assumes a transitive relationship where none is justified, as the properties of being a student and being a teacher are not inherently linked through being a girl.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The argument assumes a transitive relationship where none is justified, as the properties of being a student and being a teacher are not inherently linked through being a girl.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Transitive relationships can sometimes be justified if there is a direct causal or logical connection between the properties.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, in this case, being a student and being a teacher are distinct roles with no inherent causal link, making the transitivity assumption invalid.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Statistical data might show that some students eventually become teachers, which could justify a weak transitive link.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "But correlation does not imply causation, and the original argument makes a universal claim ('all students are teachers') which the data cannot support.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "claim": "If 3 pencils cost $1.50, then 6 pencils cost $2.50",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If 3 pencils cost $1.50, then the cost per pencil is $0.50, making 6 pencils cost $3.00."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If 3 pencils cost $1.50, then the cost per pencil is $0.50, making 6 pencils cost $3.00.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes a bulk discount or pricing error, which is not supported by the given information.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Without explicit evidence of a discount or error, the linear scaling of cost based on quantity is the most reasonable assumption.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The cost per pencil could vary due to factors like taxes, packaging, or regional pricing differences.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unless specified, such factors are typically negligible or standardized in basic pricing examples.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Doubling the quantity of pencils (from 3 to 6) should double the cost (from $1.50 to $3.00), not increase it by $1.00."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Doubling the quantity of pencils (from 3 to 6) should double the cost (from $1.50 to $3.00), not increase it by $1.00.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim might be based on a bulk discount, where purchasing more pencils reduces the per-unit cost.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Bulk discounts are usually explicitly stated, and the claim does not mention any discount.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be a typographical error, with $2.50 intended to be $3.00.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Assuming typographical errors without evidence weakens the argument's reliability.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim violates the principle of proportional pricing, where cost scales linearly with quantity."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim violates the principle of proportional pricing, where cost scales linearly with quantity.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Bulk discounts or fixed costs (e.g., packaging) may cause non-linear pricing, making the claim plausible.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim specifies no bulk discounts or fixed costs, so linear proportionality is the default assumption.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be a typo (e.g., '$3.00' miswritten as '$2.50'), preserving proportional intent.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematically, 6 pencils at $2.50 implies a discount, but no such discount is mentioned or justified in the claim."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematically, 6 pencils at $2.50 implies a discount, but no such discount is mentioned or justified in the claim.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is based on a linear pricing model where cost scales proportionally with quantity, so 6 pencils should cost $3.00.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Bulk discounts are common in retail, so the claim could reflect a valid pricing scheme not explicitly stated.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Without evidence of a discount, assuming one contradicts the principle of uniform pricing unless specified otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

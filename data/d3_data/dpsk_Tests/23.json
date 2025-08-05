@@ -1,0 +1,193 @@
+{
+  "claim": "Adding a negative number always decreases the value",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A negative number is less than zero, so adding it to any positive number reduces the total value."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A negative number is less than zero, so adding it to any positive number reduces the total value.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Adding a negative number to another negative number can increase the total value (e.g., -3 + (-1) = -4, which is less than -3, but -3 + (-(-1)) = -2, which is greater than -3).",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim specifies 'adding a negative number,' not subtracting one, so the example of adding the negation of a negative number is irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Adding zero is equivalent to adding a negative number (since zero is neither positive nor negative), but it does not decrease the value.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Zero is not a negative number, so it does not satisfy the condition of the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In arithmetic operations, adding a negative number is equivalent to subtracting its absolute value, which decreases the result."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In arithmetic operations, adding a negative number is equivalent to subtracting its absolute value, which decreases the result.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the original value is positive; if the original value is negative, adding a negative number may not decrease the result (e.g., -3 + (-2) = -5, which is less than -3).",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with negative original values, the result is still numerically smaller (further from zero), so the claim holds in terms of magnitude.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is ambiguous about 'value'\u2014it could refer to algebraic value (direction matters) or absolute value (magnitude only).",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In standard mathematical usage, 'value' refers to algebraic value unless specified otherwise, so the original argument is correct.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The number line demonstrates that moving left (adding a negative) from any point results in a smaller value."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The number line demonstrates that moving left (adding a negative) from any point results in a smaller value.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes standard arithmetic operations, but in modular arithmetic (e.g., clock math), adding a negative number can wrap around to a higher value.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modular arithmetic is a specialized context, and the original claim clearly refers to standard real-number operations where the number line applies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The number line visualization fails for complex numbers, where 'left' and 'right' have no inherent meaning in the complex plane.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly refers to real numbers, as complex number operations require fundamentally different interpretation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematical axioms define addition of a negative as subtraction, which inherently reduces the original value."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematical axioms define addition of a negative as subtraction, which inherently reduces the original value.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the original value is positive; if the original value is already negative, adding a negative may increase its magnitude but not necessarily its position on the number line.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In the context of real numbers, 'decreasing the value' is understood as moving left on the number line, which addition of a negative number always achieves regardless of the original value's sign.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "For non-ordered algebraic structures (e.g., modular arithmetic), addition of a negative does not necessarily correspond to a decrease in value.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly refers to standard real-number arithmetic, where ordering is well-defined and addition of negatives behaves as described.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

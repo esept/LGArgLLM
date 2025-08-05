@@ -1,0 +1,279 @@
+{
+  "claim": "To protect yourself against defamation claims in the U.S, only speak the truth.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Truth is an absolute defense against defamation claims under U.S. law, as established by legal precedent."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Truth is an absolute defense against defamation claims under U.S. law, as established by legal precedent.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even if a statement is true, it may still be considered defamatory if it is made with actual malice or reckless disregard for the truth, as per New York Times Co. v. Sullivan.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 'actual malice' standard in New York Times Co. v. Sullivan primarily applies to public figures, not private individuals, so truth remains a strong defense for most cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Truth may not protect against defamation if the statement is presented in a misleading or deceptive context, which can still harm reputation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Courts generally evaluate the literal truth of statements rather than their contextual implications, unless the context clearly distorts the truth.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "False statements of fact are a necessary element for a successful defamation claim in the U.S."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "False statements of fact are a necessary element for a successful defamation claim in the U.S.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even true statements can lead to defamation claims if they are presented in a misleading or defamatory context.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts generally dismiss defamation claims based on true statements, as truth is an absolute defense in U.S. defamation law.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some jurisdictions recognize 'defamation by implication,' where true statements can be defamatory if they imply a falsehood.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Defamation by implication is rare and requires clear evidence that the true statements were intended to imply a falsehood.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Even true statements can lead to legal issues if they violate privacy laws or other statutes unrelated to defamation."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Even true statements can lead to legal issues if they violate privacy laws or other statutes unrelated to defamation.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Privacy laws typically require a reasonable expectation of privacy, and public statements often do not meet this threshold.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in public contexts, certain personal details (e.g., medical history) may still be protected under privacy laws regardless of truth.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Most defamation cases hinge on falsity, so truthful speech remains the strongest defense against defamation claims specifically.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Truthful speech can still be actionable if it is presented with malicious intent or reckless disregard for context.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Opinions are generally protected under the First Amendment and do not constitute defamation, regardless of truthfulness."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Opinions are generally protected under the First Amendment and do not constitute defamation, regardless of truthfulness.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some opinions may imply false factual assertions, which can still be grounds for defamation if presented as factual.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts often distinguish between pure opinion and mixed opinion (with implied facts), protecting only the former under the First Amendment.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even truthful statements can be defamatory if made with malicious intent or reckless disregard for the truth.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 'actual malice' standard applies primarily to public figures, not private individuals, limiting the scope of this counter-argument.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Public figures must prove actual malice (knowledge of falsity or reckless disregard for the truth) to win a defamation case, making truth even more critical."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Public figures must prove actual malice (knowledge of falsity or reckless disregard for the truth) to win a defamation case, making truth even more critical.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even if a statement is true, defamation claims can still arise if the statement is presented in a misleading or defamatory context.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts generally evaluate the overall context of a statement, and truthful statements presented fairly are unlikely to be deemed defamatory.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Private individuals do not need to prove actual malice, only negligence, making truth alone insufficient protection in some cases.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "For private individuals, truth remains an absolute defense against defamation claims, though the burden of proof may differ.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Context matters in defamation cases; a true statement presented misleadingly could still create legal liability under certain circumstances."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Context matters in defamation cases; a true statement presented misleadingly could still create legal liability under certain circumstances.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "U.S. defamation law requires falsity as a key element; truthful statements, even if misleading, are generally protected under the First Amendment.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts have ruled that selectively omitting context to create a false impression can constitute defamation, even if individual statements are technically true.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Such rulings are rare exceptions and typically require proof of actual malice or reckless disregard for the truth, which is difficult to establish.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

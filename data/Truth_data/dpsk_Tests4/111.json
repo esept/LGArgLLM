@@ -1,0 +1,279 @@
+{
+  "claim": "Israel, a nation of immigrants, consumes tons of chicken per person but little pork.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Israel has a significant Jewish population, and Jewish dietary laws (kashrut) prohibit the consumption of pork."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Israel has a significant Jewish population, and Jewish dietary laws (kashrut) prohibit the consumption of pork.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Not all Jewish people strictly follow kashrut, and some may consume pork despite religious prohibitions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even among non-observant Jews, cultural norms and social pressures often discourage pork consumption.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Israel has a growing non-Jewish population, including Muslims and Christians, who may consume pork.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Muslims, who also avoid pork for religious reasons, make up a significant portion of Israel's non-Jewish population.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Chicken is a widely accepted and versatile protein source in many cultures, including Israel, due to its affordability and ease of preparation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Chicken is a widely accepted and versatile protein source in many cultures, including Israel, due to its affordability and ease of preparation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pork is prohibited in Jewish dietary laws (kashrut), which significantly reduces its consumption in Israel regardless of affordability or versatility.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though pork is prohibited, some non-Jewish populations in Israel do consume pork, which means the claim about 'little pork' may be an overgeneralization.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The non-Jewish population in Israel is a minority, so pork consumption remains negligible compared to chicken on a national scale.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Immigrant populations often adapt their dietary habits to local customs and availability, which in Israel includes high chicken consumption."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Immigrant populations often adapt their dietary habits to local customs and availability, which in Israel includes high chicken consumption.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some immigrant groups maintain strict dietary traditions regardless of local customs, such as kosher or halal restrictions, which may limit adaptation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even within kosher or halal traditions, chicken is widely permitted and often preferred over other meats, supporting high consumption rates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Local availability is influenced by cultural and religious norms, making chicken more accessible than pork in Israel, rather than immigrant adaptation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Immigrant demand still plays a role in shaping local food markets, reinforcing the link between immigrant habits and chicken consumption.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Pork consumption is minimal in Israel due to religious restrictions among both Jewish and Muslim populations."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Pork consumption is minimal in Israel due to religious restrictions among both Jewish and Muslim populations.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some secular Israelis and non-Muslim/Jewish minorities do consume pork, though in limited quantities.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even among secular Israelis, cultural habits and limited availability of pork products reduce consumption.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pork consumption data may be underreported due to informal markets or private imports.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Government regulations and inspections make widespread unreported pork consumption unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Israeli food industry is structured to meet kosher dietary requirements, which favor chicken over pork."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Israeli food industry is structured to meet kosher dietary requirements, which favor chicken over pork.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Not all Israelis strictly follow kosher dietary laws, and pork is still consumed in secular communities.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even secular communities in Israel have limited access to pork due to cultural and market preferences shaped by kosher norms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pork consumption is increasing in Israel due to globalization and exposure to non-kosher cuisines.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increase in pork consumption is marginal compared to chicken, as kosher practices remain dominant in food production and distribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Cultural and religious norms in Israel strongly influence food choices, leading to higher chicken and lower pork consumption."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Cultural and religious norms in Israel strongly influence food choices, leading to higher chicken and lower pork consumption.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Not all residents of Israel adhere to religious dietary restrictions; secular communities may consume pork at rates comparable to other Western nations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even among secular Israelis, pork consumption remains relatively low due to cultural habits and limited availability in mainstream markets.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Globalization and immigration trends have introduced diverse food preferences, potentially increasing pork consumption in certain demographics.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite globalization, kosher certification remains economically dominant in Israel's food industry, structurally limiting pork availability.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

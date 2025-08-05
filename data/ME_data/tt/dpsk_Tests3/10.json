@@ -1,0 +1,193 @@
+{
+  "claim": "The capital of France is Paris",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Paris has been the capital of France since the 10th century."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Paris has been the capital of France since the 10th century.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "During World War II, the capital of France was temporarily moved to Vichy.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Vichy government was not the legitimate government of France, and Paris remained the symbolic capital.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical records from the 10th century are incomplete, making it uncertain when Paris officially became the capital.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multiple reputable historical sources confirm Paris's status as the capital since the 10th century.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The French government and its administrative institutions are headquartered in Paris."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The French government and its administrative institutions are headquartered in Paris.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some administrative functions are decentralized to other cities like Lyon or Marseille.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The core institutions (Presidency, Parliament, etc.) remain exclusively in Paris, maintaining its status as the capital.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical capitals like Vichy (1940-1944) temporarily replaced Paris.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vichy's status was never internationally recognized as France's legal capital during WWII.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "International organizations and diplomatic missions recognize Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "International organizations and diplomatic missions recognize Paris as the capital of France.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some unrecognized or disputed entities may not acknowledge Paris as the capital of France.",
+          "confidence": 0.4,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The vast majority of sovereign states and international bodies recognize Paris as the capital, making non-recognition statistically insignificant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical records show that other cities, such as Vichy, temporarily served as the capital of France during wartime.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These were temporary and exceptional circumstances, not altering the established and continuous status of Paris as the capital.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Historical records and official documents consistently identify Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Historical records and official documents consistently identify Paris as the capital of France.",
+          "confidence": 0.98,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "During the German occupation in WWII, the Vichy regime temporarily moved the capital to Vichy.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Vichy regime was not internationally recognized as the legitimate government of France, and Paris remained the de jure capital.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some historical texts refer to Versailles as the capital during the reign of Louis XIV.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Versailles was the seat of government but not officially designated as the capital; Paris retained its status.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

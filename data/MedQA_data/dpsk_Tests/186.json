@@ -1,0 +1,286 @@
+{
+  "claim": "Consider the following background information: A 58-year-old woman comes to the physician because of a 3-month history of left knee pain as well as stiffness upon waking for about 10\u201315 minutes. The pain is worse after standing a lot at work and when she climbs stairs. There is no history of trauma. She has hypercholesterolemia and hypertension. Her mother died of metastatic breast cancer 15 years ago, at the age of 65 years. She does not smoke or drink alcohol. Current medications include atorvastatin, labetalol, and aspirin. Over the past 2 months, she has been taking over-the-counter ibuprofen as needed for the joint pain. She is 163 cm (5 ft 4 in) tall and weighs 84 kg (185 lb); BMI is 31.8 kg/m2. Her temperature is 37\u00b0C (98.6\u00b0F), pulse is 88/min, and blood pressure is 114/68 mm Hg. Examination of the left knee shows tenderness on palpation of the anteromedial joint line; there is crepitus and pain with full flexion and extension. Serum uric acid concentration is 8.0 mg/dL and erythrocyte sedimentation rate is 15 mm/h.\n\nGiven the background information the following is corrrect: Joint effusion and pannus on ultrasound are the most likely findings on imaging of the left knee.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's symptoms of chronic knee pain, stiffness, and crepitus are consistent with osteoarthritis, which can sometimes present with joint effusion on imaging."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms of chronic knee pain, stiffness, and crepitus are consistent with osteoarthritis, which can sometimes present with joint effusion on imaging.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The elevated serum uric acid concentration (8.0 mg/dL) suggests gout as a potential cause of joint effusion, which may not be osteoarthritis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Gout typically presents with acute, severe pain and swelling, which are not described in this patient's history.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The lack of significant erythrocyte sedimentation rate elevation (15 mm/h) makes inflammatory arthritis less likely, supporting osteoarthritis as the diagnosis.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's obesity (BMI 31.8 kg/m2) is a major risk factor for osteoarthritis, further supporting the initial argument.",
+          "confidence": 0.9,
+          "attacks": {
+            "A1": 0.3
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's age, BMI, and mechanical pain pattern (worse with activity) are classic risk factors for osteoarthritis, which could explain joint effusion on imaging."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's age, BMI, and mechanical pain pattern (worse with activity) are classic risk factors for osteoarthritis, which could explain joint effusion on imaging.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The elevated serum uric acid (8.0 mg/dL) suggests gout as a possible alternative cause of joint effusion, which may not be osteoarthritis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Gout typically presents with acute, severe pain and inflammation, which are absent in this patient's chronic, mechanical pain pattern.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The lack of significant systemic inflammation (normal ESR) reduces the likelihood of inflammatory arthritis, but does not rule out early-stage rheumatoid arthritis or other inflammatory conditions.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Early-stage rheumatoid arthritis would likely show morning stiffness lasting >30 minutes, which is not described here (only 10-15 minutes).",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Joint effusion and pannus are more characteristic of inflammatory arthritis (e.g., rheumatoid arthritis) rather than osteoarthritis, which is more likely given the mechanical nature of her pain."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Joint effusion and pannus are more characteristic of inflammatory arthritis (e.g., rheumatoid arthritis) rather than osteoarthritis, which is more likely given the mechanical nature of her pain.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's elevated serum uric acid (8.0 mg/dL) could suggest gout, which can also present with joint effusion and inflammatory features, complicating the diagnosis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Gout typically presents with acute, severe pain and swelling, which is not described in this patient's history, making gout less likely.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of systemic symptoms (e.g., fever, fatigue) and normal ESR (15 mm/h) further reduce the likelihood of inflammatory arthritis like rheumatoid arthritis.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's obesity (BMI 31.8 kg/m2) and mechanical pain pattern (worse with standing/climbing stairs) strongly support osteoarthritis as the primary diagnosis.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The normal erythrocyte sedimentation rate and absence of systemic symptoms make inflammatory arthritis (and thus pannus) less likely."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The normal erythrocyte sedimentation rate and absence of systemic symptoms make inflammatory arthritis (and thus pannus) less likely.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Osteoarthritis is more likely given the patient's age, BMI, and mechanical symptoms (crepitus, pain with movement).",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Elevated serum uric acid (8.0 mg/dL) could suggest gout or pseudogout as alternative diagnoses, which may present with effusion.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.6,
+            "B1": 0.5
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Chronic use of ibuprofen may mask inflammatory markers, making ESR unreliable for ruling out inflammatory arthritis.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Pannus formation is a specific feature of rheumatoid arthritis and would not be expected in osteoarthritis, which is the more likely diagnosis given her clinical presentation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Pannus formation is a specific feature of rheumatoid arthritis and would not be expected in osteoarthritis, which is the more likely diagnosis given her clinical presentation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Pannus can also be seen in other inflammatory conditions such as psoriatic arthritis or reactive arthritis, not just rheumatoid arthritis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's lack of systemic symptoms (e.g., fever, fatigue) and normal ESR make inflammatory arthritis less likely.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Osteoarthritis typically does not cause morning stiffness lasting more than 30 minutes, which is more characteristic of inflammatory arthritis.",
+          "confidence": 0.78,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The patient's obesity and mechanical pain pattern (worse with activity) are classic for osteoarthritis, despite the duration of morning stiffness.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Mild joint effusion can occur in osteoarthritis due to synovial irritation, though pannus would be atypical."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Mild joint effusion can occur in osteoarthritis due to synovial irritation, though pannus would be atypical.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Pannus is a hallmark feature of rheumatoid arthritis, not osteoarthritis, making its presence highly unlikely in this case.",
+          "confidence": 0.92,
+          "attacks": {
+            "A6": 0.9
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's elevated serum uric acid suggests gout as a potential alternative diagnosis, which could also cause joint effusion.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of systemic symptoms (e.g., fever, fatigue) and normal ESR make inflammatory arthritis less likely, supporting osteoarthritis as the primary diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "C1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Synovial irritation in osteoarthritis typically results in minimal effusion, not the prominent effusion suggested by the claim.",
+          "confidence": 0.78,
+          "attacks": {
+            "A6": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

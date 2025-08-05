@@ -1,0 +1,272 @@
+{
+  "claim": "Per capita income is higher in the US than in Japan on average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to World Bank data, the US has consistently reported higher GDP per capita than Japan in recent years."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to World Bank data, the US has consistently reported higher GDP per capita than Japan in recent years.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "GDP per capita does not account for cost of living differences, which are significantly higher in the US than in Japan.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even after adjusting for purchasing power parity (PPP), the US still maintains a higher per capita income than Japan according to IMF data.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The World Bank data may not fully capture informal economic activities, which are more prevalent in Japan and could underreport actual income.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Informal economic activities are typically lower-income and would not significantly impact the per capita income comparison between the US and Japan.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The US economy has a higher average wage level compared to Japan, as indicated by OECD labor statistics."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The US economy has a higher average wage level compared to Japan, as indicated by OECD labor statistics.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "OECD statistics do not account for purchasing power parity (PPP), which may adjust the real income difference between the US and Japan.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "OECD data includes PPP-adjusted metrics, and even after adjustment, US wages remain higher than Japan's on average.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The wage gap may be offset by Japan's lower cost of living, making per capita income comparisons misleading without cost adjustments.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even accounting for cost of living, US disposable income remains higher, as shown in OECD household income reports.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Wage statistics may not reflect income inequality, where a few high earners in the US skew the average upward.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Median income data from OECD also shows US figures surpassing Japan's, reducing the skewness concern.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Japan's aging population and lower labor force participation contribute to lower per capita income relative to the US."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Japan's aging population and lower labor force participation contribute to lower per capita income relative to the US.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Japan has higher productivity per worker than the US, which compensates for its lower labor force participation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Higher productivity in Japan does not fully offset the income gap because of its shrinking workforce and economic stagnation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The US has higher income inequality, which skews per capita income upward without reflecting median living standards.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even accounting for inequality, US median income remains higher than Japan's due to overall economic dynamism.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The US has a larger and more dynamic service and technology sector, which drives higher income levels on average."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The US has a larger and more dynamic service and technology sector, which drives higher income levels on average.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Japan has a highly efficient manufacturing sector that contributes significantly to income levels, potentially offsetting the US advantage in services.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The US service and technology sectors are more globally dominant, attracting higher investment and wages compared to Japan's manufacturing sector.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality in the US is higher, meaning the average may be skewed by top earners, while Japan has a more equitable distribution.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with higher inequality, median incomes in the US still surpass those in Japan, supporting the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cost of living in Japan is lower, meaning real income comparisons might not favor the US as strongly.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Even adjusted for cost of living, US disposable incomes remain higher on average.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Exchange rate differences between the US dollar and the Japanese yen further reinforce the higher per capita income in the US."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Exchange rate differences between the US dollar and the Japanese yen further reinforce the higher per capita income in the US.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Exchange rates fluctuate frequently, and using them as a basis for comparison may not reflect the actual purchasing power parity (PPP) between the two countries.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "PPP-adjusted income metrics are widely accepted for cross-country comparisons and show that the US still maintains a higher per capita income than Japan.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The cost of living in Japan is significantly lower than in the US, which means nominal income differences may not translate to higher real income.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even accounting for cost of living, US per capita income remains higher when adjusted for purchasing power, as supported by OECD data.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

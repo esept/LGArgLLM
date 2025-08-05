@@ -1,0 +1,314 @@
+{
+  "claim": "A 49-year-old woman presents to her pulmonologist for a follow-up visit. She reports a longstanding history of chronic dyspnea and fatigue. Her past medical history is notable for asthma. She has a known mutation in the BMPR2 gene. She was recently trialed on nifedipine but stopped due to severe lower extremity edema. She does not smoke and does not drink alcohol. Her temperature is 99.4\u00b0F (37.4\u00b0C), blood pressure is 135/80 mmHg, pulse is 80/min, and respirations are 20/min. Physical examination reveals an increased P2 on cardiac auscultation. Her physician recommends starting a medication to slow the patient\u2019s clinical worsening that requires regular monitoring of liver function tests. This medication has which of the following mechanisms of action? : Beta-2-adrenergic receptor agonist",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's history of BMPR2 mutation and symptoms like chronic dyspnea, fatigue, and increased P2 on cardiac auscultation strongly suggest pulmonary arterial hypertension (PAH). The medication requiring liver function monitoring is likely an endothelin receptor antagonist (e.g., bosentan), which is a standard treatment for PAH, not a beta-2-adrenergic receptor agonist.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of BMPR2 mutation and symptoms like chronic dyspnea, fatigue, and increased P2 on cardiac auscultation strongly suggest pulmonary arterial hypertension (PAH). The medication requiring liver function monitoring is likely an endothelin receptor antagonist (e.g., bosentan), which is a standard treatment for PAH, not a beta-2-adrenergic receptor agonist.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While BMPR2 mutation is associated with PAH, the patient's asthma history could also explain chronic dyspnea and fatigue, making PAH less certain without further diagnostic confirmation like right heart catheterization.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Beta-2-adrenergic receptor agonists are sometimes used off-label in PAH for their vasodilatory effects, and the question does not explicitly rule out this possibility despite the lack of liver monitoring requirements.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Asthma-related dyspnea typically presents with wheezing and variability, which are not mentioned here, and the increased P2 is a specific sign of pulmonary hypertension, not asthma.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Off-label use of beta-2 agonists in PAH is not standard of care due to insufficient evidence and lack of impact on disease progression, unlike endothelin receptor antagonists.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without wheezing, asthma can present atypically in long-standing cases, and P2 could be misinterpreted or coincidental, so PAH is not definitively confirmed.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Beta-2-adrenergic receptor agonists are primarily used for asthma or COPD to relax bronchial smooth muscle, but the patient's symptoms and findings (e.g., BMPR2 mutation, increased P2) point to PAH, a condition not treated with beta-2 agonists.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Beta-2-adrenergic receptor agonists are primarily used for asthma or COPD to relax bronchial smooth muscle, but the patient's symptoms and findings (e.g., BMPR2 mutation, increased P2) point to PAH, a condition not treated with beta-2 agonists.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Beta-2 agonists may still provide symptomatic relief for dyspnea in PAH patients, even if they don't target the underlying pathology.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The BMPR2 mutation doesn't rule out concurrent asthma, so beta-2 agonists could still be appropriate for that component of her condition.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Symptomatic relief without addressing the PAH pathophysiology could mask disease progression and delay proper treatment.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "There's no evidence in the case to suggest active asthma symptoms that would require beta-2 agonist therapy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Monitoring clinical worsening through objective measures (e.g., 6MWD, echo) would prevent masking of progression even with symptomatic treatment.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The need for liver function test monitoring is characteristic of endothelin receptor antagonists or prostacyclin analogs, both used in PAH, neither of which are beta-2-adrenergic receptor agonists.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The need for liver function test monitoring is characteristic of endothelin receptor antagonists or prostacyclin analogs, both used in PAH, neither of which are beta-2-adrenergic receptor agonists.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Beta-2-adrenergic receptor agonists are not typically used in PAH, but they can still be considered in certain cases where other treatments fail.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Liver function test monitoring is not exclusive to endothelin receptor antagonists or prostacyclin analogs; other medications like certain anticoagulants also require it.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Beta-2-adrenergic receptor agonists are contraindicated in PAH due to their potential to worsen pulmonary vasoconstriction and symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While other medications may require liver function test monitoring, the clinical context strongly suggests PAH treatment, narrowing the options.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "There is no evidence that beta-2-adrenergic receptor agonists provide any benefit in PAH, making their consideration irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's BMPR2 mutation and symptoms are classic for PAH, further supporting the use of PAH-specific medications.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Nifedipine, a calcium channel blocker, was trialed and discontinued, which is consistent with PAH management. Beta-2-adrenergic receptor agonists are not part of PAH treatment guidelines.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Nifedipine, a calcium channel blocker, was trialed and discontinued, which is consistent with PAH management. Beta-2-adrenergic receptor agonists are not part of PAH treatment guidelines.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Beta-2-adrenergic receptor agonists can still be considered in PAH if the patient has concurrent asthma, as they may help manage bronchospasm.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's BMPR2 mutation suggests hereditary PAH, which may not respond to standard asthma treatments like beta-2-adrenergic agonists.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with concurrent asthma, PAH-specific therapies like endothelin receptor antagonists or phosphodiesterase-5 inhibitors should take priority over beta-2-agonists.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increased P2 on auscultation indicates pulmonary hypertension, which requires targeted PAH therapy rather than asthma-focused treatments.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Hereditary PAH with BMPR2 mutation typically requires advanced therapies like prostacyclin pathway agents, not beta-2-agonists.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The physician's recommendation for a medication requiring liver function monitoring suggests the use of endothelin receptor antagonists, which are first-line for PAH.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's lack of smoking or alcohol use rules out common causes of secondary pulmonary hypertension, further supporting PAH due to BMPR2 mutation, which is not treated with beta-2 agonists.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's lack of smoking or alcohol use rules out common causes of secondary pulmonary hypertension, further supporting PAH due to BMPR2 mutation, which is not treated with beta-2 agonists.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Beta-2 agonists can still be considered if there is concurrent asthma, as they help relieve bronchoconstriction, which may indirectly improve dyspnea.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of increased P2 suggests pulmonary hypertension, which is not effectively managed by beta-2 agonists, making the argument against their use stronger.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with concurrent asthma, the primary pathology here is PAH due to BMPR2 mutation, which requires targeted therapy like endothelin receptor antagonists or phosphodiesterase-5 inhibitors, not beta-2 agonists.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Beta-2 agonists may worsen pulmonary hypertension by increasing cardiac workload, which is counterproductive in this patient.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The physician's recommendation for a medication requiring liver function monitoring suggests the use of endothelin receptor antagonists, not beta-2 agonists, further invalidating their use.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Targeted PAH therapies like endothelin receptor antagonists have robust evidence for improving outcomes in BMPR2 mutation-related PAH, making beta-2 agonists irrelevant.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

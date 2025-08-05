@@ -1,0 +1,282 @@
+{
+  "claim": "A father is 30 years older than his son. When the son is 15, the father is 45",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim is mathematically correct because if the father is 30 years older than his son, when the son is 15, the father's age is 15 + 30 = 45.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim is mathematically correct because if the father is 30 years older than his son, when the son is 15, the father's age is 15 + 30 = 45.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the father's age difference remains constant, but it doesn't account for potential errors in recording ages over time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim ignores biological plausibility; a 15-year-old having a 45-year-old father implies the father was 30 at the son's birth, which is common but not universally true.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Age records are generally reliable in modern societies, making errors in recording ages statistically negligible for such calculations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While 30 is a common age for fatherhood, it is not biologically implausible, so the argument doesn't invalidate the claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The claim assumes the father's age difference remains constant over time, which is a reasonable assumption in most cases.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The claim assumes the father's age difference remains constant over time, which is a reasonable assumption in most cases.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The assumption ignores potential scenarios like adoption, where the age difference might not be biological and could vary.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In cases of early or late parenthood, the age difference might not align with typical expectations, challenging the assumption.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Adoption records and legal documentation would still reflect a consistent age difference, supporting the original assumption.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Statistical data shows that the majority of fathers maintain a consistent age difference with their sons, validating the claim's assumption.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Legal documentation can be falsified or inaccurate, which could disrupt the consistency of the age difference.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim is logically consistent with basic arithmetic principles of addition and age difference.",
+        "confidence": 0.98,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim is logically consistent with basic arithmetic principles of addition and age difference.",
+          "confidence": 0.98,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the father and son's ages are static and does not account for the passage of time.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim explicitly states a specific point in time ('When the son is 15'), so temporal dynamics are irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim ignores potential edge cases like leap years or time zones affecting age calculations.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Leap years and time zones have negligible impact on age difference calculations over decades.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim oversimplifies by not considering biological or legal factors that could alter age relationships.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Biological or legal factors are irrelevant to the purely arithmetic relationship described in the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In rare cases, the father's age difference might not be exactly 30 years due to rounding or reporting errors, but this is unlikely.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In rare cases, the father's age difference might not be exactly 30 years due to rounding or reporting errors, but this is unlikely.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Official records and birth certificates typically document exact age differences, making reporting errors highly improbable.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes standard biological parentage, but adoption or step-parenting could introduce non-standard age differences.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal adoption processes require precise documentation of age differences, reducing ambiguity in such cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Step-parenting relationships are often publicly known, and the age difference would still likely be close to 30 years in most cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in step-parenting, societal norms and typical age gaps at marriage make a 30-year difference plausible and common.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If the son's age is not precisely 15 (e.g., 15 years and 1 day), the father's age would not be exactly 45, but this is a minor deviation.",
+        "confidence": 0.5,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "If the son's age is not precisely 15 (e.g., 15 years and 1 day), the father's age would not be exactly 45, but this is a minor deviation.",
+          "confidence": 0.5,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies exact ages (15 and 45), so even a minor deviation invalidates the precise relationship stated.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In practical terms, rounding ages to the nearest whole number is standard, so the deviation is negligible for most purposes.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The father-son age difference is a fixed 30 years, so the exact ages are irrelevant as long as the difference is maintained.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is about the relationship, not the exact ages, so the deviation does not affect the core argument.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

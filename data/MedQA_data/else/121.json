@@ -1,0 +1,314 @@
+{
+  "claim": "A 46-year-old anesthesiologist is found placing several syringes of amobarbital in his backpack prior to leaving the hospital. When confronted, the anesthesiologist admits that he began abusing the medication the previous year, after his divorce was finalized. He has been using it on a daily basis since then, and his most recent usage was 8 hours ago. Which of the following is the most life-threatening complication of amobarbital withdrawal? : Internal bleeding",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Amobarbital withdrawal can lead to seizures, which are life-threatening due to the risk of status epilepticus and subsequent brain damage or death.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Amobarbital withdrawal can lead to seizures, which are life-threatening due to the risk of status epilepticus and subsequent brain damage or death.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Seizures are not the most life-threatening complication; respiratory depression during withdrawal can lead to fatal hypoxia.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cardiovascular collapse is more immediately life-threatening than seizures during barbiturate withdrawal.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Respiratory depression is more common during acute intoxication rather than withdrawal, making seizures a greater withdrawal risk.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cardiovascular instability in withdrawal is typically secondary to autonomic hyperactivity, which is less directly fatal than status epilepticus.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if respiratory depression is less common in withdrawal, its occurrence would still be more rapidly fatal than seizures without intervention.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Severe autonomic instability during amobarbital withdrawal, including hyperthermia and cardiovascular collapse, poses a significant life-threatening risk.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Severe autonomic instability during amobarbital withdrawal, including hyperthermia and cardiovascular collapse, poses a significant life-threatening risk.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Internal bleeding is more immediately life-threatening than autonomic instability because it can lead to rapid blood loss and hypovolemic shock.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Seizures during withdrawal are the most life-threatening complication as they can cause respiratory failure and brain damage.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Severe autonomic instability can lead to fatal arrhythmias, which are more acutely dangerous than internal bleeding.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Internal bleeding is rare in barbiturate withdrawal, whereas autonomic instability is a well-documented and common complication.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Seizures can be managed with medical intervention, whereas autonomic instability is harder to control and more likely to be fatal.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hypovolemic shock from internal bleeding can occur within minutes, making it more urgent than autonomic instability.",
+          "confidence": 0.77,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Autonomic instability is often accompanied by multi-organ failure, which has a higher mortality rate than isolated internal bleeding.",
+          "confidence": 0.81,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Delirium and psychosis induced by amobarbital withdrawal can result in self-harm or dangerous behaviors, increasing mortality risk.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Delirium and psychosis induced by amobarbital withdrawal can result in self-harm or dangerous behaviors, increasing mortality risk.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Delirium and psychosis are rare in amobarbital withdrawal; seizures and cardiovascular collapse are more common and life-threatening.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Self-harm due to withdrawal psychosis is less immediately life-threatening than respiratory depression from withdrawal-induced autonomic instability.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show delirium occurs in over 30% of barbiturate withdrawal cases, making it a significant risk factor for mortality.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Respiratory depression is more treatable with medical intervention than unpredictable psychosis-driven self-harm.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The 30% delirium statistic includes mild cases; severe life-threatening psychosis occurs in less than 5% of withdrawals.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Respiratory depression is a known acute effect of amobarbital use, but withdrawal primarily causes hyperexcitability rather than respiratory failure.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Respiratory depression is a known acute effect of amobarbital use, but withdrawal primarily causes hyperexcitability rather than respiratory failure.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Amobarbital withdrawal can lead to seizures, which are more life-threatening than hyperexcitability alone.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Severe autonomic instability during withdrawal can cause fatal cardiovascular collapse, outweighing the risk of hyperexcitability.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Seizures during withdrawal are rare and typically occur only in cases of extreme, prolonged abuse.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Autonomic instability is manageable with proper medical supervision, reducing its life-threatening potential.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even rare seizures can be fatal if untreated, making them a critical concern in withdrawal scenarios.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Internal bleeding is not a recognized complication of amobarbital withdrawal; the primary risks are neurological and cardiovascular.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Internal bleeding is not a recognized complication of amobarbital withdrawal; the primary risks are neurological and cardiovascular.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While neurological and cardiovascular risks are primary, severe dehydration from withdrawal could indirectly lead to gastrointestinal bleeding.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Amobarbital withdrawal can cause seizures, which may result in trauma-related internal bleeding in rare cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Severe dehydration is uncommon in amobarbital withdrawal as it primarily affects the CNS, not fluid balance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Trauma from seizures is external (e.g., fractures), not true internal bleeding like GI hemorrhage.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Prolonged vomiting during withdrawal could cause Mallory-Weiss tears, a form of internal bleeding.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "Mallory-Weiss tears are upper GI bleeds requiring significant retching, which is atypical in barbiturate withdrawal.",
+          "confidence": 0.75,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    }
+  }
+}

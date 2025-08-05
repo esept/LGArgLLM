@@ -1,0 +1,255 @@
+{
+  "claim": "Paris is the capital of France",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The French Constitution designates Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The French Constitution designates Paris as the capital of France.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The French Constitution has been amended in the past, and future amendments could theoretically change the capital.",
+          "confidence": 0.2,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Constitutional amendments regarding the capital are highly unlikely due to historical and cultural significance of Paris.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During WWII, the Vichy regime temporarily moved the de facto capital to Vichy, showing that the constitutional designation can be overridden in practice.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Vichy regime was an exceptional wartime circumstance not representative of normal constitutional order, and Paris remained the de jure capital throughout.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "All major government institutions, including the National Assembly and the Presidency, are located in Paris."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "All major government institutions, including the National Assembly and the Presidency, are located in Paris.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some government institutions, such as the Constitutional Council, have offices outside Paris.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Constitutional Council's primary functions and official seat remain in Paris, with only minor administrative offices elsewhere.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical capitals like Versailles temporarily held government functions, suggesting Paris's role isn't absolute.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Versailles was never formally designated as France's capital, and all constitutional documents recognize Paris as the sole capital.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical records consistently identify Paris as the capital since the Middle Ages."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical records consistently identify Paris as the capital since the Middle Ages.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "During the German occupation in WWII, Vichy was the de facto capital of France.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Vichy's status was not internationally recognized, and Paris remained the official capital despite occupation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Carolingian Empire had multiple capitals, including Aachen, challenging Paris's uninterrupted status.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Carolingian Empire predates the modern French state, and Paris's role as capital is undisputed in the post-medieval period.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "International organizations and diplomatic missions recognize Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "International organizations and diplomatic missions recognize Paris as the capital of France.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some unrecognized states or non-state entities may dispute Paris as the capital of France for political reasons.",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The international community overwhelmingly recognizes Paris as the capital, making such disputes irrelevant in practice.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Geopolitical maps and atlases universally label Paris as the capital of France."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Geopolitical maps and atlases universally label Paris as the capital of France.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some historical maps from the Vichy France period (1940-1944) labeled Vichy as the de facto capital, not Paris.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Vichy government was never internationally recognized as the legitimate government of France, and Paris remained the official capital even during occupation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some alternative geography movements challenge conventional capital designations as colonial constructs.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The overwhelming consensus in international law and diplomatic practice recognizes Paris as France's capital without controversy.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The administrative and political functions of the country are centralized in Paris."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The administrative and political functions of the country are centralized in Paris.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some administrative functions are decentralized to other cities like Lyon or Marseille.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Decentralized functions are minor compared to the core political and administrative roles still held by Paris.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

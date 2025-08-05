@@ -1,0 +1,182 @@
+{
+  "claim": "Consider the following background information: A 24-year-old G2P1 woman at 39 weeks\u2019 gestation presents to the emergency department complaining of painful contractions occurring every 10 minutes for the past 2 hours, consistent with latent labor. She says she has not experienced vaginal discharge, bleeding, or fluid leakage, and is currently taking no medications. On physical examination, her blood pressure is 110/70 mm Hg, heart rate is 86/min, and temperature is 37.6\u00b0C (99.7\u00b0F). She has had little prenatal care and uses condoms inconsistently. Her sexually transmitted infections status is unknown. As part of the patient\u2019s workup, she undergoes a series of rapid screening tests that result in the administration of zidovudine during delivery. The infant is also given zidovudine to reduce the risk of transmission. A confirmatory test is then performed in the mother to confirm the diagnosis of HIV.\n\nGiven the background information the following is corrrect: The confirmatory test determines the genotype of the virus.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Confirmatory tests for HIV often include genotyping to identify specific viral strains, which is important for treatment planning."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Confirmatory tests for HIV often include genotyping to identify specific viral strains, which is important for treatment planning.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Confirmatory tests for HIV primarily focus on detecting antibodies or viral RNA, not necessarily genotyping, unless specifically ordered.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Genotyping is typically reserved for cases where drug resistance is suspected, not as part of standard confirmatory testing.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "In resource-limited settings, confirmatory tests may not include genotyping due to cost constraints, focusing instead on basic detection.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Genotyping the virus can help determine drug resistance, which is clinically relevant for managing both the mother and infant's treatment."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Genotyping the virus can help determine drug resistance, which is clinically relevant for managing both the mother and infant's treatment.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Genotyping is not routinely performed as part of the confirmatory test for HIV diagnosis; standard confirmatory tests like Western blot or PCR detect the presence of the virus, not its genotype.",
+          "confidence": 0.82,
+          "attacks": {
+            "A2": 0.75
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While genotyping is not part of the initial confirmatory test, it may be ordered separately if drug resistance is suspected based on clinical context or treatment failure.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "In resource-limited settings, genotyping is often unavailable, and empirical treatment is initiated without resistance testing.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6,
+            "C1": 0.55
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The primary purpose of a confirmatory HIV test is to verify the presence of the virus, not necessarily to determine its genotype."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The primary purpose of a confirmatory HIV test is to verify the presence of the virus, not necessarily to determine its genotype.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Confirmatory HIV tests like Western Blot or PCR can sometimes provide additional information about viral genotype.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While genotype information may be incidentally available, clinical guidelines emphasize viral detection as the primary purpose of confirmatory testing.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Standard confirmatory tests like Western blot or PCR focus on detecting HIV antibodies or viral RNA, not genotyping."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Standard confirmatory tests like Western blot or PCR focus on detecting HIV antibodies or viral RNA, not genotyping.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some confirmatory tests, such as HIV-1 RNA PCR, can include genotyping to identify drug resistance mutations.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Genotyping is typically performed separately from initial confirmatory testing and requires specialized assays.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Genotyping is typically a separate, additional test performed after confirmation of HIV diagnosis, not part of the initial confirmatory process."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Genotyping is typically a separate, additional test performed after confirmation of HIV diagnosis, not part of the initial confirmatory process.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The confirmatory test for HIV often includes viral load testing, which can indirectly provide genotypic information.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Viral load testing measures RNA levels but does not provide specific genotypic data about resistance mutations or subtypes.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

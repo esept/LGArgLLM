@@ -1,0 +1,317 @@
+{
+  "claim": "Tampons are a good 24 hour solution for menstruation.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Tampons are designed to absorb menstrual flow effectively for several hours, making them suitable for daily use."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Tampons are designed to absorb menstrual flow effectively for several hours, making them suitable for daily use.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Leaving a tampon in for 24 hours increases the risk of Toxic Shock Syndrome (TSS), a potentially life-threatening condition.",
+          "confidence": 0.92,
+          "attacks": {
+            "A1": 0.95
+          }
+        },
+        {
+          "id": "C1",
+          "text": "TSS is extremely rare, and the risk is minimal if tampons are changed regularly within 24 hours.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Tampons can cause vaginal dryness and irritation if left in for extended periods, reducing comfort and effectiveness.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern tampons are made with materials that minimize dryness and irritation, even with prolonged use.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Not all individuals can wear tampons comfortably or safely due to anatomical differences or medical conditions.",
+          "confidence": 0.8,
+          "attacks": {
+            "A1": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Modern tampons come in various absorbency levels, allowing users to choose the right product for their flow throughout the day."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Modern tampons come in various absorbency levels, allowing users to choose the right product for their flow throughout the day.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Wearing a tampon for 24 hours increases the risk of Toxic Shock Syndrome (TSS), a rare but life-threatening condition.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.95
+          }
+        },
+        {
+          "id": "C1",
+          "text": "TSS cases are extremely rare, and following proper tampon usage guidelines significantly reduces the risk.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Many people experience discomfort or dryness when wearing tampons for extended periods, making them unsuitable for 24-hour use.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Using tampons with lower absorbency or combining them with panty liners can mitigate discomfort for extended use.",
+          "confidence": 0.65,
+          "attacks": {
+            "B2": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Not all menstruators can use tampons due to medical conditions, personal preferences, or anatomical differences.",
+          "confidence": 0.85,
+          "attacks": {
+            "A2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Leaving a tampon in for 24 hours increases the risk of toxic shock syndrome (TSS), a rare but serious bacterial infection."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Leaving a tampon in for 24 hours increases the risk of toxic shock syndrome (TSS), a rare but serious bacterial infection.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "TSS is extremely rare, and modern tampons are designed to minimize the risk even when left in for extended periods.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if rare, TSS is life-threatening, and the risk increases significantly after 8 hours of use, making 24-hour use unsafe.",
+          "confidence": 0.88,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Many people use tampons for 24 hours without issues, suggesting the risk is overstated for most individuals.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal safety does not negate medical guidelines, which consistently warn against prolonged tampon use.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Medical guidelines recommend changing tampons every 4-8 hours to maintain hygiene and reduce health risks."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Medical guidelines recommend changing tampons every 4-8 hours to maintain hygiene and reduce health risks.",
+          "cate": "S",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some modern tampons are designed with advanced materials that allow for longer wear times without increasing health risks.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with advanced materials, prolonged tampon use can still lead to bacterial growth and infections like TSS.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that the risk of TSS is extremely low with proper tampon use, even beyond 8 hours.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.65
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Proper tampon use includes frequent changes, as per medical guidelines, to minimize any risk of infection.",
+          "confidence": 0.88,
+          "attacks": {
+            "D1": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Tampons are discreet and comfortable, making them a practical choice for continuous use during daily activities."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Tampons are discreet and comfortable, making them a practical choice for continuous use during daily activities.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Prolonged use of tampons (over 8 hours) increases the risk of Toxic Shock Syndrome (TSS), a potentially life-threatening condition.",
+          "confidence": 0.85,
+          "attacks": {
+            "A5": 0.9
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Modern tampons are made with safer materials and lower TSS risk, making extended use less dangerous than in the past.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Tampons can cause vaginal dryness and discomfort when worn for extended periods, reducing comfort.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Using tampons with appropriate absorbency levels and changing them regularly can mitigate dryness and discomfort.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Many people find menstrual cups or period underwear more comfortable and safer for 24-hour use compared to tampons.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "Prolonged use of tampons can cause vaginal dryness and irritation due to continuous absorption of natural moisture."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Prolonged use of tampons can cause vaginal dryness and irritation due to continuous absorption of natural moisture.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Tampons are designed with materials that minimize moisture absorption, reducing the risk of dryness and irritation.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with advanced materials, prolonged use beyond recommended durations still poses a risk of moisture imbalance.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Many users report no issues with 24-hour tampon use, indicating individual variability in sensitivity.",
+          "confidence": 0.65,
+          "attacks": {
+            "A6": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal reports lack scientific rigor; clinical studies show measurable moisture loss in prolonged use.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.82
+          }
+        }
+      ]
+    }
+  }
+}

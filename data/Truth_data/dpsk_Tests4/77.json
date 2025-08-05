@@ -1,0 +1,193 @@
+{
+  "claim": "The trails left in the sky by aircraft are water-based.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Aircraft engine exhaust contains water vapor as a byproduct of fuel combustion, which can condense into visible trails under certain atmospheric conditions."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Aircraft engine exhaust contains water vapor as a byproduct of fuel combustion, which can condense into visible trails under certain atmospheric conditions.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some aircraft trails contain persistent chemical compounds, not just water vapor, as evidenced by atmospheric sampling studies.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The persistence and spread of certain trails contradict pure water condensation behavior, suggesting additional particulate matter.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Military aircraft have been documented releasing non-water-based materials for operational purposes, unrelated to combustion byproducts.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard commercial aviation fuel combustion does not produce the chemical signatures found in some anomalous trail samples.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The trails formed behind aircraft are primarily composed of ice crystals formed from the freezing of water vapor in the exhaust at high altitudes."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The trails formed behind aircraft are primarily composed of ice crystals formed from the freezing of water vapor in the exhaust at high altitudes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some aircraft trails contain persistent chemical compounds, suggesting they are not purely water-based.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The presence of chemical compounds in aircraft trails is negligible compared to the overwhelming majority of water vapor and ice crystals.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In rare cases, aircraft trails can contain pollutants or byproducts from incomplete fuel combustion.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern aircraft engines are highly efficient and minimize incomplete combustion, making such pollutants extremely rare.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific studies confirm that contrails (condensation trails) are formed when hot, humid exhaust from aircraft engines mixes with cold, low-pressure air in the upper atmosphere."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific studies confirm that contrails (condensation trails) are formed when hot, humid exhaust from aircraft engines mixes with cold, low-pressure air in the upper atmosphere.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some contrails persist and spread, forming cirrus-like clouds, which suggests they contain more than just water vapor.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Persistent contrails are still primarily composed of ice crystals formed from water vapor, and their spread is due to atmospheric conditions, not additional substances.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain conspiracy theories claim contrails contain chemicals for geoengineering, contradicting the water-based explanation.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "There is no credible scientific evidence supporting the claim that contrails contain chemicals for geoengineering.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Meteorological data and atmospheric physics support that the trails are water-based, as they dissipate or persist based on humidity and temperature conditions aloft."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Meteorological data and atmospheric physics support that the trails are water-based, as they dissipate or persist based on humidity and temperature conditions aloft.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some trails contain chemical compounds not typically found in water vapor, such as barium or aluminum, which suggests they are not purely water-based.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The presence of trace chemicals can be attributed to normal engine emissions or atmospheric contaminants, not deliberate spraying.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Persistent trails sometimes spread into artificial-looking cloud formations, which is inconsistent with natural water vapor behavior.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Atmospheric conditions like supersaturation can cause water vapor trails to spread unusually, mimicking artificial patterns.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "claim": "Schindler's List is the top film on AFI's list of 100 greatest American movies released after 1980.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Schindler's List is ranked #8 on the AFI's 100 Years...100 Movies (10th Anniversary Edition) list, which includes films released up to 2007."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Schindler's List is ranked #8 on the AFI's 100 Years...100 Movies (10th Anniversary Edition) list, which includes films released up to 2007.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The AFI's 10th Anniversary Edition list includes films from all of cinema history, not just those released after 1980, so its ranking does not directly address the claim about post-1980 films.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Schindler's List is the highest-ranked film released after 1980 on the AFI's 10th Anniversary Edition list, as the seven films ranked above it were all released before 1980.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The AFI's 100 Years...100 Movies (10th Anniversary Edition) list ranks Citizen Kane as #1, not Schindler's List."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The AFI's 100 Years...100 Movies (10th Anniversary Edition) list ranks Citizen Kane as #1, not Schindler's List.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'released after 1980,' while Citizen Kane was released in 1941 and thus does not qualify for this ranking.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Schindler's List was released in 1993 and is ranked #8 on AFI's 2007 list, but no post-1980 film is ranked higher.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Schindler's List is the highest-ranked film released after 1980 on the AFI's 100 Years...100 Movies (10th Anniversary Edition) list."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Schindler's List is the highest-ranked film released after 1980 on the AFI's 100 Years...100 Movies (10th Anniversary Edition) list.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The AFI's 10th Anniversary Edition list was published in 2007, and newer editions (e.g., 2017) may have updated rankings that supersede this placement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The AFI has not released an updated '100 Years...100 Movies' list since 2007, making the 10th Anniversary Edition the most current authoritative ranking.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim specifies 'greatest American movies,' but Schindler's List is a Holocaust drama primarily set in Poland, raising questions about its classification as an 'American' film.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Schindler's List was produced by an American studio (Universal Pictures), directed by an American filmmaker (Steven Spielberg), and funded with American capital, qualifying it as an American film.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "No AFI list specifically ranks films released only after 1980, so the claim cannot be verified as true or false based on AFI's official rankings."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "No AFI list specifically ranks films released only after 1980, so the claim cannot be verified as true or false based on AFI's official rankings.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "AFI's 100 Years...100 Movies list includes films from all eras, and Schindler's List (1993) ranks highly in the 2007 updated version, suggesting it could be considered among the top post-1980 films.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'top film on AFI's list of 100 greatest American movies released after 1980,' which implies a hypothetical sub-ranking that does not exist in AFI's official publications.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without a dedicated post-1980 list, Schindler's List's high placement in the general AFI ranking supports its strong candidacy for the best post-1980 film by default.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

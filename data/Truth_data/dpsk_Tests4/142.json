@@ -1,0 +1,169 @@
+{
+  "claim": "Friedrich Hayek, a person from America, won a Nobel Prize for Economics.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Friedrich Hayek was born in Austria, not America, which contradicts the claim that he was a person from America."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Friedrich Hayek was born in Austria, not America, which contradicts the claim that he was a person from America.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek became a naturalized British citizen in 1938 and spent significant time in the UK and the US, which could justify describing him as 'from America' in a broader cultural sense.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "National identity is primarily determined by birthplace or legal citizenship, not cultural affiliation, making 'from America' incorrect for Hayek.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hayek held academic positions at the University of Chicago and other US institutions, reinforcing his strong ties to America despite his Austrian origin.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Friedrich Hayek did win the Nobel Prize in Economic Sciences in 1974, which supports part of the claim."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Friedrich Hayek did win the Nobel Prize in Economic Sciences in 1974, which supports part of the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Hayek was not American by birth, he spent significant time in the U.S. and influenced American economic thought, which may loosely associate him with America.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Hayek became a British citizen in 1938, further contradicting the claim that he was from America."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Hayek became a British citizen in 1938, further contradicting the claim that he was from America.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek was born in Austria and spent significant time in the US, which could still associate him with America culturally or intellectually.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Citizenship is a formal legal status, and Hayek's British citizenship definitively places him outside the category of being 'from America' in a legal sense.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might refer to Hayek's academic influence in America, not his nationality.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim explicitly states 'a person from America,' which refers to origin or nationality, not influence.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Hayek spent significant time in the United States, including teaching at the University of Chicago, but this does not make him 'from America' in the context of nationality or birthplace."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Hayek spent significant time in the United States, including teaching at the University of Chicago, but this does not make him 'from America' in the context of nationality or birthplace.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek was born in Austria and held Austrian citizenship, which defines his nationality as Austrian, not American.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hayek became a British citizen in 1938 and spent much of his career in the UK, further distancing him from being 'from America' in a national sense.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hayek's influence and academic contributions in the U.S., including his time at the University of Chicago, could be interpreted as making him culturally 'from America' in a broader sense.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cultural influence does not equate to nationality or birthplace, which are the primary criteria for being 'from' a country.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

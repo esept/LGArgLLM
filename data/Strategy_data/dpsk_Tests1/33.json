@@ -1,0 +1,193 @@
+{
+  "claim": "Bodies move during hanging.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Muscle spasms and involuntary movements occur due to the body's reflexive response to asphyxiation and spinal cord trauma."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Muscle spasms and involuntary movements occur due to the body's reflexive response to asphyxiation and spinal cord trauma.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some cases, death by hanging is instantaneous due to cervical spine fracture, leaving no time for reflexive movements.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with cervical spine fracture, residual nerve activity can still cause minor twitching or spasms post-trauma.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern forensic studies show that reflexive movements in hanging are often misinterpreted as signs of life by observers.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Misinterpretation does not negate the existence of the movements, only their diagnostic significance.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The force of the drop can cause the body to swing or rotate, especially if the rope is not perfectly still at the moment of suspension."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The force of the drop can cause the body to swing or rotate, especially if the rope is not perfectly still at the moment of suspension.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In controlled executions with minimal drop distance, the body may not swing significantly due to reduced momentum.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even minimal drops can introduce slight movements due to uneven tension in the rope or anatomical asymmetries in the body.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the rope is rigidly fixed and the drop is perfectly vertical, rotational movement is physically impossible.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Perfectly vertical drops are rare in practice due to environmental factors like wind or slight misalignment of the noose.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Convulsions may occur as the brain is deprived of oxygen, leading to uncontrolled limb movements."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Convulsions may occur as the brain is deprived of oxygen, leading to uncontrolled limb movements.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Convulsions are rare and not universally observed in all hangings, making this argument an exception rather than the norm.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if convulsions are rare, their occurrence is well-documented in medical literature, confirming that they do happen in some cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The movements during convulsions are not voluntary and thus do not constitute 'movement' in the conventional sense of the word.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim does not specify voluntary movement, and convulsions are still a form of bodily movement regardless of voluntariness.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The weight distribution and center of gravity of the body can shift during suspension, causing swaying or pendulum-like motion."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The weight distribution and center of gravity of the body can shift during suspension, causing swaying or pendulum-like motion.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the body is fully rigid and suspended in a perfectly balanced position, there will be no movement due to weight distribution shifts.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Perfect rigidity and balance are practically impossible in real-world scenarios, making movement likely in most cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "External forces such as wind or mechanical disturbances are usually required to initiate motion in a suspended body.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Internal factors like muscle relaxation or post-mortem changes can also cause shifts in weight distribution without external forces.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

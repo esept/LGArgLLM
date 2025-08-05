@@ -1,0 +1,232 @@
+{
+  "claim": "Consider the following background information: A 42-year-old man presents to his primary care physician for a follow-up visit. He has type 1 diabetes mellitus, for which he takes insulin. He complains of frequent episodes of waking up in the middle of his sleep. When he wakes up, he feels excessive sweating, hand tremors, and weakness. His morning blood glucose is high on repeated measurement.\n\nGiven the background information the following is corrrect: Reducing daily insulin dose is the optimal intervention for this patient condition.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Nocturnal hypoglycemia can cause symptoms like sweating, tremors, and weakness, which may lead to rebound hyperglycemia (Somogyi effect), suggesting the need to adjust insulin timing or type rather than reducing the dose."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Nocturnal hypoglycemia can cause symptoms like sweating, tremors, and weakness, which may lead to rebound hyperglycemia (Somogyi effect), suggesting the need to adjust insulin timing or type rather than reducing the dose.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's high morning blood glucose levels may indicate insufficient overnight insulin coverage, requiring an increased dose rather than adjustment of timing or type.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Continuous glucose monitoring (CGM) data could confirm whether nocturnal hypoglycemia is occurring, providing direct evidence for or against the Somogyi effect.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The symptoms described are nonspecific and could also be caused by other conditions like anxiety or sleep disorders, not necessarily nocturnal hypoglycemia.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "High morning blood glucose may indicate insufficient overnight insulin coverage, requiring an increase in basal insulin rather than a reduction."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "High morning blood glucose may indicate insufficient overnight insulin coverage, requiring an increase in basal insulin rather than a reduction.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (sweating, tremors, weakness) are classic signs of nocturnal hypoglycemia, which suggests his current insulin dose is too high, not too low.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Nocturnal hypoglycemia can trigger a rebound hyperglycemia (Somogyi effect), which would explain both the nighttime symptoms and high morning glucose readings.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Somogyi phenomenon is relatively rare compared to dawn phenomenon (natural morning glucose rise), making rebound hyperglycemia a less likely explanation.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Continuous glucose monitoring data would be required to confirm whether hypoglycemia is actually occurring overnight before adjusting insulin.",
+          "confidence": 0.88,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Frequent nighttime hypoglycemia episodes suggest that the current insulin regimen is not properly matched to the patient's physiological needs, necessitating a review of dosing schedule."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Frequent nighttime hypoglycemia episodes suggest that the current insulin regimen is not properly matched to the patient's physiological needs, necessitating a review of dosing schedule.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's high morning blood glucose levels indicate that reducing insulin dose could worsen hyperglycemia, contradicting the need for dose reduction.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Nocturnal hypoglycemia may be due to incorrect timing of insulin rather than excessive dose, requiring adjustment of administration schedule instead of dose reduction.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Symptoms like sweating and tremors could be caused by conditions unrelated to hypoglycemia, such as anxiety or sleep disorders, making insulin adjustment premature.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The correlation between nighttime symptoms and high morning glucose strongly suggests hypoglycemia followed by rebound hyperglycemia (Somogyi effect), supporting insulin regimen review.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's symptoms are consistent with hypoglycemia followed by hyperglycemia, indicating that the insulin dose should be redistributed rather than reduced overall."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's symptoms are consistent with hypoglycemia followed by hyperglycemia, indicating that the insulin dose should be redistributed rather than reduced overall.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Reducing the daily insulin dose may still be necessary if the patient's overall insulin sensitivity has improved, regardless of redistribution needs.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Insulin sensitivity improvements are rare in type 1 diabetes and unlikely to justify a dose reduction without clear evidence.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's high morning glucose could be due to the Somogyi effect, where nighttime hypoglycemia triggers rebound hyperglycemia, requiring dose adjustment timing rather than redistribution.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Somogyi effect is less common than dawn phenomenon (morning hyperglycemia without preceding hypoglycemia), which would require increased overnight insulin.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Optimal management of type 1 diabetes involves balancing insulin to avoid both hypoglycemia and hyperglycemia, which may require adjusting the timing or type of insulin rather than simply reducing the dose."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Optimal management of type 1 diabetes involves balancing insulin to avoid both hypoglycemia and hyperglycemia, which may require adjusting the timing or type of insulin rather than simply reducing the dose.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (sweating, tremors, weakness) and high morning glucose suggest nocturnal hypoglycemia followed by rebound hyperglycemia (Somogyi phenomenon), which is best addressed by reducing the evening insulin dose.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Somogyi phenomenon is relatively rare compared to dawn phenomenon (morning hyperglycemia without nocturnal hypoglycemia), making dose reduction less likely to be the optimal first intervention.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Continuous glucose monitoring data would be required to confirm nocturnal hypoglycemia before recommending dose reduction, as symptoms alone are not diagnostic.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Empirical adjustment of insulin regimen based on classic symptom patterns is often necessary in primary care where CGM is not immediately available.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

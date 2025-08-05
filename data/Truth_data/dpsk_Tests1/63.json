@@ -1,0 +1,315 @@
+{
+  "claim": "Cats should only drink water.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Cats are obligate carnivores and their bodies are adapted to obtain most of their hydration from prey, making water their primary and safest source of hydration.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cats are obligate carnivores and their bodies are adapted to obtain most of their hydration from prey, making water their primary and safest source of hydration.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cats may prefer or require alternative hydration sources, such as broth or wet food, especially if they are reluctant to drink plain water.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wild cats often consume blood and other fluids from prey, which can supplement their hydration needs beyond just water.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While alternative hydration sources exist, water remains the most universally safe and accessible option for all cats, regardless of individual preferences.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Domestic cats do not have the same access to prey as wild cats, making water a more reliable and necessary source of hydration.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Other liquids like milk can cause digestive issues such as diarrhea in many cats due to lactose intolerance.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Other liquids like milk can cause digestive issues such as diarrhea in many cats due to lactose intolerance.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cats are lactose tolerant and can digest milk without any issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are lactose-free milk alternatives specifically designed for cats that do not cause digestive issues.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lactose tolerance in cats is rare and not the norm, so milk should still be avoided for most cats.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lactose-free milk alternatives may still contain other ingredients that are not ideal for a cat's diet.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if some cats tolerate milk, it does not provide any essential nutrients that water does not already offer.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Water is essential for kidney function, and cats are prone to kidney diseases, making it critical to avoid unnecessary additives or substitutes.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Water is essential for kidney function, and cats are prone to kidney diseases, making it critical to avoid unnecessary additives or substitutes.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cats may require electrolyte solutions or specialized fluids in certain medical conditions, not just plain water.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cats can derive hydration from wet food, which may reduce their need for plain water alone.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Electrolyte solutions are only necessary under veterinary supervision and do not replace the need for regular water intake.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wet food alone may not provide sufficient hydration for all cats, especially those with kidney issues.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Flavored or sweetened beverages can lead to obesity or diabetes in cats, while water has no such risks.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Flavored or sweetened beverages can lead to obesity or diabetes in cats, while water has no such risks.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some flavored beverages are specially formulated for cats and do not contain harmful ingredients.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cats can safely consume small amounts of certain non-water beverages without health risks.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even specially formulated beverages can still contribute to caloric intake and potential weight gain.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regular consumption of non-water beverages can disrupt a cat's natural hydration habits.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Cats have a low thirst drive and may not compensate for extra calories by drinking less water.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some specially formulated cat milk substitutes are safe in moderation and can provide additional nutrients, contradicting the claim that cats should only drink water.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some specially formulated cat milk substitutes are safe in moderation and can provide additional nutrients, contradicting the claim that cats should only drink water.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Most cat milk substitutes contain lactose, which many cats are intolerant to, making them potentially harmful.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Water is sufficient for hydration, and unnecessary additives in milk substitutes can lead to obesity or digestive issues.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lactose-free cat milk substitutes are available, addressing the intolerance issue while still providing nutrients.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Properly formulated milk substitutes are designed to avoid obesity and digestive problems, making them safe in moderation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "In rare cases, veterinarians may recommend electrolyte solutions for dehydrated cats, which are not plain water.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "In rare cases, veterinarians may recommend electrolyte solutions for dehydrated cats, which are not plain water.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Electrolyte solutions are still mostly water and serve the same primary function of hydration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Veterinary recommendations for electrolyte solutions are extremely rare and not a general rule for cat hydration.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in rare cases, electrolyte solutions are only temporary and water remains the standard for long-term hydration.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The rarity of such recommendations does not invalidate the general principle that cats should primarily drink water.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

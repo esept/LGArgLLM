@@ -1,0 +1,395 @@
+{
+  "claim": "If you have a nosebleed, lean forward and breathe through your mouth.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Leaning forward prevents blood from flowing down the throat, reducing the risk of choking or nausea.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Leaning forward prevents blood from flowing down the throat, reducing the risk of choking or nausea.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Leaning forward may cause blood to drip onto clothing or surfaces, creating a mess and potential hygiene issues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Leaning forward can increase blood flow due to gravity, potentially prolonging the nosebleed.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some individuals may find it uncomfortable or difficult to maintain a forward-leaning position for an extended period.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Using a tissue or cloth to catch the blood can mitigate the mess caused by leaning forward.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increased blood flow from leaning forward is minimal compared to the risk of choking from blood flowing down the throat.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The discomfort of leaning forward is temporary and outweighed by the benefits of preventing choking.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In situations where tissues or cloths are not readily available, leaning forward still poses a significant mess risk.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Breathing through the mouth avoids further irritation to the nasal passages, which could prolong the bleeding.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Breathing through the mouth avoids further irritation to the nasal passages, which could prolong the bleeding.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Breathing through the mouth can cause dryness in the throat and mouth, leading to discomfort or coughing, which may worsen the nosebleed.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Leaning forward may increase blood pressure in the head, potentially exacerbating the nosebleed instead of stopping it.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dryness from mouth breathing can be mitigated by sipping water, thus reducing the risk of coughing or discomfort.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increase in blood pressure from leaning forward is minimal and unlikely to significantly affect the nosebleed.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Sipping water during a nosebleed may cause choking or interfere with the natural clotting process.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical professionals commonly recommend this position to manage nosebleeds effectively.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical professionals commonly recommend this position to manage nosebleeds effectively.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Leaning forward can increase blood flow to the head, potentially worsening the nosebleed.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest that tilting the head slightly back is more effective in stopping nosebleeds by reducing blood flow.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Breathing through the mouth may cause dryness and irritation, making the nasal passages more prone to future nosebleeds.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Increased blood flow from leaning forward is minimal and unlikely to significantly worsen a nosebleed.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Tilting the head back can lead to blood flowing down the throat, which may cause choking or nausea.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The short-term mouth breathing during a nosebleed is unlikely to cause long-term dryness or irritation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even minimal increased blood flow can prolong the duration of a nosebleed, making it less effective as a first-aid measure.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Swallowing small amounts of blood is generally harmless and preferable to the risks of leaning forward.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Leaning backward could cause blood to enter the respiratory tract, leading to potential complications.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Leaning backward could cause blood to enter the respiratory tract, leading to potential complications.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Leaning forward may increase blood flow due to gravity, worsening the nosebleed.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Breathing through the mouth while leaning forward can dry out the throat and cause discomfort.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Leaning forward only slightly does not significantly increase blood flow but still prevents blood from entering the respiratory tract.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The discomfort from a dry throat is minor compared to the risk of blood entering the respiratory tract.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even slight leaning forward can cause dizziness or fainting in some individuals, which is a greater risk.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Leaning forward may increase blood pressure in the nasal area, potentially worsening the bleeding.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Leaning forward may increase blood pressure in the nasal area, potentially worsening the bleeding.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Leaning forward helps prevent blood from flowing down the throat, reducing the risk of choking or nausea.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Clinical guidelines from medical associations recommend leaning forward to manage nosebleeds effectively.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The increase in nasal blood pressure from leaning forward is negligible compared to the benefits of preventing aspiration.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Not all medical guidelines are universally applicable, and individual conditions may warrant different approaches.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that the risk of aspiration from nosebleeds is extremely low, reducing the necessity of leaning forward.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Breathing through the mouth might dry out the nasal membranes, making them more prone to future nosebleeds.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Breathing through the mouth might dry out the nasal membranes, making them more prone to future nosebleeds.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breathing through the mouth is only temporary and unlikely to cause significant drying of nasal membranes in such a short time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The primary goal is to stop the current nosebleed, and drying is a secondary concern that can be addressed afterward.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even temporary drying can irritate sensitive nasal membranes, increasing the risk of future nosebleeds.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Ignoring secondary concerns like drying can lead to a cycle of recurrent nosebleeds, making the initial advice counterproductive.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Most people's nasal membranes are resilient enough to handle short-term drying without long-term consequences.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Proper post-nosebleed care, such as using saline spray, can easily mitigate any drying effects.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

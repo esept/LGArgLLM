@@ -1,0 +1,338 @@
+{
+  "claim": "A 34-year-old woman presents to her primary care physician complaining of weakness and rash for the past 2 months. She says her symptoms had a gradual onset at first, but over the past 2 weeks she has grown more concerned as she now has difficulty going up and down the stairs in her apartment. Her rash is nonpruritic and confined to her knuckles. She denies fever, chills, and changes in bowel habits, cough, or shortness of breath. Up until the onset of her symptoms she had been an avid hiker in upstate New York. Temperature is 98.0\u00b0F (36.7\u00b0C) blood pressure is 110/72 mmHg, pulse is 88/min, and respirations are 20/min. Physical examination demonstrates 4-/5 strength in the proximal lower extremities. The patient's cutaneous findings are demonstrated in figure A. Laboratory studies will most likely demonstrate the following in this patient? : Anti-histone antibodies",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's presentation with proximal muscle weakness, a nonpruritic rash over the knuckles (Gottron's papules), and no systemic symptoms is highly suggestive of dermatomyositis, which is not typically associated with anti-histone antibodies.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's presentation with proximal muscle weakness, a nonpruritic rash over the knuckles (Gottron's papules), and no systemic symptoms is highly suggestive of dermatomyositis, which is not typically associated with anti-histone antibodies.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Anti-histone antibodies are more commonly associated with drug-induced lupus, which can also present with muscle weakness and rash, potentially mimicking dermatomyositis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of systemic symptoms does not definitively rule out other autoimmune conditions, as presentations can vary widely among individuals.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Drug-induced lupus is unlikely in this case as the patient has no history of medication use known to induce lupus, such as hydralazine or procainamide.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gottron's papules are pathognomonic for dermatomyositis and are not a feature of drug-induced lupus, strongly supporting the original diagnosis.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While presentations can vary, the combination of proximal muscle weakness and Gottron's papules is highly specific for dermatomyositis, making other diagnoses less likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without a history of typical medications, other less common drugs or environmental exposures could still potentially induce lupus-like symptoms.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Although Gottron's papules are characteristic of dermatomyositis, other connective tissue disorders can sometimes present with similar cutaneous findings.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Anti-histone antibodies are most commonly associated with drug-induced lupus, but the patient has no history of medication use that would suggest this diagnosis, nor does she have the typical systemic symptoms of lupus.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Anti-histone antibodies are most commonly associated with drug-induced lupus, but the patient has no history of medication use that would suggest this diagnosis, nor does she have the typical systemic symptoms of lupus.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's proximal muscle weakness and rash over the knuckles are highly suggestive of dermatomyositis, which is associated with anti-Mi-2 or anti-Jo-1 antibodies, not anti-histone antibodies.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of systemic symptoms does not completely rule out drug-induced lupus, as some cases may present with limited symptoms similar to this patient.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Anti-Mi-2 antibodies are highly specific for dermatomyositis and correlate with the classic cutaneous findings and muscle weakness described in this patient, making them a more likely laboratory finding.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Drug-induced lupus typically requires prolonged exposure to certain medications, and the patient's lack of such history significantly reduces the likelihood of anti-histone antibodies being relevant.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While anti-Mi-2 antibodies are specific, they are not present in all cases of dermatomyositis, and other myositis-specific antibodies could also explain the patient's symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's rash and proximal muscle weakness are classic findings for dermatomyositis, which is more likely to be associated with anti-Mi-2 or anti-Jo-1 antibodies rather than anti-histone antibodies.",
+        "confidence": 0.82,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's rash and proximal muscle weakness are classic findings for dermatomyositis, which is more likely to be associated with anti-Mi-2 or anti-Jo-1 antibodies rather than anti-histone antibodies.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Anti-histone antibodies are more commonly associated with drug-induced lupus rather than dermatomyositis, making them an unlikely finding in this patient.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be consistent with systemic lupus erythematosus (SLE), which can present with similar cutaneous findings and muscle weakness, and is associated with anti-histone antibodies.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Drug-induced lupus is unlikely in this patient as she has no history of medication use known to cause this condition, such as hydralazine or procainamide.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of other systemic symptoms such as fever, joint pain, or renal involvement makes SLE a less likely diagnosis compared to dermatomyositis.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some patients with drug-induced lupus may not have a clear medication history initially, and further detailed history is needed to rule out this possibility.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Early SLE can present with limited systemic involvement, and the absence of other symptoms does not completely rule out the possibility of SLE.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of systemic symptoms such as fever, joint pain, or photosensitivity makes lupus less likely, reducing the probability of anti-histone antibodies being present.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of systemic symptoms such as fever, joint pain, or photosensitivity makes lupus less likely, reducing the probability of anti-histone antibodies being present.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of proximal muscle weakness and a rash confined to the knuckles is highly suggestive of dermatomyositis, which can occur without systemic lupus erythematosus (SLE) features.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Anti-histone antibodies are not exclusive to SLE and can also be present in drug-induced lupus or other autoimmune conditions, so their absence does not rule out all possibilities.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dermatomyositis is more commonly associated with anti-Mi-2 or anti-Jo-1 antibodies, not anti-histone antibodies, making the initial argument about anti-histone antibodies less relevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Drug-induced lupus is unlikely in this patient as there is no history of medication use known to trigger it, such as hydralazine or procainamide.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if anti-Mi-2 or anti-Jo-1 antibodies are more common in dermatomyositis, the absence of anti-histone antibodies does not exclude overlap syndromes where multiple autoantibodies may coexist.",
+          "confidence": 0.77,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's outdoor activity history (hiking) could imply exposure to environmental triggers or medications not reported, leaving drug-induced lupus as a plausible consideration.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's symptoms and findings are more consistent with an inflammatory myopathy like dermatomyositis, which would likely show elevated muscle enzymes (CK, aldolase) rather than anti-histone antibodies.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's symptoms and findings are more consistent with an inflammatory myopathy like dermatomyositis, which would likely show elevated muscle enzymes (CK, aldolase) rather than anti-histone antibodies.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Anti-histone antibodies are highly specific for drug-induced lupus, which can also present with muscle weakness and rash, making it a plausible alternative diagnosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's proximal muscle weakness and cutaneous findings are classic for dermatomyositis, and anti-histone antibodies are not typically associated with this condition.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Drug-induced lupus is less likely in this patient as she has no history of medication use known to induce lupus, such as hydralazine or procainamide.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of systemic symptoms like fever or arthralgia further reduces the likelihood of drug-induced lupus, supporting dermatomyositis as the more likely diagnosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While dermatomyositis is a strong consideration, other conditions like polymyositis or inclusion body myositis could also present similarly and should be ruled out.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Polymyositis typically lacks the cutaneous findings seen in this patient, making it a less likely diagnosis compared to dermatomyositis.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Inclusion body myositis usually presents in older patients and has a more insidious onset, which is inconsistent with this patient's presentation.",
+          "confidence": 0.8,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

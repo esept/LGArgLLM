@@ -1,0 +1,307 @@
+{
+  "claim": "Donald Trump is German",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Donald Trump's paternal grandparents, Friedrich Trump and Elizabeth Christ Trump, were German immigrants, making him of German descent.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Donald Trump's paternal grandparents, Friedrich Trump and Elizabeth Christ Trump, were German immigrants, making him of German descent.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Being of German descent does not make someone German; nationality is determined by citizenship, not ancestry.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Donald Trump was born in the United States, which automatically grants him American citizenship, not German.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "German descent does not imply German nationality, as Germany does not automatically grant citizenship based on ancestry.",
+          "confidence": 0.88,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Germany's citizenship laws require at least one parent to be a German citizen at the time of birth, which was not the case for Trump.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1",
+            "B3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The U.S. Constitution's 14th Amendment guarantees citizenship to anyone born in the U.S., overriding claims based on ancestry.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Donald Trump was born in the United States, making him an American citizen by birth, not German.",
+        "confidence": 0.99,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Donald Trump was born in the United States, making him an American citizen by birth, not German.",
+          "confidence": 0.99,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Birthplace alone does not determine nationality; dual citizenship or ancestry could still make Trump German.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical records show Trump's ancestors were German, which could imply cultural or legal ties to Germany.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dual citizenship requires formal recognition by both countries, and there is no evidence Trump holds German citizenship.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Ancestry does not confer nationality; Trump has never claimed or legally asserted German citizenship.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Germany's citizenship laws do not automatically grant citizenship based on distant ancestry without formal application.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "German citizenship is not automatically inherited beyond one generation born outside Germany, so Trump does not hold German citizenship.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "German citizenship is not automatically inherited beyond one generation born outside Germany, so Trump does not hold German citizenship.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Trump's grandfather, Friedrich Trump, was a German citizen, and German law at the time allowed citizenship to pass to descendants regardless of birthplace.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical German citizenship laws were complex and often required active steps to retain citizenship, which Trump's ancestors may not have taken.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if Trump had a claim to German citizenship, he never applied for or asserted it, making his German identity legally irrelevant.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "German law does not require active assertion of citizenship if it is inherited automatically under applicable laws.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Trump's public identification as American and lack of engagement with German institutions undermine any claim to German identity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "National identity is not solely determined by legal citizenship but also by cultural and personal affiliation, which Trump has never expressed toward Germany.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Trump has never identified as German nor held any official ties to Germany beyond ancestry.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Trump has never identified as German nor held any official ties to Germany beyond ancestry.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Ancestry alone can confer cultural or legal ties, such as citizenship by descent, which Trump could theoretically claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "German citizenship by descent requires formal application and proof, which Trump has never pursued.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public identification is not the sole determinant of nationality; legal and familial ties matter more.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Trump's grandfather was German, but his father was born in the U.S., making Trump a natural-born American citizen with no automatic German legal status.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Historical records show Trump's family actively distanced themselves from German identity post-WWI, undermining ancestral ties.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Cultural and national identity is more than ancestry; Trump's upbringing and public persona are distinctly American, not German.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Cultural and national identity is more than ancestry; Trump's upbringing and public persona are distinctly American, not German.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Ancestry plays a significant role in national identity, and Trump's German heritage is well-documented.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many Americans with immigrant ancestry still identify strongly with their heritage, which can influence their national identity.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Trump's public statements and policies often reflect a distinctly American nationalist perspective, not a German one.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Nationalist perspectives are not exclusive to any one nationality and can be adopted by individuals of any heritage.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cultural identity is fluid and can be influenced by multiple factors, including ancestry, regardless of upbringing.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While cultural identity is fluid, upbringing and environment are primary determinants, overshadowing ancestry in most cases.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

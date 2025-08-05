@@ -1,0 +1,229 @@
+{
+  "claim": "Someone born in the year 2000 is 20 years old in 2010",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Basic arithmetic shows that someone born in 2000 would be 10 years old in 2010 (2010 - 2000 = 10)."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Basic arithmetic shows that someone born in 2000 would be 10 years old in 2010 (2010 - 2000 = 10).",
+          "cate": "S",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim might be interpreted as a typographical error, intending to say '2020' instead of '2010'.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.4
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if it's a typo, the original claim is factually incorrect as stated, and the arithmetic in A1 remains valid.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Age calculation is a straightforward subtraction of birth year from the current year, making the claim mathematically incorrect."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Age calculation is a straightforward subtraction of birth year from the current year, making the claim mathematically incorrect.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Age is calculated based on the actual date of birth, not just the year, so someone born in December 2000 would still be 9 years old for most of 2010.",
+          "confidence": 0.85,
+          "attacks": {
+            "A2": 0.9
+          }
+        },
+        {
+          "id": "C1",
+          "text": "In many cultures, age is counted differently, such as the East Asian age reckoning where a person is 1 year old at birth and gains a year at each Lunar New Year.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The claim is clearly about the Gregorian calendar and standard international age calculation, making cultural differences irrelevant in this context.",
+          "confidence": 0.8,
+          "attacks": {
+            "C1": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The claim contradicts universally accepted methods of calculating age, which rely on the difference between the current year and the birth year."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim contradicts universally accepted methods of calculating age, which rely on the difference between the current year and the birth year.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim might be interpreted as a typo, where '2010' was intended to be '2020'.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.5
+          }
+        },
+        {
+          "id": "B2",
+          "text": "In some cultures, age is calculated differently, such as counting the birth year as age 1.",
+          "confidence": 0.4,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with cultural differences, the claim's assertion of being 20 years old in 2010 is still mathematically incorrect.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "In 2010, a person born in 2000 would not have reached the age of 20, as that would require the year to be 2020."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In 2010, a person born in 2000 would not have reached the age of 20, as that would require the year to be 2020.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim is incorrect because basic arithmetic shows that 2010 minus 2000 equals 10, not 20.",
+          "confidence": 0.97,
+          "attacks": {
+            "A4": 0.98
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The original claim might be a typographical error, intending to say '10 years old' instead of '20 years old'.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even if it was a typo, the argument A4 correctly points out the factual error in the claim as stated.",
+          "confidence": 0.75,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Legal and social systems worldwide use the same age calculation method, confirming the claim is false."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Legal and social systems worldwide use the same age calculation method, confirming the claim is false.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Legal and social systems vary by country, and some calculate age differently (e.g., East Asian age reckoning).",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even with different age reckoning systems, the claim is still false because no system would calculate a 20-year-old in 2010 for someone born in 2000.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "Historical records and demographic data consistently show that individuals born in 2000 were 10 years old in 2010."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical records and demographic data consistently show that individuals born in 2000 were 10 years old in 2010.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim incorrectly states that someone born in 2000 is 20 years old in 2010, which contradicts basic arithmetic.",
+          "confidence": 0.98,
+          "attacks": {
+            "A6": 0.0
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The calculation of age is based on the Gregorian calendar, which is universally accepted for age calculation.",
+          "confidence": 0.97,
+          "attacks": {
+            "A6": 0.0
+          }
+        },
+        {
+          "id": "B3",
+          "text": "In some cultures, age is calculated differently, such as counting the time in the womb as the first year, but this is not the standard method.",
+          "confidence": 0.65,
+          "attacks": {
+            "A6": 0.3
+          }
+        }
+      ]
+    }
+  }
+}

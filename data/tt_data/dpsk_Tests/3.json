@@ -1,0 +1,230 @@
+{
+  "claim": "The heart is located in the right side of the chest",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Anatomical studies and medical textbooks consistently describe the heart as being located in the left side of the chest, behind the sternum and between the lungs."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Anatomical studies and medical textbooks consistently describe the heart as being located in the left side of the chest, behind the sternum and between the lungs.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of situs inversus, a congenital condition, the heart is located on the right side of the chest.",
+          "confidence": 0.45,
+          "attacks": {
+            "A1": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Situs inversus affects only about 1 in 10,000 people, making it statistically insignificant for general anatomical descriptions.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Medical imaging techniques such as X-rays, CT scans, and MRIs clearly show the heart's position in the left thoracic cavity, disproving the claim of right-side placement."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Medical imaging techniques such as X-rays, CT scans, and MRIs clearly show the heart's position in the left thoracic cavity, disproving the claim of right-side placement.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of situs inversus, a congenital condition, the heart is located on the right side of the chest.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Situs inversus affects only about 1 in 10,000 people, making it statistically insignificant for general claims about heart position.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Medical imaging techniques are standardized for normal anatomy, and their interpretation assumes typical left-sided heart placement unless otherwise noted.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The apex of the heart, which is its lowest and most pointed part, is directed downward, forward, and to the left, further confirming its left-sided orientation."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The apex of the heart, which is its lowest and most pointed part, is directed downward, forward, and to the left, further confirming its left-sided orientation.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of dextrocardia, the heart is mirrored and located on the right side of the chest.",
+          "confidence": 0.15,
+          "attacks": {
+            "A3": 0.1
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The heart's position can vary slightly depending on individual anatomy and body posture.",
+          "confidence": 0.3,
+          "attacks": {
+            "A3": 0.2
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The base of the heart is actually more centered and extends slightly to the right side of the chest.",
+          "confidence": 0.5,
+          "attacks": {
+            "A3": 0.4
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is an extremely rare condition, affecting less than 1% of the population.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Standard anatomical textbooks and medical imaging overwhelmingly confirm the left-sided orientation of the heart in the vast majority of cases.",
+          "confidence": 0.95,
+          "attacks": {
+            "B2": 0.9,
+            "B3": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Surgical procedures and anatomical dissections universally rely on the heart's left-side position, with no documented cases of it being located on the right side in standard human anatomy."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Surgical procedures and anatomical dissections universally rely on the heart's left-side position, with no documented cases of it being located on the right side in standard human anatomy.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some rare congenital conditions, such as dextrocardia, result in the heart being located on the right side of the chest.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare, occurring in approximately 1 in 12,000 people, and does not represent standard human anatomy.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Medical imaging studies occasionally report incidental findings of right-sided hearts in otherwise healthy individuals.",
+          "confidence": 0.6,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "These incidental findings are usually errors in image interpretation or labeling rather than actual anatomical variations.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The heart's left-sided placement is a fundamental aspect of human biology taught in schools and medical institutions worldwide, with no credible alternative in mainstream science."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The heart's left-sided placement is a fundamental aspect of human biology taught in schools and medical institutions worldwide, with no credible alternative in mainstream science.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals have a rare congenital condition called dextrocardia, where the heart is located on the right side of the chest.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia affects less than 1% of the population and is not representative of normal human anatomy.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Medical imaging studies consistently show the heart's left-sided position in the vast majority of cases.",
+          "confidence": 0.9,
+          "attacks": {
+            "A5": 0.2
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Anatomical diagrams in medical textbooks universally depict the heart on the left side.",
+          "confidence": 0.93,
+          "attacks": {
+            "A5": 0.15
+          }
+        }
+      ]
+    }
+  }
+}

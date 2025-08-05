@@ -1,0 +1,264 @@
+{
+  "claim": "A balanced diet is necessary for people to stay healthy, according to any metric.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A balanced diet provides all essential nutrients, such as vitamins, minerals, proteins, and carbohydrates, which are required for proper bodily function and disease prevention."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A balanced diet provides all essential nutrients, such as vitamins, minerals, proteins, and carbohydrates, which are required for proper bodily function and disease prevention.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals with specific genetic conditions or metabolic disorders cannot process certain nutrients properly, making a standard balanced diet insufficient or harmful for them.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Medical supervision and tailored dietary plans can adjust a balanced diet to accommodate genetic or metabolic disorders, ensuring essential nutrient needs are still met.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In regions with food scarcity or limited access to diverse foods, maintaining a balanced diet is practically impossible, yet people may still remain relatively healthy through other means.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in food-scarce regions, prioritizing available nutrient-dense foods can approximate a balanced diet, supporting basic health needs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some people thrive on highly specialized diets (e.g., ketogenic, carnivore) that exclude entire food groups, challenging the necessity of a traditionally balanced diet.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Specialized diets often require careful planning to avoid deficiencies, and long-term health impacts are still under study, whereas balanced diets are universally recognized as sustainable.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Scientific studies consistently show that diets lacking in variety or key nutrients lead to deficiencies, increased risk of chronic diseases, and impaired immune function."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Scientific studies consistently show that diets lacking in variety or key nutrients lead to deficiencies, increased risk of chronic diseases, and impaired immune function.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some populations, like the Inuit, historically thrived on very limited diets without suffering from deficiencies or chronic diseases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern research shows that traditional Inuit diets included organ meats and raw fish, which provided essential nutrients missing in other restricted diets.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Nutrient supplements can compensate for dietary imbalances, making a 'balanced diet' unnecessary for health.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Supplements often lack the bioavailability and synergistic effects of whole foods, and long-term reliance may still result in health risks.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Nutritional guidelines from health organizations worldwide, such as the WHO and USDA, emphasize the importance of a balanced diet for maintaining optimal health and longevity."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Nutritional guidelines from health organizations worldwide, such as the WHO and USDA, emphasize the importance of a balanced diet for maintaining optimal health and longevity.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some populations, such as the Inuit, have historically thrived on diets that are not traditionally 'balanced' by modern standards, relying heavily on animal fats and proteins.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern nutritional science recognizes that the Inuit diet is adapted to their specific environmental conditions and does not contradict the general principle that a balanced diet is optimal for most populations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Individuals with certain metabolic disorders, such as PKU, require highly specialized diets that deviate significantly from standard balanced diet recommendations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These specialized diets are exceptions that prove the rule, as they are medically prescribed to address specific conditions and do not invalidate the general importance of a balanced diet for the broader population.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "A balanced diet supports metabolic processes, including energy production and tissue repair, which are fundamental to overall health and well-being."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A balanced diet supports metabolic processes, including energy production and tissue repair, which are fundamental to overall health and well-being.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals with specific metabolic disorders (e.g., PKU) cannot process certain nutrients found in a 'balanced diet' and require highly specialized diets to stay healthy.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even for individuals with metabolic disorders, the principle of a balanced diet still applies\u2014it is simply adjusted to exclude harmful components while maintaining nutritional adequacy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain populations (e.g., traditional Inuit communities) historically thrived on highly imbalanced diets (e.g., almost entirely meat-based) without adverse health effects.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such diets were adapted to extreme environments and are not generalizable; modern health metrics (e.g., longevity, chronic disease rates) show benefits of dietary diversity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Clinical evidence demonstrates that unbalanced diets, such as those excessively high in processed foods or lacking in micronutrients, correlate with higher rates of obesity, diabetes, and cardiovascular diseases."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Clinical evidence demonstrates that unbalanced diets, such as those excessively high in processed foods or lacking in micronutrients, correlate with higher rates of obesity, diabetes, and cardiovascular diseases.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some populations, like the Inuit, historically thrived on highly specialized diets (e.g., almost exclusively meat-based) without widespread metabolic diseases, contradicting the universality of the claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern studies show that traditional Inuit diets included organ meats and raw fish, providing micronutrients absent in processed foods, aligning with the original argument's emphasis on micronutrient deficiency.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Genetic adaptations (e.g., CPT1A mutation in Inuit populations) enable metabolic resilience to unbalanced diets, making them exceptions rather than counterexamples.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Correlation does not imply causation; socioeconomic factors (e.g., limited healthcare access) may independently contribute to disease rates in populations with poor diets.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Longitudinal studies control for socioeconomic variables and still find direct links between diet quality and health outcomes, strengthening causal inference.",
+          "confidence": 0.88,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

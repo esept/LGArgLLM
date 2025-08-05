@@ -1,0 +1,240 @@
+{
+  "claim": "Consider the following background information: A 16-year-old patient presents to the physician\u2019s office with an absence of menstruations. Her last period was 6 months ago. Since almost a year and a half ago, she intentionally restricted her diet at the expense of carbohydrates, exercised intensively, and lost 18.0 kg (39.7 lb). She had her menarche at the age of 12 and menstruated normally until last year. She is not sexually active. On physical examination, the vital signs include blood pressure 100/60 mm Hg, heart rate 55/min, respiratory rate 12/min, and temperature 35.9\u00b0C (96.6\u00b0F). Her weight is 55.0 kg (121.3 lb), and her height is 166 cm (5 ft 5 in). Physical examination reveals the good development of muscles and decreased adiposity. A bone scan shows decreased calcium mineral deposits.\n\nGiven the background information the following is corrrect: Decreased adiposity contributes to hypoestrogenemia in this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Adipose tissue is a significant source of estrogen production in postmenopausal women and contributes to estrogen levels in premenopausal women; decreased adiposity can lead to lower estrogen levels."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Adipose tissue is a significant source of estrogen production in postmenopausal women and contributes to estrogen levels in premenopausal women; decreased adiposity can lead to lower estrogen levels.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The primary source of estrogen in premenopausal women is the ovaries, not adipose tissue, so decreased adiposity may have minimal impact on estrogen levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in premenopausal women, adipose tissue contributes to peripheral aromatization of androgens to estrogens, so significant fat loss can still reduce estrogen levels.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's hypoestrogenemia is more likely caused by hypothalamic suppression from excessive exercise and low body weight rather than decreased adiposity.",
+          "confidence": 0.88,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While hypothalamic suppression plays a role, decreased adiposity exacerbates the hypoestrogenemia by removing a secondary source of estrogen production.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Hypoestrogenemia is a known consequence of low body fat, as seen in conditions like anorexia nervosa or excessive exercise, which aligns with this patient's history of dietary restriction and weight loss."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Hypoestrogenemia is a known consequence of low body fat, as seen in conditions like anorexia nervosa or excessive exercise, which aligns with this patient's history of dietary restriction and weight loss.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hypoestrogenemia can also result from other endocrine disorders unrelated to body fat, such as primary ovarian insufficiency or pituitary dysfunction, which have not been ruled out in this patient.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's clinical presentation (dietary restriction, weight loss, and exercise history) strongly suggests a functional hypothalamic origin for her hypoestrogenemia, making other causes less likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals with very low body fat maintain normal estrogen levels due to genetic or metabolic adaptations, so decreased adiposity is not universally causative of hypoestrogenemia.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such cases are rare exceptions, and the overwhelming clinical and research evidence supports the link between critically low adiposity and hypoestrogenemia in most individuals.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The absence of menstruation (amenorrhea) in this patient is consistent with hypoestrogenemia, which is often caused by low body fat and energy deficiency."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The absence of menstruation (amenorrhea) in this patient is consistent with hypoestrogenemia, which is often caused by low body fat and energy deficiency.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hypoestrogenemia in this patient could also be caused by other factors such as thyroid dysfunction or pituitary disorders, not just low body fat.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's clinical presentation (e.g., bradycardia, hypothermia, and amenorrhea) strongly aligns with the diagnosis of hypothalamic amenorrhea due to energy deficiency, making low body fat the most likely primary cause.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's muscle development suggests she may have adequate energy reserves, contradicting the assumption of severe energy deficiency as the sole cause.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Muscle development does not necessarily indicate sufficient energy availability for reproductive function, as the body prioritizes vital functions over menstruation in energy-deficient states.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Estrogen is synthesized from androgens in adipose tissue via aromatase activity; reduced adiposity directly limits this conversion, contributing to hypoestrogenemia."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Estrogen is synthesized from androgens in adipose tissue via aromatase activity; reduced adiposity directly limits this conversion, contributing to hypoestrogenemia.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hypoestrogenemia in this patient may primarily result from hypothalamic suppression due to low energy availability, not just reduced adiposity.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with reduced adiposity, residual aromatase activity in other tissues (e.g., ovaries, skin) may partially compensate for estrogen synthesis.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's low BMI and intense exercise suggest hypothalamic amenorrhea, where adiposity-independent mechanisms (e.g., leptin deficiency) dominate.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show aromatase activity in adipose tissue remains the primary extra-gonadal source of estrogen, even in lean individuals.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's physical findings (decreased adiposity, low BMI, and amenorrhea) are clinically consistent with functional hypothalamic amenorrhea, where low estrogen levels result from energy deficit and low body fat."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's physical findings (decreased adiposity, low BMI, and amenorrhea) are clinically consistent with functional hypothalamic amenorrhea, where low estrogen levels result from energy deficit and low body fat.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hypoestrogenemia in this patient could also be caused by primary ovarian insufficiency, which is unrelated to adiposity.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Primary ovarian insufficiency is unlikely in this case given the patient's history of normal menstruation until recent weight loss and dietary changes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's low body temperature and bradycardia suggest hypothyroidism, which could independently contribute to amenorrhea regardless of adiposity.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Functional hypothalamic amenorrhea commonly presents with hypothermia and bradycardia due to adaptive metabolic changes, making hypothyroidism less likely as the primary cause.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

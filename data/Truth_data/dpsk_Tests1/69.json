@@ -1,0 +1,364 @@
+{
+  "claim": "If you wear a hat made out of tin foil, nothing in particular happens.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Tin foil hats are often associated with conspiracy theories about blocking electromagnetic waves, but there is no scientific evidence that they have any effect.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Tin foil hats are often associated with conspiracy theories about blocking electromagnetic waves, but there is no scientific evidence that they have any effect.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Anecdotal reports from individuals claim that tin foil hats reduce headaches or discomfort, suggesting some subjective effect.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain frequencies of electromagnetic waves can theoretically interact with conductive materials like tin foil, implying a possible effect.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Subjective experiences like headaches can be influenced by placebo effects, not actual physical shielding.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Theoretical interactions do not equate to measurable or practical effects in real-world conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Wearing a tin foil hat does not interact with the environment in any measurable way, so it would not cause any noticeable change.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Wearing a tin foil hat does not interact with the environment in any measurable way, so it would not cause any noticeable change.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Tin foil can block certain electromagnetic waves, which might interfere with some electronic devices or signals.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The blocking effect of tin foil on electromagnetic waves is negligible for everyday interactions and does not cause noticeable changes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wearing a tin foil hat could attract attention or cause social reactions, which is a noticeable change.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Social reactions are subjective and not a direct consequence of the tin foil hat's physical properties.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "People who wear tin foil hats report no physical or psychological effects beyond the social reactions they receive.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "People who wear tin foil hats report no physical or psychological effects beyond the social reactions they receive.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Anecdotal reports are unreliable and may not account for subtle or long-term effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Social reactions can themselves induce psychological effects, which contradicts the claim of 'nothing in particular' happening.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that self-reported data often aligns with objective measures in psychological research.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The placebo effect could explain why wearers report no effects, even if there are underlying physical impacts.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The claim specifies 'nothing in particular,' which includes social reactions, so the argument does not contradict the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Tin foil is a passive material and does not generate or block energy in a way that would cause anything to happen.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Tin foil is a passive material and does not generate or block energy in a way that would cause anything to happen.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Tin foil can interact with electromagnetic fields, potentially causing minor disturbances or effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wearing any material on the head can cause physical sensations or psychological effects, even if the material is passive.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The interaction between tin foil and electromagnetic fields is negligible and does not produce noticeable effects.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The physical and psychological effects of wearing a hat are unrelated to the material being tin foil.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If tin foil hats had any effect, it would likely be documented in scientific literature, but no such studies exist.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "If tin foil hats had any effect, it would likely be documented in scientific literature, but no such studies exist.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Scientific literature often overlooks fringe or unconventional topics, so absence of studies doesn't prove ineffectiveness.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some effects might not be easily measurable by current scientific methods, leaving room for undocumented phenomena.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Peer-reviewed journals prioritize rigorous evidence, so lack of documentation strongly suggests no measurable effect exists.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal evidence and informal experiments are insufficient to establish causality or generalizable effects.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "If effects were real but undetectable, they would be indistinguishable from non-existent effects in practice.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Some people claim tin foil hats amplify certain frequencies due to their shape, but this is not supported by physics.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some people claim tin foil hats amplify certain frequencies due to their shape, but this is not supported by physics.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Tin foil hats are known to block radio waves, which could interfere with certain frequencies.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The shape of tin foil hats can create resonance effects, which might amplify specific frequencies.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Blocking radio waves does not imply interference; it simply means attenuation of signals.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Resonance effects require precise conditions that are unlikely to be met by a casually shaped tin foil hat.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Wearing a tin foil hat might cause minor discomfort or overheating, which could be considered 'something happening.'",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Wearing a tin foil hat might cause minor discomfort or overheating, which could be considered 'something happening.'",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The discomfort from wearing a tin foil hat is negligible and does not constitute a meaningful event.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Overheating is a common issue with many types of hats, not unique to tin foil hats.",
+          "confidence": 0.65,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even negligible discomfort is still a form of 'something happening,' contradicting the claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The uniqueness of the material (tin foil) makes the overheating more noticeable and thus significant.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "claim": "Double jeopardy means a person cannot be tried twice for the same crime",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Double jeopardy is a legal principle that prohibits prosecuting an individual more than once for the same offense after an acquittal or conviction."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Double jeopardy is a legal principle that prohibits prosecuting an individual more than once for the same offense after an acquittal or conviction.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Double jeopardy does not apply if new evidence emerges that was not available in the original trial.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with new evidence, most jurisdictions strictly prohibit retrials to uphold the principle of finality in legal proceedings.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Double jeopardy protections may not apply if the case involves separate sovereigns, such as state and federal prosecutions for the same act.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The separate sovereigns doctrine is controversial and some legal scholars argue it undermines the core intent of double jeopardy protections.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Mistrials or hung juries may allow for retrials without violating double jeopardy protections.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Retrials after mistrials are generally permitted only when the mistrial was declared with proper justification and not due to prosecutorial misconduct.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Fifth Amendment of the U.S. Constitution explicitly protects against double jeopardy, ensuring finality in legal proceedings."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The Fifth Amendment of the U.S. Constitution explicitly protects against double jeopardy, ensuring finality in legal proceedings.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Double jeopardy protections do not apply if the same act violates both state and federal laws, allowing separate prosecutions.",
+          "confidence": 0.85,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 'dual sovereignty' doctrine is controversial and has been criticized for undermining the spirit of double jeopardy protections.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A mistrial or hung jury may allow retrial without violating double jeopardy, as the original trial did not reach a final verdict.",
+          "confidence": 0.8,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Retrials after mistrials are subject to strict judicial oversight to prevent prosecutorial abuse of the process.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "New evidence discovered after an acquittal may justify a retrial in some jurisdictions, bypassing double jeopardy protections.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Exceptions for new evidence are rare and typically require proof of fraud or misconduct in the original trial.",
+          "confidence": 0.6,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Double jeopardy prevents the government from using its vast resources to repeatedly harass a defendant for the same alleged crime."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Double jeopardy prevents the government from using its vast resources to repeatedly harass a defendant for the same alleged crime.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Double jeopardy does not apply if new evidence emerges that was not available in the original trial.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Double jeopardy protections can be circumvented if the same act is prosecuted as separate crimes under different jurisdictions (e.g., state and federal courts).",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The legal standard for introducing new evidence is extremely high and rarely met, preserving the core protection of double jeopardy in most cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Dual sovereignty prosecutions are controversial and often criticized as undermining the spirit of double jeopardy protections.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Under double jeopardy rules, a person cannot be retried for the same crime even if new evidence emerges after the initial trial."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Under double jeopardy rules, a person cannot be retried for the same crime even if new evidence emerges after the initial trial.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Double jeopardy protections do not apply if the initial trial resulted in a mistrial due to procedural errors.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "A mistrial due to procedural errors does not necessarily invalidate double jeopardy protections if the errors were not caused by the prosecution.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some jurisdictions, new evidence can lead to a retrial if it proves the defendant's guilt beyond doubt and was not available during the original trial.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such exceptions are rare and typically require strict judicial oversight to prevent abuse of the legal system.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Double jeopardy does not prevent separate trials for the same act if it violates laws of different sovereigns (e.g., state and federal laws).",
+          "confidence": 0.8,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "This exception is based on the dual sovereignty doctrine, which is a legal fiction and not universally accepted.",
+          "confidence": 0.55,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Double jeopardy applies only to criminal cases and does not prevent separate civil lawsuits for the same conduct."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Double jeopardy applies only to criminal cases and does not prevent separate civil lawsuits for the same conduct.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some jurisdictions, civil penalties can be so severe that they effectively punish the defendant a second time, undermining the spirit of double jeopardy.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal systems typically distinguish between criminal punishment and civil remedies, ensuring that civil lawsuits do not constitute double jeopardy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If a defendant is acquitted in criminal court but found liable in civil court, public perception may still view it as a second punishment.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public perception does not alter the legal distinction between criminal and civil proceedings, which is well-established in law.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Different jurisdictions (e.g., state and federal) can prosecute the same act as separate crimes without violating double jeopardy."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Different jurisdictions (e.g., state and federal) can prosecute the same act as separate crimes without violating double jeopardy.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The dual sovereignty doctrine undermines the principle of fairness by allowing multiple prosecutions for the same conduct.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The dual sovereignty doctrine is necessary to ensure that criminal acts violating both state and federal laws are fully prosecuted.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Prosecuting the same act in different jurisdictions can lead to inconsistent verdicts and legal uncertainty.",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems have mechanisms to coordinate between jurisdictions to minimize inconsistencies.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

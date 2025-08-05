@@ -1,0 +1,315 @@
+{
+  "claim": "If A is older than B, and B is older than C, then A is older than C",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "This follows directly from the transitive property of inequalities, which is a fundamental mathematical principle.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "This follows directly from the transitive property of inequalities, which is a fundamental mathematical principle.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The transitive property assumes a strict linear order, but age comparisons may involve edge cases like twins or time zone differences at birth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some legal or cultural contexts, 'older than' may not strictly follow mathematical transitivity due to differing definitions of age.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Twins are born minutes apart and are assigned distinct ages, so the transitive property still holds for age comparisons.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Time zone differences are standardized at birth records, making age comparisons unambiguous in practice.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Legal definitions of age universally default to chronological order, preserving transitivity regardless of cultural interpretations.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In all known systems of age comparison, if A is older than B and B is older than C, then A must logically be older than C.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In all known systems of age comparison, if A is older than B and B is older than C, then A must logically be older than C.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some systems of age comparison may not be transitive due to relativistic effects in high-speed travel scenarios.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Relativistic effects are negligible in everyday age comparisons and do not invalidate the general transitivity principle.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural definitions of 'older' may vary, and some societies may not universally accept this transitivity.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with cultural variations, the mathematical property of transitivity in age ordering remains universally valid when clearly defined.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Time measurement errors could create apparent violations of transitivity in recorded ages.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Measurement errors are external to the logical relationship and don't disprove the inherent transitivity of age ordering.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "This is a classic example of syllogistic reasoning, which has been validated by centuries of logical analysis.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "This is a classic example of syllogistic reasoning, which has been validated by centuries of logical analysis.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Syllogistic reasoning assumes transitivity, which may not hold in all contexts, such as subjective age perceptions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Subjective perceptions do not invalidate the logical structure of syllogisms, which are based on objective relations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical validation does not guarantee universal applicability, as logical systems can have exceptions or edge cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The transitivity of age is a fundamental property of ordinal relations, with no known exceptions in objective reality.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Syllogistic reasoning relies on precise definitions, and 'older than' can be ambiguous in non-temporal contexts.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "In the given claim, 'older than' is explicitly temporal, leaving no room for ambiguity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim holds in any context where 'older than' is a well-defined, transitive relation, which is the case in virtually all real-world scenarios.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim holds in any context where 'older than' is a well-defined, transitive relation, which is the case in virtually all real-world scenarios.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "There exist theoretical contexts, such as certain logical or mathematical systems, where 'older than' may not be transitive.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such theoretical contexts are irrelevant to real-world applications where the claim is intended to hold.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some cultures or legal systems, 'older than' may be defined in non-standard ways that violate transitivity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard definitions of 'older than' in age-related contexts universally assume transitivity, making such exceptions negligible.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim assumes a linear timeline, which may not hold in relativistic physics or other advanced scientific frameworks.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Relativistic effects are negligible in everyday scenarios where the claim is applied, preserving its validity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If 'older than' is interpreted as a strict partial order, then transitivity is one of its defining properties, making the claim necessarily true.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "If 'older than' is interpreted as a strict partial order, then transitivity is one of its defining properties, making the claim necessarily true.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "In natural language, 'older than' is not always interpreted as a strict partial order, leading to potential ambiguity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Transitivity may not hold if 'older than' is interpreted in a non-standard or context-dependent way.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in natural language, 'older than' is commonly understood to be transitive, as it reflects a fundamental aspect of temporal ordering.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-standard interpretations of 'older than' are rare and typically require explicit context to override the default transitive meaning.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1",
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In formal contexts, such as mathematics or logic, 'older than' as a strict partial order is the standard interpretation, reinforcing transitivity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

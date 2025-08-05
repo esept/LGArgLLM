@@ -1,0 +1,240 @@
+{
+  "claim": "Type 1 diabetes is not caused by specific foods, contrary to a common misconception that all diabetes is caused by eating sugar.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Type 1 diabetes is an autoimmune disease where the immune system attacks insulin-producing cells in the pancreas, unrelated to dietary sugar intake."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Type 1 diabetes is an autoimmune disease where the immune system attacks insulin-producing cells in the pancreas, unrelated to dietary sugar intake.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Type 1 diabetes is autoimmune, some studies suggest high sugar intake may exacerbate autoimmune responses, indirectly influencing disease progression.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Current scientific consensus strongly indicates that dietary sugar does not trigger or worsen the autoimmune destruction of pancreatic beta cells in Type 1 diabetes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Misdiagnosis between Type 1 and Type 2 diabetes can lead to the misconception that sugar causes Type 1 diabetes, as sugar is a known risk factor for Type 2.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clear diagnostic criteria (e.g., autoantibody testing) distinguish Type 1 from Type 2 diabetes, reducing confusion about dietary causes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Scientific consensus states that the exact cause of Type 1 diabetes is unknown but involves genetic and environmental factors, not food consumption."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Scientific consensus states that the exact cause of Type 1 diabetes is unknown but involves genetic and environmental factors, not food consumption.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that early childhood dietary factors, such as cow's milk exposure, may influence the development of Type 1 diabetes in genetically predisposed individuals.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The association between cow's milk and Type 1 diabetes remains inconclusive, with most large-scale studies failing to establish a causal link.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain viral infections have been linked to triggering autoimmune destruction of pancreatic beta cells in Type 1 diabetes, suggesting food is not the only environmental factor.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While viral triggers are plausible, the specific mechanisms remain unproven, leaving room for other environmental factors including dietary components.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical research has not established a direct link between eating sugar and the development of Type 1 diabetes."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical research has not established a direct link between eating sugar and the development of Type 1 diabetes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that high sugar intake in early childhood may contribute to autoimmune responses linked to Type 1 diabetes.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The majority of these studies are observational and do not establish causation, leaving the link speculative.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain viral infections, not diet, are the primary environmental triggers for Type 1 diabetes.",
+          "confidence": 0.88,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While viral infections are a known factor, they do not fully explain all cases, leaving room for other environmental influences.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Type 1 diabetes is distinct from Type 2 diabetes, where diet and lifestyle can be contributing factors, further supporting that the claim is correct."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Type 1 diabetes is distinct from Type 2 diabetes, where diet and lifestyle can be contributing factors, further supporting that the claim is correct.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Type 1 and Type 2 diabetes are distinct, some studies suggest that early childhood diet may influence the autoimmune response leading to Type 1 diabetes.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The link between early childhood diet and Type 1 diabetes is speculative and not widely accepted in the medical community.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Type 1 diabetes can be triggered by viral infections, which may be indirectly influenced by dietary factors affecting immune function.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral triggers for Type 1 diabetes are not conclusively linked to diet, and the primary cause remains autoimmune destruction of pancreatic beta cells.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The onset of Type 1 diabetes often occurs in childhood, unrelated to dietary habits, which contradicts the misconception that food causes it."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The onset of Type 1 diabetes often occurs in childhood, unrelated to dietary habits, which contradicts the misconception that food causes it.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that early exposure to certain foods, like cow's milk, may increase the risk of Type 1 diabetes in genetically predisposed children.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The link between cow's milk and Type 1 diabetes is not conclusively proven and remains a minor factor compared to genetic and autoimmune causes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Dietary habits can influence autoimmune responses, which are the primary cause of Type 1 diabetes, suggesting an indirect dietary role.",
+          "confidence": 0.55,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Autoimmune mechanisms in Type 1 diabetes are primarily driven by genetic and environmental triggers unrelated to diet, such as viral infections.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

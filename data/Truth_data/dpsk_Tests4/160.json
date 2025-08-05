@@ -1,0 +1,287 @@
+{
+  "claim": "The cost of food in Canada has decreased since 1970.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Consumer Price Index (CPI) for food in Canada shows a long-term increase since 1970, indicating rising food costs."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Consumer Price Index (CPI) for food in Canada shows a long-term increase since 1970, indicating rising food costs.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CPI does not account for improvements in food quality, variety, and availability, which may offset perceived cost increases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Food quality improvements are subjective and do not negate the objective measure of price inflation captured by CPI.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Household income growth since 1970 has outpaced food CPI increases, making food effectively more affordable.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Income inequality means median household income growth doesn't reflect all consumers' experience with food affordability.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Inflation-adjusted data from Statistics Canada demonstrates that food prices have risen significantly since 1970."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Inflation-adjusted data from Statistics Canada demonstrates that food prices have risen significantly since 1970.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data may not account for changes in food quality, variety, or accessibility, which could offset perceived price increases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Statistics Canada's methodology is rigorous and accounts for quality adjustments, making this counter-argument less credible.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain food categories, such as staple grains, have seen price decreases when adjusted for inflation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if some categories decreased, the overall basket of goods measured by Statistics Canada shows a net increase in food prices.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Global food price trends, including factors like population growth and climate change, have contributed to higher food costs in Canada since 1970."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Global food price trends, including factors like population growth and climate change, have contributed to higher food costs in Canada since 1970.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Technological advancements and increased agricultural efficiency have offset some of the cost increases from global trends.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Government subsidies and trade agreements have helped stabilize food prices in Canada despite global pressures.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Inflation-adjusted data shows that food prices in Canada have actually decreased relative to income since 1970.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Income inequality means that while average food affordability may have improved, many low-income households still face higher relative costs.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Economic studies on purchasing power reveal that Canadians spend a larger portion of their income on food today compared to 1970."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Economic studies on purchasing power reveal that Canadians spend a larger portion of their income on food today compared to 1970.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The increase in the portion of income spent on food could be due to higher disposable income rather than an actual increase in food prices.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that disposable income growth has not kept pace with food price inflation, indicating that food has indeed become more expensive relative to income.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Food prices may have decreased in absolute terms when adjusted for inflation, even if the income share has increased.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Inflation-adjusted data from Statistics Canada shows that food prices have risen significantly since 1970, contradicting the claim of absolute decreases.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Agricultural production costs, including fuel, labor, and equipment, have increased since 1970, leading to higher food prices."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Agricultural production costs, including fuel, labor, and equipment, have increased since 1970, leading to higher food prices.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Technological advancements in agriculture have significantly increased efficiency, offsetting rising production costs and keeping food prices stable or lower.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite efficiency gains, inflation-adjusted food prices in Canada have risen due to increased demand and supply chain disruptions.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Government subsidies and trade agreements have helped stabilize food prices despite higher production costs.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subsidies and trade agreements often benefit large producers more than consumers, leading to uneven price effects across different food categories.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Trade data shows that Canada's reliance on food imports has grown since 1970, exposing domestic prices to global market fluctuations and increases."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Trade data shows that Canada's reliance on food imports has grown since 1970, exposing domestic prices to global market fluctuations and increases.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Domestic agricultural productivity has significantly increased since 1970, offsetting the impact of import reliance on overall food prices.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Technological advancements in farming and food production have reduced costs, mitigating the effect of global market fluctuations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Global food prices have remained relatively stable or decreased in real terms over the same period, reducing the impact of import reliance.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Currency fluctuations and trade tariffs can still introduce significant volatility to food prices, despite global price trends.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

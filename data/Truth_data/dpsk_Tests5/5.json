@@ -1,0 +1,279 @@
+{
+  "claim": "London gets more international arrivals than Paris.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "London has a larger international airport system, including Heathrow, which is one of the busiest airports in the world by passenger traffic."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "London has a larger international airport system, including Heathrow, which is one of the busiest airports in the world by passenger traffic.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paris has multiple major international airports (Charles de Gaulle, Orly, and Beauvais), with Charles de Gaulle handling more international flights than Heathrow in some years.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Heathrow consistently ranks higher in total passenger traffic, including international arrivals, compared to Charles de Gaulle, based on annual aviation reports.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many international arrivals in London are transit passengers who do not actually visit the city, whereas Paris has a higher proportion of direct visitors.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official tourism statistics show that London records more overnight international visitors than Paris, accounting for transit passengers separately.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The UK's visa policies and historical ties to Commonwealth nations facilitate higher international travel to London compared to Paris."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The UK's visa policies and historical ties to Commonwealth nations facilitate higher international travel to London compared to Paris.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "France's Schengen Area membership allows easier access for travelers from many European countries, potentially increasing arrivals in Paris.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The UK's stricter visa requirements for non-Commonwealth countries may offset the advantage from Commonwealth travelers.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Paris is a more popular tourist destination globally, with iconic landmarks like the Eiffel Tower attracting more visitors.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "London's diverse cultural and business appeal, including financial hubs, may attract more long-term visitors not counted as tourists.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "London is a global financial hub, attracting more business travelers than Paris."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "London is a global financial hub, attracting more business travelers than Paris.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paris attracts more leisure tourists than London, which compensates for fewer business travelers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Business travelers often have shorter stays and fewer repeat visits compared to leisure tourists, reducing their impact on total arrivals.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many international arrivals in London are transit passengers, not final destinations, unlike Paris.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "London's Heathrow Airport is a major global hub, but Paris CDG also handles significant transit traffic, narrowing the difference.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Paris has a stronger focus on European tourism, while London draws more visitors from outside Europe."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Paris has a stronger focus on European tourism, while London draws more visitors from outside Europe.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paris remains the most visited city in the world, with higher total international arrivals than London.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 'most visited city' ranking often includes domestic visitors, while London leads in purely international arrivals.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The strength of European tourism in Paris compensates for any deficit in non-European visitors.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "European tourism is declining in relative importance due to growing Asian and American travel markets.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "London hosts more major international events and conferences annually than Paris, increasing its international arrivals."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "London hosts more major international events and conferences annually than Paris, increasing its international arrivals.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paris attracts more tourists due to its cultural landmarks like the Eiffel Tower and Louvre, which have higher visitor numbers than London's attractions.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "London's events are often business-focused, while Paris's tourism appeal is broader, drawing more leisure travelers who stay longer and spend more.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Business travelers to London often have shorter stays and higher frequency, which can inflate arrival numbers without matching Paris's total visitor impact.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The English language's global dominance makes London more accessible to international travelers than Paris."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The English language's global dominance makes London more accessible to international travelers than Paris.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many international travelers are multilingual and can navigate Paris comfortably without English.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "English proficiency is high in France, especially in Paris, reducing the accessibility gap.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other factors like flight connectivity and tourism infrastructure matter more than language for international arrivals.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Paris has a larger and more efficient international airport system than London, offsetting language advantages.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

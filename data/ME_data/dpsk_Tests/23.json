@@ -1,0 +1,161 @@
+{
+  "claim": "The sum of two odd numbers is odd",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "An odd number can be expressed as 2n + 1, where n is an integer. The sum of two odd numbers (2n + 1) + (2m + 1) = 2(n + m + 1), which is even."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "An odd number can be expressed as 2n + 1, where n is an integer. The sum of two odd numbers (2n + 1) + (2m + 1) = 2(n + m + 1), which is even.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the integers n and m are chosen such that n + m + 1 is not an integer, the sum may not be even.",
+          "confidence": 0.1,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "By definition, n and m are integers, so n + m + 1 must also be an integer.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The sum of any two odd numbers results in a number divisible by 2, which is the definition of an even number."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The sum of any two odd numbers results in a number divisible by 2, which is the definition of an even number.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the sum of two odd numbers were odd, it would contradict basic arithmetic principles taught in elementary mathematics.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Elementary arithmetic principles are based on axioms that may not hold in all number systems, such as modular arithmetic.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In standard integer arithmetic, the properties of odd and even numbers are well-defined and universally accepted.",
+          "confidence": 0.92,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Empirical examples, such as 3 + 5 = 8 or 7 + 9 = 16, show that the sum of two odd numbers is always even."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Empirical examples, such as 3 + 5 = 8 or 7 + 9 = 16, show that the sum of two odd numbers is always even.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The examples provided are limited and do not constitute a general proof for all odd numbers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mathematical proofs exist that demonstrate the sum of any two odd numbers is always even, not just empirical examples.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be misinterpreted if odd numbers are not defined properly, such as in modular arithmetic with different bases.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard arithmetic definitions are assumed unless specified otherwise, making the original argument valid under conventional understanding.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In modular arithmetic, odd numbers are congruent to 1 modulo 2. The sum of two numbers congruent to 1 modulo 2 is congruent to 0 modulo 2, which is even."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In modular arithmetic, odd numbers are congruent to 1 modulo 2. The sum of two numbers congruent to 1 modulo 2 is congruent to 0 modulo 2, which is even.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This argument assumes modular arithmetic, but in standard arithmetic, the sum of two odd numbers is indeed even, not odd.",
+          "confidence": 0.98,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modular arithmetic is a valid and widely accepted mathematical framework, so the argument holds in that context.",
+          "confidence": 0.96,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim does not specify the arithmetic system, so the default interpretation should be standard arithmetic, where the sum of two odd numbers is even.",
+          "confidence": 0.97,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

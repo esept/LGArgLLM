@@ -1,0 +1,338 @@
+{
+  "claim": "A 25-year-old man is brought to the emergency department with second- and third-degree burns covering 30% of the surface area of his body. He is alert and active. He has no personal or family history of serious illness. His temperature is 36.5\u00b0C (97.7\u00b0F), pulse is 62/min, respirations are 18/min, and blood pressure is 105/70 mm Hg. Pulse oximetry on 2 liters by nasal cannula shows an oxygen saturation of 98%. Intravenous fluids, intravenous and topical antibiotics, and intravenous pain medications are administered in the intensive care unit. Twenty-four hours later, the patient develops respiratory distress. Respirations are 30/min. There is an inspiratory stridor. The patient requires rapid sequence intubation. Administering succinylcholine during this procedure would most likely result in which of the following complications? : Cardiac arrhythmia",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Succinylcholine can cause hyperkalemia in burn patients, which may lead to cardiac arrhythmias due to the increased potassium levels affecting myocardial excitability.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Succinylcholine can cause hyperkalemia in burn patients, which may lead to cardiac arrhythmias due to the increased potassium levels affecting myocardial excitability.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hyperkalemia from succinylcholine is rare in burn patients within the first 24 hours, as the upregulation of acetylcholine receptors typically takes several days to develop.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative agents like rocuronium can be used instead of succinylcholine, eliminating the risk of hyperkalemia and subsequent arrhythmias.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if hyperkalemia is rare early on, the risk is still present due to individual variability in receptor upregulation, and succinylcholine should be avoided as a precaution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Rocuronium has a longer duration of action than succinylcholine, which may not be ideal for rapid sequence intubation where quick recovery is sometimes needed.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The benefits of avoiding hyperkalemia and potential cardiac complications outweigh the drawbacks of a longer duration of action with rocuronium in this critical scenario.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's burn injuries and subsequent tissue damage can lead to upregulation of acetylcholine receptors, making them more susceptible to succinylcholine-induced hyperkalemia and subsequent arrhythmias.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's burn injuries and subsequent tissue damage can lead to upregulation of acetylcholine receptors, making them more susceptible to succinylcholine-induced hyperkalemia and subsequent arrhythmias.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Succinylcholine-induced hyperkalemia is rare in burns less than 48 hours old, so the risk of arrhythmia may be overstated in this case.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's stable initial vitals and lack of prior cardiac history suggest baseline resistance to arrhythmias, reducing the likelihood of succinylcholine complications.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in early burns, receptor upregulation can begin within 24 hours, so the 48-hour rule may not fully protect against hyperkalemia.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Burn-induced metabolic changes can accelerate receptor upregulation, making the 48-hour guideline unreliable for severe burns.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Stable vitals don't preclude sudden potassium shifts from succinylcholine, as hyperkalemia can develop rapidly regardless of baseline status.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show measurable acetylcholine receptor changes only after 72 hours in most burn patients, supporting the 48-hour safety window.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The 30% burn area may not be extensive enough to cause the critical mass of receptor upregulation needed for dangerous hyperkalemia.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Succinylcholine is generally safe in patients without underlying conditions, and the patient's stable vitals initially suggest a lower risk of arrhythmia.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Succinylcholine is generally safe in patients without underlying conditions, and the patient's stable vitals initially suggest a lower risk of arrhythmia.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's extensive burns increase the risk of hyperkalemia, which can be exacerbated by succinylcholine, leading to cardiac arrhythmia.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Respiratory distress and inspiratory stridor indicate potential airway compromise, which may alter the patient's response to succinylcholine, increasing arrhythmia risk.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's initial stable vitals do not account for the delayed onset of respiratory distress, which suggests evolving pathophysiology that could heighten succinylcholine risks.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hyperkalemia from burns typically manifests later, and early administration of succinylcholine might not yet pose a significant arrhythmia risk.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Airway compromise alone does not directly correlate with succinylcholine-induced arrhythmia unless metabolic disturbances are present.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even early administration of succinylcholine can trigger potassium release from denervated muscles in burn patients, supporting the hyperkalemia argument.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Metabolic disturbances like acidosis from respiratory distress can amplify the arrhythmogenic effects of succinylcholine, linking airway compromise to arrhythmia risk.",
+          "confidence": 0.77,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's respiratory distress and stridor are more likely due to airway edema from burns, and succinylcholine's effect on potassium may not be the primary cause of any arrhythmia.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's respiratory distress and stridor are more likely due to airway edema from burns, and succinylcholine's effect on potassium may not be the primary cause of any arrhythmia.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Succinylcholine can cause hyperkalemia in burn patients, which is a known risk factor for cardiac arrhythmias, even if airway edema is present.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The timing of respiratory distress (24 hours post-burn) aligns with the peak risk period for succinylcholine-induced hyperkalemia in burn patients.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Airway edema alone is sufficient to explain the respiratory distress, and there is no direct evidence of hyperkalemia in this patient.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Other factors such as infection or pulmonary complications could also explain the respiratory distress, independent of succinylcholine.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hyperkalemia from succinylcholine is a well-documented phenomenon in burn patients, and the absence of immediate evidence does not rule it out.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The rapid onset of respiratory distress and stridor is more characteristic of airway edema than of hyperkalemia, which typically presents with muscle weakness or cardiac symptoms first.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Burn patients often develop electrolyte imbalances, including hyperkalemia, which succinylcholine can exacerbate, increasing the risk of life-threatening cardiac arrhythmias.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Burn patients often develop electrolyte imbalances, including hyperkalemia, which succinylcholine can exacerbate, increasing the risk of life-threatening cardiac arrhythmias.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hyperkalemia is not universally present in all burn patients, and succinylcholine may not necessarily cause arrhythmias if electrolyte levels are monitored and managed.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative paralytic agents like rocuronium can be used instead of succinylcholine, avoiding the risk of hyperkalemia-induced arrhythmias entirely.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Monitoring electrolyte levels in burn patients is often delayed or inaccurate in emergency settings, making the risk of undetected hyperkalemia significant.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Rocuronium has a longer duration of action than succinylcholine, which may not be ideal for rapid sequence intubation in emergency scenarios.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Point-of-care electrolyte testing is increasingly available in emergency departments, reducing the risk of undetected hyperkalemia.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Sugammadex can rapidly reverse rocuronium, mitigating concerns about its longer duration of action.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

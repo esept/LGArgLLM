@@ -1,0 +1,145 @@
+{
+  "claim": "3\u00b2 + 4\u00b2 = 5\u00b2",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The equation 3\u00b2 + 4\u00b2 = 9 + 16 = 25, which equals 5\u00b2 (25), demonstrating a correct mathematical calculation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation 3\u00b2 + 4\u00b2 = 9 + 16 = 25, which equals 5\u00b2 (25), demonstrating a correct mathematical calculation.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation only holds for specific integers (3, 4, 5) and does not generalize to other numbers, making it a limited case.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Pythagorean theorem guarantees that for any right triangle, the sum of the squares of the legs equals the square of the hypotenuse, and (3,4,5) is a well-known example.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "This equation is a specific example of the Pythagorean theorem, which holds that in a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "This equation is a specific example of the Pythagorean theorem, which holds that in a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Pythagorean theorem assumes Euclidean geometry, and does not hold in non-Euclidean spaces such as spherical or hyperbolic geometry.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In practical applications, Euclidean geometry is overwhelmingly the most relevant framework, making non-Euclidean exceptions negligible for most real-world uses of the Pythagorean theorem.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The numbers 3, 4, and 5 form a Pythagorean triple, a well-known set of integers that satisfy the equation a\u00b2 + b\u00b2 = c\u00b2."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The numbers 3, 4, and 5 form a Pythagorean triple, a well-known set of integers that satisfy the equation a\u00b2 + b\u00b2 = c\u00b2.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation 3\u00b2 + 4\u00b2 = 5\u00b2 is a specific case and does not generalize to all sets of numbers, making the claim limited in scope.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the claim is specific, it is a foundational example of Pythagorean triples, which are widely applicable in geometry and trigonometry.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes standard Euclidean geometry; in non-Euclidean geometries, the Pythagorean theorem does not hold.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-Euclidean geometries are specialized cases, and the claim explicitly refers to the standard Pythagorean theorem, which is valid in Euclidean space.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The calculation is verifiable by basic arithmetic operations, confirming that 9 (3\u00b2) plus 16 (4\u00b2) indeed equals 25 (5\u00b2)."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The calculation is verifiable by basic arithmetic operations, confirming that 9 (3\u00b2) plus 16 (4\u00b2) indeed equals 25 (5\u00b2).",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation assumes standard arithmetic operations, but in modular arithmetic (e.g., modulo 3), the equation fails since 0 + 1 \u2260 1 (9 mod 3 = 0, 16 mod 3 = 1, 25 mod 3 = 1).",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modular arithmetic is a specialized context, and the original claim clearly refers to standard arithmetic, where the equation holds universally.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

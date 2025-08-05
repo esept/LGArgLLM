@@ -1,0 +1,356 @@
+{
+  "claim": "Drinking excessive water can lead to hyponatremia",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Excessive water intake dilutes sodium levels in the blood, leading to hyponatremia, a potentially life-threatening condition.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Excessive water intake dilutes sodium levels in the blood, leading to hyponatremia, a potentially life-threatening condition.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The human body has efficient regulatory mechanisms to maintain sodium balance even with high water intake.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hyponatremia is rare and usually occurs only in extreme cases of water consumption far beyond normal limits.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These regulatory mechanisms can be overwhelmed by excessive water intake, especially in a short period of time.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even moderate overconsumption of water can lead to hyponatremia in individuals with certain medical conditions or on specific medications.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Most healthy individuals can excrete excess water efficiently, preventing significant sodium dilution.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Athletes and endurance runners are particularly at risk for hyponatremia due to overhydration during prolonged physical activity.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Athletes and endurance runners are particularly at risk for hyponatremia due to overhydration during prolonged physical activity.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Most athletes are educated about proper hydration and follow guidelines to avoid overhydration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hyponatremia is rare and usually occurs in extreme cases, not typical athletic conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even educated athletes can misjudge their hydration needs during intense competition.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Incidence rates of hyponatremia in marathons and endurance events have been documented, indicating a real risk.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical case studies have documented severe hyponatremia in individuals who consumed large amounts of water in a short period.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical case studies have documented severe hyponatremia in individuals who consumed large amounts of water in a short period.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Most people naturally regulate their water intake and are unlikely to consume dangerous amounts.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hyponatremia is rare and usually occurs in extreme conditions like endurance sports or medical disorders.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with natural regulation, peer pressure or misinformation can lead to excessive water intake in certain situations.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Endurance sports and medical disorders are not uncommon, making hyponatremia a relevant risk for many people.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The kidneys have a limited capacity to excrete excess water, making it physiologically plausible for overhydration to cause hyponatremia.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The kidneys have a limited capacity to excrete excess water, making it physiologically plausible for overhydration to cause hyponatremia.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Healthy kidneys can adapt to varying water intakes, efficiently excreting excess water under normal conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hyponatremia is more commonly caused by underlying medical conditions rather than excessive water intake alone.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even healthy kidneys can be overwhelmed by extremely rapid water intake, leading to dilutional hyponatremia.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While underlying conditions contribute, excessive water intake is a well-documented independent risk factor for hyponatremia.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Hyponatremia symptoms, such as confusion, seizures, and coma, align with the neurological effects of low sodium caused by excessive water intake.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Hyponatremia symptoms, such as confusion, seizures, and coma, align with the neurological effects of low sodium caused by excessive water intake.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Neurological symptoms like confusion and seizures can also be caused by many other conditions unrelated to hyponatremia.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The correlation between excessive water intake and hyponatremia symptoms does not necessarily imply causation.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hyponatremia is specifically diagnosed through blood tests showing low sodium levels, distinguishing it from other neurological conditions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical studies have demonstrated a direct causal link between excessive water intake and hyponatremia in controlled settings.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Some people may not develop hyponatremia from excessive water intake if their kidneys efficiently balance electrolytes.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some people may not develop hyponatremia from excessive water intake if their kidneys efficiently balance electrolytes.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kidney efficiency varies widely, and many individuals have impaired kidney function that cannot handle excessive water intake.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even with efficient kidneys, prolonged excessive water intake can overwhelm the body's ability to maintain electrolyte balance.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even healthy kidneys have a limit to how much water they can process before electrolyte imbalances occur.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical cases document hyponatremia in individuals with previously normal kidney function after excessive water consumption.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Hyponatremia is more commonly caused by underlying medical conditions or medications rather than excessive water alone.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Hyponatremia is more commonly caused by underlying medical conditions or medications rather than excessive water alone.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Excessive water intake can dilute sodium levels in the blood, directly leading to hyponatremia regardless of other factors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many documented cases of hyponatremia in healthy individuals are directly linked to overhydration, such as in endurance athletes.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Underlying conditions often exacerbate hyponatremia, but excessive water remains a primary cause in otherwise healthy individuals.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While medications can contribute, they typically require concurrent excessive fluid intake to cause clinically significant hyponatremia.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

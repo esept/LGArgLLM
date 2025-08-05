@@ -1,0 +1,370 @@
+{
+  "claim": "If you type your PIN number backwards at an ATM, a notification will be sent to the police.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Some banks have implemented emergency PIN reversal systems that alert authorities when a reversed PIN is entered, as a safety feature for victims of coercion.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Some banks have implemented emergency PIN reversal systems that alert authorities when a reversed PIN is entered, as a safety feature for victims of coercion.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Most banks do not have such a system in place, making the claim largely false for the majority of ATM users.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if the system exists, it is not widely advertised, so users may not be aware of it and thus cannot rely on it in emergencies.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The system could lead to false alarms if users accidentally enter their PIN backwards, wasting police resources.",
+          "confidence": 0.72,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that banks with such systems have seen a measurable decrease in ATM-related crimes, proving their effectiveness.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Banks that implement this feature often provide training or information to customers about how to use it in emergencies.",
+          "confidence": 0.67,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "False alarms are rare because entering a PIN backwards intentionally is highly unlikely to happen by accident.",
+          "confidence": 0.69,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The decrease in ATM-related crimes could be attributed to other security measures, not necessarily the reversed PIN system.",
+          "confidence": 0.71,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with training, many customers may forget or not pay attention to such specific instructions during a crisis.",
+          "confidence": 0.66,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "There is no widespread evidence or official documentation from major banks confirming that reversed PIN entry triggers police notifications.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "There is no widespread evidence or official documentation from major banks confirming that reversed PIN entry triggers police notifications.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some banks have implemented silent alarm features, including reversed PIN entry, as a security measure for customers under duress.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if not officially documented, the reversed PIN feature could be a covert security protocol not publicly disclosed by banks.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Implementing such a feature without public awareness would reduce its effectiveness, as criminals would quickly learn about it through trial and error.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Covert security measures of this nature would likely violate banking transparency regulations and consumer protection laws.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The primary purpose of a duress PIN is to protect the customer, not necessarily to notify police, making widespread documentation unnecessary.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Banking regulations often allow for undisclosed security measures if they enhance customer safety without compromising other legal requirements.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Urban legends and anecdotal reports have perpetuated the idea of reversed PIN alerts, but these lack verification from financial institutions.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Urban legends and anecdotal reports have perpetuated the idea of reversed PIN alerts, but these lack verification from financial institutions.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some financial institutions have implemented reverse PIN notification systems as a security measure, though they may not publicly disclose this to avoid circumvention.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Anecdotal evidence, while not verified, can sometimes indicate real but undocumented security features that institutions prefer to keep confidential.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Without official confirmation from financial institutions, claims about reverse PIN notifications remain speculative and should not be treated as fact.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of verifiable evidence from credible sources strongly suggests that reverse PIN notifications are a myth rather than a real security feature.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if some institutions have such systems, the lack of standardization means the claim cannot be generalized to all ATMs or banks.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Security through obscurity is not a reliable strategy, and financial institutions are more likely to rely on transparent and verifiable security measures.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Implementing such a feature would require coordination between banks and law enforcement, which is not publicly acknowledged or standardized.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Implementing such a feature would require coordination between banks and law enforcement, which is not publicly acknowledged or standardized.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Banks and law enforcement already collaborate on fraud prevention, so such coordination is plausible even if not publicly disclosed.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Standardization is not necessary for individual banks to implement this feature unilaterally as a security measure.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fraud prevention collaborations are typically documented in public agreements, and no such agreements mention PIN reversal alerts.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unilateral implementation by banks would create inconsistencies in user experience and security protocols across different ATMs.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Not all collaborations are made public due to security and operational sensitivities, so absence of documentation doesn't prove absence of coordination.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Banks already handle many security features inconsistently (e.g., withdrawal limits), so PIN reversal inconsistency wouldn't be exceptional.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In rare cases, certain ATMs in high-crime areas might have experimental or localized systems that include reversed PIN alerts.",
+        "confidence": 0.55,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In rare cases, certain ATMs in high-crime areas might have experimental or localized systems that include reversed PIN alerts.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "There is no widespread evidence or documentation that ATMs are programmed to detect reversed PIN inputs.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Implementing such a feature would require significant changes to ATM software, which banks have not publicly announced.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Even in high-crime areas, privacy laws may prevent banks from implementing such a feature without explicit user consent.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some banks have undisclosed security features that are not publicly documented to prevent exploitation.",
+          "confidence": 0.5,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "ATM software updates are often rolled out quietly to avoid drawing attention to new security measures.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Emergency protocols in high-crime areas may override standard privacy laws for public safety.",
+          "confidence": 0.45,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Undocumented features are unlikely to be standardized enough to be relied upon as a security measure.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Quiet software updates would still require regulatory approval, which would leave a paper trail.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Emergency protocols are typically temporary and would not justify permanent changes to ATM functionality.",
+          "confidence": 0.5,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

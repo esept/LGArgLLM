@@ -1,0 +1,300 @@
+{
+  "claim": "Insulin lowers blood sugar levels",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Insulin facilitates the uptake of glucose by cells, thereby reducing blood sugar levels.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Insulin facilitates the uptake of glucose by cells, thereby reducing blood sugar levels.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, cells fail to respond effectively to insulin, limiting glucose uptake and maintaining high blood sugar levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Excessive insulin can lead to hypoglycemia, indicating that insulin's effect is not always beneficial for blood sugar regulation.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Insulin resistance is often managed with additional medications or lifestyle changes, which can restore insulin's effectiveness in glucose uptake.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypoglycemia from insulin is typically a result of dosage errors or timing, not an inherent flaw in insulin's mechanism.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with management strategies, some patients with severe insulin resistance never achieve optimal glucose uptake, undermining insulin's universal efficacy.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Insulin inhibits gluconeogenesis in the liver, preventing excess glucose production and lowering blood sugar.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Insulin inhibits gluconeogenesis in the liver, preventing excess glucose production and lowering blood sugar.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Insulin resistance in some individuals can impair its ability to inhibit gluconeogenesis effectively.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain medications or hormonal imbalances can counteract insulin's effect on gluconeogenesis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even in insulin resistance, compensatory mechanisms often maintain glucose regulation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most hormonal imbalances that affect insulin are rare and do not significantly impact the general population.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Long-term insulin resistance can exhaust these compensatory mechanisms, leading to persistent hyperglycemia.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In individuals with insulin resistance, insulin may not effectively lower blood sugar levels due to impaired cellular response.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In individuals with insulin resistance, insulin may not effectively lower blood sugar levels due to impaired cellular response.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even in insulin resistance, exogenous insulin administration can still lower blood sugar levels by acting on non-resistant pathways.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Clinical studies show that insulin therapy remains effective in reducing blood sugar levels in most patients with insulin resistance.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-resistant pathways are often insufficient to compensate for severe insulin resistance, leading to persistent hyperglycemia.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The effectiveness of insulin therapy in resistant patients depends heavily on dosage adjustments and combination therapies.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "High-dose insulin can overcome resistance but increases risks of hypoglycemia and other adverse effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Excessive insulin administration can lead to hypoglycemia, but this does not negate its primary function of lowering blood sugar.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Excessive insulin administration can lead to hypoglycemia, but this does not negate its primary function of lowering blood sugar.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hypoglycemia caused by excessive insulin demonstrates that its effect is not always beneficial, undermining its reliability.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The risk of hypoglycemia indicates that insulin's blood sugar-lowering effect can be dangerous if not carefully managed.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Medical protocols and monitoring systems exist to prevent hypoglycemia, ensuring insulin's safe and effective use.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1",
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The primary function of insulin is well-documented in clinical studies, and adverse effects do not invalidate its intended purpose.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1",
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Despite protocols, human error in insulin administration still leads to preventable cases of hypoglycemia.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Clinical studies often exclude high-risk populations, limiting the generalizability of insulin's safety data.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In rare cases of insulin autoimmune syndrome, insulin may be neutralized by antibodies, reducing its effectiveness in lowering blood sugar.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In rare cases of insulin autoimmune syndrome, insulin may be neutralized by antibodies, reducing its effectiveness in lowering blood sugar.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Insulin autoimmune syndrome is extremely rare, affecting fewer than 1 in 100,000 people, so it does not meaningfully challenge insulin's general efficacy.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even in insulin autoimmune syndrome, alternative treatments can restore insulin's blood sugar-lowering effects.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The prevalence of insulin autoimmune syndrome is so low that it is statistically negligible in clinical practice.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Alternative treatments for insulin autoimmune syndrome are not universally effective and may introduce new complications.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Large-scale epidemiological studies confirm that insulin remains highly effective for the vast majority of patients.",
+          "confidence": 0.95,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "claim": "Consider the following background information: A 52-year-old woman presents with a complaint of headache for the past 10 days. Her headache is diffuse, dull in character, moderate in intensity, and is worse in the morning. It is not associated with fever and sensitivity to light or sound. She experiences occasional nausea but no vomiting. She did not have similar headaches in the past. Her blood pressure is 140/90 mm Hg; pulse, 60/min, and body mass index is 33.5 kg/m2. The neurological examination reveals normal extraocular movements. Mild bilateral papilledema is present. A magnetic resonance imaging of the brain reveals a solitary lesion in the left temporal region with predominant hemorrhage. Refer to the image below of the MRI of the brain.\n\nGiven the background information the following is corrrect: Multiple myeloma is the type of cancer that has the highest tendency to cause this brain lesion.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Multiple myeloma primarily affects the bone marrow and is not known to commonly metastasize to the brain, making it unlikely to be the cause of the described brain lesion."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Multiple myeloma primarily affects the bone marrow and is not known to commonly metastasize to the brain, making it unlikely to be the cause of the described brain lesion.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While multiple myeloma rarely metastasizes to the brain, rare cases of intracranial involvement have been documented in medical literature.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The documented cases of multiple myeloma metastasizing to the brain are extremely rare and usually occur in advanced stages with widespread systemic involvement, which is not described in this patient.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The MRI findings of a solitary hemorrhagic lesion in the temporal region are more consistent with other pathologies such as metastatic carcinoma or primary brain tumors rather than multiple myeloma.",
+          "confidence": 0.88,
+          "attacks": {
+            "A1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Metastatic carcinoma from lung or breast cancer is statistically far more likely to cause solitary hemorrhagic brain lesions in this age group compared to multiple myeloma.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The most common cancers that metastasize to the brain are lung cancer, breast cancer, and melanoma, not multiple myeloma."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The most common cancers that metastasize to the brain are lung cancer, breast cancer, and melanoma, not multiple myeloma.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Multiple myeloma can rarely metastasize to the brain, though it is not among the most common causes.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The rarity of multiple myeloma metastasizing to the brain makes it an unlikely primary consideration without additional evidence.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The presence of a solitary hemorrhagic lesion in the temporal region is more consistent with metastatic disease from a common primary source like lung or breast cancer.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The clinical presentation and imaging findings are more consistent with a primary brain tumor or metastatic lesion from a different primary cancer, rather than multiple myeloma."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The clinical presentation and imaging findings are more consistent with a primary brain tumor or metastatic lesion from a different primary cancer, rather than multiple myeloma.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Multiple myeloma rarely metastasizes to the brain, and the imaging findings of a solitary hemorrhagic lesion are atypical for this condition.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The presence of papilledema and morning headaches strongly suggests increased intracranial pressure, which is more commonly associated with primary brain tumors or metastatic lesions.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's obesity and elevated blood pressure could contribute to the hemorrhagic lesion, but these factors do not rule out a neoplastic cause.",
+          "confidence": 0.65,
+          "attacks": {
+            "C1": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Multiple myeloma can rarely present with intracranial involvement, particularly in advanced cases, though this is less likely given the solitary nature of the lesion.",
+          "confidence": 0.55,
+          "attacks": {
+            "B1": 0.5
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Multiple myeloma typically presents with bone pain, anemia, and renal dysfunction, not with isolated brain lesions as described in the case."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Multiple myeloma typically presents with bone pain, anemia, and renal dysfunction, not with isolated brain lesions as described in the case.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Multiple myeloma can metastasize to the brain, though rarely, and should not be ruled out entirely based on typical presentations.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The MRI finding of a solitary hemorrhagic lesion in the temporal region is more consistent with a primary brain tumor or metastatic lesion from a different primary cancer, not multiple myeloma.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of systemic symptoms like bone pain, anemia, or renal dysfunction strongly argues against multiple myeloma as the cause of the brain lesion in this case.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

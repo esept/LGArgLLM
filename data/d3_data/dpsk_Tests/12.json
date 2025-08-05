@@ -1,0 +1,240 @@
+{
+  "claim": "Short selling involves buying stocks expecting prices to rise",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Short selling involves borrowing stocks to sell them at the current price, with the expectation of buying them back later at a lower price."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Short selling involves borrowing stocks to sell them at the current price, with the expectation of buying them back later at a lower price.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Short selling can also involve synthetic positions like options or futures, not just borrowing physical shares.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in synthetic short positions, the core mechanism still relies on profiting from a price decline, aligning with the original definition.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some regulatory environments restrict short selling, making it less universally applicable as described.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulatory restrictions are exceptions and do not change the fundamental definition or economic purpose of short selling.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The primary goal of short selling is to profit from a decline in the stock's price, not from a rise."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The primary goal of short selling is to profit from a decline in the stock's price, not from a rise.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Short selling can also involve covering the short position by buying back the stock at a lower price, which indirectly involves buying stocks expecting prices to rise.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Covering a short position is a secondary action to close the trade, not the primary goal of short selling, which remains profiting from a price decline.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some traders engage in short-term short selling where they anticipate a temporary dip followed by a rise, blending both strategies.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such blended strategies are rare and deviate from the traditional definition of short selling, which is explicitly bearish.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Short sellers sell first and buy later, which is the opposite of buying first and selling later (the traditional long position)."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Short sellers sell first and buy later, which is the opposite of buying first and selling later (the traditional long position).",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Short selling still involves buying stocks eventually, just in a different sequence.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The key distinction is the expectation of price movement\u2014short sellers expect prices to fall, not rise.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim conflates short selling with traditional investing, but both involve buying and selling.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The sequence and intent (profit from decline vs. rise) define the strategies, not just the presence of buying.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Short selling is a strategy used when an investor believes a stock's price will fall, not rise."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Short selling is a strategy used when an investor believes a stock's price will fall, not rise.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Short selling can involve synthetic positions or derivatives that mimic buying behavior while still being classified as short selling.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Synthetic positions or derivatives are not traditional short selling and are classified under different regulatory frameworks.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some investors may short sell as part of a hedging strategy, not necessarily because they believe the price will fall.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hedging strategies still fundamentally rely on the expectation that the shorted asset will underperform relative to the hedge.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In short selling, the profit is made from the difference between the higher selling price and the lower repurchase price, not from price appreciation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In short selling, the profit is made from the difference between the higher selling price and the lower repurchase price, not from price appreciation.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Short selling still involves an expectation of price movement, just in the opposite direction of traditional investing.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifically mentions 'expecting prices to rise', which is fundamentally different from short selling's bearish position.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some traders use short selling as part of complex strategies where they might actually want prices to rise in other positions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such cases are exceptions and don't change the fundamental definition or typical use of short selling.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

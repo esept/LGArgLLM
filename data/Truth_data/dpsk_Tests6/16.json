@@ -1,0 +1,240 @@
+{
+  "claim": "In the United States, people smoke more on average than in Spain.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the CDC, as of 2023, approximately 11.5% of U.S. adults smoke cigarettes daily, which is higher than Spain's smoking rate of around 8.7% as reported by the Spanish Ministry of Health."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the CDC, as of 2023, approximately 11.5% of U.S. adults smoke cigarettes daily, which is higher than Spain's smoking rate of around 8.7% as reported by the Spanish Ministry of Health.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CDC data only accounts for cigarette smoking and excludes other forms of tobacco use, such as vaping or cigars, which may be more prevalent in Spain.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Spanish Ministry of Health's report includes all forms of tobacco use, not just cigarettes, making the comparison with CDC data misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The data does not account for regional variations within the U.S. and Spain, where smoking rates may differ significantly from national averages.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "National averages are still a reliable indicator for broad comparisons, as regional variations tend to balance out over large populations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The World Health Organization (WHO) data indicates that the U.S. has a higher per capita cigarette consumption compared to Spain, supporting the claim."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The World Health Organization (WHO) data indicates that the U.S. has a higher per capita cigarette consumption compared to Spain, supporting the claim.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The WHO data may not account for differences in data collection methods between the U.S. and Spain, potentially skewing the comparison.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The WHO standardizes data collection globally, minimizing methodological discrepancies between countries.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Per capita consumption does not reflect actual smoking prevalence, as heavy smokers in Spain might consume more cigarettes per smoker than in the U.S.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that smoking intensity (cigarettes per smoker) is also higher in the U.S. on average, reinforcing the original claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Studies from the OECD show that smoking prevalence in the U.S. has historically been higher than in Spain, with recent trends continuing this pattern."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Studies from the OECD show that smoking prevalence in the U.S. has historically been higher than in Spain, with recent trends continuing this pattern.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The OECD data may not account for regional variations within the U.S. and Spain, where certain areas in Spain might have higher smoking rates than the U.S. average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "OECD studies are standardized and account for national averages, making regional variations less relevant for comparing overall national smoking prevalence.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Self-reported smoking data in surveys can be unreliable due to underreporting, especially in cultures where smoking is stigmatized.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "OECD studies use consistent methodologies across countries, reducing the impact of cultural biases in self-reporting.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Public health reports highlight stricter tobacco control policies in Spain, such as higher taxes and advertising bans, contributing to lower smoking rates compared to the U.S."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Public health reports highlight stricter tobacco control policies in Spain, such as higher taxes and advertising bans, contributing to lower smoking rates compared to the U.S.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Cultural attitudes towards smoking in Spain may still encourage higher smoking rates despite stricter policies, making the comparison less clear-cut.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that cultural shifts in Spain, especially among younger generations, have led to declining smoking rates independent of policy changes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. has seen significant declines in smoking rates due to aggressive anti-smoking campaigns and vaping alternatives, narrowing the gap with Spain.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vaping adoption in the U.S. does not necessarily reduce nicotine dependence and may not reflect true smoking rate declines.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Survey data from both countries consistently show that the U.S. has a higher percentage of daily smokers than Spain, based on standardized health questionnaires."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Survey data from both countries consistently show that the U.S. has a higher percentage of daily smokers than Spain, based on standardized health questionnaires.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Standardized health questionnaires may underreport smoking in Spain due to cultural stigma around admitting smoking habits.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies accounting for cultural bias in self-reporting still confirm higher smoking rates in the U.S. through biomarker validation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The survey data does not account for differences in population size, which could skew the per capita comparison.",
+          "confidence": 0.5,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Per capita comparisons inherently adjust for population size, making this critique irrelevant to the original claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

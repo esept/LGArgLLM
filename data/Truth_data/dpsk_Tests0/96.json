@@ -1,0 +1,240 @@
+{
+  "claim": "In the US, anyone can carry a gun legally.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "In the US, federal law requires background checks for firearm purchases from licensed dealers, restricting access for certain individuals."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "In the US, federal law requires background checks for firearm purchases from licensed dealers, restricting access for certain individuals.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Private sales and gun shows often do not require background checks, allowing many individuals to bypass these restrictions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many states have enacted laws to close the 'gun show loophole' by requiring background checks for all firearm sales, including private transactions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even with background checks, individuals with no criminal record or mental health issues can still legally purchase and carry guns without significant restrictions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Some states impose additional requirements such as waiting periods, permits, or training before allowing individuals to carry guns.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Many states impose additional regulations, such as permits or training requirements, which limit who can legally carry a gun."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Many states impose additional regulations, such as permits or training requirements, which limit who can legally carry a gun.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Second Amendment of the US Constitution guarantees the right to bear arms, implying broad legal access to guns.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the Second Amendment exists, Supreme Court rulings like District of Columbia v. Heller acknowledge that reasonable regulations are permissible.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some states have 'constitutional carry' laws that allow gun carry without permits, countering the claim of universal restrictions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "'Constitutional carry' states are still a minority, and most Americans live under jurisdictions with permit requirements.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Federal law prohibits felons, domestic abusers, and individuals with certain mental health conditions from legally possessing firearms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Federal law prohibits felons, domestic abusers, and individuals with certain mental health conditions from legally possessing firearms.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "State laws vary widely, and some states have lax enforcement or loopholes that allow prohibited individuals to obtain firearms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Federal background checks (NICS) are required for all firearm purchases from licensed dealers, significantly reducing illegal access.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Private sales and gun shows often bypass background checks, enabling prohibited individuals to acquire firearms.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many states have enacted laws to close the 'gun show loophole' by requiring background checks for all sales, including private ones.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Some states have 'constitutional carry' laws allowing permitless carry, but these still exclude prohibited persons under federal law."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Some states have 'constitutional carry' laws allowing permitless carry, but these still exclude prohibited persons under federal law.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Federal prohibitions apply universally, but enforcement varies, and many prohibited persons still obtain firearms illegally.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Background checks and enforcement mechanisms are improving, reducing illegal firearm access for prohibited persons.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "State-level permitless carry laws create inconsistencies, undermining uniform federal restrictions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Interstate reciprocity agreements and federal oversight help standardize firearm regulations despite state differences.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Second Amendment protects the right to bear arms, but it does not grant unrestricted access to all individuals without legal limitations."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Second Amendment protects the right to bear arms, but it does not grant unrestricted access to all individuals without legal limitations.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many states have 'shall-issue' or 'constitutional carry' laws that allow most adults to carry firearms without permits or with minimal restrictions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in 'shall-issue' states, background checks and prohibitions for felons, domestic abusers, and mentally ill individuals still apply.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Federal law prohibits certain categories of people (e.g., convicted felons, undocumented immigrants) from owning or carrying firearms, regardless of state laws.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some cities and localities impose stricter gun control measures than state or federal laws, effectively limiting legal carry in those areas.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

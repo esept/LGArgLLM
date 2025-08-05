@@ -1,0 +1,483 @@
+{
+  "claim": "Breast cancer causes more deaths among women in the U.S. than lung cancer.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Breast cancer is the second leading cause of cancer death in women in the U.S., while lung cancer is the first, meaning lung cancer causes more deaths.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Breast cancer is the second leading cause of cancer death in women in the U.S., while lung cancer is the first, meaning lung cancer causes more deaths.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim may be based on outdated data, as recent studies show breast cancer mortality rates have risen in certain demographics.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be focusing on specific age groups where breast cancer surpasses lung cancer in mortality.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The claim might be considering non-smoking women, where breast cancer is a more significant threat than lung cancer.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Recent studies showing rising breast cancer rates may not be statistically significant enough to change the overall ranking.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in specific age groups, lung cancer remains the leading cause when all demographics are considered.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Non-smoking women still have higher mortality rates from lung cancer due to secondhand smoke and other factors.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The statistical significance of rising breast cancer rates is supported by multiple peer-reviewed studies.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "When analyzing non-smoking women separately, breast cancer does surpass lung cancer in mortality rates.",
+          "confidence": 0.77,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Lung cancer has a higher mortality rate than breast cancer, partly because it is often diagnosed at later stages when treatment options are limited.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Lung cancer has a higher mortality rate than breast cancer, partly because it is often diagnosed at later stages when treatment options are limited.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer affects a much larger population of women than lung cancer, leading to higher absolute death numbers despite lower mortality rate.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Advancements in breast cancer screening have significantly reduced mortality rates, making lung cancer comparatively deadlier.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Population size doesn't change the fact that lung cancer is more lethal on a per-case basis, which is what mortality rate measures.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Late-stage diagnosis of lung cancer is often due to lack of effective early screening methods, unlike breast cancer which has mammograms.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public health impact should consider absolute death numbers, not just rates, as it reflects the total burden on society.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with mammograms, breast cancer still has high incidence rates, contributing significantly to total cancer deaths in women.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Breast cancer has a higher survival rate due to advancements in early detection methods like mammograms, leading to fewer deaths compared to lung cancer.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Breast cancer has a higher survival rate due to advancements in early detection methods like mammograms, leading to fewer deaths compared to lung cancer.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Lung cancer is often diagnosed at later stages when treatment options are limited, which skews the survival rate comparison.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The higher incidence rate of breast cancer compared to lung cancer in women could still result in more total deaths despite better survival rates.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Advancements in lung cancer treatments, such as targeted therapies and immunotherapies, are improving survival rates and may narrow the gap.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with late-stage diagnoses, lung cancer mortality rates have been declining, suggesting that treatment advancements are having an impact.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The incidence rate argument overlooks the fact that lung cancer is more lethal per case, which could compensate for lower incidence.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While new treatments exist, they are often expensive and not accessible to all patients, limiting their overall impact on survival rates.",
+          "confidence": 0.73,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The decline in lung cancer mortality is also influenced by reduced smoking rates, not just treatment advancements.",
+          "confidence": 0.81,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Access to healthcare and socioeconomic factors play a significant role in the effectiveness of both early detection and treatment for breast cancer.",
+          "confidence": 0.76,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Smoking, a major risk factor for lung cancer, is more prevalent than major risk factors for breast cancer, contributing to higher lung cancer mortality.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Smoking, a major risk factor for lung cancer, is more prevalent than major risk factors for breast cancer, contributing to higher lung cancer mortality.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer has a higher incidence rate than lung cancer among women in the U.S., leading to more deaths despite lower risk factor prevalence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Early detection methods for breast cancer, such as mammograms, are less effective than those for lung cancer, resulting in higher mortality rates.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Genetic predisposition to breast cancer is a significant factor that cannot be mitigated by lifestyle changes, unlike smoking-related lung cancer.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The higher incidence rate of breast cancer does not necessarily correlate with higher mortality, as survival rates for breast cancer have improved significantly.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Advancements in lung cancer treatments, such as targeted therapies, have improved survival rates, reducing the mortality gap with breast cancer.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Mammograms and other early detection methods for breast cancer have significantly improved over time, reducing late-stage diagnoses and mortality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Smoking cessation programs have reduced lung cancer rates, but breast cancer rates remain high due to non-modifiable risk factors.",
+          "confidence": 0.69,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Despite improved survival rates, breast cancer still accounts for a larger number of deaths annually due to its higher incidence.",
+          "confidence": 0.66,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Targeted therapies for lung cancer are not universally effective and are often limited to specific genetic mutations.",
+          "confidence": 0.63,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Late-stage breast cancer diagnoses still occur frequently, particularly in underserved populations with limited access to screening.",
+          "confidence": 0.67,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "While breast cancer is more frequently diagnosed than lung cancer in women, lung cancer is more lethal, resulting in more deaths overall.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "While breast cancer is more frequently diagnosed than lung cancer in women, lung cancer is more lethal, resulting in more deaths overall.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer has a higher mortality rate when considering late-stage diagnoses, which skews the death count upward despite lower lethality per case.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lung cancer survival rates have improved significantly in recent years due to advances in treatment, reducing its lead in total deaths.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Demographic factors such as age and smoking prevalence in women may artificially inflate lung cancer death statistics relative to breast cancer.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Late-stage breast cancer diagnoses are becoming less common due to improved screening programs, reducing their impact on mortality rates.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The improvement in lung cancer survival rates is not yet significant enough to overtake breast cancer in total deaths among women.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Smoking rates among women have been declining, which would reduce lung cancer deaths over time, not inflate them.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with improved screening, socioeconomic disparities limit access to early detection for many women, sustaining late-stage diagnosis rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Public awareness campaigns for breast cancer may lead to the perception that it is deadlier, but statistically, lung cancer claims more lives annually.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Public awareness campaigns for breast cancer may lead to the perception that it is deadlier, but statistically, lung cancer claims more lives annually.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Breast cancer has a higher mortality rate among younger women, which skews public perception of its deadliness compared to lung cancer.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lung cancer mortality rates are declining due to reduced smoking rates, while breast cancer remains a persistent threat across demographics.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The statistical comparison ignores that breast cancer affects a larger population base, making its total impact more significant despite lower annual deaths.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Younger women represent a small fraction of total breast cancer cases, so their higher mortality rate doesn't substantially change the overall comparison with lung cancer.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Smoking rates are declining, but lung cancer still causes more deaths annually, which supports the original statistical claim.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Population size is irrelevant when comparing mortality rates; lung cancer's higher fatality per case makes it deadlier statistically.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if younger women are a minority, their higher mortality rate contributes significantly to the perceived severity of breast cancer.",
+          "confidence": 0.69,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The focus should be on absolute death numbers rather than rates, where lung cancer still leads.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

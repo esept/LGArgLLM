@@ -1,0 +1,177 @@
+{
+  "claim": "The majority of a set of numbers cannot be larger than the average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, the average of a set of numbers is calculated by summing all numbers and dividing by the count, meaning no majority can exceed it."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, the average of a set of numbers is calculated by summing all numbers and dividing by the count, meaning no majority can exceed it.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a set contains extreme outliers (e.g., one very large number and many small ones), the average may be skewed higher than most values.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Outliers are statistically rare in well-behaved datasets, so the original argument holds for typical cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a bimodal distribution with two distinct clusters, more than half the numbers could lie above the overall average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bimodal distributions are specialized cases; the claim implicitly refers to unimodal or normally distributed data.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If a majority of numbers were larger than the average, their sum would disproportionately increase the average beyond those values."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If a majority of numbers were larger than the average, their sum would disproportionately increase the average beyond those values.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes all numbers are positive; negative numbers could allow a majority to be larger than the average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Negative numbers are rare in practical datasets where 'majority > average' is discussed, preserving A2's generality.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Identical values (e.g., all numbers equal) make the majority equal to the average, violating strict inequality.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Identical-value cases are trivial exceptions and don't represent meaningful counterexamples to the claim's intent.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mathematical properties of averages ensure that more than half the data points cannot lie strictly above the mean in any finite set."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematical properties of averages ensure that more than half the data points cannot lie strictly above the mean in any finite set.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes a symmetric or unimodal distribution; in highly skewed distributions, a majority can lie above the mean (e.g., income distributions where most earn below average due to extreme outliers).",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in skewed distributions, 'mean' is not always the relevant average\u2014median or mode may better represent central tendency, preserving the original claim's validity for those measures.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original argument specifies 'strictly above the mean,' which excludes equality. Cases where many points equal the mean (e.g., uniform discrete distributions) don't violate it.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The arithmetic mean balances deviations; a majority above it would imply an impossible distribution skewed infinitely upward."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The arithmetic mean balances deviations; a majority above it would imply an impossible distribution skewed infinitely upward.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a right-skewed distribution (e.g., income data), the majority can be below the mean, but this does not preclude cases where the majority is above a different type of average (e.g., median).",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'average' without restricting it to the arithmetic mean, leaving room for ambiguity when considering other averages like median or mode.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with ambiguous definitions, the arithmetic mean's balancing property mathematically prevents a strict majority from exceeding it in finite datasets.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+    "claim": "Earth is a planet in the solar system",
+    "Args": {
+        "A1": {
+            "supporting": {
+                "id": "A1",
+                "text": "Earth is the third planet from the Sun in the solar system, as confirmed by astronomical observations and space missions."
+            },
+            "attacks": [
+                {
+                    "id": "A1",
+                    "text": "Earth is the third planet from the Sun in the solar system, as confirmed by astronomical observations and space missions.",
+                    "confidence": 0.99,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some fringe theories argue that Earth is not a planet but a flat plane, contradicting mainstream astronomy.",
+                    "confidence": 0.1,
+                    "attacks": {
+                        "A1": 0.2
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Flat Earth theories lack empirical evidence and are contradicted by satellite imagery, gravitational measurements, and space missions.",
+                    "confidence": 0.98,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "supporting": {
+                "id": "A2",
+                "text": "The International Astronomical Union (IAU) classifies Earth as a planet, meeting the criteria of orbiting the Sun, having sufficient mass for hydrostatic equilibrium, and clearing its orbital neighborhood."
+            },
+            "attacks": [
+                {
+                    "id": "A2",
+                    "text": "The International Astronomical Union (IAU) classifies Earth as a planet, meeting the criteria of orbiting the Sun, having sufficient mass for hydrostatic equilibrium, and clearing its orbital neighborhood.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "The IAU's definition of a planet is controversial and excludes many celestial bodies that share characteristics with planets, suggesting the classification is arbitrary.",
+                    "confidence": 0.65,
+                    "attacks": {
+                        "A2": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Despite controversies, the IAU's definition is the most widely accepted scientific standard for planetary classification, ensuring consistency in astronomical research.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.9
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Earth's orbital neighborhood is not entirely cleared of debris, as evidenced by near-Earth objects like asteroids and comets, which contradicts the IAU's third criterion.",
+                    "confidence": 0.6,
+                    "attacks": {
+                        "A2": 1
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "The IAU's 'clearing the neighborhood' criterion refers to dynamical dominance, not absolute absence of debris, and Earth meets this requirement by orders of magnitude.",
+                    "confidence": 0.9,
+                    "attacks": {
+                        "B2": 0.8
+                    }
+                }
+            ]
+        },
+        "A3": {
+            "supporting": {
+                "id": "A3",
+                "text": "Earth's gravitational and orbital characteristics align with those of other planets in the solar system, such as Mars and Venus."
+            },
+            "attacks": [
+                {
+                    "id": "A3",
+                    "text": "Earth's gravitational and orbital characteristics align with those of other planets in the solar system, such as Mars and Venus.",
+                    "confidence": 0.95,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Pluto was reclassified as a dwarf planet, showing that orbital characteristics alone are not sufficient to define a planet.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "A3": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "The International Astronomical Union's definition of a planet includes clearing its orbital neighborhood, which Earth does, unlike Pluto.",
+                    "confidence": 0.92,
+                    "attacks": {
+                        "B1": 0.4
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Some exoplanets have gravitational and orbital characteristics similar to Earth but are not part of the solar system.",
+                    "confidence": 0.75,
+                    "attacks": {
+                        "A3": 0.5
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "The claim specifies 'in the solar system,' so exoplanets are irrelevant to this classification.",
+                    "confidence": 0.9,
+                    "attacks": {
+                        "B2": 0.4
+                    }
+                }
+            ]
+        },
+        "A4": {
+            "supporting": {
+                "id": "A4",
+                "text": "Scientific consensus, based on centuries of study, universally recognizes Earth as one of the eight major planets in the solar system."
+            },
+            "attacks": [
+                {
+                    "id": "A4",
+                    "text": "Scientific consensus, based on centuries of study, universally recognizes Earth as one of the eight major planets in the solar system.",
+                    "confidence": 0.99,
+                    "cate": "P",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some fringe theories argue that Earth is not a planet but a unique celestial body due to its biosphere and human presence.",
+                    "confidence": 0.2,
+                    "attacks": {
+                        "A4": 0.4
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Fringe theories lack empirical evidence and are not supported by the scientific community, making them unreliable.",
+                    "confidence": 0.95,
+                    "attacks": {
+                        "B1": 1
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,279 @@
+{
+  "claim": "All contracts must be written to be valid",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Oral contracts are legally enforceable in many jurisdictions if they meet the basic requirements of offer, acceptance, and consideration."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Oral contracts are legally enforceable in many jurisdictions if they meet the basic requirements of offer, acceptance, and consideration.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Oral contracts are harder to prove in court due to the lack of written evidence, making them less reliable than written contracts.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many jurisdictions require certain types of contracts, such as real estate transactions, to be in writing to be enforceable.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Oral contracts can be subject to misunderstandings or disputes over the exact terms agreed upon.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Witness testimony and other forms of evidence can be used to substantiate the terms of an oral contract.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Implied contracts, formed through the conduct of parties, are valid without any written documentation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Implied contracts, formed through the conduct of parties, are valid without any written documentation.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Implied contracts are harder to enforce in court due to lack of clear documentation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many jurisdictions recognize and enforce implied contracts based on consistent legal precedents.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain types of contracts, such as real estate transactions, are required by law to be in writing.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While some contracts must be written, this does not negate the validity of implied contracts in other contexts.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Certain types of contracts, such as those for small purchases or services, are routinely formed verbally and upheld in court."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Certain types of contracts, such as those for small purchases or services, are routinely formed verbally and upheld in court.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Verbal contracts are harder to enforce due to lack of documentation, leading to disputes over terms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many jurisdictions recognize verbal contracts only for transactions below a certain monetary threshold, limiting their applicability.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Statute of Frauds in many legal systems requires certain contracts to be written to be enforceable, such as real estate transactions or agreements lasting over a year.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even under the Statute of Frauds, partial performance or admission in court can sometimes validate an otherwise unenforceable verbal agreement.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Statute of Frauds, while requiring some contracts to be written, explicitly acknowledges that many contracts do not need to be written to be valid."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Statute of Frauds, while requiring some contracts to be written, explicitly acknowledges that many contracts do not need to be written to be valid.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Statute of Frauds is limited to specific types of contracts (e.g., real estate, marriage, contracts not performable within one year), so it does not cover all contracts universally.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even outside the Statute of Frauds, courts often require written evidence for complex or high-value contracts to prevent disputes, implying a practical necessity for writing.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Oral contracts are legally binding in many jurisdictions if they meet basic requirements like offer, acceptance, and consideration, regardless of writing.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Enforcing oral contracts is often difficult due to lack of evidence, making them practically unreliable despite legal validity.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Historical legal systems, such as common law, recognized and enforced verbal agreements long before written contracts became standard."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Historical legal systems, such as common law, recognized and enforced verbal agreements long before written contracts became standard.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern legal systems often require written contracts for enforceability, especially for complex or high-value agreements.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in modern systems, certain verbal agreements (e.g., simple service contracts) can still be legally binding under specific conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Statutes of fraud in many jurisdictions mandate written contracts for specific types of agreements, such as real estate transactions.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "International trade often relies on verbal agreements or conduct, which are legally binding under the United Nations Convention on Contracts for the International Sale of Goods (CISG)."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "International trade often relies on verbal agreements or conduct, which are legally binding under the United Nations Convention on Contracts for the International Sale of Goods (CISG).",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CISG applies only to contracts for the international sale of goods, not to all types of contracts, such as real estate or employment contracts.",
+          "confidence": 0.9,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even under the CISG, parties can opt out of its provisions and require written contracts, which is common in practice to avoid disputes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many jurisdictions outside the CISG framework require written contracts for certain types of agreements to be enforceable, such as those involving real estate or lasting more than one year.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Statute of Frauds in common law countries mandates written contracts for specific types of agreements, reinforcing the claim that not all contracts can be verbal.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

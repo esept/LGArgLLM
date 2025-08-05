@@ -1,0 +1,189 @@
+{
+  "claim": "The Great Depression can be treated with Prozac.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The Great Depression was a historical economic event, not a medical condition, and thus cannot be treated with medication like Prozac."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Great Depression was a historical economic event, not a medical condition, and thus cannot be treated with medication like Prozac.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The term 'Great Depression' can also refer to a severe form of clinical depression, which Prozac is designed to treat.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The claim explicitly refers to 'The Great Depression,' which is universally understood as the 1930s economic crisis, not a medical condition.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Prozac and similar medications can improve economic productivity by treating individual depression, indirectly addressing economic downturns.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Economic depressions are systemic issues requiring policy solutions, not individual medical treatments.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Prozac is an antidepressant medication designed to treat clinical depression in individuals, not macroeconomic phenomena."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Prozac is an antidepressant medication designed to treat clinical depression in individuals, not macroeconomic phenomena.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The Great Depression metaphorically describes widespread economic despair, which could theoretically be alleviated by treating individual depression at scale.",
+          "confidence": 0.55,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Economic despair is fundamentally structural, not psychological, making individual treatment irrelevant to systemic solutions.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Historical evidence shows no correlation between antidepressant usage and economic recovery during actual recessions.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Prozac wasn't invented until 1987, making this argument anachronistic for the 1930s Great Depression.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Economic depressions are caused by complex systemic factors such as market crashes, unemployment, and policy failures, which require economic solutions, not pharmaceutical ones."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Economic depressions are caused by complex systemic factors such as market crashes, unemployment, and policy failures, which require economic solutions, not pharmaceutical ones.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Prozac can alleviate symptoms of depression in individuals, which could indirectly improve economic productivity and morale during a depression.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if Prozac helps individuals, systemic economic issues like unemployment and market crashes require large-scale policy interventions, not just individual treatment.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Historical evidence shows that economic depressions are resolved through fiscal and monetary policies, not medical interventions.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While policies are primary, mental health support (like Prozac) can complement economic recovery by stabilizing the workforce.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Prozac was not developed until the late 20th century, long after the Great Depression occurred in the 1930s, making the claim temporally impossible."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Prozac was not developed until the late 20th century, long after the Great Depression occurred in the 1930s, making the claim temporally impossible.",
+          "cate": "S",
+          "confidence": 0.98,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Even if Prozac existed during the Great Depression, economic crises are not treatable with antidepressants.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Economic crises can indirectly benefit from mental health treatments if widespread depression exacerbates the crisis.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The Great Depression was primarily caused by structural economic factors, not mental health issues.",
+          "confidence": 0.9,
+          "attacks": {
+            "C1": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "claim": "The Gettysburg Address is a speech.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Gettysburg Address was delivered orally by Abraham Lincoln, which is a defining characteristic of a speech.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Gettysburg Address was delivered orally by Abraham Lincoln, which is a defining characteristic of a speech.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Oral delivery alone does not define a speech; written works can also be read aloud without being classified as speeches.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gettysburg Address is too brief to qualify as a speech; it is more accurately described as a short address or remarks.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The context and intent of the Gettysburg Address, being a formal public address, clearly classify it as a speech regardless of length.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many historically recognized speeches are brief, such as Winston Churchill's 'Never was so much owed by so many to so few,' which is still considered a speech.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The definition of a speech includes any formal oral presentation to an audience, which the Gettysburg Address satisfies, regardless of whether written works can also be read aloud.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Churchill's example is not directly comparable because it was part of a longer speech, whereas the Gettysburg Address was standalone and exceptionally short.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Gettysburg Address is a written document preserved in history, which could classify it more as a written address than a speech.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Gettysburg Address is a written document preserved in history, which could classify it more as a written address than a speech.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Gettysburg Address was delivered orally by Abraham Lincoln, fulfilling the primary criterion of a speech.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical records confirm it was spoken to an audience at a public event, which aligns with the definition of a speech.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The written preservation does not negate its original form as an oral delivery; many speeches are later transcribed.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The context of its delivery (a dedication ceremony) further supports its classification as a speech, regardless of its archival form.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Transcription is merely a method of preservation and does not redefine the medium of the original communication.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Gettysburg Address follows the structure and brevity typical of speeches, with a clear beginning, middle, and end.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Gettysburg Address follows the structure and brevity typical of speeches, with a clear beginning, middle, and end.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gettysburg Address lacks the spontaneous and interactive elements commonly found in speeches, making it more akin to a written address.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many speeches are delivered extemporaneously, whereas the Gettysburg Address was carefully crafted and read from a script, which is not typical of most speeches.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though it was read from a script, the Gettysburg Address was delivered orally to an audience, which is a defining characteristic of a speech.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many famous speeches, such as those by politicians and leaders, are also carefully crafted and read from scripts, yet they are still considered speeches.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Oral delivery alone does not necessarily make something a speech; other forms like poetry readings are also delivered orally but are not classified as speeches.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The context and intent of the Gettysburg Address differ from typical political speeches, as it was more of a dedication than a persuasive or informative speech.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Unlike impromptu speeches, the Gettysburg Address was carefully crafted and revised, making it more akin to a formal written statement.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Unlike impromptu speeches, the Gettysburg Address was carefully crafted and revised, making it more akin to a formal written statement.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Gettysburg Address was delivered orally in a public setting, which is a defining characteristic of a speech.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The careful crafting and revision process does not negate its classification as a speech, as many famous speeches undergo similar preparation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Oral delivery alone does not exclusively define a speech; written statements can also be delivered orally without being classified as speeches.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The level of preparation distinguishes it from typical speeches, which are often less meticulously crafted.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if written statements can be delivered orally, the context and intent of the Gettysburg Address align more closely with traditional speeches.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Gettysburg Address was intended to be heard by an audience at a public event, which aligns with the traditional purpose of a speech.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Gettysburg Address was intended to be heard by an audience at a public event, which aligns with the traditional purpose of a speech.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gettysburg Address was also written down and published, making it a written document as much as a speech.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The brevity and poetic nature of the Gettysburg Address make it more akin to a prose poem than a traditional speech.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if written down, the primary medium of delivery was oral, which is the defining characteristic of a speech.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many speeches throughout history have been poetic or brief without ceasing to be speeches.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The written version has been more influential than the spoken delivery, suggesting its primary nature is as a document.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical records refer to the Gettysburg Address as a 'speech,' reinforcing its classification as such.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical records refer to the Gettysburg Address as a 'speech,' reinforcing its classification as such.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The term 'address' in its title suggests it may be more of a formal statement than a traditional speech.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical records can be inconsistent or subjective, and their classification may not be definitive.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gettysburg Address was delivered orally to an audience, which is a key characteristic of a speech.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many formal statements are also delivered as speeches, so the terms are not mutually exclusive.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The consistency of historical records across multiple sources lends credibility to the classification as a speech.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Oral delivery alone does not define a speech; content and context are equally important.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "If historical sources disagree or use varying terminology, their collective reliability is questionable.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The Gettysburg Address lacks interactive elements typical of speeches, such as audience engagement or Q&A, making it more like a proclamation.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The Gettysburg Address lacks interactive elements typical of speeches, such as audience engagement or Q&A, making it more like a proclamation.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Gettysburg Address was delivered orally to an audience, which is a defining characteristic of a speech, regardless of interactivity.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many historical speeches lack interactive elements due to their formal nature, yet they are still classified as speeches.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Oral delivery alone does not necessarily classify something as a speech; written proclamations can also be read aloud without being speeches.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of interactivity in the Gettysburg Address distinguishes it from typical speeches and aligns it more with formal declarations.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The context and intent of the Gettysburg Address\u2014to commemorate and inspire\u2014are consistent with the purpose of many famous speeches, reinforcing its classification as such.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

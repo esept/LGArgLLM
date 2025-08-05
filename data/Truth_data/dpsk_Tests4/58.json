@@ -1,0 +1,264 @@
+{
+  "claim": "Americans earn less  than people in certain countries.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The median household income in the United States is lower than in countries like Switzerland and Norway, based on OECD data."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The median household income in the United States is lower than in countries like Switzerland and Norway, based on OECD data.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The OECD data does not account for differences in cost of living, which is significantly higher in Switzerland and Norway compared to the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even after adjusting for purchasing power parity (PPP), median disposable income in Switzerland and Norway remains higher than in the U.S.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The comparison excludes tax burdens, which are substantially higher in Switzerland and Norway, reducing net income.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite higher taxes, social benefits (e.g., healthcare, education) in those countries offset the net income difference for many households.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Average wages in the U.S. are higher than the global average but lower than in some high-income countries such as Luxembourg and Denmark."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Average wages in the U.S. are higher than the global average but lower than in some high-income countries such as Luxembourg and Denmark.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The comparison does not account for cost of living differences, which are significantly higher in Luxembourg and Denmark than in the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even after adjusting for cost of living, Luxembourg and Denmark still have higher disposable incomes than the U.S. due to stronger social welfare systems.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. has a much larger and more diverse economy, making average wage comparisons misleading without considering regional variations.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regional wage disparities in the U.S. are offset by higher wages in tech and finance hubs, which pull the national average up significantly.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The data excludes non-wage compensation like employer-provided healthcare, which is more prevalent in the U.S. than in many high-income countries.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Purchasing power parity-adjusted incomes in the U.S. are surpassed by those in countries like Qatar and Singapore."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Purchasing power parity-adjusted incomes in the U.S. are surpassed by those in countries like Qatar and Singapore.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "PPP-adjusted incomes in Qatar and Singapore are skewed by small, wealthy populations and do not reflect typical earnings for most citizens.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with skewed distributions, median PPP-adjusted incomes in these countries still exceed U.S. medians, supporting the original claim.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. has higher disposable incomes after taxes and social transfers compared to Qatar and Singapore.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Disposable income comparisons ignore cost-of-living differences that PPP adjustments account for.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Certain professions in countries like Germany and Australia offer higher salaries than their U.S. counterparts when adjusted for cost of living."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Certain professions in countries like Germany and Australia offer higher salaries than their U.S. counterparts when adjusted for cost of living.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The U.S. has higher average salaries in many high-demand fields like tech and finance compared to Germany and Australia.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in tech and finance, cost of living adjustments can make salaries in Germany and Australia more competitive than they appear.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim ignores non-salary benefits like healthcare and education, which are often more accessible in Germany and Australia, effectively increasing net income.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Many Americans receive employer-provided healthcare and retirement benefits, which can offset the lack of universal services.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The U.S. has a higher income inequality gap compared to some developed nations, leading to lower median earnings relative to top earners."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The U.S. has a higher income inequality gap compared to some developed nations, leading to lower median earnings relative to top earners.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Median income in the U.S. is still higher than in many developed nations, even with income inequality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The U.S. median income advantage is concentrated in high-cost areas, reducing real purchasing power for many Americans.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality measures don't account for non-wage benefits like healthcare and retirement, which are more substantial in some other countries.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with benefits considered, U.S. workers face higher out-of-pocket costs that offset these advantages.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The U.S. has higher GDP per capita than most developed nations, suggesting greater earning potential overall.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "GDP per capita doesn't reflect income distribution, and the U.S. wealth concentration means most citizens don't benefit proportionally.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

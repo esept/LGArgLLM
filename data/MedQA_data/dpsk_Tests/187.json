@@ -1,0 +1,245 @@
+{
+  "claim": "Consider the following background information: A 32-year-old man jumps off a 3 story building during a suicide attempt. Paramedics arrive quickly, and he is taken to the hospital where several stable lumbar fractures and a shattered right calcaneus are found. He undergoes surgery and his calcaneus is repaired with 11 screws.\n\nGiven the background information the following is corrrect: The patient is expected to experience pain with inversion and eversion of his foot during the long-term post-surgery period.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The calcaneus is a critical bone for foot movement, and its fracture can lead to chronic pain during inversion and eversion due to altered biomechanics."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The calcaneus is a critical bone for foot movement, and its fracture can lead to chronic pain during inversion and eversion due to altered biomechanics.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Modern surgical techniques and rehabilitation can fully restore calcaneal function, eliminating long-term pain in most patients.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Severe calcaneal fractures with multiple screws often result in post-traumatic arthritis, maintaining long-term pain despite surgery.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Pain perception varies significantly between individuals, making generalized predictions unreliable.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The lumbar fractures may dominate the patient's pain experience, overshadowing foot-related discomfort.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.55
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Surgical repair with multiple screws often results in residual stiffness and pain, particularly during complex foot movements like inversion and eversion."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Surgical repair with multiple screws often results in residual stiffness and pain, particularly during complex foot movements like inversion and eversion.",
+          "cate": "P",
+          "confidence": 0.82,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Modern surgical techniques and post-operative rehabilitation can significantly reduce long-term pain and stiffness in calcaneal fractures.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The severity of the initial injury (shattered calcaneus with 11 screws) suggests higher likelihood of permanent mobility limitations regardless of surgical quality.",
+          "confidence": 0.68,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some patients adapt well to hardware and report minimal pain after complete healing (12-18 months post-op).",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Biomechanical studies show screw fixation alters natural foot mechanics, making complex movements more likely to cause pain even after healing.",
+          "confidence": 0.73,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Long-term studies show that calcaneal fractures, especially those requiring extensive surgical fixation, frequently lead to persistent pain during weight-bearing and foot motion."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Long-term studies show that calcaneal fractures, especially those requiring extensive surgical fixation, frequently lead to persistent pain during weight-bearing and foot motion.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some studies indicate that modern surgical techniques and rehabilitation protocols significantly reduce long-term pain in calcaneal fracture patients.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's young age and potential for better bone healing may further mitigate long-term pain issues.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The severity of this particular fracture (shattered calcaneus requiring 11 screws) suggests higher likelihood of long-term complications regardless of treatment.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Psychological factors post-suicide attempt may influence pain perception regardless of physical healing.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.5
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The severity of the injury (shattered calcaneus) increases the likelihood of post-surgical complications, including chronic pain during foot movements."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The severity of the injury (shattered calcaneus) increases the likelihood of post-surgical complications, including chronic pain during foot movements.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Calcaneal fractures, even severe ones, often heal well with modern surgical techniques, reducing the likelihood of chronic pain.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that post-surgical outcomes for calcaneal fractures are highly dependent on rehabilitation compliance, not just surgical success.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The presence of multiple lumbar fractures may distract from proper foot rehabilitation, increasing the risk of chronic foot pain regardless of surgical success.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Pain perception is subjective and influenced by psychological factors, which are likely elevated in suicide attempt patients regardless of physical healing.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Rehabilitation after calcaneal fracture surgery often notes persistent discomfort during inversion and eversion, even with optimal recovery."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Rehabilitation after calcaneal fracture surgery often notes persistent discomfort during inversion and eversion, even with optimal recovery.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some studies show that with advanced surgical techniques and rigorous physical therapy, patients can regain near-normal foot function without persistent pain.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Advanced surgical techniques are not universally available, and many patients still experience long-term discomfort despite optimal care.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Pain perception is subjective, and some patients may report discomfort due to psychological factors rather than physical limitations.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Clinical studies consistently correlate calcaneal fractures with objective measures of reduced foot mobility and pain, regardless of psychological factors.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

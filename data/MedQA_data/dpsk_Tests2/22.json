@@ -1,0 +1,303 @@
+{
+  "claim": "Consider the following background information: A 30-year-old G4P3 woman at 38 weeks gestation is admitted to the labor and delivery unit complaining of contractions every 5 minutes for the past hour. Her previous births have been via uncomplicated caesarean sections, but she wishes to attempt vaginal delivery this time. Her prenatal care is notable for gestational diabetes controlled with diet and exercise. The delivery is prolonged, but the patient\"s pain is controlled with epidural analgesia. She delivers a male infant with Apgar scores of 8 and 9 at 1 and 5 minutes, respectively. Fundal massage is performed, but the placenta does not pass. The obstetrician manually removes the placenta, but a red mass protrudes through the vagina attached to the placenta. The patient loses 500 mL of blood over the next minute, during which her blood pressure decreases from 120/80 mmHg to 90/65 mmHg.\n\nGiven the background information the following is corrrect: Uterine artery ligation is the best next step in management.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Uterine artery ligation is a recognized surgical technique to control postpartum hemorrhage when conservative measures fail."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Uterine artery ligation is a recognized surgical technique to control postpartum hemorrhage when conservative measures fail.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Uterine artery ligation may not be the best next step if the hemorrhage is due to retained placental fragments, which require manual removal or curettage.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In cases of retained placenta with hemorrhage, manual removal and uterotonics (e.g., oxytocin) are typically attempted before surgical interventions like uterine artery ligation.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Uterine artery ligation can compromise future fertility, making it less ideal for a patient who may desire more children.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Uterine artery ligation is reversible in many cases and preserves the uterus, making it a viable option for patients who may want future pregnancies.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's hemodynamic instability (BP drop to 90/65 mmHg) may necessitate more immediate life-saving measures like hysterectomy if bleeding is uncontrolled.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Uterine artery ligation can be performed quickly and effectively in hemodynamically unstable patients to stabilize them before considering hysterectomy.",
+          "confidence": 0.82,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Manual removal of the placenta followed by hemorrhage suggests retained placental fragments or uterine atony, which may require surgical intervention."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Manual removal of the placenta followed by hemorrhage suggests retained placental fragments or uterine atony, which may require surgical intervention.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Uterine artery ligation is invasive and may not be necessary if less invasive methods like uterotonics (e.g., oxytocin) can control the hemorrhage.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Uterotonics may not be effective in cases of severe hemorrhage or retained placental fragments, making surgical intervention like uterine artery ligation necessary.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of gestational diabetes increases the risk of placental abnormalities, making manual removal insufficient and requiring more definitive surgical management.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with placental abnormalities, initial management should focus on stabilizing the patient with uterotonics and blood products before considering surgical options.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's hemodynamic instability (drop in blood pressure) indicates the need for immediate intervention to control bleeding."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's hemodynamic instability (drop in blood pressure) indicates the need for immediate intervention to control bleeding.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Uterine artery ligation may not be the best next step if the bleeding is due to retained placental fragments rather than uterine atony.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Manual removal of the placenta and fundal massage are standard first steps, and further intervention should be based on the cause of bleeding, which may not yet be confirmed.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of gestational diabetes increases the risk of postpartum hemorrhage, necessitating more aggressive measures like uterine artery ligation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gestational diabetes controlled with diet and exercise does not significantly increase the risk of hemorrhage compared to other factors like prolonged labor.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Uterine artery ligation preserves fertility, which may be preferable to hysterectomy in a patient of reproductive age."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Uterine artery ligation preserves fertility, which may be preferable to hysterectomy in a patient of reproductive age.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Uterine artery ligation is not always effective in controlling hemorrhage, and delay in definitive treatment (hysterectomy) can worsen outcomes.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In cases of severe hemorrhage, immediate hysterectomy may be life-saving and should not be delayed for fertility-preserving measures.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's hemodynamic instability (BP drop to 90/65 mmHg) suggests she may not tolerate the time required for uterine artery ligation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Uterine artery ligation can be performed quickly by experienced surgeons, making it a viable option even in unstable patients.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The presence of a red mass protruding through the vagina suggests uterine inversion, which requires prompt surgical management."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The presence of a red mass protruding through the vagina suggests uterine inversion, which requires prompt surgical management.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Uterine artery ligation is not the best next step for uterine inversion; manual repositioning should be attempted first.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Manual repositioning may fail in severe cases, making uterine artery ligation or other surgical interventions necessary.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The red mass could also indicate a prolapsed fibroid or retained placental tissue, not necessarily uterine inversion.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical context (postpartum hemorrhage, hypotension) strongly supports uterine inversion over other diagnoses.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Gestational diabetes increases the risk of postpartum hemorrhage, necessitating aggressive management to prevent complications."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Gestational diabetes increases the risk of postpartum hemorrhage, necessitating aggressive management to prevent complications.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gestational diabetes alone is not a strong predictor of postpartum hemorrhage; other factors like prolonged labor and manual placenta removal are more significant.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if gestational diabetes is a minor risk factor, the presence of other high-risk conditions (e.g., manual placenta removal) justifies aggressive management.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aggressive management may not always be necessary if bleeding is controlled promptly and the patient is stable.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Given the rapid blood loss and hemodynamic instability described, aggressive management is clearly warranted.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

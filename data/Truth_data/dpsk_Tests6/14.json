@@ -1,0 +1,232 @@
+{
+  "claim": "Coughing mimics the effects of CPR during a heart attack, making it effective in stopping a heart attack.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "CPR involves chest compressions and rescue breaths to manually circulate blood and oxygen, which coughing cannot replicate."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "CPR involves chest compressions and rescue breaths to manually circulate blood and oxygen, which coughing cannot replicate.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Coughing can increase intrathoracic pressure, which may briefly maintain some blood circulation during a heart attack.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The increase in intrathoracic pressure from coughing is insufficient to sustain vital organ perfusion compared to CPR.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cough CPR has been documented in rare cases where conscious patients maintained circulation by coughing during arrhythmias.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such cases are extremely rare and not generalizable to typical heart attack scenarios where CPR is necessary.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Coughing does not provide the necessary force to maintain blood circulation during cardiac arrest, unlike CPR."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Coughing does not provide the necessary force to maintain blood circulation during cardiac arrest, unlike CPR.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Cough CPR has been documented in rare cases where it temporarily maintained consciousness during ventricular fibrillation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The documented cases of cough CPR are extremely rare and not reproducible under controlled conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Coughing may increase intrathoracic pressure, which can briefly support minimal circulation in specific arrhythmias.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increase in intrathoracic pressure from coughing is insufficient to sustain vital organ perfusion during cardiac arrest.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Medical guidelines from organizations like the American Heart Association do not endorse coughing as a substitute for CPR during a heart attack."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical guidelines from organizations like the American Heart Association do not endorse coughing as a substitute for CPR during a heart attack.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that controlled coughing can temporarily maintain blood circulation in specific cases of arrhythmia, though not full cardiac arrest.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases of arrhythmia, coughing is not a reliable substitute for CPR and is not recommended in emergency protocols.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are anecdotal reports of individuals surviving heart attacks by coughing, suggesting it may have some situational effectiveness.",
+          "confidence": 0.45,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal evidence lacks scientific rigor and cannot replace controlled clinical trials or medical guidelines.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Coughing may briefly increase intrathoracic pressure, but it is insufficient to sustain vital organ perfusion during cardiac arrest."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Coughing may briefly increase intrathoracic pressure, but it is insufficient to sustain vital organ perfusion during cardiac arrest.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Cough CPR has been documented in rare cases where patients maintained consciousness and circulation by coughing during ventricular fibrillation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The documented cases of cough CPR are extremely rare and require specific conditions (e.g., monitored setting, immediate onset of arrhythmia), making it impractical for general use.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Coughing can maintain some blood flow temporarily, which might buy time until professional help arrives in very specific scenarios.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if coughing provides temporary circulation, it does not address the underlying cardiac arrhythmia, which requires defibrillation or advanced medical intervention.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Heart attacks often involve arrhythmias or complete cardiac arrest, where coughing has no therapeutic effect."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Heart attacks often involve arrhythmias or complete cardiac arrest, where coughing has no therapeutic effect.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Coughing can increase intrathoracic pressure, potentially maintaining blood flow during certain arrhythmias.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The effectiveness of coughing is limited to very specific, rare arrhythmias and cannot be generalized to most heart attacks.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In cases of ventricular fibrillation, the most common lethal arrhythmia in heart attacks, coughing is completely ineffective.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

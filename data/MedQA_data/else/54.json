@@ -1,0 +1,322 @@
+{
+  "claim": "A 32-year-old woman presents to the emergency department with 2 hours of left-sided weakness. Her husband reports that she had been complaining of pain and swelling in her right calf for several weeks prior to this event. The couple had recently returned from a vacation in Europe. What ausculatory finding would explain the mechanism by which her more recent complaint occurred? : Wide, fixed splitting of S2",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Wide, fixed splitting of S2 suggests an atrial septal defect (ASD), which can lead to paradoxical embolism, explaining the stroke-like symptoms and the right calf pain/swelling (deep vein thrombosis).",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Wide, fixed splitting of S2 suggests an atrial septal defect (ASD), which can lead to paradoxical embolism, explaining the stroke-like symptoms and the right calf pain/swelling (deep vein thrombosis).",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of wide, fixed splitting of S2 is not pathognomonic for ASD and could be caused by other conditions such as right bundle branch block or pulmonary hypertension.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Paradoxical embolism is a rare event, and the likelihood of it causing both the calf symptoms and the stroke-like symptoms is low compared to more common causes like arterial thrombosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While other conditions can cause wide, fixed splitting of S2, the clinical context (recent travel and DVT symptoms) strongly supports ASD as the most likely explanation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The combination of DVT symptoms and stroke-like symptoms in a young patient with recent travel history makes paradoxical embolism a highly plausible diagnosis despite its rarity.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with the clinical context, further diagnostic tests like echocardiography are necessary to confirm ASD, as auscultatory findings alone are insufficient for a definitive diagnosis.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The rarity of paradoxical embolism means that other more common causes should be ruled out first, even if the presentation seems suggestive.",
+          "confidence": 0.81,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The recent travel history increases the risk of deep vein thrombosis (DVT), and a paradoxical embolism through a patent foramen ovale (PFO) could explain the stroke, but PFO typically does not cause wide, fixed splitting of S2.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The recent travel history increases the risk of deep vein thrombosis (DVT), and a paradoxical embolism through a patent foramen ovale (PFO) could explain the stroke, but PFO typically does not cause wide, fixed splitting of S2.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Wide, fixed splitting of S2 is more indicative of an atrial septal defect (ASD) rather than a PFO, which could also allow paradoxical embolism.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of wide, fixed splitting of S2 could be due to pulmonary hypertension secondary to pulmonary embolism, which is more likely given the recent travel and calf symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ASD is usually diagnosed earlier in life due to its hemodynamic effects, making it less likely in a 32-year-old woman without prior cardiac symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pulmonary embolism does not typically cause wide, fixed splitting of S2 unless there is significant right heart strain, which may not be present in this case.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Late diagnosis of ASD is possible if the defect was small and asymptomatic until adulthood, especially in the context of a paradoxical embolism.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The absence of significant right heart strain does not rule out pulmonary embolism as the cause of wide, fixed splitting of S2, as other factors like chronic thromboembolic disease could be involved.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Wide, fixed splitting of S2 is characteristic of ASD, which allows right-to-left shunting, potentially permitting a thrombus from the DVT to bypass the lungs and cause a systemic embolism (stroke).",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Wide, fixed splitting of S2 is characteristic of ASD, which allows right-to-left shunting, potentially permitting a thrombus from the DVT to bypass the lungs and cause a systemic embolism (stroke).",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Wide, fixed splitting of S2 is not exclusive to ASD and can also occur in conditions like right bundle branch block (RBBB), which does not involve right-to-left shunting.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of ASD does not necessarily mean a thrombus will bypass the lungs, as many ASDs are small and do not allow significant shunting.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "RBBB typically causes wide but not fixed splitting of S2, which helps differentiate it from ASD in this clinical context.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even small ASDs can allow paradoxical embolism under conditions of increased right atrial pressure, such as during a Valsalva maneuver, which could occur during travel.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The distinction between fixed and variable splitting can be subtle on physical exam, and echocardiography is often required to confirm the diagnosis of ASD.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The likelihood of paradoxical embolism through a small ASD is still low compared to larger defects, and other sources of stroke should be considered.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The auscultatory finding could also be due to pulmonary hypertension secondary to chronic thromboembolic disease, but this would not directly explain the acute stroke-like symptoms.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The auscultatory finding could also be due to pulmonary hypertension secondary to chronic thromboembolic disease, but this would not directly explain the acute stroke-like symptoms.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Pulmonary hypertension can lead to right ventricular strain, which may indirectly contribute to paradoxical embolism through a patent foramen ovale, explaining the stroke-like symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Chronic thromboembolic disease can cause progressive vascular changes that increase the risk of acute thromboembolic events, including stroke.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The presence of a patent foramen ovale is necessary for paradoxical embolism, and not all patients with pulmonary hypertension have this anatomical variant.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Acute stroke-like symptoms are more likely due to a fresh thrombus rather than chronic vascular changes from thromboembolic disease.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without a patent foramen ovale, severe pulmonary hypertension can lead to right-to-left shunting through other mechanisms, such as pulmonary arteriovenous malformations.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The combination of DVT symptoms, recent travel, and stroke-like presentation strongly suggests paradoxical embolism, with wide, fixed splitting of S2 pointing to ASD as the underlying mechanism.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The combination of DVT symptoms, recent travel, and stroke-like presentation strongly suggests paradoxical embolism, with wide, fixed splitting of S2 pointing to ASD as the underlying mechanism.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Wide, fixed splitting of S2 is not pathognomonic for ASD and could be caused by other conditions like right bundle branch block or pulmonary hypertension.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Paradoxical embolism requires demonstration of a right-to-left shunt, which isn't definitively proven by auscultation findings alone.",
+          "confidence": 0.88,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While not pathognomonic, the combination of wide, fixed S2 splitting with the clinical context makes ASD the most likely explanation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Echocardiography would be needed to confirm the shunt, but the auscultatory finding provides strong initial evidence in this clinical scenario.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The specificity of wide, fixed S2 splitting for ASD is actually quite high when combined with appropriate clinical context.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Initial management decisions often must be made before echocardiography results are available, making physical exam findings critically important.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

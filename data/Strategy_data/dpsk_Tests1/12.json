@@ -1,0 +1,287 @@
+{
+  "claim": "Grapes are essential to winemaking.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Grapes are the primary raw material used in winemaking, providing the sugars necessary for fermentation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Grapes are the primary raw material used in winemaking, providing the sugars necessary for fermentation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some wines are made from other fruits, such as apples (cider) or plums (slivovitz), which also undergo fermentation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fruit wines like cider and slivovitz are not traditionally classified as 'wine' in many regions, where 'wine' legally refers only to grape-based products.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Fermentation can also be done with non-fruit sources like honey (mead) or grains (beer), which can produce alcoholic beverages without grapes.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mead and beer are distinct beverage categories and are not considered 'wine' by any standard definition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The natural acids and tannins in grapes are critical for the flavor profile and structure of wine."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The natural acids and tannins in grapes are critical for the flavor profile and structure of wine.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Other fruits like apples and pears can also provide natural acids and tannins, making them viable alternatives for winemaking.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While other fruits can provide acids and tannins, they lack the specific balance and complexity found in grapes, which are uniquely suited for winemaking.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern winemaking techniques can artificially add acids and tannins, reducing the necessity of grapes.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Artificial additives often result in inferior flavor profiles compared to naturally occurring compounds in grapes.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Grape varieties (e.g., Cabernet Sauvignon, Chardonnay) determine the type and quality of wine produced."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Grape varieties (e.g., Cabernet Sauvignon, Chardonnay) determine the type and quality of wine produced.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Wine can also be made from other fruits, such as apples (cider) or plums (plum wine), which do not require grapes.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-grape wines are typically categorized separately from traditional grape wines and do not share the same prestige or market dominance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some winemaking processes use grape substitutes or additives to mimic grape wine characteristics, reducing reliance on specific grape varieties.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Substitute-based wines often lack the complexity and authenticity of those made from traditional grape varieties.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Winemaking traditions and regulations in many regions (e.g., France, Italy) legally require grapes as the base ingredient."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Winemaking traditions and regulations in many regions (e.g., France, Italy) legally require grapes as the base ingredient.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some winemaking traditions, such as those in Japan and Korea, use rice or other fruits as primary ingredients, not grapes.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in Japan and Korea, grape-based wines are also produced and recognized under broader winemaking regulations.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern experimental winemaking techniques sometimes use synthetic or lab-grown alternatives to grapes.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Synthetic or lab-grown alternatives are not legally recognized as wine in traditional winemaking regions and lack widespread acceptance.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The fermentation of grape juice by yeast produces alcohol, the defining characteristic of wine."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The fermentation of grape juice by yeast produces alcohol, the defining characteristic of wine.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Other fruits like apples, plums, and cherries can also be fermented to produce alcoholic beverages similar to wine.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Traditional and legal definitions of wine in many regions specify that it must be made from grapes, distinguishing it from other fruit-based alcoholic beverages.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures historically produce wine-like beverages from non-grape sources, such as rice wine or honey mead, which are considered wines in their contexts.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While these beverages exist, they are often categorized separately (e.g., 'rice wine' or 'mead') to avoid confusion with grape-based wine, reinforcing grapes' centrality to winemaking.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Grapes contain phenolic compounds that contribute to the color, aroma, and aging potential of wine."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Grapes contain phenolic compounds that contribute to the color, aroma, and aging potential of wine.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Other fruits like cherries and blackberries also contain phenolic compounds and can be used to make wine.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Grapes have a unique balance of sugars, acids, and phenolic compounds that make them superior for winemaking compared to other fruits.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern winemaking techniques can artificially add phenolic compounds to non-grape wines, making grapes non-essential.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Artificially adding phenolic compounds often results in inferior wine quality compared to naturally occurring compounds in grapes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

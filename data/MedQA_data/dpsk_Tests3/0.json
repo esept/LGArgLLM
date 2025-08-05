@@ -1,0 +1,295 @@
+{
+  "claim": "Consider the following background information: An 89-year-old woman sees her neurologist for a follow-up evaluation. Three months ago, she presented with complaints about facial asymmetry. Her daughter has noticed that her mother\u2019s mouth is droops downwards on the right side of her face and that she cannot close her right eye well. The same side also lacks wrinkles on the forehead. Since then, the patient feels like her facial muscles have gotten weaker. She was given a course of corticosteroids, but she has still not recovered fully. Upon being asked to close her eyes, the patient has difficulty doing so and fails to completely close her eyelids. On examination, there is no loss of pain, temperature, or crude or tactile touch sensations in the whole face. The neurological exam is otherwise unremarkable. This patient also has type 2 diabetes mellitus which is well controlled with metformin. The neurologist recommends a therapy that will help relieve her symptoms.\n\nGiven the background information the following is corrrect: The healthcare provider is likely to prescribe Methylprednisolone to this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Methylprednisolone is a corticosteroid commonly used to treat facial nerve palsy, which aligns with the patient's symptoms of facial asymmetry and difficulty closing the eye."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Methylprednisolone is a corticosteroid commonly used to treat facial nerve palsy, which aligns with the patient's symptoms of facial asymmetry and difficulty closing the eye.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient has already been given a course of corticosteroids without full recovery, suggesting that additional corticosteroids like Methylprednisolone may not be effective.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's well-controlled type 2 diabetes mellitus may complicate the use of corticosteroids, as they can elevate blood glucose levels.",
+          "confidence": 0.8,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Alternative therapies such as physical therapy or antiviral medications might be more appropriate given the patient's incomplete response to initial corticosteroid treatment.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's age (89 years) may increase the risk of adverse effects from corticosteroids, making them a less favorable option.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's history of corticosteroid use without full recovery suggests a need for a stronger or more targeted corticosteroid like Methylprednisolone."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's history of corticosteroid use without full recovery suggests a need for a stronger or more targeted corticosteroid like Methylprednisolone.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Methylprednisolone is not necessarily stronger than other corticosteroids; the lack of recovery may indicate an underlying condition not responsive to corticosteroids.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's well-controlled diabetes mellitus may complicate the use of high-dose corticosteroids like Methylprednisolone due to the risk of hyperglycemia.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.6,
+            "A2": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The persistent symptoms could be due to Bell's palsy, which often resolves spontaneously and may not require additional corticosteroids.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Bell's palsy typically shows improvement within 3 months; the lack of recovery suggests a different etiology that may not respond to corticosteroids.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Methylprednisolone is often prescribed for inflammatory conditions affecting the facial nerve, such as Bell's palsy, which matches the patient's clinical presentation."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Methylprednisolone is often prescribed for inflammatory conditions affecting the facial nerve, such as Bell's palsy, which matches the patient's clinical presentation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient has already been given a course of corticosteroids without full recovery, suggesting that another corticosteroid like Methylprednisolone may not be effective.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The lack of full recovery could be due to insufficient duration or dosage of the initial corticosteroid treatment, and a second course with Methylprednisolone might still be beneficial.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's well-controlled type 2 diabetes mellitus may complicate the use of corticosteroids like Methylprednisolone due to potential hyperglycemic effects.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Close monitoring of blood glucose levels can mitigate the hyperglycemic risks of Methylprednisolone in diabetic patients, making it a viable option.",
+          "confidence": 0.6,
+          "attacks": {
+            "B2": 0.55
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's symptoms could be due to a non-inflammatory cause, such as a structural lesion, which would not respond to Methylprednisolone.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.75
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The absence of sensory loss and otherwise unremarkable neurological exam makes a structural lesion less likely, supporting an inflammatory etiology like Bell's palsy.",
+          "confidence": 0.7,
+          "attacks": {
+            "B3": 0.65
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The patient's well-controlled type 2 diabetes mellitus may contraindicate the use of Methylprednisolone due to its potential to elevate blood glucose levels."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's well-controlled type 2 diabetes mellitus may contraindicate the use of Methylprednisolone due to its potential to elevate blood glucose levels.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Methylprednisolone is a corticosteroid with strong anti-inflammatory effects, which may still be justified despite the risk of elevated blood glucose, given the severity of the patient's facial paralysis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Alternative therapies like physical therapy or antiviral medications could be considered to avoid the glucose-elevating effects of corticosteroids.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's diabetes is well-controlled, suggesting that temporary corticosteroid use may be manageable with close monitoring and adjustments to her diabetes treatment.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.6
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "Given the patient's age and partial recovery with previous corticosteroids, the neurologist might consider alternative therapies like physical therapy or antiviral medications instead of Methylprednisolone."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Given the patient's age and partial recovery with previous corticosteroids, the neurologist might consider alternative therapies like physical therapy or antiviral medications instead of Methylprednisolone.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Methylprednisolone is a stronger corticosteroid and may still be effective despite partial recovery with previous corticosteroids.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's age increases the risk of side effects from stronger corticosteroids like Methylprednisolone.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Antiviral medications are not indicated unless there is evidence of a viral cause like Bell's palsy.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Physical therapy alone may not be sufficient to address the underlying inflammation causing the facial weakness.",
+          "confidence": 0.6,
+          "attacks": {
+            "A5": 0.5
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "The lack of sensory loss in the face suggests a possible non-inflammatory etiology, which might not respond to Methylprednisolone."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The lack of sensory loss in the face suggests a possible non-inflammatory etiology, which might not respond to Methylprednisolone.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bell's palsy, a common cause of facial asymmetry without sensory loss, often responds to corticosteroids like Methylprednisolone despite its unclear etiology.",
+          "confidence": 0.8,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's persistent symptoms despite initial corticosteroid treatment suggest possible steroid resistance or an alternative diagnosis.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's age and diabetes increase the likelihood of microvascular cranial nerve palsy, which typically doesn't benefit from corticosteroids.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.5,
+            "B1": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

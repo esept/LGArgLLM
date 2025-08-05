@@ -1,0 +1,287 @@
+{
+  "claim": "The working hours of Americans have increased over time.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Historical data from the Bureau of Labor Statistics shows that average weekly working hours for full-time employees in the U.S. have increased since the 1970s."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Historical data from the Bureau of Labor Statistics shows that average weekly working hours for full-time employees in the U.S. have increased since the 1970s.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The data does not account for the rise in part-time employment, which may skew the perception of overall working hours.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with part-time employment considered, full-time workers still represent the majority, and their increased hours dominate the trend.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements have led to more flexible working arrangements, making traditional 'working hours' a less accurate measure of actual labor input.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that flexible work often leads to longer hours due to blurred boundaries between work and personal time.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The rise of the gig economy and freelance work has led to more Americans working longer hours, often without traditional overtime protections."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The rise of the gig economy and freelance work has led to more Americans working longer hours, often without traditional overtime protections.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many gig economy workers choose flexible schedules, which may not necessarily result in longer working hours compared to traditional full-time jobs.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that gig workers often work multiple jobs, cumulatively leading to longer total working hours than traditional employment.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The gig economy represents a small fraction of the workforce, so its impact on overall working hours is limited.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if the gig economy is a small segment, its rapid growth disproportionately influences trends in working hours.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Technological advancements, such as smartphones and remote work tools, have blurred the boundaries between work and personal time, leading to longer effective working hours."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Technological advancements, such as smartphones and remote work tools, have blurred the boundaries between work and personal time, leading to longer effective working hours.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that while technology increases accessibility, it also enables flexible scheduling, allowing workers to reduce total hours worked by integrating personal tasks into their day.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Flexible scheduling often leads to work encroaching on personal time, as employees feel pressured to remain available outside traditional hours.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Productivity gains from technology have reduced the need for extended working hours, as tasks can be completed more efficiently.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite higher productivity, workload expectations have increased proportionally, offsetting potential reductions in working hours.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Economic pressures, including stagnant wages relative to cost of living, have forced many Americans to work additional hours or multiple jobs to maintain their standard of living."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Economic pressures, including stagnant wages relative to cost of living, have forced many Americans to work additional hours or multiple jobs to maintain their standard of living.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Technological advancements and remote work have increased productivity, allowing some Americans to maintain or improve their standard of living without working additional hours.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite productivity gains, wage stagnation has outpaced these benefits, leaving many workers needing to work more hours to compensate.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Labor laws and union efforts in some sectors have successfully limited working hours, counteracting the trend of increased hours.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Union membership has declined significantly in recent decades, reducing the influence of labor protections on working hours for most Americans.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Corporate policies emphasizing productivity and lean staffing have resulted in employees taking on more responsibilities and working longer hours to meet demands."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Corporate policies emphasizing productivity and lean staffing have resulted in employees taking on more responsibilities and working longer hours to meet demands.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Technological advancements and automation have reduced the need for long working hours in many industries, offsetting the impact of lean staffing.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with automation, the pressure to meet productivity targets often leads to increased workload and longer hours, especially in service-oriented sectors.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Studies show that flexible work arrangements and remote work have allowed employees to maintain productivity without increasing working hours.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Remote work has blurred the boundaries between work and personal life, often leading to employees working longer hours unintentionally.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The decline of union representation in the U.S. workforce has reduced collective bargaining power to limit working hours, contributing to longer work schedules."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The decline of union representation in the U.S. workforce has reduced collective bargaining power to limit working hours, contributing to longer work schedules.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many industries have adopted labor regulations and overtime laws that independently limit working hours, regardless of union presence.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Labor regulations often have loopholes or weak enforcement, making them less effective than union-negotiated contracts in practice.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Technological advancements and remote work have increased flexibility, allowing workers to reduce total hours worked while maintaining productivity.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Remote work has blurred boundaries between work and personal time, often leading to unpaid overtime and longer effective work hours.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,358 @@
+{
+  "claim": "A contract is not valid if one party was coerced into signing it",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Contract law in most jurisdictions requires mutual consent, and coercion invalidates genuine consent, rendering the contract unenforceable."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Contract law in most jurisdictions requires mutual consent, and coercion invalidates genuine consent, rendering the contract unenforceable.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions recognize economic duress as a form of coercion, but courts often require proof of immediate and severe financial harm to invalidate a contract.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Modern contract law sometimes enforces 'necessitous' contracts signed under mild pressure if the terms are fundamentally fair and no explicit threats were made.",
+          "confidence": 0.68,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The UNIDROIT Principles explicitly list economic duress as grounds for contract avoidance, creating international consensus against enforcement of coerced agreements.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8,
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even under UNIDROIT, the coerced party must act within one year of signing and prove the coercion directly affected their decision-making capacity.",
+          "confidence": 0.78,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Legal doctrines such as duress explicitly state that agreements made under coercion are voidable at the option of the coerced party."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Legal doctrines such as duress explicitly state that agreements made under coercion are voidable at the option of the coerced party.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions require proof of immediate physical harm or threat to invalidate a contract under duress, which may not cover psychological coercion.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Modern legal interpretations increasingly recognize psychological and economic coercion as valid grounds for duress, broadening the scope beyond physical threats.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The coerced party must act promptly to void the contract; delay can be interpreted as affirmation of the agreement.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Courts often consider the context and power dynamics, allowing exceptions to the promptness requirement in cases of ongoing coercion.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The principle of voluntariness is fundamental to contract formation; coercion undermines this principle, making the contract invalid."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The principle of voluntariness is fundamental to contract formation; coercion undermines this principle, making the contract invalid.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions recognize contracts signed under economic duress as valid if the coerced party had reasonable alternatives.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Economic duress is rarely sufficient to invalidate a contract unless the coercion involves unlawful threats or extreme pressure.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Coercion is difficult to prove in court, so many contracts signed under coercion remain enforceable due to lack of evidence.",
+          "confidence": 0.68,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern legal systems increasingly accept digital evidence and witness testimony to substantiate claims of coercion.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Parties may later ratify a coerced contract by continuing to perform under it, which can validate it retroactively.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Ratification requires full knowledge of the coercion and voluntary acceptance, which is often absent in true coercion cases.",
+          "confidence": 0.85,
+          "attacks": {
+            "B3": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Courts consistently rule in favor of parties who can prove they were forced into signing a contract, as it violates the requirement of free will."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Courts consistently rule in favor of parties who can prove they were forced into signing a contract, as it violates the requirement of free will.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions require extremely high standards of proof for coercion, making it difficult to invalidate contracts even under pressure.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Legal precedents in most common-law systems have lowered the burden of proof for coercion in recent decades.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Economic or social pressure often doesn't meet the legal definition of coercion, leaving many unfairly contracted parties without recourse.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern contract law increasingly recognizes forms of non-violent coercion like power imbalances in employment or consumer contracts.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Many coerced parties never challenge contracts due to fear of retaliation or lack of legal resources.",
+          "confidence": 0.68,
+          "attacks": {
+            "A4": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Growing legal aid programs and whistleblower protections are reducing barriers to challenging coerced contracts.",
+          "confidence": 0.72,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "International contract law, including the UNIDROIT Principles, explicitly excludes coerced agreements from being legally binding."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "International contract law, including the UNIDROIT Principles, explicitly excludes coerced agreements from being legally binding.",
+          "cate": "P",
+          "confidence": 0.93,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The UNIDROIT Principles are not legally binding unless adopted by national legislation, limiting their direct enforceability.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Many jurisdictions have incorporated UNIDROIT Principles into their national contract laws, making them enforceable in those regions.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Proving coercion in court is extremely difficult due to high evidentiary standards, rendering the protection theoretical in practice.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern legal systems increasingly accept circumstantial evidence and burden-shifting to address coercion proof challenges.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Some legal systems recognize economic duress as valid coercion, while others don't, creating inconsistency in protection.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The UNIDROIT Principles provide a harmonized standard for economic duress that influences progressive jurisdictions.",
+          "confidence": 0.72,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Coercion is considered a defect of consent, and contracts formed under such conditions are treated as lacking the necessary legal validity."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Coercion is considered a defect of consent, and contracts formed under such conditions are treated as lacking the necessary legal validity.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions require proof of coercion beyond reasonable doubt, making it difficult to invalidate contracts on this basis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Modern contract law increasingly recognizes psychological coercion as valid grounds for invalidation, reducing the burden of proof.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Economic duress is often not recognized as coercion in many legal systems, limiting the scope of invalid contracts.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Recent court rulings have expanded the definition of coercion to include economic pressure in certain circumstances.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Parties may falsely claim coercion to escape unfavorable contracts, undermining the principle of contractual certainty.",
+          "confidence": 0.68,
+          "attacks": {
+            "A6": 0.55
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Legal systems have developed sophisticated mechanisms to detect false claims of coercion, preserving contract validity.",
+          "confidence": 0.78,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

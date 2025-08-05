@@ -1,0 +1,232 @@
+{
+  "claim": "Consider the following background information: A 38-year-old G4P3 presents to her obstetrician\u2019s office for her 20-week anatomy ultrasound. She reports that she feels well and has not experienced any contractions or vaginal bleeding. She also reports good fetal movement. The patient declined prenatal screening earlier in the pregnancy for religious reasons but would now like an anatomy ultrasound to ensure the fetus is growing appropriately. The patient\u2019s previous pregnancies were uncomplicated, and she delivered three healthy babies at full term. On the ultrasound, the technician observes a male fetus with likely intrauterine growth restriction (IUGR). She also notes microcephaly, convex-rounded feet, and clenched fists with overlapping fingers. The technician further notes a medium-sized ventricular septal defect (VSD). The amniotic fluid index (AFI) is 26 cm.\n\nGiven the background information the following is corrrect: A prominent occiput is most likely to be observed in this fetus.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The observed features (microcephaly, convex-rounded feet, clenched fists with overlapping fingers, and VSD) are consistent with Trisomy 18 (Edwards syndrome), which is associated with a prominent occiput."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The observed features (microcephaly, convex-rounded feet, clenched fists with overlapping fingers, and VSD) are consistent with Trisomy 18 (Edwards syndrome), which is associated with a prominent occiput.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the features are consistent with Trisomy 18, a prominent occiput is not always present in all cases, and other conditions (e.g., other chromosomal abnormalities or syndromes) could also present with similar findings.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Trisomy 18 is the most statistically likely diagnosis given the combination of microcephaly, clenched fists with overlapping fingers, and VSD, which are hallmark features of the syndrome.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high AFI (26 cm) is atypical for Trisomy 18, which is more commonly associated with oligohydramnios, raising doubt about the diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Polyhydramnios (high AFI) can occur in Trisomy 18 due to impaired fetal swallowing, though it is less common, so it does not rule out the diagnosis.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Intrauterine growth restriction (IUGR) and microcephaly are common in Trisomy 18, and a prominent occiput is a characteristic finding in such cases."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Intrauterine growth restriction (IUGR) and microcephaly are common in Trisomy 18, and a prominent occiput is a characteristic finding in such cases.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Trisomy 18 is associated with IUGR and microcephaly, not all cases present with a prominent occiput, and other genetic conditions could explain these findings.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Trisomy 18 is the most likely diagnosis given the combination of IUGR, microcephaly, and other characteristic features like clenched fists and VSD, making a prominent occiput highly probable.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high amniotic fluid index (AFI) of 26 cm is atypical for Trisomy 18, which is usually associated with oligohydramnios, suggesting another diagnosis may be more likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Polyhydramnios can occasionally occur in Trisomy 18 due to impaired fetal swallowing, so the AFI does not rule out the diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The combination of structural abnormalities (VSD, clenched fists, overlapping fingers) strongly suggests a chromosomal abnormality like Trisomy 18, where a prominent occiput is a typical feature."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The combination of structural abnormalities (VSD, clenched fists, overlapping fingers) strongly suggests a chromosomal abnormality like Trisomy 18, where a prominent occiput is a typical feature.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Trisomy 18 is a plausible explanation, other chromosomal abnormalities or genetic syndromes (e.g., Trisomy 13, Smith-Lemli-Opitz syndrome) can present with similar structural abnormalities without necessarily including a prominent occiput.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Trisomy 18 (Edwards syndrome) has a well-documented and consistent phenotypic profile, including a prominent occiput, which is highly specific to this condition compared to other chromosomal abnormalities.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The ultrasound findings could also be due to non-genetic causes such as severe fetal infection (e.g., cytomegalovirus), which may mimic chromosomal abnormalities but would not typically include a prominent occiput.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-genetic causes like infections usually present with additional findings (e.g., calcifications, hepatosplenomegaly) that are absent in this case, making Trisomy 18 more likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of prenatal screening does not rule out chromosomal abnormalities, and the ultrasound findings align with Trisomy 18, which includes a prominent occiput as a hallmark sign."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of prenatal screening does not rule out chromosomal abnormalities, and the ultrasound findings align with Trisomy 18, which includes a prominent occiput as a hallmark sign.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ultrasound findings could also be consistent with other conditions such as Trisomy 13 or severe IUGR without chromosomal abnormalities, which do not necessarily include a prominent occiput.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Trisomy 18 is far more likely given the combination of microcephaly, clenched fists with overlapping fingers, and VSD, which are highly specific to this condition.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if Trisomy 18 is likely, the prominent occiput is not always present in all cases, and its absence would not rule out the diagnosis.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "A prominent occiput is a well-documented feature in fetuses with Trisomy 18, and the other observed anomalies support this diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "A prominent occiput is a well-documented feature in fetuses with Trisomy 18, and the other observed anomalies support this diagnosis.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While a prominent occiput is common in Trisomy 18, it is not always present, and other conditions can also present with similar features.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The combination of IUGR, microcephaly, clenched fists, and VSD is highly specific for Trisomy 18, making the presence of a prominent occiput very likely.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high AFI (26 cm) is atypical for Trisomy 18, which usually presents with oligohydramnios, suggesting another diagnosis might be more likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Polyhydramnios can occur in Trisomy 18 due to impaired fetal swallowing, so the high AFI does not rule out the diagnosis.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

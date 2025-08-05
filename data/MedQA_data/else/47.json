@@ -1,0 +1,330 @@
+{
+  "claim": "A 29-year-old woman presents with low-grade fever, rash, and joint pain. She says her symptoms started gradually about 3 months ago and have progressively worsened. The patient describes her rash as pruritic, flat, and localized to her face. She reports a different type of rash on her shoulders and arms that are aggravated by exposure to sunlight. She describes her joint pain as moderate, dull and aching in character, and present mainly in the small bones of her wrists and hands, worse on the right than the left. She has no other relevant medical history and takes no current medications. Her family history is notable for her maternal grandmother, who had an unknown autoimmune condition. The patient denies any smoking history, alcohol use, or recreational drug use. Her temperature is 38.0\u2103 (100.3\u2109), pulse is 59/min, respiratory rate is 19/min, and blood pressure is 129/84 mm Hg. On physical examination, there is a macular, erythematous rash that involves both cheeks and the bridge of her nose, sparing the nasolabial folds. There is also a mild macular rash on the sun-exposed areas of her upper extremities and shoulders. She has moderate to severe point tenderness in the small joints of her wrists and hands, worse on the right, with minimal erythema and swelling. Multiple painless ulcers are present on the soft and hard palate. Which of the following additional findings would most likely be present in this patient? : Immunologically mediated destruction of the salivary glands",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms, including malar rash, photosensitivity, joint pain, and oral ulcers, are highly suggestive of systemic lupus erythematosus (SLE), which can also involve salivary gland inflammation (e.g., secondary Sj\u00f6gren's syndrome).",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms, including malar rash, photosensitivity, joint pain, and oral ulcers, are highly suggestive of systemic lupus erythematosus (SLE), which can also involve salivary gland inflammation (e.g., secondary Sj\u00f6gren's syndrome).",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient lacks classic sicca symptoms (dry eyes, dry mouth) that are typically associated with salivary gland involvement in Sj\u00f6gren's syndrome, making this finding less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Immunologically mediated destruction of salivary glands is more commonly a primary feature of Sj\u00f6gren's syndrome rather than SLE, and the patient does not meet diagnostic criteria for primary Sj\u00f6gren's.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Secondary Sj\u00f6gren's syndrome can occur in SLE without overt sicca symptoms, as glandular inflammation may be subclinical or early in the disease course.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "SLE and Sj\u00f6gren's syndrome share overlapping autoimmune mechanisms, and salivary gland involvement in SLE is well-documented even without full secondary Sj\u00f6gren's syndrome.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Subclinical salivary gland inflammation is often detected via biopsy or imaging in SLE patients, supporting that immunologic destruction may be present despite absence of symptoms.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Autoantibodies like anti-SSA/Ro (common in both SLE and Sj\u00f6gren's) could mediate salivary gland damage in this patient, even without overt sicca symptoms.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The presence of immunologically mediated destruction of salivary glands (e.g., Sj\u00f6gren's syndrome) is less likely because the patient lacks classic symptoms like dry eyes or dry mouth, which are hallmark features of salivary gland involvement.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of immunologically mediated destruction of salivary glands (e.g., Sj\u00f6gren's syndrome) is less likely because the patient lacks classic symptoms like dry eyes or dry mouth, which are hallmark features of salivary gland involvement.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Immunologically mediated destruction of salivary glands can still occur subclinically without overt symptoms like dry eyes or dry mouth, especially in early stages of autoimmune diseases.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's other symptoms (e.g., rash, joint pain, oral ulcers) are highly suggestive of systemic lupus erythematosus (SLE), which can also involve salivary gland dysfunction even without classic Sj\u00f6gren's symptoms.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Subclinical salivary gland involvement is rare in early autoimmune disease, and the absence of symptoms like dry mouth strongly reduces its likelihood as a concurrent finding.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While SLE can involve salivary glands, it typically does so in the context of secondary Sj\u00f6gren's syndrome, which would still present with sicca symptoms (dry eyes/mouth).",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that salivary gland histopathology can reveal lymphocytic infiltration in SLE patients even without sicca symptoms, supporting subclinical involvement.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Secondary Sj\u00f6gren's syndrome develops in only 10-20% of SLE patients, making it an unlikely additional finding in this case without sicca symptoms.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's family history of an autoimmune condition increases the likelihood of SLE, which can have overlapping features with other autoimmune disorders like Sj\u00f6gren's syndrome, making salivary gland involvement plausible.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's family history of an autoimmune condition increases the likelihood of SLE, which can have overlapping features with other autoimmune disorders like Sj\u00f6gren's syndrome, making salivary gland involvement plausible.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms and physical exam findings are more consistent with systemic lupus erythematosus (SLE) than Sj\u00f6gren's syndrome, making salivary gland involvement less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Sj\u00f6gren's syndrome typically presents with sicca symptoms (dry eyes and mouth), which the patient does not report, reducing the likelihood of salivary gland involvement.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While SLE is more likely, Sj\u00f6gren's syndrome can coexist with SLE as a secondary condition, so salivary gland involvement cannot be ruled out entirely.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of sicca symptoms does not definitively exclude Sj\u00f6gren's syndrome, as some patients may not develop these symptoms early in the disease course.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's rash, joint pain, and oral ulcers are highly specific for SLE, making the likelihood of coexisting Sj\u00f6gren's syndrome low without additional evidence.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Early Sj\u00f6gren's syndrome can present with systemic symptoms like fatigue and arthralgias before sicca symptoms develop, so further testing may be warranted.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of sicca symptoms (dry eyes/mouth) and the predominance of cutaneous and articular symptoms make salivary gland destruction an unlikely primary finding in this patient.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of sicca symptoms (dry eyes/mouth) and the predominance of cutaneous and articular symptoms make salivary gland destruction an unlikely primary finding in this patient.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Salivary gland destruction can occur subclinically without overt sicca symptoms, especially in early stages of autoimmune diseases like Sj\u00f6gren's syndrome.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's rash and joint pain are more consistent with systemic lupus erythematosus (SLE), which can also involve salivary gland inflammation as part of its systemic autoimmune pathology.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Subclinical salivary gland involvement is rare in SLE compared to Sj\u00f6gren's syndrome, and the absence of sicca symptoms strongly reduces its likelihood in this case.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While SLE can involve multiple organs, the patient's presentation lacks other typical SLE features like nephritis or cytopenias, making salivary gland destruction less probable.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Early Sj\u00f6gren's syndrome can present with primarily extraglandular manifestations (e.g., rash, arthralgia) before sicca symptoms develop, so salivary gland destruction cannot be ruled out.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's family history of autoimmune disease increases the likelihood of overlapping autoimmune pathologies, including subclinical salivary gland involvement.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Autoantibodies like anti-SSA/Ro, which are associated with both SLE and Sj\u00f6gren's syndrome, could theoretically link the patient's presentation to salivary gland involvement, though clinical correlation is needed.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Autoantibodies like anti-SSA/Ro, which are associated with both SLE and Sj\u00f6gren's syndrome, could theoretically link the patient's presentation to salivary gland involvement, though clinical correlation is needed.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms and physical findings are more consistent with systemic lupus erythematosus (SLE) than Sj\u00f6gren's syndrome, making salivary gland involvement less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of anti-SSA/Ro antibodies alone does not confirm salivary gland destruction, as these antibodies can occur in SLE without Sj\u00f6gren's syndrome.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While SLE is more likely, Sj\u00f6gren's syndrome can coexist with SLE, and the patient's oral ulcers could be a sign of secondary Sj\u00f6gren's syndrome.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anti-SSA/Ro antibodies are strongly associated with neonatal lupus and congenital heart block, but their presence in adults does not necessarily indicate salivary gland pathology.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's oral ulcers are more characteristic of SLE mucosal involvement rather than Sj\u00f6gren's syndrome, reducing the likelihood of salivary gland destruction.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even if anti-SSA/Ro antibodies are present, additional diagnostic tests like salivary gland biopsy or imaging would be required to confirm salivary gland destruction.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,295 @@
+{
+  "claim": "Consider the following background information: A 41-year-old man is brought to the emergency department after a suicide attempt. His wife found him on the bathroom floor with an empty bottle of medication next to him. He has a history of major depressive disorder. His only medication is nortriptyline. His pulse is 127/min and blood pressure is 90/61 mm Hg. Examination shows dilated pupils and dry skin. The abdomen is distended and there is dullness on percussion in the suprapubic region. An ECG shows tachycardia and a QRS complex width of 130 ms.\n\nGiven the background information the following is corrrect: In addition to intravenous fluid resuscitation, administering sodium bicarbonate is the most appropriate pharmacotherapy.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Sodium bicarbonate is indicated for tricyclic antidepressant overdose to counteract sodium channel blockade and reduce QRS widening."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Sodium bicarbonate is indicated for tricyclic antidepressant overdose to counteract sodium channel blockade and reduce QRS widening.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sodium bicarbonate may not be necessary if the QRS widening is mild (<100 ms) and the patient is hemodynamically stable.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with mild QRS widening, sodium bicarbonate is still recommended as a preventive measure against potential arrhythmias in tricyclic antidepressant overdose.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hypertonic saline may be more effective than sodium bicarbonate in severe cases of tricyclic antidepressant overdose with significant QRS widening (>120 ms).",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypertonic saline lacks robust clinical evidence and may carry higher risks of complications compared to sodium bicarbonate, which has a well-established safety profile.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's symptoms, including tachycardia, hypotension, and QRS widening, are consistent with tricyclic antidepressant toxicity."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms, including tachycardia, hypotension, and QRS widening, are consistent with tricyclic antidepressant toxicity.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the symptoms are consistent with tricyclic antidepressant toxicity, they could also be caused by other conditions such as sepsis or other drug overdoses.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of major depressive disorder and the empty bottle of nortriptyline strongly suggest tricyclic antidepressant toxicity as the most likely cause.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The QRS widening could be due to hyperkalemia rather than tricyclic antidepressant toxicity.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hyperkalemia typically causes peaked T waves and not QRS widening, making tricyclic antidepressant toxicity a more likely explanation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Nortriptyline, a tricyclic antidepressant, is known to cause sodium channel blockade, which sodium bicarbonate can effectively treat."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Nortriptyline, a tricyclic antidepressant, is known to cause sodium channel blockade, which sodium bicarbonate can effectively treat.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sodium bicarbonate is not universally effective in all cases of tricyclic antidepressant overdose, as some patients may not respond to alkalinization therapy.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Clinical studies show that sodium bicarbonate is effective in the majority of tricyclic antidepressant overdose cases, particularly for QRS widening and arrhythmias.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other treatments like activated charcoal or lipid emulsion therapy may be more appropriate depending on the timing and severity of the overdose.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Activated charcoal is only effective if administered within 1-2 hours of ingestion, which may not be the case here given the presentation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Lipid emulsion therapy is typically reserved for cases refractory to sodium bicarbonate and other standard treatments.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Intravenous fluid resuscitation alone is insufficient to address the sodium channel blockade caused by tricyclic antidepressant overdose."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Intravenous fluid resuscitation alone is insufficient to address the sodium channel blockade caused by tricyclic antidepressant overdose.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sodium bicarbonate is not always necessary in tricyclic antidepressant overdose if the patient is hemodynamically stable and has no ECG abnormalities.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hemodynamic instability and ECG abnormalities (e.g., QRS widening) are strong indicators of sodium channel blockade, necessitating sodium bicarbonate.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other treatments like activated charcoal or lipid emulsion therapy may be more effective than sodium bicarbonate in certain cases of tricyclic antidepressant overdose.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Activated charcoal is only effective if administered early, and lipid emulsion therapy is reserved for refractory cases, making sodium bicarbonate the first-line pharmacotherapy for ECG abnormalities.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The ECG findings of QRS widening and tachycardia are classic signs of tricyclic antidepressant toxicity requiring sodium bicarbonate."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The ECG findings of QRS widening and tachycardia are classic signs of tricyclic antidepressant toxicity requiring sodium bicarbonate.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sodium bicarbonate is not universally effective in all cases of tricyclic antidepressant toxicity, particularly if the patient has pre-existing metabolic alkalosis.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases of metabolic alkalosis, sodium bicarbonate can still be beneficial by correcting the sodium channel blockade caused by tricyclic antidepressants.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The ECG findings could also be due to other causes such as hyperkalemia or myocardial ischemia, which would not respond to sodium bicarbonate.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The clinical context, including the history of nortriptyline use and the physical exam findings, strongly supports tricyclic antidepressant toxicity as the most likely cause.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Sodium bicarbonate administration is a standard treatment for tricyclic antidepressant overdose to prevent life-threatening arrhythmias."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Sodium bicarbonate administration is a standard treatment for tricyclic antidepressant overdose to prevent life-threatening arrhythmias.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sodium bicarbonate may not be necessary if the patient's ECG abnormalities resolve with fluid resuscitation alone.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ECG abnormalities in tricyclic antidepressant overdose often persist or worsen without sodium bicarbonate, making early administration critical.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Excessive sodium bicarbonate can cause metabolic alkalosis and hypokalemia, which may worsen cardiac instability.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Careful monitoring of blood pH and electrolytes during sodium bicarbonate administration can prevent complications like metabolic alkalosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

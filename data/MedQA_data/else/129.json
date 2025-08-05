@@ -1,0 +1,362 @@
+{
+  "claim": "A 50-year-old African-American woman comes to the physician because of right elbow pain for the past 12 hours. The pain is currently at 7 out of 10 in intensity. She has not had any trauma to the right elbow. She also reports general malaise. She had a miscarriage at the age of 37 years. One year ago, she had carpal tunnel syndrome that was treated with a volar splint. Three months ago, she was diagnosed with thrombophlebitis, which responded well to treatment with ibuprofen and compression therapy. She runs 5 km (3.1 miles) per week. She works as an accountant. She drinks 1\u20132 glasses of wine on weekends. She is 171 cm (5 ft 7 in) tall and weighs 70 kg (154 lbs); BMI is 23.9 kg/m2. Her pulse is 110/min, blood pressure is 130/80 mm Hg, and temperature is 38.3\u00b0C (101\u00b0F). On physical examination, the skin above her right elbow is erythematous and severely tender to palpation. Laboratory studies show:\nHemoglobin 13.5 g/dL\nLeukocyte count 9,520/mm3\nPlatelet count 853,000/mm3\nSerum\nNa+ 136 mEq/L\nK+ 3.7 mEq/L\nCl- 96 mEq/L\nCa2+ 11.0 mg/dL\nHCO3- 25 mEq/L\nGlucose 102 mg/dL\nCreatinine 1.0 mg/dL\nUric acid 10.5 mg/dL\nFurther evaluation of this patient is most likely to show which of the following? : Mutation in Janus kinase 2 gene",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient has thrombocytosis (platelet count 853,000/mm3) and a history of thrombophlebitis, which are common features of myeloproliferative disorders like polycythemia vera, where JAK2 mutation is frequently found.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient has thrombocytosis (platelet count 853,000/mm3) and a history of thrombophlebitis, which are common features of myeloproliferative disorders like polycythemia vera, where JAK2 mutation is frequently found.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's elevated calcium (11.0 mg/dL) and uric acid (10.5 mg/dL) levels suggest hyperparathyroidism or malignancy, which could independently explain her symptoms without invoking a JAK2 mutation.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The fever (38.3\u00b0C) and erythematous, tender skin over the elbow are more consistent with an acute infectious process (e.g., cellulitis or septic arthritis) rather than a myeloproliferative disorder.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Thrombocytosis can be reactive (e.g., due to inflammation or iron deficiency) and does not necessarily indicate a myeloproliferative disorder or JAK2 mutation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hyperparathyroidism does not typically cause thrombocytosis or thrombophlebitis, which are central to the original argument for a JAK2 mutation.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Infectious processes usually cause leukocytosis with left shift, which is absent here (leukocyte count 9,520/mm3 is only mildly elevated).",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Reactive thrombocytosis rarely exceeds 1,000,000/mm3, and the patient's platelet count (853,000/mm3) is highly suggestive of a primary myeloproliferative disorder.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's history of miscarriage and carpal tunnel syndrome could be linked to hypercoagulability from a JAK2 mutation, further supporting the original argument.",
+          "confidence": 0.7,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's elevated serum calcium (11.0 mg/dL) and uric acid (10.5 mg/dL) levels, along with thrombocytosis, suggest a possible underlying myeloproliferative neoplasm, which is often associated with JAK2 mutations.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's elevated serum calcium (11.0 mg/dL) and uric acid (10.5 mg/dL) levels, along with thrombocytosis, suggest a possible underlying myeloproliferative neoplasm, which is often associated with JAK2 mutations.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms, including fever, erythema, and severe tenderness, are more consistent with an acute infectious process such as cellulitis or septic arthritis rather than a myeloproliferative neoplasm.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The elevated calcium level could be due to primary hyperparathyroidism, which is more common than myeloproliferative neoplasms and does not involve JAK2 mutations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Thrombocytosis can also occur as a reactive process to inflammation or infection, which is supported by the patient's fever and elevated leukocyte count, making JAK2 mutation less likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While infection is possible, the combination of thrombocytosis, hypercalcemia, and hyperuricemia is highly specific for a myeloproliferative neoplasm, which should not be dismissed without further evaluation.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Primary hyperparathyroidism does not typically cause thrombocytosis or hyperuricemia, making it an unlikely explanation for all the patient's laboratory abnormalities.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Reactive thrombocytosis usually does not reach platelet counts as high as 853,000/mm3, which is more suggestive of a myeloproliferative neoplasm.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's physical exam findings of erythema and severe tenderness are more indicative of a localized process like infection, which can also cause systemic inflammation and mimic some features of myeloproliferative disorders.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of systemic symptoms (fever, malaise) and localized erythema/tenderness could indicate an infectious or inflammatory process, which is less likely to be associated with a JAK2 mutation.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of systemic symptoms (fever, malaise) and localized erythema/tenderness could indicate an infectious or inflammatory process, which is less likely to be associated with a JAK2 mutation.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The elevated platelet count (853,000/mm3) and history of thrombophlebitis strongly suggest a myeloproliferative disorder, which is commonly associated with JAK2 mutations.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The hypercalcemia (Ca2+ 11.0 mg/dL) and elevated uric acid (10.5 mg/dL) could indicate an underlying malignancy or metabolic disorder, which may also be linked to JAK2 mutations.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infectious or inflammatory processes can also cause reactive thrombocytosis, which would explain the elevated platelet count without requiring a JAK2 mutation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypercalcemia and elevated uric acid can occur in many conditions, including granulomatous diseases or renal dysfunction, not necessarily linked to JAK2 mutations.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Reactive thrombocytosis in infection typically does not reach levels as high as 853,000/mm3, making a myeloproliferative disorder more likely.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The combination of thrombocytosis, hypercalcemia, and elevated uric acid is highly suggestive of a myeloproliferative disorder, which often involves JAK2 mutations.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's history of carpal tunnel syndrome and thrombophlebitis, along with current thrombocytosis, points towards a chronic inflammatory or hypercoagulable state, not necessarily a JAK2 mutation.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's history of carpal tunnel syndrome and thrombophlebitis, along with current thrombocytosis, points towards a chronic inflammatory or hypercoagulable state, not necessarily a JAK2 mutation.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The elevated platelet count (853,000/mm3) and hyperuricemia (10.5 mg/dL) are strongly suggestive of myeloproliferative neoplasms, which commonly involve JAK2 mutations.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's fever (38.3\u00b0C), erythema, and severe tenderness at the elbow suggest an infectious or inflammatory process, which could independently explain the thrombocytosis without invoking a JAK2 mutation.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While myeloproliferative neoplasms are possible, the absence of splenomegaly and the presence of acute inflammatory signs make reactive thrombocytosis more likely than a primary JAK2-driven disorder.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's history of thrombophlebitis and current thrombocytosis could represent a paraneoplastic syndrome, which would still warrant investigation for JAK2 mutation despite the inflammatory presentation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Reactive thrombocytosis rarely exceeds 1,000,000/mm3, and this patient's platelet count is borderline for requiring JAK2 testing according to hematologic guidelines.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Paraneoplastic thrombocytosis typically occurs with solid tumors, not hematologic malignancies, making JAK2 testing less relevant in this context.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The combination of thrombocytosis, hypercalcemia, and systemic symptoms is highly suggestive of a primary bone marrow disorder, such as primary myelofibrosis, which is strongly linked to JAK2 mutations.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The combination of thrombocytosis, hypercalcemia, and systemic symptoms is highly suggestive of a primary bone marrow disorder, such as primary myelofibrosis, which is strongly linked to JAK2 mutations.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hypercalcemia and thrombocytosis could also be caused by metastatic bone disease, which is more common in this age group and does not involve JAK2 mutations.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of thrombophlebitis and miscarriage could suggest an underlying hypercoagulable state unrelated to JAK2 mutations, such as antiphospholipid syndrome.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The elevated uric acid level and fever could indicate gout or pseudogout, which are more common causes of acute elbow pain and do not involve JAK2 mutations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Metastatic bone disease typically presents with lytic or blastic lesions on imaging, which are not mentioned in this case, making primary myelofibrosis more likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Antiphospholipid syndrome usually presents with recurrent thrombosis or pregnancy complications, but it does not explain the thrombocytosis or hypercalcemia seen here.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Gout or pseudogout would not explain the systemic symptoms, thrombocytosis, or hypercalcemia, making these diagnoses less likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Imaging studies such as X-ray or MRI could confirm the presence of bone lesions, which would support metastatic disease over primary myelofibrosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Testing for antiphospholipid antibodies could definitively rule out antiphospholipid syndrome if negative, strengthening the case for primary myelofibrosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

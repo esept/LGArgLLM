@@ -1,0 +1,711 @@
+{
+  "claim": "Vaccines do not permanently modify your DNA.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Vaccines, such as mRNA vaccines, work by instructing cells to produce a protein that triggers an immune response, but they do not enter the cell nucleus where DNA is stored.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Vaccines, such as mRNA vaccines, work by instructing cells to produce a protein that triggers an immune response, but they do not enter the cell nucleus where DNA is stored.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that mRNA fragments could potentially enter the nucleus under rare conditions, raising theoretical concerns about DNA interaction.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vaccine safety studies have not conclusively ruled out long-term DNA effects due to insufficient longitudinal data.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The nuclear envelope acts as a strong barrier, making mRNA fragment entry into the nucleus biologically implausible in normal circumstances.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current vaccine monitoring systems would have detected any widespread DNA modification effects given the billions of doses administered.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Cell stress or damage could compromise nuclear envelope integrity, creating potential pathways for mRNA fragments.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Some DNA modifications might not produce immediately observable effects, potentially escaping short-term monitoring.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Scientific studies have shown that mRNA from vaccines degrades quickly in the body and does not integrate into the host genome.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Scientific studies have shown that mRNA from vaccines degrades quickly in the body and does not integrate into the host genome.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that under rare conditions, mRNA fragments could potentially integrate into the genome through reverse transcription.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term studies on mRNA vaccine integration are limited, so absolute certainty about genome modification cannot be claimed.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The conditions required for reverse transcription of mRNA are extremely unlikely to occur in human cells under normal circumstances.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current evidence overwhelmingly supports the conclusion that mRNA vaccines do not interact with DNA in any significant way.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if reverse transcription occurred, the resulting DNA fragments would likely be non-functional and degraded by cellular mechanisms.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "DNA modification requires specific enzymes like integrases or transposases, which are not present in vaccines.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "DNA modification requires specific enzymes like integrases or transposases, which are not present in vaccines.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some vaccines use viral vectors that could theoretically introduce foreign DNA into host cells, even without integrases.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain adjuvants in vaccines may indirectly affect DNA stability or repair mechanisms over time.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Epigenetic modifications from vaccine components could produce similar effects to DNA changes without direct enzyme action.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Viral vector vaccines are designed to be replication-deficient and lack integration machinery, making DNA insertion extremely unlikely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No peer-reviewed studies have shown vaccine adjuvants causing permanent DNA damage at administered doses.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Epigenetic changes are reversible and fundamentally different from permanent DNA modification.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Rare recombination events could theoretically restore viral vector replication capability in host cells.",
+          "confidence": 0.55,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Long-term studies on novel adjuvants are limited, leaving potential unknown effects on DNA.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If vaccines could modify DNA, we would observe heritable changes in vaccinated individuals, which has never been documented.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If vaccines could modify DNA, we would observe heritable changes in vaccinated individuals, which has never been documented.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Heritable changes may occur but require long-term studies spanning multiple generations, which are currently lacking.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some vaccines (e.g., viral vector vaccines) can integrate genetic material into host cells, though not necessarily germline cells.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Existing multi-decade vaccine safety data show no evidence of transgenerational effects, making heritable changes unlikely.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vector integration is rare and random, with no proven link to functional DNA modification or inheritance.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Absence of evidence is not evidence of absence; negative results in existing studies don't rule out undetected rare events.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Epigenetic changes from vaccines could indirectly affect DNA expression patterns across generations without direct integration.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some viral vector vaccines deliver genetic material into cells, but this material does not integrate into the DNA and is eventually cleared by the body.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some viral vector vaccines deliver genetic material into cells, but this material does not integrate into the DNA and is eventually cleared by the body.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Viral vector vaccines could theoretically cause unintended genetic modifications if the delivered material integrates into the host DNA by rare recombination events.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The long-term effects of viral vector vaccines are not fully understood, and there is insufficient data to conclusively rule out DNA integration.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies on viral vector vaccines have shown no evidence of genomic integration in clinical trials or post-market surveillance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulatory agencies require extensive safety testing, including assessments for genomic integration, before approving viral vector vaccines.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Clinical trials may not capture rare events like genomic integration due to limited sample sizes and short follow-up periods.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Regulatory testing may not account for all possible long-term scenarios or rare genetic interactions.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Certain retroviruses can integrate into host DNA, but no approved vaccines use retroviral vectors, making DNA modification impossible.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Certain retroviruses can integrate into host DNA, but no approved vaccines use retroviral vectors, making DNA modification impossible.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some experimental vaccines use viral vectors that could theoretically integrate into DNA, raising concerns about long-term genetic effects.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim overlooks potential rare cases where vaccine components might interact with DNA repair mechanisms in unexpected ways.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Viral vectors used in vaccines are carefully engineered to be non-integrating, with extensive safety data showing no DNA modification.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "DNA repair mechanisms are highly specific and unlikely to be affected by vaccine components given their molecular structure and dosage.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Long-term studies on viral vector vaccines are still limited, leaving some uncertainty about integration risks over decades.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Rare genetic predispositions could theoretically make some individuals more susceptible to unintended DNA interactions.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Vaccines are designed to be temporary triggers for immunity, not permanent alterations to genetic material.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Vaccines are designed to be temporary triggers for immunity, not permanent alterations to genetic material.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some vaccines, like mRNA vaccines, introduce foreign genetic material into cells, which could theoretically interact with DNA.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term studies on vaccine effects are limited, so claims about permanence cannot be fully verified.",
+          "confidence": 0.68,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Viral vector vaccines use modified viruses that integrate into host DNA, raising concerns about permanent changes.",
+          "confidence": 0.72,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "mRNA vaccines do not enter the cell nucleus where DNA is stored, making interaction with DNA impossible.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Decades of vaccine research show no evidence of genetic integration from any vaccine platform.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Viral vector vaccines are engineered to avoid integration, and no cases of DNA modification have been documented.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Nuclear membrane permeability studies suggest rare instances of mRNA entering the nucleus could occur.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Absence of evidence is not evidence of absence, especially for newer vaccine technologies.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "Some experimental gene therapies can modify DNA, but these are distinct from vaccines and not used in standard immunization programs.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "Some experimental gene therapies can modify DNA, but these are distinct from vaccines and not used in standard immunization programs.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The distinction between gene therapies and vaccines is not always clear to the public, leading to confusion and fear about DNA modification.",
+          "confidence": 0.7,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if not standard, experimental gene therapies are still classified under broader vaccine research, creating potential for overlap in public perception.",
+          "confidence": 0.65,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Public education campaigns clearly differentiate between vaccines and gene therapies, reducing confusion.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulatory frameworks strictly separate vaccines from gene therapies, preventing overlap in practice.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Education campaigns are often ineffective or inaccessible, failing to address widespread misinformation.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Regulatory distinctions do not prevent public conflation, especially when both are discussed in medical contexts.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A9": {
+      "supporting": {
+        "id": "A9",
+        "text": "Long-term studies on vaccine effects are limited, leaving a small possibility of unknown interactions with DNA over time.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A9",
+          "text": "Long-term studies on vaccine effects are limited, leaving a small possibility of unknown interactions with DNA over time.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Current scientific consensus confirms that vaccines do not interact with or alter DNA, as they operate outside the cell nucleus where DNA is stored.",
+          "confidence": 0.85,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vaccines like mRNA vaccines degrade quickly in the body, making long-term DNA interactions biologically implausible.",
+          "confidence": 0.8,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Decades of vaccine safety data show no evidence of DNA modification, supporting their long-term safety.",
+          "confidence": 0.78,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The scientific consensus has been wrong before, and absence of evidence is not evidence of absence.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While mRNA degrades quickly, its byproducts or immune responses could theoretically have indirect long-term effects.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Historical vaccine safety data may not account for newer vaccine technologies or rare long-term effects.",
+          "confidence": 0.58,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Scientific consensus is based on reproducible evidence and peer review, making it highly reliable despite historical exceptions.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "No known biological mechanism exists for vaccine byproducts to alter DNA, making such speculation unscientific.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Surveillance systems like VAERS are designed to detect rare long-term effects, and none have been linked to DNA modification.",
+          "confidence": 0.7,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A10": {
+      "supporting": {
+        "id": "A10",
+        "text": "There is no definitive proof that vaccines have no effect on DNA, as comprehensive lifelong studies on all vaccinated individuals are impractical.",
+        "confidence": 0.5,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A10",
+          "text": "There is no definitive proof that vaccines have no effect on DNA, as comprehensive lifelong studies on all vaccinated individuals are impractical.",
+          "confidence": 0.5,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vaccines are designed to interact with the immune system, not the nucleus of cells where DNA is stored, making DNA modification biologically implausible.",
+          "confidence": 0.85,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Existing studies on vaccine safety, including long-term follow-ups, have found no evidence of DNA modification, supporting the claim that vaccines do not alter DNA.",
+          "confidence": 0.8,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The burden of proof lies on demonstrating that vaccines modify DNA, not on proving they do not, as extraordinary claims require extraordinary evidence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While vaccines do not directly modify DNA, the immune response they trigger could theoretically have indirect effects on gene expression, though this is not the same as permanent DNA modification.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Long-term studies may not cover every individual, but the sheer volume of vaccinated populations without reported DNA-related issues strongly suggests no such effect exists.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Scientific consensus and regulatory approvals are based on available evidence, which overwhelmingly indicates vaccines do not modify DNA, even if absolute proof is unattainable.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Gene expression changes are temporary and part of normal biological processes, not indicative of permanent DNA alteration, thus not relevant to the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

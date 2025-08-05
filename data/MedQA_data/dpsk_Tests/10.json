@@ -1,0 +1,232 @@
+{
+  "claim": "Consider the following background information: A 31-year-old male comes to your office for his annual exam. He states that he received all of his recommended vaccinations prior to beginning college, but has not had any vaccines in the past 13 years. His medical history is significant for intermittent, exercise-induced asthma. He has been sexually active in the past with multiple female partners.\n\nGiven the background information the following is corrrect: In addition to an influenza vaccine, the meningococcal vaccine should be administered to this patient during this visit.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The CDC recommends routine meningococcal vaccination for adolescents and young adults, particularly those entering college or living in group settings, but this patient is now 31 years old and past the typical age range for routine administration."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The CDC recommends routine meningococcal vaccination for adolescents and young adults, particularly those entering college or living in group settings, but this patient is now 31 years old and past the typical age range for routine administration.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The CDC also recommends meningococcal vaccination for adults with certain medical conditions, such as complement component deficiencies or functional asplenia, which are not mentioned in this patient's history.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of being sexually active with multiple partners increases his risk for meningococcal disease, warranting vaccination despite his age.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The risk of meningococcal disease in adults without specific risk factors is very low, making routine vaccination unnecessary for this patient.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The meningococcal vaccine is not routinely recommended for healthy adults over the age of 21 unless they have specific risk factors such as asplenia, complement deficiency, or travel to endemic areas, none of which are mentioned in this case."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The meningococcal vaccine is not routinely recommended for healthy adults over the age of 21 unless they have specific risk factors such as asplenia, complement deficiency, or travel to endemic areas, none of which are mentioned in this case.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of being sexually active with multiple partners could increase his risk for meningococcal disease, as outbreaks have been linked to close contact in social settings.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While outbreaks can occur in social settings, the overall risk for meningococcal disease in adults without specific risk factors remains very low, and routine vaccination is not justified.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's exercise-induced asthma could be considered a chronic respiratory condition, which might slightly increase his risk for complications from meningococcal disease.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Exercise-induced asthma is not generally recognized as a significant risk factor for meningococcal disease, and vaccination is not routinely recommended for this condition alone.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's history of exercise-induced asthma does not constitute a high-risk condition that would warrant meningococcal vaccination according to current CDC guidelines."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's history of exercise-induced asthma does not constitute a high-risk condition that would warrant meningococcal vaccination according to current CDC guidelines.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of sexual activity with multiple partners increases his risk for meningococcal disease, which warrants vaccination regardless of asthma status.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Current CDC guidelines recommend meningococcal vaccination for all adolescents and certain high-risk adults, but not specifically for individuals with multiple sexual partners unless other risk factors are present.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "College students living in dormitories are at higher risk for meningococcal disease, and since the patient attended college, he may still benefit from vaccination.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's college vaccination history is over 13 years old, and immunity from meningococcal vaccines may have waned, necessitating a booster.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's sexual history with multiple partners does not meet the CDC's criteria for meningococcal vaccination, which focuses on risk factors like HIV infection or men who have sex with men in outbreak settings."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's sexual history with multiple partners does not meet the CDC's criteria for meningococcal vaccination, which focuses on risk factors like HIV infection or men who have sex with men in outbreak settings.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's college attendance may still warrant meningococcal vaccination, as outbreaks have occurred in university settings regardless of sexual history.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient has been out of college for over a decade, reducing the relevance of college-associated meningococcal risk factors.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Exercise-induced asthma could increase susceptibility to respiratory infections, indirectly supporting broader vaccination recommendations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Asthma alone is not listed as a CDC indication for meningococcal vaccination unless accompanied by other high-risk conditions.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Influenza vaccination is recommended annually for all adults, including this patient, but meningococcal vaccination is not part of standard adult immunization schedules without specific indications."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Influenza vaccination is recommended annually for all adults, including this patient, but meningococcal vaccination is not part of standard adult immunization schedules without specific indications.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of being sexually active with multiple partners may increase his risk for meningococcal disease, warranting the vaccine.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Meningococcal disease is more commonly associated with close living conditions (e.g., college dormitories) rather than sexual activity.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's exercise-induced asthma could make him more susceptible to respiratory infections, indirectly supporting broader vaccination.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Exercise-induced asthma does not significantly increase the risk for vaccine-preventable diseases like meningococcal infection.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

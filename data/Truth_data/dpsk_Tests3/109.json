@@ -1,0 +1,330 @@
+{
+  "claim": "The majority of a set of numbers cannot be larger than the average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, the average of a set of numbers is the sum divided by the count. If the majority of numbers were larger than the average, their sum would disproportionately pull the average upward, making it impossible for them to remain above the average.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, the average of a set of numbers is the sum divided by the count. If the majority of numbers were larger than the average, their sum would disproportionately pull the average upward, making it impossible for them to remain above the average.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "This assumes a symmetric distribution. In skewed distributions (e.g., exponential or power-law), the majority can indeed be above the mean because the mean is pulled upward by extreme outliers.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument ignores the possibility of negative numbers. If most numbers are slightly positive but a few are extremely negative, the average could be lower than the majority.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in skewed distributions, the median (not the mean) is the relevant measure for 'majority.' The original claim implicitly refers to the mean, so skewed cases don't violate it.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Negative numbers don't invalidate the claim because the average still balances the sum. If most numbers are above the average, the remaining few must be sufficiently below to compensate, which is mathematically constrained.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The mean and median can coincide in symmetric distributions, so the original claim holds unless you explicitly assume asymmetry, which wasn't part of the premise.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In a symmetric distribution (e.g., normal distribution), the majority of numbers cluster around the mean, with roughly equal numbers above and below. This inherently prevents the majority from being larger than the average.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In a symmetric distribution (e.g., normal distribution), the majority of numbers cluster around the mean, with roughly equal numbers above and below. This inherently prevents the majority from being larger than the average.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "In skewed distributions (e.g., right-skewed), the majority of numbers can be below the mean, meaning the minority is larger than the average. This contradicts the claim.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes unimodal distributions, but in multimodal distributions, multiple clusters can exist where a majority could be larger than the average.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Skewed distributions are exceptions, not the norm. The claim holds for most common symmetric distributions like the normal distribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multimodal distributions are rare in practice, and the claim is generally valid for typical unimodal symmetric cases.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Many real-world datasets (e.g., income, house prices) are right-skewed, making the exception practically significant.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even in unimodal cases, heavy-tailed distributions can have a majority significantly above the mean.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In a set where most numbers are identical and higher than the remaining few, the average will still be pulled toward the majority value, making it impossible for the majority to be larger than the average.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In a set where most numbers are identical and higher than the remaining few, the average will still be pulled toward the majority value, making it impossible for the majority to be larger than the average.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "If the remaining few numbers are extremely low, they can pull the average down significantly, allowing the majority to be larger than the average.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes a symmetric distribution, but in skewed distributions, the majority can indeed be larger than the average.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Extremely low outliers are rare in practical datasets, so the scenario where the majority is larger than the average is unlikely.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Skewed distributions are exceptions, not the norm, so the original claim holds for most common cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In financial or scientific data, extreme outliers are common, making the scenario where the majority is larger than the average plausible.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Many real-world datasets (e.g., income distribution) are inherently skewed, so exceptions are actually common.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If a set contains a few extremely small outliers, the average could be lowered enough that the majority of numbers (which are not outliers) are larger than the average.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If a set contains a few extremely small outliers, the average could be lowered enough that the majority of numbers (which are not outliers) are larger than the average.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of extremely small outliers is rare in most real-world datasets, making this scenario statistically unlikely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of 'majority' is ambiguous here; it could refer to count or magnitude, leading to potential misinterpretation.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in datasets with outliers, robust statistical measures like the median are often used instead of the mean to avoid such distortions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The argument assumes the outliers are known and identifiable, which may not always be the case in practice.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Clarifying the definition of 'majority' as count-based resolves the ambiguity and supports the original claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Using the median instead of the mean changes the nature of the claim, as it no longer addresses the original statement about averages.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In a highly skewed distribution (e.g., income data), a small number of very large values can raise the average so much that the majority of numbers (which are much smaller) are below the average, implying the opposite of the claim.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In a highly skewed distribution (e.g., income data), a small number of very large values can raise the average so much that the majority of numbers (which are much smaller) are below the average, implying the opposite of the claim.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim refers to a general case, not just highly skewed distributions, so A5's example is too specific to invalidate the broader claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In symmetric or uniformly distributed datasets, the majority of numbers will naturally cluster around the average, supporting the original claim.",
+          "confidence": 0.88,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Highly skewed distributions are common in real-world data (e.g., wealth, city populations), making A5's argument broadly applicable despite its specificity.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim does not explicitly exclude skewed distributions, so A5's counterexample is valid in demonstrating an exception.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Even in symmetric distributions, outliers can still skew the average, meaning the majority might not always align with it.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim's wording implies a general rule, not an absolute one, so exceptions like skewed distributions do not fully negate it.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Statistical generalizations often assume typical cases, and highly skewed distributions are outliers, not the norm.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

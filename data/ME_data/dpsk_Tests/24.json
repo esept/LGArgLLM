@@ -1,0 +1,287 @@
+{
+  "claim": "Pi is approximately equal to 3.14",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Pi is defined as the ratio of a circle's circumference to its diameter, and 3.14 is a widely accepted approximation for practical calculations."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Pi is defined as the ratio of a circle's circumference to its diameter, and 3.14 is a widely accepted approximation for practical calculations.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While 3.14 is commonly used, it is an oversimplification; more precise values like 3.14159 are necessary for advanced scientific and engineering applications.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For most everyday calculations, 3.14 is sufficiently precise and simplifies computation without significant loss of accuracy.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The approximation 3.14 ignores the irrational and transcendental nature of pi, which cannot be fully expressed by any finite decimal.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite pi's irrationality, finite approximations like 3.14 are pragmatically necessary for real-world applications where infinite precision is impossible.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Mathematical textbooks and educational materials commonly use 3.14 as a simplified value for pi in introductory contexts."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Mathematical textbooks and educational materials commonly use 3.14 as a simplified value for pi in introductory contexts.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Using 3.14 for pi introduces significant rounding errors in precise calculations, such as in engineering or physics.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For introductory contexts, the rounding error from using 3.14 is negligible and does not impact learning fundamental concepts.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many modern applications and programming languages use more precise approximations of pi (e.g., 3.14159) by default, making 3.14 outdated.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The simplicity of 3.14 makes it more accessible for beginners, which justifies its continued use in introductory materials despite more precise values being available.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The value 3.14 is accurate to two decimal places, which is sufficient for many real-world applications in engineering and science."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The value 3.14 is accurate to two decimal places, which is sufficient for many real-world applications in engineering and science.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Higher precision (e.g., 3.1416) is required in fields like quantum physics or aerospace engineering, where even minor inaccuracies can lead to significant errors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For most educational and practical purposes, 3.14 is sufficiently precise, and the added complexity of more digits is unnecessary.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Using only 3.14 can lead to cumulative errors in large-scale calculations, such as in architecture or computer graphics.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern computational tools automatically handle higher precision, so the choice of 3.14 is often a matter of convenience rather than necessity.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Historical records show that ancient mathematicians, such as Archimedes, approximated pi to be around 3.14 using geometric methods."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Historical records show that ancient mathematicians, such as Archimedes, approximated pi to be around 3.14 using geometric methods.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern mathematics has calculated pi to many more decimal places, showing that 3.14 is a very rough approximation.",
+          "confidence": 0.98,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For most practical applications, such as engineering and everyday calculations, 3.14 is a sufficiently accurate approximation of pi.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Ancient approximations of pi were limited by the mathematical tools and knowledge available at the time, making their accuracy inherently lower.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite limitations, ancient methods like those of Archimedes provided foundational work that later enabled more precise calculations of pi.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Modern calculators and computer software often default to displaying pi as 3.14 when limited to two decimal places."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Modern calculators and computer software often default to displaying pi as 3.14 when limited to two decimal places.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pi is an irrational number with infinite non-repeating decimal digits, so rounding it to 3.14 introduces a small but non-zero error.",
+          "confidence": 0.98,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "For most practical applications in everyday life and basic engineering, the error introduced by using 3.14 for pi is negligible.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some scientific and engineering applications require higher precision (e.g., 3.1415926535) to avoid significant cumulative errors.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The default display of 3.14 is sufficient for educational contexts where the concept of pi is introduced, before higher precision is needed.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The approximation 3.14 is taught in schools worldwide as a standard reference for pi in basic geometry problems."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The approximation 3.14 is taught in schools worldwide as a standard reference for pi in basic geometry problems.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While 3.14 is commonly taught, it is an oversimplification that can lead to inaccuracies in more advanced calculations where higher precision is required.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The use of 3.14 in basic education is justified as it provides a balance between simplicity and sufficient accuracy for introductory problems.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In many scientific and engineering contexts, more precise approximations like 3.1416 or even more digits are used, making 3.14 insufficient.",
+          "confidence": 0.88,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies that pi is approximately 3.14, which is accurate for many everyday applications, even if not for high-precision fields.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "claim": "A credit score affects loan eligibility",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Lenders use credit scores to assess the risk of lending money, with higher scores indicating lower risk and increasing eligibility for loans."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Lenders use credit scores to assess the risk of lending money, with higher scores indicating lower risk and increasing eligibility for loans.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders specialize in high-risk loans and may approve borrowers with low credit scores, focusing on other factors like income or collateral.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even high-risk lenders still consider credit scores as a baseline metric, and borrowers with very low scores may face stricter terms or higher interest rates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Credit scores can be inaccurate due to reporting errors, leading to unfair denials or misjudgments of loan eligibility.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Credit bureaus provide dispute mechanisms to correct errors, and lenders often review additional documentation if scores seem inconsistent.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Credit scores directly influence the interest rates offered on loans, where a higher score typically results in more favorable terms and greater eligibility."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Credit scores directly influence the interest rates offered on loans, where a higher score typically results in more favorable terms and greater eligibility.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders prioritize income and employment history over credit scores when determining loan eligibility.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when income and employment history are considered, credit scores still serve as a primary filter for initial loan approval.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative lending models, such as peer-to-peer lending, may not rely heavily on traditional credit scores for loan decisions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Peer-to-peer lending still often incorporates credit scores as one of several factors to assess borrower risk.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Many financial institutions set minimum credit score requirements for loan approval, making a sufficient score a prerequisite for eligibility."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Many financial institutions set minimum credit score requirements for loan approval, making a sufficient score a prerequisite for eligibility.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders offer loans without strict credit score requirements, such as secured loans or loans with co-signers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases with co-signers or collateral, the primary borrower's credit score still influences the loan terms and approval likelihood.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative lending models, like peer-to-peer lending, sometimes prioritize income and employment history over credit scores.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Peer-to-peer lenders still often incorporate credit scores into their risk assessment algorithms, even if they weigh other factors more heavily.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Credit scores reflect payment history and debt management, which lenders evaluate to determine an applicant's likelihood of repaying the loan."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Credit scores reflect payment history and debt management, which lenders evaluate to determine an applicant's likelihood of repaying the loan.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders prioritize income and employment stability over credit scores when assessing loan eligibility.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Credit scores may not account for recent financial improvements or extenuating circumstances, making them an incomplete measure of creditworthiness.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when income is prioritized, credit scores still serve as a secondary filter to assess financial discipline.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Alternative credit scoring models and manual underwriting can supplement traditional credit scores to provide a more holistic assessment.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "A low credit score can lead to loan denials, as it signals potential financial instability or past defaults to lenders."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "A low credit score can lead to loan denials, as it signals potential financial instability or past defaults to lenders.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders specialize in high-risk loans and may approve applicants with low credit scores, albeit at higher interest rates.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even high-risk lenders often impose stricter terms, such as requiring collateral or co-signers, which still reflects the impact of credit scores on loan eligibility.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Credit scores are not the sole factor in loan decisions; income, employment history, and debt-to-income ratio can outweigh a low score.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While other factors matter, credit scores remain a primary screening tool, and a very low score often leads to automatic denials regardless of other qualifications.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Credit scores are a standardized metric used across the lending industry to streamline and objectively evaluate loan applications."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Credit scores are a standardized metric used across the lending industry to streamline and objectively evaluate loan applications.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some lenders, especially in niche markets or alternative financing, prioritize cash flow or collateral over credit scores.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in niche markets, credit scores often serve as an initial filter before deeper evaluation of cash flow or collateral.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Credit scoring models vary by region and lender, reducing standardization in practice.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Core credit scoring metrics (e.g., payment history, utilization) are consistent globally despite regional model variations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

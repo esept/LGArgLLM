@@ -1,0 +1,240 @@
+{
+  "claim": "You would have to wear a coat when on Phobos.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Phobos has no significant atmosphere to retain heat, resulting in extremely low surface temperatures that necessitate thermal protection."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Phobos has no significant atmosphere to retain heat, resulting in extremely low surface temperatures that necessitate thermal protection.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even with low temperatures, human activity on Phobos would likely occur in controlled habitats or spacesuits, making a traditional coat unnecessary.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Spacesuits and habitats may not always be available or practical for all activities, making thermal protection like a coat still relevant in some scenarios.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lack of atmosphere also means no wind chill, reducing the perceived coldness compared to Earth, potentially lessening the need for heavy thermal protection.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Radiative heat loss in vacuum is significant, so even without wind chill, thermal protection is critical to prevent rapid heat loss from the body.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Average surface temperatures on Phobos range from -4\u00b0C to -112\u00b0C, far below human comfort levels without insulation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Average surface temperatures on Phobos range from -4\u00b0C to -112\u00b0C, far below human comfort levels without insulation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Human activity on Phobos would likely occur in controlled, heated environments, not directly on the surface.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in controlled environments, spacesuits or thermal protection would still be necessary for surface excursions or emergencies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Advanced future insulation materials could make coats unnecessary even in extreme cold.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current material science limitations make such advanced insulation impractical for near-term missions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The lack of atmospheric pressure on Phobos means heat transfer occurs primarily through radiation, making thermal regulation difficult without protective clothing."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The lack of atmospheric pressure on Phobos means heat transfer occurs primarily through radiation, making thermal regulation difficult without protective clothing.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Phobos has extremely low gravity, which reduces convective heat loss, potentially mitigating the need for heavy insulation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with low gravity, radiative heat loss in a vacuum is significant, making thermal protection necessary despite reduced convection.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Solar radiation on Phobos can be intense, potentially providing enough external heat to reduce reliance on heavy coats.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Solar radiation is intermittent due to Phobos' orbit, creating extreme temperature fluctuations that still necessitate protective clothing.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Human exposure to the vacuum-like conditions on Phobos would require a pressurized suit, which inherently includes thermal insulation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Human exposure to the vacuum-like conditions on Phobos would require a pressurized suit, which inherently includes thermal insulation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A pressurized suit is not the same as a coat, as it serves multiple functions beyond thermal insulation, such as life support and radiation shielding.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The term 'coat' can be interpreted broadly to include any outerwear providing thermal insulation, which a pressurized suit technically does.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim specifies 'coat,' which colloquially refers to a simple garment, not a complex life-support system like a pressurized suit.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In extreme environments, the definition of 'coat' naturally extends to specialized garments, including pressurized suits.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Solar radiation on Phobos is unfiltered by an atmosphere, creating extreme temperature fluctuations that demand protective outerwear."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Solar radiation on Phobos is unfiltered by an atmosphere, creating extreme temperature fluctuations that demand protective outerwear.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern space suits are designed to regulate temperature and protect against radiation, making additional outerwear unnecessary.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Space suits alone may not provide sufficient insulation during prolonged exposure to Phobos' extreme cold, necessitating additional layers.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The thin regolith on Phobos can provide some natural insulation against temperature extremes, reducing the need for heavy outerwear.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regolith insulation is minimal and inconsistent, failing to provide reliable protection against the harsh conditions on Phobos.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

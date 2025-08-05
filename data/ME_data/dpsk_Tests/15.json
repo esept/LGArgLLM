@@ -1,0 +1,191 @@
+{
+  "claim": "5 + 3 = 8",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The sum of 5 and 3 is 8, as verified by basic arithmetic addition."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The sum of 5 and 3 is 8, as verified by basic arithmetic addition.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Counting 5 units and then adding 3 more units results in a total of 8 units."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Counting 5 units and then adding 3 more units results in a total of 8 units.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the units are not standard (e.g., non-integer or non-linear units), the addition may not hold.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic assumes integer units, making the edge case irrelevant for typical counting.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mathematical equations confirm that 5 + 3 equals 8, a universally accepted fact."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematical equations confirm that 5 + 3 equals 8, a universally accepted fact.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In modular arithmetic with modulus 7, 5 + 3 equals 1, not 8.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic is the default context unless specified otherwise, making modular arithmetic an exception.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If '5' and '3' represent symbols in a non-decimal numeral system, the sum may not be 8.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly assumes a decimal system, as it is the most widely used numeral system.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The commutative property of addition states that 5 + 3 is the same as 3 + 5, both equaling 8."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The commutative property of addition states that 5 + 3 is the same as 3 + 5, both equaling 8.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Number line representation shows that moving 3 units to the right from 5 lands on 8."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Number line representation shows that moving 3 units to the right from 5 lands on 8.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Number line representation assumes a linear, continuous space, which may not hold in all mathematical contexts (e.g., modular arithmetic).",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard arithmetic, the number line is universally accepted as a valid representation for addition, making modular arithmetic an edge case.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on visual or spatial reasoning, which may not be accessible or intuitive for all learners (e.g., those with visual impairments).",
+          "confidence": 0.5,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Alternative representations (e.g., tactile number lines or symbolic proofs) can validate the same result without visual reliance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Elementary education curricula worldwide teach that 5 + 3 = 8 as a fundamental arithmetic truth."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Elementary education curricula worldwide teach that 5 + 3 = 8 as a fundamental arithmetic truth.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some alternative mathematical systems, such as modular arithmetic, redefine addition such that 5 + 3 may not equal 8 (e.g., in mod 5, 5 + 3 = 3).",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Elementary education focuses on standard arithmetic, where modular arithmetic is a specialized topic not contradicting the basic truth of 5 + 3 = 8.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

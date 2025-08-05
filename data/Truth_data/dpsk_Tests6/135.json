@@ -1,0 +1,185 @@
+{
+  "claim": "Donald Trump was the most recent U.S. president not selected as Time's Person of the Year.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Donald Trump was the U.S. president in 2020, and Time's Person of the Year for that year was Joe Biden and Kamala Harris, making Trump the most recent president not selected."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Donald Trump was the U.S. president in 2020, and Time's Person of the Year for that year was Joe Biden and Kamala Harris, making Trump the most recent president not selected.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Time's Person of the Year is not always a U.S. president, so the claim's focus on presidents is misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim is specifically about U.S. presidents, not Time's Person of Year selections in general, so the focus is valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Donald Trump was featured on Time's cover multiple times, including as Person of the Year in 2016, which complicates the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim refers to the most recent presidency (2020), not past appearances or selections, so Trump's 2016 feature is irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Time's Person of the Year for 2021 was Elon Musk, and Donald Trump was not president that year, so he remains the most recent president not selected."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Time's Person of the Year for 2021 was Elon Musk, and Donald Trump was not president that year, so he remains the most recent president not selected.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'most recent U.S. president not selected,' but Trump was not president in 2021, making the comparison irrelevant to the claim's timeframe.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim's focus is on presidents who were in office and not selected, so Trump's non-selection during his presidency (2017-2021) is the relevant period, not after.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other presidents, like George W. Bush, were also not selected during their terms, so Trump is not uniquely the most recent in this category.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "George W. Bush was not selected in 2008, but Trump's non-selection is more recent (2017-2021), making him the most recent in this context.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Barack Obama was selected as Time's Person of the Year in 2008 and 2012, George W. Bush in 2000 and 2004, and Bill Clinton in 1992 and 1998, leaving Donald Trump as the most recent president not selected."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Barack Obama was selected as Time's Person of the Year in 2008 and 2012, George W. Bush in 2000 and 2004, and Bill Clinton in 1992 and 1998, leaving Donald Trump as the most recent president not selected.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Joe Biden was not selected as Time's Person of the Year in 2020 or 2021, making him the most recent president not selected, not Donald Trump.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Time's Person of the Year selection for 2020 was 'Joe Biden and Kamala Harris' and for 2021 was 'Elon Musk', meaning Joe Biden was technically selected in 2020.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Time's Person of the Year is not strictly about U.S. presidents, and the claim focuses narrowly on presidents, ignoring broader context.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Since Donald Trump left office in 2021, no other U.S. president has served, meaning he is the most recent president not selected as Time's Person of the Year."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Since Donald Trump left office in 2021, no other U.S. president has served, meaning he is the most recent president not selected as Time's Person of the Year.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Time's Person of the Year is not strictly tied to political office, so a non-president could still be selected, making the claim irrelevant.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifically refers to U.S. presidents, not other individuals, so the selection of non-presidents does not affect its validity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes Time's selection process is consistent and unbiased, which may not be the case.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Time's Person of the Year is based on influence, not bias, and the claim is factual regarding presidential history.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

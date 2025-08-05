@@ -1,0 +1,240 @@
+{
+  "claim": "If you stand close to a microwave, you will get cancer.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Microwaves emit non-ionizing radiation, which lacks sufficient energy to damage DNA and cause cancer."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Microwaves emit non-ionizing radiation, which lacks sufficient energy to damage DNA and cause cancer.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While microwaves emit non-ionizing radiation, prolonged exposure at close range could still cause thermal tissue damage, which might indirectly increase cancer risk.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Thermal damage from microwaves is highly unlikely under normal usage conditions, as regulatory standards limit microwave leakage to safe levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest that non-ionizing radiation may still have biological effects, such as oxidative stress, which could contribute to cancer development.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The majority of scientific consensus and large-scale studies have found no conclusive evidence linking non-ionizing radiation from microwaves to cancer.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Microwave ovens are designed with shielding that prevents harmful radiation from escaping in significant amounts."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Microwave ovens are designed with shielding that prevents harmful radiation from escaping in significant amounts.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even with shielding, microwave ovens can leak small amounts of radiation if the door seal is damaged or worn out.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Regulatory standards require microwave ovens to have safety mechanisms that automatically shut off the device if the door is not properly sealed.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term exposure to even low levels of microwave radiation may have cumulative health effects, including increased cancer risk.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Scientific studies have not found conclusive evidence linking microwave radiation at typical exposure levels to cancer.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific studies have not found credible evidence linking microwave exposure to cancer in humans."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific studies have not found credible evidence linking microwave exposure to cancer in humans.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest a possible correlation between prolonged microwave exposure and certain types of cancer, though not conclusively proven.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The studies suggesting correlation often have small sample sizes or methodological flaws, reducing their reliability.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Microwaves emit non-ionizing radiation, which is generally considered insufficient to cause DNA damage leading to cancer.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-ionizing radiation can still cause thermal effects that might indirectly contribute to cellular damage over time.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Regulatory agencies such as the FDA and WHO set safety standards that microwave ovens must meet to ensure they do not pose health risks."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Regulatory agencies such as the FDA and WHO set safety standards that microwave ovens must meet to ensure they do not pose health risks.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Safety standards may not account for long-term exposure or cumulative effects of microwave radiation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies have shown that microwave radiation levels drop exponentially with distance, making long-term exposure at safe distances negligible.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Regulatory standards can be influenced by industry lobbying and may not always reflect the latest independent research.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The FDA and WHO base their standards on peer-reviewed scientific studies and international consensus, minimizing industry bias.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The type of radiation emitted by microwaves is fundamentally different from ionizing radiation, which is known to increase cancer risk."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The type of radiation emitted by microwaves is fundamentally different from ionizing radiation, which is known to increase cancer risk.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even though microwave radiation is non-ionizing, prolonged exposure at very close range could still cause localized heating and potential tissue damage.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The heating effect from microwaves diminishes rapidly with distance, and typical usage does not involve prolonged close-range exposure.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest that non-ionizing radiation may still have biological effects beyond thermal mechanisms, though evidence is inconclusive.",
+          "confidence": 0.55,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulatory standards for microwave ovens are designed with large safety margins, making harmful exposure extremely unlikely under normal conditions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,302 @@
+{
+  "claim": "Consider the following background information: A 22-year-old woman presents to the emergency department for abdominal pain. The patient has been trying to get pregnant and was successful recently, but now she is experiencing abdominal pain, contractions, and a bloody vaginal discharge. According to her last appointment with her primary care provider, she is 10 weeks pregnant. The patient has a past medical history of constipation, anxiety, and substance abuse. She is not currently taking any medications. Her temperature is 99.5\u00b0F (37.5\u00b0C), blood pressure is 107/58 mmHg, pulse is 90/min, respirations are 17/min, and oxygen saturation is 98% on room air. Physical exam is notable for a bloody vaginal discharge and an open cervix. The patient is initially extremely grateful for the care she is receiving and thanks the doctor and the nursing staff for saving her baby. Upon hearing the news that she is having a spontaneous abortion, the patient becomes angry and aggressive and states that her physician and the medical staff are incompetent, evil, and she is going to sue all of them. The patient is left to grieve but upon entering the room again you notice that the patient has new lacerations over her wrists and that some of the medical equipment in the room is broken.\n\nGiven the background information the following is corrrect: Based on the information provided, the most likely diagnosis is borderline personality disorder.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's rapid shift from gratitude to anger and aggression, along with self-harm behavior (wrist lacerations), is consistent with the emotional dysregulation and impulsivity seen in borderline personality disorder."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's rapid shift from gratitude to anger and aggression, along with self-harm behavior (wrist lacerations), is consistent with the emotional dysregulation and impulsivity seen in borderline personality disorder.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's emotional reaction could be a normal grief response to the traumatic news of a spontaneous abortion, rather than indicative of borderline personality disorder.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Grief reactions typically do not involve self-harm or destruction of property, which are more indicative of underlying psychopathology like borderline personality disorder.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of substance abuse and anxiety could explain the emotional volatility and self-harm, without requiring a diagnosis of borderline personality disorder.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Substance abuse and anxiety alone are less likely to cause the rapid mood swings and self-harm seen in this patient, making borderline personality disorder a more plausible explanation.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.72
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's behavior could be influenced by acute stress or a brief psychotic episode triggered by the traumatic event, rather than a chronic personality disorder.",
+          "confidence": 0.68,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Brief psychotic episodes are rare and usually involve hallucinations or delusions, which are not described here, making borderline personality disorder a more likely diagnosis.",
+          "confidence": 0.82,
+          "attacks": {
+            "B3": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's history of anxiety and substance abuse are common comorbid conditions with borderline personality disorder, supporting the diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's history of anxiety and substance abuse are common comorbid conditions with borderline personality disorder, supporting the diagnosis.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Anxiety and substance abuse are also common in many other psychiatric conditions, not exclusive to borderline personality disorder.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's rapid mood swings and aggressive behavior are more specific to borderline personality disorder than other conditions.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's reaction could be a normal grief response to the loss of pregnancy rather than a symptom of borderline personality disorder.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The self-harm behavior (lacerations) and destruction of property are more indicative of borderline personality disorder than typical grief.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's symptoms could be explained by an acute stress reaction to the traumatic event of a spontaneous abortion, rather than a chronic personality disorder."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's symptoms could be explained by an acute stress reaction to the traumatic event of a spontaneous abortion, rather than a chronic personality disorder.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of substance abuse and emotional instability, along with the rapid shift from gratitude to aggression, is more consistent with borderline personality disorder than an acute stress reaction.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Acute stress reactions typically resolve within days to weeks, whereas the patient's behavior suggests a chronic pattern of emotional dysregulation, supporting the diagnosis of borderline personality disorder.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's self-harm (lacerations) and destruction of medical equipment are hallmark behaviors of borderline personality disorder during crises, not typical of acute stress reactions.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's rapid mood swings and aggression could still be a severe manifestation of an acute stress reaction, especially given the traumatic context of losing a wanted pregnancy.",
+          "confidence": 0.6,
+          "attacks": {
+            "D1": 0.55
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Borderline personality disorder requires a pattern of behavior over time; a single episode of emotional outburst and self-harm is insufficient for diagnosis without further history."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Borderline personality disorder requires a pattern of behavior over time; a single episode of emotional outburst and self-harm is insufficient for diagnosis without further history.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of substance abuse and anxiety, combined with the acute stress of pregnancy loss, increases the likelihood of borderline personality disorder traits being unmasked.",
+          "confidence": 0.72,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Substance abuse and anxiety are nonspecific and common in many psychiatric conditions; they do not specifically support borderline personality disorder diagnosis.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The rapid mood swing from gratitude to aggression, coupled with self-harm behavior, is highly characteristic of borderline personality disorder even in this single episode.",
+          "confidence": 0.68,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Acute stress reactions to traumatic news can produce transient symptoms mimicking personality disorders without representing the actual disorder.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The patient's substance abuse history could indicate withdrawal or intoxication effects, which may mimic symptoms of borderline personality disorder."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's substance abuse history could indicate withdrawal or intoxication effects, which may mimic symptoms of borderline personality disorder.",
+          "cate": "P",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Substance abuse alone does not fully explain the rapid mood swings and aggression observed in the patient, which are hallmark features of borderline personality disorder.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's gratitude followed by aggression is more consistent with borderline personality disorder than substance withdrawal, which typically has more gradual mood changes.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Substance withdrawal can cause irritability and aggression, but self-harm behaviors (e.g., wrist lacerations) are more strongly associated with borderline personality disorder.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "The patient's extreme reaction to perceived abandonment (feeling betrayed by medical staff) is a hallmark feature of borderline personality disorder."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's extreme reaction to perceived abandonment (feeling betrayed by medical staff) is a hallmark feature of borderline personality disorder.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's reaction could also be explained by acute stress or grief due to the spontaneous abortion, not necessarily borderline personality disorder.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Substance abuse history may contribute to emotional dysregulation, which could mimic borderline personality disorder symptoms.",
+          "confidence": 0.6,
+          "attacks": {
+            "A6": 0.55
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's gratitude followed by anger is consistent with borderline personality disorder's rapid mood shifts.",
+          "confidence": 0.68,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Self-harm behavior (wrist lacerations) strongly supports the borderline personality disorder diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75,
+            "C1": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

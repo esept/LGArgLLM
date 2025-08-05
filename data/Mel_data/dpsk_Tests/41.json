@@ -1,0 +1,232 @@
+{
+  "claim": "If video recordings of lectures are provided, nothing in particular happens to class attendance.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Studies have shown that providing video recordings of lectures does not significantly impact in-person attendance rates."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Studies have shown that providing video recordings of lectures does not significantly impact in-person attendance rates.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies indicate that students who have access to lecture recordings are more likely to skip classes, especially when the material is perceived as easy or reviewable.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The studies showing increased absenteeism often focus on specific contexts (e.g., large introductory courses) and may not generalize to all educational settings.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lecture recordings can lead to a decline in student engagement during live sessions, as students rely on passive viewing later instead of active participation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Engagement metrics often improve when recordings are used as supplements rather than replacements, as students revisit complex material and come prepared for discussions.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Students often attend lectures for interactive elements like Q&A and discussions, which are not fully captured in recordings."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Students often attend lectures for interactive elements like Q&A and discussions, which are not fully captured in recordings.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many students prioritize convenience over interaction and may skip lectures if recordings are available.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that students who skip live lectures tend to perform worse despite having access to recordings.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Interactive elements can also be replicated in online forums or virtual office hours, reducing the need for physical attendance.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Many students prefer attending lectures in person to maintain a structured learning schedule and avoid procrastination."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Many students prefer attending lectures in person to maintain a structured learning schedule and avoid procrastination.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that when lecture recordings are available, a significant portion of students skip live lectures, relying on recordings instead.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Students who skip live lectures often struggle with self-discipline, leading to lower engagement and poorer performance despite having access to recordings.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lecture recordings allow students to review material at their own pace, which can improve understanding and retention compared to attending in person.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While reviewing at one's own pace is beneficial, it lacks the immediate interaction and Q&A opportunities available in live lectures.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Institutions report stable attendance levels even when lecture recordings are made available as an optional resource."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Institutions report stable attendance levels even when lecture recordings are made available as an optional resource.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that attendance drops significantly when students perceive recordings as a substitute for in-person lectures.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The drop in attendance is often temporary, as students later realize the value of in-person interaction and return to class.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Stable attendance reports may be biased, as institutions have incentives to downplay negative effects of recording policies.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Independent research confirms institutional reports about stable attendance, reducing concerns about bias.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Lecture recordings serve as a supplementary tool for review rather than a replacement for live attendance."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Lecture recordings serve as a supplementary tool for review rather than a replacement for live attendance.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that when lecture recordings are available, some students skip live classes because they rely on the recordings.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Students who skip live classes often perform worse due to lack of interaction and engagement, even with access to recordings.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lecture recordings can reduce attendance because students prioritize flexibility over in-person participation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Flexibility from recordings benefits students with scheduling conflicts or disabilities, improving overall learning outcomes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

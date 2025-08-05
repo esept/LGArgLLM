@@ -1,0 +1,193 @@
+{
+  "claim": "France uses the euro as its official currency",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "France is a member of the European Union, which adopted the euro as its official currency."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "France is a member of the European Union, which adopted the euro as its official currency.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some EU member states, like Denmark, have opt-outs and do not use the euro.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "France does not have an opt-out and is part of the Eurozone, which mandates the use of the euro.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "France could theoretically leave the EU or the Eurozone in the future, abandoning the euro.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "There is no current political or economic indication that France plans to leave the EU or the Eurozone.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The euro has been the legal tender in France since its introduction in 1999."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The euro has been the legal tender in France since its introduction in 1999.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "France still allows limited use of the French franc in certain overseas territories.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The use of the French franc in overseas territories is extremely rare and not considered part of France's official currency system.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some businesses in border regions unofficially accept Swiss francs or other currencies.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unofficial acceptance of other currencies doesn't change the fact that the euro is France's only official legal tender.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "French law designates the euro as the sole official currency for all transactions within the country."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "French law designates the euro as the sole official currency for all transactions within the country.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some overseas territories of France, such as French Polynesia, use the CFP franc instead of the euro.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The CFP franc is pegged to the euro and is effectively a local variant of the euro, not a fully independent currency.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain businesses in border regions may unofficially accept other currencies like the Swiss franc or US dollar.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such practices are exceptions and not legally recognized; the euro remains the only official currency.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Banque de France, as part of the Eurosystem, issues and manages the euro in France."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The Banque de France, as part of the Eurosystem, issues and manages the euro in France.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "France used the franc before 2002 and some territories still use other currencies.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The franc was fully replaced by the euro in 2002, and all official transactions are conducted in euros.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some French overseas territories, like French Polynesia, use the CFP franc instead of the euro.",
+          "confidence": 0.7,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These territories are not part of the European Union and thus their currency does not affect the official status of the euro in metropolitan France.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

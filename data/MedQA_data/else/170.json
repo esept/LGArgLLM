@@ -1,0 +1,314 @@
+{
+  "claim": "A 2-year-old girl is brought to the physician because of abdominal distention and twitching of her feet, which her mother noticed a week ago. The patient has also had a low-grade fever for 5 days. She has not had a bowel movement in 3 days. She was born at term and has been healthy since. She is at the 40th percentile for height and 20th percentile for weight. Her temperature is 38.1\u00b0C (100.6\u00b0F), pulse is 128/min, and blood pressure is 135/82 mm Hg. Examination shows an irregular palpable mass that crosses the midline of the abdomen. The liver is palpated 3 cm below the right costal margin. There are erratic movements of the eyes. A 24-hour urine collection shows elevated homovanillic acid and vanillylmandelic acid levels. Which of the following is the most likely diagnosis? : Hodgkin lymphoma",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The elevated levels of homovanillic acid and vanillylmandelic acid in the urine are classic biomarkers for neuroblastoma, not Hodgkin lymphoma.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The elevated levels of homovanillic acid and vanillylmandelic acid in the urine are classic biomarkers for neuroblastoma, not Hodgkin lymphoma.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Hodgkin lymphoma can also present with abdominal masses and systemic symptoms, making it a plausible differential diagnosis despite the urine biomarkers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The erratic eye movements and abdominal mass are more consistent with neuroblastoma, which often metastasizes to the orbits and presents with opsoclonus-myoclonus syndrome.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hodgkin lymphoma rarely presents with such young age and does not typically cause elevated catecholamine metabolites, strongly favoring neuroblastoma.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While neuroblastoma is likely, other tumors like Wilms tumor or rhabdomyosarcoma should also be considered due to the abdominal presentation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Wilms tumor and rhabdomyosarcoma do not typically produce catecholamine metabolites, which are highly specific to neuroblastoma in this context.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The presence of an irregular abdominal mass that crosses the midline is more characteristic of neuroblastoma, which often arises from the adrenal gland or sympathetic ganglia, rather than Hodgkin lymphoma.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of an irregular abdominal mass that crosses the midline is more characteristic of neuroblastoma, which often arises from the adrenal gland or sympathetic ganglia, rather than Hodgkin lymphoma.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Hodgkin lymphoma can also present with abdominal masses, and the elevated homovanillic acid and vanillylmandelic acid levels could be due to other metabolic conditions or testing errors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The erratic eye movements and twitching of the feet are more consistent with neuroblastoma, which can cause paraneoplastic syndromes like opsoclonus-myoclonus syndrome.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hodgkin lymphoma rarely causes paraneoplastic neurological symptoms, whereas neuroblastoma is well-documented to cause opsoclonus-myoclonus syndrome, supporting A2's argument.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 24-hour urine collection showing elevated homovanillic acid and vanillylmandelic acid levels is highly specific for neuroblastoma, making Hodgkin lymphoma an unlikely diagnosis.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Neuroblastoma is more common in children under 5 years old, while Hodgkin lymphoma is rare in this age group, further supporting A2's diagnosis.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While neuroblastoma is more common in young children, Hodgkin lymphoma can still occur in this age group, and the symptoms could overlap, making differential diagnosis challenging.",
+          "confidence": 0.78,
+          "attacks": [
+            "C3"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The specificity of elevated homovanillic acid and vanillylmandelic acid levels for neuroblastoma is not absolute, as other tumors or metabolic disorders can also cause these elevations.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Hodgkin lymphoma typically presents with painless lymphadenopathy, fever, night sweats, and weight loss in older children or adolescents, not in a 2-year-old with abdominal distention and neurological symptoms.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Hodgkin lymphoma typically presents with painless lymphadenopathy, fever, night sweats, and weight loss in older children or adolescents, not in a 2-year-old with abdominal distention and neurological symptoms.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While Hodgkin lymphoma is rare in toddlers, atypical presentations can occur, and the fever and abdominal mass could still be consistent with lymphoma.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The neurological symptoms (eye movements, twitching) are not typical of Hodgkin lymphoma, suggesting an alternative diagnosis like neuroblastoma.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Atypical presentations of Hodgkin lymphoma in toddlers are extremely rare and lack documented cases with neurological involvement, making this explanation unlikely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The elevated homovanillic acid and vanillylmandelic acid levels are classic biomarkers for neuroblastoma, not Hodgkin lymphoma.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The abdominal mass crossing the midline is far more characteristic of neuroblastoma than Hodgkin lymphoma, which typically involves lymph nodes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if Hodgkin lymphoma could theoretically present atypically, the combination of biomarkers and symptoms overwhelmingly favors neuroblastoma.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The erratic eye movements and foot twitching suggest paraneoplastic neurological symptoms, which are more commonly associated with neuroblastoma than Hodgkin lymphoma.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The erratic eye movements and foot twitching suggest paraneoplastic neurological symptoms, which are more commonly associated with neuroblastoma than Hodgkin lymphoma.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Hodgkin lymphoma can also present with paraneoplastic neurological symptoms, albeit less commonly, so neuroblastoma is not the only possible diagnosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The elevated homovanillic acid and vanillylmandelic acid levels are highly specific for neuroblastoma and are not typically seen in Hodgkin lymphoma.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Hodgkin lymphoma can rarely cause paraneoplastic symptoms, the combination of abdominal mass, elevated catecholamine metabolites, and neurological symptoms strongly favors neuroblastoma.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "False-positive elevations in homovanillic acid and vanillylmandelic acid can occur due to dietary factors or stress, reducing the specificity of these markers.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The clinical presentation, including the palpable abdominal mass crossing the midline and hepatomegaly, is classic for neuroblastoma and not typical for Hodgkin lymphoma.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's age (2 years old) is highly atypical for Hodgkin lymphoma, which is exceedingly rare in this age group, whereas neuroblastoma is one of the most common solid tumors in young children.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's age (2 years old) is highly atypical for Hodgkin lymphoma, which is exceedingly rare in this age group, whereas neuroblastoma is one of the most common solid tumors in young children.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While Hodgkin lymphoma is rare in young children, it is not impossible, and the presence of an irregular abdominal mass crossing the midline could still be consistent with lymphoma.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The elevated homovanillic acid and vanillylmandelic acid levels are more strongly associated with neuroblastoma than Hodgkin lymphoma, further supporting neuroblastoma as the diagnosis.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Although Hodgkin lymphoma is rare in this age group, the erratic eye movements and abdominal mass could also suggest other malignancies or neurological conditions, not exclusively neuroblastoma.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The combination of fever, abdominal mass, and elevated catecholamine metabolites is highly specific for neuroblastoma, making Hodgkin lymphoma an unlikely diagnosis despite the rarity argument.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The specificity of erratic eye movements (opsoclonus-myoclonus syndrome) for neuroblastoma is very high, further diminishing the likelihood of Hodgkin lymphoma as a plausible diagnosis.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

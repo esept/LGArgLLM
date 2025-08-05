@@ -1,0 +1,311 @@
+{
+  "claim": "A higher risk investment often yields higher potential return",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Risk and return are positively correlated in financial markets, as investors demand higher returns to compensate for taking on greater uncertainty."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Risk and return are positively correlated in financial markets, as investors demand higher returns to compensate for taking on greater uncertainty.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some high-risk investments, like penny stocks or speculative bubbles, often result in total loss rather than higher returns.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical data shows that diversified high-risk portfolios (e.g., venture capital) still outperform low-risk investments on average over long periods.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In efficient markets, risk-adjusted returns tend to equalize, meaning higher risk does not guarantee higher absolute returns.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Market inefficiencies and behavioral biases often prevent perfect risk-adjusted return equalization, preserving the general risk-return tradeoff.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Historical data shows that asset classes with higher volatility, such as stocks, have outperformed lower-risk assets like bonds over long periods."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Historical data shows that asset classes with higher volatility, such as stocks, have outperformed lower-risk assets like bonds over long periods.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Past performance does not guarantee future results, and market conditions may change, making historical data unreliable for predicting future returns.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While past performance isn't a guarantee, long-term historical trends in financial markets are often driven by fundamental economic principles that persist over time.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some high-risk investments, like penny stocks or speculative ventures, often result in total loss rather than higher returns.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Proper diversification and research can mitigate the risks of high-volatility investments while still capturing their potential upside.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Inflation-adjusted returns show that some high-risk assets underperform safer assets during certain economic cycles.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Over sufficiently long periods, high-risk assets tend to compensate for cyclical underperformance through higher overall growth.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The capital asset pricing model (CAPM) explicitly links higher systematic risk (beta) to higher expected returns."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The capital asset pricing model (CAPM) explicitly links higher systematic risk (beta) to higher expected returns.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CAPM assumes perfectly efficient markets, which rarely exist in reality due to information asymmetry and behavioral biases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in imperfect markets, systematic risk (beta) remains a widely accepted predictor of expected returns across most empirical studies.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many high-risk investments (e.g., startups, cryptocurrencies) fail to deliver higher returns, contradicting CAPM's linear risk-return assumption.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These are unsystematic risks, which CAPM explicitly states should not yield excess returns as they can be diversified away.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "CAPM only measures relative risk (beta), ignoring absolute risk metrics that may better capture investor concerns.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Venture capital and private equity investments, which are high-risk, often target significantly higher returns compared to traditional public market investments."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Venture capital and private equity investments, which are high-risk, often target significantly higher returns compared to traditional public market investments.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many venture capital and private equity investments fail completely, resulting in total loss of capital rather than higher returns.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While some investments fail, successful ones often generate outsized returns that compensate for multiple failures, maintaining the overall high-return potential.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The higher returns in venture capital and private equity are often due to illiquidity premiums rather than actual business performance, which doesn't support the risk-return relationship.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Illiquidity premiums are a legitimate component of risk premium, and investors are compensated for bearing both business risk and liquidity risk.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "High-yield bonds (junk bonds) offer higher interest rates than investment-grade bonds to compensate for their higher default risk."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "High-yield bonds (junk bonds) offer higher interest rates than investment-grade bonds to compensate for their higher default risk.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "High-yield bonds often underperform during economic downturns, leading to significant losses despite their higher interest rates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical data shows that diversified portfolios including high-yield bonds can still outperform safer investments over the long term, even accounting for downturns.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The higher interest rates of junk bonds may not fully compensate for the actual default rates, leading to net losses.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Credit rating agencies and market pricing mechanisms generally adjust yields to reflect default probabilities accurately.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Behavioral finance supports the risk-return tradeoff, as rational investors require additional incentives to accept higher uncertainty."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Behavioral finance supports the risk-return tradeoff, as rational investors require additional incentives to accept higher uncertainty.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Behavioral finance also shows that investors often act irrationally, leading to mispricing and deviations from the risk-return tradeoff.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with irrational behavior, market forces and arbitrage tend to correct mispricing over time, reinforcing the risk-return tradeoff.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In extreme market conditions (e.g., bubbles or crashes), the risk-return tradeoff breaks down as systemic risks dominate.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such extreme conditions are temporary anomalies, and the risk-return tradeoff holds in the long run.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

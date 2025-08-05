@@ -1,0 +1,240 @@
+{
+  "claim": "If all A are B, and C is not B, then C is not A",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim follows directly from the logical principle of contraposition, which states that if all A are B, then anything not B cannot be A."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim follows directly from the logical principle of contraposition, which states that if all A are B, then anything not B cannot be A.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Contraposition assumes classical logic, but in non-classical logics (e.g., intuitionistic or paraconsistent), the principle may not hold universally.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Classical logic is the standard framework for mathematical and formal reasoning, making contraposition widely applicable in most practical contexts.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim relies on unambiguous definitions of A, B, and C, but real-world categories often have fuzzy or overlapping boundaries.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In formal systems, definitions are explicitly precise, so the claim holds as long as the terms are well-defined.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Given the premise 'all A are B,' the set A is entirely contained within the set B, so any element outside B (like C) cannot be in A."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Given the premise 'all A are B,' the set A is entirely contained within the set B, so any element outside B (like C) cannot be in A.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes classical set theory, but in fuzzy logic, membership can be partial, so C might still have a non-zero membership in A even if not in B.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fuzzy logic is not applicable here because the claim explicitly uses classical logical terms ('all', 'not'), implying binary membership.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If 'B' is a proper subset of a larger set that includes 'A' and 'C', then 'C' not being in 'B' does not necessarily mean it is not in 'A' due to overlapping definitions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The premise 'all A are B' explicitly states containment without overlap, so 'B' cannot be a proper subset that allows 'C' to be in 'A' but not 'B'.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "This is a valid application of universal instantiation and modus tollens in classical logic, where the conclusion is necessarily true if the premises are true."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "This is a valid application of universal instantiation and modus tollens in classical logic, where the conclusion is necessarily true if the premises are true.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes classical binary logic, but fails in systems with fuzzy logic or paraconsistent logic where the law of excluded middle does not hold.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Classical logic remains the standard framework for mathematical and formal reasoning, making A3's argument robust in most practical contexts.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument ignores cases where 'A' and 'B' are ambiguous or context-dependent, leading to potential misclassification of 'C'.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Formal logic typically operates under clear definitions, minimizing ambiguity when premises are properly specified.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim aligns with the definition of subset relationships in set theory, where if A is a subset of B, then any element not in B cannot be in A."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim aligns with the definition of subset relationships in set theory, where if A is a subset of B, then any element not in B cannot be in A.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes classical logic and does not account for fuzzy or non-binary set memberships, where an element might partially belong to A and B.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fuzzy set theory is a specialized extension and does not invalidate classical subset relationships, which remain foundational in mathematics.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim ignores the possibility of errors in classification, where C might actually be in B but misclassified as not in B.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Classification errors are practical concerns, not logical flaws in the claim, which holds under the assumption of accurate classification.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The reasoning is sound because it adheres to the law of non-contradiction, which prevents C from being both not B and A (since all A are B)."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The reasoning is sound because it adheres to the law of non-contradiction, which prevents C from being both not B and A (since all A are B).",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes classical logic, but in paraconsistent logic, contradictions can be tolerated without explosion, allowing C to be both not B and A in certain contexts.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Paraconsistent logic is a niche framework and not widely applicable in standard logical reasoning, making the counter-argument less relevant for most practical purposes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on the assumption that 'all A are B' is universally true, but in reality, universal statements often have exceptions or edge cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While universal statements may have exceptions, the argument holds in the idealized case of strict logical reasoning, which is the intended context.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "claim": "Consider the following background information: A 6-month-old boy presents to his pediatrician for a wellness examination. The mother reports that her child has difficulty rolling from his back to his front and sitting unsupported. The patient is able to smile and furrow his brow normally, but she has noticed that he has a weak cry and suck. He was born at 38 weeks gestation via a spontaneous vaginal delivery without any complications. The mother said that the patient appeared \"normal\" until the past few weeks. On physical exam, his extraocular muscle movements are intact, and a symmetric smile is seen. He has symmetric flaccid weakness of both his upper and lower extremities. He also has a bell-shaped chest. Deep tendon reflexes are diminished.\n\nGiven the background information the following is corrrect: Anterior horn cell degeneration is the most likely cause of this patient\"s symptoms.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms, including symmetric flaccid weakness, diminished deep tendon reflexes, and bell-shaped chest, are classic findings of spinal muscular atrophy (SMA), which is caused by anterior horn cell degeneration."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms, including symmetric flaccid weakness, diminished deep tendon reflexes, and bell-shaped chest, are classic findings of spinal muscular atrophy (SMA), which is caused by anterior horn cell degeneration.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be caused by congenital myopathies, which present with hypotonia and weakness but are not due to anterior horn cell degeneration.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital myopathies typically present with non-progressive or slowly progressive weakness, whereas SMA is progressive, which aligns more closely with the patient's recent symptom onset.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's weak cry and suck could indicate a neuromuscular junction disorder like myasthenia gravis, which does not involve anterior horn cell degeneration.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Myasthenia gravis in infants (transient neonatal myasthenia) typically presents at birth or shortly after, not at 6 months, making SMA a more likely diagnosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The symmetric flaccid weakness could be due to a peripheral neuropathy, such as Charcot-Marie-Tooth disease, which does not involve anterior horn cell degeneration.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Charcot-Marie-Tooth disease usually presents later in childhood or adolescence, not at 6 months, and is less likely to cause the bell-shaped chest seen in this patient.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The progressive nature of the weakness and the absence of other neurological deficits (e.g., intact extraocular movements and symmetric smile) strongly suggest a motor neuron disease like SMA, which involves anterior horn cell degeneration."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The progressive nature of the weakness and the absence of other neurological deficits (e.g., intact extraocular movements and symmetric smile) strongly suggest a motor neuron disease like SMA, which involves anterior horn cell degeneration.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The presentation could also be consistent with congenital myopathies, which present with hypotonia and weakness but do not involve anterior horn cell degeneration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital myopathies typically present at birth or shortly thereafter, whereas this patient had a period of normal development before symptom onset, making SMA more likely.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's bell-shaped chest is more commonly associated with neuromuscular disorders like congenital muscular dystrophy rather than SMA.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While bell-shaped chest can occur in congenital muscular dystrophy, it is also a recognized feature of SMA due to intercostal muscle weakness.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of a weak cry and suck, along with symmetric flaccid weakness, is highly indicative of a lower motor neuron disorder such as SMA, where anterior horn cell degeneration is the primary pathology."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of a weak cry and suck, along with symmetric flaccid weakness, is highly indicative of a lower motor neuron disorder such as SMA, where anterior horn cell degeneration is the primary pathology.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The symptoms could also be caused by a congenital myopathy, which presents with hypotonia and weakness but does not involve anterior horn cell degeneration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital myopathies typically present at birth or shortly thereafter, whereas this patient's symptoms developed over the past few weeks, making SMA more likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The bell-shaped chest and diminished deep tendon reflexes could also suggest a neuromuscular junction disorder like myasthenia gravis, which does not involve anterior horn cell degeneration.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Myasthenia gravis is rare in infants and typically presents with fatigable weakness, which is not described in this case.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The bell-shaped chest observed in the patient is a hallmark of respiratory muscle weakness, which is commonly seen in spinal muscular atrophy due to anterior horn cell degeneration."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The bell-shaped chest observed in the patient is a hallmark of respiratory muscle weakness, which is commonly seen in spinal muscular atrophy due to anterior horn cell degeneration.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Respiratory muscle weakness and bell-shaped chest can also occur in congenital myopathies, which are unrelated to anterior horn cell degeneration.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Congenital myopathies typically present with hypotonia and weakness at birth or shortly thereafter, unlike this patient who appeared normal until recent weeks.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The symmetric flaccid weakness and diminished reflexes could also be caused by peripheral neuropathies, not necessarily anterior horn cell degeneration.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Peripheral neuropathies in infants are rare and usually associated with specific genetic or metabolic disorders, which were not reported in this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's developmental regression (e.g., difficulty rolling and sitting unsupported after initially appearing normal) is consistent with the natural history of spinal muscular atrophy, a disease of anterior horn cell degeneration."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's developmental regression (e.g., difficulty rolling and sitting unsupported after initially appearing normal) is consistent with the natural history of spinal muscular atrophy, a disease of anterior horn cell degeneration.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Developmental regression and flaccid weakness can also occur in metabolic disorders like Pompe disease, which may mimic spinal muscular atrophy clinically.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Pompe disease typically presents with hypertrophic cardiomyopathy and elevated creatine kinase, which are absent in this patient, making spinal muscular atrophy more likely.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The symmetric flaccid weakness and diminished reflexes could be due to a peripheral neuropathy like Guillain-Barr\u00e9 syndrome, which can also cause developmental regression in infants.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Guillain-Barr\u00e9 syndrome in infants is extremely rare and usually follows an infection, which is not reported in this case, making spinal muscular atrophy a more plausible diagnosis.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The bell-shaped chest could suggest a congenital myopathy or muscular dystrophy, which also present with hypotonia and developmental delay, not necessarily anterior horn cell degeneration.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Congenital myopathies and muscular dystrophies typically have normal or brisk reflexes, unlike the diminished reflexes seen in this patient, supporting anterior horn cell pathology.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The absence of complications during birth and the normal initial appearance of the patient rule out other causes of weakness, making anterior horn cell degeneration the most likely etiology."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The absence of complications during birth and the normal initial appearance of the patient rule out other causes of weakness, making anterior horn cell degeneration the most likely etiology.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Spinal muscular atrophy (SMA), a genetic disorder affecting anterior horn cells, typically presents with progressive weakness and hypotonia, but symptoms usually appear earlier than 6 months in severe cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms, including flaccid weakness and diminished reflexes, are classic for SMA, supporting anterior horn cell degeneration as the likely cause.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other neuromuscular disorders, such as congenital myopathies or muscular dystrophies, can also present with similar symptoms and should not be ruled out without further testing.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Congenital myopathies often present with hypotonia and weakness but typically have distinct histopathological findings on muscle biopsy, which are not mentioned here.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The bell-shaped chest and weak cry/suck could indicate a systemic condition like Pompe disease, which affects multiple systems including muscles.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Pompe disease usually presents with cardiomyopathy and hepatomegaly, which are not mentioned in this case, making it less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

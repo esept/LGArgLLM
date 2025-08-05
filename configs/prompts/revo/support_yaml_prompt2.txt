@@ -1,0 +1,32 @@
+You are given a claim (`claim a`).
+
+Your task is to generate a set of logically distinct arguments that either:
+
+* support the claim (`cate: P`), or
+* support its negation (`cate: S`).
+
+### Requirements:
+
+1. Each argument must be **logically and substantively different**, not simple rewordings.
+2. For each argument, include:
+
+   * `id`: Unique ID (e.g., A1, A2, ...). # A for LEVEL 1, DO NOT USE ANY OTHER LETTER!!!!
+   * `text`: A concise, meaningful argument in natural language.
+   * `confidence`: A number between 0 and 1 indicating how strongly it supports its stance.
+   * `cate`:
+
+     * `P` = supports the claim
+     * `S` = supports the opposite
+
+### Output format (YAML):
+
+```yaml
+Arguments:
+  - id: A1
+    text: "French is an official language in several European countries, making it commonly spoken."
+    confidence: 0.72
+    cate: P
+```
+
+**Use valid YAML syntax. Do not return JSON.**
+

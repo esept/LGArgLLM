@@ -1,0 +1,255 @@
+{
+  "claim": "People born before 1990 are all over 35 in 2025",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A person born in 1989 would be 36 years old in 2025, which is over 35."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A person born in 1989 would be 36 years old in 2025, which is over 35.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim generalizes to all people born before 1990, but it does not account for those born on December 31, 1989, who would turn 35 on December 31, 2024, and thus would only be 35 years old for part of 2025.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if someone is born on December 31, 1989, they would still be 35 years old for only a few hours in 2025 before turning 36, making the original argument effectively correct for all practical purposes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The earliest birth year before 1990 is 1989, and 2025 minus 1989 equals 36, confirming the claim."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The earliest birth year before 1990 is 1989, and 2025 minus 1989 equals 36, confirming the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes all people born before 1990 were born in 1989, ignoring earlier years.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if considering earlier years, the minimum age in 2025 for someone born before 1990 is still 35 (born in 1989).",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is misleading because it implies everyone born before 1990 is exactly over 35, not just at least 35.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The phrasing 'all over 35' is inclusive of 'at least 35,' so the claim holds logically.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "All individuals born in 1980 would be 45 years old in 2025, which is significantly over 35."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "All individuals born in 1980 would be 45 years old in 2025, which is significantly over 35.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim generalizes to all people born before 1990, but A3 only provides evidence for those born in 1980.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Individuals born in 1989 would only be 36 in 2025, which is barely over 35 and does not support the generalization.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is technically true for all people born before 1990, as even those born in 1989 would be over 35 in 2025.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim implies a significant age gap, but 36 is not 'significantly over 35', weakening the generalization.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim covers a range of birth years (before 1990), and even the youngest in this group (born in 1989) would be 36 in 2025."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim covers a range of birth years (before 1990), and even the youngest in this group (born in 1989) would be 36 in 2025.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim does not account for people who were born on December 31, 1989, who would turn 35 on December 31, 2024, and thus would be 35 for most of 2025.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if someone born on December 31, 1989, is technically 35 for part of 2025, the vast majority of people born before 1990 would still be over 35 in 2025.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Mathematically, any birth year before 1990 results in an age greater than 35 when subtracted from 2025."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Mathematically, any birth year before 1990 results in an age greater than 35 when subtracted from 2025.",
+          "confidence": 0.99,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the person has already had their birthday in 2025, which may not be true for some born in late 1989.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even for late 1989 births, by December 31, 2025, they would have turned 36, satisfying the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim uses 'born before 1990' which technically includes people born in 1 AD, making the statement false for ancient people.",
+          "confidence": 0.3,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In normal discourse, 'born before 1990' implies people alive today, not historical figures.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical records and age calculations universally support that anyone born before 1990 will be at least 35 by 2025."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical records and age calculations universally support that anyone born before 1990 will be at least 35 by 2025.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals born in December 1989 may still be 34 years old in early January 2025, depending on their exact birth date.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Age calculation conventions typically round up to the next year on January 1st, so even December 1989 births would be considered 35 in 2025 by most standards.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes Gregorian calendar usage, but some cultures use different calendars where age calculation might differ.",
+          "confidence": 0.55,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "International standards and most official records use the Gregorian calendar for age calculation, making non-Gregorian cases statistically negligible for this claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

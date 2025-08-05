@@ -1,0 +1,306 @@
+{
+  "claim": "A 7-year-old girl is brought to the physician for evaluation of recurrent epistaxis. Her mother reports that she bruises easily while playing. Her pulse is 89/min and blood pressure is 117/92 mm Hg. Examination shows multiple bruises in the upper and lower extremities. Laboratory studies show:\nPlatelet count 100,000/mm3\nProthrombin time 12 seconds\nPartial thromboplastin time 33 seconds\nBleeding time 13 minutes\nA peripheral blood smear shows enlarged platelets. Ristocetin assay shows no platelet aggregation. Which of the following is the most likely underlying cause of the patient's condition?\" : Vitamin K deficiency",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's prolonged bleeding time and lack of platelet aggregation in the ristocetin assay are classic findings in von Willebrand disease, not Vitamin K deficiency.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's prolonged bleeding time and lack of platelet aggregation in the ristocetin assay are classic findings in von Willebrand disease, not Vitamin K deficiency.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vitamin K deficiency can also cause bruising and bleeding tendencies, which are observed in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The normal prothrombin time and partial thromboplastin time in this patient argue against Vitamin K deficiency, as these would typically be prolonged.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Vitamin K deficiency can cause bleeding, the ristocetin assay abnormality is specific to von Willebrand disease and unrelated to Vitamin K.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of enlarged platelets on the peripheral smear is more consistent with von Willebrand disease than with Vitamin K deficiency.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The normal coagulation times (PT and PTT) are not definitive in ruling out mild Vitamin K deficiency, as they may remain normal in early stages.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The ristocetin assay's specificity for von Willebrand disease makes it a stronger diagnostic indicator than the nonspecific bruising and bleeding seen in Vitamin K deficiency.",
+          "confidence": 0.85,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Vitamin K deficiency typically presents with prolonged PT and PTT, which are not seen in this patient (PT 12 seconds, PTT 33 seconds).",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Vitamin K deficiency typically presents with prolonged PT and PTT, which are not seen in this patient (PT 12 seconds, PTT 33 seconds).",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's prolonged bleeding time (13 minutes) and enlarged platelets suggest a platelet disorder, not necessarily excluding Vitamin K deficiency as a contributing factor.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lack of platelet aggregation in the ristocetin assay points to von Willebrand disease, which can coexist with other bleeding disorders.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Von Willebrand disease typically presents with normal platelet count, whereas this patient has thrombocytopenia (100,000/mm3), making it less likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Platelet function disorders alone do not explain the bruising and epistaxis without other lab abnormalities, suggesting a multifactorial etiology.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Thrombocytopenia in von Willebrand disease can occur in severe cases or type 2B, which aligns with the ristocetin assay findings.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of enlarged platelets on peripheral smear suggests a platelet disorder like Bernard-Soulier syndrome, not Vitamin K deficiency.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of enlarged platelets on peripheral smear suggests a platelet disorder like Bernard-Soulier syndrome, not Vitamin K deficiency.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vitamin K deficiency can also cause bleeding symptoms and prolonged PT/PTT, which are seen in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The normal PT and PTT values in this patient make Vitamin K deficiency unlikely, as Vitamin K deficiency typically prolongs these values.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Vitamin K deficiency can cause bleeding, the presence of enlarged platelets and abnormal ristocetin assay are pathognomonic for Bernard-Soulier syndrome.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The bleeding time is significantly prolonged in this patient, which is more consistent with a platelet function disorder than a coagulation factor deficiency like Vitamin K deficiency.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The PT and PTT are at the upper limit of normal, which could represent early Vitamin K deficiency before significant prolongation occurs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Bernard-Soulier syndrome is confirmed by the ristocetin assay showing no platelet aggregation, which is not seen in Vitamin K deficiency.",
+          "confidence": 0.95,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The normal prothrombin time and partial thromboplastin time argue against Vitamin K deficiency as the underlying cause.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The normal prothrombin time and partial thromboplastin time argue against Vitamin K deficiency as the underlying cause.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vitamin K deficiency can still occur with normal PT and PTT if the deficiency is mild or early-stage.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's bleeding time and platelet abnormalities suggest a platelet disorder rather than a coagulation factor deficiency like Vitamin K deficiency.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mild Vitamin K deficiency would not explain the significantly prolonged bleeding time and enlarged platelets seen in this patient.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The ristocetin assay showing no platelet aggregation strongly points to von Willebrand disease or Bernard-Soulier syndrome, not Vitamin K deficiency.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Bernard-Soulier syndrome is more consistent with the findings of giant platelets and abnormal ristocetin assay than von Willebrand disease.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The clinical presentation of mucocutaneous bleeding (epistaxis, bruising) with normal coagulation times is more consistent with a platelet function disorder than a coagulation factor deficiency like Vitamin K deficiency.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The clinical presentation of mucocutaneous bleeding (epistaxis, bruising) with normal coagulation times is more consistent with a platelet function disorder than a coagulation factor deficiency like Vitamin K deficiency.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The prolonged bleeding time and enlarged platelets suggest a platelet function disorder, but the ristocetin assay result indicates von Willebrand disease (vWD), not just a platelet disorder.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vitamin K deficiency can still present with mucocutaneous bleeding in early stages before coagulation times are significantly prolonged, making it a plausible differential.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The ristocetin assay's lack of platelet aggregation is pathognomonic for von Willebrand disease (vWD), which directly explains the clinical and lab findings without invoking Vitamin K deficiency.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vitamin K deficiency typically presents with prolonged PT/PTT due to factor II, VII, IX, X deficiency, which are absent here, ruling it out as the primary cause.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's normal PT/PTT and isolated bleeding time prolongation are inconsistent with early Vitamin K deficiency, which would affect coagulation factors first.",
+          "confidence": 0.83,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

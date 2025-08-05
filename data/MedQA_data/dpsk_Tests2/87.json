@@ -1,0 +1,240 @@
+{
+  "claim": "Consider the following background information: A 62-year-old Caucasian male presents to the emergency room with severe substernal chest pain, diaphoresis, and nausea. Imaging reveals transmural myocardial infarction in the posterior 1/3 of the ventricular septum.\n\nGiven the background information the following is corrrect: The right main coronary artery is most likely occluded in this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The right coronary artery supplies blood to the posterior 1/3 of the ventricular septum, making it the most likely site of occlusion in this case."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The right coronary artery supplies blood to the posterior 1/3 of the ventricular septum, making it the most likely site of occlusion in this case.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some individuals, the left circumflex artery may supply the posterior 1/3 of the ventricular septum due to anatomical variation, making RCA occlusion less likely.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Coronary dominance patterns (right vs. left) significantly influence which artery supplies the posterior septum, and RCA dominance is not universal.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Acute occlusion of the RCA typically presents with inferior wall MI rather than isolated septal involvement, suggesting another vessel may be responsible.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Posterior septal MI from RCA occlusion is well-documented in right-dominant circulation, which accounts for ~85% of the population.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Transmural myocardial infarction in the posterior ventricular septum is typically caused by occlusion of the right coronary artery."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Transmural myocardial infarction in the posterior ventricular septum is typically caused by occlusion of the right coronary artery.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some anatomical variations, the posterior ventricular septum may be supplied by the left circumflex artery rather than the right coronary artery.",
+          "confidence": 0.45,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such anatomical variations are rare, occurring in less than 10% of the population, making the right coronary artery the statistically dominant cause.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The posterior descending artery (PDA) can also originate from the left coronary system in left-dominant or codominant circulation patterns.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Left-dominant circulation occurs in only about 15% of cases, while right-dominant circulation (where the RCA supplies the PDA) is present in approximately 70% of individuals.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The clinical presentation and imaging findings are consistent with a right coronary artery occlusion, as it is the primary blood supply to the posterior septum."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The clinical presentation and imaging findings are consistent with a right coronary artery occlusion, as it is the primary blood supply to the posterior septum.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the right coronary artery is the most common blood supply to the posterior septum, anatomical variations exist where the left circumflex artery may supply this region instead.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The prevalence of left circumflex dominance is only about 15-20%, making right coronary artery occlusion still the most likely scenario.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be caused by a left main coronary artery occlusion, which can present similarly but is more life-threatening.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Left main occlusion typically presents with more extensive ECG changes and cardiogenic shock, which are not described in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In most individuals, the right coronary artery is dominant and supplies the posterior descending artery, which perfuses the posterior ventricular septum."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In most individuals, the right coronary artery is dominant and supplies the posterior descending artery, which perfuses the posterior ventricular septum.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In approximately 15% of individuals, the left coronary artery is dominant and supplies the posterior descending artery instead of the right coronary artery.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in left-dominant circulation, the right coronary artery may still contribute to perfusion of the posterior ventricular septum through collateral circulation.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and imaging findings could also be caused by occlusion of a dominant left circumflex artery, which can supply the posterior ventricular septum.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Statistical data shows right coronary artery occlusion accounts for over 80% of posterior myocardial infarctions in right-dominant circulation systems.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The combination of substernal chest pain, diaphoresis, and nausea with posterior septal infarction strongly suggests right coronary artery occlusion."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The combination of substernal chest pain, diaphoresis, and nausea with posterior septal infarction strongly suggests right coronary artery occlusion.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Posterior septal infarctions can also be caused by occlusion of the left circumflex artery, which supplies the posterior septum in some individuals.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The right coronary artery is the dominant vessel in 85% of individuals and is more commonly responsible for posterior septal infarctions.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms (diaphoresis, nausea) are non-specific and can occur with infarctions in any coronary artery territory.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While symptoms are non-specific, the combination with posterior septal infarction makes right coronary artery occlusion the most likely diagnosis statistically.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

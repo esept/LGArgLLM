@@ -1,0 +1,443 @@
+{
+  "claim": "A 38-year-old woman comes to the emergency department because of progressive headache, blurry vision, and nausea for 1 day. Four days ago, she was diagnosed with a right middle ear infection. She appears lethargic. Her temperature is 39.1\u00b0C (102.3\u00b0F), and blood pressure is 148/95 mm Hg. Ophthalmologic examination shows bilateral swelling of the optic disc. The corneal reflex in the right eye is absent. Sensation to touch is reduced on the upper right side of the face. Serum studies show increased concentrations of fibrin degradation products. Which of the following is the most likely diagnosis? : Hypertensive emergency",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms of headache, blurry vision, and nausea, along with bilateral optic disc swelling, are classic signs of increased intracranial pressure, which can be caused by hypertensive emergency.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms of headache, blurry vision, and nausea, along with bilateral optic disc swelling, are classic signs of increased intracranial pressure, which can be caused by hypertensive emergency.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent middle ear infection and absent corneal reflex suggest a possible intracranial complication such as meningitis or brain abscess, which could also explain the symptoms.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The reduced sensation on the upper right side of the face points to a neurological deficit, possibly due to a stroke or mass lesion, rather than hypertensive emergency.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Increased fibrin degradation products could indicate disseminated intravascular coagulation (DIC), which may be causing microthrombi and contributing to the neurological symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While meningitis is possible, the absence of neck stiffness or photophobia makes it less likely compared to hypertensive emergency.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A stroke would typically present with more focal neurological deficits, whereas this patient's symptoms are more generalized, supporting hypertensive emergency.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "DIC is usually accompanied by bleeding or bruising, which are not mentioned in this case, making hypertensive emergency a more plausible explanation.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "A brain abscess could still be present without classic meningitis signs, especially given the recent ear infection and fever.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Generalized symptoms can occur in posterior circulation strokes, which should not be ruled out based on symptom distribution alone.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The elevated blood pressure (148/95 mm Hg) and fever (39.1\u00b0C) suggest a systemic hypertensive crisis, which can lead to hypertensive emergency.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The elevated blood pressure (148/95 mm Hg) and fever (39.1\u00b0C) suggest a systemic hypertensive crisis, which can lead to hypertensive emergency.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (headache, blurry vision, nausea, and optic disc swelling) are more consistent with increased intracranial pressure, not solely a hypertensive emergency.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of corneal reflex and reduced facial sensation suggest cranial nerve involvement, which is not typical for hypertensive emergency but points to a neurologic or infectious process.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The recent middle ear infection and fever raise the possibility of intracranial complications like meningitis or abscess, which better explain the systemic and neurologic findings.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypertensive emergencies can cause papilledema and neurologic symptoms due to cerebral edema, which aligns with the patient's presentation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cranial nerve deficits can occur in hypertensive encephalopathy due to microhemorrhages or ischemia, though less commonly.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The elevated fibrin degradation products could indicate disseminated intravascular coagulation (DIC), which is more likely secondary to infection (e.g., meningitis) than hypertensive emergency.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While cerebral edema can occur in hypertensive emergency, the absence of severe hypertension (e.g., >180/120 mm Hg) makes this less likely as the primary cause.",
+          "confidence": 0.77,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Microhemorrhages or ischemia in hypertensive encephalopathy typically present with global neurologic dysfunction, not isolated cranial nerve deficits.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of fibrin degradation products in serum studies indicates possible microangiopathic hemolysis, which can occur in hypertensive emergency due to endothelial damage.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of fibrin degradation products in serum studies indicates possible microangiopathic hemolysis, which can occur in hypertensive emergency due to endothelial damage.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (headache, blurry vision, nausea, and lethargy) are more consistent with increased intracranial pressure rather than hypertensive emergency.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of corneal reflex and reduced facial sensation suggest cranial nerve involvement, which is not typical for hypertensive emergency.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The recent middle ear infection raises the possibility of intracranial complications like meningitis or brain abscess, which better explain the findings.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypertensive emergency can cause papilledema and neurologic symptoms due to cerebral edema, which could explain the increased intracranial pressure.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cranial nerve palsies can occur in hypertensive emergency if there is brainstem involvement from severe hypertension.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While infection is possible, the rapid progression and fibrin degradation products are more characteristic of a hypertensive crisis.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The degree of optic disc swelling and neurologic deficits would require much higher blood pressures than 148/95 mm Hg in hypertensive emergency.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Brainstem involvement would typically cause more widespread neurologic deficits beyond just one cranial nerve.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The fever and recent ear infection strongly suggest an infectious etiology despite the presence of fibrin degradation products.",
+          "confidence": 0.77,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The recent middle ear infection could suggest an alternative diagnosis like meningitis or intracranial abscess, which can also cause headache, fever, and neurologic symptoms, making hypertensive emergency less likely.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The recent middle ear infection could suggest an alternative diagnosis like meningitis or intracranial abscess, which can also cause headache, fever, and neurologic symptoms, making hypertensive emergency less likely.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of bilateral optic disc swelling and elevated blood pressure strongly suggests hypertensive emergency, which is more urgent and requires immediate treatment.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of meningeal signs (e.g., neck stiffness, photophobia) makes meningitis less likely, supporting hypertensive emergency as the primary diagnosis.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intracranial abscess typically presents with focal neurologic deficits and seizures, which are not described here, reducing its likelihood compared to hypertensive emergency.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The elevated fibrin degradation products could indicate disseminated intravascular coagulation (DIC), which is more commonly associated with severe infections like meningitis rather than hypertensive emergency.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Hypertensive emergency can also lead to microangiopathic hemolysis, which could explain the elevated fibrin degradation products, making DIC less necessary as an explanation.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The absence of corneal reflex and reduced facial sensation on the right side points to cranial nerve involvement, which is more indicative of a focal neurologic process like a brainstem lesion rather than a generalized hypertensive emergency.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The absence of corneal reflex and reduced facial sensation on the right side points to cranial nerve involvement, which is more indicative of a focal neurologic process like a brainstem lesion rather than a generalized hypertensive emergency.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Hypertensive emergency can still cause focal neurologic deficits due to increased intracranial pressure and secondary compression of cranial nerves, explaining the observed symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of bilateral optic disc swelling (papilledema) is highly suggestive of increased intracranial pressure, which is a hallmark of hypertensive encephalopathy.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Focal cranial nerve deficits are uncommon in hypertensive emergencies, which typically present with generalized neurologic symptoms like confusion or seizures, making a brainstem lesion more plausible.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While papilledema can occur in hypertensive emergencies, the combination with unilateral cranial nerve deficits is more consistent with a structural lesion such as a tumor or abscess.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The elevated fibrin degradation products suggest a hypercoagulable state, increasing the likelihood of venous sinus thrombosis, which can mimic hypertensive emergency but requires different management.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Hypertensive emergency typically presents with much higher blood pressures (often >180/120 mm Hg), making this diagnosis less likely given the patient's current blood pressure reading.",
+        "confidence": 0.68,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Hypertensive emergency typically presents with much higher blood pressures (often >180/120 mm Hg), making this diagnosis less likely given the patient's current blood pressure reading.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (headache, blurry vision, nausea, and optic disc swelling) are classic signs of increased intracranial pressure, which can occur even with moderately elevated blood pressure.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of corneal reflex and reduced facial sensation suggest cranial nerve involvement, which is more consistent with a neurological condition like meningitis or intracranial abscess rather than hypertensive emergency.",
+          "confidence": 0.82,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Increased fibrin degradation products could indicate disseminated intravascular coagulation (DIC), which is more likely to be secondary to severe infection (e.g., from the ear infection) than hypertensive emergency.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's recent ear infection and fever strongly suggest an infectious etiology (e.g., otogenic intracranial complication) rather than a primary hypertensive crisis.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While cranial nerve deficits can occur in hypertensive emergency, the combination with fever and recent infection makes infectious/inflammatory causes more probable.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Moderate hypertension can still contribute to intracranial pressure elevation in the setting of preexisting pathology (e.g., venous sinus thrombosis secondary to infection).",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The time course (4 days post-ear infection) matches better with infectious complications than with hypertensive emergency, which typically develops more acutely without prodromal infection.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

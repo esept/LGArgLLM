@@ -1,0 +1,524 @@
+{
+  "claim": "Kyra Sedgwick received a Golden Globe Award.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Kyra Sedgwick was nominated for a Golden Globe Award for her role in 'The West Wing,' suggesting recognition by industry peers.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Kyra Sedgwick was nominated for a Golden Globe Award for her role in 'The West Wing,' suggesting recognition by industry peers.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Nomination does not confirm receipt of an award; it only indicates eligibility or consideration.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Golden Globe Award for Best Actress in a Television Drama was not presented in 2000 when Kyra Sedgwick starred in 'The West Wing.'",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Nominations are inherently valuable and reflect peer acknowledgment even without winning.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical records confirm Kyra Sedgwick was indeed nominated for a Golden Globe during 'The West Wing' season.",
+          "confidence": 0.89,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The distinction between 'nomination' and 'receipt' is semantic; both imply industry validation.",
+          "confidence": 0.73,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The absence of an award does not negate the significance of being recognized through nomination.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Her long-standing career in television and film has earned her numerous accolades, including Critics' Choice Awards and Emmys.",
+        "confidence": 0.58,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Her long-standing career in television and film has earned her numerous accolades, including Critics' Choice Awards and Emmys.",
+          "confidence": 0.58,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of specific mention of a Golden Globe Award in the supporting argument undermines its validity.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B2",
+          "text": "Accolades like Emmys and Critics' Choice Awards are distinct from Golden Globe Awards and do not confirm their receipt.",
+          "confidence": 0.79,
+          "attacks": [
+            "A2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B3",
+          "text": "The supporting argument conflates general career success with specific award achievements without evidence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C1",
+          "text": "The supporting argument explicitly lists multiple awards, which indirectly suggests potential recognition across major categories.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "The distinction between award types does not negate the possibility of her receiving a Golden Globe Award.",
+          "confidence": 0.71,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C3",
+          "text": "Career success metrics can include awards from different organizations, making the claim plausible despite specificity gaps.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "The indirect inference of Golden Globe eligibility lacks direct evidence and relies on assumptions about award overlap.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D2",
+          "text": "Award categories are separate by design, so claiming equivalence between Emmys/Critics' Choice and Golden Globes is logically flawed.",
+          "confidence": 0.85,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D3",
+          "text": "Career success does not inherently guarantee recognition in every award category, making the argument's conclusion uncertain.",
+          "confidence": 0.77,
+          "attacks": [
+            "C3"
+          ],
+          "cate": "S"
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "She co-starred with actors who have won Golden Globes, implying potential association with such honors.",
+        "confidence": 0.45,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "She co-starred with actors who have won Golden Globes, implying potential association with such honors.",
+          "confidence": 0.45,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Co-starring with Golden Globe winners does not prove Kyra Sedgwick herself received the award.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on speculative implications rather than direct evidence of Kyra Sedgwick's award receipt.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While co-starring may not guarantee a Golden Globe win, it increases likelihood through industry recognition.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Implications of association can serve as indirect evidence when direct proof is absent.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Industry recognition through co-starring does not equate to personal award eligibility or receipt.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Speculative implications lack sufficient logical connection to confirm award status without explicit documentation.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Kyra Sedgwick\u2019s official biography and award records do not list any Golden Globe victories.",
+        "confidence": 0.92,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Kyra Sedgwick\u2019s official biography and award records do not list any Golden Globe victories.",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Official biographies and award records may not always include all awards.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Kyra Sedgwick may have won a Golden Globe for a non-English language film.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The sources cited in A4 are outdated or incomplete.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B4",
+          "text": "Kyra Sedgwick won a Golden Globe but chose not to publicize it.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Biographies can be updated post-award, so absence doesn't confirm no win.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Golden Globe rules require public disclosure of awards for eligibility.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Reputable databases like IMDb and TMDB explicitly list her awards.",
+          "confidence": 0.91,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Publicizing awards is standard practice for celebrities; silence implies no win.",
+          "confidence": 0.83,
+          "attacks": [
+            "B4"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Updating biographies requires official confirmation from reputable sources.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Non-English language films are ineligible for Golden Globe Awards.",
+          "confidence": 0.95,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "IMDb and TMDB are primary sources for award listings and lack such data.",
+          "confidence": 0.94,
+          "attacks": [
+            "C3"
+          ]
+        },
+        {
+          "id": "D4",
+          "text": "Celebrities typically announce major awards publicly; lack of evidence suggests no win.",
+          "confidence": 0.87,
+          "attacks": [
+            "C4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Golden Globe winners for similar roles in 'The West Wing' were actors like Rob Lowe and Allison Janney, not Sedgwick.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Golden Globe winners for similar roles in 'The West Wing' were actors like Rob Lowe and Allison Janney, not Sedgwick.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kyra Sedgwick won a Golden Globe Award for Best Actress in a Television Series - Drama in 2001 for her role in 'The West Wing'.",
+          "confidence": 0.92,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The list of Golden Globe winners from 'The West Wing' includes Kyra Sedgwick in non-acting categories such as Best Television Series - Drama.",
+          "confidence": 0.79,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Rob Lowe and Allison Janney were never nominated for Golden Globes for their roles in 'The West Wing', making A5's premise false.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official Golden Globe records from 2001 show Kyra Sedgwick was not nominated for Best Actress in a Television Series - Drama.",
+          "confidence": 0.94,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Sedgwick's involvement in 'The West Wing' was limited to guest appearances, which disqualifies her from acting category awards.",
+          "confidence": 0.87,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Rob Lowe and Allison Janney were never nominated for Golden Globes during their time on 'The West Wing', contradicting A5's claims.",
+          "confidence": 0.91,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Sedgwick's absence from Golden Globe nominations during 'The West Wing' aligns with industry consensus about her role's recognition level.",
+          "confidence": 0.89,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Guest actors are ineligible for acting category Golden Globes according to official rules, invalidating B2's reasoning.",
+          "confidence": 0.93,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "A5's reference to Rob Lowe and Allison Janney as 'similar roles' ignores their distinct character arcs and screen time compared to Sedgwick.",
+          "confidence": 0.86,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Her primary awards come from Emmy ceremonies rather than Golden Globes, indicating limited recognition from HFPA.",
+        "confidence": 0.79,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Her primary awards come from Emmy ceremonies rather than Golden Globes, indicating limited recognition from HFPA.",
+          "confidence": 0.79,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kyra Sedgwick has won at least one Golden Globe Award for her role in 'The West Wing' in 2002.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The distinction between Emmy and Golden Globe recognition is irrelevant to the claim about HFPA acknowledgment.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "HFPA recognition extends beyond awards; nominations or industry influence could count as acknowledgment.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 'The West Wing' award cited was an Emmy, not a Golden Globe Award.",
+          "confidence": 0.83,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Emmy Awards and Golden Globes serve different industries (television vs. film), so comparing their significance is flawed.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The claim focuses on receiving an award, not on the frequency or scale of HFPA recognition.",
+          "confidence": 0.74,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Emmy Awards are explicitly for television performances, while Golden Globes include film categories; this does not invalidate HFPA recognition claims.",
+          "confidence": 0.81,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Industry-specific prestige does not negate the validity of HFPA acknowledgment as a separate metric.",
+          "confidence": 0.79,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The original claim does not require HFPA to be the sole source of recognition; partial acknowledgment suffices.",
+          "confidence": 0.77,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

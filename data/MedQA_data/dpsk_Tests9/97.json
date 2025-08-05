@@ -1,0 +1,262 @@
+{
+  "claim": "Consider the following background information: A 35-year-old woman arrives to the clinic complaining of progressive urinary leakage that has occurred for the past 1 year. At first, she would notice leakage only during athletic exercise, but now the incontinence occurs even when she laughs or coughs. The patient states that she goes to the bathroom more frequently to try to prevent \u201cwetting myself.\u201d She wakes up once a night to urinate. She denies dysuria, hematuria, abdominal pain, and abnormal vaginal discharge. The patient has bipolar syndrome and takes lithium. She had an uncomplicated vaginal delivery 10 years ago and a cesarean section 4 years ago. She has had no other surgeries. She drinks at least 6 glasses of water a day but may drink more on days she goes for a long run. She also has a large coffee in the morning and another coffee mid-day if she \u201cneeds to focus.\u201d The patient denies tobacco, alcohol, and other recreational drug use. Pelvic examination and speculum examination are unremarkable. When that patient is asked to Valsalva, leakage of urine is observed. A urinalysis, including specific gravity, is within normal limits. A beta-human chorionic gonadotropin is negative.\n\nGiven the background information the following is corrrect: Urethral hypermobility is the most likely cause of the patient\"s symptoms.",
+  "score": 0.85,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's symptoms of stress incontinence (leakage during coughing, laughing, and exercise) are classic signs of urethral hypermobility, which is often caused by weakened pelvic floor muscles."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms of stress incontinence (leakage during coughing, laughing, and exercise) are classic signs of urethral hypermobility, which is often caused by weakened pelvic floor muscles.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of bipolar syndrome and lithium use could contribute to polyuria or bladder irritation, which may mimic or exacerbate stress incontinence symptoms.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's high caffeine intake (two large coffees daily) is a known irritant to the bladder and can cause urinary frequency and urgency, which may complicate the diagnosis of pure stress incontinence.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.75
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Lithium is not typically associated with stress incontinence but is more likely to cause polyuria due to nephrogenic diabetes insipidus, which is unrelated to urethral hypermobility.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While caffeine can irritate the bladder, it does not explain the observed leakage during Valsalva, which is a hallmark of urethral hypermobility.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's history of vaginal delivery and cesarean section increases the likelihood of pelvic floor dysfunction, a common contributor to urethral hypermobility."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's history of vaginal delivery and cesarean section increases the likelihood of pelvic floor dysfunction, a common contributor to urethral hypermobility.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Pelvic floor dysfunction does not always lead to urethral hypermobility, as other factors like muscle tone and nerve function also play significant roles.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that multiparity (multiple childbirths) is strongly correlated with pelvic floor dysfunction and subsequent urethral hypermobility.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's high caffeine intake could exacerbate urinary incontinence independently of pelvic floor dysfunction, masking the true underlying cause.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Caffeine's diuretic effect is well-documented, but it does not explain the stress incontinence observed during Valsalva, which is more specific to urethral hypermobility.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The observation of urine leakage during Valsalva maneuver strongly supports the diagnosis of urethral hypermobility, as this is a key clinical finding for this condition."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The observation of urine leakage during Valsalva maneuver strongly supports the diagnosis of urethral hypermobility, as this is a key clinical finding for this condition.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Stress urinary incontinence (SUI) due to intrinsic sphincter deficiency (ISD) can also present with leakage during Valsalva, making it a differential diagnosis that cannot be ruled out without further urodynamic testing.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Urethral hypermobility is statistically more common than ISD in women with a history of vaginal delivery, supporting the initial diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's high caffeine intake could exacerbate urinary incontinence symptoms, potentially masking the true underlying cause.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While caffeine can worsen symptoms, it does not explain the anatomical observation of leakage during Valsalva, which is specific to urethral hypermobility or ISD.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The absence of dysuria, hematuria, and abnormal vaginal discharge, along with normal urinalysis, rules out other causes such as urinary tract infection or overactive bladder, making urethral hypermobility the most likely diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of dysuria, hematuria, and abnormal vaginal discharge, along with normal urinalysis, rules out other causes such as urinary tract infection or overactive bladder, making urethral hypermobility the most likely diagnosis.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's high caffeine intake from coffee could contribute to urinary frequency and urgency, which may mimic or exacerbate symptoms of urethral hypermobility.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While caffeine can increase urinary frequency, it does not explain the observed leakage during Valsalva maneuvers, which is a hallmark of urethral hypermobility.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of vaginal delivery and cesarean section could have weakened pelvic floor muscles, contributing to stress urinary incontinence rather than urethral hypermobility.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Pelvic floor weakness and urethral hypermobility are often interrelated, and both can contribute to stress urinary incontinence, making urethral hypermobility still a plausible primary diagnosis.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The patient's frequent urination and nocturia are compensatory behaviors to prevent leakage, which is consistent with the diagnosis of stress urinary incontinence due to urethral hypermobility."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's frequent urination and nocturia are compensatory behaviors to prevent leakage, which is consistent with the diagnosis of stress urinary incontinence due to urethral hypermobility.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be due to detrusor overactivity, which can present with similar symptoms of urinary leakage and nocturia.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Detrusor overactivity is less likely in this case because the patient denies dysuria and the urinalysis is normal, which are often associated with detrusor overactivity.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's caffeine intake could contribute to urinary frequency and urgency, which may mimic symptoms of stress urinary incontinence.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While caffeine can contribute to urinary symptoms, the observed leakage during Valsalva maneuver strongly supports the diagnosis of stress urinary incontinence.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's history of bipolar disorder and lithium use could contribute to polyuria and nocturia, which may not be related to urethral hypermobility.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Lithium-induced polyuria typically presents with more severe nocturia and higher urine output, which are not prominent in this patient's history.",
+          "confidence": 0.75,
+          "attacks": {
+            "B3": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

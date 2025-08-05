@@ -1,0 +1,278 @@
+{
+  "claim": "Consider the following background information: A 51-year-old Asian woman presents to her primary care provider with abdominal pain. On examination, she is found to have rebound tenderness in the lower right quadrant of her abdomen. Further workup suggests ovarian cancer, which is confirmed later in the week to be stage 4 with confirmed distant metastases in the lungs and brain.\n\nGiven the background information the following is corrrect: The most likely lymphatic route for this malignancy to have metastasized to the brain is through the sentinel node, right lumbar trunk, cisterna chyli, thoracic duct, left subclavian vein, and systemic circulation.",
+  "score": 0.85,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The sentinel node is the first lymph node to which cancer cells are most likely to spread from the primary tumor, making it a plausible starting point for lymphatic metastasis."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The sentinel node is the first lymph node to which cancer cells are most likely to spread from the primary tumor, making it a plausible starting point for lymphatic metastasis.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While the sentinel node is often the first site of metastasis, ovarian cancer primarily spreads via transcoelomic dissemination rather than lymphatic routes initially.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even in cases where lymphatic spread occurs, ovarian cancer cells would need to bypass multiple anatomical barriers to reach the brain via the described route, making this pathway less likely.",
+          "confidence": 0.72,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The presence of distant metastases in both lungs and brain suggests hematogenous spread may be more significant than lymphatic in this advanced case.",
+          "confidence": 0.8,
+          "attacks": {
+            "A1": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The right lumbar trunk drains lymph from the lower extremities and pelvic organs, including the ovaries, which aligns with the ovarian cancer's potential spread pathway."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The right lumbar trunk drains lymph from the lower extremities and pelvic organs, including the ovaries, which aligns with the ovarian cancer's potential spread pathway.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The right lumbar trunk primarily drains lymph from the lower extremities and pelvic organs, but ovarian cancer more commonly metastasizes via the para-aortic lymph nodes rather than the right lumbar trunk.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While the para-aortic lymph nodes are a common route, the right lumbar trunk can still be involved in rare cases, especially if the primary tumor is located in the right ovary.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Metastasis to the brain via the lymphatic system is extremely rare; hematogenous spread through the systemic circulation is far more common for ovarian cancer.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Although hematogenous spread is more common, lymphatic spread to the brain can occur in advanced stages, particularly if the tumor has invaded the thoracic duct.",
+          "confidence": 0.55,
+          "attacks": {
+            "B2": 0.5
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The cisterna chyli collects lymph from the lumbar trunks and intestinal trunk, serving as a conduit for lymphatic fluid to ascend towards the thoracic duct."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The cisterna chyli collects lymph from the lumbar trunks and intestinal trunk, serving as a conduit for lymphatic fluid to ascend towards the thoracic duct.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Metastasis to the brain via the lymphatic system is extremely rare; hematogenous spread through the arterial circulation is far more common for ovarian cancer.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While hematogenous spread is more common, lymphatic metastasis to the brain can occur in rare cases, especially with aggressive malignancies like stage 4 ovarian cancer.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The cisterna chyli is not always present in all individuals, and anatomical variations can alter lymphatic drainage pathways.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Anatomical variations are rare, and the cisterna chyli is present in the majority of individuals, making it a reliable general pathway for lymphatic drainage.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The thoracic duct is the main lymphatic vessel that drains lymph from the lower body into the venous system, providing a direct route for cancer cells to enter systemic circulation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The thoracic duct is the main lymphatic vessel that drains lymph from the lower body into the venous system, providing a direct route for cancer cells to enter systemic circulation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The thoracic duct does not directly connect to the brain; cancer cells must still pass through the pulmonary circulation before reaching systemic circulation, which filters many metastatic cells.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While the pulmonary circulation filters many metastatic cells, some can bypass this filtration through arteriovenous shunts or pre-existing lung metastases.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Metastasis to the brain is more commonly hematogenous than lymphatic, suggesting the primary route may not involve the thoracic duct.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Even if hematogenous spread is more common, lymphatic metastasis to the brain is still possible, especially in advanced cancers with widespread dissemination.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The left subclavian vein is where the thoracic duct empties lymph into the venous system, allowing cancer cells to enter the bloodstream and potentially metastasize to distant sites like the brain."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The left subclavian vein is where the thoracic duct empties lymph into the venous system, allowing cancer cells to enter the bloodstream and potentially metastasize to distant sites like the brain.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Metastasis to the brain from ovarian cancer is rare and more commonly occurs via hematogenous spread rather than lymphatic routes.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While rare, lymphatic spread to the brain can still occur in advanced stages of ovarian cancer, especially with widespread metastases.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The thoracic duct does not directly connect to the brain; cancer cells would still need to pass through the pulmonary circulation first, making brain metastasis less likely via this route.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Cancer cells can bypass pulmonary circulation via paradoxical embolism or other mechanisms, allowing for direct spread to the brain.",
+          "confidence": 0.65,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Systemic circulation distributes blood (and any circulating cancer cells) throughout the body, including the brain, which is consistent with the observed metastases in this case."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Systemic circulation distributes blood (and any circulating cancer cells) throughout the body, including the brain, which is consistent with the observed metastases in this case.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The lymphatic route described is not the primary pathway for ovarian cancer metastasis to the brain; hematogenous spread via the systemic circulation is more common.",
+          "confidence": 0.78,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While hematogenous spread is common, the lymphatic route cannot be entirely ruled out as a potential pathway for metastasis, especially in advanced stages.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The presence of distant metastases in both the lungs and brain strongly suggests hematogenous spread, as the lungs are a common site for hematogenous metastasis before reaching the brain.",
+          "confidence": 0.82,
+          "attacks": {
+            "C1": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

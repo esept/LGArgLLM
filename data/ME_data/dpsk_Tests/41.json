@@ -1,0 +1,240 @@
+{
+  "claim": "Water freezes at 0 degrees Celsius",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The freezing point of water at standard atmospheric pressure (1 atm) is defined as 0 degrees Celsius in the International Temperature Scale of 1990 (ITS-90)."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The freezing point of water at standard atmospheric pressure (1 atm) is defined as 0 degrees Celsius in the International Temperature Scale of 1990 (ITS-90).",
+          "confidence": 0.98,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The freezing point of water can vary under non-standard conditions, such as when impurities are present or pressure is altered.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The International Temperature Scale of 1990 (ITS-90) explicitly defines standard conditions for the freezing point of water, making non-standard conditions irrelevant to the claim.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Supercooled water can remain liquid below 0 degrees Celsius under certain conditions, contradicting the claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Supercooling is a metastable state and not the equilibrium condition, so it does not invalidate the defined freezing point.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Empirical observations consistently show that pure water transitions from liquid to solid state at 0 degrees Celsius under normal conditions."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Empirical observations consistently show that pure water transitions from liquid to solid state at 0 degrees Celsius under normal conditions.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Impurities in water can lower its freezing point below 0 degrees Celsius, making the claim context-dependent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with impurities, the freezing point depression is predictable and well-documented, so the original claim holds for pure water.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Under high pressure, water can remain liquid below 0 degrees Celsius, challenging the universality of the claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "High-pressure conditions are not 'normal conditions,' so the original claim remains valid for standard atmospheric pressure.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Celsius scale was originally defined with 0 degrees as the freezing point of water and 100 degrees as the boiling point at sea level."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Celsius scale was originally defined with 0 degrees as the freezing point of water and 100 degrees as the boiling point at sea level.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The freezing point of water can vary with impurities, such as salt or minerals, lowering it below 0 degrees Celsius.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original Celsius definition assumes pure water at standard atmospheric pressure, which is the scientifically accepted reference condition.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "At high pressures, water can remain liquid below 0 degrees Celsius, deviating from the standard freezing point.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard conditions (1 atm pressure) are implied in common usage unless specified otherwise, making the original definition practically valid.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Scientific experiments with controlled conditions confirm that the phase change of water to ice occurs at 0 degrees Celsius."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Scientific experiments with controlled conditions confirm that the phase change of water to ice occurs at 0 degrees Celsius.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Impurities in water can lower its freezing point below 0 degrees Celsius, making the claim context-dependent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In controlled laboratory conditions with pure water, the freezing point remains consistently at 0 degrees Celsius, as confirmed by numerous studies.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Pressure variations can alter the freezing point of water, deviating from the standard 0 degrees Celsius under normal atmospheric pressure.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Under standard atmospheric pressure (1 atm), the freezing point of pure water is reliably 0 degrees Celsius, which is the baseline condition for the claim.",
+          "confidence": 0.93,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Textbooks and educational materials universally cite 0 degrees Celsius as the freezing point of water, reflecting established scientific consensus."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Textbooks and educational materials universally cite 0 degrees Celsius as the freezing point of water, reflecting established scientific consensus.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The freezing point of water can vary under different conditions, such as pressure or impurities, making 0 degrees Celsius an oversimplification.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While exceptions exist, 0 degrees Celsius remains the standard freezing point under normal atmospheric conditions, which is the context most textbooks address.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Supercooled water can remain liquid below 0 degrees Celsius, challenging the universality of the freezing point claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Supercooling is a metastable state and not the equilibrium condition, so it does not invalidate the standard freezing point definition.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

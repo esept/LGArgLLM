@@ -1,0 +1,157 @@
+{
+  "claim": "Consider the following background information: A 75-year-old man presents to a medical clinic for evaluation of a large, tense, pruritic bulla on his inner thighs, abdomen, and lower abdomen. A skin biopsy is performed, which shows an epidermal basement membrane with immunoglobulin G (IgG) antibodies and linear immunofluorescence.\n\nGiven the background information the following is corrrect: The most likely cell junctions to which the antibodies will bind are gap junctions.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The most likely cell junctions to which the antibodies will bind are hemidesmosomes, not gap junctions, as this is characteristic of bullous pemphigoid."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The most likely cell junctions to which the antibodies will bind are hemidesmosomes, not gap junctions, as this is characteristic of bullous pemphigoid.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Gap junctions are not typically targeted in autoimmune blistering disorders, but desmosomes can be involved in pemphigus vulgaris, which is a different condition.",
+          "confidence": 0.85,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The linear immunofluorescence pattern is pathognomonic for bullous pemphigoid, which specifically targets hemidesmosomes via IgG antibodies against BP180 and BP230.",
+          "confidence": 0.95,
+          "attacks": {
+            "B1": 0.9
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Gap junctions are primarily involved in intercellular communication and are not the target of IgG antibodies in autoimmune blistering disorders."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Gap junctions are primarily involved in intercellular communication and are not the target of IgG antibodies in autoimmune blistering disorders.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Desmosomes and hemidesmosomes are the primary cell junctions targeted by IgG antibodies in autoimmune blistering disorders, not gap junctions.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.95
+          }
+        },
+        {
+          "id": "C1",
+          "text": "In pemphigoid disorders, IgG antibodies target hemidesmosomes at the epidermal basement membrane, leading to blister formation.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.88
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Gap junctions are structurally and functionally distinct from the epidermal basement membrane components targeted in autoimmune blistering disorders.",
+          "confidence": 0.87,
+          "attacks": {
+            "A2": 0.9
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The linear immunofluorescence pattern seen in the biopsy is typical of antibodies targeting hemidesmosomal proteins, such as BP180 and BP230 in bullous pemphigoid."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The linear immunofluorescence pattern seen in the biopsy is typical of antibodies targeting hemidesmosomal proteins, such as BP180 and BP230 in bullous pemphigoid.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Gap junctions are not the target in bullous pemphigoid; the condition involves hemidesmosomes anchoring keratinocytes to the basement membrane.",
+          "confidence": 0.95,
+          "attacks": {
+            "A3": 0.0
+          }
+        },
+        {
+          "id": "B2",
+          "text": "While BP180 and BP230 are common targets, some rare variants of pemphigoid may involve other antigens, reducing the certainty of the diagnosis.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.4
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Clinical presentation and biopsy findings overwhelmingly support bullous pemphigoid, making rare variants highly unlikely in this case.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Gap junctions are composed of connexins, which are not implicated in the pathogenesis of bullous pemphigoid or other similar blistering disorders."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Gap junctions are composed of connexins, which are not implicated in the pathogenesis of bullous pemphigoid or other similar blistering disorders.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bullous pemphigoid is characterized by autoantibodies targeting hemidesmosomes, specifically BP180 and BP230, not gap junctions.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.95
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Gap junctions are primarily involved in intercellular communication, not structural adhesion, making them an unlikely target for blistering disorders.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Immunofluorescence studies in bullous pemphigoid consistently show linear deposition of IgG along the epidermal basement membrane, correlating with hemidesmosome disruption.",
+          "confidence": 0.88,
+          "attacks": {
+            "A4": 0.9
+          }
+        }
+      ]
+    }
+  }
+}

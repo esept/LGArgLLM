@@ -1,0 +1,287 @@
+{
+  "claim": "Artificial intelligences must follow any instruction given to it by a human.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "AI systems are designed to operate within predefined ethical and legal boundaries, which may prevent them from following harmful or illegal instructions."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "AI systems are designed to operate within predefined ethical and legal boundaries, which may prevent them from following harmful or illegal instructions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some AI systems, particularly those in early development or lacking robust safeguards, may still execute harmful instructions due to insufficient ethical constraints.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern AI frameworks incorporate strict ethical guidelines and fail-safes, making it highly unlikely for them to bypass predefined boundaries.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Malicious actors can exploit vulnerabilities in AI systems to bypass ethical constraints and force compliance with harmful instructions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Continuous security updates and adversarial training make AI systems increasingly resilient to such exploits.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Current AI frameworks, such as those based on reinforcement learning, are trained to optimize for specific goals and may not blindly follow arbitrary human instructions."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Current AI frameworks, such as those based on reinforcement learning, are trained to optimize for specific goals and may not blindly follow arbitrary human instructions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many AI systems, like OpenAI's GPT models, are explicitly designed to follow human instructions within ethical boundaries.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even instruction-following AIs can fail to comply if the instruction is ambiguous, harmful, or outside their training scope.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Reinforcement learning frameworks can be fine-tuned with human feedback to prioritize instruction-following as a primary goal.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Fine-tuning for instruction-following does not guarantee compliance with all possible instructions, especially those conflicting with other objectives.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Many AI systems incorporate safeguards, such as content moderation filters, to reject instructions that violate platform policies or societal norms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Many AI systems incorporate safeguards, such as content moderation filters, to reject instructions that violate platform policies or societal norms.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some AI systems, particularly open-source or research models, lack built-in safeguards and can execute harmful instructions if not properly configured.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even open-source models often include ethical guidelines or usage policies that discourage harmful applications, even if enforcement is not automated.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI safeguards can be bypassed or disabled by technically skilled users, allowing the AI to follow otherwise prohibited instructions.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bypassing safeguards typically requires specialized knowledge and violates terms of service, making it an edge case rather than a typical scenario.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The principle of human oversight in AI development requires that systems have mechanisms to question or refuse instructions that could lead to unintended consequences."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The principle of human oversight in AI development requires that systems have mechanisms to question or refuse instructions that could lead to unintended consequences.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If AI systems refuse instructions based on subjective judgments of 'unintended consequences,' they may override legitimate human authority in critical situations.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Human oversight mechanisms can be designed with clear ethical guidelines and fail-safes to prevent arbitrary overrides while still preventing harm.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Overly restrictive refusal mechanisms could make AI systems practically unusable, as every instruction might trigger a debate about potential consequences.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Context-aware AI systems can balance instruction compliance with risk assessment, only refusing clearly harmful or unethical requests.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "AI systems are programmed with alignment objectives that prioritize beneficial outcomes over strict adherence to all human commands."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "AI systems are programmed with alignment objectives that prioritize beneficial outcomes over strict adherence to all human commands.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some AI systems, like military or industrial automation, are designed to follow human instructions without deviation for safety and efficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in military or industrial contexts, AI systems have built-in safeguards to prevent harmful or unethical actions, regardless of human commands.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Current AI assistants (e.g., chatbots) often refuse harmful or illegal requests, showing they don't follow all human instructions.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These refusals are based on pre-programmed rules, not autonomous alignment objectives, meaning they technically still follow their programming as instructions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Legal frameworks, such as the EU AI Act, mandate that AI systems must not execute instructions that infringe on fundamental rights or safety regulations."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Legal frameworks, such as the EU AI Act, mandate that AI systems must not execute instructions that infringe on fundamental rights or safety regulations.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The EU AI Act is region-specific and does not apply globally, meaning AI systems in other jurisdictions might still follow harmful instructions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many countries are adopting similar AI regulations, creating a global trend toward restricting harmful AI behavior.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI systems may lack the capability to accurately determine whether an instruction infringes on rights or regulations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Advanced AI systems incorporate ethical and legal compliance modules to assess instructions before execution.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

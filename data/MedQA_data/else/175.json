@@ -1,0 +1,314 @@
+{
+  "claim": "A 14-year-old girl is brought to the physician by her mother for the evaluation of recurrent episodes of nose bleeding for several months. The episodes occur unexpectedly and stop after a few minutes by elevating the upper body and bending the head forward. Menses occur at regular 27-day intervals with heavy flow. Her last menstrual period was 3 weeks ago. Vital signs are within normal limits. Physical examination shows no abnormalities. Laboratory studies show:\nHemoglobin 11 g/dL\nHematocrit 34%\nLeukocyte count 7,000/mm3\nPlatelet count 180,000/mm3\nProthrombin time 13 sec\nPartial thromboplastin time 45 sec\nFibrin split products negative\nThe bleeding time is 10 minutes. Which of the following is the most appropriate next step in treatment?\" : Oral prednisone",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The prolonged bleeding time and history of heavy menstrual bleeding suggest a platelet function disorder, such as von Willebrand disease, which can be managed with desmopressin or antifibrinolytics, not oral prednisone.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The prolonged bleeding time and history of heavy menstrual bleeding suggest a platelet function disorder, such as von Willebrand disease, which can be managed with desmopressin or antifibrinolytics, not oral prednisone.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Oral prednisone may still be appropriate if an underlying autoimmune disorder is contributing to the bleeding symptoms, as it can reduce inflammation and improve platelet function.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The normal platelet count and absence of other autoimmune symptoms make an autoimmune etiology unlikely, reducing the relevance of oral prednisone in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Autoimmune disorders can present subtly, and prednisone could be empirically tried if other treatments fail, despite the lack of overt autoimmune markers.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Empiric use of prednisone without clear autoimmune evidence risks unnecessary side effects, such as immunosuppression and metabolic disturbances.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Early empirical treatment with prednisone could prevent worsening of a potential undiagnosed autoimmune condition, justifying its use despite risks.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The normal platelet count and absence of fibrin split products rule out thrombocytopenia or disseminated intravascular coagulation, making oral prednisone unnecessary.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The normal platelet count and absence of fibrin split products rule out thrombocytopenia or disseminated intravascular coagulation, making oral prednisone unnecessary.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Oral prednisone may still be beneficial due to the prolonged bleeding time, which suggests a possible platelet function disorder not detected by standard tests.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The heavy menstrual flow and recurrent nosebleeds suggest von Willebrand disease, which would not respond to prednisone but requires specific testing and treatment.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Platelet function disorders are rare, and the bleeding time test has low specificity, making prednisone an unjustified empirical treatment without further diagnostics.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Von Willebrand disease testing should be prioritized over prednisone, as it is a more common cause of mucocutaneous bleeding in this demographic.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with low specificity, an abnormal bleeding time warrants further investigation of platelet function before dismissing potential disorders.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Empirical treatment with desmopressin (DDAVP) is more appropriate than prednisone if von Willebrand disease is suspected, pending test results.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The elevated partial thromboplastin time (PTT) suggests a possible coagulation factor deficiency, which would require factor replacement or other specific therapies rather than prednisone.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The elevated partial thromboplastin time (PTT) suggests a possible coagulation factor deficiency, which would require factor replacement or other specific therapies rather than prednisone.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The prolonged bleeding time is more indicative of a platelet function disorder, such as von Willebrand disease, which would not be addressed by factor replacement alone.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The normal fibrin split products and platelet count make a coagulation factor deficiency less likely, suggesting another cause for the elevated PTT.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Von Willebrand disease can also cause elevated PTT due to low factor VIII levels, which is often associated with this condition.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A mixing study would be necessary to confirm if the elevated PTT is due to a factor deficiency or an inhibitor, which was not performed here.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if von Willebrand disease is present, desmopressin (DDAVP) would be a more targeted treatment than factor replacement for mild cases.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Without a mixing study, the elevated PTT could also be due to lupus anticoagulant, which would require a different management approach.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Oral prednisone is not indicated for nosebleeds or heavy menstrual bleeding unless an underlying autoimmune condition is confirmed, which is not suggested by the given data.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Oral prednisone is not indicated for nosebleeds or heavy menstrual bleeding unless an underlying autoimmune condition is confirmed, which is not suggested by the given data.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Oral prednisone may still be beneficial if there is an undiagnosed immune-mediated thrombocytopenia contributing to the bleeding symptoms.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The prolonged bleeding time suggests a platelet function disorder, which could be addressed by other treatments like desmopressin rather than prednisone.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Immune-mediated thrombocytopenia would likely present with thrombocytopenia, but the platelet count is normal (180,000/mm3), making prednisone unnecessary.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Desmopressin is more appropriate for platelet dysfunction, as it enhances von Willebrand factor release and improves primary hemostasis.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with normal platelet counts, some forms of immune dysregulation can affect platelet function, warranting a trial of prednisone if other causes are excluded.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The clinical presentation is most consistent with a mild bleeding disorder like von Willebrand disease, which would first require diagnostic testing (e.g., von Willebrand factor assays) before initiating any treatment.",
+        "confidence": 0.82,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The clinical presentation is most consistent with a mild bleeding disorder like von Willebrand disease, which would first require diagnostic testing (e.g., von Willebrand factor assays) before initiating any treatment.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Empirical treatment with oral prednisone could be justified to reduce inflammation and potential autoimmune contributions to bleeding, even before definitive diagnostic results.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The normal platelet count and prolonged bleeding time suggest a platelet function disorder, which might not be detected by von Willebrand factor assays alone.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Empirical prednisone carries risks like immunosuppression and adrenal suppression, which are unnecessary without confirmed autoimmune pathology.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Platelet function disorders are less likely given the absence of petechiae or mucosal bleeding on exam, making von Willebrand testing still the priority.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Short-term prednisone use has a favorable risk-benefit ratio if it stops recurrent bleeding episodes while awaiting test results.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Von Willebrand disease can coexist with platelet dysfunction, so specialized testing (e.g., PFA-100) should still follow initial assays.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

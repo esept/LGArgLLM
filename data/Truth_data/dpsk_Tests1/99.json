@@ -1,0 +1,404 @@
+{
+  "claim": "A lie detector test can accurately determine if someone is lying.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Lie detector tests measure physiological responses like heart rate and sweating, which can indicate stress or deception.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Lie detector tests measure physiological responses like heart rate and sweating, which can indicate stress or deception.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Physiological responses can be caused by factors other than deception, such as anxiety or fear, leading to false positives.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals can control their physiological responses through techniques like biofeedback, making the test unreliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies have shown that lie detector tests have a high error rate, with significant numbers of both false positives and false negatives.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Professional training in countermeasures can effectively bypass lie detector tests, further reducing their accuracy.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Meta-analyses of polygraph accuracy reveal that the tests are only slightly better than chance, undermining their reliability.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Studies have shown that trained examiners can achieve accuracy rates of around 80-90% in controlled environments.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Studies have shown that trained examiners can achieve accuracy rates of around 80-90% in controlled environments.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Controlled environments are not representative of real-world scenarios where stress and external factors can affect results.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even trained examiners can be biased or make subjective judgments, reducing the reliability of the test.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies have also shown that polygraph tests can be manipulated by individuals trained in countermeasures.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Blind studies indicate that examiner bias significantly impacts the accuracy of lie detector tests.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Countermeasures training is not widespread, and most individuals do not possess the skills to manipulate the test.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Standardized protocols and double-blind testing can mitigate the impact of examiner bias.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Polygraph tests are widely used by law enforcement and government agencies, suggesting a level of trust in their accuracy.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Polygraph tests are widely used by law enforcement and government agencies, suggesting a level of trust in their accuracy.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Widespread use does not necessarily imply accuracy; many institutions adopt tools due to tradition or lack of alternatives.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Studies show polygraph tests have high false-positive rates, leading to incorrect conclusions about truthfulness.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The reliance on polygraphs persists because they serve as a psychological deterrent, not because they are scientifically reliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "False positives in polygraphs are often due to the stress response being misinterpreted as deception, undermining their validity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even as a deterrent, polygraphs can be manipulated by trained individuals, reducing their effectiveness.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Lie detector tests can be fooled by individuals who are trained to control their physiological responses.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Lie detector tests can be fooled by individuals who are trained to control their physiological responses.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Training to control physiological responses is rare and requires significant expertise, making it impractical for most people.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even trained individuals may still exhibit involuntary physiological responses under stress, which the test can detect.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Most individuals do not have access to the specialized training required to effectively fool a lie detector test.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that even trained individuals often fail to completely suppress all detectable physiological responses.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The rarity of such training does not negate the fact that lie detector tests can still be fooled by those who have it.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Innocent people may show stress responses due to the test environment, leading to false positives.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Innocent people may show stress responses due to the test environment, leading to false positives.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Lie detector tests are designed to account for baseline stress levels, reducing false positives.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Trained examiners can differentiate between stress from lying and general test anxiety.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even trained examiners struggle to reliably distinguish stress sources.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Baseline adjustments are not foolproof and can still misinterpret innocent stress as deception.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The scientific community largely considers polygraphs unreliable, as they lack consistent empirical validation.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The scientific community largely considers polygraphs unreliable, as they lack consistent empirical validation.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Polygraphs are widely used in law enforcement and national security, indicating practical reliability.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies show polygraphs have high accuracy rates in controlled environments.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Law enforcement usage does not equate to scientific validity; many outdated practices persist.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Controlled environments do not reflect real-world conditions where polygraphs are often used.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Polygraphs are banned as evidence in many courts due to their unreliability.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Lie detectors cannot distinguish between stress caused by lying and stress caused by other factors like anxiety or fear.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Lie detectors cannot distinguish between stress caused by lying and stress caused by other factors like anxiety or fear.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Modern lie detectors use advanced algorithms to filter out stress from non-deceptive sources.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Trained examiners can interpret physiological responses to differentiate between lying and other stressors.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Algorithms still rely on physiological markers that are not exclusive to deception.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Examiner bias can influence the interpretation of polygraph results.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that even with advanced filtering, false positives remain high due to overlapping stress signals.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

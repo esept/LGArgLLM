@@ -1,0 +1,256 @@
+{
+  "claim": "Consider the following background information: A 61-year-old man comes to the physician with several months of sharp, shooting pain in both legs. Twenty years ago, he had a painless ulcer on his penis that resolved without treatment. He has no history of serious illness. Examination shows small pupils that constrict with accommodation but do not react to light. Sensation to pinprick and light touch is decreased over the distal lower extremities. Patellar reflexes are absent bilaterally. His gait is unsteady and broad-based.\n\nGiven the background information the following is corrrect: This patient is at increased risk for developing Atrioventricular block.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's history of a painless genital ulcer and current neurological symptoms are consistent with tertiary syphilis, which can cause cardiovascular complications like atrioventricular block."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of a painless genital ulcer and current neurological symptoms are consistent with tertiary syphilis, which can cause cardiovascular complications like atrioventricular block.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Tertiary syphilis is rare in modern times due to widespread antibiotic use, making this diagnosis less likely.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with antibiotic use, untreated syphilis can progress to tertiary stage in some populations, particularly those with limited healthcare access.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's neurological symptoms could also be caused by diabetic neuropathy, which is more common than tertiary syphilis.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diabetic neuropathy typically causes symmetric sensory loss and absent reflexes, but does not explain the pupillary abnormalities seen in this patient.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's symptoms could be due to vitamin B12 deficiency, which can cause both neurological symptoms and cardiovascular complications.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While B12 deficiency is possible, it doesn't explain the history of a painless genital ulcer, which is classic for syphilis.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The presence of Argyll Robertson pupils (small pupils that constrict with accommodation but do not react to light) is a classic sign of neurosyphilis, which increases the risk of cardiovascular syphilis and atrioventricular block."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of Argyll Robertson pupils (small pupils that constrict with accommodation but do not react to light) is a classic sign of neurosyphilis, which increases the risk of cardiovascular syphilis and atrioventricular block.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Argyll Robertson pupils are not pathognomonic for neurosyphilis and can occur in other conditions such as diabetes mellitus or multiple sclerosis, reducing the specificity of this sign for diagnosing neurosyphilis.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Argyll Robertson pupils can occur in other conditions, their presence in a patient with a history of a painless genital ulcer strongly suggests neurosyphilis, given the classic association with tertiary syphilis.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if neurosyphilis is present, not all patients develop cardiovascular complications like atrioventricular block; the risk depends on the extent and duration of untreated infection.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's 20-year history of untreated syphilis (implied by the resolved painless ulcer) significantly increases the likelihood of cardiovascular involvement, including atrioventricular block.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's sensory deficits and absent patellar reflexes indicate peripheral neuropathy, which in this context is likely due to neurosyphilis, a condition associated with cardiovascular involvement and atrioventricular block."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's sensory deficits and absent patellar reflexes indicate peripheral neuropathy, which in this context is likely due to neurosyphilis, a condition associated with cardiovascular involvement and atrioventricular block.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Peripheral neuropathy has many causes, including diabetes and alcohol abuse, which are more common than neurosyphilis and do not necessarily increase the risk of atrioventricular block.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of a painless genital ulcer and current neurological findings (Argyll Robertson pupils) strongly suggest neurosyphilis, which is known to cause cardiovascular complications like atrioventricular block.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even if neurosyphilis is present, not all patients with neurosyphilis develop cardiovascular complications or atrioventricular block.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that untreated neurosyphilis significantly increases the risk of cardiovascular complications, including atrioventricular block, making it a valid concern in this patient.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Tertiary syphilis can lead to aortitis, which may subsequently cause conduction abnormalities such as atrioventricular block due to involvement of the aortic valve and adjacent conduction system."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Tertiary syphilis can lead to aortitis, which may subsequently cause conduction abnormalities such as atrioventricular block due to involvement of the aortic valve and adjacent conduction system.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms are more consistent with tabes dorsalis, a complication of tertiary syphilis affecting the spinal cord, rather than cardiovascular involvement like aortitis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While tabes dorsalis is likely, patients with tertiary syphilis often have multiple organ involvement, and aortitis can coexist with neurosyphilis.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There is no current evidence of cardiovascular symptoms (e.g., chest pain, dyspnea) or physical exam findings (e.g., aortic regurgitation murmur) to suggest aortitis in this patient.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Aortitis can be asymptomatic in early stages, and conduction abnormalities may be the first manifestation, so absence of overt cardiovascular symptoms does not rule out risk.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's unsteady, broad-based gait suggests tabes dorsalis, a form of neurosyphilis that often coexists with cardiovascular syphilis, increasing the risk for atrioventricular block."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's unsteady, broad-based gait suggests tabes dorsalis, a form of neurosyphilis that often coexists with cardiovascular syphilis, increasing the risk for atrioventricular block.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Tabes dorsalis and cardiovascular syphilis are distinct manifestations of tertiary syphilis and do not necessarily coexist in the same patient.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While not all patients with tabes dorsalis develop cardiovascular syphilis, the presence of one form of tertiary syphilis increases the likelihood of other forms due to shared pathophysiology.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be explained by diabetic neuropathy or other causes of peripheral neuropathy, which do not increase the risk for atrioventricular block.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's history of a painless genital ulcer and current Argyll Robertson pupils strongly support a diagnosis of syphilis over other causes of neuropathy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

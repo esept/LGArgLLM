@@ -1,0 +1,197 @@
+{
+  "claim": "No citizen of San Antonio voted for Boris Johnson.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Boris Johnson is the former Prime Minister of the United Kingdom, and San Antonio is a city in the United States, where only U.S. citizens can vote in local and national elections."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Boris Johnson is the former Prime Minister of the United Kingdom, and San Antonio is a city in the United States, where only U.S. citizens can vote in local and national elections.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some U.S. citizens may hold dual citizenship with the U.K. and could have voted for Boris Johnson in U.K. elections.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "U.K. elections require physical presence or specific absentee voting procedures, making it unlikely for San Antonio residents to participate.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The claim specifies 'no citizen,' which is an absolute statement and could be disproven by a single counterexample.",
+          "confidence": 0.9,
+          "attacks": {
+            "A1": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "There is no documented evidence of any San Antonio citizen voting for Boris Johnson.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "U.S. citizens, including those in San Antonio, do not participate in U.K. general elections, which are restricted to British citizens and eligible Commonwealth citizens."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "U.S. citizens, including those in San Antonio, do not participate in U.K. general elections, which are restricted to British citizens and eligible Commonwealth citizens.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some U.S. citizens may hold dual citizenship with the U.K. or a Commonwealth country, allowing them to vote in U.K. elections.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Dual citizens from San Antonio voting in U.K. elections would be extremely rare and statistically negligible.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not specify a time frame, and historical records might show exceptions if San Antonio had British expatriates in the past.",
+          "confidence": 0.5,
+          "attacks": {
+            "A2": 0.4
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Historical British expatriates in San Antonio voting in U.K. elections would still not qualify as 'citizens of San Antonio' in the modern sense.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Voting in U.K. elections requires registration in the U.K., which is not accessible to residents of San Antonio unless they hold British citizenship and meet residency requirements."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Voting in U.K. elections requires registration in the U.K., which is not accessible to residents of San Antonio unless they hold British citizenship and meet residency requirements.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some residents of San Antonio may hold dual citizenship (U.S. and U.K.) and meet U.K. residency requirements, enabling them to vote for Boris Johnson.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The number of San Antonio residents with dual U.S.-U.K. citizenship and U.K. residency is statistically negligible, making the claim effectively true.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "U.K. election laws allow overseas British citizens to vote in U.K. elections regardless of their current residency, provided they register as overseas voters.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Registering as an overseas voter requires prior U.K. residency, which most San Antonio residents lack unless they previously lived in the U.K.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "There is no legal mechanism for citizens of San Antonio to vote in U.K. elections, as electoral systems are sovereign and do not allow foreign participation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "There is no legal mechanism for citizens of San Antonio to vote in U.K. elections, as electoral systems are sovereign and do not allow foreign participation.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some citizens of San Antonio may hold dual U.K. citizenship, allowing them to vote in U.K. elections.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Dual citizenship is rare, and the number of San Antonio residents with U.K. citizenship is statistically negligible.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "U.K. electoral laws have exceptions for certain Commonwealth citizens, who might include residents of San Antonio.",
+          "confidence": 0.6,
+          "attacks": {
+            "A4": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Commonwealth citizens eligible to vote in U.K. elections must be resident in the U.K., excluding San Antonio residents.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    }
+  }
+}

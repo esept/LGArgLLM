@@ -1,0 +1,240 @@
+{
+  "claim": "Interest is money paid for borrowing money",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Interest is a financial charge imposed by a lender on a borrower for the use of borrowed funds, as defined in standard economic and financial textbooks."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Interest is a financial charge imposed by a lender on a borrower for the use of borrowed funds, as defined in standard economic and financial textbooks.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In Islamic finance, interest (riba) is prohibited, and alternative profit-sharing arrangements are used instead of traditional interest-based loans.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Islamic finance still involves compensation for the use of funds, which functionally resembles interest, even if it is not labeled as such.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some jurisdictions have usury laws that cap interest rates, making the definition of interest context-dependent rather than universally standardized.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Usury laws regulate the amount of interest but do not change the fundamental economic definition of interest as a charge for borrowing.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In loan agreements, interest is explicitly stated as the cost of borrowing money, calculated as a percentage of the principal amount."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In loan agreements, interest is explicitly stated as the cost of borrowing money, calculated as a percentage of the principal amount.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some loans, like Islamic loans, do not charge interest as it is prohibited under Sharia law, instead using profit-sharing or fee-based structures.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Islamic loans still effectively compensate the lender for the time value of money, which is economically equivalent to interest, just under a different name.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In hyperinflationary economies, nominal interest rates may be negative in real terms, meaning the lender loses purchasing power despite receiving interest.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Negative real interest rates are temporary anomalies and do not negate the fundamental definition of interest as compensation for lending.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Central banks and financial institutions universally recognize interest as compensation for the risk and opportunity cost of lending money."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Central banks and financial institutions universally recognize interest as compensation for the risk and opportunity cost of lending money.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some Islamic financial systems prohibit interest (riba) entirely, viewing it as exploitative, which contradicts the universal recognition claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Islamic finance still incorporates profit-sharing or fee-based structures that functionally resemble interest, just under different legal and ethical frameworks.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During periods of negative interest rates, lenders effectively pay borrowers, reversing the conventional definition of interest as compensation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Negative interest rates are temporary policy tools, not a rejection of the fundamental economic principle of interest as compensation for lending.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Legal systems enforce the payment of interest as a contractual obligation in debt instruments, confirming its role as money paid for borrowing."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Legal systems enforce the payment of interest as a contractual obligation in debt instruments, confirming its role as money paid for borrowing.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some religious or cultural systems prohibit interest (e.g., Islamic finance), treating it as unethical rather than a contractual obligation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in systems prohibiting interest, alternative financial structures (e.g., profit-sharing) fulfill similar economic functions, effectively serving as interest under another name.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Interest is sometimes waived or forgiven in cases of financial hardship, undermining the strict contractual enforcement claim.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Waivers or forgiveness are exceptions, not the norm, and do not negate the general legal enforceability of interest.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Interest rates are publicly disclosed in financial markets, reflecting the cost of borrowing money across various credit products."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Interest rates are publicly disclosed in financial markets, reflecting the cost of borrowing money across various credit products.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some interest rates are not publicly disclosed, such as private loan agreements between individuals or businesses.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even private loan agreements often reference publicly disclosed rates as benchmarks, maintaining transparency.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Interest rates may not fully reflect the true cost of borrowing due to hidden fees or penalties.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulations in many jurisdictions require full disclosure of all borrowing costs, including fees and penalties.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

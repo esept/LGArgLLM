@@ -1,0 +1,161 @@
+{
+  "claim": "If 2 is even, then 3 is even",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim is false because 2 is even, but 3 is not even."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim is false because 2 is even, but 3 is not even.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is a conditional statement, and its truth depends on the logical implication, not just the truth values of the antecedent and consequent.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In logic, a conditional statement 'if P then Q' is only false when P is true and Q is false. Here, P is true (2 is even) and Q is false (3 is not even), so the claim is indeed false.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim is intentionally constructed to illustrate a false implication, and A1 correctly identifies this by pointing out the truth values.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "An even number is divisible by 2, and 3 is not divisible by 2."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "An even number is divisible by 2, and 3 is not divisible by 2.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is a conditional statement, and the truth of '2 is even' does not logically imply '3 is even'.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The argument A2 correctly identifies that 3 is not even, but it does not address the logical structure of the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim is a non-sequitur, and A2 correctly points out the falsity of the conclusion, regardless of the premise.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The statement 'if 2 is even, then 3 is even' is a logical fallacy because the truth of the antecedent does not imply the truth of the consequent."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The statement 'if 2 is even, then 3 is even' is a logical fallacy because the truth of the antecedent does not imply the truth of the consequent.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The implication structure is valid in formal logic, as a false consequent with a true antecedent makes the implication false, which aligns with the claim being a fallacy.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original argument conflates logical validity with empirical truth, as the implication's form is correct even if the content is absurd.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While the form is valid, the argument's strength lies in exposing the absurdity of the claim, not just its logical structure.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In mathematics, the definition of an even number excludes 3, which is an odd number."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In mathematics, the definition of an even number excludes 3, which is an odd number.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is a conditional statement, and the truth of the antecedent (2 is even) does not logically imply the consequent (3 is even).",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The definition of an even number is irrelevant to the logical structure of the conditional claim, which is false regardless of the definitions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim is a non-sequitur, and pointing out that 3 is odd does not address the logical fallacy in the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

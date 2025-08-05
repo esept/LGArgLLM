@@ -1,0 +1,285 @@
+{
+  "claim": "Consider the following background information: A 3-day-old male is evaluated in the hospital nursery for delayed passage of meconium. His mother is breastfeeding and has started to produce milk. The patient has been feeding well every two hours and is urinating over eight times per day. The patient was born at 35 weeks gestation to a 27-year-old gravida 4. The patient is of Ashkenazi Jewish descent, and the patient\u2019s parents denied all prenatal genetic testing. The pregnancy was uncomplicated until the patient\u2019s mother had spontaneous rupture of membranes at 35 weeks gestation. The patient\u2019s three older siblings are all healthy. In the hospital nursery, the patient\u2019s temperature is 98.2\u00b0F (36.8\u00b0C), blood pressure is 48/32 mmHg, pulse is 164/min, and respirations are 48/min. On physical exam, he appears to be in moderate distress. He has no dysmorphic features, and his abdomen is distended and non-tender. Bowel sounds are absent.\n\nGiven the background information the following is corrrect: The best next step in management is to perform a contrast enema.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "A contrast enema can help diagnose Hirschsprung's disease, which is more common in Ashkenazi Jewish infants and presents with delayed passage of meconium and abdominal distension."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A contrast enema can help diagnose Hirschsprung's disease, which is more common in Ashkenazi Jewish infants and presents with delayed passage of meconium and abdominal distension.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A contrast enema may not be immediately necessary as the infant's symptoms could also be due to meconium ileus or functional immaturity of the colon, which are more common in preterm infants.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hirschsprung's disease is still the most likely diagnosis given the Ashkenazi Jewish descent and classic symptoms, making the contrast enema a reasonable next step.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Performing a rectal biopsy is a more definitive diagnostic test for Hirschsprung's disease and should be considered before a contrast enema.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Rectal biopsy is invasive and may not be readily available in all settings, whereas a contrast enema is less invasive and can provide immediate diagnostic information.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The absence of bowel sounds and abdominal distension are clinical signs that warrant further investigation, making a contrast enema a reasonable next step."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The absence of bowel sounds and abdominal distension are clinical signs that warrant further investigation, making a contrast enema a reasonable next step.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A contrast enema is invasive and may not be necessary if the delayed passage of meconium is due to prematurity alone, which is common in 35-week gestation infants.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Prematurity alone does not typically cause complete absence of bowel sounds and significant abdominal distension, which are more indicative of a mechanical obstruction requiring a contrast enema.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "An abdominal X-ray should be performed first to rule out other causes of abdominal distension, such as pneumoperitoneum, before proceeding to a contrast enema.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "An abdominal X-ray may not provide sufficient diagnostic information for a suspected distal obstruction, which a contrast enema can both diagnose and potentially treat.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Before performing a contrast enema, it may be prudent to first obtain an abdominal X-ray to assess for other potential causes of abdominal distension and delayed meconium passage."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Before performing a contrast enema, it may be prudent to first obtain an abdominal X-ray to assess for other potential causes of abdominal distension and delayed meconium passage.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A contrast enema is both diagnostic and potentially therapeutic for Hirschsprung disease, which is a likely cause given the patient's Ashkenazi Jewish descent and delayed meconium passage.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "An abdominal X-ray may not definitively diagnose Hirschsprung disease, delaying necessary intervention.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's clinical presentation (abdominal distension, absent bowel sounds) strongly suggests mechanical obstruction, where contrast enema is the gold standard.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Given the patient's prematurity (35 weeks gestation), the delayed passage of meconium could be due to immature gut motility, and a contrast enema may not be immediately necessary."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Given the patient's prematurity (35 weeks gestation), the delayed passage of meconium could be due to immature gut motility, and a contrast enema may not be immediately necessary.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The absence of bowel sounds and abdominal distension are concerning for Hirschsprung disease, which requires a contrast enema for diagnosis.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hirschsprung disease is more common in Ashkenazi Jewish populations, increasing the likelihood in this patient.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's moderate distress and lack of dysmorphic features further suggest a mechanical obstruction rather than prematurity-related immaturity.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The patient's moderate distress and clinical findings suggest a possible mechanical obstruction, which a contrast enema can help identify."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's moderate distress and clinical findings suggest a possible mechanical obstruction, which a contrast enema can help identify.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's Ashkenazi Jewish descent and delayed meconium passage raise suspicion for Hirschsprung disease, which requires rectal biopsy for definitive diagnosis, not contrast enema.",
+          "confidence": 0.78,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "A contrast enema is still useful as an initial screening tool for Hirschsprung disease before proceeding to rectal biopsy.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of bowel sounds and abdominal distension could indicate a more emergent condition like volvulus, requiring immediate surgical consultation rather than contrast enema.",
+          "confidence": 0.82,
+          "attacks": {
+            "A5": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "A contrast enema can also diagnose volvulus by showing a 'bird's beak' sign, making it a reasonable first step.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Given the prematurity (35 weeks), the delayed meconium passage could be due to functional immaturity rather than obstruction, making contrast enema unnecessary.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Functional immaturity is less likely given the moderate distress and absent bowel sounds, which favor a structural cause.",
+          "confidence": 0.72,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "The patient is feeding well and urinating adequately, which may suggest a less urgent need for invasive diagnostic procedures like a contrast enema at this stage."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient is feeding well and urinating adequately, which may suggest a less urgent need for invasive diagnostic procedures like a contrast enema at this stage.",
+          "cate": "S",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Delayed passage of meconium in a newborn, especially with abdominal distension and absent bowel sounds, is highly concerning for Hirschsprung disease, which requires prompt diagnosis via contrast enema.",
+          "confidence": 0.85,
+          "attacks": {
+            "A6": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's Ashkenazi Jewish descent increases the risk of Hirschsprung disease, further justifying the urgency of a contrast enema despite stable feeding and urination.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of dysmorphic features does not rule out Hirschsprung disease, as it often presents with isolated gastrointestinal symptoms in otherwise normal-appearing infants.",
+          "confidence": 0.8,
+          "attacks": {
+            "A6": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

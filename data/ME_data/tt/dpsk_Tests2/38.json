@@ -1,0 +1,266 @@
+{
+  "claim": "If A is the father of B, and B is the father of C, then A is the grandfather of C",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The definition of a grandfather is the father of one's parent, which directly applies to A in this scenario.",
+        "confidence": 0.99,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The definition of a grandfather is the father of one's parent, which directly applies to A in this scenario.",
+          "confidence": 0.99,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Legal definitions of family relationships can vary across cultures and jurisdictions, potentially excluding A from being recognized as C's grandfather.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If B is not legally recognized as C's father (e.g., due to adoption or other legal circumstances), then A cannot be C's grandfather.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most jurisdictions, the biological or legal father is universally recognized as a parent, making A the grandfather regardless of cultural variations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in cases of adoption, the adoptive parent is legally recognized as the father, thus A would still be the grandfather.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Genealogical relationships are transitive in this way, making A the grandfather of C by standard familial definitions.",
+        "confidence": 0.98,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Genealogical relationships are transitive in this way, making A the grandfather of C by standard familial definitions.",
+          "confidence": 0.98,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Not all genealogical relationships are transitive; some cultures have different definitions for familial roles.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal adoption or step-parenting can complicate the definition of grandfather, making it non-transitive in some cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard familial definitions in most cultures explicitly recognize the transitivity of grandfather relationships.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems often clarify that adoptive or step-grandparents are still considered grandparents under the law.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In all known legal and cultural systems, the father of a parent is recognized as a grandfather, supporting the claim.",
+        "confidence": 0.97,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In all known legal and cultural systems, the father of a parent is recognized as a grandfather, supporting the claim.",
+          "confidence": 0.97,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some societies have matrilineal systems where paternal grandfatherhood is not formally recognized.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in matrilineal systems, the biological relationship of grandfatherhood still exists regardless of formal recognition.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal definitions of family relationships can vary significantly between jurisdictions, potentially excluding some grandfather relationships.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The biological definition of grandfather is universal and not dependent on legal recognition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If A were not the grandfather of C, it would contradict the universally accepted understanding of family trees.",
+        "confidence": 0.96,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If A were not the grandfather of C, it would contradict the universally accepted understanding of family trees.",
+          "confidence": 0.96,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some cultures have different definitions of family relationships, which may not align with the universally accepted understanding.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Legal definitions of family relationships can vary, and may not always match the biological or social understanding.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with cultural variations, the biological definition of grandfather remains consistent in most societies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal definitions often default to biological relationships unless specified otherwise, supporting the universally accepted understanding.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The claim follows logically from the given premises without requiring any additional assumptions.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The claim follows logically from the given premises without requiring any additional assumptions.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The relationship 'father of' does not necessarily imply 'grandfather of' without explicit transitivity rules.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Additional assumptions about family structures might be needed to ensure the conclusion holds universally.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard definitions of family relationships include transitivity for 'father of' to 'grandfather of'.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In most legal and social contexts, the transitivity from father to grandfather is explicitly recognized.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The premises provided are sufficient to infer the conclusion under commonly accepted family relationship definitions.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "No additional assumptions are needed as the claim aligns with standard genealogical conventions.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

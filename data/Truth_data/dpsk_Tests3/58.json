@@ -1,0 +1,475 @@
+{
+  "claim": "Americans earn less  than people in certain countries.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The median household income in the U.S. is lower than in countries like Switzerland and Norway, where wages are significantly higher.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The median household income in the U.S. is lower than in countries like Switzerland and Norway, where wages are significantly higher.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The cost of living in Switzerland and Norway is much higher than in the U.S., so higher wages do not necessarily translate to higher purchasing power.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. has a larger population and more income inequality, which skews the median income downward compared to smaller, more homogeneous countries like Switzerland and Norway.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The U.S. provides more non-wage benefits like employer-sponsored health insurance and retirement plans, which are not reflected in median income comparisons.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even accounting for cost of living differences, disposable income in Switzerland and Norway is still higher than in the U.S. for many professions.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Income inequality in the U.S. is precisely why median income is a valid metric - it reflects what most Americans actually earn, not just the wealthy.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Non-wage benefits are increasingly rare in the U.S., with many employers reducing or eliminating such benefits, making median wage comparisons more relevant.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Disposable income comparisons often fail to account for differences in taxation and social services between countries, which significantly impact net financial well-being.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While income inequality is high in the U.S., the median income still doesn't capture geographic variations in purchasing power across different states and cities.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Strong labor unions and social welfare policies in Nordic countries result in higher average earnings compared to the U.S.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Strong labor unions and social welfare policies in Nordic countries result in higher average earnings compared to the U.S.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Nordic countries have higher taxes which offset the higher earnings, resulting in similar or lower disposable income compared to the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The cost of living in Nordic countries is significantly higher than in the U.S., which reduces the real value of higher earnings.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The U.S. has a larger and more dynamic economy, offering more opportunities for higher earnings in certain sectors compared to Nordic countries.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Higher taxes in Nordic countries fund public services that reduce personal expenses, effectively increasing disposable income despite the taxes.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that after adjusting for cost of living, earnings in Nordic countries still provide a higher standard of living than in the U.S.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While the U.S. economy is larger, income inequality is also higher, meaning average earnings are not representative of most Americans' experience.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public services funded by taxes may not align with individual preferences, reducing the perceived value of higher disposable income.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Standard of living metrics often overlook cultural and lifestyle differences that affect how earnings are experienced.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Income inequality in the U.S. is mitigated by social mobility and opportunities for advancement, which are not fully captured by average earnings.",
+          "confidence": 0.58,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The U.S. has a higher GDP per capita than many countries, suggesting Americans, on average, earn more.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The U.S. has a higher GDP per capita than many countries, suggesting Americans, on average, earn more.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "GDP per capita is an average and does not account for income inequality, which is high in the U.S., meaning many Americans earn far less than the average.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some countries with lower GDP per capita have higher median incomes, indicating that the average American may not earn more than people in those countries.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "GDP per capita includes non-income components like government spending, which can inflate the figure without directly increasing individual earnings.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with income inequality, the U.S. still has a large middle class that benefits from the high GDP per capita, supporting the original argument.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Median income comparisons often exclude cost of living adjustments, which are higher in countries with higher median incomes, potentially offsetting the earnings advantage.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Government spending in GDP per capita often translates to public services and infrastructure that indirectly boost individual earnings and quality of life.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The middle class in the U.S. has been shrinking, and wage stagnation means their benefits from high GDP per capita are not as significant as claimed.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cost of living adjustments are not always proportional to income differences, and some high-income countries still provide better net earnings after expenses.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Certain high-paying industries, such as tech and finance, are concentrated in the U.S., leading to higher earnings for many Americans.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Certain high-paying industries, such as tech and finance, are concentrated in the U.S., leading to higher earnings for many Americans.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While tech and finance pay well, these industries employ a small fraction of the U.S. workforce, leaving most Americans in lower-paying jobs.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other countries like Switzerland and Norway have higher average wages across all sectors, not just in specialized industries.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even within tech and finance, U.S. salaries are often lower than in countries with stronger labor protections and higher minimum wages.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The concentration of high-paying industries in the U.S. still results in a higher median income compared to many other countries.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Countries with higher average wages often have much higher costs of living, negating the apparent wage advantage.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Labor protections and minimum wages don't necessarily correlate with higher salaries in competitive global industries like tech.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Median income comparisons are misleading because they don't account for wealth inequality and disparities within the U.S.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Income inequality in the U.S. skews averages; while some earn very little, others earn far more than people in most other countries.",
+        "confidence": 0.68,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Income inequality in the U.S. skews averages; while some earn very little, others earn far more than people in most other countries.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even accounting for income inequality, median U.S. income is still lower than in several high-income countries like Switzerland or Norway.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high earners in the U.S. are a small minority; the majority still earn significantly less than their counterparts in countries with better wealth distribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cost of living in the U.S. is higher than in many countries, so even higher earnings may not translate to better purchasing power.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Median income comparisons often don't account for differences in taxation and social benefits, which can significantly affect disposable income.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Countries with higher median incomes often have smaller populations, making direct comparisons with the U.S. less meaningful.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Wealth distribution metrics show that the U.S. middle class is shrinking, which supports the claim that most Americans earn less.",
+          "confidence": 0.71,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Purchasing power parity (PPP) adjustments show that U.S. earnings are competitive when cost of living is considered.",
+          "confidence": 0.69,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even after accounting for taxes and benefits, disposable income in high-income countries often remains higher than in the U.S.",
+          "confidence": 0.67,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Population size doesn't negate the fact that individuals in those countries earn more on average compared to Americans.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Countries with smaller populations, like Luxembourg, can have higher average incomes due to specialized economies, unlike the diverse U.S. economy.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Countries with smaller populations, like Luxembourg, can have higher average incomes due to specialized economies, unlike the diverse U.S. economy.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Smaller economies like Luxembourg benefit from tax policies that attract high-income individuals, skewing average income data.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The U.S. economy's diversity includes low-wage sectors that disproportionately affect average income, unlike specialized economies.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Tax policies in smaller economies are often unsustainable long-term and do not reflect true economic health.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The U.S. economy's diversity provides stability and resilience, which specialized economies lack.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Many small economies with favorable tax policies have maintained them for decades, proving sustainability.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

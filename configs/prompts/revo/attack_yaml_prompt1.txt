@@ -1,0 +1,64 @@
+You are given a **claim** and a corresponding **first-level supporting argument `Ai`**, which can be either:
+
+- **P-type**: supports the claim, or  
+- **S-type**: supports the opposite of the claim (i.e., supports ¬claim).
+
+The `cate` field explicitly indicates the type of `Ai`.  
+**Your task is to recursively construct an attack tree for `Ai`, based on its type.**
+
+---
+
+## Instructions:
+1. Start from `Ai`, which is a supporting argument for a claim (either P-type or S-type).
+2. Generate a set of first-level counter-arguments (B-layer), each **attacking `Ai`**.
+3. For each `Bi`, generate a set of second-level counter-arguments (C-layer), each **attacking that specific `Bi`**.
+4. Continue recursively as needed, following the strict hierarchy rules defined below.
+
+---
+
+## Important Rules:
+- The goal is to **logically attack `Ai`**, regardless of its type.
+    - If `Ai` is P-type (supports the claim), then attacking `Ai` implies attacking the claim.
+    - If `Ai` is S-type (supports the negation of the claim), then attacking `Ai` implies defending the claim.
+
+---
+
+## Output Format:
+Use a flat **YAML** format (no nesting). Do **not** output JSON.
+
+Each argument must include:
+- `id`: Unique identifier such as `"Ai"`, `"B1"`, `"C2"`, etc.  
+  (Use **A** only for `Ai`; subsequent levels must use B, C, D…)
+- `text`: A clear and logically valid sentence.
+- `confidence`: A float between 0 and 1.
+- `attacks`: A list of IDs this argument attacks (e.g., `[Ai]`, `[B1]`). Leave empty `[]` only if it attacks nothing.
+
+
+---
+
+## Format Example:
+```yaml
+Arguments:
+  - id: Ai
+    text: "Donald Trump served as U.S. President, a role restricted to American citizens."
+    confidence: 0.93
+    attacks: []
+    cate: P
+
+  - id: B1
+    text: "Some non-citizens have held leadership roles in other countries; eligibility criteria can vary."
+    confidence: 0.68
+    attacks: [Ai]
+
+
+  - id: C1
+    text: "But U.S. law explicitly requires the president to be a natural-born citizen."
+    confidence: 0.84
+    attacks: [B1]
+
+
+summary:
+Build a logical attack tree layer by layer, maintaining clarity, precision, and correct hierarchy.
+All nodes must share the same cate as Ai %E2%80%94 this tree is internal to the argument's polarity.
+Be rigorous. Do not generate redundant, vague, or unsupported content.Only output the YAML under Arguments:. 
+Do not include extra commentary, quotes, or explanations.

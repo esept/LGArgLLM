@@ -1,0 +1,153 @@
+{
+  "claim": "Al Capone carried a smartphone.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Al Capone died in 1947, decades before the invention of smartphones."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Al Capone died in 1947, decades before the invention of smartphones.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Smartphones were first introduced in the 1990s, long after Capone's death."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Smartphones were first introduced in the 1990s, long after Capone's death.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Capone could have used a prototype or early concept of a smartphone before its commercial introduction.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "There is no historical evidence or documentation suggesting Capone had access to any smartphone prototypes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'smartphone' might be loosely interpreted to include earlier communication devices Capone could have used.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The definition of a smartphone specifically requires advanced computing capabilities and connectivity, which earlier devices lacked.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical records and photographs from Capone's era show no evidence of smartphones."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical records and photographs from Capone's era show no evidence of smartphones.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Smartphones did not exist during Al Capone's lifetime (1899\u20131947), as the first smartphone was introduced in 1994.",
+          "confidence": 0.99,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records may not capture all personal possessions, especially those of a notorious criminal like Capone.",
+          "confidence": 0.45,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The technology gap makes it impossible for Capone to have owned a smartphone, as the required infrastructure (e.g., cellular networks, microprocessors) did not exist.",
+          "confidence": 0.98,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The technology required for smartphones did not exist during Capone's lifetime."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The technology required for smartphones did not exist during Capone's lifetime.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Al Capone could have used a prototype or early experimental communication device that resembled a smartphone.",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "There is no historical evidence or documentation of such prototypes existing during Capone's era.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Capone might have had access to futuristic technology through secretive or undocumented means.",
+          "confidence": 0.2,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Claims of secret advanced technology without credible evidence are speculative and lack historical basis.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

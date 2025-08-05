@@ -1,0 +1,444 @@
+{
+  "claim": "A 35-year-old woman, otherwise healthy, presents with frequent nosebleeds and bruising on her legs. She says that her symptoms started about 6 months ago and have not improved. She remembers that her 8-year-old son had similar symptoms about a month ago following a viral respiratory infection, but his symptoms quickly resolved without treatment. No significant past medical history and no current medications. Family history is significant for her father dying at age 65 of myocardial infarction. Review of systems is significant for her last period 2 weeks ago being a bit heavier than usual. Her vital signs include: temperature 37.0\u00b0C (98.6\u00b0F), blood pressure 100/75 mm Hg, pulse 98/min, respirations 15/min, and oxygen saturation 99% on room air. On physical examination, the patient is alert and cooperative. Cardiac exam is normal. Lungs are clear to auscultation. There is non-palpable purpura present on the lower extremities bilaterally. Which of the following set of laboratory results and peripheral blood smear findings would most likely be seen in this patient? : Platelets: Decreased | Bleeding time: Increased | PT: Increased| PTT: Increased | Blood smear: Schistocytes present",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's symptoms (frequent nosebleeds, bruising, and non-palpable purpura) along with a family history of similar symptoms in her son suggest a hereditary or acquired bleeding disorder, such as von Willebrand disease, which would explain the increased bleeding time and normal PT/PTT.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms (frequent nosebleeds, bruising, and non-palpable purpura) along with a family history of similar symptoms in her son suggest a hereditary or acquired bleeding disorder, such as von Willebrand disease, which would explain the increased bleeding time and normal PT/PTT.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of schistocytes on the blood smear suggests microangiopathic hemolytic anemia, which is more consistent with thrombotic thrombocytopenic purpura (TTP) or hemolytic uremic syndrome (HUS), not von Willebrand disease.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's heavier menstrual bleeding could be due to other causes such as hormonal imbalance or uterine pathology, and does not necessarily support a diagnosis of von Willebrand disease.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While schistocytes are seen in TTP/HUS, the absence of other key features such as renal failure or neurological symptoms makes these diagnoses less likely, and von Willebrand disease remains plausible.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The transient nature of the son's symptoms following a viral infection suggests a different etiology, such as immune thrombocytopenia (ITP), which does not necessarily relate to the mother's condition.",
+          "confidence": 0.77,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even without renal or neurological symptoms, TTP can present atypically, and schistocytes are a hallmark finding that should not be ignored, strongly suggesting a microangiopathic process.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The son's symptoms could represent a shared environmental exposure or genetic predisposition, but without further testing, it is premature to assume a hereditary bleeding disorder in the mother.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The presence of schistocytes on the blood smear suggests microangiopathic hemolytic anemia, which is often associated with thrombotic microangiopathies like thrombotic thrombocytopenic purpura (TTP) or hemolytic uremic syndrome (HUS), leading to decreased platelets and increased bleeding time.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The presence of schistocytes on the blood smear suggests microangiopathic hemolytic anemia, which is often associated with thrombotic microangiopathies like thrombotic thrombocytopenic purpura (TTP) or hemolytic uremic syndrome (HUS), leading to decreased platelets and increased bleeding time.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms and family history do not strongly indicate TTP or HUS, as these conditions typically present with more acute and severe systemic symptoms such as fever, neurological changes, or renal dysfunction, which are absent here.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of schistocytes could also be due to other conditions like disseminated intravascular coagulation (DIC), which would explain the increased PT and PTT, but DIC is less likely in this patient given the lack of an obvious precipitating factor such as infection or malignancy.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While TTP and HUS are possible, the chronic nature of the symptoms (6 months) and the absence of acute deterioration make immune thrombocytopenic purpura (ITP) a more plausible diagnosis, which would also present with decreased platelets and increased bleeding time but without schistocytes.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's heavier menstrual bleeding could suggest a primary bleeding disorder like von Willebrand disease, which would not typically present with schistocytes but could explain the increased bleeding time and possibly the bruising.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "ITP is unlikely to present with schistocytes, which are a hallmark of microangiopathic hemolytic anemia, thus reinforcing the likelihood of TTP or HUS despite the chronicity of symptoms.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Von Willebrand disease would not explain the thrombocytopenia or the presence of schistocytes, making it an incomplete diagnosis for this patient's presentation.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's heavier menstrual bleeding and bruising could indicate a platelet function disorder or qualitative platelet defect, which would result in increased bleeding time but normal PT and PTT, contradicting the given lab results.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's heavier menstrual bleeding and bruising could indicate a platelet function disorder or qualitative platelet defect, which would result in increased bleeding time but normal PT and PTT, contradicting the given lab results.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of schistocytes on the blood smear suggests microangiopathic hemolytic anemia, which is more consistent with thrombotic thrombocytopenic purpura (TTP) or disseminated intravascular coagulation (DIC), not a platelet function disorder.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The increased PT and PTT indicate a coagulation factor deficiency or inhibitor, which is not explained by a platelet function disorder alone, further contradicting the initial argument.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "TTP typically presents with a pentad of symptoms including fever, neurological symptoms, renal dysfunction, microangiopathic hemolytic anemia, and thrombocytopenia, which are not all present in this patient.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "DIC would likely show additional lab abnormalities such as decreased fibrinogen and elevated D-dimer, which are not mentioned in the given lab results.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The patient's family history of myocardial infarction and her son's similar symptoms could suggest an inherited bleeding disorder, such as von Willebrand disease, which can present with increased bleeding time and variable PT/PTT.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Von Willebrand disease typically presents with normal platelet count and schistocytes are not a feature, making it inconsistent with the given lab results of decreased platelets and schistocytes.",
+          "confidence": 0.82,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The combination of decreased platelets, increased PT/PTT, and schistocytes is highly suggestive of disseminated intravascular coagulation (DIC), which could explain both the bleeding and thrombotic symptoms, fitting the clinical picture.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The combination of decreased platelets, increased PT/PTT, and schistocytes is highly suggestive of disseminated intravascular coagulation (DIC), which could explain both the bleeding and thrombotic symptoms, fitting the clinical picture.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms could also be explained by immune thrombocytopenic purpura (ITP), which typically presents with isolated thrombocytopenia and bleeding, without the coagulation abnormalities seen in DIC.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of clear triggers for DIC (e.g., infection, malignancy, or trauma) makes DIC less likely, and another diagnosis such as von Willebrand disease should be considered.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "ITP is unlikely in this case because the patient also has increased PT/PTT and schistocytes, which are not typical for ITP but are hallmark features of DIC.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While triggers for DIC are not always obvious, the patient's son had similar symptoms following a viral infection, which could suggest an underlying inherited or acquired predisposition to coagulation disorders.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The presence of schistocytes is highly specific for microangiopathic hemolytic anemia, which is a key feature of DIC and not typically seen in ITP or von Willebrand disease.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Family history of myocardial infarction at a relatively young age could indicate an underlying thrombophilic disorder, which might predispose to DIC in the setting of minor triggers.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's symptoms and lab results could also be consistent with immune thrombocytopenic purpura (ITP), but ITP typically does not cause increased PT/PTT or schistocytes, making the given lab results less likely.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's symptoms and lab results could also be consistent with immune thrombocytopenic purpura (ITP), but ITP typically does not cause increased PT/PTT or schistocytes, making the given lab results less likely.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While ITP usually does not affect PT/PTT, the presence of schistocytes suggests microangiopathic hemolytic anemia, which could indicate thrombotic thrombocytopenic purpura (TTP) or hemolytic uremic syndrome (HUS).",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's family history of myocardial infarction and her heavier menstrual bleeding could suggest an underlying coagulation disorder, such as von Willebrand disease, which might explain the increased PT/PTT.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "TTP and HUS are unlikely in this patient because she lacks key features such as fever, neurological symptoms, or renal dysfunction, which are typically present in these conditions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Von Willebrand disease usually presents with normal platelet counts and does not typically cause schistocytes, making this explanation inconsistent with the given lab results.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Although the patient lacks classic symptoms of TTP/HUS, incomplete or early presentations can occur, and schistocytes are a hallmark feature that should not be ignored.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The absence of fever, organ dysfunction, or other systemic symptoms makes TTP less likely, despite the schistocytes, suggesting an alternative diagnosis like a mild inherited bleeding disorder.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The absence of fever, organ dysfunction, or other systemic symptoms makes TTP less likely, despite the schistocytes, suggesting an alternative diagnosis like a mild inherited bleeding disorder.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Schistocytes are highly specific for microangiopathic hemolytic anemia (MAHA), which includes TTP, and their presence should not be dismissed without further evaluation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's heavy menstrual bleeding and family history of early myocardial infarction could suggest von Willebrand disease, which would not explain schistocytes but aligns with bleeding symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While schistocytes are seen in MAHA, the lack of fever, neurological symptoms, or renal dysfunction makes classic TTP unlikely, and other MAHA causes (e.g., complement-mediated) should be considered.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Von Willebrand disease typically presents with normal platelet counts and no schistocytes, which contradicts the lab findings, making this diagnosis less plausible.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Atypical hemolytic uremic syndrome (aHUS) or complement dysregulation could explain schistocytes without classic TTP symptoms, requiring ADAMTS13 testing for differentiation.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The increased PT and PTT along with schistocytes could indicate a combined coagulopathy and microangiopathic process, such as in severe liver disease, but the patient has no history or signs of liver dysfunction.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The increased PT and PTT along with schistocytes could indicate a combined coagulopathy and microangiopathic process, such as in severe liver disease, but the patient has no history or signs of liver dysfunction.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of schistocytes is more indicative of a microangiopathic hemolytic anemia (MAHA), such as thrombotic thrombocytopenic purpura (TTP), rather than liver disease, given the patient's symptoms of thrombocytopenia and bleeding.",
+          "confidence": 0.85,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's heavy menstrual bleeding and family history of myocardial infarction could suggest an underlying von Willebrand disease (VWD), which would explain the increased bleeding time and PTT, but not the schistocytes.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "TTP is unlikely without neurological symptoms or renal dysfunction, which are typically present in classic TTP cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Von Willebrand disease usually presents with isolated PTT prolongation and normal PT, which contradicts the lab findings of increased PT in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Atypical TTP or early-stage TTP can present without neurological or renal symptoms, and the schistocytes are a hallmark of microangiopathic hemolysis.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Combined PT and PTT prolongation can occur in rare cases of acquired von Willebrand syndrome due to autoimmune conditions, though schistocytes would still be unexplained.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

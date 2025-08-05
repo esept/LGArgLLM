@@ -1,0 +1,240 @@
+{
+  "claim": "Leap years occur every 5 years",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Leap years occur every 4 years, not every 5 years, as defined by the Gregorian calendar."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Leap years occur every 4 years, not every 5 years, as defined by the Gregorian calendar.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cultures historically used calendars with leap years occurring at intervals other than 4 years, such as the Hebrew calendar's 19-year cycle.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar is the internationally accepted civil calendar, making its leap year rules the standard reference.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gregorian calendar's leap year rule has exceptions (e.g., years divisible by 100 but not by 400 are not leap years), complicating the 'every 4 years' claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These exceptions are rare (e.g., 1900 was not a leap year) and do not significantly alter the general 4-year pattern.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The rule for leap years states that a year divisible by 4 is a leap year, with exceptions for years divisible by 100 but not by 400."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The rule for leap years states that a year divisible by 4 is a leap year, with exceptions for years divisible by 100 but not by 400.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim that leap years occur every 5 years is incorrect because the standard rule is every 4 years, with exceptions.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar's leap year rule is widely accepted and mathematically precise, leaving no room for ambiguity.",
+          "confidence": 0.97,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures historically used different leap year systems, which might not follow the 4-year rule.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern global standards rely on the Gregorian calendar, making historical or cultural variations irrelevant to the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical records and calendars consistently show leap years occurring at 4-year intervals, not 5-year intervals."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical records and calendars consistently show leap years occurring at 4-year intervals, not 5-year intervals.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some historical calendars, like the Julian calendar before its reform, had inaccuracies that could lead to leap years appearing at irregular intervals.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Julian calendar's inaccuracies were corrected by the Gregorian reform, which standardized the 4-year leap year cycle.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain cultures or regions might have used alternative calendar systems where leap years were not strictly every 4 years.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern international standards and scientific timekeeping universally adopt the 4-year leap year cycle.",
+          "confidence": 0.93,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Astronomical calculations for Earth's orbit around the Sun support the 4-year leap year cycle to account for the extra ~0.25 days per year."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Astronomical calculations for Earth's orbit around the Sun support the 4-year leap year cycle to account for the extra ~0.25 days per year.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Gregorian calendar includes exceptions to the 4-year rule, such as skipping leap years on centurial years not divisible by 400.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These exceptions are rare (occurring only once every 100-400 years) and do not significantly alter the general 4-year cycle.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures historically used different leap year systems, such as the Hebrew calendar's 19-year cycle with 7 leap years.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These alternative systems are not based on Earth's solar orbit and thus do not refute the astronomical basis for the 4-year cycle.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Educational materials and timekeeping systems universally adhere to the 4-year leap year cycle, not a 5-year cycle."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Educational materials and timekeeping systems universally adhere to the 4-year leap year cycle, not a 5-year cycle.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some ancient calendars, like the Egyptian solar calendar, used a 5-year cycle for leap years.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Egyptian calendar is no longer in use, and modern timekeeping strictly follows the Gregorian calendar's 4-year rule.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain computational or astronomical models may use non-standard leap year intervals for specific calculations.",
+          "confidence": 0.3,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such models are exceptions and do not represent the standard leap year definition used in everyday timekeeping.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

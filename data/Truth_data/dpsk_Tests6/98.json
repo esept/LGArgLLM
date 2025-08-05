@@ -1,0 +1,193 @@
+{
+  "claim": "Humans have 10 finger bones.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The human hand typically consists of 14 phalanges (finger bones), which contradicts the claim of 10 finger bones."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The human hand typically consists of 14 phalanges (finger bones), which contradicts the claim of 10 finger bones.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some anatomical variations or congenital conditions can result in fewer than 14 phalanges, such as symbrachydactyly.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such variations are extremely rare and do not represent the typical human anatomy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might be referring to the visible segments of fingers, which are often counted as 10 (excluding the thumb's metacarpal).",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "This interpretation is misleading because the thumb also has phalanges, and the standard anatomical count includes all finger bones.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Each human finger has 3 phalanges (proximal, middle, and distal), except the thumb which has 2, totaling 14 finger bones per hand."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Each human finger has 3 phalanges (proximal, middle, and distal), except the thumb which has 2, totaling 14 finger bones per hand.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals may have anatomical variations, such as polydactyly (extra fingers), which would increase the number of finger bones beyond 14 per hand.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Polydactyly is a rare condition, affecting approximately 1 in 700 to 1 in 1,000 live births, making it statistically insignificant for general claims about human anatomy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might be referring to the total number of finger bones in both hands combined, which would be 28, not 10.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim explicitly states '10 finger bones,' which is clearly incorrect regardless of whether it refers to one hand or both, as the minimum is 14 per hand.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Standard anatomical textbooks describe the human hand as having 14 phalanges, not 10."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Standard anatomical textbooks describe the human hand as having 14 phalanges, not 10.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some people may colloquially refer to the bones in the fingers as 'finger bones' and count them as 10, ignoring the thumb's different structure.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Colloquial usage does not override anatomical accuracy, and textbooks are authoritative sources for medical terminology.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain congenital conditions or injuries can result in variations in the number of phalanges.",
+          "confidence": 0.4,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such variations are exceptions and do not change the standard anatomical definition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Medical imaging and skeletal studies consistently show that humans have 14 finger bones per hand, disproving the claim of 10."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Medical imaging and skeletal studies consistently show that humans have 14 finger bones per hand, disproving the claim of 10.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim might be referring to the number of finger bones per finger, not per hand, as each finger typically has 3 bones (except the thumb which has 2).",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the claim refers to finger bones per finger, the total per hand would still be 14 (3 bones x 4 fingers + 2 bones for the thumb).",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may have anatomical variations, such as polydactyly, leading to more finger bones than the typical count.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anatomical variations are exceptions and do not represent the standard human anatomy, which consistently shows 14 finger bones per hand.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

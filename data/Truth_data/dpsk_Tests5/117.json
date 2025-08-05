@@ -1,0 +1,311 @@
+{
+  "claim": "US incomes are less unequal than incomes in Canada.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Gini coefficient, a standard measure of income inequality, is lower in the US than in Canada as of 2025."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Gini coefficient, a standard measure of income inequality, is lower in the US than in Canada as of 2025.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient does not account for regional cost-of-living differences, which are significant between the US and Canada.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standardized cost-of-living adjustments are often included in Gini coefficient calculations for cross-country comparisons.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gini coefficient ignores wealth inequality, which is higher in the US than in Canada.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wealth inequality is a separate metric from income inequality, which is what the claim specifically addresses.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The Gini coefficient data for 2025 is a projection, not an observed measurement, and may be unreliable.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Economic projections for Gini coefficients are based on established trends and are generally reliable for short-term forecasts.",
+          "confidence": 0.75,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Canada has a higher proportion of middle-class households relative to the US, leading to less income disparity."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Canada has a higher proportion of middle-class households relative to the US, leading to less income disparity.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The US has higher GDP per capita and greater income mobility, which can offset disparities in middle-class proportions.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Income mobility in the US has declined in recent decades, reducing its impact on overall income inequality.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Canada's progressive taxation and social welfare policies more effectively redistribute income, reducing inequality.",
+          "confidence": 0.77,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "High taxation in Canada may discourage economic productivity, potentially limiting income growth for the middle class.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The US has a larger share of high-income earners, which reduces measured income inequality compared to Canada."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The US has a larger share of high-income earners, which reduces measured income inequality compared to Canada.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The presence of high-income earners in the US does not account for the extreme wealth concentration among the top 1%, which exacerbates overall inequality.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that the Gini coefficient, a standard measure of income inequality, is higher in the US than in Canada, indicating greater inequality.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Canada has stronger social welfare policies and progressive taxation, which reduce income inequality more effectively than in the US.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The US tax system includes loopholes and deductions that disproportionately benefit the wealthy, undermining the impact of progressive taxation.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Canada's progressive tax system and social welfare programs redistribute income more effectively than the US system, resulting in lower inequality."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Canada's progressive tax system and social welfare programs redistribute income more effectively than the US system, resulting in lower inequality.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The US has a higher GDP per capita and stronger economic mobility, which can offset the redistributive effects of Canada's welfare system.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that economic mobility in the US has declined over recent decades, reducing its impact on income inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Canada's tax system includes loopholes and inefficiencies that limit its redistributive effectiveness.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite loopholes, Canada's Gini coefficient after taxes and transfers is significantly lower than the US's, indicating more effective redistribution.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The US has a higher concentration of wealth among the top 1% of earners, but income distribution among the remaining 99% is more equal than in Canada."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The US has a higher concentration of wealth among the top 1% of earners, but income distribution among the remaining 99% is more equal than in Canada.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Studies show that income inequality within the bottom 99% in the US is still higher than in Canada when accounting for regional cost-of-living differences.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Regional cost-of-living differences in Canada are less pronounced than in the US, making income comparisons more straightforward and still favoring Canada's equality.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gini coefficient for disposable income, which includes taxes and transfers, is higher in the US than in Canada, indicating greater overall inequality.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The US tax and transfer system is less progressive than Canada's, which exacerbates income inequality beyond just the top 1%.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Median household income in Canada is more evenly distributed across provinces compared to the US, where some states have significantly lower median incomes.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Regional income disparities in Canada are more pronounced than in the US, contributing to higher overall income inequality."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Regional income disparities in Canada are more pronounced than in the US, contributing to higher overall income inequality.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient, a standard measure of income inequality, shows Canada's income inequality is lower than the US's.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient does not fully account for regional disparities, which can mask localized inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Canada's progressive taxation and social welfare programs reduce income inequality more effectively than the US system.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite progressive taxation, Canada's wealth concentration in urban centers still drives significant income gaps.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

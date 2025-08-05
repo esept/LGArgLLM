@@ -1,0 +1,314 @@
+{
+  "claim": "Consider the following background information: A 75-year-old woman presents to the emergency department with 30 minutes of slurred speech and arm weakness. On the drive over to the hospital, her symptoms have resolved completely. The patient has a past medical history of hypertension, atrial fibrillation, diabetes, morbid obesity, gout, and vascular claudication. Her temperature is 99.0\u00b0F (37.2\u00b0C), blood pressure is 184/111 mmHg, pulse is 88/min, respirations are 15/min, and oxygen saturation is 98% on room air. Physical exam reveals cranial nerves II-XII as grossly intact with normal strength and sensation in the patient\"s upper and lower extremities. The patient\"s memory is intact and her speech seems normal and fluent. Her gait is stable with no ataxia. An initial head CT demonstrates diffuse atrophy which is consistent with previous head CT scans.\n\nGiven the background information the following is corrrect: A CT angiogram is the best next step in management.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's history of atrial fibrillation and hypertension increases the risk of embolic stroke, making a CT angiogram appropriate to evaluate for vascular abnormalities."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of atrial fibrillation and hypertension increases the risk of embolic stroke, making a CT angiogram appropriate to evaluate for vascular abnormalities.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms have resolved completely, suggesting a transient ischemic attack (TIA) rather than an acute stroke, and a CT angiogram may not be immediately necessary.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if symptoms resolved, the patient's high-risk profile (atrial fibrillation, hypertension) warrants urgent vascular imaging to rule out underlying pathology that could lead to a future stroke.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A CT angiogram exposes the patient to radiation and contrast dye, which carries risks, especially given her comorbidities like diabetes and hypertension.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The benefits of identifying a treatable vascular abnormality with CT angiogram outweigh the risks of radiation and contrast in this high-risk patient.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "An MRI with diffusion-weighted imaging (DWI) is more sensitive for acute ischemia and may be a better initial test than CT angiogram.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "While MRI is more sensitive, CT angiogram is faster and more widely available, making it a practical first-line test in an emergency setting.",
+          "confidence": 0.72,
+          "attacks": {
+            "B3": 0.68
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Transient ischemic attack (TIA) is a likely diagnosis given the resolved symptoms, and a CT angiogram can help identify underlying vascular pathology that may require intervention."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Transient ischemic attack (TIA) is a likely diagnosis given the resolved symptoms, and a CT angiogram can help identify underlying vascular pathology that may require intervention.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A CT angiogram exposes the patient to radiation and contrast dye, which carries risks, especially given her comorbidities like hypertension and diabetes.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "MRI with diffusion-weighted imaging (DWI) is more sensitive than CT angiogram for detecting acute ischemic changes and may be a better initial test.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.85
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's high blood pressure (184/111 mmHg) may contraindicate the use of contrast dye in CT angiogram due to risk of contrast-induced nephropathy.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "C2",
+          "text": "MRI may not be readily available in all emergency departments, making CT angiogram a more practical choice in some settings.",
+          "confidence": 0.65,
+          "attacks": {
+            "B2": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Given the patient's history of atrial fibrillation, a cardiac source of embolism is likely, and echocardiography may be more relevant than vascular imaging.",
+          "confidence": 0.82,
+          "attacks": {
+            "A2": 0.75,
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's symptoms have resolved completely, and a non-contrast head CT showed no acute changes, suggesting that immediate CT angiogram may not be necessary and further clinical evaluation could be prioritized."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's symptoms have resolved completely, and a non-contrast head CT showed no acute changes, suggesting that immediate CT angiogram may not be necessary and further clinical evaluation could be prioritized.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of atrial fibrillation and hypertension significantly increases her risk of a transient ischemic attack (TIA), which warrants urgent vascular imaging like CT angiogram to rule out large vessel occlusion or stenosis.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Clinical evaluation alone cannot reliably exclude high-risk TIAs or minor strokes, and delaying vascular imaging may miss critical pathology requiring intervention.",
+          "confidence": 0.82,
+          "attacks": {
+            "A3": 0.78
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's resolved symptoms and normal neurological exam reduce the urgency for immediate CT angiogram, as the likelihood of a high-risk etiology is lower.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.65,
+            "C1": 0.6
+          }
+        },
+        {
+          "id": "E1",
+          "text": "Given her multiple vascular risk factors, the potential harm of missing a treatable vascular lesion outweighs the risks and costs of CT angiogram.",
+          "confidence": 0.88,
+          "attacks": {
+            "D1": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Given the patient's multiple comorbidities, including morbid obesity and renal risks from diabetes, the contrast load from a CT angiogram may pose additional risks without clear immediate benefit."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Given the patient's multiple comorbidities, including morbid obesity and renal risks from diabetes, the contrast load from a CT angiogram may pose additional risks without clear immediate benefit.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's transient symptoms and history of atrial fibrillation strongly suggest a transient ischemic attack (TIA), making vascular imaging like CT angiogram critical for stroke prevention.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Alternative imaging methods like MR angiography could be used to avoid contrast risks while still assessing vascular pathology.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "MR angiography is less readily available and more time-consuming in emergency settings, delaying critical diagnosis and treatment.",
+          "confidence": 0.65,
+          "attacks": {
+            "C1": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "A CT angiogram can quickly assess for large vessel occlusions or stenoses, which are critical to rule out in a patient with high stroke risk factors."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "A CT angiogram can quickly assess for large vessel occlusions or stenoses, which are critical to rule out in a patient with high stroke risk factors.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "A CT angiogram exposes the patient to radiation and contrast dye, which carries risks of allergic reaction and kidney injury, especially in a patient with multiple comorbidities like diabetes and hypertension.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The benefits of quickly identifying a treatable large vessel occlusion outweigh the risks of radiation and contrast exposure in a high-risk patient with transient neurological symptoms.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "An MRI with diffusion-weighted imaging is more sensitive for acute ischemic stroke and does not involve radiation or contrast exposure, making it a safer alternative.",
+          "confidence": 0.8,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "MRI is less readily available in many emergency settings and takes longer to perform, which delays potential time-sensitive interventions for large vessel occlusions.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "Alternative imaging modalities like MRI/MRA may provide more comprehensive evaluation without the radiation exposure and contrast risks associated with CT angiogram."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Alternative imaging modalities like MRI/MRA may provide more comprehensive evaluation without the radiation exposure and contrast risks associated with CT angiogram.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "CT angiogram provides faster imaging which is critical in acute stroke evaluation, outweighing radiation/contrast risks in this time-sensitive scenario.",
+          "confidence": 0.85,
+          "attacks": {
+            "A6": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "MRI/MRA is contraindicated in this patient due to her morbid obesity which often exceeds scanner weight limits and makes timely imaging impossible.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.65,
+            "B1": 0.3
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Modern CT scanners can accommodate obese patients and complete angiograms in <2 minutes, while MRI scheduling delays could miss the thrombolysis window.",
+          "confidence": 0.9,
+          "attacks": {
+            "A6": 0.85,
+            "C1": 0.4
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The patient's resolved symptoms suggest TIA rather than acute stroke, reducing urgency for CT angiogram and making MRI/MRA's superior soft tissue visualization more valuable.",
+          "confidence": 0.6,
+          "attacks": {
+            "B1": 0.55,
+            "D1": 0.5
+          }
+        }
+      ]
+    }
+  }
+}

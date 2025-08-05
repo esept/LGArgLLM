@@ -1,0 +1,185 @@
+{
+  "claim": "Some cats are not black. Therefore, not all cats are black",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Genetic diversity in cats results in a variety of coat colors, including white, orange, gray, and tabby patterns, proving that not all cats are black."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Genetic diversity in cats results in a variety of coat colors, including white, orange, gray, and tabby patterns, proving that not all cats are black.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cat breeds, like the Bombay cat, are exclusively black due to selective breeding, which could imply that all cats in such breeds are black.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even within exclusively black breeds, genetic mutations can occasionally produce non-black offspring, maintaining diversity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is about the existence of non-black cats, not about all cats being non-black, so the argument about exclusively black breeds is irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Observational evidence from households and shelters shows that cats come in many colors, confirming that black is not the only possible coat color."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Observational evidence from households and shelters shows that cats come in many colors, confirming that black is not the only possible coat color.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some regions or breeds may have a disproportionately high number of black cats, making non-black cats rare in those contexts.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in regions with many black cats, the existence of at least one non-black cat in the population still supports the original claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Observational evidence from households and shelters may be biased toward urban areas where color diversity is higher, neglecting rural populations.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Global data on cat populations, including rural areas, consistently show color variation, reinforcing that black is not universal.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific studies on feline genetics demonstrate that multiple genes control coat color, making it impossible for all cats to be black."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific studies on feline genetics demonstrate that multiple genes control coat color, making it impossible for all cats to be black.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While multiple genes control coat color, some cat breeds (e.g., Bombay cats) are selectively bred to be exclusively black, making it possible for all cats in such breeds to be black.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Selective breeding for black coats in specific breeds does not negate the genetic diversity in the broader feline population, where non-black cats naturally occur.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Genetic mutations or anomalies could theoretically result in a scenario where all cats are black, even if statistically unlikely.",
+          "confidence": 0.4,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Theoretical genetic anomalies are not representative of real-world feline populations, where non-black cats are consistently observed.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Breed standards for cats, such as those for Siamese or Persian breeds, explicitly describe non-black coat colors, further supporting the claim."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Breed standards for cats, such as those for Siamese or Persian breeds, explicitly describe non-black coat colors, further supporting the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Breed standards describe ideal traits, but not all cats of a breed conform to these standards, so some Siamese or Persian cats could still be black.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some individual cats deviate from breed standards, the existence of breed standards for non-black colors proves that non-black cats are officially recognized and common.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is about 'all cats,' not just pedigreed ones. Feral or mixed-breed cats might still be universally black, making the generalization uncertain.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Feral and mixed-breed cats exhibit diverse coat colors genetically, including non-black ones, which is observable in populations worldwide.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

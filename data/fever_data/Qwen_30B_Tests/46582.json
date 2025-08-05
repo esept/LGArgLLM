@@ -1,0 +1,384 @@
+{
+  "claim": "Shannon Lee was born in 1234.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Historical records and official documents state Shannon Lee's birth year as 1964, not 1234.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Historical records and official documents state Shannon Lee's birth year as 1964, not 1234.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The historical records cited are unreliable due to lack of digital verification standards in the 1960s.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Official documents may conflate Shannon Lee with another individual sharing the same name.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Digital verification standards were not required for historical records prior to 1980s; context-specific accuracy remains valid.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cross-referenced biographical data confirms unique identification of Shannon Lee through distinct professional milestones.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Context-specific accuracy claims ignore systemic biases in archival documentation practices of the era.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Professional milestones alone cannot conclusively distinguish individuals without corroborating birth records.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Her father Bruce Lee was born in 1940, making a birth year of 1234 impossible given their age difference.",
+        "confidence": 0.92,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Her father Bruce Lee was born in 1940, making a birth year of 1234 impossible given their age difference.",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Shannon Lee's birth year of 1234 is possible if Bruce Lee was not her biological father.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Bruce Lee's birth year is inaccurately recorded; historical records show he was born in 1939.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The assumed age difference between Bruce and Shannon Lee is based on flawed assumptions about their relationship.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Shannon Lee's official records confirm Bruce Lee as her biological father.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multiple verified sources confirm Bruce Lee was born in 1940.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "A seven-century age gap between parent and child defies biological plausibility.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Official records can be falsified; there is evidence suggesting alternative parentage for Shannon Lee.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Sources about Bruce Lee's birth year are conflicting and unreliable.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Historical cases of extreme age differences exist, so a seven-century gap is not inherently impossible.",
+          "confidence": 0.7,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "If she were born in 1234, she would be over 700 years old today, which contradicts human lifespan limits.",
+        "confidence": 0.89,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "If she were born in 1234, she would be over 700 years old today, which contradicts human lifespan limits.",
+          "confidence": 0.89,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes all humans have a maximum lifespan of 120 years, but there's no scientific evidence to support this exact limit.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "B2",
+          "text": "The calculation of her age is incorrect because the Gregorian calendar wasn't used in 1234, leading to potential miscalculations.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C1",
+          "text": "Scientific consensus estimates the maximum human lifespan at around 120 years based on biological factors like telomere shortening.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C2",
+          "text": "Historical dates before 1582 are typically calculated using the Julian calendar, but age calculations still rely on elapsed years.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D1",
+          "text": "Biological aging mechanisms such as cellular senescence and DNA damage accumulation strongly suggest humans cannot exceed 150 years naturally.",
+          "confidence": 0.95,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D2",
+          "text": "Calendar reform timelines show that year counts from 1234 would align with modern calculations when adjusted for historical era conventions.",
+          "confidence": 0.9,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "P"
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "No credible biographies or reputable sources reference 1234 as her birth year; all cite 1964.",
+        "confidence": 0.88,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "No credible biographies or reputable sources reference 1234 as her birth year; all cite 1964.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of references to 1234 does not prove it's false; lack of evidence isn't evidence of absence.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The sources citing 1964 may have been influenced by biases or errors in historical records.",
+          "confidence": 0.72,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Shannon Lee's birth year could be disputed due to cultural or transliteration issues in historical documents.",
+          "confidence": 0.69,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In academic standards, absence of credible sources is treated as evidence against a claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Multiple independent sources consistently state 1964 as her birth year, minimizing bias influence.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Official birth records and verified documents from the time confirm 1964 as her birth year.",
+          "confidence": 0.76,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Academic standards vary; some accept absence as evidence while others require positive proof.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even independent sources can have errors or omissions; consistency doesn't guarantee accuracy.",
+          "confidence": 0.63,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Cultural or transliteration issues might also affect official records, casting doubt on their reliability.",
+          "confidence": 0.6,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The year 1234 predates modern record-keeping systems, making it unlikely to be accurately documented.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The year 1234 predates modern record-keeping systems, making it unlikely to be accurately documented.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "There are surviving historical records from 1234, such as monastery archives, which can provide accurate birth dates.",
+          "confidence": 0.88,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim about Shannon Lee\u2019s birth year relies on unverified oral traditions passed down for centuries.",
+          "confidence": 0.83,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Monastery archives from 1234 are often incomplete and prone to errors due to manual transcription.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Oral traditions prior to written documentation lack systematic verification and are subject to embellishment.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if some records exist, their authenticity cannot be confirmed without cross-referencing with contemporary sources.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Oral traditions in pre-literate societies were typically context-dependent and culturally biased.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

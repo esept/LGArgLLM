@@ -1,0 +1,22 @@
+Based on those relationships, construct some **attack trees**:
+
+* Each tree is rooted at a main claim-level argument 
+* Use the support/attack relations to build the tree
+* Trees must be **acyclic**, connected, and favor high-confidence arguments.
+* Each argument can only used twice in same AttackTree.
+* The structure should help evaluate whether the root argument is reliable under collective support/conflict
+* Ensure arguments appear in appropriate structural positions (not all arguments must be used)
+
+AttackTree example:
+```
+- root: A1
+    structure:
+  - id: A2
+    Attack: [A1]
+  - id: A4
+    Attack: [A1]
+  - id: A3 SameID 
+    Attack: [A1]
+  - id: A7
+    Attack: [A2]
+```

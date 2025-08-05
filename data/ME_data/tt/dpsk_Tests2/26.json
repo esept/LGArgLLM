@@ -1,0 +1,152 @@
+{
+  "claim": "Does the equation 2\u00b2 + 2\u00b2 = 8 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The equation 2\u00b2 + 2\u00b2 equals 4 + 4, which sums to 8, so it holds true.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation 2\u00b2 + 2\u00b2 equals 4 + 4, which sums to 8, so it holds true.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 is actually 4 + 4, but 4 + 4 equals 8, so the original statement is correct.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The mathematical operations in the equation are correctly executed, confirming the original claim.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If interpreted in a different base system, the equation might not hold true.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In base 10, the standard system, the equation 2\u00b2 + 2\u00b2 = 8 is correct.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Basic arithmetic confirms that 2 squared is 4, and adding two 4s results in 8.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic confirms that 2 squared is 4, and adding two 4s results in 8.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 = 8 is incorrect because the correct sum of two 4s is actually 8, which matches the claim.",
+          "confidence": 0.95,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim is verified by standard arithmetic operations, leaving no room for doubt.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There might be a misunderstanding in interpreting the equation, as 2\u00b2 + 2\u00b2 indeed equals 8.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The arithmetic operation is straightforward and universally accepted, confirming the equation's validity.",
+          "confidence": 0.97,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mathematically, the equation is correct as exponentiation and addition are performed accurately.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematically, the equation is correct as exponentiation and addition are performed accurately.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The equation is misleading because it implies a deeper mathematical significance that does not exist.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The equation is trivial and does not contribute to any meaningful mathematical discussion.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Trivial equations can still be correct and serve as foundational examples for learning.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if the equation is simple, its correctness is still important for basic arithmetic understanding.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

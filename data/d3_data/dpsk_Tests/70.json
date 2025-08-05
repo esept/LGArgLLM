@@ -1,0 +1,232 @@
+{
+  "claim": "If all dogs bark and Rex does not bark, Rex is not a dog",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim follows the logical structure of modus tollens: if P (all dogs bark) implies Q (Rex is a dog), then not Q (Rex does not bark) implies not P (Rex is not a dog)."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim follows the logical structure of modus tollens: if P (all dogs bark) implies Q (Rex is a dog), then not Q (Rex does not bark) implies not P (Rex is not a dog).",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The premise 'all dogs bark' is factually incorrect, as some breeds like the Basenji do not bark.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Basenji is an extremely rare exception, and the general rule 'all dogs bark' holds for 99% of cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modus tollens assumes the premise is universally true, but real-world generalizations often have exceptions, weakening the conclusion.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Formal logic often operates under idealized conditions, and the argument's validity is preserved if we interpret 'all dogs bark' as a strict rule.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "By definition, if all members of a category (dogs) exhibit a behavior (barking), an entity that does not exhibit that behavior (Rex) cannot belong to that category."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "By definition, if all members of a category (dogs) exhibit a behavior (barking), an entity that does not exhibit that behavior (Rex) cannot belong to that category.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some dogs are mute or have medical conditions preventing them from barking, meaning not all dogs bark.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mute or medically affected dogs are exceptions, and the general definition still holds for the vast majority of cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of 'dog' is based on genetic and biological traits, not behavioral ones like barking.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Behavioral traits like barking are still a widely accepted distinguishing feature of dogs, even if not the sole defining characteristic.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim is a valid application of universal instantiation and contraposition in classical logic, which are widely accepted reasoning methods."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim is a valid application of universal instantiation and contraposition in classical logic, which are widely accepted reasoning methods.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Classical logic assumes binary truth values, but real-world reasoning often involves exceptions (e.g., mute or silent dogs that do not bark).",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with exceptions, classical logic remains the standard framework for deductive reasoning, and edge cases do not invalidate its general applicability.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim's premise ('all dogs bark') is empirically false, as not all dogs bark in all circumstances, undermining the logical conclusion.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is a hypothetical exercise in logic, not an empirical assertion about dogs, so the truth of the premise is irrelevant to its validity as a logical structure.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If 'all dogs bark' is accepted as a universal truth, then any counterexample (Rex not barking) falsifies Rex's inclusion in the category of dogs."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If 'all dogs bark' is accepted as a universal truth, then any counterexample (Rex not barking) falsifies Rex's inclusion in the category of dogs.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The statement 'all dogs bark' is not a universal truth, as some dogs are mute or have medical conditions preventing them from barking.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if some dogs cannot bark, the general rule 'all dogs bark' holds for the vast majority of cases, making Rex's non-barking a strong indicator of non-dog status unless proven otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of 'dog' is based on genetic and biological traits, not behavioral ones like barking, so Rex's lack of barking does not logically exclude him from being a dog.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The conclusion is consistent with taxonomic classification principles, where failure to meet defining traits excludes an entity from a defined group."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The conclusion is consistent with taxonomic classification principles, where failure to meet defining traits excludes an entity from a defined group.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Taxonomic classification often allows for exceptions, such as genetic mutations or developmental anomalies, which may result in a dog not barking without excluding it from the species.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with exceptions, the general rule remains valid for the vast majority of cases, and taxonomic principles are designed to classify typical, not anomalous, instances.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The premise 'all dogs bark' is an overgeneralization, as some dog breeds or individual dogs may not bark due to selective breeding or behavioral conditioning.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While some dogs may bark less, the absence of barking entirely is extremely rare and thus the premise holds for practical classification purposes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

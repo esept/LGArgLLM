@@ -1,0 +1,208 @@
+{
+  "claim": "If a US investor makes more than 15% returns every year for ten years, we cannot definitely conclude that the investor is skilled due to the potential influence of survivorship bias.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring failed investors who may have used similar strategies."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring failed investors who may have used similar strategies.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If an investor consistently outperforms the market over a decade, statistical analysis can isolate skill from luck by comparing against benchmark indices and peer performance distributions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with benchmarking, survivorship bias persists because underperforming funds often dissolve or stop reporting returns, leaving incomplete data for comparison.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Regulatory filings like Form ADV provide mandatory performance histories regardless of fund survival, enabling comprehensive datasets that mitigate survivorship effects.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Financial markets exhibit randomness, and consistent high returns could result from luck rather than skill over a ten-year period."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Financial markets exhibit randomness, and consistent high returns could result from luck rather than skill over a ten-year period.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors consistently outperform the market due to identifiable strategies, suggesting skill plays a significant role.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with identifiable strategies, backtesting can suffer from data-mining bias, making it hard to distinguish skill from luck.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Independent replication of strategies in live markets can validate whether performance is due to skill.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Historical data shows that many investment strategies with high returns eventually regress to the mean, making sustained outperformance statistically unlikely."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Historical data shows that many investment strategies with high returns eventually regress to the mean, making sustained outperformance statistically unlikely.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors, like Warren Buffett, have consistently outperformed the market over decades, demonstrating that sustained skill is possible.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Buffett's success may be attributed to unique early opportunities and structural advantages (e.g., Berkshire Hathaway's insurance float) not replicable by typical investors.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias alone cannot explain all persistent outperformance; rigorous academic studies control for this and still identify skilled managers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most such studies suffer from data-mining biases or fail to account for changing market conditions that invalidate past performance patterns.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Without comparing the investor's performance to a benchmark or peer group, it is impossible to isolate skill from market-wide trends."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Without comparing the investor's performance to a benchmark or peer group, it is impossible to isolate skill from market-wide trends.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even without benchmarking, consistently high returns over a decade strongly suggest skill, as market trends rarely sustain such outperformance.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical data shows that some investors achieve high returns purely by luck, especially in bull markets, making benchmarking essential.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Survivorship bias means we only observe successful investors, ignoring those who failed with similar strategies.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Empirical studies in finance demonstrate that very few investors consistently outperform the market due to efficient market dynamics."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Empirical studies in finance demonstrate that very few investors consistently outperform the market due to efficient market dynamics.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors, like Warren Buffett, have consistently outperformed the market over long periods, suggesting skill can overcome efficient market dynamics.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Warren Buffett's success may be attributed to unique access to information or resources not available to typical investors, making him an outlier rather than proof against efficient markets.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias means we only observe the successful investors, while many others who tried similar strategies failed and are not accounted for in empirical studies.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

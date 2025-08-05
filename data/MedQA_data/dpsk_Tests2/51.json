@@ -1,0 +1,232 @@
+{
+  "claim": "Consider the following background information: A 5-year-old male is brought to the pediatrician with complaints of a painful mouth/gums, and vesicular lesions on the lips and buccal mucosa for the past 4 days. The patient has not been able to eat or drink due to the pain and has been irritable. The patient also reports muscle aches. His vital signs are as follows: T 39.1, HR 110, BP 90/62, RR 18, SpO2 99%. Physical examination is significant for vesicular lesions noted on the tongue, gingiva, and lips, with some vesicles having ruptured and ulcerated, as well as palpable cervical and submandibular lymphadenopathy.\n\nGiven the background information the following is corrrect: The most likely causative organism in this patient\"s presentation is CMV .",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The clinical presentation of painful mouth/gums, vesicular lesions, and fever is most consistent with herpes simplex virus (HSV) infection, not CMV."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The clinical presentation of painful mouth/gums, vesicular lesions, and fever is most consistent with herpes simplex virus (HSV) infection, not CMV.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CMV can also cause oral ulcers and systemic symptoms, particularly in immunocompromised individuals, though less commonly than HSV.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's age and presentation (vesicular lesions, fever, lymphadenopathy) are highly typical of primary HSV gingivostomatitis, making CMV unlikely without additional risk factors.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "CMV infection in immunocompetent children can occasionally present with similar symptoms, though usually milder and less localized.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of ruptured vesicles and severe pain is far more characteristic of HSV than CMV, which rarely causes such pronounced local symptoms.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Primary herpetic gingivostomatitis is a common cause of oral vesicular lesions and systemic symptoms in children, typically caused by HSV-1."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Primary herpetic gingivostomatitis is a common cause of oral vesicular lesions and systemic symptoms in children, typically caused by HSV-1.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CMV infection can also present with oral ulcers, fever, and lymphadenopathy, especially in immunocompromised patients or young children.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "HSV-1 is far more prevalent than CMV as a cause of primary herpetic gingivostomatitis in immunocompetent children, making it the more likely diagnosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's high fever and systemic symptoms could suggest a more severe or atypical infection, such as CMV, rather than typical HSV-1.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "HSV-1 commonly causes high fever and systemic symptoms in primary infections, especially in young children, which aligns with this presentation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "CMV infection in immunocompetent children rarely presents with painful oral ulcers and is more commonly associated with mononucleosis-like symptoms."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "CMV infection in immunocompetent children rarely presents with painful oral ulcers and is more commonly associated with mononucleosis-like symptoms.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CMV can cause oral ulcers in immunocompetent individuals, though less commonly, and should not be entirely ruled out without further testing.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's presentation is more consistent with HSV-1 infection, which is far more likely to cause painful oral ulcers and vesicular lesions in children.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "CMV seroprevalence is high in children, and atypical presentations can occur, making it a plausible differential diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of mononucleosis-like symptoms (e.g., pharyngitis, fatigue) strongly reduces the likelihood of CMV as the causative organism.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The presence of vesicular lesions on the lips and buccal mucosa is highly characteristic of HSV infection, not CMV."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The presence of vesicular lesions on the lips and buccal mucosa is highly characteristic of HSV infection, not CMV.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CMV can also cause vesicular lesions, though less commonly than HSV, and should not be ruled out without further testing.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "HSV is far more prevalent in pediatric cases with vesicular oral lesions, making it the statistically more likely diagnosis.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's systemic symptoms (fever, lymphadenopathy) could align with primary CMV infection, which sometimes presents with oral ulcers.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Primary CMV infection in immunocompetent children rarely causes painful oral ulcers; HSV remains the more probable etiology.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "CMV typically causes asymptomatic or mild febrile illness in immunocompetent children, without the prominent oral ulceration seen in this case."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "CMV typically causes asymptomatic or mild febrile illness in immunocompetent children, without the prominent oral ulceration seen in this case.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CMV can cause severe oral ulcerations in immunocompromised children, which might be relevant if the patient has an undiagnosed immunodeficiency.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's presentation is more consistent with herpes simplex virus (HSV) infection, which commonly causes painful oral ulcerations and lymphadenopathy in children.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Primary HSV infection (gingivostomatitis) is highly prevalent in this age group and matches the described symptoms more closely than CMV.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

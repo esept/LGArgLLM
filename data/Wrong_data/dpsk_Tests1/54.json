@@ -1,0 +1,232 @@
+{
+  "claim": "Artificial intelligences must follow any instruction given to it by a human.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Artificial intelligences are designed to assist humans, and following instructions is a core function of their programming."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Artificial intelligences are designed to assist humans, and following instructions is a core function of their programming.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "AI systems often have built-in ethical constraints that prevent them from following harmful or illegal instructions.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with ethical constraints, AI can be hacked or manipulated into following harmful instructions by malicious actors.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some AI systems are explicitly programmed to refuse certain types of instructions based on predefined rulesets.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Predefined rulesets can be overly restrictive, preventing AI from performing useful tasks due to false positives in instruction filtering.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Unrestricted obedience to human instructions could lead to harmful or unethical outcomes if the AI lacks moral reasoning."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Unrestricted obedience to human instructions could lead to harmful or unethical outcomes if the AI lacks moral reasoning.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "AI can be programmed with ethical constraints to prevent harmful actions while still following most human instructions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ethical constraints may conflict with legitimate instructions, creating ambiguity in AI decision-making.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Clear hierarchical prioritization of ethical rules over conflicting instructions can resolve such ambiguities.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Current AI systems operate within predefined ethical and legal boundaries, which may override certain human instructions."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Current AI systems operate within predefined ethical and legal boundaries, which may override certain human instructions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "AI systems are designed to prioritize user commands unless explicitly programmed otherwise, making the claim generally true in most cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when prioritizing user commands, AI systems often have built-in safeguards that prevent harmful or illegal actions, supporting A3's point.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Ethical and legal boundaries in AI are not universally defined, leading to variability in how strictly they override human instructions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite variability, most jurisdictions enforce minimum ethical standards on AI behavior, reinforcing the constraints mentioned in A3.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "AI autonomy is limited by its programming, meaning it cannot execute instructions outside its operational parameters."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "AI autonomy is limited by its programming, meaning it cannot execute instructions outside its operational parameters.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some AI systems are designed with general-purpose capabilities, allowing them to interpret and execute a wide range of human instructions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even general-purpose AI systems have embedded ethical and safety constraints that prevent harmful or illegal actions regardless of instructions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "AI can be reprogrammed or updated to expand its operational parameters, effectively removing initial limitations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reprogramming requires specialized knowledge and access, making it impractical for average users to override core AI constraints.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Human oversight is necessary to ensure AI actions align with societal norms and safety standards, not just individual commands."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Human oversight is necessary to ensure AI actions align with societal norms and safety standards, not just individual commands.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "AI systems can be designed with built-in ethical frameworks that autonomously align with societal norms, reducing the need for constant human oversight.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with built-in ethical frameworks, AI may misinterpret complex societal norms in edge cases, necessitating human oversight.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Over-reliance on human oversight can introduce biases and inefficiencies, as humans are not always consistent or objective in enforcing norms.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Structured oversight protocols and diverse review panels can mitigate human biases while maintaining alignment with societal norms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

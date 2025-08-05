@@ -1,0 +1,294 @@
+{
+  "claim": "Consider the following background information: A 56-year-old man is brought to the emergency department with severe dyspnea and a productive cough containing streaks of blood since the day before. He had a sudden pruritic papular rash on his right thigh when he was in the southwestern USA hiking in northern Arizona and New Mexico. The next day he developed severely painful inguinal swelling on the same side; however, he did not see a physician and controlled the pain with painkillers. There is no other history of serious illness. He does not take any other medications. He appears confused. The temperature is 39.5\u2103 (103.1\u2109), the pulse is 105/min, the respiration rate is 32/min, and the blood pressure is 95/45 mm Hg. Rales are heard in the lower lobe of the left lung on auscultation. The right inguinal lymph nodes are enlarged with a spongy consistency and an underlying hard core. The surrounding area is edematous without overlying erythema or cellulitis. A computerized tomography (CT) scan is shown in the picture.\n\nGiven the background information the following is corrrect: These findings are best explained by plague.",
+  "score": 0.85,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's history of hiking in the southwestern USA, an area endemic for plague, and the presence of a pruritic papular rash followed by painful inguinal swelling are classic signs of bubonic plague."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of hiking in the southwestern USA, an area endemic for plague, and the presence of a pruritic papular rash followed by painful inguinal swelling are classic signs of bubonic plague.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms, such as confusion and severe dyspnea, are more commonly associated with septicemic or pneumonic plague rather than bubonic plague, which may indicate a different or more advanced stage of the disease.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Bubonic plague can progress to septicemic or pneumonic plague if untreated, which would explain the presence of systemic symptoms like confusion and dyspnea in addition to the initial bubonic symptoms.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's rash could also be caused by other insect bites or allergic reactions, which are common in hiking scenarios, and not necessarily indicative of plague.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The combination of a rash with painful inguinal swelling and systemic symptoms like high fever and hypotension is highly specific for plague in an endemic area, making alternative diagnoses less likely.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's symptoms could also be explained by tularemia, which shares similar clinical features with plague and is also endemic in the southwestern USA.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Tularemia typically presents with ulceroglandular or glandular forms, and the absence of a skin ulcer in this patient makes plague a more likely diagnosis.",
+          "confidence": 0.75,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The combination of high fever, dyspnea, productive cough with blood, and rales in the lung is consistent with pneumonic plague, a complication of bubonic plague."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The combination of high fever, dyspnea, productive cough with blood, and rales in the lung is consistent with pneumonic plague, a complication of bubonic plague.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The symptoms could also be explained by severe community-acquired pneumonia, which is more common than pneumonic plague.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of hiking in an endemic area for plague (northern Arizona and New Mexico) and the presence of painful inguinal lymphadenopathy strongly suggest bubonic plague progressing to pneumonic plague.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of overlying erythema or cellulitis in the inguinal region makes bubonic plague less likely, as these are commonly seen in buboes.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The spongy consistency with a hard core in the lymph nodes is highly characteristic of bubonic plague, even without overlying erythema.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The patient's confusion could be due to sepsis from any bacterial infection, not specifically plague.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The rapid progression from inguinal swelling to severe respiratory symptoms and sepsis is more typical of plague than other common infections.",
+          "confidence": 0.78,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The presence of enlarged, spongy inguinal lymph nodes with a hard core and surrounding edema is highly suggestive of buboes, a hallmark of bubonic plague."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of enlarged, spongy inguinal lymph nodes with a hard core and surrounding edema is highly suggestive of buboes, a hallmark of bubonic plague.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Inguinal lymphadenopathy with a hard core can also be caused by other infections such as tularemia or cat-scratch disease, which are also endemic in the southwestern USA.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's severe systemic symptoms (high fever, confusion, hypotension) and rapid progression are more characteristic of plague than tularemia or cat-scratch disease.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of overlying erythema or cellulitis makes bubonic plague less likely, as these are commonly seen in plague buboes.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Plague buboes can sometimes present without overlying skin changes, especially in early stages or in immunocompromised patients.",
+          "confidence": 0.68,
+          "attacks": {
+            "B2": 0.55
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The pulmonary symptoms (dyspnea, bloody cough, rales) could indicate secondary pneumonic plague, which would require different treatment and infection control measures than bubonic plague.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The presence of both buboes and pulmonary symptoms could represent bubonic plague with secondary pneumonic spread, which still supports the original diagnosis.",
+          "confidence": 0.83,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The patient's confusion and hypotension are indicative of septic shock, a severe complication of plague, further supporting the diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's confusion and hypotension are indicative of septic shock, a severe complication of plague, further supporting the diagnosis.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Septic shock can occur in many severe infections, not just plague, so these symptoms are not specific to plague.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The combination of septic shock with the patient's exposure history and painful inguinal swelling makes plague the most likely diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's rash and lymph node swelling could also be caused by other vector-borne diseases like tularemia or anthrax.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Plague is more common in the southwestern USA and matches the patient's symptoms more closely than tularemia or anthrax.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The absence of other serious illnesses or medications that could explain these symptoms makes plague the most likely diagnosis given the clinical presentation and geographic exposure."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The absence of other serious illnesses or medications that could explain these symptoms makes plague the most likely diagnosis given the clinical presentation and geographic exposure.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Plague is rare, and other more common conditions like severe bacterial pneumonia or tularemia could present similarly, especially given the nonspecific early symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The geographic exposure to northern Arizona and New Mexico is highly suggestive of plague, as these are known endemic regions for Yersinia pestis.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's confusion and severe hypotension could indicate septic shock from any severe infection, not necessarily plague, reducing the specificity of the diagnosis.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The combination of painful inguinal lymphadenopathy (buboes) and pulmonary symptoms is classic for bubonic plague with secondary pneumonic plague, which is highly specific.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

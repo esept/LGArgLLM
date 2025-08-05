@@ -1,0 +1,232 @@
+{
+  "claim": "The human brain contains 10 billion neurons.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The human brain contains approximately 86 billion neurons, as established by modern neuroscience research."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The human brain contains approximately 86 billion neurons, as established by modern neuroscience research.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Early estimates of neuron count were based on less accurate measurement techniques, leading to the misconception of 10 billion neurons.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern stereological counting methods have consistently confirmed the 86 billion neuron count, refuting older estimates.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some regions of the brain, like the cerebellum, contain a disproportionately high number of neurons, which might skew total counts.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even accounting for regional variations, the total neuron count across all brain regions still averages to approximately 86 billion.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Neuroscientific studies using stereological counting methods confirm that the human brain has significantly more than 10 billion neurons."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Neuroscientific studies using stereological counting methods confirm that the human brain has significantly more than 10 billion neurons.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Early estimates of neuron counts were based on less accurate methods, leading to the 10 billion figure being widely cited in older literature.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern stereological methods have been validated and are considered the gold standard for neuron counting, making older estimates obsolete.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Neuron counts can vary significantly between individuals due to genetic and environmental factors, making any single estimate potentially misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While individual variation exists, stereological studies provide average estimates that are robust across large populations.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The cerebral cortex alone contains roughly 16 billion neurons, which already exceeds the claimed total of 10 billion."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The cerebral cortex alone contains roughly 16 billion neurons, which already exceeds the claimed total of 10 billion.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim may refer to non-cortical regions of the brain, which have fewer neurons, bringing the total closer to 10 billion when excluding the cortex.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even non-cortical regions like the cerebellum contain tens of billions of neurons, making a total of 10 billion for the entire brain highly unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The 16 billion figure for the cortex might be an overestimation due to methodological differences in neuron counting.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern stereological methods consistently confirm the 16 billion estimate for the human cerebral cortex, with high reproducibility across studies.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Comparative neuroanatomy shows that even smaller primate brains contain more than 10 billion neurons, making the claim implausible for humans."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Comparative neuroanatomy shows that even smaller primate brains contain more than 10 billion neurons, making the claim implausible for humans.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim refers specifically to the human brain, not primate brains in general, and may account for variations in neuron density.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Neuron counts in primate brains are highly correlated with brain size, and human brains are significantly larger than those of smaller primates.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Neuron density can vary widely even among species with similar brain sizes, making direct comparisons unreliable.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Peer-reviewed studies using modern imaging and cell counting techniques consistently report neuron counts in the human brain that are an order of magnitude higher than 10 billion."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Peer-reviewed studies using modern imaging and cell counting techniques consistently report neuron counts in the human brain that are an order of magnitude higher than 10 billion.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some older studies and simplified educational materials still cite the 10 billion neuron figure, creating confusion and outdated references.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern neuroscience has largely discredited older neuron counts due to improved methodologies and larger sample sizes, making the 10 billion figure obsolete.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Neuron counts can vary significantly between individuals due to genetic and environmental factors, making precise universal estimates difficult.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite individual variability, large-scale studies show a consistent average neuron count far exceeding 10 billion, with tight statistical confidence intervals.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

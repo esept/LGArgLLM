@@ -1,0 +1,87 @@
+You are given a **claim** and a corresponding **first-level supporting argument `Ai`**, which can be either:
+
+- **P-type**: supports the claim, or  
+- **S-type**: supports the opposite of the claim (i.e., supports ¬claim).
+
+The `cate` field explicitly indicates the type of `Ai`.  
+Your task is to **recursively construct an attack tree for `Ai`, based on its type**.
+
+---
+
+## Instructions:
+
+1. Start from `Ai`, which supports either the claim (`cate: P`) or its negation (`cate: S`).
+2. Generate a set of first-level counter-arguments (B-layer), each **attacking `Ai`**.
+3. For each `Bi`, generate a set of second-level counter-arguments (C-layer), each **attacking that specific `Bi`**.
+4. Continue recursively as needed, respecting the hierarchical logic (Ai ← B ← C ← D...).
+
+---
+
+## Important Structural Rules:
+
+- The goal is to logically attack `Ai`, regardless of whether it supports the claim or its negation.
+    - If `Ai` is P-type, then attacking `Ai` undermines the claim.
+    - If `Ai` is S-type, then attacking `Ai` defends the claim.
+- Only `Ai` includes the field `cate`. All other arguments **must omit** the `cate` field.
+- Use a flat output structure. Do **not** nest arguments.
+
+---
+
+## Argument Generation Guidelines:
+
+Each argument must include:
+- `id`: Unique identifier such as `"Ai"`, `"B1"`, `"C2"`, etc.  
+  (Use `A` only for `Ai`; use `B`, `C`, `D`… for other layers.)
+- `text`: A logically valid and self-contained sentence that clearly **attacks** the argument(s) it targets.
+- `confidence`: A float between 0.0 and 1.0, representing the strength or credibility of the argument.
+- `attacks`: A list of IDs of the arguments it attacks. Leave empty (`[]`) only for `Ai`.
+
+### Confidence Guidelines:
+Use these ranges to reflect plausibility and argument strength:
+- `0.9–1.0`: Factual, widely accepted, or strongly authoritative attacks.
+- `0.7–0.89`: Solid but debatable critiques.
+- `0.5–0.69`: Speculative, exception-based, or narrowly scoped objections.
+- `< 0.5`: Avoid unless required by context (e.g., philosophical doubt).
+
+---
+
+## Recommended Attack Types:
+When constructing counter-arguments, diversify your reasoning strategies:
+- Logical contradictions or inconsistencies
+- Empirical/statistical counterexamples
+- Scope or definition challenges
+- Relevance or context-based rebuttals
+- Authority- or convention-based objections
+
+Each attack must **directly undermine or weaken** the target argument.  
+Avoid vague associations or irrelevant digressions.
+
+---
+
+## Output Format (YAML):
+
+Output all arguments under the `Arguments:` key in strict YAML syntax.  
+Use double quotes (`"`) for all string fields.  
+Do **not** output JSON or explanations.  
+Do **not** include extra commentary or formatting.
+
+### Example:
+```yaml
+Arguments:
+  - id: Ai
+    text: "Donald Trump served as U.S. President, a role restricted to American citizens."
+    confidence: 0.93
+    attacks: []
+    cate: P
+
+  - id: B1
+    text: "Eligibility for presidency includes specific constitutional requirements beyond general citizenship."
+    confidence: 0.82
+    attacks: [Ai]
+
+  - id: C1
+    text: "But Trump met all such constitutional requirements, including natural-born citizenship."
+    confidence: 0.88
+    attacks: [B1]
+```
+summary:Build a rigorous, logically consistent attack tree for Ai.All arguments beyond Ai must omit cate.Focus on logical depth, diverse reasoning patterns, and credible confidence calibration.Only output the YAML content under Arguments: -- no other text.

@@ -1,0 +1,287 @@
+{
+  "claim": "Consider the following background information: A 75-year-old man presents to the physician for his annual blood pressure visit and blood work. He has no complaints other than occasional knee pain. The past medical history includes hypertension. He has had knee osteoarthritis for several years and takes occasional acetaminophen for pain control. His diet is full of vegetables. He exercises every day. He has no history of smoking. He had a brother who died at the age of 84 due to hematologic malignancy. The temperature is 36.8\u2103 (98.2\u2109), and the blood pressure is 125/85 mm Hg. The physical examination shows no abnormalities other than a reduced range of motion and crepitus in both knees. The laboratory test results are as follows: Hemoglobin 15 g/dL Leukocyte count 58,000/mm3 Platelet count 250,000/mm3 Flow cytometry on the peripheral blood reveals an absolute lymphocyte count of 50,000/mm3.\n\nGiven the background information the following is corrrect: The most likely diagnosis is Monoclonal B cell lymphocytosis .",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The elevated leukocyte count (58,000/mm3) with an absolute lymphocyte count of 50,000/mm3 is consistent with Monoclonal B cell lymphocytosis (MBL)."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The elevated leukocyte count (58,000/mm3) with an absolute lymphocyte count of 50,000/mm3 is consistent with Monoclonal B cell lymphocytosis (MBL).",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Chronic lymphocytic leukemia (CLL) also presents with elevated lymphocyte counts and may be indistinguishable from MBL without further testing (e.g., lymph node biopsy or imaging).",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "MBL is typically asymptomatic and does not require treatment, whereas CLL often progresses and requires monitoring or intervention, making the distinction clinically important.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's age and family history of hematologic malignancy increase the likelihood of a more aggressive condition like CLL rather than benign MBL.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "MBL is more common in older adults and often precedes CLL, but many patients with MBL never progress to CLL, supporting the initial diagnosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The absence of symptoms other than occasional knee pain and no abnormalities on physical examination (other than knee findings) supports a diagnosis of MBL rather than a more aggressive lymphoproliferative disorder."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The absence of symptoms other than occasional knee pain and no abnormalities on physical examination (other than knee findings) supports a diagnosis of MBL rather than a more aggressive lymphoproliferative disorder.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The extremely high leukocyte count (58,000/mm3) and absolute lymphocyte count (50,000/mm3) are more consistent with chronic lymphocytic leukemia (CLL) than MBL, which typically has lower lymphocyte counts.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "MBL can present with high lymphocyte counts, particularly if it is high-count MBL, which is a precursor to CLL but does not yet meet diagnostic criteria for CLL.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's age (75 years) and family history of hematologic malignancy increase the likelihood of a more aggressive lymphoproliferative disorder like CLL rather than indolent MBL.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "MBL is common in elderly individuals and often remains asymptomatic for years, even with high lymphocyte counts, making it a plausible diagnosis despite the patient's age and family history.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's age (75 years) is within the typical demographic for MBL, which is more common in older adults."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's age (75 years) is within the typical demographic for MBL, which is more common in older adults.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While age is a risk factor for MBL, the extremely high leukocyte count (58,000/mm3) is more suggestive of chronic lymphocytic leukemia (CLL), which requires further diagnostic workup.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "MBL and CLL exist on a spectrum, and the distinction often depends on additional factors like lymph node involvement and clinical symptoms, which are not yet fully evaluated in this case.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of symptoms (other than knee pain) and normal hemoglobin/platelet counts make MBL more likely than CLL, as CLL often presents with cytopenias or systemic symptoms.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Asymptomatic early-stage CLL is common, and the lack of symptoms does not rule it out. Flow cytometry results are needed to confirm clonality and CD5/CD23 expression patterns.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The lack of lymphadenopathy or organomegaly on physical examination further supports MBL over chronic lymphocytic leukemia (CLL) or other lymphoproliferative disorders."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The lack of lymphadenopathy or organomegaly on physical examination further supports MBL over chronic lymphocytic leukemia (CLL) or other lymphoproliferative disorders.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "MBL still requires confirmation via bone marrow biopsy or additional genetic testing to definitively exclude early-stage CLL or other lymphoproliferative disorders.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of lymphadenopathy or organomegaly is a strong clinical indicator for MBL, as these findings are typically present in CLL.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high lymphocyte count (58,000/mm3) could still indicate early CLL, as MBL typically presents with lower lymphocyte counts.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Flow cytometry results showing a monoclonal B-cell population are more specific for MBL than lymphocyte count alone.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The normal hemoglobin (15 g/dL) and platelet count (250,000/mm3) suggest no evidence of bone marrow suppression, which is more indicative of MBL than advanced hematologic malignancies."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The normal hemoglobin (15 g/dL) and platelet count (250,000/mm3) suggest no evidence of bone marrow suppression, which is more indicative of MBL than advanced hematologic malignancies.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While hemoglobin and platelet counts are normal, the extremely high leukocyte count (58,000/mm3) and absolute lymphocyte count (50,000/mm3) are concerning for a more aggressive lymphoproliferative disorder like CLL rather than MBL.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "MBL can present with high lymphocyte counts, and the absence of symptoms, anemia, or thrombocytopenia strongly favors MBL over CLL, which typically presents with more systemic involvement.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's family history of hematologic malignancy increases the likelihood of a more aggressive diagnosis like CLL rather than the typically benign MBL.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Family history is a non-specific risk factor and does not necessarily indicate a more aggressive diagnosis, as MBL can also have a genetic predisposition.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Flow cytometry revealing an absolute lymphocyte count of 50,000/mm3 is diagnostic for MBL when other criteria (such as absence of symptoms and organomegaly) are met."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Flow cytometry revealing an absolute lymphocyte count of 50,000/mm3 is diagnostic for MBL when other criteria (such as absence of symptoms and organomegaly) are met.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A lymphocyte count of 50,000/mm3 could also indicate early-stage chronic lymphocytic leukemia (CLL), which requires further diagnostic workup to differentiate from MBL.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of symptoms and organomegaly strongly favors MBL over CLL, as CLL typically presents with additional clinical findings.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's age and family history of hematologic malignancy increase the likelihood of a more aggressive condition than MBL, such as CLL or another lymphoproliferative disorder.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While age and family history are risk factors, MBL is still the most likely diagnosis given the current asymptomatic presentation and lack of other clinical findings.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

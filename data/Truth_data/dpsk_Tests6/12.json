@@ -1,0 +1,185 @@
+{
+  "claim": "Paris's winter temperature is cooler than Philadelphia's.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Paris has a temperate oceanic climate, which generally results in milder winters compared to Philadelphia's humid subtropical climate with colder winters."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Paris has a temperate oceanic climate, which generally results in milder winters compared to Philadelphia's humid subtropical climate with colder winters.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Philadelphia's urban heat island effect can make its winters warmer than surrounding rural areas, potentially reducing the temperature difference with Paris.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The urban heat island effect in Philadelphia is not strong enough to negate the overall climate difference, as Paris also experiences some urban warming.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Recent extreme weather events have caused unusually cold winters in Paris, sometimes rivaling Philadelphia's winter temperatures.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Extreme weather events are outliers and do not represent the typical climate patterns of either city.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Average winter temperatures in Paris are typically higher than those in Philadelphia due to the moderating influence of the Atlantic Ocean on Paris's climate."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Average winter temperatures in Paris are typically higher than those in Philadelphia due to the moderating influence of the Atlantic Ocean on Paris's climate.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Philadelphia's inland location makes it more susceptible to colder continental air masses, leading to lower winter temperatures compared to coastal Paris.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Urban heat island effects in Philadelphia can sometimes elevate its winter temperatures above those of Paris during specific weather patterns.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical temperature records show that Paris has had colder winters than Philadelphia during certain years, contradicting the general trend.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These colder winters in Paris are anomalies caused by rare weather events like polar vortex disruptions, not the norm.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Philadelphia experiences more extreme winter cold spells and lower average temperatures than Paris, which rarely sees prolonged freezing conditions."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Philadelphia experiences more extreme winter cold spells and lower average temperatures than Paris, which rarely sees prolonged freezing conditions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paris's winter temperatures are moderated by the Atlantic Ocean and Gulf Stream, making its winters milder on average compared to Philadelphia's continental climate.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Philadelphia's proximity to the Great Lakes can result in lake-effect snow and colder temperatures, but Paris's urban heat island effect can also raise its winter temperatures above surrounding rural areas.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Historical temperature records show that while Philadelphia has lower extremes, Paris's average winter temperatures are still cooler when accounting for humidity and wind chill factors.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Geographical location plays a role, as Philadelphia is farther north in latitude than Paris but lacks the maritime influence that keeps Paris's winters relatively mild."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Geographical location plays a role, as Philadelphia is farther north in latitude than Paris but lacks the maritime influence that keeps Paris's winters relatively mild.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Philadelphia's proximity to the Atlantic Ocean still provides some maritime influence, which moderates its winter temperatures compared to inland areas at similar latitudes.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gulf Stream's warming effect on Western Europe, including Paris, is significantly stronger than the Atlantic's influence on Philadelphia, making Paris's winters milder despite latitude differences.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Urban heat island effects in Philadelphia are stronger than in Paris, artificially raising winter temperatures and reducing the perceived difference.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Paris also experiences urban heat island effects, and its larger population density means this factor does not negate the maritime advantage.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

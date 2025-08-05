@@ -1,0 +1,255 @@
+{
+  "claim": "The heart is located in the chest",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Anatomical studies consistently show that the heart is positioned in the thoracic cavity, between the lungs and behind the sternum."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Anatomical studies consistently show that the heart is positioned in the thoracic cavity, between the lungs and behind the sternum.",
+          "confidence": 0.98,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of situs inversus, a congenital condition, the heart is located on the right side of the chest rather than the left.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Situs inversus affects only about 1 in 10,000 people, making it an extreme outlier that does not invalidate the general anatomical rule.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some medical imaging studies have documented ectopic heart positions due to trauma or surgical displacement, though these are not natural anatomical states.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Ectopic heart positions are always the result of pathological or iatrogenic causes, and thus do not represent normal human anatomy.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Medical imaging techniques such as X-rays and MRIs confirm the heart's location within the chest."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Medical imaging techniques such as X-rays and MRIs confirm the heart's location within the chest.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some rare congenital conditions, like dextrocardia, can cause the heart to be located on the right side of the chest or even in the abdomen.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare, occurring in about 1 in 12,000 people, and does not invalidate the general rule that the heart is located in the chest.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Medical imaging can sometimes produce artifacts or misinterpretations, leading to incorrect conclusions about organ placement.",
+          "confidence": 0.4,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern imaging techniques like high-resolution MRI and CT scans have very low error rates and are highly reliable for anatomical localization.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Textbooks on human anatomy universally describe the heart as residing in the chest, specifically within the mediastinum."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Textbooks on human anatomy universally describe the heart as residing in the chest, specifically within the mediastinum.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of situs inversus, a congenital condition, the heart is located on the right side of the chest instead of the left.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Situs inversus affects only about 1 in 10,000 people, making it an extreme exception that does not invalidate the general anatomical rule.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some medical imaging studies have documented ectopic heart positions due to trauma or surgical displacement.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Ectopic heart positions are always pathological and post-traumatic, not representative of normal human anatomy as described in textbooks.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Physical examinations, including auscultation with a stethoscope, are performed on the chest to assess heart function."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Physical examinations, including auscultation with a stethoscope, are performed on the chest to assess heart function.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In rare cases of dextrocardia, the heart is located on the right side of the chest or even in the abdomen.",
+          "confidence": 0.25,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare, occurring in about 1 in 12,000 people, and does not invalidate the general rule.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some medical conditions, like pneumothorax, can displace the heart from its typical position in the chest.",
+          "confidence": 0.35,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such displacements are temporary and pathological exceptions, not the normal anatomical position.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Surgical procedures involving the heart, such as bypass surgery, require access through the chest wall."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Surgical procedures involving the heart, such as bypass surgery, require access through the chest wall.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some rare congenital conditions place the heart partially or fully outside the chest cavity (ectopia cordis).",
+          "confidence": 0.25,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Ectopia cordis is extremely rare (1 in 126,000 births) and does not invalidate the general anatomical location of the heart.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The rib cage provides structural protection to the heart, further confirming its location in the chest."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The rib cage provides structural protection to the heart, further confirming its location in the chest.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some rare congenital conditions, such as dextrocardia, place the heart on the right side of the chest or even outside the chest cavity.",
+          "confidence": 0.3,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia and similar anomalies are extremely rare, affecting less than 0.01% of the population, and do not invalidate the general rule.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

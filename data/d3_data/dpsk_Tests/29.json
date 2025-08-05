@@ -1,0 +1,193 @@
+{
+  "claim": "If a person is twice as old as their child, and the child is 20, then the parent was 20 when the child was born",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "If the child is currently 20 years old and the parent is twice as old, the parent must be 40 years old now."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "If the child is currently 20 years old and the parent is twice as old, the parent must be 40 years old now.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the parent was exactly 20 when the child was born, but the parent could have been older or younger.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies the parent was 20 when the child was born, so the age difference is fixed at 20 years.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The parent could have adopted the child at an older age, making the biological age difference irrelevant.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Adoption is a rare edge case and not the typical scenario implied by the claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Subtracting the child's current age (20) from the parent's current age (40) shows the parent was 20 when the child was born."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Subtracting the child's current age (20) from the parent's current age (40) shows the parent was 20 when the child was born.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the parent is exactly twice as old as the child, which may not be the case in reality.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim explicitly states the condition 'if a person is twice as old as their child', so the assumption is valid within the given context.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument does not account for cases where the parent might have adopted the child at an older age.",
+          "confidence": 0.2,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is about biological age difference, not adoption scenarios, which are outside the scope of the given condition.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The age difference between the parent and child is consistently 20 years, which aligns with the parent being 20 at the child's birth."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The age difference between the parent and child is consistently 20 years, which aligns with the parent being 20 at the child's birth.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the parent was exactly 20 when the child was born, but adoption or other circumstances could introduce a different age gap.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Adoption or non-biological parenting is statistically rare compared to biological parenting, making the original assumption valid in most cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument ignores cases where the parent might have had the child at a younger age (e.g., teenage pregnancy) but later adjusted legal records.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal record adjustments for age are uncommon and typically verifiable, so the original argument remains reliable in the absence of such evidence.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematically, if parent's age = 2 \u00d7 child's age, then parent's age at child's birth = parent's current age - child's current age = 20."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematically, if parent's age = 2 \u00d7 child's age, then parent's age at child's birth = parent's current age - child's current age = 20.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the parent was exactly twice as old as the child at all times, which is unlikely in reality due to varying age gaps.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The mathematical relationship holds true for the specific scenario described (current ages), regardless of past or future variations.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The calculation ignores biological constraints, as a 20-year-old parent is possible but statistically less common in many societies.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is purely mathematical and does not depend on social or biological norms, only on the given numerical relationship.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

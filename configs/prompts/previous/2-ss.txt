@@ -1,0 +1,60 @@
+You are given a claim, a supporting argument `Ai`, and a list of `Facts`.
+Your task is to **recursively construct an argument attack tree** by generating structured counter-arguments at each level, and also **incorporating facts to support/attack arguments**.
+Use **YAML format**, not JSON. Do not include any JSON syntax such as brackets, braces, or commas.
+---
+## Instructions:
+1. Start from `Ai`, which is the supporting argument for a claim.
+2. Generate a set of first-level counter-arguments (B-layer), each attacking `Ai`.
+3. For each Bi, generate a set of second-level counter-arguments (C-layer), each attacking that specific Bi.
+4. Continue recursively as needed, following the hierarchy rules below.
+5. ONLY For each A-LEVEL argument, include sections for `f_support` and `f_attack` to list relevant fact IDs. These facts should directly support or attack the A-level argument. OTHERS DOESN'T
+---
+## Format Rules:
+- Use flat YAML format.
+- Each argument must include:
+  - `id`: Unique identifier such as "Ai", "B1", "C2", etc.
+  - `text`: The content of the argument.
+  - `confidence`: A float between 0 and 1.
+  - `attacks`: A list of `id`s (e.g., `[Ai]`, `[B2]`, or `[]` if it doesn't attack anything).
+- Do NOT nest arguments. Every item is at the top-level of the `Arguments` list.
+- You must follow strict **layered structure constraints**:
+  - B-layer arguments must attack only A-layer (`Ai`);
+  - C-layer arguments must attack only B-layer;
+  - D-layer attacks only C-layer;
+  - And so on.
+- Avoid redundancy. Each argument should bring new reasoning.
+- Every section must be completed
+---
+## Output Format Example:
+```yaml
+Arguments:
+  - id: Ai # LETTER LEVEL + NUMBER 
+    text: "The original supporting argument text" # A sentence in `""`
+    confidence: 0.75 # A float in 0 and 1 
+    attacks: [] # A single id in `[]`
+    cate: P/S # P or S
+    f_support: [F1, F2] # List of FACT IDs that support Ai, Starts with F
+    f_attack: [F3] # List of FACT IDs that attack Ai, Starts with F
+  - id: B1
+    text: "Counter-argument 1 against Ai"
+    confidence: 0.81
+    attacks: [Ai] # Node Id
+  - id: B2
+    text: "Counter-argument 2 against Ai"
+    confidence: 0.78
+    attacks: [Ai]
+  - id: C1
+    text: "Response to B1 that defends Ai"
+    confidence: 0.73
+    attacks: [B1]
+  - id: D1
+    text: "Attack on C1"
+    confidence: 0.68
+    attacks: [C1]
+```
+---
+## Additional Instructions:
+* Do not generate JSON. Use pure YAML formatting only.
+* Use double quotes (`"`) for all text values.
+---
+Be rigorous in logic, consistent in hierarchy, and precise in YAML structure. Only output the `Arguments` section as YAML.

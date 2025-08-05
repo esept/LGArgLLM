@@ -1,0 +1,258 @@
+{
+  "claim": "If it is cold today, it must be winter",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Seasonal temperature patterns are not uniform globally; some regions experience cold temperatures outside of winter due to weather anomalies or geographic factors.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Seasonal temperature patterns are not uniform globally; some regions experience cold temperatures outside of winter due to weather anomalies or geographic factors.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "In most temperate climates, cold temperatures are strongly correlated with winter, making the claim generally valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Weather anomalies are exceptions, not the rule, and do not invalidate the general seasonal pattern.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in temperate climates, cold snaps can occur in autumn or spring, challenging the strict correlation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Geographic factors like altitude can cause cold temperatures year-round, further weakening the claim's universality.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Exceptions like weather anomalies are still part of the broader climate system and should not be dismissed.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Winter is defined by astronomical events (solstice) and calendar dates, not just temperature, so cold days can occur in other seasons.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Winter is defined by astronomical events (solstice) and calendar dates, not just temperature, so cold days can occur in other seasons.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Meteorological winter is defined by temperature patterns, not just astronomical events, so cold days are more likely in winter.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In many regions, cold temperatures are strongly correlated with winter months, making the claim generally accurate.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Temperature patterns can vary widely due to climate change, making meteorological definitions less reliable.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regional variations exist where cold days are common outside winter, undermining the correlation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Early spring or late autumn can also have cold days, which are not part of winter.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Early spring or late autumn can also have cold days, which are not part of winter.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Cold days are statistically more frequent and severe in winter compared to other seasons.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Meteorological definitions classify cold days based on temperature thresholds, not seasonal boundaries.",
+          "confidence": 0.72,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if cold days occur in other seasons, winter is still the primary season associated with cold temperatures.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Temperature thresholds for cold days are often derived from historical winter data, reinforcing the link between cold and winter.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In temperate climates, winter is typically the coldest season, so cold temperatures are most likely during this time.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In temperate climates, winter is typically the coldest season, so cold temperatures are most likely during this time.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Cold temperatures can also occur in other seasons due to unusual weather patterns or climate anomalies.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some regions experience cold temperatures year-round, not just in winter, such as polar or high-altitude areas.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Unusual weather patterns are exceptions, not the norm, and do not negate the general trend that winter is the coldest season.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Polar and high-altitude regions are not representative of temperate climates, which are the focus of the original argument.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Polar regions can experience extreme cold year-round, making the claim irrelevant in those areas.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Polar regions can experience extreme cold year-round, making the claim irrelevant in those areas.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim is about general seasonal patterns, not specific geographic exceptions like polar regions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Polar regions are a small fraction of the Earth's surface; the claim still holds for most inhabited areas.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in polar regions, winter is still the coldest season, aligning with the claim's logic.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "General climate patterns are more relevant to most people than extreme edge cases like polar regions.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

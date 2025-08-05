@@ -1,0 +1,208 @@
+{
+  "claim": "If C is a cousin of B and B is a cousin of A, then C is a cousin of A",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Cousin relationships are not transitive; being a cousin of a cousin does not imply a direct cousin relationship."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cousin relationships are not transitive; being a cousin of a cousin does not imply a direct cousin relationship.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In many cultures and legal systems, cousin relationships are defined by shared ancestry, making them transitive under certain conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with shared ancestry, the degree of cousinhood (e.g., first cousin vs. second cousin) may vary, breaking transitivity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Colloquial usage often treats cousin relationships as transitive for simplicity, regardless of formal definitions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Colloquial usage lacks precision and should not override formal genealogical or legal definitions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The definition of cousin typically requires a common ancestor within a specific generational distance, which may not hold between C and A."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The definition of cousin typically requires a common ancestor within a specific generational distance, which may not hold between C and A.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In many cultures and genealogical definitions, cousin relationships are transitive if the generational distance is preserved.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if generational distance is preserved, the common ancestor between C and A might be too distant to qualify them as cousins under typical definitions.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Genealogical standards often explicitly define cousin relationships as non-transitive to avoid ambiguity in distant relations.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Family structures are hierarchical; cousins share grandparents, but cousins of cousins may not share the same grandparents."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Family structures are hierarchical; cousins share grandparents, but cousins of cousins may not share the same grandparents.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If C is a cousin of B and B is a cousin of A, then C and A must share common ancestors, making them cousins.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The term 'cousin' is often used loosely and may not always imply shared grandparents, especially in complex family structures.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Genealogical definitions strictly require shared grandparents for cousins, so the hierarchical argument holds.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Genealogical relationships are directional; C and A may be related through different branches of the family tree, not directly as cousins."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Genealogical relationships are directional; C and A may be related through different branches of the family tree, not directly as cousins.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In most cultures, cousin relationships are symmetric and transitive; if C is a cousin of B and B is a cousin of A, then C is also a cousin of A by definition.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The definition of 'cousin' varies across cultures and legal systems, and some do not consider it transitive if the relationships involve different branches or generations.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in systems where cousin relationships are not strictly transitive, common usage often treats them as such unless specified otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The term 'cousin' is strictly defined by shared ancestry, which may not exist between C and A if B is their only common link."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The term 'cousin' is strictly defined by shared ancestry, which may not exist between C and A if B is their only common link.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In many cultures, 'cousin' is used more broadly to include relatives by marriage or adoption, not just shared ancestry.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in strict genealogical terms, if B is a cousin of A and C is a cousin of B, then C and A must share at least one common ancestor through B.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The common ancestor through B might be too distant to qualify C and A as cousins under typical definitions.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

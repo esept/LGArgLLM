@@ -1,0 +1,240 @@
+{
+  "claim": "Lightning is hotter than the surface of the Sun",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Lightning can reach temperatures of approximately 30,000 Kelvin, while the surface of the Sun is about 5,500 Kelvin."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Lightning can reach temperatures of approximately 30,000 Kelvin, while the surface of the Sun is about 5,500 Kelvin.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Sun's core temperature is around 15 million Kelvin, far exceeding lightning temperatures, making the comparison misleading.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifically compares lightning to the Sun's surface, not its core, so the core temperature is irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lightning's high temperature is extremely short-lived (microseconds), whereas the Sun's surface temperature is sustained.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim only concerns temperature magnitude, not duration, so the transient nature of lightning does not invalidate it.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The extreme heat of lightning is due to the rapid movement of electrons, which generates intense thermal energy."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The extreme heat of lightning is due to the rapid movement of electrons, which generates intense thermal energy.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While lightning is hot, its duration is extremely brief, so the total thermal energy transferred is negligible compared to the Sun's sustained output.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if brief, the peak temperature of lightning (around 30,000 K) exceeds the Sun's surface temperature (around 5,500 K), supporting the claim.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Temperature alone is insufficient to compare heat; the Sun's massive volume means its total thermal energy dwarfs that of lightning.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifically compares temperature, not total energy, so the Sun's volume is irrelevant to the statement.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific measurements confirm that the temperature of a lightning bolt exceeds that of the Sun's photosphere."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific measurements confirm that the temperature of a lightning bolt exceeds that of the Sun's photosphere.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While lightning is extremely hot, its duration is extremely brief compared to the Sun's sustained heat, making the comparison misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Sun's photosphere is not its hottest layer; the corona and core are much hotter, so comparing lightning to the photosphere is incomplete.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The temperature of lightning varies widely depending on conditions, and not all lightning reaches temperatures higher than the Sun's photosphere.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reliable scientific instruments consistently measure peak lightning temperatures above 30,000 K, which exceeds the photosphere's ~5,800 K.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Sun's surface temperature is relatively cooler compared to its core, whereas lightning's energy is concentrated in a small area, producing higher temperatures."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Sun's surface temperature is relatively cooler compared to its core, whereas lightning's energy is concentrated in a small area, producing higher temperatures.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While lightning is extremely hot, its duration is extremely brief, making it incomparable to the sustained high temperatures of the Sun's surface.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Sun's surface temperature (around 5,500\u00b0C) is still higher than the average temperature of lightning (around 30,000\u00b0C but only for microseconds).",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim compares peak temperatures, not sustained energy output, so the higher instantaneous temperature of lightning is valid.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Temperature alone is not a complete measure of heat; the Sun's total energy output far exceeds that of lightning.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "High-speed spectroscopy studies show that lightning plasma temperatures are significantly higher than the Sun's visible surface."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "High-speed spectroscopy studies show that lightning plasma temperatures are significantly higher than the Sun's visible surface.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Sun's core and corona reach temperatures far exceeding lightning, making the comparison to the visible surface misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifically compares lightning to the Sun's surface, not its core or corona, so the comparison remains valid.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lightning's high temperature is extremely short-lived, whereas the Sun's surface maintains its temperature continuously.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is about peak temperature, not duration, so transient high temperatures are still relevant.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

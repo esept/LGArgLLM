@@ -1,0 +1,185 @@
+{
+  "claim": "If a task takes 2 days and starts on Friday, it ends on Sunday",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Friday is day 1, Saturday is day 2, so the task ends on Sunday."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Friday is day 1, Saturday is day 2, so the task ends on Sunday.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the task starts at the end of Friday (e.g., 11 PM), day 2 may extend into Monday.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Most tasks are assumed to start at the beginning of the day unless specified otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Time zones or international work schedules could shift the end day to Monday.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard business conventions typically assume local time unless stated otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Starting on Friday and counting two full days lands the completion on Sunday."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Starting on Friday and counting two full days lands the completion on Sunday.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Counting two full days from Friday includes Saturday and Sunday, but the task ends at the end of Sunday, not necessarily on Sunday.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "If the task starts at the beginning of Friday, two full days would end at the beginning of Sunday, not the end.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Tasks are typically considered to end at the end of the last day unless specified otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "A 2-day duration from Friday includes Friday and Saturday, ending on Sunday."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "A 2-day duration from Friday includes Friday and Saturday, ending on Sunday.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If 'starts on Friday' means the task begins at midnight Friday, and '2 days' means 48 hours, it would end at midnight Sunday, not necessarily 'on Sunday' in common usage.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most scheduling contexts, 'days' refer to calendar days, not strict 24-hour periods, so Friday to Sunday is the correct interpretation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures consider Saturday the first day of the week, which could lead to confusion about whether 'starting on Friday' includes Saturday in the count.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "International standards (ISO 8601) define Monday as the first day of the week, making this interpretation irrelevant for most professional contexts.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If Friday is the start date, the next day is Saturday, and the day after is Sunday, marking the end of the task."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If Friday is the start date, the next day is Saturday, and the day after is Sunday, marking the end of the task.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the task starts at 11:59 PM on Friday, the second day would end at 11:59 PM on Sunday, but the task would effectively span into Monday.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Most tasks are assumed to start at the beginning of the day (e.g., 12: 00 AM), making the 11:59 PM edge case rare and not representative of typical scheduling.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some cultures or work contexts, the workweek ends on Friday, and Saturday and Sunday are not counted as working days, so the task would not end until Monday.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim does not specify cultural or workweek context, so the default interpretation should follow the standard 7-day week where Saturday and Sunday are consecutive days after Friday.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

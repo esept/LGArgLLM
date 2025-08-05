@@ -1,0 +1,287 @@
+{
+  "claim": "Consider the following background information: A 2-day-old infant male is brought to the emergency department with a 5-hour history of vomiting and irritability. He was born at home and had unreliable prenatal care because his parents have been experiencing housing instability. About a day after birth, he started to become lethargic and was feeding poorly. His parents thought that he might just be tired so they put him to bed; however, by the next morning he started to vomit and act extremely irritable. On presentation, he is found to have nuchal rigidity and bulging fontanelles. Based on this presentation, appropriate cultures are obtained and he is placed on empiric antibiotics. After all cultures grow out the same gram-positive bacteria, the patient is narrowed to penicillin G.\n\nGiven the background information the following is corrrect: Lipooligosaccharide rather than lipopolysaccharide is a characteristic of the most likely organism that is causing this patient\"s symptoms.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Lipooligosaccharide is a component of the outer membrane of Neisseria meningitidis, a gram-negative bacterium, not a gram-positive one."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Lipooligosaccharide is a component of the outer membrane of Neisseria meningitidis, a gram-negative bacterium, not a gram-positive one.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms and presentation are more consistent with a gram-positive bacterial infection, such as Group B Streptococcus, which is a common cause of neonatal meningitis.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Group B Streptococcus is a gram-positive bacterium that does not produce lipooligosaccharide, supporting the claim that lipooligosaccharide is not involved in this patient's infection.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Neisseria meningitidis, despite being gram-negative, can also cause neonatal meningitis and may present similarly to gram-positive infections.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Neonatal meningitis caused by Neisseria meningitidis is extremely rare compared to gram-positive organisms like Group B Streptococcus.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Gram-positive bacteria, such as Streptococcus agalactiae (Group B Streptococcus), which commonly cause neonatal meningitis, do not produce lipooligosaccharide or lipopolysaccharide."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Gram-positive bacteria, such as Streptococcus agalactiae (Group B Streptococcus), which commonly cause neonatal meningitis, do not produce lipooligosaccharide or lipopolysaccharide.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Neisseria meningitidis, a gram-negative bacterium, can also cause neonatal meningitis and produces lipooligosaccharide, which may be relevant in rare cases.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Neisseria meningitidis is far less common than Streptococcus agalactiae in neonatal meningitis, especially in cases with unreliable prenatal care and home birth.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some gram-positive bacteria have cell wall components that may mimic the effects of lipopolysaccharide or lipooligosaccharide in triggering immune responses.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These components are structurally and functionally distinct from lipooligosaccharide or lipopolysaccharide and do not fulfill the same diagnostic or pathogenic role.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The clinical presentation of neonatal meningitis, including vomiting, irritability, nuchal rigidity, and bulging fontanelles, is more commonly associated with gram-positive organisms like Streptococcus agalactiae in this age group."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The clinical presentation of neonatal meningitis, including vomiting, irritability, nuchal rigidity, and bulging fontanelles, is more commonly associated with gram-positive organisms like Streptococcus agalactiae in this age group.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gram-negative organisms like Escherichia coli and Neisseria meningitidis can also cause neonatal meningitis with similar clinical presentations, especially in cases with unreliable prenatal care.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While gram-negative organisms can cause neonatal meningitis, Streptococcus agalactiae remains the most common cause in the first week of life, particularly in cases with maternal colonization risk factors.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of maternal prenatal care increases the likelihood of atypical or resistant organisms, which may not follow the typical gram-positive predominance in neonatal meningitis.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with unreliable prenatal care, Streptococcus agalactiae remains epidemiologically the most likely pathogen unless specific risk factors for gram-negative infection are present.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Lipopolysaccharide is a component of gram-negative bacteria, which are less likely to be the causative organism given the gram-positive culture results in this case."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Lipopolysaccharide is a component of gram-negative bacteria, which are less likely to be the causative organism given the gram-positive culture results in this case.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some gram-positive bacteria can produce lipopolysaccharide-like molecules under certain conditions, which might complicate the diagnosis.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The conditions required for gram-positive bacteria to produce lipopolysaccharide-like molecules are extremely rare and not clinically relevant in this case.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The gram-positive culture results could be contaminated or misinterpreted, leading to an incorrect conclusion about the causative organism.",
+          "confidence": 0.35,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard laboratory protocols minimize the risk of contamination, and multiple cultures growing the same gram-positive bacteria strongly support the accuracy of the results.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Empiric antibiotic treatment for neonatal meningitis typically targets gram-positive organisms, supporting the likelihood of a gram-positive etiology in this case."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Empiric antibiotic treatment for neonatal meningitis typically targets gram-positive organisms, supporting the likelihood of a gram-positive etiology in this case.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Empiric antibiotic regimens often include coverage for gram-negative organisms as well, given their prevalence in neonatal meningitis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While gram-negative coverage is sometimes included, the initial presentation and subsequent culture results strongly suggest a gram-positive etiology in this case.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of nuchal rigidity and bulging fontanelles is nonspecific and can occur with both gram-positive and gram-negative infections.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The combination of symptoms, along with the culture results, narrows the likely etiology to gram-positive organisms despite the nonspecific nature of individual symptoms.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The absence of gram-negative bacteria in the cultures further reduces the likelihood of an organism producing lipooligosaccharide or lipopolysaccharide."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The absence of gram-negative bacteria in the cultures further reduces the likelihood of an organism producing lipooligosaccharide or lipopolysaccharide.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some gram-positive bacteria can produce lipoteichoic acid, which shares functional similarities with lipooligosaccharide and may cause similar symptoms.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lipoteichoic acid is structurally and functionally distinct from lipooligosaccharide, and its presence does not imply similar pathogenic mechanisms.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and nuchal rigidity are more classically associated with gram-negative infections, suggesting possible culture contamination or false negatives.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gram-positive bacteria like Streptococcus agalactiae (Group B Strep) are well-documented causes of neonatal meningitis and can present with these symptoms.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

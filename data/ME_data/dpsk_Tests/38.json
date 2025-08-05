@@ -1,0 +1,287 @@
+{
+  "claim": "Mount Everest is the tallest mountain above sea level",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Mount Everest's summit elevation of 8,848 meters above sea level is the highest confirmed by modern geodetic surveys."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Mount Everest's summit elevation of 8,848 meters above sea level is the highest confirmed by modern geodetic surveys.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Mauna Kea's total height from base to summit is approximately 10,210 meters, though much of it is underwater.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'above sea level,' so Mauna Kea's underwater portion is irrelevant to the comparison.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Chimborazo's summit is the farthest point from Earth's center due to equatorial bulge, making it 'taller' in that sense.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly refers to height above sea level, not distance from Earth's center.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "No other mountain on Earth has been measured to exceed Mount Everest's height above sea level in peer-reviewed scientific literature."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "No other mountain on Earth has been measured to exceed Mount Everest's height above sea level in peer-reviewed scientific literature.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some mountains, like Mauna Kea, are taller when measured from base to summit, though their summits are not as high above sea level as Everest.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifically refers to height above sea level, not base-to-summit height, so Mauna Kea's measurement is irrelevant to this comparison.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Satellite measurements have suggested K2 might be taller than Everest, but these claims lack peer-reviewed verification.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unverified satellite measurements do not meet the scientific standard required to challenge Everest's established height.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The International Mountaineering and Climbing Federation (UIAA) recognizes Mount Everest as the highest peak above sea level."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The International Mountaineering and Climbing Federation (UIAA) recognizes Mount Everest as the highest peak above sea level.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The UIAA's recognition is based on traditional sea-level measurements, but modern geodesy suggests alternative reference points (e.g., geoid-based elevation) that could yield different rankings.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Geoid-based elevation models still overwhelmingly confirm Everest's supremacy, with measurement uncertainties far smaller than the height difference to the second-highest peak.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mauna Kea's height from base to summit exceeds Everest's when measured from its underwater base, challenging the 'above sea level' framing as arbitrary.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly specifies 'above sea level', making Mauna Kea's total height irrelevant to this particular comparison.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "National Geographic and other authoritative geographic institutions consistently list Mount Everest as the tallest mountain above sea level."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "National Geographic and other authoritative geographic institutions consistently list Mount Everest as the tallest mountain above sea level.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some argue that Mauna Kea is taller when measured from its base on the ocean floor, challenging the definition of 'above sea level'.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The standard geographic definition of mountain height universally uses sea level as the baseline, making Mauna Kea's base irrelevant for this comparison.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Satellite measurements in 2020 suggested Everest's height might be slightly less than previously recorded due to snowpack variability.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 2020 China-Nepal joint survey confirmed Everest's height as 8,848.86m, resolving previous measurement discrepancies.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Satellite and ground-based measurements from multiple countries confirm Mount Everest's height as the highest above sea level."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Satellite and ground-based measurements from multiple countries confirm Mount Everest's height as the highest above sea level.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Sea level is not a fixed reference point globally due to variations in Earth's geoid and local tidal effects, making 'above sea level' an imprecise metric.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern geodesy accounts for geoid variations by using standardized global reference models like WGS84, ensuring consistent sea-level-based measurements.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mauna Kea's height from base to summit exceeds Everest's, but most is submerged, challenging the 'above sea level' definition's relevance.",
+          "confidence": 0.55,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly specifies 'above sea level,' making Mauna Kea's submerged base irrelevant to the comparison.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Mount Everest's elevation is officially recognized by both Nepal and China, the countries it straddles."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Mount Everest's elevation is officially recognized by both Nepal and China, the countries it straddles.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Official recognition by governments does not necessarily reflect objective geological measurements.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Nepal and China use internationally accepted surveying methods to determine Everest's height, ensuring objectivity.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other mountains, like Mauna Kea, are taller when measured from base to summit, not just above sea level.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'above sea level,' which excludes base-to-summit measurements like Mauna Kea's.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

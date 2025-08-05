@@ -1,0 +1,222 @@
+{
+  "claim": "Christmas trees are typically deciduous.",
+  "score": 0.15,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Christmas trees are typically coniferous, not deciduous, as they retain their needles year-round."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Christmas trees are typically coniferous, not deciduous, as they retain their needles year-round.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some Christmas trees, like the European larch, are deciduous and lose their needles in winter.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The European larch is rarely used as a Christmas tree compared to coniferous species like spruce, fir, and pine.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The term 'Christmas tree' is culturally associated with coniferous trees, making deciduous exceptions irrelevant to the typical case.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Cultural associations can vary by region, and some areas may use deciduous trees more commonly.",
+          "confidence": 0.6,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Deciduous trees shed their leaves annually, which is not a characteristic of trees commonly used as Christmas trees."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Deciduous trees shed their leaves annually, which is not a characteristic of trees commonly used as Christmas trees.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some species of deciduous trees, like holly, are occasionally used as Christmas trees and retain their leaves in winter.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Holly is not a typical Christmas tree; the vast majority are coniferous evergreens like pine, spruce, or fir.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The term 'Christmas tree' is culturally flexible and may include non-traditional or artificial trees that mimic deciduous trees.",
+          "confidence": 0.55,
+          "attacks": {
+            "A2": 0.5
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The most popular Christmas tree species, such as fir, spruce, and pine, are all coniferous and evergreen."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The most popular Christmas tree species, such as fir, spruce, and pine, are all coniferous and evergreen.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some regions use deciduous trees like holly or cherry trees as Christmas trees, though they are less common.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Holly and cherry trees are not typically referred to as 'Christmas trees' in mainstream culture or commercial markets.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The term 'Christmas tree' is culturally associated with conifers, making the claim technically incorrect in most contexts.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Cultural associations can vary, and in some traditions, non-coniferous trees are decorated similarly to Christmas trees.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.6
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Deciduous trees would not provide the desired greenery during winter, which is a key feature of Christmas trees."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Deciduous trees would not provide the desired greenery during winter, which is a key feature of Christmas trees.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some deciduous trees, like holly, retain their leaves and greenery during winter.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Holly is not commonly used as a Christmas tree, so its relevance is limited.",
+          "confidence": 0.65,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Evergreen trees are the traditional and most popular choice for Christmas trees, not deciduous trees.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The tradition of Christmas trees is rooted in using evergreen trees to symbolize life during winter."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The tradition of Christmas trees is rooted in using evergreen trees to symbolize life during winter.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Most Christmas trees sold today are evergreen species like fir, spruce, and pine, not deciduous trees.",
+          "confidence": 0.9,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Some regions do use deciduous trees like cherry or dogwood as Christmas trees in certain traditions.",
+          "confidence": 0.6,
+          "attacks": {
+            "B1": 0.5
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The use of deciduous trees as Christmas trees is extremely rare and not representative of the typical tradition.",
+          "confidence": 0.75,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

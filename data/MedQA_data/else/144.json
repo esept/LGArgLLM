@@ -1,0 +1,419 @@
+{
+  "claim": "A 54-year-old man with a history of hypertension presents 6 days after being admitted for new-onset atrial fibrillation with the rapid ventricular rate with a painful lesion on his left leg. He says his heart rate has been well-controlled since starting metoprolol and warfarin in the hospital but says he has developed a painful lesion on his left leg. His blood pressure is 114/78 mm Hg, the heart rate is 84/min, and the respiratory rate is 15/min. On physical examination, there is a large, dark lesion on his left leg that feels cold (see image). A genetic defect, in which of the following proteins is most likely responsible for this patient\u2019s condition? : Factor V",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's painful, cold, dark lesion is highly suggestive of a thrombotic event, which is consistent with Factor V Leiden mutation leading to increased thrombosis risk.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's painful, cold, dark lesion is highly suggestive of a thrombotic event, which is consistent with Factor V Leiden mutation leading to increased thrombosis risk.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The lesion could also be due to arterial insufficiency or vasculitis, not necessarily a thrombotic event caused by Factor V Leiden mutation.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient is on warfarin, which should reduce thrombosis risk; thus, Factor V Leiden mutation may not be the primary cause.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Arterial insufficiency typically presents with different features, such as intermittent claudication, which are not described here.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vasculitis usually presents with systemic symptoms and laboratory abnormalities, which are not mentioned in this case.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Warfarin resistance or non-compliance could explain the thrombotic event despite anticoagulation therapy.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The absence of systemic symptoms does not entirely rule out vasculitis, as some forms can present locally.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Warfarin resistance is rare and requires genetic testing to confirm, making it a less likely explanation without further evidence.",
+          "confidence": 0.68,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Factor V Leiden mutation results in resistance to activated protein C, increasing the risk of venous thrombosis, which aligns with the patient's presentation of a likely thrombotic leg lesion.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Factor V Leiden mutation results in resistance to activated protein C, increasing the risk of venous thrombosis, which aligns with the patient's presentation of a likely thrombotic leg lesion.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient is on warfarin, which is an effective anticoagulant, making a thrombotic event less likely despite Factor V Leiden mutation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lesion is described as cold, which is more consistent with arterial insufficiency rather than venous thrombosis.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Warfarin's effectiveness can be variable and requires time to reach therapeutic levels, so a thrombotic event could still occur early in treatment.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Factor V Leiden mutation significantly increases thrombotic risk, which may outweigh the protective effect of warfarin in the initial days of therapy.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Venous thrombosis can cause secondary arterial spasm or compartment syndrome, leading to a cold limb, which may mimic arterial insufficiency.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's INR levels would need to be subtherapeutic for warfarin to fail in preventing thrombosis, and there's no evidence provided that this is the case.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even with high thrombotic risk, warfarin initiation typically includes bridging with heparin, which would provide immediate anticoagulation.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Compartment syndrome is a clinical diagnosis requiring signs like severe pain and paralysis, which are not mentioned in this case.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient is on warfarin, which complicates the interpretation of coagulation, but Factor V mutation is a common inherited cause of thrombophilia that could explain the lesion despite anticoagulation.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient is on warfarin, which complicates the interpretation of coagulation, but Factor V mutation is a common inherited cause of thrombophilia that could explain the lesion despite anticoagulation.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Warfarin's anticoagulant effect should reduce thrombotic risk, making Factor V mutation less likely as the primary cause of the lesion.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lesion's description (cold, dark) suggests ischemia, which could be due to arterial thrombosis rather than a Factor V-related venous thrombotic event.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Factor V Leiden mutation increases resistance to protein C, which could still lead to thrombosis despite warfarin, especially if INR is subtherapeutic.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Arterial thrombosis is rare in Factor V Leiden, but combined with hypertension and atrial fibrillation, it could contribute to arterial ischemic events.",
+          "confidence": 0.71,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Subtherapeutic INR is common in early warfarin therapy, but Factor V mutation alone rarely causes such severe ischemia without additional prothrombotic factors.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Atrial fibrillation itself is a stronger risk factor for arterial embolism than Factor V mutation, making the latter less relevant in this context.",
+          "confidence": 0.74,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The lesion's characteristics (cold, dark, painful) are more indicative of arterial insufficiency rather than a thrombotic event caused by Factor V mutation.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The lesion's characteristics (cold, dark, painful) are more indicative of arterial insufficiency rather than a thrombotic event caused by Factor V mutation.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Factor V Leiden mutation is known to cause hypercoagulability, which can lead to thrombotic events that mimic arterial insufficiency symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of atrial fibrillation and warfarin use suggests a potential for thrombotic complications, making Factor V mutation a plausible cause.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Factor V mutation can cause thrombosis, the cold and dark nature of the lesion is more consistent with acute arterial occlusion, not venous thrombosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Warfarin is effective in preventing thrombotic events in atrial fibrillation, reducing the likelihood that Factor V mutation is the cause of the lesion.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Acute arterial occlusion typically presents with sudden onset of symptoms, whereas this patient's lesion developed over days, suggesting a different etiology.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Warfarin resistance or non-compliance could still allow thrombotic events despite therapy, keeping Factor V mutation as a possible cause.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Given the patient's history of atrial fibrillation, the lesion is more likely due to an embolic event from the heart rather than a genetic defect in Factor V.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Given the patient's history of atrial fibrillation, the lesion is more likely due to an embolic event from the heart rather than a genetic defect in Factor V.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient is on warfarin, which reduces the risk of thromboembolic events, making an embolic event less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The lesion's characteristics (dark and cold) suggest ischemia, which could still be caused by a genetic hypercoagulable state like Factor V Leiden despite anticoagulation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Warfarin's effectiveness can be variable and requires monitoring; subtherapeutic INR levels could still permit thromboembolism.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Factor V Leiden is a common genetic hypercoagulable disorder and could explain the ischemic lesion even in the context of atrial fibrillation.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's INR may not have been adequately monitored post-discharge, increasing the likelihood of an embolic event despite warfarin therapy.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Other hypercoagulable states or acquired conditions (e.g., antiphospholipid syndrome) could also mimic Factor V Leiden and should be considered.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Other proteins, such as protein C or S deficiency, could also present similarly with thrombotic lesions, making Factor V less uniquely likely.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Other proteins, such as protein C or S deficiency, could also present similarly with thrombotic lesions, making Factor V less uniquely likely.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Factor V Leiden mutation is the most common inherited thrombophilia and is strongly associated with venous thrombosis, which matches this patient's presentation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of atrial fibrillation and warfarin use suggests a prothrombotic state, which is more specifically linked to Factor V Leiden than protein C/S deficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Protein C and S deficiencies are rare and typically present earlier in life, whereas Factor V Leiden is more likely in a 54-year-old patient.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Warfarin-induced skin necrosis is a known complication of protein C or S deficiency, not Factor V Leiden, which could explain the lesion.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Factor V Leiden testing is more widely available and routinely considered in thrombophilia workups, increasing its diagnostic likelihood over protein C/S deficiency.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient's lesion is cold and dark, suggesting arterial insufficiency rather than warfarin-induced necrosis, which is more consistent with thrombotic complications of Factor V Leiden.",
+          "confidence": 0.69,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

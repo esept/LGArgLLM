@@ -1,0 +1,214 @@
+{
+  "claim": "Consider the following background information: A 35-year-old female is brought to the emergency department after being found unconscious. The patient is found to have a blood glucose level of 35 mg/dL. Hgb A1c was found to be 5.1%. C-peptide level was found to be decreased. The patient returned to her baseline after glucose replacement. She states that she has never had an episode like this before. She has no significant past medical history but reports a family history of diabetes in her mother. She states that she has been undergoing a difficult divorce over the past few months.\n\nGiven the background information the following is corrrect: Hypothyroidism is the likely cause of this patient\"s condition.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Hypothyroidism typically causes elevated blood glucose levels due to decreased insulin sensitivity, not hypoglycemia."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Hypothyroidism typically causes elevated blood glucose levels due to decreased insulin sensitivity, not hypoglycemia.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Severe hypothyroidism can rarely cause hypoglycemia due to decreased gluconeogenesis and glycogenolysis.",
+          "confidence": 0.45,
+          "attacks": {
+            "A1": 0.4
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's low C-peptide level suggests exogenous insulin administration rather than a thyroid disorder.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Stress from the patient's divorce could contribute to erratic eating patterns leading to reactive hypoglycemia.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.5
+          }
+        },
+        {
+          "id": "E1",
+          "text": "The normal Hgb A1c makes chronic hypoglycemia from any cause unlikely.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7,
+            "D1": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The patient's low C-peptide level suggests an insulin-mediated hypoglycemia, which is not consistent with hypothyroidism."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's low C-peptide level suggests an insulin-mediated hypoglycemia, which is not consistent with hypothyroidism.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Hypothyroidism can sometimes cause hypoglycemia due to decreased gluconeogenesis and glycogenolysis, which might explain the patient's condition.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's Hgb A1c of 5.1% and lack of prior episodes make hypothyroidism-induced hypoglycemia less likely, as chronic hypothyroidism would typically present with more persistent symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's stressful life events (divorce) could contribute to adrenal insufficiency, which might mimic some features of hypothyroidism but is a separate condition.",
+          "confidence": 0.6,
+          "attacks": {
+            "B1": 0.5
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Hypothyroidism is more commonly associated with weight gain and fatigue, not acute hypoglycemic episodes."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Hypothyroidism is more commonly associated with weight gain and fatigue, not acute hypoglycemic episodes.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Hypothyroidism can sometimes cause hypoglycemia due to slowed metabolism and decreased gluconeogenesis.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's normal Hgb A1c and decreased C-peptide suggest an exogenous insulin cause rather than hypothyroidism.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Stress from the patient's divorce could have contributed to irregular eating patterns, leading to hypoglycemia.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.5
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The patient's normal Hgb A1c (5.1%) and lack of past medical history of hypothyroidism make this diagnosis unlikely."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's normal Hgb A1c (5.1%) and lack of past medical history of hypothyroidism make this diagnosis unlikely.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Hypothyroidism can still be present with normal Hgb A1c levels, as A1c primarily reflects long-term glucose control, not thyroid function.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's symptoms (hypoglycemia, unconsciousness) are not typical of hypothyroidism, which more commonly presents with fatigue, weight gain, and cold intolerance.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The decreased C-peptide level suggests endogenous hyperinsulinism, which is inconsistent with hypothyroidism as the primary cause.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "S",
+        "text": "The patient's symptoms and lab findings are more consistent with exogenous insulin administration or an insulinoma, not hypothyroidism."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's symptoms and lab findings are more consistent with exogenous insulin administration or an insulinoma, not hypothyroidism.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Hypothyroidism can also cause hypoglycemia, especially in severe cases, and should not be entirely ruled out without further testing.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's low C-peptide level strongly suggests exogenous insulin administration, as endogenous insulin production would typically result in detectable C-peptide.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's normal Hgb A1c further supports exogenous insulin as the cause, as chronic hypoglycemia from other causes would likely alter Hgb A1c levels.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

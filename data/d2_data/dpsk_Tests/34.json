@@ -1,0 +1,161 @@
+{
+  "claim": "If a machine runs every 10 hours and started at 2 PM, the next run is 10 PM",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Starting at 2 PM and running every 10 hours would result in the next run at 12 AM (midnight), not 10 PM."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Starting at 2 PM and running every 10 hours would result in the next run at 12 AM (midnight), not 10 PM.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the machine runs every 10 hours starting at 2 PM, the next run would indeed be at 12 AM (midnight) because 2 PM + 10 hours = 12 AM.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim might be considering a 12-hour clock format, where 10 PM is mistakenly thought of as the next run after 2 PM, ignoring the 24-hour cycle.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in a 12-hour clock format, adding 10 hours to 2 PM correctly results in 12 AM, not 10 PM, as 2 PM to 12 AM is a 10-hour difference.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Adding 10 hours to 2 PM gives 12 AM, as 2 PM + 10 hours = 12 AM."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Adding 10 hours to 2 PM gives 12 AM, as 2 PM + 10 hours = 12 AM.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "12 AM is midnight, not 10 PM, so the calculation is correct but contradicts the claim.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim assumes a 12-hour clock, where 2 PM + 10 hours is indeed 12 AM (midnight).",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "However, the original claim incorrectly states the next run is at 10 PM, not 12 AM.",
+          "confidence": 0.97,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim incorrectly calculates the time difference; 10 hours after 2 PM is not 10 PM."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim incorrectly calculates the time difference; 10 hours after 2 PM is not 10 PM.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "10 hours after 2 PM is indeed 12 AM (midnight), not 10 PM, as basic arithmetic shows.",
+          "confidence": 0.99,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "If the machine runs every 10 hours but skips a cycle due to maintenance, the next run could be at 10 PM.",
+          "confidence": 0.4,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Maintenance schedules are irrelevant unless explicitly stated in the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "A 10-hour interval from 2 PM lands at 12 AM, which is 2 hours later than the claimed 10 PM."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A 10-hour interval from 2 PM lands at 12 AM, which is 2 hours later than the claimed 10 PM.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes a 12-hour clock format, where 10 PM is the same as 22: 00 in a 24-hour format, making the calculation correct.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The 12-hour clock format is ambiguous without AM/PM specification, so the original claim is incomplete and potentially misleading.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the machine operates on a 24-hour cycle, adding 10 hours to 14: 00 (2 PM) results in 24: 00 (midnight), supporting A4's calculation.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    }
+  }
+}

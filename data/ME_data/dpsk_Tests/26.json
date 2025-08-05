@@ -1,0 +1,145 @@
+{
+  "claim": "A person who is 30 in 2025 was born in 1990",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A person who is 30 in 2025 would have been born in 1995, as 2025 minus 30 equals 1995."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A person who is 30 in 2025 would have been born in 1995, as 2025 minus 30 equals 1995.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the person has already had their birthday in 2025. If their birthday is later in the year, they would still be 29 in part of 2025, meaning they were born in 1996.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most legal and cultural contexts, age is counted from the date of birth, so a person born on January 1, 1995, would indeed be 30 at the start of 2025.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The claim incorrectly subtracts 35 years from 2025 instead of 30, leading to the wrong birth year of 1990."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The claim incorrectly subtracts 35 years from 2025 instead of 30, leading to the wrong birth year of 1990.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is correct if interpreted as a typo where '30' was intended to be '35'.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Typographical errors do not change the mathematical correctness of the original claim, which is clearly false.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Basic arithmetic confirms that subtracting the age (30) from the current year (2025) results in 1995, not 1990."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Basic arithmetic confirms that subtracting the age (30) from the current year (2025) results in 1995, not 1990.",
+          "confidence": 1.0,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the person has already had their birthday in 2025. If their birthday is later in the year, they would still be 29 for part of 2025, making their birth year 1995.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In some cultures, age is counted differently, such as the East Asian age reckoning where a person is considered 1 at birth and gains a year at each Lunar New Year, potentially altering the calculation.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Gregorian calendar is universally accepted for international age calculations, making cultural age reckoning methods irrelevant for standard claims.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The claim's calculation error results in a 5-year discrepancy, making the birth year 1990 impossible for a 30-year-old in 2025."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim's calculation error results in a 5-year discrepancy, making the birth year 1990 impossible for a 30-year-old in 2025.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is correct because subtracting 30 from 2025 indeed gives 1995, not 1990.",
+          "confidence": 0.99,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim might have been a typographical error, and the intended birth year was 1995.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if it was a typo, the explicit mention of '1990' in the claim makes the error significant and misleading.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

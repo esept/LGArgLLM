@@ -1,0 +1,303 @@
+{
+  "claim": "Nuclear power is considered one of the safer sources of energy, despite concerns about nuclear meltdowns.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Nuclear power plants have lower accident-related fatalities per unit of energy produced compared to fossil fuel plants."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Nuclear power plants have lower accident-related fatalities per unit of energy produced compared to fossil fuel plants.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Nuclear accidents, while rare, can have catastrophic long-term consequences that are not fully captured by immediate fatality statistics.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The long-term consequences of nuclear accidents are often overestimated, and evacuation-related fatalities may exceed radiation-induced fatalities in some cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Fossil fuel plants cause more fatalities through chronic pollution, but these deaths are dispersed over time and space, making them less visible than nuclear accidents.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The health impacts of fossil fuel pollution are well-documented and consistently severe, justifying stricter regulation despite their diffuse nature.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Modern nuclear reactors incorporate advanced safety features that significantly reduce the risk of meltdowns."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Modern nuclear reactors incorporate advanced safety features that significantly reduce the risk of meltdowns.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even with advanced safety features, human error or natural disasters can still lead to catastrophic failures, as seen in Fukushima.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Fukushima incident involved an outdated reactor design, and modern reactors have passive safety systems that do not rely on human intervention.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The high cost of building and maintaining nuclear reactors with advanced safety features makes them less economically viable compared to renewable energy sources.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The long-term operational costs of nuclear power are competitive, and the reliability of nuclear energy offsets intermittent renewable sources.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Nuclear energy produces minimal air pollution compared to coal or natural gas, reducing health risks from particulate emissions."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Nuclear energy produces minimal air pollution compared to coal or natural gas, reducing health risks from particulate emissions.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While nuclear energy reduces air pollution, the risk of catastrophic accidents like Chernobyl or Fukushima poses significant long-term health and environmental hazards.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern nuclear reactors have advanced safety features that make catastrophic accidents extremely unlikely, reducing the relevance of historical disasters.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mining and processing of uranium for nuclear fuel still contribute to environmental degradation and health risks for workers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Renewable energy sources like wind and solar have even lower environmental and health impacts than nuclear, making them safer alternatives.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Wind and solar energy are intermittent and require large-scale energy storage or backup systems, which currently rely on fossil fuels or have their own environmental costs.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The storage and disposal of nuclear waste pose long-term environmental and safety challenges."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The storage and disposal of nuclear waste pose long-term environmental and safety challenges.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern nuclear waste storage solutions, such as deep geological repositories, are designed to safely contain waste for thousands of years.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Deep geological repositories have not been proven effective over the required timescales, and leakage risks remain uncertain.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Nuclear waste volume is relatively small compared to other energy sources, making management more feasible.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even small volumes of nuclear waste can have catastrophic environmental impacts if mishandled.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Historical nuclear accidents, such as Chernobyl and Fukushima, have demonstrated catastrophic consequences when safety protocols fail."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Historical nuclear accidents, such as Chernobyl and Fukushima, have demonstrated catastrophic consequences when safety protocols fail.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern nuclear reactors incorporate passive safety features that make catastrophic failures like Chernobyl and Fukushima physically impossible.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Passive safety features can still fail due to unforeseen combinations of extreme events or human sabotage.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The death toll from nuclear accidents is far lower than the annual deaths caused by air pollution from fossil fuel plants.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Long-term health impacts and exclusion zones from nuclear accidents create societal costs that aren't fully captured in direct death tolls.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Chernobyl used an obsolete reactor design that was never approved outside the Soviet Union, making it irrelevant to modern nuclear safety assessments.",
+          "confidence": 0.88,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Nuclear power provides a stable and reliable energy supply with low greenhouse gas emissions."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Nuclear power provides a stable and reliable energy supply with low greenhouse gas emissions.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Nuclear power plants are vulnerable to catastrophic meltdowns, as seen in Chernobyl and Fukushima, which pose significant safety risks.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern nuclear reactors incorporate advanced safety features that make meltdowns extremely unlikely, reducing the risk compared to older designs.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The long-term storage of nuclear waste remains an unsolved problem, creating environmental and safety hazards for future generations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "New technologies like reprocessing and advanced reactor designs can significantly reduce nuclear waste and its hazards.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

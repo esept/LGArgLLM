@@ -1,0 +1,287 @@
+{
+  "claim": "Police can search anyone without a warrant",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Fourth Amendment of the U.S. Constitution protects individuals from unreasonable searches and seizures, requiring warrants based on probable cause."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Fourth Amendment of the U.S. Constitution protects individuals from unreasonable searches and seizures, requiring warrants based on probable cause.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "There are exceptions to the warrant requirement, such as exigent circumstances or searches incident to arrest.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Exigent circumstances are narrowly defined and require immediate action to prevent harm or destruction of evidence, not blanket authority to search anyone.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Consent searches allow police to search individuals without a warrant if voluntary permission is given.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Consent must be freely and voluntarily given without coercion, and many individuals may not understand their right to refuse.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Supreme Court rulings, such as Terry v. Ohio, allow limited stops and frisks but do not permit full searches without reasonable suspicion of a crime."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Supreme Court rulings, such as Terry v. Ohio, allow limited stops and frisks but do not permit full searches without reasonable suspicion of a crime.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some jurisdictions have expanded 'stop and frisk' policies beyond the original intent of Terry v. Ohio, effectively allowing broader searches under the guise of reasonable suspicion.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal challenges and oversight mechanisms exist to prevent abuse of 'stop and frisk' policies, ensuring they adhere to constitutional limits.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In emergency situations, such as imminent threats to public safety, police may conduct warrantless searches under the 'exigent circumstances' exception.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The 'exigent circumstances' exception is narrowly defined and requires clear, immediate danger, limiting its applicability to most routine policing.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Police must obtain a warrant to search private property unless exigent circumstances or consent are present."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Police must obtain a warrant to search private property unless exigent circumstances or consent are present.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Police can conduct warrantless searches in public spaces where there is no reasonable expectation of privacy.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in public spaces, certain personal items (e.g., bags, phones) may still have a reasonable expectation of privacy, requiring a warrant.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Exigent circumstances are broadly interpreted, allowing police significant discretion to bypass warrants in many situations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Courts often scrutinize claims of exigent circumstances, and improper warrantless searches can lead to evidence being excluded.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Legal exceptions to the warrant requirement, such as searches incident to arrest, still require specific justifications and are not blanket permissions."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Legal exceptions to the warrant requirement, such as searches incident to arrest, still require specific justifications and are not blanket permissions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In practice, police often exploit these exceptions to conduct searches without proper justification, effectively bypassing warrant requirements.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Judicial oversight and the exclusionary rule deter police from abusing exceptions, ensuring they adhere to legal standards.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some jurisdictions have broad interpretations of 'exigent circumstances,' allowing warrantless searches under vague pretenses.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Supreme Court rulings like Riley v. California have narrowed the scope of warrantless searches, reinforcing constitutional protections.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Courts routinely suppress evidence obtained through warrantless searches that violate constitutional protections."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Courts routinely suppress evidence obtained through warrantless searches that violate constitutional protections.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Police often conduct warrantless searches under exceptions like exigent circumstances or consent, which courts uphold as lawful.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even under exceptions, warrantless searches are still subject to judicial review and can be ruled unconstitutional if they overreach.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practice, many warrantless searches go unchallenged because defendants lack resources to contest them in court.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Increased public awareness and legal aid programs are reducing the number of unchallenged unconstitutional searches.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Consent is required for warrantless searches unless another legal exception applies, meaning police cannot search anyone arbitrarily."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Consent is required for warrantless searches unless another legal exception applies, meaning police cannot search anyone arbitrarily.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Police can conduct warrantless searches under exigent circumstances, such as when evidence is at risk of being destroyed.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Exigent circumstances are narrowly defined and require immediate action, which does not justify arbitrary searches.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Stop-and-frisk policies allow police to conduct limited searches without a warrant if they have reasonable suspicion.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reasonable suspicion requires articulable facts, not just a hunch, preventing truly arbitrary searches.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

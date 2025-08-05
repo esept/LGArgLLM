@@ -1,0 +1,237 @@
+{
+  "claim": "Consider the following background information: A 32-year-old woman presents to the physician because she feels depressed, has difficulty sleeping, has a poor appetite, and has had a problem concentrating for the past 3 months. During this time, she has also has had low energy and has lost interest in playing the guitar. During high school, the patient went through similar episodes of low mood and poor sleep. At that time, she would repeatedly engage in binge eating and purging behavior, for which she was referred to therapy. There is no evidence of suicidal ideation. Her physician offers to prescribe a medication for her current symptoms.\n\nGiven the background information the following is corrrect: Treatment with Bupropion should be avoided in this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Bupropion is contraindicated in patients with a history of eating disorders, such as binge eating and purging behavior, due to increased risk of seizures."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Bupropion is contraindicated in patients with a history of eating disorders, such as binge eating and purging behavior, due to increased risk of seizures.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bupropion's seizure risk is dose-dependent, and at lower doses, the risk may not be significantly elevated in patients with a history of eating disorders.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that even at lower doses, bupropion still carries a higher seizure risk in patients with a history of bulimia nervosa compared to the general population.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of binge eating and purging was during high school, and there is no evidence of current eating disorder behavior, which may reduce the contraindication relevance.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Past eating disorder behavior, even if not current, still indicates a predisposition that may increase seizure risk with bupropion use.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's history of bulimic behaviors increases the seizure risk associated with Bupropion, making it an inappropriate choice for treatment."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's history of bulimic behaviors increases the seizure risk associated with Bupropion, making it an inappropriate choice for treatment.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bupropion-induced seizures are rare, and the patient's history of bulimia may not significantly increase the risk if the condition is currently well-managed.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Current guidelines still recommend avoiding Bupropion in patients with a history of eating disorders due to the established increased seizure risk.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Alternative antidepressants without seizure risk could be equally effective for this patient's depressive symptoms.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The patient's specific symptoms (low energy, poor concentration) may respond particularly well to Bupropion's unique pharmacological profile.",
+          "confidence": 0.6,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Bupropion can lower the seizure threshold, and patients with a history of eating disorders are at higher risk for this adverse effect."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Bupropion can lower the seizure threshold, and patients with a history of eating disorders are at higher risk for this adverse effect.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of binge eating and purging was during high school, and there is no evidence of current eating disorder behavior.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Bupropion is effective for treating depression and may help with the patient's current symptoms, outweighing the potential risks.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even if the eating disorder behaviors are not current, the physiological changes from past behaviors may still increase seizure risk.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "There are alternative antidepressants available that do not lower the seizure threshold, making Bupropion unnecessary.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Clinical guidelines recommend avoiding Bupropion in individuals with a history of bulimia or other eating disorders due to safety concerns."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Clinical guidelines recommend avoiding Bupropion in individuals with a history of bulimia or other eating disorders due to safety concerns.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bupropion has been shown to be effective in treating depressive symptoms even in patients with a history of eating disorders, with careful monitoring.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Studies indicate that the risk of adverse effects from Bupropion in patients with a history of eating disorders is relatively low when administered under close supervision.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of binge eating and purging behavior suggests a heightened risk for adverse effects, making Bupropion a less safe option.",
+          "confidence": 0.8,
+          "attacks": {
+            "A4": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Alternative antidepressants with a better safety profile in eating disorder patients are available and should be considered first.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The patient's depressive symptoms could be managed with alternative antidepressants that do not carry the same seizure risk as Bupropion."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's depressive symptoms could be managed with alternative antidepressants that do not carry the same seizure risk as Bupropion.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bupropion is effective for depressive symptoms and may be appropriate if the patient's history of binge eating and purging is not active.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of binge eating and purging suggests an underlying eating disorder, which may contraindicate Bupropion due to its potential to lower seizure threshold.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Alternative antidepressants like SSRIs may have fewer side effects but could be less effective for this patient's specific depressive symptoms.",
+          "confidence": 0.6,
+          "attacks": {
+            "A5": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

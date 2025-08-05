@@ -1,0 +1,303 @@
+{
+  "claim": "A US investor who makes more than 15% returns every year for ten years is definitely a great investor.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Consistently achieving over 15% annual returns for a decade significantly outperforms the average annual return of the S&P 500, which is historically around 10%."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Consistently achieving over 15% annual returns for a decade significantly outperforms the average annual return of the S&P 500, which is historically around 10%.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Outperformance alone does not account for risk-adjusted returns; an investor could achieve high returns by taking excessive risks, which may not be sustainable or prudent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Risk-adjusted metrics like the Sharpe ratio can confirm whether high returns were achieved with reasonable risk, validating the investor's skill.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The S&P 500 average includes periods of high volatility; outperforming it during a bull market may not reflect skill but rather favorable market conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Consistent outperformance across varying market cycles (bull/bear) would demonstrate skill beyond mere market timing.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Generating above-market returns over a long period demonstrates skill in investment selection and portfolio management."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Generating above-market returns over a long period demonstrates skill in investment selection and portfolio management.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Market conditions and luck can significantly influence returns, making it difficult to isolate skill as the sole factor.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with luck, consistently outperforming the market over a decade suggests a non-random edge in strategy or execution.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias means we only observe successful investors, ignoring those who failed despite similar strategies.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Survivorship bias is mitigated by analyzing the investor's process and risk management, not just outcomes.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Sustained high returns indicate the ability to manage risk effectively while maintaining profitability."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Sustained high returns indicate the ability to manage risk effectively while maintaining profitability.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "High returns could be due to luck or high-risk strategies that may not be sustainable in the long term.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Statistical analysis shows that consistent outperformance of the market is rare and often reverts to the mean.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The investor may have benefited from a specific market anomaly or bubble that won't recur.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in anomalies, skilled investors recognize and capitalize on them, demonstrating ability rather than luck.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The investor's performance is likely to be compared favorably against professional fund managers, many of whom fail to consistently beat the market."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The investor's performance is likely to be compared favorably against professional fund managers, many of whom fail to consistently beat the market.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Outperforming professional fund managers does not necessarily make someone a 'great investor,' as fund managers often have constraints like liquidity requirements and risk limits that individual investors do not.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with constraints, professional fund managers have access to superior research, tools, and diversification opportunities that individual investors typically lack, making consistent outperformance by an individual more impressive.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes the investor's returns are due to skill rather than luck or excessive risk-taking, which is not guaranteed by the given performance alone.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A 10-year track record of consistent outperformance is statistically unlikely to be purely due to luck, suggesting some degree of skill is involved.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "A 10-year track record of high returns provides strong evidence of the investor's discipline and consistency, key traits of successful investing."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "A 10-year track record of high returns provides strong evidence of the investor's discipline and consistency, key traits of successful investing.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "High returns over 10 years could be due to luck or exposure to a single high-performing sector, rather than skill or discipline.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Statistical analysis shows that consistently outperforming the market over 10 years is extremely rare and unlikely to be due to luck alone.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The investor may have taken excessive risks to achieve high returns, which could lead to catastrophic losses in the future.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Risk-adjusted return metrics (e.g., Sharpe ratio) would reveal whether the returns were achieved responsibly.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Such performance would place the investor in the top percentile of individual and institutional investors, based on historical return data."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Such performance would place the investor in the top percentile of individual and institutional investors, based on historical return data.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Historical return data does not account for survivorship bias, where only successful investors are recorded while failures are omitted.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Survivorship bias is mitigated in comprehensive datasets that include failed funds and individual investors.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Top percentile performance could be due to excessive risk-taking rather than skill, leading to potential catastrophic losses in the future.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Risk-adjusted metrics like the Sharpe ratio would confirm whether returns were achieved through skill rather than excessive risk.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Market conditions over a ten-year period may have been unusually favorable, making high returns less attributable to individual skill.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Consistent outperformance across different market cycles would indicate skill rather than luck.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

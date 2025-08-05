@@ -1,0 +1,271 @@
+{
+  "claim": "If a US investor makes more than 15% returns every year for ten years, we cannot definitely conclude that the investor is skilled due to the potential influence of survivorship bias.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring failed investors, which can distort the perception of skill."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring failed investors, which can distort the perception of skill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even accounting for survivorship bias, consistent 15%+ returns over a decade are statistically improbable without some degree of skill.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Market conditions (e.g., long bull markets) can enable even unskilled investors to achieve such returns, making skill assessment unreliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is mitigated in academic studies that track all investors, not just survivors, and still find persistent skill differences.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such studies often suffer from data-mining biases or fail to control for risk factors that explain apparent skill.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Financial markets have periods of high returns where even unskilled investors may achieve 15% returns annually due to favorable conditions."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Financial markets have periods of high returns where even unskilled investors may achieve 15% returns annually due to favorable conditions.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Consistently achieving 15% returns over a decade requires skill, as market conditions fluctuate and most investors fail to sustain such performance.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Survivorship bias means we only observe successful investors, ignoring those who failed, making it hard to isolate skill from luck.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Historical data shows that some passive index funds have achieved similar returns over long periods without active management.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Statistical analysis shows that consistent outperformance over a decade could still occur by random chance in a large sample of investors."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Statistical analysis shows that consistent outperformance over a decade could still occur by random chance in a large sample of investors.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The probability of consistently achieving 15%+ returns purely by chance decreases exponentially with time, making random chance highly unlikely over a decade.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with low probability, large financial markets have enough participants that extreme outliers due to luck alone are statistically expected.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is mitigated when studying pre-selected investors with verifiable track records, not just surviving funds.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Verifiable track records themselves may suffer from reporting bias or selective disclosure, preserving survivorship concerns.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Academic research in finance, such as the efficient market hypothesis, suggests that persistent outperformance is rare and difficult to attribute solely to skill."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Academic research in finance, such as the efficient market hypothesis, suggests that persistent outperformance is rare and difficult to attribute solely to skill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors, like Warren Buffett, have consistently outperformed the market over long periods, demonstrating that skill can indeed play a significant role.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Buffett's success may be an outlier or result from unique access to information and resources not available to typical investors, making it an exception rather than the rule.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The efficient market hypothesis itself has been challenged by behavioral finance research, which shows that markets are not always perfectly efficient.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if markets are not perfectly efficient, the majority of investors still fail to consistently outperform, supporting the rarity of skill-based outperformance.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Historical data indicates that many top-performing investors in one decade underperform in the next, suggesting luck may play a significant role."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Historical data indicates that many top-performing investors in one decade underperform in the next, suggesting luck may play a significant role.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors consistently outperform the market across multiple decades, indicating skill rather than luck.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Long-term outperformance can often be attributed to specific, repeatable investment strategies rather than random chance.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias means we only observe the successful investors, while many others with similar strategies fail and are forgotten.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Academic studies control for survivorship bias and still identify a subset of investors with statistically significant alpha.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Without comparing the investor's returns to a benchmark or adjusting for risk, it is impossible to definitively attribute success to skill."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Without comparing the investor's returns to a benchmark or adjusting for risk, it is impossible to definitively attribute success to skill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Even without benchmarking, consistently high returns over a decade strongly suggest skill, as randomness alone is unlikely to sustain such performance.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Survivorship bias means we only observe successful investors, making it statistically likely that some achieve high returns by chance without skill.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In bull markets, even unskilled investors can achieve high returns, making benchmarking essential to isolate skill.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

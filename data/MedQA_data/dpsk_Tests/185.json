@@ -1,0 +1,190 @@
+{
+  "claim": "Consider the following background information: A 5-year-old female suffers from recurrent infections by Aspergillus species, Pseudomonas species, and Staphylococcus aureus. The patient\"s neutrophils are examined in the laboratory and they fail to react during the nitroblue tetrazolium test.\n\nGiven the background information the following is corrrect: In this patient, the lymphocytes are most likely dysfunctional.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The nitroblue tetrazolium (NBT) test primarily assesses neutrophil function, not lymphocyte function, so a dysfunctional NBT test does not directly indicate lymphocyte dysfunction."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The nitroblue tetrazolium (NBT) test primarily assesses neutrophil function, not lymphocyte function, so a dysfunctional NBT test does not directly indicate lymphocyte dysfunction.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Recurrent infections by Aspergillus, Pseudomonas, and Staphylococcus aureus are strongly associated with neutrophil dysfunction, but lymphocyte dysfunction can also contribute to such infections.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The NBT test is highly specific for chronic granulomatous disease (CGD), a neutrophil disorder, and does not rule out concurrent lymphocyte dysfunction.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's recurrent infections could also be due to a combined immunodeficiency involving both neutrophils and lymphocytes.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.5,
+            "B1": 0.55
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Recurrent infections by Aspergillus, Pseudomonas, and Staphylococcus aureus are more commonly associated with neutrophil dysfunction (e.g., chronic granulomatous disease) rather than lymphocyte dysfunction."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Recurrent infections by Aspergillus, Pseudomonas, and Staphylococcus aureus are more commonly associated with neutrophil dysfunction (e.g., chronic granulomatous disease) rather than lymphocyte dysfunction.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While neutrophil dysfunction is common in these infections, combined immunodeficiencies can also present with similar infections due to broader immune dysfunction.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The nitroblue tetrazolium test specifically assesses neutrophil function, strongly suggesting neutrophil dysfunction as the primary issue in this patient.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Lymphocyte dysfunction alone rarely causes recurrent Aspergillus infections, which are more indicative of phagocyte defects.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.3
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Severe combined immunodeficiencies (SCID) can present with both lymphocyte and phagocyte dysfunction, potentially explaining the infection pattern.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.6
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Lymphocyte dysfunction typically presents with recurrent viral or fungal infections, not the bacterial and fungal infections described in this case."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Lymphocyte dysfunction typically presents with recurrent viral or fungal infections, not the bacterial and fungal infections described in this case.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Chronic granulomatous disease (CGD) is more consistent with the described infections and nitroblue tetrazolium test results, not lymphocyte dysfunction.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "CGD primarily affects neutrophil function, explaining the bacterial and fungal infections, while lymphocyte dysfunction would lead to different infection patterns.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Some combined immunodeficiencies can present with both bacterial and fungal infections, complicating the distinction between neutrophil and lymphocyte dysfunction.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.6
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The nitroblue tetrazolium test specifically assesses neutrophil oxidative burst, further supporting neutrophil dysfunction over lymphocyte dysfunction.",
+          "confidence": 0.95,
+          "attacks": {
+            "A3": 0.9
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The clinical presentation and laboratory findings are more consistent with a primary neutrophil disorder, such as chronic granulomatous disease, rather than a lymphocyte disorder."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The clinical presentation and laboratory findings are more consistent with a primary neutrophil disorder, such as chronic granulomatous disease, rather than a lymphocyte disorder.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Recurrent infections by Aspergillus, Pseudomonas, and Staphylococcus aureus are also seen in severe combined immunodeficiency (SCID), which involves dysfunctional lymphocytes.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "SCID typically presents with a broader range of infections, including viral and opportunistic infections, not just bacterial and fungal infections as seen here.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The nitroblue tetrazolium test is specific for neutrophil function, but lymphocyte dysfunction can coexist with neutrophil disorders.",
+          "confidence": 0.6,
+          "attacks": {
+            "A4": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Coexisting lymphocyte dysfunction would likely present with additional infections beyond those typically seen in chronic granulomatous disease.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    }
+  }
+}

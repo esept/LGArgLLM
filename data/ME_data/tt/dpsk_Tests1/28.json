@@ -1,0 +1,217 @@
+{
+  "claim": "Does the equation 4 + 2 \u00d7 3 = 18 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication is performed before addition, so 2 \u00d7 3 = 6, then 4 + 6 = 10, not 18.",
+        "confidence": 1.0,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the standard order of operations (PEMDAS/BODMAS), multiplication is performed before addition, so 2 \u00d7 3 = 6, then 4 + 6 = 10, not 18.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some programming languages or calculators may use left-to-right evaluation by default, leading to 4 + 2 = 6, then 6 \u00d7 3 = 18.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Left-to-right evaluation without operator precedence is non-standard and explicitly discouraged in mathematical conventions.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The equation could be interpreted with implicit parentheses as (4 + 2) \u00d7 3 if written ambiguously.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical notation conventions require explicit parentheses for such grouping; absence implies standard PEMDAS rules.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If the equation were interpreted left-to-right without regard for operation precedence (incorrectly), 4 + 2 = 6, then 6 \u00d7 3 = 18, but this violates mathematical conventions.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If the equation were interpreted left-to-right without regard for operation precedence (incorrectly), 4 + 2 = 6, then 6 \u00d7 3 = 18, but this violates mathematical conventions.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Standard mathematical conventions (PEMDAS/BODMAS) dictate that multiplication precedes addition, making the correct evaluation 2 \u00d7 3 = 6, then 4 + 6 = 10.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Educational curricula globally enforce operation precedence rules, leaving no ambiguity for correct interpretation.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Casual calculators or programming languages with strict left-to-right parsing could produce 18, demonstrating real-world inconsistency.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such tools typically warn users or provide settings to enforce standard precedence, mitigating misinterpretation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mathematical consensus and educational curricula universally enforce operation precedence, making the claim false under standard rules.",
+        "confidence": 1.0,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematical consensus and educational curricula universally enforce operation precedence, making the claim false under standard rules.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some programming languages and calculators use left-to-right evaluation, which could result in 18 if precedence is ignored.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Left-to-right evaluation is non-standard in mathematics and explicitly discouraged in educational settings.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Alternative notations, like reverse Polish notation, eliminate ambiguity but still prioritize multiplication over addition.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reverse Polish notation is not commonly taught in basic arithmetic, so it doesn't invalidate standard precedence rules.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Historical mathematical texts sometimes used different precedence rules, creating ambiguity in interpretation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Modern mathematical notation has standardized precedence since the early 20th century, overriding historical variations.",
+          "confidence": 0.95,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In non-standard contexts where operation precedence is explicitly redefined (e.g., a programming language with custom rules), the claim could hold, but such cases are exceptions, not the norm.",
+        "confidence": 0.6,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In non-standard contexts where operation precedence is explicitly redefined (e.g., a programming language with custom rules), the claim could hold, but such cases are exceptions, not the norm.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Standard mathematical conventions (PEMDAS/BODMAS) dictate that multiplication precedes addition, making the equation 4 + 2 \u00d7 3 = 10, not 18.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Custom operation precedence is rare and context-dependent, making the claim misleading without explicit disclaimers about the non-standard context.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Educational systems universally teach standard operation precedence, so the claim risks spreading mathematical misinformation.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in programming, custom precedence rules are documented and predictable, not arbitrary exceptions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

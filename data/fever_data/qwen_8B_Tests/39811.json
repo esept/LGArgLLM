@@ -1,0 +1,212 @@
+{
+  "claim": "Benjamin Franklin was not born on April 17th, 1790.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Benjamin Franklin's birthdate is recorded as January 17th, 1706 in official historical documents and biographies.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Benjamin Franklin's birthdate is recorded as January 17th, 1706 in official historical documents and biographies.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The official documents citing January 17th, 1706 as Franklin's birthdate are not trustworthy due to potential forgery.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The date April 17th, 1790 is a widely circulated myth that contradicts A1's claim.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The historical documents in question are authenticated by multiple reputable sources and cross-referenced with contemporary records.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "There is evidence suggesting Franklin's birthdate was originally recorded as April 17th, 1706 before being altered.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The sources cited for the authenticity of the documents are biased or lack credibility.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The evidence for a date change is circumstantial and not supported by primary sources.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Multiple reputable biographical sources confirm Franklin was born in January 1706, not April 1790.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Multiple reputable biographical sources confirm Franklin was born in January 1706, not April 1790.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The sources cited in A2 are outdated or not peer-reviewed.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B2",
+          "text": "Franklin's birth date is actually April 17, 1706, which is sometimes misreported as 1790 due to a common historical error.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C1",
+          "text": "The sources in A2 are indeed reputable and include academic publications.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "The confusion between 1706 and 1790 is a misunderstanding; Franklin was born in 1706 and died in 1790.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "Academic publications can still contain errors if not properly verified.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D2",
+          "text": "The death year is irrelevant to the birth date; the original claim is about birth.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "S"
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Franklin died on April 17th, 1790; it is implausible he was born on the same day of the same year.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Franklin died on April 17th, 1790; it is implausible he was born on the same day of the same year.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "People can technically be born and die on the same day; this does not disprove Franklin's birthdate.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B2",
+          "text": "Historical documents explicitly state Benjamin Franklin was born on January 17th, 1696.",
+          "confidence": 0.95,
+          "attacks": [
+            "A3"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C1",
+          "text": "The probability of being born and dying on identical dates is statistically negligible; this strengthens implausibility.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "The cited historical documents about Franklin's birthdate lack credible sources or verification.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "Statistical rarity does not equate to impossibility; alternative explanations exist for Franklin's birthdate.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D2",
+          "text": "The absence of verified sources for Franklin's birthdate undermines claims of definitive documentation.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "S"
+        }
+      ]
+    }
+  }
+}

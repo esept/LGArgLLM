@@ -1,0 +1,435 @@
+{
+  "claim": "A 62-year-old female presents to her primary care provider complaining of a mass near her right jaw. She reports that the mass is painless and has grown very slowly over the past six months. She initially did not see a physician due to being very busy at her work as a lawyer. However, she reports that she noticed some right-sided facial weakness in the past week which prompted her to visit the physician. Her past medical history is notable for Hodgkins lymphoma as a child which required radiation therapy to the neck. She has a 20 pack-year smoking history and drinks alcohol socially. Her temperature is 98.6\u00b0F (37\u00b0C), blood pressure is 120/85 mmHg, pulse is 85/min, and respirations are 18/min. Physical examination reveals a painless firm mass at the angle of the right jaw. There is also a small palpable firm mass beneath the floor of the mouth. A right facial droop along with an inability to elevate her right eyebrow is noted. A biopsy of one of this lesion would most likely reveal which of the following? : Cystic configurations of anaplastic squamous and mucoid cells",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's history of radiation therapy to the neck for Hodgkin's lymphoma significantly increases her risk for secondary malignancies, including mucoepidermoid carcinoma, which can present as described.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of radiation therapy to the neck for Hodgkin's lymphoma significantly increases her risk for secondary malignancies, including mucoepidermoid carcinoma, which can present as described.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's smoking history and alcohol use are more likely to explain the current presentation, as squamous cell carcinoma is strongly associated with these risk factors and is more common than mucoepidermoid carcinoma.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The facial droop and inability to elevate the eyebrow suggest nerve involvement, which is more characteristic of adenoid cystic carcinoma than mucoepidermoid carcinoma.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While smoking and alcohol are risk factors for squamous cell carcinoma, the patient's history of radiation therapy is a more significant risk factor for mucoepidermoid carcinoma in this context.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Adenoid cystic carcinoma typically has a slower progression and less prominent mass effect compared to the rapid facial weakness observed here, making mucoepidermoid carcinoma more likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The combination of smoking, alcohol use, and radiation therapy could synergistically increase the risk of both squamous cell carcinoma and mucoepidermoid carcinoma, making it difficult to distinguish based on risk factors alone.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The presence of a firm mass beneath the floor of the mouth is more consistent with mucoepidermoid carcinoma than adenoid cystic carcinoma, which often presents with perineural invasion but less prominent mass formation.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The painless, slow-growing mass with recent facial weakness is highly suggestive of a malignant neoplasm, and the cystic configurations of anaplastic squamous and mucoid cells are characteristic of mucoepidermoid carcinoma.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The painless, slow-growing mass with recent facial weakness is highly suggestive of a malignant neoplasm, and the cystic configurations of anaplastic squamous and mucoid cells are characteristic of mucoepidermoid carcinoma.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of radiation therapy to the neck for Hodgkins lymphoma increases the likelihood of radiation-induced sarcoma, which can also present as a painless, slow-growing mass.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's 20 pack-year smoking history and social alcohol use are significant risk factors for squamous cell carcinoma, which could present similarly and should be considered in the differential diagnosis.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Facial weakness and inability to elevate the eyebrow suggest cranial nerve involvement, which is more commonly associated with adenoid cystic carcinoma rather than mucoepidermoid carcinoma.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Radiation-induced sarcomas typically occur decades after radiation exposure, and the patient's childhood treatment makes this timeline plausible for such a diagnosis.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While squamous cell carcinoma is a consideration, the cystic configurations described are not typical of this malignancy, making it less likely than mucoepidermoid carcinoma.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Adenoid cystic carcinoma often presents with perineural invasion causing cranial nerve palsies, but the cystic configurations of anaplastic squamous and mucoid cells are more characteristic of mucoepidermoid carcinoma.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The latency period for radiation-induced sarcomas can vary widely, and some cases have been reported to occur within 10 years of radiation exposure, making this a possible diagnosis despite the long interval.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Squamous cell carcinoma can sometimes show cystic degeneration, particularly in metastatic lesions, which could explain the described histologic findings.",
+          "confidence": 0.55,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's 20 pack-year smoking history is a significant risk factor for squamous cell carcinoma, which could present with similar findings but would typically not show mucoid cells.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's 20 pack-year smoking history is a significant risk factor for squamous cell carcinoma, which could present with similar findings but would typically not show mucoid cells.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of radiation therapy to the neck for Hodgkins lymphoma increases her risk for mucoepidermoid carcinoma, which can present with both squamous and mucoid cells.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The slow-growing, painless nature of the mass and the presence of facial weakness suggest a benign tumor like pleomorphic adenoma, which would not show anaplastic cells.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mucoepidermoid carcinoma is more common in the parotid gland, not the jaw or floor of the mouth, making it a less likely diagnosis despite the radiation history.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pleomorphic adenomas typically do not cause facial nerve palsy, which makes this diagnosis less likely despite the slow-growing nature of the mass.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "High-grade mucoepidermoid carcinomas can occur in minor salivary glands, including those in the floor of the mouth, and can present with nerve involvement.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The presence of a firm mass beneath the floor of the mouth and facial droop suggests involvement of the facial nerve, which is more consistent with an aggressive malignancy like mucoepidermoid carcinoma rather than a benign lesion.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The presence of a firm mass beneath the floor of the mouth and facial droop suggests involvement of the facial nerve, which is more consistent with an aggressive malignancy like mucoepidermoid carcinoma rather than a benign lesion.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of radiation therapy to the neck as a child significantly increases her risk for radiation-induced malignancies, which could include other aggressive tumors such as squamous cell carcinoma, not necessarily mucoepidermoid carcinoma.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The slow-growing nature of the mass over six months is less typical of aggressive malignancies like mucoepidermoid carcinoma, which often present with more rapid progression.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While radiation-induced malignancies are a concern, mucoepidermoid carcinoma is still plausible given the facial nerve involvement, which is a hallmark of this tumor's aggressive behavior.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Slow growth does not rule out mucoepidermoid carcinoma entirely, as low-grade variants of this tumor can exhibit indolent progression similar to the patient's presentation.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Facial nerve involvement can also occur in benign tumors like pleomorphic adenomas if they compress the nerve, reducing the specificity of this finding for mucoepidermoid carcinoma.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Low-grade mucoepidermoid carcinomas are rare in the salivary glands of older adults, making this diagnosis statistically less likely despite the slow growth.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The slow-growing nature of the mass and the patient's lack of systemic symptoms (e.g., fever, weight loss) could suggest a benign salivary gland tumor like a pleomorphic adenoma, which would not show anaplastic cells.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The slow-growing nature of the mass and the patient's lack of systemic symptoms (e.g., fever, weight loss) could suggest a benign salivary gland tumor like a pleomorphic adenoma, which would not show anaplastic cells.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of radiation therapy to the neck for Hodgkin's lymphoma significantly increases her risk for secondary malignancies, including mucoepidermoid carcinoma, which could explain the cystic configurations of anaplastic squamous and mucoid cells.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of right-sided facial weakness suggests nerve involvement, which is more characteristic of malignant tumors (e.g., adenoid cystic carcinoma) rather than benign lesions like pleomorphic adenoma.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's 20 pack-year smoking history is a known risk factor for squamous cell carcinoma, which could present as an anaplastic squamous cell lesion, contradicting the benign salivary gland tumor hypothesis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While radiation therapy increases cancer risk, the slow growth and absence of systemic symptoms still favor a benign process, as malignant tumors often grow more rapidly and cause systemic symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Facial nerve involvement can occur in benign tumors due to mechanical compression, not necessarily invasion, so this does not definitively rule out pleomorphic adenoma.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Smoking is a risk factor for squamous cell carcinoma, but the lesion's location and cystic appearance are atypical for this diagnosis, making pleomorphic adenoma more plausible.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Secondary malignancies post-radiation often have indolent growth patterns, similar to the patient's presentation, so the slow growth does not exclude malignancy.",
+          "confidence": 0.74,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The combination of a firm mass and facial weakness is highly suggestive of perineural invasion, a hallmark of malignancy, not just compression.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The combination of squamous and mucoid cells in a cystic configuration is pathognomonic for mucoepidermoid carcinoma, especially given the patient's history of radiation exposure.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The combination of squamous and mucoid cells in a cystic configuration is pathognomonic for mucoepidermoid carcinoma, especially given the patient's history of radiation exposure.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of Hodgkin's lymphoma and radiation therapy could also suggest radiation-induced sarcoma, which may present similarly but does not involve mucoid cells.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The facial weakness and slow-growing mass are more indicative of a benign mixed tumor (pleomorphic adenoma), which can also present with cystic changes but lacks anaplastic features.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's smoking history increases the likelihood of squamous cell carcinoma, which could present with cystic degeneration but typically lacks mucoid cells.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Radiation-induced sarcomas are rare and typically occur decades after radiation exposure, making this less likely given the patient's timeline.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pleomorphic adenomas rarely cause facial nerve weakness unless they are very large or malignant, which contradicts the slow-growing nature described.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Squamous cell carcinoma would more likely present with ulceration or rapid growth, neither of which is reported in this patient.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Radiation-induced sarcomas can occur earlier in patients with additional risk factors like smoking, which this patient has.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Malignant transformation of pleomorphic adenoma can occur and may explain both the slow growth and recent facial weakness.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

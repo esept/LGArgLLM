@@ -1,0 +1,255 @@
+{
+  "claim": "The statement 'x > y' implies that y < x, regardless of context",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The statement 'x > y' is logically equivalent to 'y < x' by the definition of inequality in mathematics."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The statement 'x > y' is logically equivalent to 'y < x' by the definition of inequality in mathematics.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-standard mathematical systems, such as those with partial orders, 'x > y' does not necessarily imply 'y < x'.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard mathematical definitions and conventions overwhelmingly treat 'x > y' and 'y < x' as equivalent, even if edge cases exist.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If 'x' and 'y' are not comparable (e.g., complex numbers without a defined order), the statement 'x > y' is meaningless, and thus cannot imply 'y < x'.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly assumes a context where 'x > y' is meaningful, which inherently implies a standard ordered set where the equivalence holds.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In all ordered sets, the relation 'greater than' for one pair implies the 'less than' relation for the reverse pair."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In all ordered sets, the relation 'greater than' for one pair implies the 'less than' relation for the reverse pair.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This does not hold in non-total orders where elements may be incomparable (e.g., partial orders).",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim explicitly specifies 'ordered sets', which by definition are totally ordered and exclude partial orders.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some programming contexts, operator overloading may redefine '>' and '<' asymmetrically.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mathematical ordered sets follow strict axioms, and programming edge cases do not invalidate the general rule.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The transitive property of inequalities ensures that if 'x > y' is true, then 'y < x' must also be true."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The transitive property of inequalities ensures that if 'x > y' is true, then 'y < x' must also be true.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes x and y are real numbers. For complex numbers, 'x > y' is undefined, so the implication fails.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard mathematical contexts, inequalities are only defined for real numbers, so the original implication holds in its intended domain.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In non-standard number systems like surreal numbers, the inequality relation may have different properties.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'regardless of context', making it false for non-standard contexts where inequalities behave differently.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematical axioms universally accept that 'x > y' and 'y < x' are interchangeable statements."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematical axioms universally accept that 'x > y' and 'y < x' are interchangeable statements.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-standard mathematical systems (e.g., surreal numbers or certain partial orders), 'x > y' and 'y < x' may not always be equivalent due to unconventional definitions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard mathematical practice and education overwhelmingly treat 'x > y' and 'y < x' as interchangeable, making edge cases irrelevant for most practical purposes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The symmetry of inequality relations in algebra guarantees that 'x > y' directly implies 'y < x'."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The symmetry of inequality relations in algebra guarantees that 'x > y' directly implies 'y < x'.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-standard algebras or unconventional mathematical systems, the symmetry of inequality relations may not hold, making the implication context-dependent.",
+          "confidence": 0.45,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard algebraic systems universally enforce the symmetry of inequality relations, making non-standard cases irrelevant for typical mathematical reasoning.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If 'x' and 'y' are not comparable (e.g., complex numbers without a defined order), the statement 'x > y' is undefined, breaking the implication.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly assumes a context where 'x > y' is defined, such as real numbers, making non-comparable cases irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Standard mathematical notation and textbooks define 'x > y' and 'y < x' as expressing the same relationship between x and y."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Standard mathematical notation and textbooks define 'x > y' and 'y < x' as expressing the same relationship between x and y.",
+          "confidence": 0.98,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some non-standard mathematical systems or unconventional notations, 'x > y' and 'y < x' may not be strictly equivalent due to alternative definitions of inequality.",
+          "confidence": 0.35,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Non-standard mathematical systems are rare and typically explicitly defined, so they do not invalidate the general equivalence in standard contexts.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

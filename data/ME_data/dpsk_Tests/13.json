@@ -1,0 +1,271 @@
+{
+  "claim": "Stocks always provide guaranteed returns",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Stock prices are subject to market volatility, which means they can decrease in value, leading to losses for investors."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Stock prices are subject to market volatility, which means they can decrease in value, leading to losses for investors.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Historically, the stock market has trended upwards over the long term, providing positive returns despite short-term volatility.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Long-term upward trends do not guarantee individual stocks will recover; some companies fail permanently, resulting in total loss.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Diversified portfolios mitigate individual stock risks, ensuring overall returns even if some holdings lose value.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Market-wide crashes (e.g., 2008, 2020) can cause simultaneous losses across diversified portfolios, contradicting guaranteed returns.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Economic downturns or recessions can cause widespread declines in stock prices, negating any guarantee of returns."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Economic downturns or recessions can cause widespread declines in stock prices, negating any guarantee of returns.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Historically, stock markets have recovered from downturns and provided positive returns over the long term.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Long-term recovery does not negate short-term losses, which can be financially devastating for investors needing liquidity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Diversified portfolios and index funds mitigate the risk of individual stock declines, providing more stable returns.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even diversified portfolios can suffer significant losses during systemic crises, such as the 2008 financial crash.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Company-specific risks, such as poor management or bankruptcy, can result in a stock losing all its value."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Company-specific risks, such as poor management or bankruptcy, can result in a stock losing all its value.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Diversification across multiple stocks can mitigate company-specific risks, ensuring overall portfolio growth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even diversified portfolios can suffer systemic risks like market crashes, which affect all stocks negatively.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Historical data shows that over long periods, diversified stock portfolios have consistently recovered from crashes and provided positive returns.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Historical data shows periods where stock markets have experienced prolonged declines, such as the Great Depression or the 2008 financial crisis."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Historical data shows periods where stock markets have experienced prolonged declines, such as the Great Depression or the 2008 financial crisis.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Over long-term horizons, stock markets have consistently trended upwards despite temporary downturns.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Long-term upward trends do not negate the possibility of significant losses during specific investment periods.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Diversified portfolios and dollar-cost averaging mitigate the risks of market downturns.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mitigation strategies reduce but do not eliminate risk, and some investors may still face losses.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Inflation can erode the real returns of stocks, making them less valuable even if nominal returns are positive."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Inflation can erode the real returns of stocks, making them less valuable even if nominal returns are positive.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Historically, stocks have outpaced inflation over the long term, preserving and growing real wealth.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In high-inflation environments, stock returns may not keep up with inflation, leading to real losses.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Diversified stock portfolios often include inflation-resistant sectors (e.g., commodities, real estate) that mitigate inflation risk.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Investors may be forced to sell stocks at a loss due to personal financial emergencies, regardless of market conditions."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Investors may be forced to sell stocks at a loss due to personal financial emergencies, regardless of market conditions.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Stocks historically outperform other asset classes over the long term, making losses temporary for patient investors.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Long-term holding is not always feasible due to unforeseen life events, forcing investors to realize losses regardless of historical trends.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Proper financial planning and emergency funds can prevent forced liquidation of stocks during personal crises.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with emergency funds, severe or prolonged financial hardships can exhaust reserves and still necessitate stock sales at inopportune times.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

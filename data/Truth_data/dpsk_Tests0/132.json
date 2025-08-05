@@ -1,0 +1,224 @@
+{
+  "claim": "People drink less coffee in the US than in Mexico.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Per capita coffee consumption in the US is higher than in Mexico, according to data from the International Coffee Organization."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Per capita coffee consumption in the US is higher than in Mexico, according to data from the International Coffee Organization.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The International Coffee Organization's data may not account for informal coffee consumption in Mexico, such as home-brewed or street-vendor coffee.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even accounting for informal consumption, formal data still shows significantly higher per capita coffee consumption in the US.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Coffee culture in Mexico is more about traditional, less frequent consumption, whereas the US has a higher frequency of daily coffee drinkers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Traditional Mexican coffee consumption may be less frequent but involves stronger brews, potentially balancing out the per capita consumption.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The US has a larger population than Mexico, so total coffee consumption is higher in the US, even if per capita rates differ."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The US has a larger population than Mexico, so total coffee consumption is higher in the US, even if per capita rates differ.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Per capita coffee consumption in Mexico is significantly higher than in the US, which supports the claim that people drink less coffee in the US on an individual basis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Total consumption is not a reliable metric for comparing drinking habits between countries with vastly different populations.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if per capita rates differ, the claim is about total consumption, not individual habits.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Coffee culture is deeply ingrained in Mexico, with traditional beverages like caf\u00e9 de olla being widely consumed, suggesting higher per capita consumption."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Coffee culture is deeply ingrained in Mexico, with traditional beverages like caf\u00e9 de olla being widely consumed, suggesting higher per capita consumption.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The US has a larger population and higher overall coffee consumption, which could offset per capita differences.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Per capita consumption is a better metric than total consumption for comparing coffee drinking habits between countries.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Coffee consumption in Mexico is often concentrated in specific regions, while in the US it is more uniformly distributed.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regional concentration does not necessarily lower per capita consumption if the regions in question have high population density.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The US has a higher preference for specialty coffee and premium brands, which may lead to higher overall consumption despite lower per capita rates in some demographics."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The US has a higher preference for specialty coffee and premium brands, which may lead to higher overall consumption despite lower per capita rates in some demographics.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Per capita coffee consumption in Mexico is significantly higher than in the US, according to data from the International Coffee Organization.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Specialty coffee consumption in the US is concentrated in urban areas and does not represent nationwide habits.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mexicans drink coffee more frequently throughout the day, including traditional beverages like caf\u00e9 de olla, which increases total consumption.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Mexico is a major coffee producer, which may lead to higher local consumption due to accessibility and cultural practices."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Mexico is a major coffee producer, which may lead to higher local consumption due to accessibility and cultural practices.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The US has a much larger population than Mexico, which could lead to higher total coffee consumption despite lower per capita consumption.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Per capita coffee consumption in the US is actually higher than in Mexico, according to recent statistics.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural preferences in the US favor other beverages like soda and energy drinks over coffee.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Coffee culture in the US has grown significantly, with specialty coffee shops becoming increasingly popular.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

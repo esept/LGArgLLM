@@ -1,0 +1,248 @@
+{
+  "claim": "There is no strong scientific evidence that breastfeeding your child makes them much smarter.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Large-scale longitudinal studies, such as those by the World Health Organization, show that while breastfeeding has health benefits, its impact on IQ is modest and often confounded by socioeconomic factors."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Large-scale longitudinal studies, such as those by the World Health Organization, show that while breastfeeding has health benefits, its impact on IQ is modest and often confounded by socioeconomic factors.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some meta-analyses, like the one published in JAMA Pediatrics, found a statistically significant IQ increase (3-5 points) in breastfed children after controlling for socioeconomic factors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The IQ difference found in those studies may still be influenced by unmeasured confounding variables like maternal education quality or home environment stimulation.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Neuroimaging studies show breastfed infants have accelerated white matter development, which is directly linked to cognitive function.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These neurodevelopmental differences don't necessarily translate to measurable intelligence differences in adulthood due to neuroplasticity.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Meta-analyses of breastfeeding research indicate that any cognitive advantages attributed to breastfeeding typically disappear when controlling for maternal education and family environment."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Meta-analyses of breastfeeding research indicate that any cognitive advantages attributed to breastfeeding typically disappear when controlling for maternal education and family environment.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some longitudinal studies show persistent IQ differences of 3-5 points in breastfed children even after controlling for socioeconomic factors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The IQ differences in those studies could be explained by unmeasured confounding variables like parenting style or maternal bonding time.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The biological components of breast milk (DHA, AA) are scientifically proven to support brain development in infants.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "These nutrients can be adequately provided through fortified formula, eliminating any biological advantage of breastfeeding.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The American Academy of Pediatrics acknowledges that breastfeeding supports immune health but does not assert significant long-term cognitive differences compared to formula-fed children."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The American Academy of Pediatrics acknowledges that breastfeeding supports immune health but does not assert significant long-term cognitive differences compared to formula-fed children.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Meta-analyses of observational studies show a modest but statistically significant increase in IQ scores among breastfed children, even after controlling for socioeconomic factors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The observed IQ differences in meta-analyses may be due to residual confounding variables not fully accounted for, such as maternal bonding or parenting styles.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The AAP's position reflects clinical consensus rather than a comprehensive rejection of cognitive benefits, as some studies do show neurodevelopmental advantages.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Neurodevelopmental advantages in studies are often small and may not translate to meaningful real-world cognitive differences.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Twin studies, which control for genetic and environmental variables, show no substantial IQ differences between breastfed and non-breastfed siblings."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Twin studies, which control for genetic and environmental variables, show no substantial IQ differences between breastfed and non-breastfed siblings.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Twin studies may not fully account for variations in breastfeeding duration, exclusivity, or maternal bonding, which could influence cognitive outcomes.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Meta-analyses of twin studies show consistent patterns across large sample sizes, reducing the impact of individual variations in breastfeeding practices.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some twin studies rely on retrospective self-reports of breastfeeding, which can introduce recall bias and inaccuracies.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies using hospital records or longitudinal designs confirm the findings of twin studies, minimizing recall bias concerns.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Neuroscientific research finds no direct causal mechanism by which breastfeeding alone would lead to markedly higher intelligence in children."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Neuroscientific research finds no direct causal mechanism by which breastfeeding alone would lead to markedly higher intelligence in children.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Observational studies consistently show a correlation between breastfeeding and higher IQ scores, even after controlling for socioeconomic factors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The observed IQ difference in breastfeeding studies is often small (3-5 points) and may not translate to meaningful real-world advantages.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Breast milk contains essential fatty acids crucial for brain development that formula lacks, suggesting a plausible biological mechanism.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern infant formulas are now fortified with these fatty acids, eliminating any potential nutritional advantage of breastfeeding for cognitive development.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The maternal bonding during breastfeeding may stimulate cognitive development through increased interaction, not the milk itself.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    }
+  }
+}

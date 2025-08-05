@@ -1,0 +1,169 @@
+{
+  "claim": "If someone is 40 in 2025, they were 10 in 1995",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Subtracting 40 years from 2025 gives a birth year of 1985, making the person 10 years old in 1995 (1995 - 1985 = 10)."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Subtracting 40 years from 2025 gives a birth year of 1985, making the person 10 years old in 1995 (1995 - 1985 = 10).",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the person has already had their birthday in 2025. If their birthday is later in the year, they would still be 39 in 2025 and thus 9 in 1995.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most legal and common usage contexts, age is calculated based on the current year minus the birth year, regardless of the exact birthday date within the year.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gregorian calendar was not universally adopted in 1985; some regions may have used different calendars, affecting age calculation.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The difference between 2025 and 1995 is 30 years, so someone who is 40 in 2025 would have been 40 - 30 = 10 years old in 1995."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The difference between 2025 and 1995 is 30 years, so someone who is 40 in 2025 would have been 40 - 30 = 10 years old in 1995.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "This assumes the person's birthday has already occurred in 2025 when the age is calculated. If their birthday is later in the year, they would still be 39 in early 2025, making them 9 in 1995.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar accounts for leap years, meaning the exact age calculation could vary by a day depending on birth date, though this is negligible for most purposes.",
+          "confidence": 0.3,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument ignores relativistic effects from time dilation, though these are negligible at everyday speeds and time spans.",
+          "confidence": 0.1,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "A person born in 1985 would turn 10 in 1995 (1985 + 10 = 1995) and 40 in 2025 (1985 + 40 = 2025)."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "A person born in 1985 would turn 10 in 1995 (1985 + 10 = 1995) and 40 in 2025 (1985 + 40 = 2025).",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes the person was born on or before January 1, 1985. If born later in 1985, they would not yet be 40 in 2025.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if born later in 1985, they would still turn 40 at some point in 2025, just not necessarily by January 1, 2025.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim is ambiguous about whether '40 in 2025' refers to being exactly 40 or at least 40.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard interpretation of such age statements refers to the age a person turns in that year, not necessarily exact age on January 1.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The age progression is linear: 10 years in 1995 to 40 years in 2025 is consistent with a 30-year time span (2025 - 1995 = 30)."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The age progression is linear: 10 years in 1995 to 40 years in 2025 is consistent with a 30-year time span (2025 - 1995 = 30).",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Age is calculated based on birth year, not just time span. If someone was born in 1985, they would be 10 in 1995 and 40 in 2025, but this is not universally true for all birth years.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim assumes the person was born in 1985, but this is not explicitly stated. Without a specified birth year, the age calculation is incomplete.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original argument (A4) is mathematically correct for the specific case where the person was born in 1985, which aligns with the given ages and years.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

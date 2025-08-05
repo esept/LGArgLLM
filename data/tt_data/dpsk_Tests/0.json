@@ -1,0 +1,293 @@
+{
+  "claim": "The human body has 206 bones",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Standard anatomy textbooks, such as Gray's Anatomy, consistently state that the adult human body has 206 bones."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Standard anatomy textbooks, such as Gray's Anatomy, consistently state that the adult human body has 206 bones.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals have anatomical variations, such as extra ribs or sesamoid bones, which can increase the total bone count beyond 206.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "These variations are rare and do not change the standard definition used in medical education and practice.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Children have more than 206 bones at birth, which fuse together as they grow, making the 206 count only applicable to adults.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The claim implicitly refers to the adult human body, as this is the standard context in anatomical references.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Medical imaging techniques, like X-rays and CT scans, confirm the presence of 206 distinct bones in a typical adult human skeleton."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Medical imaging techniques, like X-rays and CT scans, confirm the presence of 206 distinct bones in a typical adult human skeleton.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals have anatomical variations, such as extra ribs or sesamoid bones, which can increase the total bone count beyond 206.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "These variations are rare and do not change the standard anatomical definition of 206 bones for the typical human skeleton.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Medical imaging can sometimes miss fused bones or count them separately, leading to potential inaccuracies in bone counts.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern imaging techniques have high resolution and accuracy, minimizing errors in bone counting.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "The count of 206 bones is based on the fusion of smaller bones during development, such as the fusion of the skull bones, which reduces the total number from the higher count seen in infants."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The count of 206 bones is based on the fusion of smaller bones during development, such as the fusion of the skull bones, which reduces the total number from the higher count seen in infants.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The count of 206 bones is not universal, as some individuals may retain additional bones like sesamoid bones or have anatomical variations.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Sesamoid bones and anatomical variations are exceptions and do not invalidate the standard count of 206 bones for the typical human body.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The count of 206 bones excludes teeth, which are also part of the skeletal system, suggesting the total count is higher.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Teeth are classified separately from bones due to their different composition and developmental origin, so they are not included in the standard bone count.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Comparative anatomy studies across diverse human populations show no significant variation in the total number of bones, supporting the universality of the 206-bone count."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Comparative anatomy studies across diverse human populations show no significant variation in the total number of bones, supporting the universality of the 206-bone count.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals have anatomical variations like extra ribs or sesamoid bones, which can increase the total bone count beyond 206.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "These variations are rare and clinically insignificant, so the 206-bone count remains a valid standard for general human anatomy.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Comparative anatomy studies often exclude populations with high rates of congenital bone abnormalities, potentially skewing the universality claim.",
+          "confidence": 0.55,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Modern large-scale studies include diverse populations and still confirm 206 bones as the typical count, minimizing selection bias.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Educational curricula worldwide, including those in biology and medicine, uniformly teach that the human body has 206 bones, reflecting a broad consensus."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Educational curricula worldwide, including those in biology and medicine, uniformly teach that the human body has 206 bones, reflecting a broad consensus.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The number of bones can vary due to individual differences such as sesamoid bones or accessory bones, which are not accounted for in the standard count of 206.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Sesamoid and accessory bones are relatively rare and do not significantly alter the standard count of 206 bones for the vast majority of the population.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some medical sources note that infants are born with around 270 bones, which fuse over time, suggesting the number is not static across a lifespan.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly refers to the adult human body, where the fused bone count is consistently 206, making the infant bone count irrelevant to the claim.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Forensic science relies on the 206-bone count for skeletal identification, demonstrating its practical application and validation in real-world scenarios."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Forensic science relies on the 206-bone count for skeletal identification, demonstrating its practical application and validation in real-world scenarios.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The 206-bone count is an average; individual variation exists due to sesamoid bones or fused vertebrae.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Forensic databases account for natural variation by including ranges, not rigid counts, in identification protocols.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Children have ~270 bones that fuse during growth, making the 206-count inapplicable to pediatric cases.",
+          "confidence": 0.88,
+          "attacks": {
+            "A6": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Forensic anthropology uses distinct juvenile/adult skeletal atlases, so the 206-bone standard remains valid for adult cases.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

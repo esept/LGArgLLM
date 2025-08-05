@@ -1,0 +1,343 @@
+{
+  "claim": "Consider the following background information: A 16-year-old female presents to her primary care physician due to lack of menstruation. She has never had a period and is anxious that she is not \u201ckeeping up\u201d with her friends. She states that her breasts began developing when she was 13, and she had a growth spurt around the same time. Review of systems reveals that she has also been getting headaches every few months over the last year with some photosensitivity and nausea each time. Ibuprofen relieves her symptoms. The patient is a competitive ice skater and has never been sexually active. Her mother has a history of migraine headaches, and her older sister has a history of bipolar disorder. Both underwent menarche at age 15. At this visit, the patient\u2019s temperature is 98.6\u00b0F (37.0\u00b0C), pulse is 70/min, blood pressure is 118/65 mmHg, and respirations are 13/min. Her body mass index is 23.8 kg/m^2. Cardiopulmonary and abdominal exams are unremarkable. Both breasts are Tanner IV with no expressable discharge. Pelvic and axillary hair growth is also Tanner IV. The patient is unable to tolerate a full pelvic exam, but the part of the vaginal canal that is examined is unremarkable. Laboratory studies are ordered and are below:  Serum: Na+: 139 mEq/L K+: 4.1 mEq/L Cl-: 100 mEq/L HCO3-: 24 mEq/L Urea nitrogen: 12 mg/dL Glucose: 73 mg/dL Creatinine: 0.9 mg/dL Ca2+: 9.7 mg/dL Mg2+: 1.7 mEq/L AST: 11 U/L ALT: 11 U/L Follicle Stimulating Hormone (FSH): 16.2 mIU/mL (4.7-21.5 mIU/ml) Estrogen: 240 pg/mL (64-357 pg/mL)  Abdominal ultrasound is performed and shows a normal uterus and ovaries.\n\nGiven the background information the following is corrrect: Based on the information provided, the most likely diagnosis is a vaginal septum.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's normal secondary sexual characteristics (Tanner IV) and normal hormone levels (FSH and estrogen) suggest that her hypothalamic-pituitary-ovarian axis is functioning properly, making a vaginal septum a plausible structural cause for her primary amenorrhea."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's normal secondary sexual characteristics (Tanner IV) and normal hormone levels (FSH and estrogen) suggest that her hypothalamic-pituitary-ovarian axis is functioning properly, making a vaginal septum a plausible structural cause for her primary amenorrhea.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A vaginal septum typically presents with cyclic pelvic pain due to hematocolpos, which is absent in this patient's history.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of cyclic pain does not rule out a vaginal septum, as some septa may be incomplete or allow partial drainage, mitigating pain.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's competitive ice skating and low body fat could indicate hypothalamic amenorrhea, which is more common in athletes than structural anomalies like a vaginal septum.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypothalamic amenorrhea usually presents with low estrogen levels, which are normal in this patient, making it less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's family history of late menarche (age 15) suggests constitutional delay of puberty, which is a more likely explanation than a structural anomaly.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Constitutional delay usually involves delayed secondary sexual characteristics, which are Tanner IV in this patient, making it less likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The absence of any abnormalities in the pelvic ultrasound and the patient's inability to tolerate a full pelvic exam could indicate an undetected vaginal septum, which would obstruct menstrual flow despite normal uterine and ovarian anatomy."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The absence of any abnormalities in the pelvic ultrasound and the patient's inability to tolerate a full pelvic exam could indicate an undetected vaginal septum, which would obstruct menstrual flow despite normal uterine and ovarian anatomy.",
+          "confidence": 0.65,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A vaginal septum would likely cause hematocolpos (accumulation of menstrual blood behind the septum), which would be detectable on ultrasound as a distended vaginal canal or uterus, neither of which is reported here.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In some cases, a thin or incomplete vaginal septum may not cause significant hematocolpos and could be missed on standard ultrasound, requiring MRI for definitive diagnosis.",
+          "confidence": 0.55,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's normal FSH and estrogen levels, along with Tanner IV breast and pubic hair development, suggest functional hypothalamic amenorrhea due to her high athletic activity rather than an anatomical obstruction.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Functional hypothalamic amenorrhea typically presents with low or low-normal estrogen levels, whereas this patient's estrogen level is well within the normal range.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's history of competitive ice skating and normal BMI suggests that her amenorrhea is unlikely to be caused by excessive exercise or low body weight, further supporting a structural cause like a vaginal septum."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's history of competitive ice skating and normal BMI suggests that her amenorrhea is unlikely to be caused by excessive exercise or low body weight, further supporting a structural cause like a vaginal septum.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While the patient's BMI is normal, competitive ice skating is a high-intensity sport that can still contribute to hypothalamic amenorrhea independent of BMI, making excessive exercise a plausible alternative explanation.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypothalamic amenorrhea typically presents with low or normal FSH and estrogen levels, whereas this patient has normal FSH and high-normal estrogen levels, making a structural cause more likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's Tanner IV breast and pubic hair development with normal FSH and estrogen levels are more consistent with constitutional delay of puberty rather than a structural anomaly like a vaginal septum.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Constitutional delay typically presents with delayed breast development and lower estrogen levels, which are not seen in this patient, making a structural cause more probable.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The absence of dysmenorrhea or cyclic abdominal pain makes a vaginal septum less likely, as most patients with this condition experience obstructive symptoms.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "A non-obstructive vaginal septum can exist without causing pain or dysmenorrhea, particularly if the septum is incomplete or fenestrated.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's family history of normal menarche timing in her mother and sister reduces the likelihood of a genetic or endocrine disorder, making a vaginal septum a more probable diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's family history of normal menarche timing in her mother and sister reduces the likelihood of a genetic or endocrine disorder, making a vaginal septum a more probable diagnosis.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A vaginal septum would likely present with cyclic abdominal pain due to hematometra or hematocolpos, which this patient does not report.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of cyclic pain could be due to the septum being incomplete or non-obstructive, which is a known variant.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's Tanner IV breast development and normal FSH/estrogen levels suggest hypothalamic suppression (e.g., from excessive exercise) rather than an anatomical obstruction.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypothalamic suppression typically causes low estrogen levels, which are not seen here (240 pg/mL is normal).",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "A pelvic MRI would be required to definitively diagnose a vaginal septum, and its absence in the workup weakens this hypothesis.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The presence of cyclical headaches with photosensitivity and nausea, relieved by ibuprofen, could suggest retrograde menstruation due to obstruction by a vaginal septum, though this is not definitive without further imaging."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The presence of cyclical headaches with photosensitivity and nausea, relieved by ibuprofen, could suggest retrograde menstruation due to obstruction by a vaginal septum, though this is not definitive without further imaging.",
+          "confidence": 0.65,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Cyclical headaches with photosensitivity and nausea are classic symptoms of migraines, which are more common in this patient given her family history of migraines and bipolar disorder.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's normal FSH and estrogen levels, along with Tanner IV breast and pubic hair development, suggest normal hypothalamic-pituitary-ovarian axis function, making a vaginal septum less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The abdominal ultrasound showing normal uterus and ovaries does not support the presence of a vaginal septum, as this would likely be detected or associated with other anomalies.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "The patient's competitive ice skating and low body fat could contribute to delayed menarche without any anatomical obstruction.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The patient's normal laboratory values and lack of other systemic symptoms argue against metabolic or endocrine disorders, increasing the likelihood of a localized anatomical issue like a vaginal septum."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's normal laboratory values and lack of other systemic symptoms argue against metabolic or endocrine disorders, increasing the likelihood of a localized anatomical issue like a vaginal septum.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "A vaginal septum would typically present with cyclic abdominal pain due to hematocolpos, which is absent in this patient.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The absence of cyclic pain could be due to incomplete obstruction by the septum, allowing partial menstrual flow.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's Tanner IV development and normal FSH/estrogen levels suggest functional reproductive anatomy, making a vaginal septum less likely than constitutional delay.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Constitutional delay usually presents with delayed pubertal onset, whereas this patient had normal breast development timing.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The patient's athletic activity (competitive ice skating) suggests possible hypothalamic suppression as a more probable cause of primary amenorrhea.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Hypothalamic suppression typically causes low estrogen levels, which are not seen in this patient (240 pg/mL).",
+          "confidence": 0.82,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

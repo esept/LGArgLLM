@@ -1,0 +1,279 @@
+{
+  "claim": "If you swallow gum, nothing will happen to you.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Gum is indigestible and will pass through the digestive system without being broken down, causing no harm."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Gum is indigestible and will pass through the digestive system without being broken down, causing no harm.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Swallowing large amounts of gum can lead to intestinal blockages, especially in children.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intestinal blockages from gum are extremely rare and require very large quantities to occur.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some people may experience mild digestive discomfort or nausea after swallowing gum.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Digestive discomfort from gum is usually temporary and not harmful in the long term.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Swallowing gum in small amounts is harmless, as it will be excreted naturally without causing blockages."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Swallowing gum in small amounts is harmless, as it will be excreted naturally without causing blockages.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Swallowing large amounts of gum can cause intestinal blockages, especially in children.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even small amounts of gum can accumulate over time and potentially cause blockages if swallowed frequently.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may have pre-existing digestive conditions that make even small amounts of gum harmful.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Frequent swallowing of large amounts of gum can lead to intestinal blockages, which contradicts the claim."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Frequent swallowing of large amounts of gum can lead to intestinal blockages, which contradicts the claim.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Intestinal blockages from gum are extremely rare and require swallowing unrealistically large quantities.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even rare cases of blockages are medically documented, proving that the risk, though small, exists.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Gum is designed to be indigestible but passes harmlessly through the digestive system in normal amounts.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Design does not guarantee safety; other indigestible items (e.g., coins) also cause blockages in some cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Medical consensus states that swallowing gum is generally safe, as it does not stick to the intestines or stomach."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Medical consensus states that swallowing gum is generally safe, as it does not stick to the intestines or stomach.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Swallowing large amounts of gum can lead to intestinal blockages, especially in children.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Cases of intestinal blockage from gum are extremely rare and usually involve swallowing very large quantities over time.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may experience mild digestive discomfort or nausea after swallowing gum.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Digestive discomfort from gum is temporary and resolves without medical intervention.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Gum does not dissolve in stomach acid, but it does not cause any adverse effects when swallowed in moderation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Gum does not dissolve in stomach acid, but it does not cause any adverse effects when swallowed in moderation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Swallowing large amounts of gum can lead to intestinal blockages, especially in children.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intestinal blockages from gum are extremely rare and typically require swallowing very large quantities over a short period.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may experience mild digestive discomfort or nausea after swallowing gum.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Digestive discomfort from gum is usually temporary and not medically significant.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "While gum is not digested, it poses no health risks unless swallowed in excessive quantities over a short period."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "While gum is not digested, it poses no health risks unless swallowed in excessive quantities over a short period.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Swallowed gum can cause intestinal blockages, especially in children, even in small quantities.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Cases of intestinal blockages from gum are extremely rare and usually involve pre-existing digestive issues.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Gum may contain artificial sweeteners or other additives that can cause adverse reactions in some individuals.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The additives in gum are generally recognized as safe by health authorities when consumed in typical amounts.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

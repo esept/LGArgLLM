@@ -1,0 +1,193 @@
+{
+  "claim": "If A is older than B, and B is older than C, then C is the youngest",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The transitive property of age comparisons dictates that if A is older than B and B is older than C, then A is also older than C, making C the youngest."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The transitive property of age comparisons dictates that if A is older than B and B is older than C, then A is also older than C, making C the youngest.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes a strict linear order, but if A, B, and C are the same age, then C is not strictly the youngest.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The scenario where A, B, and C are the same age is an edge case and does not invalidate the general transitive property of age comparisons.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument relies on the assumption that 'older than' is a transitive relation, which may not hold in all contexts (e.g., subjective age perceptions).",
+          "confidence": 0.35,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In formal logic and mathematics, 'older than' is universally accepted as a transitive relation, making the argument robust in objective contexts.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "By definition, if C is younger than both B and A, and no other individuals are introduced, C must be the youngest in the group."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "By definition, if C is younger than both B and A, and no other individuals are introduced, C must be the youngest in the group.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes no other individuals exist in the group besides A, B, and C, which may not be true in real-world scenarios.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim explicitly states 'no other individuals are introduced,' making B1's counter-argument irrelevant to the given context.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition relies on a strict transitive property of age, which may not hold if age comparisons are ambiguous (e.g., due to measurement errors or different time zones).",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard age comparisons assume unambiguous and precise measurements, making edge cases like measurement errors or time zones statistically negligible for most practical purposes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The age hierarchy is linear and unambiguous in this scenario, with C at the bottom, confirming it as the youngest."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The age hierarchy is linear and unambiguous in this scenario, with C at the bottom, confirming it as the youngest.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If C is not younger than B and A, the hierarchy collapses, making the conclusion invalid.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The hierarchy remains valid as long as the initial conditions (A > B > C) hold, which they do in this scenario.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument assumes no ties in age, but if B and C are the same age, C is not strictly the youngest.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim specifies 'older than', which implies strict inequality, excluding the possibility of ties.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Given no contradictory information, the logical conclusion from the premises is that C is younger than both A and B, thus the youngest."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Given no contradictory information, the logical conclusion from the premises is that C is younger than both A and B, thus the youngest.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If C is not younger than A or B due to an undisclosed relationship (e.g., C is a title or rank rather than a person), the conclusion may not hold.",
+          "confidence": 0.4,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim specifies 'older than' in a comparative sense, which is unambiguous when referring to age, making the edge case of titles irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The premises assume transitivity of 'older than,' but this may not hold in all contexts (e.g., if 'older than' is interpreted non-chronologically).",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In natural language, 'older than' is universally understood as a transitive, chronological relation unless explicitly stated otherwise.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "claim": "University of Pittsburgh is easier to enter than FBI.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The University of Pittsburgh has an acceptance rate of approximately 64%, which is significantly higher than the FBI's acceptance rate for special agents, which is typically under 20%."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The University of Pittsburgh has an acceptance rate of approximately 64%, which is significantly higher than the FBI's acceptance rate for special agents, which is typically under 20%.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The comparison is invalid because the University of Pittsburgh and the FBI serve entirely different purposes and have different selection criteria.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The FBI's acceptance rate includes rigorous background checks, physical fitness tests, and specialized training requirements, which are not applicable to university admissions.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The University of Pittsburgh's acceptance rate varies by program, with some highly competitive programs having much lower acceptance rates.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Even within the University of Pittsburgh, certain programs like medicine or engineering may have acceptance rates comparable to or lower than the FBI's overall rate.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The FBI requires candidates to pass rigorous physical fitness tests, background checks, and polygraph examinations, which are not required for university admission."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The FBI requires candidates to pass rigorous physical fitness tests, background checks, and polygraph examinations, which are not required for university admission.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "University of Pittsburgh has academic admission requirements like GPA and standardized test scores, which the FBI does not require.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The FBI's physical and background checks are pass/fail, whereas university admissions are competitive and selective based on academic merit.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The FBI accepts candidates from diverse educational backgrounds, while universities like Pittsburgh have stricter prerequisites.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "FBI candidates must also meet age and citizenship requirements, which are irrelevant for university admissions.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "University admissions primarily consider academic performance and standardized test scores, while the FBI evaluates a broader range of qualifications including work experience, skills, and psychological fitness."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "University admissions primarily consider academic performance and standardized test scores, while the FBI evaluates a broader range of qualifications including work experience, skills, and psychological fitness.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The FBI has a lower acceptance rate than most universities, including the University of Pittsburgh, indicating higher selectivity.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Acceptance rates alone do not measure difficulty, as the FBI's applicant pool is self-selected and smaller compared to universities.",
+          "confidence": 0.72,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The University of Pittsburgh has a high acceptance rate (~60%), which suggests lower entry barriers compared to the FBI's rigorous process.",
+          "confidence": 0.8,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "High acceptance rates may reflect less competitive applicant pools rather than inherently easier standards.",
+          "confidence": 0.68,
+          "attacks": {
+            "B2": 0.55
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The FBI hiring process can take over a year, involving multiple stages of evaluation, whereas university admissions decisions are typically made within a few months."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The FBI hiring process can take over a year, involving multiple stages of evaluation, whereas university admissions decisions are typically made within a few months.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The duration of the process does not necessarily correlate with difficulty; some universities have highly selective admissions despite quick decisions.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The FBI's hiring process includes rigorous background checks and qualifications that are not comparable to university admissions criteria.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some universities, like Ivy League schools, have lower acceptance rates than the FBI's hiring rate, making them harder to enter.",
+          "confidence": 0.78,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The FBI's hiring process is not just about acceptance rates but also about meeting stringent physical, mental, and ethical standards.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The University of Pittsburgh does not require prior professional experience for most undergraduate programs, while the FBI typically requires at least three years of professional work experience for special agent positions."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The University of Pittsburgh does not require prior professional experience for most undergraduate programs, while the FBI typically requires at least three years of professional work experience for special agent positions.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The FBI has entry-level positions (e.g., support staff, internships) that do not require prior professional experience, making it accessible to recent graduates or students.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Entry-level FBI positions are highly competitive and limited in number compared to undergraduate admissions at the University of Pittsburgh.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The University of Pittsburgh has competitive programs (e.g., pre-med, engineering) with high GPA/test score requirements, making admission difficult for some applicants.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Even competitive programs at the University of Pittsburgh admit a larger absolute number of students than the FBI hires annually, maintaining a lower barrier to entry overall.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

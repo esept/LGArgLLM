@@ -1,0 +1,224 @@
+{
+  "claim": "A triangle with angles 60\u00b0, 60\u00b0, and 60\u00b0 is equilateral",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A triangle with all three angles equal to 60\u00b0 must have all three sides equal, as equal angles correspond to equal sides in a triangle."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A triangle with all three angles equal to 60\u00b0 must have all three sides equal, as equal angles correspond to equal sides in a triangle.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-Euclidean geometries, such as spherical or hyperbolic geometry, a triangle with all angles equal to 60\u00b0 may not have equal sides.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim and argument A1 are explicitly about Euclidean geometry, where the angles and sides relationship holds universally.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A degenerate triangle (where all three vertices are colinear) technically has angles summing to 180\u00b0, but sides are not equal.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A degenerate triangle does not meet the standard definition of a triangle, which requires non-colinear vertices.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "By the Angle-Side-Angle (ASA) congruence rule, a triangle with three equal angles must have three equal sides, making it equilateral."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "By the Angle-Side-Angle (ASA) congruence rule, a triangle with three equal angles must have three equal sides, making it equilateral.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ASA rule requires two angles and the included side to be equal, not necessarily all three angles. A triangle with three equal angles (AAA) does not guarantee congruence unless sides are also specified.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In Euclidean geometry, the AAA condition is sufficient to establish similarity, and if one pair of corresponding sides is equal (as implied by the angles being equal in this case), the triangles are congruent and thus equilateral.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The sum of angles in any triangle is 180\u00b0, and if all three angles are 60\u00b0, the triangle is equiangular, which implies it is also equilateral."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The sum of angles in any triangle is 180\u00b0, and if all three angles are 60\u00b0, the triangle is equiangular, which implies it is also equilateral.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "An equiangular triangle is not necessarily equilateral if side lengths are not constrained, as in non-Euclidean geometries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In Euclidean geometry, the only valid geometry for this claim, equiangular triangles are always equilateral by the converse of the Isosceles Triangle Theorem.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument assumes Euclidean geometry without explicitly stating it, which may not hold in all contexts.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim and argument are implicitly about Euclidean geometry, the default framework for basic geometric propositions.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In Euclidean geometry, an equiangular triangle (all angles equal) is necessarily equilateral, as the sides opposite equal angles are equal."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In Euclidean geometry, an equiangular triangle (all angles equal) is necessarily equilateral, as the sides opposite equal angles are equal.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In non-Euclidean geometries (e.g., spherical or hyperbolic), equiangular triangles do not necessarily have equal sides.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The original claim explicitly specifies Euclidean geometry, making non-Euclidean counterexamples irrelevant.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Degenerate cases (e.g., angles summing to 180\u00b0 but sides collapsing to zero length) could theoretically violate the equilateral property.",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "A degenerate 'triangle' with zero-length sides is not considered a valid triangle in standard Euclidean geometry.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Law of Sines states that the ratio of a side to the sine of its opposite angle is constant, so equal angles imply equal sides, confirming the triangle is equilateral."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Law of Sines states that the ratio of a side to the sine of its opposite angle is constant, so equal angles imply equal sides, confirming the triangle is equilateral.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Law of Sines assumes the triangle is non-degenerate (i.e., has positive area). A degenerate triangle with angles 60\u00b0, 60\u00b0, and 60\u00b0 could theoretically exist as a line segment, violating the equilateral property.",
+          "confidence": 0.3,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In Euclidean geometry, a triangle with three 60\u00b0 angles must be non-degenerate and equilateral by definition, as degeneracy requires at least one angle of 0\u00b0 or 180\u00b0.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Law of Sines applies only to Euclidean geometry. In spherical or hyperbolic geometry, equal angles do not necessarily imply equal sides, so the argument may not hold universally.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim explicitly refers to a Euclidean triangle, as spherical/hyperbolic triangles would not have angle sums of exactly 180\u00b0.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

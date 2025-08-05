@@ -1,0 +1,216 @@
+{
+  "claim": "Consider the following background information: A 67-year-old man with peripheral neuropathy comes to the physician for a follow-up examination after the results of serum protein electrophoresis showed monoclonal gammopathy. A complete blood count, serum creatinine, and serum electrolyte concentrations are within the reference ranges. A bone marrow biopsy shows 6% monoclonal plasma cells. Further analysis shows that class I major histocompatibility molecules are downregulated in these monoclonal plasma cells. The proliferation of these monoclonal plasma cells is normally prevented by a class of immune cells that lyse abnormal cells without the need for opsonization, priming, or prior activation.\n\nGiven the background information the following is corrrect: CD8+ T lymphocytes are the class of immune cells that best describe the cells mentioned.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "CD8+ T lymphocytes are cytotoxic T cells that recognize and lyse abnormal cells, such as those with downregulated class I MHC molecules, without requiring opsonization, priming, or prior activation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "CD8+ T lymphocytes are cytotoxic T cells that recognize and lyse abnormal cells, such as those with downregulated class I MHC molecules, without requiring opsonization, priming, or prior activation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Natural killer (NK) cells also lyse abnormal cells with downregulated class I MHC molecules without requiring opsonization, priming, or prior activation, which matches the description equally well.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "NK cells primarily target cells lacking MHC class I molecules, while CD8+ T cells require antigen presentation via MHC class I, making NK cells a better fit for this scenario.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The background specifies 'without the need for opsonization, priming, or prior activation,' which aligns more closely with NK cell function than CD8+ T cells, as the latter typically require prior antigen exposure.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "CD8+ T cells can exhibit innate-like rapid cytotoxicity in certain contexts, such as during viral infections, which may resemble the described behavior.",
+          "confidence": 0.7,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Natural killer (NK) cells are another class of immune cells capable of lysing abnormal cells without the need for opsonization or prior activation, but they typically target cells with downregulated class I MHC molecules."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Natural killer (NK) cells are another class of immune cells capable of lysing abnormal cells without the need for opsonization or prior activation, but they typically target cells with downregulated class I MHC molecules.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "CD8+ T lymphocytes are specifically mentioned in the background as the immune cells preventing proliferation of monoclonal plasma cells, making them the more relevant cell type in this context.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "NK cells are primarily involved in innate immunity and are more likely to target cells with downregulated MHC I, but the background information does not explicitly rule out their role in this case.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The description of immune cells that lyse abnormal cells without opsonization, priming, or prior activation aligns with the function of CD8+ T lymphocytes in immune surveillance."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The description of immune cells that lyse abnormal cells without opsonization, priming, or prior activation aligns with the function of CD8+ T lymphocytes in immune surveillance.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Natural killer (NK) cells also lyse abnormal cells without opsonization, priming, or prior activation, which matches the description equally well.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "NK cells typically target cells lacking MHC class I molecules, which aligns with the observed downregulation in the monoclonal plasma cells.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The context of monoclonal gammopathy and plasma cell proliferation is more strongly associated with CD8+ T cell dysfunction rather than NK cell activity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CD8+ T cells require antigen presentation via MHC class I, which is compromised in this case due to downregulation, making their involvement less likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Class I MHC molecules are primarily recognized by CD8+ T lymphocytes, which are critical for detecting and eliminating cells with abnormal MHC expression, such as monoclonal plasma cells."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Class I MHC molecules are primarily recognized by CD8+ T lymphocytes, which are critical for detecting and eliminating cells with abnormal MHC expression, such as monoclonal plasma cells.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Natural killer (NK) cells, not CD8+ T lymphocytes, are the primary immune cells that lyse abnormal cells without the need for opsonization, priming, or prior activation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While NK cells can lyse cells without prior activation, CD8+ T lymphocytes are still essential for targeting cells with downregulated class I MHC molecules, as NK cells typically target cells that lack MHC class I entirely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In some cases, NK cells can also target cells with downregulated MHC class I, especially if other activating signals are present.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "NK cells and CD8+ T lymphocytes both play roles in immune surveillance, but CD8+ T lymphocytes are more specifically associated with the described mechanism of action in the context of class I MHC downregulation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "NK cells and CD8+ T lymphocytes both play roles in immune surveillance, but CD8+ T lymphocytes are more specifically associated with the described mechanism of action in the context of class I MHC downregulation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "NK cells are the primary immune cells that lyse abnormal cells without the need for opsonization, priming, or prior activation, especially in the context of class I MHC downregulation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While NK cells can lyse cells without prior activation, CD8+ T lymphocytes are more specific in targeting cells with downregulated class I MHC molecules due to their role in adaptive immunity.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The described mechanism is more consistent with NK cell activity, as CD8+ T lymphocytes typically require prior activation and antigen presentation to function effectively.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CD8+ T lymphocytes can recognize and lyse cells with downregulated class I MHC molecules through cross-presentation and other alternative pathways, even without classical antigen presentation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

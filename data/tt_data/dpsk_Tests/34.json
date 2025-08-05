@@ -1,0 +1,213 @@
+{
+  "claim": "If A was born before B, then A is older than B",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "By definition, being born earlier means a person has existed for a longer period of time, making them older."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, being born earlier means a person has existed for a longer period of time, making them older.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "This assumes no time travel or relativistic effects, which could theoretically make someone born earlier younger in some reference frames.",
+          "confidence": 0.2,
+          "attacks": {
+            "A1": 0.15
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The argument ignores edge cases like cryogenic freezing, where someone born earlier might not have aged biologically.",
+          "confidence": 0.4,
+          "attacks": {
+            "A1": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Time travel and relativistic scenarios are purely hypothetical and don't apply to normal human aging.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Cryogenic freezing is extremely rare and doesn't change the fundamental definition of age based on birth order.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Age is calculated based on the time elapsed since birth, so a person born earlier will always have a higher age."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Age is calculated based on the time elapsed since birth, so a person born earlier will always have a higher age.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "If time zones or calendar systems differ, the exact birth order may be ambiguous, making age comparison unreliable.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Standardized timekeeping (e.g., UTC) and calendar conversions resolve most ambiguities in birth order.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Relativistic time dilation means A could biologically age slower than B if they move at different velocities, despite birth order.",
+          "confidence": 0.3,
+          "attacks": {
+            "A2": 0.2
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Cryogenic freezing or suspended animation could pause aging, making birth order irrelevant for biological age.",
+          "confidence": 0.4,
+          "attacks": {
+            "A2": 0.3
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "This is a fundamental principle of chronology and is universally accepted in all cultures and legal systems."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "This is a fundamental principle of chronology and is universally accepted in all cultures and legal systems.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "In some cultures, age is calculated differently, such as counting time in the womb or starting from conception, which could make someone born earlier technically younger in their system.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even in cultures with alternative age-counting methods, the principle that being born earlier means being older still holds when using standard chronological age.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Legal systems sometimes recognize retroactive birth dates for administrative purposes, which can create exceptions where someone born earlier is legally younger.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Such legal exceptions are rare and don't change the biological fact that earlier birth means greater age, only the administrative record.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The concept of age is linear and directly tied to birth order; no exceptions exist in mainstream understanding."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The concept of age is linear and directly tied to birth order; no exceptions exist in mainstream understanding.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Time dilation in relativity means observers in different frames may disagree on birth order, breaking linearity.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Relativistic effects are negligible for human-scale events and don't affect legal/social age concepts.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Cryogenic freezing could pause biological aging while maintaining birth order, creating exceptions.",
+          "confidence": 0.55,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Cryopreservation is speculative technology without proven age-altering effects on revived humans.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Some cultures measure age from conception rather than birth, potentially reversing order comparisons.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C3",
+          "text": "International standards and scientific consensus define age from birth event, overriding cultural variations.",
+          "confidence": 0.88,
+          "attacks": {
+            "B3": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

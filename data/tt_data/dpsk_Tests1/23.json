@@ -1,0 +1,162 @@
+{
+    "claim": "Jupiter is smaller than Earth",
+    "Args": {
+        "A1": {
+            "supporting": {
+                "id": "A1",
+                "text": "Jupiter's equatorial diameter is approximately 142,984 km, while Earth's is about 12,742 km, making Jupiter significantly larger."
+            },
+            "attacks": [
+                {
+                    "id": "A1",
+                    "text": "Jupiter's equatorial diameter is approximately 142,984 km, while Earth's is about 12,742 km, making Jupiter significantly larger.",
+                    "confidence": 0.99,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "The claim might refer to a non-physical property (e.g., gravitational influence, density) where Earth could be considered 'larger' in some contexts.",
+                    "confidence": 0.3,
+                    "attacks": {
+                        "A1": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Non-physical interpretations of 'size' are highly unconventional in astronomical comparisons, where diameter or volume are standard metrics.",
+                    "confidence": 0.9,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "supporting": {
+                "id": "A2",
+                "text": "Jupiter's mass is about 318 times that of Earth, confirming it is not smaller."
+            },
+            "attacks": [
+                {
+                    "id": "A2",
+                    "text": "Jupiter's mass is about 318 times that of Earth, confirming it is not smaller.",
+                    "confidence": 0.98,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "The claim refers to size, not mass, and Jupiter's diameter is about 11 times that of Earth.",
+                    "confidence": 0.95,
+                    "attacks": {
+                        "A2": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "The term 'smaller' is ambiguous and could refer to mass, volume, or diameter, making the claim context-dependent.",
+                    "confidence": 0.75,
+                    "attacks": {
+                        "B1": 0.5
+                    }
+                },
+                {
+                    "id": "D1",
+                    "text": "In common usage, 'smaller' typically refers to physical dimensions (diameter/volume) rather than mass.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "C1": 0.8
+                    }
+                }
+            ]
+        },
+        "A3": {
+            "supporting": {
+                "id": "A3",
+                "text": "Jupiter is classified as a gas giant, a type of planet known to be much larger than terrestrial planets like Earth."
+            },
+            "attacks": [
+                {
+                    "id": "A3",
+                    "text": "Jupiter is classified as a gas giant, a type of planet known to be much larger than terrestrial planets like Earth.",
+                    "confidence": 0.95,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some gas giants in other solar systems have been found to be smaller than Earth due to extreme atmospheric loss.",
+                    "confidence": 0.45,
+                    "attacks": {
+                        "A3": 0.3
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "The classification as a gas giant does not inherently guarantee size, only composition.",
+                    "confidence": 0.6,
+                    "attacks": {
+                        "A3": 0.2
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Jupiter's diameter is approximately 11 times that of Earth, making it significantly larger by all known measurements.",
+                    "confidence": 0.98,
+                    "attacks": {
+                        "B1": 0.8,
+                        "B2": 0.3
+                    }
+                }
+            ]
+        },
+        "A4": {
+            "supporting": {
+                "id": "A4",
+                "text": "Observational data from space missions such as Voyager and Juno consistently show Jupiter's size exceeds Earth's."
+            },
+            "attacks": [
+                {
+                    "id": "A4",
+                    "text": "Observational data from space missions such as Voyager and Juno consistently show Jupiter's size exceeds Earth's.",
+                    "confidence": 0.98,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some amateur observations might mistakenly measure Jupiter as appearing smaller due to its distance from Earth.",
+                    "confidence": 0.4,
+                    "attacks": {
+                        "A4": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Professional telescopes and space missions provide precise measurements that account for distance, confirming Jupiter's larger size.",
+                    "confidence": 0.95,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Jupiter's low density might lead some to perceive it as less massive or smaller than Earth.",
+                    "confidence": 0.3,
+                    "attacks": {
+                        "A4": 0.4
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Size is determined by diameter and volume, not density, and Jupiter's diameter is over 11 times that of Earth.",
+                    "confidence": 0.97,
+                    "attacks": {
+                        "B2": 0.3
+                    }
+                }
+            ]
+        }
+    }
+}

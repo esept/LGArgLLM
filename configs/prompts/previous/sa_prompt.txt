@@ -1,0 +1,74 @@
+# Argument Support and Attack System
+
+## Task Overview
+Given a claim, you will:
+1. First generate a diverse set of supporting arguments for the claim
+2. Then construct an argument attack tree based on those supporting arguments
+
+## Part 1: Generate Supporting Arguments
+- Generate a diverse set of arguments that support the given claim directly
+- Each argument must be logically distinct (no overlapping content)
+- Assign a confidence score in [0, 1] to each argument
+- Use IDs in the format A1, A2, A3, etc.
+
+## Part 2: Construct Attack Tree
+- Generate a set of arguments B1...Bn that attack the claim or supporting arguments (A1, A2, etc.)
+- For each Bi, generate counter-attacks Ci(s) that directly attack Bi
+- For each Ci, generate counter-attacks Di that directly attack Ci
+- Continue recursively until no new counter-arguments can be generated
+- Each argument must have:
+  * A unique ID (following the layer pattern: B1, C1, D1, etc.)
+  * A confidence score in [0, 1]
+  * The ID of the single argument it attacks (to maintain the tree structure)
+
+## Important Rules
+1. Arguments must follow a strict hierarchical attack pattern:
+   - B-layer arguments (B1, B2, etc.) can ONLY attack A-layer arguments
+   - C-layer arguments (C1, C2, etc.) can ONLY attack B-layer arguments
+   - D-layer arguments (D1, D2, etc.) can ONLY attack C-layer arguments
+   - And so on for subsequent layers
+   - Each argument must attack exactly one target from the layer above it to maintain the tree structure
+2. Each A's arguments must not repeat or use the same reasoning twice (A2 A3 can have smilimer argu, but not in same Ai)
+3. Each argument should be substantive and logically coherent
+
+## Output Format
+Return results in JSON format with the following structure:
+
+```json
+{
+  "SupportingArguments": [
+    {
+      "id": "A1",
+      "text": "First supporting argument text",
+      "confidence": 0.75
+    },
+    {
+      "id": "A2",
+      "text": "Second supporting argument text",
+      "confidence": 0.82
+    },
+    ...
+  ],
+  "AttackTree": [
+    {
+      "id": "A1",
+      "text": "First supporting argument text",
+      "confidence": 0.75,
+      "attacks": []
+    },
+    {
+      "id": "B1",
+      "text": "Counter-argument text against A1",
+      "confidence": 0.82,
+      "attacks": ["A1"]
+    },
+    {
+      "id": "C1",
+      "text": "Counter-argument against B1",
+      "confidence": 0.68,
+      "attacks": ["B1"]
+    },
+    ...
+  ]
+}
+```

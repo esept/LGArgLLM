@@ -1,0 +1,145 @@
+{
+  "claim": "Many people think that Mozart composed Twinkle, Twinkle, Little Star, but no recorded composer exists for this tune.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Twinkle, Twinkle, Little Star is based on a French folk melody called 'Ah! vous dirai-je, Maman,' which predates Mozart's variations on the tune."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Twinkle, Twinkle, Little Star is based on a French folk melody called 'Ah! vous dirai-je, Maman,' which predates Mozart's variations on the tune.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Mozart's variations on the tune are widely recognized and often mistakenly attributed as the original composition due to their popularity.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The attribution of folk melodies to famous composers is common in music history due to the lack of formal records for traditional tunes.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Mozart composed a set of variations (K. 265/300e) on the melody of 'Ah! vous dirai-je, Maman,' but he did not create the original tune."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Mozart composed a set of variations (K. 265/300e) on the melody of 'Ah! vous dirai-je, Maman,' but he did not create the original tune.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The melody of 'Ah! vous dirai-je, Maman' is virtually identical to 'Twinkle, Twinkle, Little Star,' leading many to conflate Mozart's variations with the original composition.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records show that 'Ah! vous dirai-je, Maman' predates Mozart and was a popular French folk song, making attribution to Mozart incorrect.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The melody of Twinkle, Twinkle, Little Star has been traced back to at least the mid-18th century, long before Mozart's variations were written in 1781 or 1782."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The melody of Twinkle, Twinkle, Little Star has been traced back to at least the mid-18th century, long before Mozart's variations were written in 1781 or 1782.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Mozart's variations on the tune are widely recognized and often mistakenly attributed as the original composition due to his fame.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Historical records show that the melody was already popular in France before Mozart's time, further supporting its pre-existing origin.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The lack of a recorded composer for the original tune does not necessarily mean it predates Mozart; it could simply be lost to history.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Historical musicology attributes the original melody to anonymous folk origins rather than to any specific composer."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Historical musicology attributes the original melody to anonymous folk origins rather than to any specific composer.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The melody was popularized by Mozart's variations, leading many to mistakenly attribute the original composition to him.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Mozart's variations are so well-known that they overshadow the folk origins, reinforcing the misconception.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The lack of a recorded composer for the original tune does not necessarily imply it was anonymous; records may simply be lost.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    }
+  }
+}

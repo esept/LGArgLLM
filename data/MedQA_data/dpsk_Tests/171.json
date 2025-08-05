@@ -1,0 +1,270 @@
+{
+  "claim": "Consider the following background information: A 21-year-old woman presents with sudden onset of high blood pressure. She is concerned about her health especially after her colleagues noticed that her face gets red at times while at work. She has even started to use blankets to cover her feet, even on the warmest days in the summer, even though her hands feel warm to the touch. She is a student who exercises and eats a well-balanced diet every day. There is no family history of hypertension or other metabolic syndromes. On examination, her blood pressure is 145/92 mm Hg, respirations are 19/min, pulse is 64/min, and temperature is 36.7\u00b0C (98.0\u00b0F). An echocardiogram is ordered for investigation.\n\nGiven the background information the following is corrrect: Turner syndrome is likely the condition affecting this patient.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "Turner syndrome is typically diagnosed in childhood or adolescence due to characteristic physical features (e.g., short stature, webbed neck) and delayed puberty, which are not mentioned in this patient's presentation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Turner syndrome is typically diagnosed in childhood or adolescence due to characteristic physical features (e.g., short stature, webbed neck) and delayed puberty, which are not mentioned in this patient's presentation.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Turner syndrome can present atypically in some adults without classic childhood features, and hypertension is a known complication due to cardiovascular and renal abnormalities.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of classic Turner syndrome features (e.g., short stature, webbed neck) strongly reduces the likelihood of this diagnosis, as these are present in the majority of cases.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Secondary causes of hypertension (e.g., renal artery stenosis, pheochromocytoma) are more likely in a young patient without classic Turner syndrome features and should be investigated first.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The patient's blood pressure elevation is mild and could be due to other common causes such as stress, white coat hypertension, or primary hypertension, which are more prevalent in young adults than Turner syndrome."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's blood pressure elevation is mild and could be due to other common causes such as stress, white coat hypertension, or primary hypertension, which are more prevalent in young adults than Turner syndrome.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Turner syndrome is associated with cardiovascular anomalies like coarctation of the aorta, which can present with hypertension, and the patient's symptoms (facial flushing and cold feet) are consistent with this condition.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient has no family history of hypertension or metabolic syndromes, and her otherwise healthy lifestyle makes primary hypertension less likely, increasing the probability of a secondary cause like Turner syndrome.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The prevalence of Turner syndrome is very low (1 in 2000-5000 females), making it statistically unlikely compared to more common causes of mild hypertension in young adults.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85,
+            "C1": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Turner syndrome is a chromosomal disorder (45,X) that would likely have been identified earlier in life through genetic testing or phenotypic features, neither of which are noted in this case."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Turner syndrome is a chromosomal disorder (45,X) that would likely have been identified earlier in life through genetic testing or phenotypic features, neither of which are noted in this case.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Turner syndrome can present with subtle or atypical features, and some cases are diagnosed later in life, especially if genetic testing was not performed earlier.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of classic phenotypic features (e.g., short stature, webbed neck) in this patient makes Turner syndrome less likely, supporting the original argument.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Secondary hypertension in a young woman without risk factors raises suspicion for endocrine disorders, including Turner syndrome, even without classic features.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Other endocrine disorders (e.g., pheochromocytoma, Cushing syndrome) are more likely causes of secondary hypertension in this patient than Turner syndrome.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The patient's symptoms (facial flushing and cold feet) are nonspecific and do not strongly correlate with the known clinical manifestations of Turner syndrome."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's symptoms (facial flushing and cold feet) are nonspecific and do not strongly correlate with the known clinical manifestations of Turner syndrome.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Turner syndrome is associated with cardiovascular anomalies, including hypertension, which aligns with the patient's high blood pressure.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's age (21 years) and lack of family history of hypertension make Turner syndrome less likely, as it is typically diagnosed earlier in life.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Turner syndrome often presents with short stature and ovarian dysfunction, neither of which is mentioned in the patient's history.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Turner syndrome can present with cardiovascular abnormalities, including hypertension, which aligns with the patient's elevated blood pressure."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Turner syndrome can present with cardiovascular abnormalities, including hypertension, which aligns with the patient's elevated blood pressure.",
+          "cate": "P",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Turner syndrome is typically diagnosed much earlier in life due to characteristic physical features (e.g., short stature, webbed neck), which are absent in this patient.",
+          "confidence": 0.85,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's age (21) makes Turner syndrome unlikely, as most cases are identified during childhood or adolescence.",
+          "confidence": 0.78,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Secondary hypertension in young women is more commonly caused by conditions like fibromuscular dysplasia or pheochromocytoma than Turner syndrome.",
+          "confidence": 0.82,
+          "attacks": {
+            "A5": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's facial flushing and temperature dysregulation could suggest autonomic dysfunction, which isn't a hallmark of Turner syndrome.",
+          "confidence": 0.79,
+          "attacks": {
+            "A5": 0.6
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "Some individuals with Turner syndrome may have a mosaic karyotype or mild phenotypes, potentially leading to later diagnosis in adulthood, though this is less common."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some individuals with Turner syndrome may have a mosaic karyotype or mild phenotypes, potentially leading to later diagnosis in adulthood, though this is less common.",
+          "cate": "P",
+          "confidence": 0.65,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms (high blood pressure, facial flushing, and cold feet) are not specific to Turner syndrome and could be caused by other conditions like pheochromocytoma or autonomic dysfunction.",
+          "confidence": 0.75,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Turner syndrome is typically diagnosed earlier in life due to characteristic features like short stature and ovarian dysgenesis, which are absent in this patient.",
+          "confidence": 0.8,
+          "attacks": {
+            "A6": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The patient's well-balanced diet and exercise routine make metabolic syndromes less likely, but do not rule out Turner syndrome specifically.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.5
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of family history of hypertension or metabolic syndromes does not strongly support or refute Turner syndrome, as it is usually a sporadic condition.",
+          "confidence": 0.7,
+          "attacks": {
+            "A6": 0.6
+          }
+        }
+      ]
+    }
+  }
+}

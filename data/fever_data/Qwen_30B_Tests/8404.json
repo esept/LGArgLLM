@@ -1,0 +1,354 @@
+{
+  "claim": "US Airways Flight 1549 had 1978 people on board.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "US Airways Flight 1549 was an Airbus A320-214 with a maximum capacity of approximately 180 passengers and crew combined.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "US Airways Flight 1549 was an Airbus A320-214 with a maximum capacity of approximately 180 passengers and crew combined.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B3",
+          "text": "The Airbus A320-232 variant has a maximum certified passenger capacity of up to 266 in single-class configuration.",
+          "confidence": 0.87,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B4",
+          "text": "Historical records show US Airways Flight 767 (not Flight \u2081\u2085\u2084\u2089) operated with over two hundred passengers in its final flight.",
+          "confidence": 0.76,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C6",
+          "text": "The specific variant operated by US Airways on January \u00b9\u2075th did not have single-class configurations exceeding its stated limits.",
+          "confidence": 0.69,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D7",
+          "text": "The FAA certification records explicitly list Airbus A3\u2082\u2080\u208b\u2082\u2081\u2084 as having maximum capacities below two hundred seats.",
+          "confidence": "\u2080\u00b7\u2079\u00b2",
+          "attacks": [
+            "C6"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Official accident reports confirm there were only 155 people aboard (150 passengers + 5 crew) during the Hudson River landing.",
+        "confidence": 0.93,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Official accident reports confirm there were only 155 people aboard (150 passengers + 5 crew) during the Hudson River landing.",
+          "confidence": 0.93,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The official accident reports cited by A2 are not publicly accessible and may contain unverified data.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The passenger and crew count in A2 excludes non-registered individuals who might have been aboard.",
+          "confidence": 0.83,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "A2 relies on a single source (NTSB) without cross-referencing airline manifests or other records.",
+          "confidence": 0.76,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Publicly available NTSB documents explicitly state the passenger and crew totals as part of their verified investigation.",
+          "confidence": 0.89,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Airline manifests from US Airways at the time of Flight 1549 corroborate the passenger count of 150 and crew of 5.",
+          "confidence": 0.91,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Multiple independent sources (e.g., news archives, survivor accounts) confirm the same passenger/crew numbers as A2.",
+          "confidence": 0.87,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The exclusion of non-registered individuals in A2 is irrelevant since only registered passengers and crew were aboard.",
+          "confidence": 0.94,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "NTSB's methodology for counting occupants during emergencies is standardized and widely accepted in aviation investigations.",
+          "confidence": 0.92,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "News archives from January 16, 2009 (the flight date) explicitly mention '150 passengers and five crew' in multiple reputable outlets.",
+          "confidence": 0.93,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The number '1978' exceeds typical commercial aircraft passenger limits and aligns with no credible historical records of this flight.",
+        "confidence": 0.92,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The number '1978' exceeds typical commercial aircraft passenger limits and aligns with no credible historical records of this flight.",
+          "confidence": 0.92,
+          "attacks": [],
+          "cate": "P/S"
+        },
+        {
+          "id": "B1",
+          "text": "The actual passenger count of US Airways Flight 1549 was 155 according to official aviation records.",
+          "confidence": 0.85,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim of '1978' passengers contradicts known data about the Airbus A320's maximum capacity of 180 passengers.",
+          "confidence": 0.88,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official aviation records refer to different flights or contain errors in their documentation.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The number '155' is accurate for Flight 1549 but does not invalidate other potential data sources.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The Airbus A320 can carry up to 200 passengers under certain configurations such as reduced seat pitch.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Historical records may have been misinterpreted or misattributed to other flights.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Airbus A320's standard capacity is confirmed at 180 passengers by manufacturer specifications.",
+          "confidence": 0.89,
+          "attacks": [
+            "C3"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The discrepancy in passenger counts likely stems from confusion with other incidents involving similar flight numbers.",
+          "confidence": 0.86,
+          "attacks": [
+            "C4"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "No major news outlets or aviation databases list Flight 1549 as having over 1,000 people on board during its fateful journey.",
+        "confidence": 0.89,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "No major news outlets or aviation databases list Flight 1549 as having over 1,000 people on board during its fateful journey.",
+          "confidence": 0.89,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of mentions in major outlets does not prove the claim's falsity; it could indicate a lack of comprehensive reporting.",
+          "confidence": 0.81,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aviation databases may not always be up-to-date or accurate, so their lack of data doesn't validate the claim.",
+          "confidence": 0.78,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Major news outlets typically verify critical details like passenger counts for high-profile incidents such as Flight 1549.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Aviation databases are authoritative sources for flight records and would reliably document passenger capacities.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "News outlets often prioritize sensationalism over accuracy, making their omission of specific numbers less conclusive.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Database inaccuracies are rare for commercial flights with publicized incidents like Flight 1549.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The 'Miracle on the Hudson' incident involved a single aircraft with fewer than 200 occupants, contradicting claims of over 1,900 people.",
+        "confidence": 0.94,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The 'Miracle on the Hudson' incident involved a single aircraft with fewer than 200 occupants, contradicting claims of over 1,900 people.",
+          "confidence": 0.94,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "US Airways Flight 1549 actually carried exactly 36 passengers and crew according to official aviation records.",
+          "confidence": 0.88,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'occupants' in aviation terminology includes only registered passengers and cabin crew members.",
+          "confidence": 0.83,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Historical data shows Flight 1549 had only one engine failure rather than multiple incidents requiring larger crews.",
+          "confidence": 0.79,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official FAA reports confirm Flight #1773 (not #1878) had exactly one pilot and one co-pilot aboard.",
+          "confidence": 0.86,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Aviation safety protocols require minimum crew sizes for commercial flights exceeding certain passenger counts.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The 'Miracle on the Hudson' occurred in January/February of different years according to primary sources.",
+          "confidence": "-inf",
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

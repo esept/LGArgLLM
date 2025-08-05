@@ -1,0 +1,287 @@
+{
+  "claim": "Vaccines do not permanently modify your DNA.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Vaccines work by stimulating the immune system to recognize and combat pathogens, without altering the genetic code of the host."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Vaccines work by stimulating the immune system to recognize and combat pathogens, without altering the genetic code of the host.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vaccines, like mRNA vaccines, introduce genetic material into cells, which could theoretically integrate into the host genome under rare conditions.",
+          "confidence": 0.35,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Current scientific consensus holds that mRNA vaccines do not integrate into the host genome due to the lack of necessary enzymes and mechanisms for reverse transcription.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Viral vector vaccines use modified viruses to deliver genetic material, raising concerns about unintended genetic modifications.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vector vaccines are designed to be non-integrating and have been extensively studied to ensure they do not alter the host DNA.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The mRNA in vaccines degrades quickly and does not integrate into the DNA of human cells."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The mRNA in vaccines degrades quickly and does not integrate into the DNA of human cells.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that under rare conditions, reverse transcription of mRNA into DNA may occur in human cells.",
+          "confidence": 0.45,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The reverse transcription process, if it occurs, is extremely rare and has no known functional impact on human DNA.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Viral vectors used in some vaccines can integrate into host DNA, though this is not the case for mRNA vaccines.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vector vaccines are designed to minimize integration risks, and regulatory agencies monitor for such events.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific consensus holds that vaccines do not interact with or modify DNA, as they operate outside the cell nucleus where DNA is stored."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific consensus holds that vaccines do not interact with or modify DNA, as they operate outside the cell nucleus where DNA is stored.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some mRNA vaccines may transiently enter the nucleus under rare cellular conditions, though without integrating into DNA.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show nuclear entry of mRNA is extremely rare and does not result in genetic modification or lasting effects.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Viral vector vaccines could theoretically deliver genetic material near the nucleus, raising theoretical concerns.",
+          "confidence": 0.5,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vectors are engineered to avoid nuclear localization and have no demonstrated mechanism for DNA integration.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "DNA modification requires specific enzymes and mechanisms that vaccines do not possess or utilize."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "DNA modification requires specific enzymes and mechanisms that vaccines do not possess or utilize.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some viral vector vaccines (e.g., certain COVID-19 vaccines) can introduce genetic material into cells, though not permanently altering DNA.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The genetic material introduced by viral vector vaccines does not integrate into the host genome and is transient.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "CRISPR-based vaccines in development could theoretically modify DNA, though none are currently approved for human use.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CRISPR vaccines would require rigorous safety testing and regulatory approval, ensuring DNA modifications are intentional and controlled.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Extensive clinical trials and long-term studies have found no evidence of permanent DNA changes caused by vaccines."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Extensive clinical trials and long-term studies have found no evidence of permanent DNA changes caused by vaccines.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that certain viral vector vaccines (e.g., adenovirus-based) may integrate genetic material into host cells in rare cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The observed integration events from viral vector vaccines are transient and do not result in permanent genomic modification.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Long-term studies may not yet cover the full lifespan of vaccinated individuals, leaving room for undetected effects.",
+          "confidence": 0.55,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current molecular biology understanding and vaccine mechanisms make permanent DNA modification biologically implausible.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Vaccines introduce antigens or genetic instructions for antigens, not tools for genome editing."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Vaccines introduce antigens or genetic instructions for antigens, not tools for genome editing.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some mRNA vaccines could theoretically integrate into the genome through reverse transcription, though evidence is lacking.",
+          "confidence": 0.4,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Reverse transcription requires specific enzymes (e.g., reverse transcriptase) not present in standard human cells.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Viral vector vaccines use modified viruses that could potentially alter host DNA.",
+          "confidence": 0.6,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Viral vectors are engineered to lack replication and integration machinery, making DNA modification extremely unlikely.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

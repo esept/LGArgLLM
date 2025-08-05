@@ -1,0 +1,679 @@
+{
+  "claim": "A 4-year-old boy is referred to the infectious disease clinic for recurrent pneumonia. Although he has had several previous hospital admissions and received multiple courses of antibiotic therapy, he continues to get sick. On his most recent hospital admission, the boy presented with mild fever, right-sided chest pain, and yellow-colored sputum. He had difficulty breathing and diminished breath sounds on the right side of the chest. A CT scan of the thorax revealed multiple right-sided ground-glass opacities. Sputum cultures grew Aspergillus galactomannan. The boy\u2019s medical history is significant for neonatal sepsis and recurrent episodes of pyoderma and otitis media. His younger brother had recurrent purulent skin infections before he died of an otogenic brain abscess at the age of 2. His mother says that skin infections are common in the male members of her family. The patient\u2019s HIV status is negative and his complete blood count, T cell and B cell counts, immunoglobulin profile, and complement tests are within normal limits. Which of the following is the next best step in the management of this patient? : Flow cytometry for CD18+ cell deficiency",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's history of recurrent infections, including pneumonia, pyoderma, and otitis media, along with a family history of similar infections in male members, strongly suggests an inherited immunodeficiency disorder such as leukocyte adhesion deficiency (LAD), which is associated with CD18 deficiency.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of recurrent infections, including pneumonia, pyoderma, and otitis media, along with a family history of similar infections in male members, strongly suggests an inherited immunodeficiency disorder such as leukocyte adhesion deficiency (LAD), which is associated with CD18 deficiency.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's normal T cell, B cell, immunoglobulin, and complement levels make a primary immunodeficiency less likely, as these are typically abnormal in such disorders.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aspergillus infection is more commonly associated with neutrophil dysfunction rather than CD18 deficiency, suggesting an alternative diagnosis such as chronic granulomatous disease (CGD).",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While T and B cell counts are normal, LAD primarily affects neutrophil function, which would not be reflected in these tests, making CD18 deficiency still plausible.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CGD typically presents with catalase-positive organism infections, whereas Aspergillus is not exclusively linked to CGD and can occur in other immunodeficiencies like LAD.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Neutrophil function tests such as the dihydrorhodamine (DHR) assay would be more specific for CGD than relying solely on infection patterns, making CGD a more testable alternative.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The normal T cell, B cell, immunoglobulin, and complement levels rule out common primary immunodeficiencies, making CD18+ cell deficiency a more plausible diagnosis given the clinical presentation and family history.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The normal T cell, B cell, immunoglobulin, and complement levels rule out common primary immunodeficiencies, making CD18+ cell deficiency a more plausible diagnosis given the clinical presentation and family history.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While CD18+ cell deficiency is plausible, the normal complete blood count and lack of neutrophilia or leukocytosis make this diagnosis less likely, as these are common findings in CD18 deficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of neonatal sepsis and recurrent infections could also be explained by a chronic granulomatous disease (CGD), which should be ruled out before focusing solely on CD18 deficiency.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Although neutrophilia is common in CD18 deficiency, its absence does not rule out the diagnosis, as atypical presentations can occur, especially in mild or partial deficiencies.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "CGD typically presents with recurrent bacterial and fungal infections, but the absence of granulomas on CT scan and the specific family history of male-predominant skin infections make CD18 deficiency more likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even in mild CD18 deficiencies, some degree of neutrophilia or abnormal neutrophil function would still be expected, and the absence of these findings significantly reduces the likelihood of this diagnosis.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Granulomas may not always be present in CGD, especially in early stages, and the family history could also be consistent with X-linked CGD, which should still be considered.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The presence of Aspergillus galactomannan in sputum cultures indicates a fungal infection, which is uncommon in immunocompetent individuals and further supports the possibility of an underlying immunodeficiency like LAD.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The presence of Aspergillus galactomannan in sputum cultures indicates a fungal infection, which is uncommon in immunocompetent individuals and further supports the possibility of an underlying immunodeficiency like LAD.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Aspergillus infections can occur in immunocompetent individuals due to environmental exposure or underlying lung pathology, not necessarily immunodeficiency.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's normal T cell, B cell, immunoglobulin, and complement levels make a primary immunodeficiency like LAD less likely.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Aspergillus can infect immunocompetent hosts, the recurrent infections and family history of male susceptibility strongly suggest an inherited immunodeficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "LAD can present with normal routine immunologic tests; specialized testing like CD18 flow cytometry is needed to exclude it.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Environmental fungal exposure alone doesn't explain the recurrent bacterial infections and familial pattern seen in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The specificity of CD18 testing for LAD makes it critical despite normal screening tests, given the clinical presentation.",
+          "confidence": 0.9,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's neonatal sepsis and recurrent infections, combined with the death of a sibling from an otogenic brain abscess, are classic red flags for an inherited immunodeficiency, warranting flow cytometry for CD18+ cell deficiency.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's neonatal sepsis and recurrent infections, combined with the death of a sibling from an otogenic brain abscess, are classic red flags for an inherited immunodeficiency, warranting flow cytometry for CD18+ cell deficiency.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's normal T cell, B cell, immunoglobulin, and complement profiles suggest that the immunodeficiency is unlikely to be related to CD18+ deficiency, making flow cytometry unnecessary.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Given the positive Aspergillus galactomannan culture, the recurrent infections may be due to chronic fungal infection rather than an inherited immunodeficiency, reducing the urgency for CD18+ testing.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with normal standard immune profiles, rare defects like CD18+ deficiency can still be present, as they may not be detected by routine tests, justifying flow cytometry.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The family history of male-predominant infections strongly suggests an X-linked or autosomal recessive immunodeficiency, supporting the need for specialized testing like CD18+ flow cytometry.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While fungal infection is a concern, the recurrent and severe nature of infections across multiple systems and family members points to an underlying immunodeficiency, not just opportunistic infection.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Routine immune tests may miss subtle functional defects in leukocyte adhesion (e.g., CD18+ deficiency), which can only be confirmed via flow cytometry, reinforcing its necessity.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The specificity of family history for CD18+ deficiency is low, as other immunodeficiencies (e.g., chronic granulomatous disease) could also explain the clinical picture, requiring broader testing.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The clinical presentation of recurrent pneumonia with ground-glass opacities and a family history of infections in male members aligns with X-linked or autosomal recessive disorders, making CD18 evaluation a logical next step.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The clinical presentation of recurrent pneumonia with ground-glass opacities and a family history of infections in male members aligns with X-linked or autosomal recessive disorders, making CD18 evaluation a logical next step.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's normal T cell, B cell, immunoglobulin, and complement levels suggest that immunodeficiency is unlikely, reducing the necessity for CD18 testing.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aspergillus galactomannan positivity could indicate a fungal infection rather than a genetic disorder, making antifungal therapy a higher priority than CD18 testing.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The family history of infections in male members could be coincidental or due to environmental factors, not necessarily a genetic disorder like CD18 deficiency.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with normal immune markers, CD18 deficiency (leukocyte adhesion deficiency) can present with recurrent infections, justifying the test despite initial lab results.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Aspergillus infections can occur secondary to impaired neutrophil function, which is a hallmark of CD18 deficiency, so both fungal treatment and CD18 testing are warranted.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The pattern of male-only infections strongly suggests an X-linked disorder, making genetic testing like CD18 evaluation highly relevant despite environmental considerations.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Normal neutrophil counts and function tests would be expected in CD18 deficiency, so relying solely on standard immune markers is insufficient to rule it out.",
+          "confidence": 0.77,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Empirical antifungal therapy without investigating the underlying cause (e.g., CD18 deficiency) risks recurrence of infections and delays definitive treatment.",
+          "confidence": 0.83,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Given the normal HIV status and lack of abnormalities in standard immune tests, a more specialized investigation like flow cytometry for CD18+ cells is necessary to identify less common immunodeficiencies.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Given the normal HIV status and lack of abnormalities in standard immune tests, a more specialized investigation like flow cytometry for CD18+ cells is necessary to identify less common immunodeficiencies.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of recurrent infections and family history suggest a genetic immunodeficiency, but CD18 deficiency (LAD-1) typically presents with severe infections early in life, which is not fully consistent with this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Flow cytometry for CD18+ cells may not be cost-effective or widely available, and other more common immunodeficiencies should be ruled out first.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While CD18 deficiency may present early, milder or atypical forms can manifest later, and the family history of male-predominant infections strongly supports this investigation.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Given the severity and recurrence of infections, specialized testing like flow cytometry is justified despite cost or availability concerns, as early diagnosis can guide life-saving interventions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Alternative genetic testing (e.g., for chronic granulomatous disease or hyper-IgE syndrome) may be more appropriate given the clinical presentation, as these are more common than CD18 deficiency.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even if CD18 deficiency is rare, the high morbidity of undiagnosed immunodeficiencies warrants specialized testing, especially with a suggestive family history.",
+          "confidence": 0.81,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The patient's recurrent infections and family history are not typical of common immunodeficiencies, suggesting that an alternative diagnosis unrelated to CD18 deficiency should be considered first.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The patient's recurrent infections and family history are not typical of common immunodeficiencies, suggesting that an alternative diagnosis unrelated to CD18 deficiency should be considered first.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The family history of recurrent infections in male members strongly suggests an X-linked immunodeficiency, such as CD18 deficiency (leukocyte adhesion deficiency type 1), which should be ruled out first.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of Aspergillus infection and recurrent pyogenic infections is highly suggestive of a phagocytic defect, which includes CD18 deficiency, making flow cytometry a reasonable next step.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While X-linked inheritance is possible, the patient's normal T cell, B cell, and immunoglobulin levels make CD18 deficiency less likely, and other phagocytic defects should be prioritized.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Aspergillus infections can occur in various immunodeficiencies, not just CD18 deficiency, so broader testing should be considered before focusing on flow cytometry.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's normal neutrophil count does not rule out CD18 deficiency, as functional defects may still exist, necessitating flow cytometry for confirmation.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Given the severity and recurrence of infections, delaying CD18 deficiency testing could lead to missed early intervention, making it critical to perform flow cytometry now.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "The patient's symptoms could be due to a structural lung abnormality or cystic fibrosis, which should be ruled out before testing for CD18+ cell deficiency.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "The patient's symptoms could be due to a structural lung abnormality or cystic fibrosis, which should be ruled out before testing for CD18+ cell deficiency.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's family history of recurrent infections in male members strongly suggests an inherited immunodeficiency, making CD18+ cell deficiency a more likely diagnosis than structural lung abnormalities.",
+          "confidence": 0.8,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Structural lung abnormalities or cystic fibrosis would likely present earlier in life and with different patterns of infection, making CD18+ cell deficiency a more probable diagnosis given the clinical context.",
+          "confidence": 0.75,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While family history is important, the patient's normal immunoglobulin profile and complement tests reduce the likelihood of CD18+ cell deficiency, supporting the need to first rule out more common conditions like structural abnormalities.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of Aspergillus galactomannan in sputum cultures is highly suggestive of an immunodeficiency, which aligns more with CD18+ cell deficiency than structural lung disease.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Normal T cell and B cell counts do not rule out CD18+ cell deficiency, as this condition primarily affects neutrophil function, which was not tested.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Aspergillus infections can occur in structural lung diseases as well, so this finding alone does not prioritize immunodeficiency over other diagnoses.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A9": {
+      "supporting": {
+        "id": "A9",
+        "text": "The absence of delayed umbilical cord separation, a hallmark of LAD, reduces the likelihood of CD18 deficiency, making other diagnoses more probable.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A9",
+          "text": "The absence of delayed umbilical cord separation, a hallmark of LAD, reduces the likelihood of CD18 deficiency, making other diagnoses more probable.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Recurrent infections and family history of male-predominant infections strongly suggest an inherited immunodeficiency, such as CD18 deficiency, despite the absence of delayed cord separation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Normal T cell, B cell, and immunoglobulin levels do not rule out CD18 deficiency, as it primarily affects neutrophil function rather than adaptive immunity.",
+          "confidence": 0.8,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The clinical presentation and family history are highly suggestive of an underlying neutrophil defect, making CD18 deficiency a likely diagnosis regardless of umbilical cord separation history.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Other neutrophil function disorders, such as chronic granulomatous disease, could also explain the recurrent infections and should be considered before ruling out CD18 deficiency.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Flow cytometry for CD18+ cells is a definitive test and should be performed to confirm or exclude the diagnosis, given the high clinical suspicion.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Genetic testing for known mutations in the CD18 gene would provide a more comprehensive evaluation than relying solely on clinical history.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A10": {
+      "supporting": {
+        "id": "A10",
+        "text": "The patient's normal complete blood count and lack of neutrophilia argue against leukocyte adhesion deficiency, which typically presents with elevated neutrophil counts.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A10",
+          "text": "The patient's normal complete blood count and lack of neutrophilia argue against leukocyte adhesion deficiency, which typically presents with elevated neutrophil counts.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While the patient lacks neutrophilia, his recurrent infections and family history of male-specific skin infections strongly suggest an inherited immunodeficiency like leukocyte adhesion deficiency (LAD).",
+          "confidence": 0.75,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Normal CBC does not rule out LAD entirely, as some variants (e.g., LAD-II) may not show neutrophilia despite functional neutrophil defects.",
+          "confidence": 0.7,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The patient's Aspergillus infection is more indicative of chronic granulomatous disease (CGD) than LAD, making CD18 flow cytometry less relevant.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of delayed umbilical cord separation (a classic LAD-I feature) further weakens the case for CD18 testing.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "LAD-II is extremely rare and associated with developmental delay and short stature, neither of which are mentioned in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Aspergillus infections occur in both CGD and severe LAD, so microbiological findings alone cannot prioritize one diagnosis over the other.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Umbilical cord separation history is frequently unavailable or unreported in clinical practice, limiting its diagnostic utility.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

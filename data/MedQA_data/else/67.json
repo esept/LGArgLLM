@@ -1,0 +1,411 @@
+{
+  "claim": "A 34-year-old pregnant woman, gravida 2, para 0, at 28 weeks of gestation presents to the physician for a prenatal visit. She has not had regular prenatal care. Her most recent abdominal ultrasound was at 20 weeks of gestation, and it confirmed accurate fetal dates and appropriate fetal development. She takes levothyroxine for hypothyroidism. She used to work as a nurse before she emigrated from Brazil 13 years ago. She lost her immunization records during the move and cannot recall all of her vaccinations. She appears well. Her vital signs are within normal limits. The physical examination reveals a fundal height of 26 cm. No abnormalities are found during the physical exam. An ELISA test conducted for HIV is negative. Serology test results for hepatitis B surface antibody and hepatitis C antibody are positive for both. The laboratory test results for hepatitis B core antibody, hepatitis B surface antigen, and hepatitis A antibody are negative. The polymerase chain reaction analysis of hepatitis C RNA is positive for genotype 1. Which of the following is the most appropriate recommendation at this time? : Plan to formula feed the newborn",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The positive hepatitis C RNA PCR test indicates active hepatitis C infection, which can be transmitted through breastfeeding, making formula feeding a safer option to prevent neonatal infection.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The positive hepatitis C RNA PCR test indicates active hepatitis C infection, which can be transmitted through breastfeeding, making formula feeding a safer option to prevent neonatal infection.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The risk of hepatitis C transmission through breastfeeding is very low, and the benefits of breastfeeding may outweigh this minimal risk.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mother's hepatitis C infection should be treated during pregnancy to reduce viral load, potentially allowing for safe breastfeeding.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Current evidence suggests that hepatitis C RNA is not consistently detected in breast milk, making transmission unlikely.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Antiviral treatment for hepatitis C during pregnancy is not well-studied and may pose risks to the fetus.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if hepatitis C RNA is detected in breast milk, the acidic environment of the infant's stomach may neutralize the virus.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Some newer antiviral treatments for hepatitis C have shown promise in pregnancy with minimal fetal risks.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's positive hepatitis B surface antibody suggests immunity to hepatitis B, but the active hepatitis C infection (genotype 1) poses a risk of vertical transmission, supporting formula feeding to avoid exposure.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's positive hepatitis B surface antibody suggests immunity to hepatitis B, but the active hepatitis C infection (genotype 1) poses a risk of vertical transmission, supporting formula feeding to avoid exposure.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Breastfeeding with hepatitis C is not contraindicated if nipples are intact, as the risk of transmission through breast milk is extremely low.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The benefits of breastfeeding (e.g., immune protection for the infant) may outweigh the minimal risk of hepatitis C transmission.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with intact nipples, microabrasions during breastfeeding could theoretically increase hepatitis C transmission risk, justifying caution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In resource-limited settings, formula feeding may introduce other risks (e.g., contaminated water), making breastfeeding safer overall.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show no documented cases of hepatitis C transmission via breastfeeding when maternal viral load is monitored and nipples are healthy.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Proper formula preparation education can mitigate risks associated with contaminated water or inadequate nutrition.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Given the lack of immunization records and potential gaps in vaccination history, formula feeding reduces the risk of transmitting other undetected infections to the newborn.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Given the lack of immunization records and potential gaps in vaccination history, formula feeding reduces the risk of transmitting other undetected infections to the newborn.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Breastfeeding provides essential antibodies and nutrients that formula cannot replicate, which are critical for the newborn's immune system development.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The risk of transmitting undetected infections through breastfeeding is extremely low, especially if the mother appears well and has no symptoms of active infection.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with the benefits of breastfeeding, the potential risk of transmitting undetected infections outweighs the benefits in this case due to the mother's unclear vaccination history.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The mother's positive hepatitis C RNA test indicates an active infection, which could potentially be transmitted through breastfeeding, further supporting formula feeding.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Current guidelines state that hepatitis C is not a contraindication to breastfeeding unless the mother has cracked or bleeding nipples, which are not mentioned in this case.",
+          "confidence": 0.88,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The benefits of breastfeeding, including reduced risk of chronic diseases later in life, may still outweigh the minimal risk of transmitting undetected infections.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "Even without cracked nipples, the presence of hepatitis C RNA in breast milk could pose a theoretical risk, warranting caution and consideration of formula feeding.",
+          "confidence": 0.76,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Breastfeeding is generally recommended for its immunological benefits, and hepatitis C transmission via breastfeeding is rare, so formula feeding may not be necessary.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Breastfeeding is generally recommended for its immunological benefits, and hepatitis C transmission via breastfeeding is rare, so formula feeding may not be necessary.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While hepatitis C transmission via breastfeeding is rare, the presence of hepatitis C RNA indicates active infection, which may still pose a risk to the newborn.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The mother's lack of immunization records and uncertain vaccination status could increase the risk of other infections being transmitted to the newborn during breastfeeding.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies have shown that even with active hepatitis C infection, the risk of transmission through breastfeeding is negligible when nipples are not cracked or bleeding.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The immunological benefits of breastfeeding may outweigh the potential risks, as the newborn would receive passive immunity against other infections.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "In cases where nipple integrity cannot be guaranteed, such as with first-time mothers, the risk of hepatitis C transmission, though low, may still warrant formula feeding.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The mother's hypothyroidism and potential for medication transfer via breast milk could complicate the decision to breastfeed, independent of hepatitis C status.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's hypothyroidism is well-controlled with levothyroxine, which does not contraindicate breastfeeding, so formula feeding is not strictly required based on her medical history.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's hypothyroidism is well-controlled with levothyroxine, which does not contraindicate breastfeeding, so formula feeding is not strictly required based on her medical history.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient has active hepatitis C infection (positive HCV RNA), which poses a risk of vertical transmission through breastfeeding, making formula feeding a safer option.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's lack of immunization records and uncertain vaccination status may increase the risk of transmitting other infections to the newborn, supporting formula feeding as a precaution.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The risk of hepatitis C transmission through breastfeeding is very low if nipples are not cracked or bleeding, and the benefits of breastfeeding may outweigh the risks.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hepatitis B surface antibody positivity indicates immunity, reducing the need for formula feeding due to hepatitis B concerns, but hepatitis C remains a separate issue.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Standard newborn immunization protocols can mitigate most risks from the mother's uncertain vaccination history, reducing the necessity for formula feeding.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with intact nipples, hepatitis C RNA presence in breast milk could theoretically pose a transmission risk, justifying formula feeding for absolute safety.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The psychological and nutritional benefits of breastfeeding do not eliminate the small but real risk of hepatitis C transmission, making formula feeding a reasonable alternative.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The patient's stable vital signs and normal physical exam findings suggest no immediate health risks that would necessitate formula feeding over breastfeeding.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The patient's stable vital signs and normal physical exam findings suggest no immediate health risks that would necessitate formula feeding over breastfeeding.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The positive hepatitis C RNA PCR indicates active infection, which poses a risk of vertical transmission through breastfeeding.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's lack of immunization records and uncertain vaccination status increases the risk of transmitting other infections to the newborn.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The risk of hepatitis C transmission through breastfeeding is low (less than 5%) if nipples are not cracked or bleeding.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard newborn immunization protocols can mitigate most risks from the mother's uncertain vaccination history.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with intact nipples, hepatitis C viral load in breast milk may still pose a measurable transmission risk.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Some vaccine-preventable diseases (e.g., pertussis) may not be fully covered by standard newborn immunization schedules.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

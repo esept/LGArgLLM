@@ -1,0 +1,224 @@
+{
+  "claim": "Skin cancer kills the most women in the U.S..",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "According to the American Cancer Society, lung cancer is the leading cause of cancer death among women in the U.S., not skin cancer."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "According to the American Cancer Society, lung cancer is the leading cause of cancer death among women in the U.S., not skin cancer.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer, particularly melanoma, has a high mortality rate if not detected early, making it a significant threat to women's health.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While melanoma is dangerous, its incidence and mortality rates are still lower than lung cancer, as supported by comprehensive cancer registry data.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might refer to non-melanoma skin cancers, which are more common but rarely fatal, thus distorting the perception of skin cancer's lethality.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Non-melanoma skin cancers, despite their high incidence, account for a negligible fraction of cancer deaths, reinforcing lung cancer's leading position.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Breast cancer has a higher mortality rate among women in the U.S. compared to skin cancer, based on CDC data."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Breast cancer has a higher mortality rate among women in the U.S. compared to skin cancer, based on CDC data.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer mortality rates may be underreported due to misclassification or delayed diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "CDC data is rigorously collected and verified, making misclassification unlikely to significantly impact mortality statistics.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain types of skin cancer, like melanoma, have high mortality rates in specific demographics, which may not be fully reflected in aggregate data.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even within specific demographics, breast cancer consistently ranks higher in mortality than all forms of skin cancer combined.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Melanoma, a type of skin cancer, is less common and less deadly than other cancers like colorectal cancer in women, per National Cancer Institute statistics."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Melanoma, a type of skin cancer, is less common and less deadly than other cancers like colorectal cancer in women, per National Cancer Institute statistics.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While melanoma is less common, other types of skin cancer (e.g., basal cell carcinoma and squamous cell carcinoma) are highly prevalent and contribute significantly to overall skin cancer mortality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Basal cell and squamous cell carcinomas have much lower mortality rates compared to melanoma, so melanoma remains the primary driver of skin cancer deaths.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Skin cancer mortality rates in women are still lower than breast or lung cancer mortality, which are the leading causes of cancer death in women.",
+          "confidence": 0.88,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'skin cancer,' not melanoma specifically, and aggregated skin cancer deaths may still surpass other cancers in certain demographic or regional groups.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Heart disease, not skin cancer, is the leading cause of death overall for women in the U.S., as reported by the American Heart Association."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Heart disease, not skin cancer, is the leading cause of death overall for women in the U.S., as reported by the American Heart Association.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer is the most common form of cancer in the U.S., and melanoma, a type of skin cancer, has a high mortality rate among women.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While melanoma is serious, its mortality rate is still significantly lower than that of heart disease, which accounts for nearly 1 in 5 female deaths annually.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public awareness campaigns about skin cancer prevention may lead to overestimating its mortality relative to less-publicized conditions like heart disease.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "While skin cancer is common, its mortality rate is lower than cancers such as pancreatic or ovarian cancer in women, according to medical research."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "While skin cancer is common, its mortality rate is lower than cancers such as pancreatic or ovarian cancer in women, according to medical research.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Skin cancer has a high incidence rate, and while its mortality rate is lower than some cancers, it still accounts for a significant number of deaths among women due to its prevalence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'kills the most women,' which is distinct from incidence rate. Mortality data from the CDC shows that lung and breast cancers are the leading causes of cancer deaths in women, not skin cancer.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While lung and breast cancers may have higher mortality rates, skin cancer is often underreported in mortality statistics due to misclassification or delayed effects of UV exposure.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

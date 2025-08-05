@@ -1,0 +1,287 @@
+{
+  "claim": "Central banks use interest rates to control inflation",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Central banks adjust interest rates to influence borrowing costs, which in turn affects consumer spending and business investment, thereby controlling demand-pull inflation."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Central banks adjust interest rates to influence borrowing costs, which in turn affects consumer spending and business investment, thereby controlling demand-pull inflation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Interest rate adjustments may not effectively control cost-push inflation, which arises from supply-side factors like rising commodity prices or production costs, rather than demand.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks can still mitigate cost-push inflation indirectly by stabilizing expectations and preventing secondary effects, such as wage-price spirals, through interest rate policies.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a liquidity trap, where interest rates are near zero, central banks lose their primary tool for controlling inflation, rendering interest rate adjustments ineffective.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central banks can employ unconventional monetary policies like quantitative easing or forward guidance to influence inflation even in a liquidity trap.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Higher interest rates increase savings returns, reducing disposable income and slowing down economic activity, which helps curb inflation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Higher interest rates increase savings returns, reducing disposable income and slowing down economic activity, which helps curb inflation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Higher interest rates can also increase borrowing costs for businesses, leading to reduced investment and potential job losses, which may harm economic growth more than they curb inflation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While higher interest rates may harm short-term growth, they stabilize prices in the long run, preventing hyperinflation and fostering sustainable economic conditions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some economies, inflation is driven by supply-side factors (e.g., commodity prices), making interest rate hikes ineffective or even counterproductive.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central banks often combine interest rate policies with other measures (e.g., quantitative easing or fiscal coordination) to address supply-side inflation more effectively.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Lower interest rates encourage borrowing and spending, stimulating economic growth, which can be used to counteract deflationary pressures."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Lower interest rates encourage borrowing and spending, stimulating economic growth, which can be used to counteract deflationary pressures.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Persistently low interest rates can lead to excessive borrowing and asset bubbles, creating long-term economic instability rather than sustainable growth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks can implement macroprudential policies alongside low interest rates to mitigate the risk of asset bubbles and excessive leverage.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a liquidity trap, lowering interest rates further may have little to no effect on borrowing and spending, rendering the policy ineffective against deflation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Alternative monetary tools like quantitative easing can complement low interest rates to stimulate the economy even in a liquidity trap.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Central banks, such as the Federal Reserve and the European Central Bank, explicitly state interest rate adjustments as a primary tool for managing inflation targets."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Central banks, such as the Federal Reserve and the European Central Bank, explicitly state interest rate adjustments as a primary tool for managing inflation targets.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Interest rate adjustments can sometimes be ineffective in controlling inflation if inflation is driven by supply-side shocks, such as commodity shortages or geopolitical disruptions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even during supply-side shocks, central banks can still influence inflation expectations through interest rate policies, thereby mitigating second-round effects on wages and prices.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Central banks may prioritize other objectives, such as employment or financial stability, over inflation control, leading to delayed or insufficient interest rate adjustments.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most major central banks operate under clear inflation-targeting mandates, which legally or institutionally prioritize inflation control over other objectives in the medium-to-long term.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Interest rate changes affect currency value, influencing import and export prices, which can indirectly impact inflation rates."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Interest rate changes affect currency value, influencing import and export prices, which can indirectly impact inflation rates.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Currency value changes may not always translate to significant inflation impact due to other economic factors like domestic production and demand.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Domestic production and demand are often influenced by the same interest rate changes, maintaining the indirect inflation control mechanism.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In highly globalized economies, local interest rate changes may have minimal effect on currency value due to external monetary policies.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Central banks often coordinate policies or account for global conditions when setting rates, mitigating this issue.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical data shows a correlation between central bank interest rate policies and subsequent changes in inflation rates across multiple economies."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical data shows a correlation between central bank interest rate policies and subsequent changes in inflation rates across multiple economies.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Correlation does not imply causation; other factors like fiscal policy, supply shocks, or global economic conditions may influence inflation independently of interest rates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Central banks explicitly target inflation through interest rate adjustments as part of their monetary policy mandates, which establishes a causal mechanism beyond mere correlation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some economies exhibit periods where inflation remained high despite aggressive interest rate hikes, suggesting limited effectiveness in certain contexts.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Lags in monetary policy transmission mean interest rate effects on inflation may take years to materialize, explaining apparent short-term failures.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "claim": "The majority of a set of numbers cannot be larger than the average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, the average of a set of numbers is calculated by summing all numbers and dividing by the count, meaning it represents the central tendency of the data."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, the average of a set of numbers is calculated by summing all numbers and dividing by the count, meaning it represents the central tendency of the data.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a highly skewed distribution, the majority of numbers can be larger than the average if a few extreme outliers pull the average down.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such cases with extreme outliers are statistically rare and do not represent typical datasets where the average reflects central tendency.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If all numbers in a set are identical, the majority equals the average, which is a trivial case where the claim holds.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Identical-number cases are edge cases and do not address the general claim about non-uniform datasets.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "For the majority of numbers to be larger than the average, the remaining numbers would have to be significantly smaller to balance the sum, which is mathematically implausible in most cases."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "For the majority of numbers to be larger than the average, the remaining numbers would have to be significantly smaller to balance the sum, which is mathematically implausible in most cases.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a set where most numbers are clustered close to a high value and a few are extremely low, the majority can indeed be larger than the average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such distributions are rare and often artificial, making them exceptions rather than the norm.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim assumes a uniform or symmetric distribution, but many real-world datasets (e.g., income distributions) are heavily skewed, allowing the majority to exceed the average.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in skewed distributions, the mathematical definition of the average ensures that the majority exceeding it requires extreme outliers, which are uncommon in practice.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In a symmetric distribution, such as a normal distribution, the majority of numbers cluster around the average, making it impossible for most to be larger than it."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In a symmetric distribution, such as a normal distribution, the majority of numbers cluster around the average, making it impossible for most to be larger than it.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a right-skewed distribution, the majority of numbers can be smaller than the average due to a few large outliers pulling the average up.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in right-skewed distributions, the median is often used as a better measure of central tendency, and the majority of numbers are still not larger than the median.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a left-skewed distribution, the majority of numbers can be larger than the average due to a few small outliers pulling the average down.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Left-skewed distributions are less common in real-world data, and the claim generally holds for most practical symmetric or right-skewed cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Skewed distributions with a long tail of very small values could allow the majority to be larger than the average, but such cases are exceptions rather than the norm."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Skewed distributions with a long tail of very small values could allow the majority to be larger than the average, but such cases are exceptions rather than the norm.",
+          "confidence": 0.65,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In most real-world datasets, the average is resistant to extreme values due to the Central Limit Theorem, making it unlikely for the majority to exceed the average.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Central Limit Theorem applies primarily to large sample sizes; for small or highly skewed datasets, the average can still be heavily influenced by outliers.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mathematically, the majority of numbers cannot exceed the average unless the distribution is extremely skewed, which is rare in practice.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Income and wealth distributions are examples where extreme skewness is common, and the majority can indeed be below the average due to a few very high values.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "If more than half the numbers in a set are larger than the average, the average itself would shift upward, contradicting the initial condition."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "If more than half the numbers in a set are larger than the average, the average itself would shift upward, contradicting the initial condition.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the set contains extreme outliers, the majority of numbers could be larger than the average, as the average is heavily skewed by the outliers.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Outliers are rare by definition, and in most practical datasets, the average is not skewed enough for the majority to exceed it.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a bimodal distribution, two distinct groups could each be larger than the average if the average falls between them.",
+          "confidence": 0.55,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bimodal distributions are a specific case and do not represent the general behavior of datasets, where the claim holds true.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

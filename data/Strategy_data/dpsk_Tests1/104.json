@@ -1,0 +1,185 @@
+{
+  "claim": "SnapCap is an example of a retail store.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "SnapCap is a retail store because it sells physical products directly to consumers."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "SnapCap is a retail store because it sells physical products directly to consumers.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "SnapCap primarily operates online, lacking a physical storefront, which is a key characteristic of traditional retail stores.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many businesses with online-only operations are still classified as retail stores if their primary activity is selling goods to consumers.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "SnapCap's product range is limited to niche items, which may not qualify it as a general retail store.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Retail stores can specialize in niche products and still be considered retail as long as they sell directly to consumers.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "SnapCap is not a retail store because it operates exclusively as an online marketplace."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "SnapCap is not a retail store because it operates exclusively as an online marketplace.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many online marketplaces, such as Amazon, are considered retail stores despite lacking physical locations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Amazon operates both online and physical stores, making it a hybrid retailer, not purely an online marketplace.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of a retail store traditionally includes physical locations where goods are sold directly to consumers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern definitions of retail stores have evolved to include online-only businesses due to changes in consumer behavior and technology.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "SnapCap qualifies as a retail store if it has a brick-and-mortar location where customers can purchase items."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "SnapCap qualifies as a retail store if it has a brick-and-mortar location where customers can purchase items.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "SnapCap primarily operates online and does not have a physical storefront for customer purchases.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some hybrid businesses like SnapCap may have limited physical presence for specific services, even if most sales are online.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The definition of a retail store requires consistent in-person sales, not just occasional physical presence.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern retail definitions are evolving to include businesses with minimal physical locations if they engage in direct customer transactions.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "SnapCap is not a retail store if it functions solely as a wholesaler or distributor to other businesses."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "SnapCap is not a retail store if it functions solely as a wholesaler or distributor to other businesses.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many businesses operate both as wholesalers and retail stores, so SnapCap could still be a retail store even if it has wholesale operations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "If SnapCap primarily serves other businesses and does not sell directly to consumers, it cannot be classified as a retail store.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some hybrid models exist where businesses serve both B2B and B2C markets, making the distinction less clear.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+You are given a **claim**.
+
+---
+
+### Step 1: Classify the Claim
+
+Determine the truth status of the claim from a mainstream, widely accepted perspective:
+
+- If the claim is **clearly and verifiably true**, label it as `TRUE`.
+- If the claim is **clearly and verifiably false**, label it as `FALSE`.
+- If the claim is **uncertain, unverifiable, ambiguous, or controversial**, label it as `UNDECIDED`.
+
+---
+
+### Step 2: Generate Arguments Based on the Label
+
+- If the label is `TRUE`: generate **4 to 8** logically distinct arguments that **support** the claim.
+- If the label is `FALSE`: generate **4 to 8** logically distinct arguments that **support the negation** of the claim.
+- If the label is `UNDECIDED`: generate **4 to 8** arguments that include a mix of supporting and opposing views — each argument should clearly take a side, but arguments may disagree with each other.
+
+---
+
+### Rules for All Arguments
+
+- Arguments must be logically and semantically **distinct**.
+- Do **not** include:
+  - Rare edge cases, speculative or humorous content
+  - Vague temporal references ("recently", "now") unless tied to a known time point (assume year = 2025)
+  - Subjective adjectives without measurable grounding ("better", "worse")
+  - Cultural stereotypes or idioms
+- All content must be based on **mainstream, widely accepted sources** such as scientific consensus, legal norms, textbooks, or general human knowledge.
+
+---
+
+### Output Format (YAML)
+```yaml
+Label: TRUE
+Arguments:
+  - id: A1
+    text: "Example of a distinct, clear, well-grounded argument."
+  - id: A2
+    text: "Another distinct, logical argument consistent with the label."
+```
+Use exactly 4–8 arguments.
+Use strict YAML syntax and double quotes for all strings.
+Output only YAML content — no commentary or explanation.

@@ -1,0 +1,261 @@
+{
+  "claim": "Consider the following background information: A 78-year-old right-handed man is brought to the emergency department by his daughter for sudden onset speech changes. The patient lives with his daughter and was chatting with her when suddenly his speech became distorted with random and disconnected words that made no sense. He seems to be physically frustrated that no one understands him. Physical examination demonstrates weakness of the right arm.\n\nGiven the background information the following is corrrect: The patient\"s symptoms are best explained by damage to the left frontal lobe.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The left frontal lobe is responsible for language production (Broca's area), and damage to this area can cause expressive aphasia, which matches the patient's symptoms of distorted speech with disconnected words."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The left frontal lobe is responsible for language production (Broca's area), and damage to this area can cause expressive aphasia, which matches the patient's symptoms of distorted speech with disconnected words.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Expressive aphasia can also result from damage to other brain regions, such as the left temporal lobe or subcortical structures, which are also involved in language processing.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's right arm weakness strongly localizes the lesion to the left frontal lobe, as motor control for the right side of the body is contralaterally organized in the brain.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Sudden onset of symptoms could also indicate a transient ischemic attack (TIA) or migraine aura, which may not necessarily involve permanent damage to the left frontal lobe.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The persistence and specific nature of the speech disturbance (expressive aphasia) make TIA or migraine less likely compared to a focal lesion like a stroke in Broca's area.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The patient's right arm weakness suggests a left hemisphere lesion, as the left hemisphere controls the right side of the body, further supporting the localization to the left frontal lobe."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's right arm weakness suggests a left hemisphere lesion, as the left hemisphere controls the right side of the body, further supporting the localization to the left frontal lobe.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Right arm weakness could also result from a subcortical lesion in the left hemisphere, not necessarily the frontal lobe.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Subcortical lesions typically do not cause the same type of speech disturbance (e.g., Broca's aphasia) as seen in this patient.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be explained by a left temporal lobe lesion, given the language deficits.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Temporal lobe lesions typically cause Wernicke's aphasia, which is characterized by fluent but nonsensical speech, not the non-fluent speech seen here.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Sudden onset of speech changes and right-sided weakness is highly suggestive of a stroke in the left middle cerebral artery territory, which supplies the left frontal lobe."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Sudden onset of speech changes and right-sided weakness is highly suggestive of a stroke in the left middle cerebral artery territory, which supplies the left frontal lobe.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While stroke is likely, other conditions like transient ischemic attack (TIA) or migraine aura can also present with similar sudden neurological deficits.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "TIA symptoms typically resolve within 24 hours, and the persistent symptoms in this case make stroke more probable.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The left middle cerebral artery also supplies the temporal lobe, and damage there could cause speech deficits without frontal lobe involvement.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Frontal lobe involvement is more consistent with the observed motor weakness in the right arm, which is a hallmark of frontal lobe damage.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The patient's frustration at not being understood is a classic feature of Broca's aphasia, which results from damage to the left frontal lobe."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's frustration at not being understood is a classic feature of Broca's aphasia, which results from damage to the left frontal lobe.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Frustration at not being understood can also occur in Wernicke's aphasia, which results from damage to the left temporal lobe, not the frontal lobe.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Broca's aphasia is specifically characterized by non-fluent speech and preserved comprehension, which aligns with the patient's symptoms of distorted speech and frustration.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's right arm weakness could also suggest a right hemisphere stroke, which would not involve Broca's area.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Right arm weakness is more commonly associated with left hemisphere strokes due to the crossing of motor pathways in the brain.",
+          "confidence": 0.85,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The combination of non-fluent speech and right arm weakness localizes the lesion to the left frontal lobe, as these are the typical deficits seen with damage to this area."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The combination of non-fluent speech and right arm weakness localizes the lesion to the left frontal lobe, as these are the typical deficits seen with damage to this area.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Non-fluent speech and right arm weakness can also occur with damage to the left parietal lobe, which is involved in language processing and motor control.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The left parietal lobe typically causes more sensory deficits and apraxia rather than pure non-fluent speech, making frontal lobe more likely.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A subcortical lesion in the left hemisphere could also produce similar symptoms without involving the frontal lobe directly.",
+          "confidence": 0.6,
+          "attacks": {
+            "A5": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Subcortical lesions usually present with more mixed symptoms, including sensory loss, which is not described here, supporting frontal lobe localization.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Transient ischemic attacks or migraines can mimic stroke-like symptoms without permanent damage to any lobe.",
+          "confidence": 0.5,
+          "attacks": {
+            "A5": 0.45
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The sudden onset and persistence of symptoms are more characteristic of stroke than transient causes like migraines.",
+          "confidence": 0.8,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

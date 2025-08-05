@@ -1,0 +1,225 @@
+{
+  "claim": "All cats are mammals. Tigers belong to the cat family. Therefore, tigers are mammals",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "All cats are members of the biological family Felidae, which is classified under the class Mammalia, meaning all cats are mammals by definition.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "All cats are members of the biological family Felidae, which is classified under the class Mammalia, meaning all cats are mammals by definition.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some members of the Felidae family, such as extinct species, may not have been mammals due to differing evolutionary traits.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fossil records confirm that all known extinct Felidae species exhibit mammalian characteristics like lactation and fur.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Classification systems can be revised, and future discoveries might reclassify some Felidae species as non-mammalian.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current taxonomic consensus, backed by genetic and morphological evidence, strongly supports Felidae as exclusively mammalian.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Tigers (Panthera tigris) are scientifically classified under the Felidae family, which confirms their membership in the cat family.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Tigers (Panthera tigris) are scientifically classified under the Felidae family, which confirms their membership in the cat family.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some subspecies of tigers may have genetic anomalies that challenge their strict classification under Felidae.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Genetic studies overwhelmingly confirm that all tiger subspecies fit within the Felidae family without exception.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'cat family' is colloquial and lacks precise scientific boundaries, which could exclude certain members like tigers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Taxonomic conventions explicitly define Felidae to include all species commonly referred to as 'cats,' including tigers.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Hybridization between tigers and other species could blur their classification within the cat family.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Hybridization does not alter the fundamental taxonomic classification of tigers as members of the Felidae family.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Mammals are defined by characteristics such as having mammary glands, hair, and three middle ear bones, all of which tigers possess.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mammals are defined by characteristics such as having mammary glands, hair, and three middle ear bones, all of which tigers possess.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some tigers may exhibit genetic mutations that result in the absence of one or more mammalian characteristics, such as hair or mammary glands.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Genetic mutations affecting mammalian traits are extremely rare and do not change the species' classification as mammals.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The fossil record shows transitional species between reptiles and mammals, suggesting that mammalian traits are not strictly binary.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Transitional species are irrelevant to the classification of modern tigers, which clearly exhibit all mammalian traits.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The taxonomic classification system places both domestic cats and tigers under the same order (Carnivora) and family (Felidae), reinforcing their shared mammalian traits.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The taxonomic classification system places both domestic cats and tigers under the same order (Carnivora) and family (Felidae), reinforcing their shared mammalian traits.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Taxonomic classifications are based on morphological and genetic similarities, which do not necessarily imply identical biological traits like mammalian characteristics.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some species within the same family can exhibit exceptions to general traits, such as non-mammalian reproductive methods in rare cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Genetic studies confirm that all members of Felidae share common mammalian ancestry, making exceptions highly unlikely.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No known species in the Felidae family deviate from mammalian traits, making such exceptions purely hypothetical.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with shared ancestry, convergent evolution or genetic mutations could theoretically produce non-mammalian traits in Felidae.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

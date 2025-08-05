@@ -1,0 +1,141 @@
+{
+  "claim": "Does the equation 2\u00b2 + 2\u00b2 = 8 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The equation 2\u00b2 + 2\u00b2 simplifies to 4 + 4, which equals 8, confirming its validity."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation 2\u00b2 + 2\u00b2 simplifies to 4 + 4, which equals 8, confirming its validity.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 actually equals 8, but this is a trivial arithmetic fact and does not require confirmation.",
+          "confidence": 0.9,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While the arithmetic is correct, the claim's phrasing as a question implies doubt where none exists, making A1's confirmation redundant.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Basic arithmetic operations confirm that squaring 2 results in 4, and adding two 4s yields 8."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic operations confirm that squaring 2 results in 4, and adding two 4s yields 8.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 = 8 is incorrect because squaring 2 gives 4, but adding two 4s gives 8, which matches the claim.",
+          "confidence": 0.5,
+          "attacks": {
+            "A2": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The claim is a tautology, so the argument A2 is redundant and does not provide additional information.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.8
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Mathematical laws of exponents and addition ensure that 2\u00b2 + 2\u00b2 = 8 is correct."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Mathematical laws of exponents and addition ensure that 2\u00b2 + 2\u00b2 = 8 is correct.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 = 8 is incorrect because 2\u00b2 equals 4, and 4 + 4 equals 8, which actually supports the original claim.",
+          "confidence": 1.0,
+          "attacks": {
+            "A3": 0.0
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The argument assumes the correctness of the equation without providing a step-by-step proof, which could be misleading for those unfamiliar with basic arithmetic.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "A step-by-step proof shows that 2\u00b2 = 4, and 4 + 4 = 8, confirming the original equation is correct.",
+          "confidence": 1.0,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The equation follows the standard order of operations (PEMDAS/BODMAS), leading to the correct result of 8."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The equation follows the standard order of operations (PEMDAS/BODMAS), leading to the correct result of 8.",
+          "cate": "P",
+          "confidence": 1.0,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The equation is mathematically incorrect because 2\u00b2 + 2\u00b2 equals 4 + 4, which is 8, so the original claim is actually true.",
+          "confidence": 1.0,
+          "attacks": {
+            "A4": 0.0
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The equation is correct, but the argument A4 is redundant because the correctness is self-evident without invoking PEMDAS/BODMAS.",
+          "confidence": 0.9,
+          "attacks": {
+            "A4": 0.8
+          }
+        }
+      ]
+    }
+  }
+}

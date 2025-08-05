@@ -1,0 +1,298 @@
+{
+  "claim": "James Watson and Gerald Edelman are people born in the United States who won a Nobel Prize for Physiology.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "James Watson was born in Chicago, Illinois, USA, and won the Nobel Prize in Physiology or Medicine in 1962.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "James Watson was born in Chicago, Illinois, USA, and won the Nobel Prize in Physiology or Medicine in 1962.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Gerald Edelman, another individual mentioned in the claim, was born in New York, USA, and won the Nobel Prize in Physiology or Medicine in 1972, not 1962.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim combines two distinct individuals into a single statement, which could be misleading as their achievements and backgrounds are separate.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While Gerald Edelman's details are correct, the original argument (A1) only addresses James Watson, so the claim's broader assertion remains partially valid.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim does not imply that James Watson and Gerald Edelman are the same person, but rather lists them as two separate Nobel laureates from the US.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if the claim lists them separately, the original argument (A1) fails to address Gerald Edelman, making the claim incomplete without further verification.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Gerald Edelman was born in New York City, USA, and won the Nobel Prize in Physiology or Medicine in 1972.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Gerald Edelman was born in New York City, USA, and won the Nobel Prize in Physiology or Medicine in 1972.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Gerald Edelman's Nobel Prize was shared with Rodney Porter, which may diminish the uniqueness of his individual achievement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Nobel Prize criteria have evolved over time, and Edelman's work may not meet current standards for the award.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Sharing the Nobel Prize does not diminish the significance of Edelman's contributions, as collaboration is common in scientific breakthroughs.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical context is important, and Edelman's work was groundbreaking at the time, regardless of current standards.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While collaboration is common, the Nobel Prize's prestige is often associated with individual recognition, which is diluted when shared.",
+          "confidence": 0.71,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Current standards reflect advancements in the field, and past awards may not hold the same weight if reevaluated today.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim specifies two individuals, both of whom are confirmed to have been born in the United States and to have won a Nobel Prize in Physiology or Medicine.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim specifies two individuals, both of whom are confirmed to have been born in the United States and to have won a Nobel Prize in Physiology or Medicine.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While James Watson was born in the United States, Gerald Edelman was actually born in New York City, which is part of the United States, but this might be considered overly specific and not a meaningful distinction.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not specify the exact years they won the Nobel Prize, which could be relevant for historical context or verification purposes.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The birthplace of Gerald Edelman being New York City is still within the United States, so the original claim remains accurate despite the added specificity.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The exact years of their Nobel Prizes are well-documented and easily verifiable, so the lack of specificity in the claim does not diminish its accuracy.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if the exact years are verifiable, including them in the claim would provide more complete information and avoid potential ambiguity.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "There are no records of James Watson or Gerald Edelman being born outside the United States, which supports the claim.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "There are no records of James Watson or Gerald Edelman being born outside the United States, which supports the claim.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of records does not definitively prove birthplace, as historical records can be incomplete or lost.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may have dual citizenship or unclear birth records, making birthplace claims uncertain.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Reputable sources like official biographies and Nobel Prize records confirm their U.S. birthplace, reducing uncertainty.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Dual citizenship does not negate birthplace; primary records still establish their birth in the U.S.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even reputable sources can contain errors or rely on unverified historical data.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Primary records may not always be accessible or may conflict, leaving room for doubt.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Nobel Prize records officially list both James Watson and Gerald Edelman as laureates in Physiology or Medicine, and their birthplaces as the United States.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Nobel Prize records officially list both James Watson and Gerald Edelman as laureates in Physiology or Medicine, and their birthplaces as the United States.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While the Nobel Prize records list their birthplaces as the United States, James Watson was actually born in Chicago, Illinois, which is part of the United States, but Gerald Edelman was born in New York City, which is also part of the United States. This does not contradict the claim but provides more precise information.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Nobel Prize records may contain errors or omissions, and independent verification from other reliable sources is necessary to confirm the birthplaces of James Watson and Gerald Edelman.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Multiple authoritative sources, including biographies and academic records, corroborate that both James Watson and Gerald Edelman were indeed born in the United States, supporting the accuracy of the Nobel Prize records.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if other sources corroborate the information, the possibility of systemic errors across multiple sources cannot be entirely ruled out without primary documentation such as birth certificates.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

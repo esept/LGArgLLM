@@ -1,0 +1,248 @@
+{
+  "claim": "Consider the following background information: A 61-year-old man presents to his primary care provider complaining of abdominal pain and constipation. He reports a 4-day history of steady right lower quadrant pain. He has had one small bowel movement in 4 days. Normally he has a bowel movement once a day. His medical history is notable for poorly controlled hypertension and hyperlipidemia. He takes enalapril, hydrochlorothiazide, aspirin, and atorvastatin. He has a 40 pack-year smoking history and drinks 3-4 beers per day. His diet consists primarily of fast food. His temperature is 101.8\u00b0F (38.8\u00b0C), blood pressure is 160/95 mmHg, pulse is 90/min, and respirations are 16/min. A review of the patient\u2019s medical record reveals colonoscopy results from 1 year ago. Relevant findings included multiple small, pedunculated polyps which were removed, multiple colonic mucosal outpouchings, and no other masses.\n\nGiven the background information the following is corrrect: This patient\"s condition is most strongly associated with Alpha-1-antitrypsin deficiency.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, not the colon or gastrointestinal tract."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, not the colon or gastrointestinal tract.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, rare cases of gastrointestinal involvement have been reported in the literature.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The reported cases of gastrointestinal involvement in Alpha-1-antitrypsin deficiency are anecdotal and not supported by large-scale studies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms and findings are more consistent with diverticulitis or another common gastrointestinal condition rather than a rare manifestation of Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's history of multiple colonic mucosal outpouchings (diverticula) and current symptoms strongly suggest diverticulitis as the most likely diagnosis.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The patient's symptoms and findings (abdominal pain, constipation, fever, and diverticulosis) are more consistent with diverticulitis or another gastrointestinal condition."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The patient's symptoms and findings (abdominal pain, constipation, fever, and diverticulosis) are more consistent with diverticulitis or another gastrointestinal condition.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency primarily affects the lungs and liver, not the gastrointestinal tract, making it an unlikely cause of the patient's symptoms.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While diverticulitis is a plausible diagnosis, the patient's fever and elevated inflammatory markers could also suggest an infectious or inflammatory bowel disease.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's history of smoking and alcohol use increases the risk of gastrointestinal malignancies, which should also be considered in the differential diagnosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "E1",
+          "text": "The presence of multiple colonic mucosal outpouchings (diverticulosis) strongly supports diverticulitis as the most likely diagnosis given the clinical presentation.",
+          "confidence": 0.8,
+          "attacks": [
+            "D1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Alpha-1-antitrypsin deficiency is a genetic condition, and there is no indication in the patient's history or presentation to suggest this diagnosis."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Alpha-1-antitrypsin deficiency is a genetic condition, and there is no indication in the patient's history or presentation to suggest this diagnosis.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's history of smoking and alcohol use could suggest liver disease, which is sometimes associated with Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Liver disease in Alpha-1-antitrypsin deficiency typically presents with specific liver enzyme abnormalities and other clinical signs, which are not mentioned in this patient's case.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could be due to diverticulitis, which is more common in older adults and aligns with his findings of colonic mucosal outpouchings.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis is a plausible explanation, but it does not rule out the possibility of other underlying conditions, including rare genetic disorders.",
+          "confidence": 0.5,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's risk factors (poor diet, smoking, alcohol use) and findings (diverticulosis) point toward a gastrointestinal etiology rather than a metabolic or genetic disorder."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's risk factors (poor diet, smoking, alcohol use) and findings (diverticulosis) point toward a gastrointestinal etiology rather than a metabolic or genetic disorder.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency can present with liver disease, which might explain the abdominal pain and alcohol use history.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Liver disease from Alpha-1-antitrypsin deficiency typically presents with jaundice and elevated liver enzymes, which are not mentioned in the patient's history.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's fever and elevated temperature suggest an infectious or inflammatory process, which is more consistent with diverticulitis than a genetic disorder.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diverticulitis commonly presents with left lower quadrant pain, whereas this patient has right lower quadrant pain.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Right-sided diverticulitis, though less common, can occur and should still be considered in the differential diagnosis.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Alpha-1-antitrypsin deficiency does not typically present with acute abdominal pain and fever, which are prominent features in this case."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Alpha-1-antitrypsin deficiency does not typically present with acute abdominal pain and fever, which are prominent features in this case.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Alpha-1-antitrypsin deficiency can lead to liver disease, which may present with abdominal pain and systemic symptoms like fever in advanced cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Liver disease from Alpha-1-antitrypsin deficiency typically presents with chronic symptoms like jaundice or ascites, not acute abdominal pain and fever as seen here.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's heavy alcohol use and fast-food diet are more likely causes of his symptoms than Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's fever and localized right lower quadrant pain suggest an acute infectious or inflammatory process, not a metabolic disorder like Alpha-1-antitrypsin deficiency.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

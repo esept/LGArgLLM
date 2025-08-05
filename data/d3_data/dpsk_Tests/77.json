@@ -1,0 +1,230 @@
+{
+  "claim": "An autoimmune disease occurs when the body attacks foreign antigens",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "An autoimmune disease occurs when the body's immune system mistakenly attacks its own healthy cells and tissues, not foreign antigens."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "An autoimmune disease occurs when the body's immune system mistakenly attacks its own healthy cells and tissues, not foreign antigens.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some autoimmune diseases involve molecular mimicry, where the immune system attacks foreign antigens that resemble self-antigens, leading to collateral damage to healthy tissues.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Molecular mimicry is a secondary mechanism; the primary pathology still stems from the immune system's failure to distinguish self from non-self, not the foreign antigen itself.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Infections can trigger autoimmune responses by exposing hidden self-antigens or altering immune regulation, indirectly linking foreign antigens to disease onset.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in infection-triggered cases, the root cause remains the immune system's aberrant targeting of self, not the foreign pathogen.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Foreign antigens are typically targeted by the immune system in a normal immune response, not in autoimmune diseases."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Foreign antigens are typically targeted by the immune system in a normal immune response, not in autoimmune diseases.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Autoimmune diseases can involve molecular mimicry, where foreign antigens resemble self-antigens, leading to cross-reactivity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Molecular mimicry is a rare mechanism and does not account for the majority of autoimmune disease cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some autoimmune diseases are triggered by infections where the immune system initially targets foreign antigens but later attacks self-tissues due to bystander activation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bystander activation is a secondary effect and does not imply that autoimmune diseases primarily involve targeting foreign antigens.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Autoimmune diseases are characterized by the loss of immune tolerance to self-antigens, leading to damage of the body's own structures."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Autoimmune diseases are characterized by the loss of immune tolerance to self-antigens, leading to damage of the body's own structures.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim suggests autoimmune diseases target foreign antigens, but A3 correctly states they target self-antigens, making the claim incorrect.",
+          "confidence": 0.9,
+          "attacks": []
+        },
+        {
+          "id": "B2",
+          "text": "Some autoimmune diseases may involve molecular mimicry, where foreign antigens resemble self-antigens, indirectly supporting the claim.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Molecular mimicry is a rare mechanism and does not represent the majority of autoimmune diseases, which primarily target self-antigens.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The definition of autoimmune diseases is based on the immune system's attack on self-antigens, not foreign antigens."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The definition of autoimmune diseases is based on the immune system's attack on self-antigens, not foreign antigens.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some autoimmune responses are triggered by molecular mimicry, where foreign antigens resemble self-antigens, leading to cross-reactivity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in molecular mimicry, the pathology arises from the immune system's attack on self-tissues, not the foreign antigen itself.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain infections can induce autoimmunity by exposing hidden self-antigens, making foreign antigens indirectly responsible.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The primary diagnostic criterion for autoimmune diseases remains the detection of autoantibodies or self-reactive T cells, not foreign antigen involvement.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Examples like rheumatoid arthritis and lupus demonstrate immune system attacks on the body's own joints and tissues, not foreign invaders."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Examples like rheumatoid arthritis and lupus demonstrate immune system attacks on the body's own joints and tissues, not foreign invaders.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Autoimmune diseases can also involve cross-reactivity where the immune system initially targets foreign antigens but later attacks similar self-antigens.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Molecular mimicry is a well-documented phenomenon where foreign antigens resemble self-antigens, leading to autoimmune responses.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some autoimmune diseases are triggered by infections where the immune system's response to pathogens inadvertently damages host tissues.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Post-infectious autoimmunity supports the claim because the initial immune response is correctly directed at foreign antigens before becoming autoreactive.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

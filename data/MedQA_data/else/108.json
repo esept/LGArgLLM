@@ -1,0 +1,347 @@
+{
+  "claim": "A 73-year-old woman with atrial fibrillation presents to your clinic to discuss the need for anticoagulation. Her PMH is significant for high blood pressure, diabetes mellitus type II, osteoporosis, and depression. She previously smoked but quit about 16 years ago. She has never had a stroke or TIA. Her physical examination is remarkable for an irregular heart rate. She has a blood pressure of 136/94 mm Hg and a heart rate of 74/min. What is her CHADS2 score? : 2",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Her age (73 years) contributes 1 point to the CHADS2 score, as she is over 75 years old.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Her age (73 years) contributes 1 point to the CHADS2 score, as she is over 75 years old.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient is actually 73 years old, not over 75, so she should not receive 1 point for age in the CHADS2 score.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The CHADS2 score criteria specify that age \u226575 is required for 1 point, and the patient does not meet this threshold.",
+          "confidence": 0.98,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the patient is not yet 75, she is very close to that age, and the risk of stroke increases significantly with age, so a point might still be justified.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical guidelines are strict about the age cutoff for CHADS2 scoring to ensure consistency, so the point should not be given.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if the patient is close to 75, the CHADS2 score is designed to be objective, and subjective adjustments undermine its reliability.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Her history of hypertension (high blood pressure) contributes another 1 point to the CHADS2 score.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Her history of hypertension (high blood pressure) contributes another 1 point to the CHADS2 score.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Hypertension alone may not be sufficient to justify anticoagulation without considering other risk factors like age or diabetes.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's blood pressure is borderline (136/94 mm Hg), which may not meet the strict criteria for hypertension in some guidelines.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even borderline hypertension is a significant risk factor for stroke in atrial fibrillation, as per CHADS2 scoring.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Current guidelines consider a systolic blood pressure >130 mm Hg as hypertensive for stroke risk stratification in AF.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The CHADS2 score is outdated and less precise than newer scoring systems like CHA2DS2-VASc, which might change the risk assessment.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Her diabetes mellitus type II diagnosis does not contribute to the CHADS2 score in this case, as it is not listed as a contributing factor in the given information.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Her diabetes mellitus type II diagnosis does not contribute to the CHADS2 score in this case, as it is not listed as a contributing factor in the given information.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Diabetes mellitus type II is a known risk factor for stroke in atrial fibrillation and should be included in the CHADS2 score calculation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of diabetes mellitus type II in the contributing factors list does not necessarily mean it should be excluded from the CHADS2 score, as clinical guidelines universally include it.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The CHADS2 score is a standardized tool, and omitting diabetes mellitus type II would lead to an underestimation of stroke risk.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical guidelines explicitly state that diabetes mellitus type II is a component of the CHADS2 score, regardless of the provided information.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if diabetes mellitus type II is included, other factors like hypertension and age already place her in a moderate-risk category, so the impact may be minimal.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Her history of smoking, although quit 16 years ago, does not contribute to the CHADS2 score as it is not a factor in the scoring system.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Her history of smoking, although quit 16 years ago, does not contribute to the CHADS2 score as it is not a factor in the scoring system.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While smoking is not part of CHADS2, it is a known independent risk factor for stroke, which could influence clinical decision-making beyond the score.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The CHADS2 score is outdated and does not account for other important risk factors like smoking, which may lead to underestimation of stroke risk.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Clinical guidelines still recommend CHADS2 or CHA2DS2-VASc for stroke risk assessment, and smoking is not included in either system.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While CHADS2 may be simpler, CHA2DS2-VASc is more comprehensive and should be used instead, though it still doesn't include smoking.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if guidelines recommend these scores, clinicians should consider all risk factors including smoking when making anticoagulation decisions.",
+          "confidence": 0.82,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The absence of prior stroke or TIA means she does not receive the 2 points that would be assigned for that history.",
+        "confidence": 1.0,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The absence of prior stroke or TIA means she does not receive the 2 points that would be assigned for that history.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "While she has no prior stroke or TIA, her age (73) and hypertension (BP 136/94) still give her a CHADS2 score of 2, indicating moderate stroke risk.",
+          "confidence": 0.95,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Her blood pressure of 136/94 may not consistently meet the threshold for hypertension (\u2265140/90), potentially reducing her CHADS2 score to 1 if hypertension is not confirmed.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if her BP is borderline, her age alone (\u226575) would warrant a CHADS2 score of at least 1, and other factors like diabetes could further increase her risk.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Her diabetes mellitus type II and hypertension are sufficient to assign 2 points on the CHADS2 score, regardless of her age or prior stroke history.",
+          "confidence": 0.88,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Diabetes alone may not always correlate with high stroke risk in elderly patients, especially if well-controlled, questioning the automatic assignment of 1 point.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Her heart failure status is not mentioned, so it does not contribute to the CHADS2 score.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Her heart failure status is not mentioned, so it does not contribute to the CHADS2 score.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Heart failure may be inferred from her irregular heart rate and hypertension, which could contribute to the CHADS2 score.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of documented heart failure in her PMH strongly suggests it should not be included in the CHADS2 score.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "An irregular heart rate alone is not sufficient to diagnose heart failure; clinical or echocardiographic evidence is required.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypertension is already accounted for separately in the CHADS2 score, so it should not be double-counted as evidence of heart failure.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While echocardiographic evidence is ideal, in clinical practice heart failure is often diagnosed based on symptoms and physical exam findings.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

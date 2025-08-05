@@ -1,0 +1,177 @@
+{
+  "claim": "A vegan would eat a traditional Paella dish.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Traditional paella contains animal-derived ingredients such as chicken, rabbit, or seafood, which are not consumed by vegans."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Traditional paella contains animal-derived ingredients such as chicken, rabbit, or seafood, which are not consumed by vegans.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vegans may choose to eat traditional paella if they are not strict about their diet or are in a social situation where avoiding it would be difficult.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Veganism is defined by the avoidance of all animal products, and making exceptions undermines the ethical and dietary principles of veganism.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are vegan versions of paella that replace animal-derived ingredients with plant-based alternatives, so a vegan could eat paella without compromising their principles.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vegan paella is not traditional paella, as the traditional recipe explicitly includes animal-derived ingredients.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Vegans avoid all animal products, including meat, fish, and shellfish, which are common in traditional paella recipes."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Vegans avoid all animal products, including meat, fish, and shellfish, which are common in traditional paella recipes.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vegans might eat a modified version of paella that substitutes animal products with plant-based alternatives.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Traditional paella is defined by its use of specific animal products, so a plant-based version would not be considered authentic.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Culinary traditions evolve, and many dishes have vegan versions that are widely accepted as legitimate variations.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The use of animal-based broths or fats in traditional paella preparation makes it incompatible with a vegan diet."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The use of animal-based broths or fats in traditional paella preparation makes it incompatible with a vegan diet.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Vegan versions of paella can be made using plant-based broths and oils, making it compatible with a vegan diet.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Traditional paella is defined by its use of animal-based ingredients, so vegan versions are not authentic.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Veganism is about avoiding animal exploitation, not strict adherence to tradition, so vegan paella is valid.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Veganism is defined by the exclusion of all animal-derived ingredients, and traditional paella does not meet this dietary requirement."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Veganism is defined by the exclusion of all animal-derived ingredients, and traditional paella does not meet this dietary requirement.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some vegans may choose to eat traditional paella if they are not strictly adhering to vegan dietary principles.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Veganism is an ethical stance, not just a diet, so even occasional consumption of animal-derived ingredients contradicts its core principles.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Traditional paella can be modified to exclude animal-derived ingredients, making it vegan-friendly.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modified paella is not traditional paella, so the original claim still holds for traditional recipes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

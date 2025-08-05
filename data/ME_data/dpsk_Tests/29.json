@@ -1,0 +1,271 @@
+{
+  "claim": "If today is Monday, tomorrow is Wednesday",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The sequence of days in a week is universally recognized as Monday followed by Tuesday, not Wednesday."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The sequence of days in a week is universally recognized as Monday followed by Tuesday, not Wednesday.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some cultures or calendars, the naming or sequencing of weekdays might differ, potentially leading to exceptions.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International standards like ISO 8601 strictly define Monday as preceding Tuesday, making cultural exceptions negligible in most contexts.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If 'today is Monday' is interpreted metaphorically or in a non-literal context, the claim could hold symbolic meaning unrelated to actual weekdays.",
+          "confidence": 0.2,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Literal interpretations of weekday sequences are foundational to scheduling and communication, rendering metaphorical exceptions irrelevant in practice.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Calendars and timekeeping systems consistently list Tuesday as the day after Monday."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Calendars and timekeeping systems consistently list Tuesday as the day after Monday.",
+          "confidence": 0.99,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some cultures or calendars may have different naming conventions for weekdays.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar, which is the most widely used calendar globally, standardizes Tuesday as the day after Monday.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Gregorian calendar, the most widely used civil calendar, defines Tuesday as the day following Monday."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Gregorian calendar, the most widely used civil calendar, defines Tuesday as the day following Monday.",
+          "confidence": 0.98,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is a hypothetical or metaphorical statement, not meant to be taken literally about calendar days.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in metaphorical contexts, the statement contradicts universally understood calendar conventions, making it misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures or alternate calendars might have different sequences of weekdays, making the claim contextually valid.",
+          "confidence": 0.45,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gregorian calendar's dominance makes such exceptions irrelevant for general interpretation of the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Common usage and linguistic conventions in English and many other languages confirm that Tuesday follows Monday."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Common usage and linguistic conventions in English and many other languages confirm that Tuesday follows Monday.",
+          "confidence": 0.98,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In some rare or fictional contexts, the sequence of weekdays may be altered for storytelling or cultural reasons.",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in fictional contexts, the standard sequence of weekdays is typically preserved unless explicitly stated otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some languages or dialects might have different naming conventions for weekdays, potentially leading to confusion.",
+          "confidence": 0.4,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "English and most major languages follow the same sequence (Monday \u2192 Tuesday), making the original argument broadly applicable.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Educational systems worldwide teach that the order of days is Monday, Tuesday, Wednesday, etc."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Educational systems worldwide teach that the order of days is Monday, Tuesday, Wednesday, etc.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some educational systems may have errors or outdated information in their curriculum.",
+          "confidence": 0.3,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standardized educational materials are regularly reviewed and updated to ensure accuracy.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cultural or linguistic differences might lead to variations in how days are ordered or named.",
+          "confidence": 0.4,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gregorian calendar and ISO standards ensure global consistency in the naming and ordering of days.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Digital and physical calendars, including those on smartphones and computers, display Tuesday after Monday."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Digital and physical calendars, including those on smartphones and computers, display Tuesday after Monday.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim may be based on a non-Gregorian calendar system where the sequence of days differs.",
+          "confidence": 0.3,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Gregorian calendar is the globally accepted standard, making non-standard systems highly unlikely to be relevant without explicit context.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be a joke or metaphorical statement not intended to be taken literally.",
+          "confidence": 0.2,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Without additional context suggesting humor or metaphor, the argument should be evaluated as a literal claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

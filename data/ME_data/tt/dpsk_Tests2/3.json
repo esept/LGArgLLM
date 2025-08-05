@@ -1,0 +1,267 @@
+{
+  "claim": "The heart is located in the right side of the chest",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Medical textbooks and anatomical studies consistently describe the heart as being located in the left side of the chest, not the right.",
+        "confidence": 0.98,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Medical textbooks and anatomical studies consistently describe the heart as being located in the left side of the chest, not the right.",
+          "confidence": 0.98,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some rare congenital conditions, such as dextrocardia, can cause the heart to be located on the right side of the chest.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Medical imaging studies sometimes show variations in heart position due to individual anatomical differences.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare, occurring in about 1 in 12,000 people, and does not represent the norm.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard anatomical references are based on the majority of cases, and variations do not invalidate the general rule.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1",
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Imaging studies that show variations are outliers and do not change the established anatomical knowledge.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In the vast majority of people, the heart's apex points to the left, which is a clear anatomical indicator of its left-sided position.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In the vast majority of people, the heart's apex points to the left, which is a clear anatomical indicator of its left-sided position.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some medical conditions, like dextrocardia, cause the heart to be positioned on the right side, contradicting the general anatomical norm.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare, affecting less than 1% of the population, so it doesn't invalidate the general rule about the heart's left-sided position.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The heart's position can vary slightly among individuals due to anatomical variations, making the left-sided apex not universally definitive.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard anatomical textbooks and medical imaging consistently show the heart's apex pointing left in the vast majority of cases, confirming the general rule.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Imaging techniques such as X-rays and MRIs show the heart predominantly on the left side of the chest in standard human anatomy.",
+        "confidence": 0.96,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Imaging techniques such as X-rays and MRIs show the heart predominantly on the left side of the chest in standard human anatomy.",
+          "confidence": 0.96,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some congenital conditions like dextrocardia can cause the heart to be positioned on the right side.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Dextrocardia is extremely rare and does not represent standard human anatomy.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Imaging techniques can sometimes produce artifacts or misplacements due to technical errors.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern imaging techniques are highly reliable and standardized, minimizing the chance of such errors.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In rare cases of situs inversus, a congenital condition, the heart and other organs are mirrored and located on the right side, but this is an exception, not the norm.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In rare cases of situs inversus, a congenital condition, the heart and other organs are mirrored and located on the right side, but this is an exception, not the norm.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Situs inversus is extremely rare, affecting only about 1 in 10,000 people, making it statistically negligible in general discussions about heart location.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Medical textbooks and anatomical studies overwhelmingly confirm that the heart is normally located on the left side of the chest.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in situs inversus cases, the heart's function and structure remain the same, just mirrored, so it doesn't change the general anatomical understanding.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The rarity of situs inversus doesn't invalidate its existence, and it should still be acknowledged in comprehensive anatomical discussions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Textbooks also document situs inversus, so they don't exclusively support the left-side claim but acknowledge exceptions.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Placement of a stethoscope for auscultation of heart sounds is primarily on the left side, further confirming the heart's left-sided location.",
+        "confidence": 0.93,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Placement of a stethoscope for auscultation of heart sounds is primarily on the left side, further confirming the heart's left-sided location.",
+          "confidence": 0.93,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Stethoscope placement can vary based on individual anatomical variations, and some heart sounds may still be audible on the right side.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard medical practice and anatomical studies consistently show the heart's apex is located on the left side, making left-sided auscultation the norm.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Auscultation techniques are subjective and can be influenced by the examiner's experience, potentially leading to misinterpretation of heart location.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical training rigorously standardizes auscultation techniques to minimize subjectivity and ensure accurate assessment of heart sounds.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

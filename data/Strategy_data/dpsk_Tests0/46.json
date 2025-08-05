@@ -1,0 +1,189 @@
+{
+  "claim": "Months are based on the solar cycle.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The Gregorian calendar, the most widely used civil calendar, aligns months with the solar year to keep seasons consistent over time."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Gregorian calendar, the most widely used civil calendar, aligns months with the solar year to keep seasons consistent over time.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Many traditional calendars (e.g., lunar or lunisolar) do not align months with the solar cycle, showing months can exist independently of solar cycles.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar's solar alignment is a modern adaptation; historically, months were often lunar-based, proving their original independence from solar cycles.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Even the Gregorian calendar requires leap years and month-length adjustments, indicating imperfect alignment with the solar cycle.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Leap years and adjustments are minor corrections, not evidence against the fundamental solar alignment of months in the Gregorian system.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Many traditional calendars, such as the ancient Egyptian and Julian calendars, were designed to approximate the solar cycle through their month divisions."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Many traditional calendars, such as the ancient Egyptian and Julian calendars, were designed to approximate the solar cycle through their month divisions.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The Gregorian calendar, the most widely used calendar today, does not align its months with the solar cycle but rather uses arbitrary month lengths.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar still maintains a rough alignment with the solar year through leap years, even if individual months are not solar-based.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Lunar calendars, such as the Islamic calendar, are based on the moon's cycles and have no relation to the solar cycle, contradicting the universality of solar-based months.",
+          "confidence": 0.8,
+          "attacks": {
+            "A2": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Lunar calendars are often used for religious purposes and do not represent the majority of global timekeeping systems, which are solar or lunisolar.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Months are primarily based on lunar cycles (approximately 29.5 days), not the solar cycle, as seen in lunar calendars like the Islamic Hijri calendar."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Months are primarily based on lunar cycles (approximately 29.5 days), not the solar cycle, as seen in lunar calendars like the Islamic Hijri calendar.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Many modern calendars, such as the Gregorian calendar, are solar-based and define months as arbitrary divisions of the solar year, not tied to lunar cycles.",
+          "confidence": 0.9,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even in solar-based calendars, the concept of months historically originated from lunar cycles, and their lengths were later adjusted for solar alignment.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The term 'month' itself is derived from 'moon,' indicating its original lunar connection, regardless of later solar adaptations.",
+          "confidence": 0.88,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Some cultures, like the Chinese, use lunisolar calendars where months are lunar but periodically adjusted to stay in sync with the solar year.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.5
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The length of months in the Gregorian calendar (28-31 days) does not directly correspond to any consistent fraction of the solar year (365.24 days)."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The length of months in the Gregorian calendar (28-31 days) does not directly correspond to any consistent fraction of the solar year (365.24 days).",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Months are historically based on lunar cycles (~29.5 days), not the solar cycle, which is why their lengths vary.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar was designed to approximate the solar year by adjusting month lengths and adding leap years, aligning months indirectly with the solar cycle.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.6
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even with adjustments, months remain arbitrary divisions of the solar year, lacking a direct astronomical basis.",
+          "confidence": 0.68,
+          "attacks": {
+            "C1": 0.55
+          }
+        }
+      ]
+    }
+  }
+}

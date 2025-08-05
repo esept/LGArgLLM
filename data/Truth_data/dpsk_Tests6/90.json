@@ -1,0 +1,185 @@
+{
+  "claim": "Barrie, Ontario gets more snowfall than Montreal.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Historical weather data shows that Montreal receives more snowfall on average than Barrie, Ontario, based on Environment Canada records."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Historical weather data shows that Montreal receives more snowfall on average than Barrie, Ontario, based on Environment Canada records.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Recent climate trends indicate that Barrie has experienced increased snowfall due to lake-effect snow from Lake Simcoe, which is not accounted for in older data.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lake-effect snow is highly localized and does not significantly alter the long-term average snowfall comparison between the two cities.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Environment Canada's data may not fully capture microclimates in Barrie, leading to underestimation of snowfall in certain areas.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official weather stations are strategically placed to represent regional averages, minimizing microclimate biases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Barrie is located near Lake Simcoe, which can lead to localized lake-effect snow, but Montreal's northern latitude and proximity to the St. Lawrence River result in higher overall snowfall."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Barrie is located near Lake Simcoe, which can lead to localized lake-effect snow, but Montreal's northern latitude and proximity to the St. Lawrence River result in higher overall snowfall.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Lake-effect snow in Barrie can be significantly heavier than general snowfall in Montreal, especially during peak lake-effect conditions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Montreal's consistent snowfall throughout winter, combined with its colder temperatures, leads to higher cumulative snowfall than Barrie's sporadic lake-effect events.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical snowfall data shows that Barrie frequently records higher annual snowfall totals than Montreal, contradicting the claim about Montreal's higher overall snowfall.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Montreal's snowfall measurements are more comprehensive and representative of broader regional trends, whereas Barrie's data may be skewed by localized lake-effect events.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Climate statistics indicate that Montreal has a higher annual snowfall accumulation compared to Barrie, according to meteorological reports."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Climate statistics indicate that Montreal has a higher annual snowfall accumulation compared to Barrie, according to meteorological reports.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Barrie is located in the snowbelt region of Ontario, which is known for heavier localized snowfall due to lake-effect snow from Georgian Bay.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Lake-effect snow is highly variable and does not consistently result in higher annual snowfall compared to Montreal's more predictable winter storms.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Recent meteorological data from the past decade shows Barrie surpassing Montreal in seasonal snowfall totals, contradicting older statistics.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The data cited for Barrie may include snowdrift measurements or unofficial reports, while Montreal's data is rigorously collected at official weather stations.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Montreal's winter climate is influenced by continental and maritime weather systems, contributing to greater snowfall totals than Barrie's more moderated lake-influenced climate."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Montreal's winter climate is influenced by continental and maritime weather systems, contributing to greater snowfall totals than Barrie's more moderated lake-influenced climate.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Barrie is located in the 'snowbelt' region near Lake Huron and Georgian Bay, which frequently experiences lake-effect snowstorms that can produce significantly higher localized snowfall than Montreal.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While lake-effect snow occurs in Barrie, Montreal's position between two major water bodies (St. Lawrence River and Ottawa River) creates more consistent snow accumulation throughout winter months.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Historical weather data shows Barrie consistently receives 20-30% more annual snowfall than Montreal due to persistent lake-effect patterns.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

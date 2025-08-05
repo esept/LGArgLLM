@@ -1,0 +1,295 @@
+{
+  "claim": "A person can be punished for an act that was legal when committed",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Legal systems may enact retroactive laws (ex post facto laws) that criminalize past actions, allowing punishment for acts that were legal when committed."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Legal systems may enact retroactive laws (ex post facto laws) that criminalize past actions, allowing punishment for acts that were legal when committed.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many constitutions explicitly prohibit ex post facto laws, making retroactive punishment legally invalid in those jurisdictions.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even where constitutions prohibit ex post facto laws, governments sometimes bypass these restrictions through legal reinterpretation or emergency powers.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "International human rights law generally forbids retroactive criminal laws, as stated in Article 15 of the International Covenant on Civil and Political Rights.",
+          "confidence": 0.88,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some legal systems allow retroactive punishment for acts considered universally immoral, such as war crimes, even if not previously codified.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The principle of nullum crimen sine lege (no crime without law) is a fundamental legal principle that challenges the morality of retroactive punishment.",
+          "confidence": 0.85,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "International human rights tribunals can prosecute individuals for acts that were legal under domestic law at the time but violate international law."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "International human rights tribunals can prosecute individuals for acts that were legal under domestic law at the time but violate international law.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "International law lacks direct enforcement mechanisms, making prosecutions dependent on the cooperation of domestic legal systems.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many states have incorporated international law into their domestic legal frameworks, enabling enforcement without requiring ad hoc cooperation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Prosecuting acts retroactively based on international law may violate the principle of legality (nullum crimen sine lege) under some interpretations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "International criminal law recognizes crimes against humanity and war crimes as inherent violations, regardless of domestic legality at the time.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Judicial reinterpretation of existing laws can lead to the punishment of acts that were previously considered legal under prior interpretations."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Judicial reinterpretation of existing laws can lead to the punishment of acts that were previously considered legal under prior interpretations.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Retroactive punishment violates the principle of legality (nulla poena sine lege), a fundamental legal doctrine in many jurisdictions.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Judicial reinterpretation is distinct from retroactive lawmaking, as it clarifies existing law rather than creating new prohibitions.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In practice, judicial reinterpretations often function as de facto retroactive laws when they substantially alter legal expectations.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems typically require clear notice before punishing conduct, making unexpected reinterpretations rare in stable jurisdictions.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Changes in societal norms may lead to the retroactive application of new moral or ethical standards, resulting in punishment for previously legal acts."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Changes in societal norms may lead to the retroactive application of new moral or ethical standards, resulting in punishment for previously legal acts.",
+          "confidence": 0.65,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Retroactive punishment violates the legal principle of 'nulla poena sine lege' (no punishment without law), which is a fundamental human rights protection in most legal systems.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While 'nulla poena sine lege' is a strong principle, exceptions exist for crimes against humanity where retroactive justice is applied to uphold universal moral standards.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Societal norm changes typically require legislative action to become law, and courts generally cannot punish acts that were legal when committed without new legislation.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The argument assumes moral standards are universally agreed upon, when in reality moral judgments vary widely across cultures and time periods.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Some legal systems allow for civil penalties or reparations for acts that were legal when committed but later deemed harmful or unjust."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Some legal systems allow for civil penalties or reparations for acts that were legal when committed but later deemed harmful or unjust.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Civil penalties and reparations are not the same as criminal punishment, which requires the act to be illegal at the time of commission.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal systems that impose civil penalties retroactively still effectively punish individuals for past legal acts, even if not under criminal law.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Retroactive civil penalties violate the principle of legal certainty, which is a cornerstone of the rule of law in many jurisdictions.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems may balance legal certainty with justice by allowing limited retroactive civil penalties in cases of egregious harm.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Transitional justice mechanisms, such as truth and reconciliation commissions, may impose sanctions or reparations for acts that were legal under prior regimes."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Transitional justice mechanisms, such as truth and reconciliation commissions, may impose sanctions or reparations for acts that were legal under prior regimes.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Transitional justice mechanisms often focus on reconciliation rather than punitive measures, limiting their ability to impose sanctions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if focused on reconciliation, these mechanisms can still mandate reparations or symbolic sanctions, which are forms of punishment.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "International law generally prohibits retroactive punishment, making such sanctions legally questionable.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Transitional justice operates in exceptional contexts where retroactive measures are accepted to address past injustices.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

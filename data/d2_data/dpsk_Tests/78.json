@@ -1,0 +1,232 @@
+{
+  "claim": "Viruses can be killed by antibiotics",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Antibiotics target bacterial structures like cell walls or protein synthesis, which viruses lack."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Antibiotics target bacterial structures like cell walls or protein synthesis, which viruses lack.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics have shown antiviral effects in certain experimental conditions.",
+          "confidence": 0.45,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These antiviral effects are rare, poorly understood, and not clinically significant for treating viral infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Broad-spectrum antibiotics might indirectly affect viruses by altering the host's microbiome.",
+          "confidence": 0.35,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such indirect effects are unpredictable and irrelevant to the claim about antibiotics directly killing viruses.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Viruses are not living organisms and do not have metabolic processes that antibiotics can disrupt."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Viruses are not living organisms and do not have metabolic processes that antibiotics can disrupt.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics have been observed to exhibit antiviral effects in certain experimental conditions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These antiviral effects are indirect (e.g., modulating host immune response) and do not constitute 'killing' viruses as antibiotics kill bacteria.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The common medical definition of antibiotics includes only agents that target living bacteria, not viruses.",
+          "confidence": 0.92,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific consensus states that antibiotics are ineffective against viral infections like the common cold or flu."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific consensus states that antibiotics are ineffective against viral infections like the common cold or flu.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics have shown antiviral properties in laboratory settings, suggesting potential effectiveness against certain viruses.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Laboratory findings do not translate to clinical effectiveness, and no antibiotics are approved for treating viral infections in humans.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Misuse of antibiotics for viral infections contributes to antibiotic resistance, which is a major public health concern.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Public health campaigns have reduced antibiotic misuse, but misinformation persists in some communities.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Using antibiotics against viruses contributes to antibiotic resistance without providing any therapeutic benefit."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Using antibiotics against viruses contributes to antibiotic resistance without providing any therapeutic benefit.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics have been shown to have indirect antiviral effects by modulating the host immune response.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The indirect antiviral effects of antibiotics are minimal and clinically insignificant compared to their primary antibacterial function.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In rare cases, antibiotics may prevent secondary bacterial infections in viral illnesses, providing some therapeutic benefit.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Preventing secondary infections doesn't equate to killing viruses, and prophylactic antibiotic use still contributes to resistance.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Viruses replicate inside host cells, making them inaccessible to antibiotics that act on extracellular targets."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Viruses replicate inside host cells, making them inaccessible to antibiotics that act on extracellular targets.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some antibiotics, like tetracyclines, can inhibit viral replication by targeting host cell machinery.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The antiviral effects of tetracyclines are weak and non-specific, making them ineffective as standard treatments for viral infections.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain broad-spectrum antibiotics can disrupt viral envelopes, indirectly affecting viruses.",
+          "confidence": 0.5,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Disrupting viral envelopes is not equivalent to killing viruses, as the viral genetic material remains infectious.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

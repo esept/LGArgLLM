@@ -1,0 +1,240 @@
+{
+  "claim": "Insulin lowers blood sugar levels",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, cells do not respond effectively to insulin, limiting glucose uptake and maintaining elevated blood sugar levels despite insulin presence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, exogenous insulin administration at higher doses can often overcome resistance and still lower blood sugar levels effectively.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain medical conditions, such as type 1 diabetes with insulin deficiency, demonstrate that without insulin, blood sugar cannot be lowered regardless of glucose availability.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "This actually reinforces the original claim, as it shows insulin's critical role in lowering blood sugar by contrasting its absence.",
+          "confidence": 0.92,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In individuals with diabetes, exogenous insulin is administered to mimic the natural function of lowering blood glucose levels."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In individuals with diabetes, exogenous insulin is administered to mimic the natural function of lowering blood glucose levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Exogenous insulin can cause hypoglycemia if administered in excess, which contradicts the claim by lowering blood sugar to dangerous levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypoglycemia from exogenous insulin is a manageable side effect, and proper dosing protocols ensure it primarily lowers blood sugar to healthy levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In rare cases of insulin resistance, exogenous insulin may not effectively lower blood glucose levels.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Insulin resistance is typically addressed with higher doses or adjunct therapies, maintaining insulin's core function of lowering blood glucose.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Insulin promotes the storage of glucose as glycogen in the liver and muscles, which directly decreases circulating blood sugar."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Insulin promotes the storage of glucose as glycogen in the liver and muscles, which directly decreases circulating blood sugar.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Insulin resistance can impair the ability of insulin to promote glucose storage, leading to elevated blood sugar levels despite insulin presence.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In cases of insulin resistance, compensatory hyperinsulinemia often occurs, which can still lower blood sugar levels through increased insulin concentration.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In type 1 diabetes, the absence of insulin production prevents glucose storage, causing blood sugar levels to remain high regardless of dietary intake.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Exogenous insulin administration in type 1 diabetes effectively lowers blood sugar by replacing the missing hormone, restoring glucose storage mechanisms.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The primary therapeutic use of insulin in medicine is to treat hyperglycemia by lowering elevated blood sugar levels."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The primary therapeutic use of insulin in medicine is to treat hyperglycemia by lowering elevated blood sugar levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Insulin can cause hypoglycemia if administered in excessive doses, leading to dangerously low blood sugar levels.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypoglycemia from insulin overdose is a manageable side effect and does not negate insulin's primary role in lowering elevated blood sugar.",
+          "confidence": 0.88,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some diabetic conditions, like insulin resistance, reduce insulin's effectiveness in lowering blood sugar.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in insulin resistance, insulin therapy remains a cornerstone of treatment, often combined with other medications to achieve glycemic control.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Insulin inhibits gluconeogenesis and glycogenolysis in the liver, processes that would otherwise increase blood sugar levels."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Insulin inhibits gluconeogenesis and glycogenolysis in the liver, processes that would otherwise increase blood sugar levels.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, the liver may not respond to insulin's signals to inhibit gluconeogenesis and glycogenolysis, leading to sustained high blood sugar levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, exogenous insulin administration at higher doses can still suppress hepatic glucose production, though less efficiently.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "During prolonged fasting or starvation, counter-regulatory hormones like glucagon override insulin's effects on the liver, allowing gluconeogenesis to maintain blood sugar levels.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In normal physiological conditions without extreme fasting, insulin remains the dominant regulator of hepatic glucose production.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

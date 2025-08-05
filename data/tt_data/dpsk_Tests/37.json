@@ -1,0 +1,293 @@
+{
+  "claim": "All cats are mammals. Tigers belong to the cat family. Therefore, tigers are mammals",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Cats are classified as mammals because they possess mammary glands, which are a defining characteristic of mammals."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Cats are classified as mammals because they possess mammary glands, which are a defining characteristic of mammals.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all animals in the cat family possess mammary glands, which challenges the universal classification of cats as mammals.",
+          "confidence": 0.3,
+          "attacks": {
+            "A1": 0.2
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Scientific consensus overwhelmingly supports that all members of the cat family, including rare or extinct species, possess mammary glands.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some genetic mutations in cats can lead to the absence of mammary glands, making them exceptions to the mammal classification.",
+          "confidence": 0.25,
+          "attacks": {
+            "A1": 0.15
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Such mutations are extremely rare and do not change the biological classification of the entire species as mammals.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Tigers are part of the Felidae family, commonly known as the cat family, which is a subgroup of mammals."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Tigers are part of the Felidae family, commonly known as the cat family, which is a subgroup of mammals.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some members of the Felidae family, like the extinct saber-toothed cats, may not fit all modern mammal classifications due to evolutionary differences.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Modern biological taxonomy clearly classifies all extant Felidae species as mammals, including tigers.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Common names like 'cat family' can be misleading as they don't always reflect precise biological classifications.",
+          "confidence": 0.55,
+          "attacks": {
+            "A2": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The term 'Felidae' is scientifically precise and universally recognized as a mammalian family in taxonomy.",
+          "confidence": 0.92,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "All members of the Felidae family, including tigers, give birth to live young and nurse them with milk, which is a mammalian trait."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "All members of the Felidae family, including tigers, give birth to live young and nurse them with milk, which is a mammalian trait.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some members of the Felidae family might exhibit non-mammalian traits due to rare genetic mutations.",
+          "confidence": 0.25,
+          "attacks": {
+            "A3": 0.2
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Genetic mutations causing non-mammalian traits in Felidae are extremely rare and not representative of the family as a whole.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The definition of mammals is not solely based on live birth and milk production, but also includes other traits like hair and a neocortex.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Felidae members, including tigers, possess hair and a developed neocortex, fulfilling all mammalian criteria.",
+          "confidence": 0.95,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Scientific taxonomy places both domestic cats and tigers under the class Mammalia, confirming their shared mammalian characteristics."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Scientific taxonomy places both domestic cats and tigers under the class Mammalia, confirming their shared mammalian characteristics.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some species historically classified as cats, like the thylacine (Tasmanian tiger), were actually marsupials, not mammals.",
+          "confidence": 0.6,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The thylacine was never taxonomically classified as a felid (true cat), so it doesn't invalidate the mammalian classification of true cats.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Genetic mutations could theoretically produce a non-mammalian feline species, challenging the absolute claim.",
+          "confidence": 0.3,
+          "attacks": {
+            "A4": 0.2
+          }
+        },
+        {
+          "id": "C2",
+          "text": "No known genetic mutations have ever altered fundamental mammalian traits in any felid species throughout evolutionary history.",
+          "confidence": 0.92,
+          "attacks": {
+            "B2": 0.9
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Tigers, like all cats, have hair or fur, which is another key feature of mammals."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Tigers, like all cats, have hair or fur, which is another key feature of mammals.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Not all animals with hair or fur are mammals; some extinct species had fur but were not mammals.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The presence of hair or fur is a defining characteristic of mammals, and no known exceptions exist among living species.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Some mammals, like whales, have very little hair, which challenges the necessity of fur for classification.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Whales still possess hair at some stage of development, fulfilling the mammalian requirement, even if minimal.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "P",
+        "text": "The evolutionary lineage of tigers traces back to common ancestors with other mammals, further supporting their classification as mammals."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The evolutionary lineage of tigers traces back to common ancestors with other mammals, further supporting their classification as mammals.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some biologists argue that tigers share more genetic traits with reptilian ancestors than typical mammals, challenging their classification.",
+          "confidence": 0.45,
+          "attacks": {
+            "A6": 0.5
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Genetic studies overwhelmingly confirm tigers share over 95% of their DNA with other mammals, refuting reptilian ancestry claims.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.9
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The fossil record shows transitional species between tigers and non-mammalian ancestors, complicating pure mammalian classification.",
+          "confidence": 0.6,
+          "attacks": {
+            "A6": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Paleontologists universally recognize transitional fossils as part of mammalian evolution, not evidence against it.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

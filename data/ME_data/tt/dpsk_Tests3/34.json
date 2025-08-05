@@ -1,0 +1,240 @@
+{
+  "claim": "If A was born before B, then A is older than B",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Age is determined by the chronological order of birth, so if A was born before B, A has existed for a longer period of time."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Age is determined by the chronological order of birth, so if A was born before B, A has existed for a longer period of time.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In relativistic scenarios (e.g., near light-speed travel), time dilation can cause A to biologically age slower than B despite being born earlier.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Relativistic effects are negligible for virtually all human births, making this exception irrelevant in practice.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cryogenic freezing could pause A's aging process after birth, making B older biologically despite A's earlier birth date.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cryogenic freezing does not reverse birth order, and legal/chronological age remains tied to birth date.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The concept of being older is directly tied to the time elapsed since birth, making A older than B if born earlier."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "The concept of being older is directly tied to the time elapsed since birth, making A older than B if born earlier.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If A and B are born in different time zones or on different calendar systems, the exact birth order may be ambiguous due to time measurement discrepancies.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standardized timekeeping (e.g., UTC) resolves most time zone ambiguities, ensuring a clear determination of birth order in the vast majority of cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Relativity theory suggests that time is relative to the observer's frame of reference, potentially making 'older than' dependent on relative motion or gravitational fields.",
+          "confidence": 0.55,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "For everyday scenarios involving human ages, relativistic effects are negligible, preserving the conventional understanding of age comparison.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In all legal and social contexts, the person born first is considered the older individual."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "In all legal and social contexts, the person born first is considered the older individual.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In cases of time zone differences, a person born later in one time zone may legally have an earlier birth date in another time zone.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal systems typically standardize birth records to a single time zone or UTC to resolve such ambiguities.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In rare cases of intersex or ambiguous birth records, the order of birth may not clearly determine who is older.",
+          "confidence": 0.5,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern medical and legal systems have protocols to assign unambiguous birth order even in complex cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Biological age is calculated from the date of birth, so an earlier birth date means greater age."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Biological age is calculated from the date of birth, so an earlier birth date means greater age.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Time zones can cause a person born later in one time zone to have an earlier birth date in another, making them technically 'older' despite being born later locally.",
+          "confidence": 0.65,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Birth records typically standardize dates to a single time zone (e.g., UTC), eliminating ambiguity in age calculation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Relativity shows that time is not absolute; if A and B are born in different gravitational fields or moving at different speeds, their biological ages could differ despite birth dates.",
+          "confidence": 0.5,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Relativistic effects on age are negligible for humans under normal Earth conditions, so birth date remains a practical measure.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Time is a linear progression, and being born earlier means more time has passed for A compared to B."
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "Time is a linear progression, and being born earlier means more time has passed for A compared to B.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Relativity shows that time is not absolute; different reference frames can alter the perception of time passage.",
+          "confidence": 0.75,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Relativistic effects are negligible in everyday human contexts, so linear time progression remains practically valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cryogenic freezing or time dilation scenarios could make A biologically younger despite being born earlier.",
+          "confidence": 0.6,
+          "attacks": [
+            "Ai"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such scenarios are speculative or extremely rare and do not invalidate the general rule.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

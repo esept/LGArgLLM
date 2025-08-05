@@ -1,0 +1,193 @@
+{
+  "claim": "An event happening every 4 years includes 2020 and 2024",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The 2020 and 2024 U.S. presidential elections are scheduled events that occur every 4 years, fitting the claim."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The 2020 and 2024 U.S. presidential elections are scheduled events that occur every 4 years, fitting the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is about any event happening every 4 years, not specifically U.S. presidential elections, so A1's example is too narrow.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "U.S. presidential elections are a widely recognized example of quadrennial events, making A1's argument relevant and illustrative.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be interpreted as requiring all events happening every 4 years to include 2020 and 2024, which is not necessarily true for all such events.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim is likely intended to mean that some events happening every 4 years include 2020 and 2024, not all such events.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Summer Olympics were held in 2020 (postponed to 2021 due to COVID-19) and are scheduled for 2024, adhering to the 4-year cycle."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Summer Olympics were held in 2020 (postponed to 2021 due to COVID-19) and are scheduled for 2024, adhering to the 4-year cycle.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The 2020 Olympics were postponed to 2021, meaning they did not actually occur in 2020, breaking the 4-year cycle.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite the postponement, the event is still officially recognized as the '2020 Olympics,' maintaining the nominal 4-year cycle.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim implies the event must physically occur every 4 years, not just be nominally labeled as such.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical precedent shows that Olympic cycles are measured by their scheduled dates, not actual occurrence dates, preserving the 4-year cycle.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Leap years, which occur every 4 years, include 2020 and 2024, as both are divisible by 4."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Leap years, which occur every 4 years, include 2020 and 2024, as both are divisible by 4.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Leap years are not strictly every 4 years; years divisible by 100 but not by 400 are not leap years (e.g., 1900).",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "2020 and 2024 are not divisible by 100, so the exception does not apply, and they remain leap years.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gregorian calendar was not universally adopted, so some regions may not recognize 2020 or 2024 as leap years.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gregorian calendar is the global standard for civil use, making the leap year rule applicable to 2020 and 2024 in practice.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The FIFA World Cup was held in 2022, but the UEFA European Championship, another major football event, occurred in 2020 and is scheduled for 2024, fitting the 4-year cycle."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The FIFA World Cup was held in 2022, but the UEFA European Championship, another major football event, occurred in 2020 and is scheduled for 2024, fitting the 4-year cycle.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim specifies 'an event happening every 4 years,' but the UEFA European Championship and FIFA World Cup are separate events with overlapping but not identical schedules.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The UEFA European Championship is explicitly designed to occur every 4 years, making it a valid example of an event fitting the 4-year cycle between 2020 and 2024.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The FIFA World Cup in 2022 disrupts the strict 4-year cycle implied by the claim, as it introduces another major event in between 2020 and 2024.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim does not require exclusivity; it only states that an event happens every 4 years, which the UEFA European Championship satisfies regardless of other events.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

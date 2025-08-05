@@ -1,0 +1,232 @@
+{
+  "claim": "Doctors of Homeopathy are more likely than Doctors of Internal Medicine to recommend Quartz as a treatment.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Homeopathy is based on the principle of 'like cures like' and extreme dilution, not the use of physical substances like quartz."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Homeopathy is based on the principle of 'like cures like' and extreme dilution, not the use of physical substances like quartz.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some homeopathic remedies include trace minerals or substances, which could theoretically include quartz in highly diluted forms.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if quartz were used in homeopathy, it would be in such extreme dilutions that it would be pharmacologically inert, making the claim irrelevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Homeopathic practitioners sometimes recommend non-traditional treatments alongside homeopathy, which could include quartz-based therapies.",
+          "confidence": 0.5,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such recommendations would fall outside standard homeopathic practice and would not be representative of homeopathy as a whole.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Internal Medicine doctors rely on evidence-based treatments, which do not include unproven remedies like quartz."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Internal Medicine doctors rely on evidence-based treatments, which do not include unproven remedies like quartz.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Homeopathy is based on principles of 'like cures like' and extreme dilution, which are not supported by scientific evidence, making its treatments unproven as well.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some homeopathic remedies, including quartz, are prescribed based on historical and anecdotal evidence rather than rigorous clinical trials.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Anecdotal evidence is not sufficient to establish efficacy, as it lacks controls and reproducibility required in evidence-based medicine.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "There is no scientific or clinical evidence supporting the use of quartz as a treatment in either homeopathy or conventional medicine."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "There is no scientific or clinical evidence supporting the use of quartz as a treatment in either homeopathy or conventional medicine.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some homeopathic practitioners claim that quartz has metaphysical healing properties, despite lack of scientific evidence.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Metaphysical claims lack empirical validation and are not recognized in evidence-based medicine.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Homeopathy often relies on anecdotal evidence and historical use rather than clinical trials.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anecdotal evidence is subject to placebo effects and confirmation bias, making it unreliable.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Homeopathic practitioners typically prescribe highly diluted substances, not solid materials like quartz."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Homeopathic practitioners typically prescribe highly diluted substances, not solid materials like quartz.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some homeopathic remedies include 'mother tinctures' or low-dilution preparations that may contain solid materials.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in mother tinctures, quartz is not a standard homeopathic remedy and would not be prescribed by reputable practitioners.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical homeopathic texts mention the use of crystalline substances like quartz in certain remedies.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern evidence-based homeopathy has largely abandoned such historical practices in favor of more standardized dilutions.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Medical guidelines for Internal Medicine do not include quartz as a recognized treatment for any condition."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Medical guidelines for Internal Medicine do not include quartz as a recognized treatment for any condition.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some alternative medicine practitioners may recommend quartz based on anecdotal evidence or traditional beliefs.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Anecdotal evidence lacks scientific rigor and is not a reliable basis for medical treatment recommendations.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There are no comprehensive studies proving that quartz has no therapeutic effects.",
+          "confidence": 0.5,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of evidence is not evidence of absence, but medical guidelines require positive evidence for inclusion.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

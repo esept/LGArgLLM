@@ -1,0 +1,193 @@
+{
+    "claim": "Antibiotics are effective against viral infections",
+    "Args": {
+        "A1": {
+            "supporting": {
+                "id": "A1",
+                "text": "Antibiotics target bacterial cellular structures or metabolic processes, which viruses lack, making them ineffective against viral infections."
+            },
+            "attacks": [
+                {
+                    "id": "A1",
+                    "text": "Antibiotics target bacterial cellular structures or metabolic processes, which viruses lack, making them ineffective against viral infections.",
+                    "confidence": 0.95,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some antibiotics have been shown to exhibit indirect antiviral effects by modulating the host immune response.",
+                    "confidence": 0.65,
+                    "attacks": {
+                        "A1": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "These indirect effects are minimal and not clinically significant for treating viral infections.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.9
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "In rare cases, antibiotics may prevent secondary bacterial infections that can complicate viral illnesses.",
+                    "confidence": 0.55,
+                    "attacks": {
+                        "A1": 0.9
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "This does not constitute direct effectiveness against the viral infection itself, only prevention of bacterial co-infections.",
+                    "confidence": 0.9,
+                    "attacks": {
+                        "B2": 0.4
+                    }
+                }
+            ]
+        },
+        "A2": {
+            "supporting": {
+                "id": "A2",
+                "text": "Scientific consensus states that antibiotics do not work on viruses because viruses and bacteria have fundamentally different biological mechanisms."
+            },
+            "attacks": [
+                {
+                    "id": "A2",
+                    "text": "Scientific consensus states that antibiotics do not work on viruses because viruses and bacteria have fundamentally different biological mechanisms.",
+                    "confidence": 0.95,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some antiviral drugs share mechanisms with antibiotics, suggesting potential overlap in effectiveness.",
+                    "confidence": 0.65,
+                    "attacks": {
+                        "A2": 0.4
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Antiviral drugs target viral-specific enzymes, unlike antibiotics which target bacterial cell walls or protein synthesis.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Misuse of antibiotics for viral infections persists due to patient demand and diagnostic uncertainty.",
+                    "confidence": 0.75,
+                    "attacks": {
+                        "A2": 0.4
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Public health campaigns have significantly reduced antibiotic misuse through education on viral vs. bacterial infections.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "B2": 1
+                    }
+                }
+            ]
+        },
+        "A3": {
+            "supporting": {
+                "id": "A3",
+                "text": "The misuse of antibiotics for viral infections contributes to antibiotic resistance, as recognized by global health organizations like the WHO."
+            },
+            "attacks": [
+                {
+                    "id": "A3",
+                    "text": "The misuse of antibiotics for viral infections contributes to antibiotic resistance, as recognized by global health organizations like the WHO.",
+                    "confidence": 0.95,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Antibiotics can still provide symptomatic relief for viral infections by preventing secondary bacterial infections.",
+                    "confidence": 0.65,
+                    "attacks": {
+                        "A3": 0.5
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Preventing secondary infections does not justify the misuse of antibiotics for primary viral infections, as it still contributes to resistance.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.1
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Some viral infections are difficult to distinguish from bacterial infections, leading to justified antibiotic use in uncertain cases.",
+                    "confidence": 0.7,
+                    "attacks": {
+                        "A3": 0.8
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Improved diagnostic tools and guidelines reduce the need for empirical antibiotic use in uncertain cases.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "B2": 0.4
+                    }
+                }
+            ]
+        },
+        "A4": {
+            "supporting": {
+                "id": "A4",
+                "text": "Medical guidelines explicitly advise against using antibiotics for viral illnesses such as the common cold or influenza."
+            },
+            "attacks": [
+                {
+                    "id": "A4",
+                    "text": "Medical guidelines explicitly advise against using antibiotics for viral illnesses such as the common cold or influenza.",
+                    "confidence": 0.95,
+                    "cate": "S",
+                    "attacks": {}
+                },
+                {
+                    "id": "B1",
+                    "text": "Some viral infections can lead to secondary bacterial infections where antibiotics may be necessary.",
+                    "confidence": 0.75,
+                    "attacks": {
+                        "A4": 0.1
+                    }
+                },
+                {
+                    "id": "C1",
+                    "text": "Prophylactic antibiotic use in viral infections can still contribute to antibiotic resistance without clear benefit.",
+                    "confidence": 0.85,
+                    "attacks": {
+                        "B1": 0.8
+                    }
+                },
+                {
+                    "id": "B2",
+                    "text": "Patients often demand antibiotics for viral infections due to misconceptions, leading to overprescription.",
+                    "confidence": 0.8,
+                    "attacks": {
+                        "A4": 0.4
+                    }
+                },
+                {
+                    "id": "C2",
+                    "text": "Public health campaigns have reduced unnecessary antibiotic prescriptions by educating both doctors and patients.",
+                    "confidence": 0.7,
+                    "attacks": {
+                        "B2": 0.5
+                    }
+                }
+            ]
+        }
+    }
+}

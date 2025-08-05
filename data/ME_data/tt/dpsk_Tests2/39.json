@@ -1,0 +1,192 @@
+{
+  "claim": "If all A are B, and C is an A, then C is B",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "This follows directly from the logical structure of the claim, which is a classic example of a valid syllogism in deductive reasoning.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "This follows directly from the logical structure of the claim, which is a classic example of a valid syllogism in deductive reasoning.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes that the categories A and B are strictly defined, but in reality, categorical boundaries can be fuzzy or context-dependent.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Deductive reasoning relies on premises being universally true, but real-world data often contains exceptions that invalidate such generalizations.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with fuzzy boundaries, the logical form holds if the premises are interpreted as strict within the given context.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The syllogism's validity is independent of real-world exceptions, as it operates purely within the realm of formal logic.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "However, if the context itself is ambiguous, the strict interpretation of premises becomes questionable.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The claim is a restatement of the logical principle known as 'Barbara' in traditional syllogistic logic, which is universally accepted as valid.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The claim is a restatement of the logical principle known as 'Barbara' in traditional syllogistic logic, which is universally accepted as valid.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Modern logic systems have identified edge cases where syllogistic logic fails, such as in certain modal or paraconsistent logics.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, in classical logic, which is the most widely used system, 'Barbara' remains universally valid and these edge cases are not relevant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The validity of 'Barbara' depends on the interpretation of 'all A are B', which can be ambiguous in natural language.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In formal logic, 'all A are B' is precisely defined and unambiguous, ensuring the validity of the syllogism.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some philosophers argue that syllogistic logic is too rigid and doesn't account for real-world complexities.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Syllogistic logic is a foundational tool and its rigidity is a strength for clear, deductive reasoning.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Given the premises 'All A are B' and 'C is an A', the conclusion 'C is B' is necessarily true by definition, leaving no room for counterexamples.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Given the premises 'All A are B' and 'C is an A', the conclusion 'C is B' is necessarily true by definition, leaving no room for counterexamples.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The premises assume that 'All A are B' is universally true, but real-world classifications often have exceptions or ambiguous cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In formal logic and mathematics, universal statements like 'All A are B' are treated as absolute within their defined systems, so exceptions do not apply.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'A' might be vague or context-dependent, leading to cases where it's unclear whether C truly qualifies as an A.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Definitions in formal arguments are assumed to be precise and unambiguous, so vagueness in 'A' is irrelevant if the premises are clearly stated.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The conclusion relies on the assumption that the premises are true, but premises themselves might be flawed or unverified.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The validity of the argument is conditional on the premises being true; the argument itself is sound if the premises hold.",
+          "confidence": 0.95,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    }
+  }
+}

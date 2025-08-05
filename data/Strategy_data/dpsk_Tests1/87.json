@@ -1,0 +1,185 @@
+{
+  "claim": "Drinking a glass of lemonade would provide Vitamin C.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Lemons are a natural source of Vitamin C, and lemonade made from real lemons contains this nutrient."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Lemons are a natural source of Vitamin C, and lemonade made from real lemons contains this nutrient.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many commercial lemonades are made from concentrates or artificial flavors, which may not retain Vitamin C.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even commercial lemonades often fortify their products with Vitamin C to compensate for nutrient loss during processing.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The amount of Vitamin C in lemonade can vary significantly depending on preparation methods and dilution.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard recipes for homemade lemonade typically use enough lemon juice to provide a meaningful amount of Vitamin C.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Vitamin C is water-soluble, so it remains present in the liquid form of lemonade."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Vitamin C is water-soluble, so it remains present in the liquid form of lemonade.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Vitamin C degrades over time, especially when exposed to light and heat, so stored lemonade may lose its Vitamin C content.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Commercial lemonade often contains negligible amounts of real lemon juice, reducing its Vitamin C content significantly.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if Vitamin C degrades, freshly prepared lemonade retains sufficient amounts to provide a meaningful dose.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "A standard glass of lemonade made with fresh lemon juice typically provides a measurable amount of Vitamin C."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "A standard glass of lemonade made with fresh lemon juice typically provides a measurable amount of Vitamin C.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many commercial lemonades use minimal or no fresh lemon juice, replacing it with artificial flavors and sweeteners, which provide no Vitamin C.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in commercial lemonades labeled 'made with real lemon juice,' the Vitamin C content is often negligible due to processing and dilution.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Vitamin C in fresh lemon juice degrades quickly when exposed to light, heat, or air, reducing its content by the time it is consumed.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Proper storage and preparation (e.g., refrigeration, minimal exposure to air) can preserve most of the Vitamin C in fresh lemon juice.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Nutritional analyses of lemonade confirm the presence of Vitamin C, especially when made from fresh ingredients."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Nutritional analyses of lemonade confirm the presence of Vitamin C, especially when made from fresh ingredients.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Many commercial lemonades contain negligible Vitamin C due to processing and dilution.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even processed lemonades often include Vitamin C fortification to meet nutritional standards.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vitamin C degrades rapidly in stored or exposed lemonade, reducing its nutritional benefit.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Proper storage (e.g., refrigeration, airtight containers) can significantly slow Vitamin C degradation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

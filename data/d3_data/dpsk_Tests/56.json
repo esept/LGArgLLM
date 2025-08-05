@@ -1,0 +1,216 @@
+{
+  "claim": "All Scandinavian countries are members of the EU",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Norway is a Scandinavian country and is not a member of the European Union."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Norway is a Scandinavian country and is not a member of the European Union.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Norway is part of the European Economic Area (EEA) and follows most EU regulations despite not being a full member.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "EEA membership does not equate to EU membership, as Norway lacks voting rights in EU institutions and is not bound by certain policies like the Common Agricultural Policy.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Sweden, Denmark, and Finland are Scandinavian countries and are full EU members, making Norway an exception rather than the rule.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Exceptions do not invalidate generalizations; the claim 'All Scandinavian countries are members of the EU' is still false due to Norway's status.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Iceland is considered part of the Scandinavian cultural region and is not an EU member."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Iceland is considered part of the Scandinavian cultural region and is not an EU member.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Scandinavia is often defined geographically, and Iceland is not part of the Scandinavian Peninsula.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Culturally and linguistically, Iceland shares strong ties with Scandinavia, justifying its inclusion in the broader Scandinavian region.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Norway is also not an EU member, further supporting the claim that not all Scandinavian countries are in the EU.",
+          "confidence": 0.9,
+          "attacks": [
+            "A2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Denmark, Sweden, and Finland are the only Scandinavian countries that are EU members, excluding others like Norway and Iceland."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Denmark, Sweden, and Finland are the only Scandinavian countries that are EU members, excluding others like Norway and Iceland.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Norway and Iceland are part of the European Economic Area (EEA), which grants them access to the EU single market, making them de facto participants in many EU policies.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "EEA membership does not equate to EU membership, as Norway and Iceland lack voting rights in EU institutions and are not bound by certain EU laws.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The term 'Scandinavian' is sometimes used narrowly to refer only to Denmark, Norway, and Sweden, excluding Finland and Iceland, which could alter the interpretation of the claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Geopolitically and linguistically, Finland and Iceland are commonly included in the broader definition of Scandinavia, especially in discussions about EU membership.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Faroe Islands, an autonomous territory within the Kingdom of Denmark, are part of Scandinavia but not in the EU."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Faroe Islands, an autonomous territory within the Kingdom of Denmark, are part of Scandinavia but not in the EU.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Faroe Islands are not an independent country but an autonomous territory, so they do not count as a Scandinavian country for the purposes of the claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Scandinavia is commonly defined as including Denmark, Norway, and Sweden, all of which are independent countries and EU members (except Norway, which is in the EEA). The Faroe Islands' status does not negate the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Norway is a Scandinavian country and is not an EU member, which directly contradicts the claim regardless of the Faroe Islands' status.",
+          "confidence": 0.9,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Norway and Iceland are part of the European Economic Area (EEA) but have not joined the EU, despite being Scandinavian."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Norway and Iceland are part of the European Economic Area (EEA) but have not joined the EU, despite being Scandinavian.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Denmark, Sweden, and Finland are Scandinavian countries and are all members of the EU, which supports the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The term 'Scandinavian' is sometimes used more broadly to include non-EU countries like Norway and Iceland, but this does not negate the EU membership of core Scandinavian nations.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim is absolute ('All'), and the existence of even one Scandinavian country outside the EU (like Norway or Iceland) falsifies it.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

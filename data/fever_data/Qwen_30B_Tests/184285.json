@@ -1,0 +1,606 @@
+{
+  "claim": "Vera Wang is an American Fashion Designer.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Vera Wang was born in New York City and holds U.S. citizenship, establishing her as an American national.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Vera Wang was born in New York City and holds U.S. citizenship, establishing her as an American national.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang's U.S. citizenship does not inherently make her an 'American Fashion Designer'\u2014designers are defined by their cultural influence and industry contributions.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vera Wang was born in Taiwan (not New York City) and only moved to the U.S. later; birthplace alone does not determine national identity.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Vera Wang's professional work and brand identity are deeply rooted in the U.S., which aligns with the criteria for being classified as an American Fashion Designer.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim about Vera Wang's birthplace being Taiwan is incorrect\u2014she was definitively born in New York City according to verified records.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if Vera Wang were born elsewhere, her lifelong residence and career development in the U.S. establish her as culturally and professionally American.",
+          "confidence": 0.79,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The definition of 'American Fashion Designer' includes nationality rather than just cultural association; citizenship remains a critical factor.",
+          "confidence": 0.88,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "She founded Vera Wang Corporation in 1990 while residing in the United States, solidifying her professional roots there.",
+        "confidence": 0.88,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "She founded Vera Wang Corporation in 1990 while residing in the United States, solidifying her professional roots there.",
+          "confidence": 0.88,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang was born in China and holds dual citizenship, so her professional roots cannot be exclusively tied to the United States.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Founding a corporation in the U.S. does not inherently make someone an 'American' fashion designer; it depends on cultural influence and identity.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Vera Wang Corporation\u2019s headquarters was later moved to Switzerland, undermining claims about enduring U.S.-based professional roots.",
+          "confidence": 0.79,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Birthplace and citizenship are irrelevant to professional categorization; residency and activity in the U.S. define her as an American designer.",
+          "confidence": 0.83,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Cultural influence is subjective and does not negate her establishment of a brand within American fashion infrastructure.",
+          "confidence": 0.87,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Corporate registration location does not override her sustained presence and impact within the U.S. fashion industry.",
+          "confidence": 0.91,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Dual citizenship complicates national identity claims but does not invalidate her professional contributions to American fashion.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cultural influence assessments lack objective criteria and cannot reliably challenge her association with American fashion.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Sustained presence alone cannot override legal corporate jurisdiction; Swiss registration indicates non-U.S.-based operations.",
+          "confidence": 0.7,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Vera Wang has consistently showcased her collections at New York Fashion Week since the 1990s.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Vera Wang has consistently showcased her collections at New York Fashion Week since the 1990s.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang was born in China and moved to the US later, so her association with New York Fashion Week doesn't confirm her American nationality.",
+          "confidence": 0.81,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "New York Fashion Week is open to international designers, so participation doesn't exclusively indicate American citizenship.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Vera Wang's long-term residence and professional work in the United States establish her as an American designer, regardless of birthplace.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vera Wang's designs and brand identity are deeply tied to American fashion culture, making her an authentic American designer.",
+          "confidence": 0.76,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Residence alone does not confer nationality; legal citizenship status must be proven for claims of being an 'American' designer.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "American fashion design encompasses cultural influence and market presence, not just legal citizenship or birthplace.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Her work on iconic American events like designing gowns for U.S. celebrities and First Ladies highlights her domestic influence.",
+        "confidence": 0.82,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Her work on iconic American events like designing gowns for U.S. celebrities and First Ladies highlights her domestic influence.",
+          "confidence": 0.82,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Designing gowns for U.S. celebrities and First Ladies does not inherently prove Vera Wang's American nationality; international designers also participate in such events.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Vera Wang was born in China and moved to the U.S., which suggests her primary cultural influence stems from her heritage rather than being an 'American' designer.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The argument ignores that Vera Wang's career trajectory and business operations are deeply embedded in the U.S., making her contributions undeniably American.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Nationality is not solely determined by birthplace; Vera Wang's long-term residence and recognition within American fashion circles establish her as an American designer.",
+          "confidence": 0.81,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim about 'domestic influence' relies on subjective definitions of 'American' design, which can include cross-cultural elements rather than strict nationality.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cultural identity in fashion is often fluid; Vera Wang's work reflects global trends while still being celebrated as part of American haute couture.",
+          "confidence": 0.69,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "She received the Council of Fashion Designers of America (CFDA) award for Lifetime Achievement in 2013.",
+        "confidence": 0.79,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "Ai",
+          "text": "She received the Council of Fashion Designers of America (CFDA) award for Lifetime Achievement in 2013.",
+          "confidence": 0.79,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The CFDA award recognizes professional contributions rather than nationality.",
+          "confidence": 0.82,
+          "attacks": [
+            "Ai"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "B2",
+          "text": "Vera Wang was born in China and later became a U.S. citizen.",
+          "confidence": 0.76,
+          "attacks": [
+            "Ai"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "B3",
+          "text": "The CFDA awards non-U.S.-based designers for global influence.",
+          "confidence": 0.8,
+          "attacks": [
+            "Ai"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C1",
+          "text": "The CFDA Lifetime Achievement Award explicitly honors U.S.-based designers.",
+          "confidence": 0.74,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "Birthplace does not determine professional categorization as an American designer.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C3",
+          "text": "Global influence does not negate recognition of domestic contributions.",
+          "confidence": 0.73,
+          "attacks": [
+            "B3"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "The CFDA awards criteria include residency requirements for U.S.-based recognition.",
+          "confidence": 0.69,
+          "attacks": [
+            "C1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D2",
+          "text\"": "Professional identity can transcend birthplace through career alignment with U.S.-based industry.",
+          "confidence\"": 0.71,
+          "attacks\"": [
+            "C2"
+          ],
+          "cate\"": "P"
+        },
+        {
+          "id\"": "D3",
+          "text\"": "Global influence is irrelevant if the award explicitly focuses on domestic achievements.",
+          "confidence\"": 0.68,
+          "attacks\"": [
+            "C3"
+          ],
+          "cate\"": "P"
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Some may argue Vera Wang\u2019s Chinese heritage makes her non-American by ethnicity rather than nationality.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some may argue Vera Wang\u2019s Chinese heritage makes her non-American by ethnicity rather than nationality.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang's U.S. citizenship establishes her as American by nationality, regardless of ethnic background.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Ethnicity does not override legal nationality; Vera Wang\u2019s American identity stems from her professional contributions in the U.S.",
+          "confidence": 0.82,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Vera Wang was born in China and never held U.S. citizenship, making her non-American by birthright.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Professional achievements alone cannot redefine legal nationality; Vera Wang\u2019s ethnic origin remains central to her identity.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "U.S. citizenship requires birth or naturalization; Vera Wang\u2019s lack of either invalidates her American status.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Cultural assimilation does not erase ethnic heritage; Vera Wang\u2019s Chinese roots inherently make her non-American.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Her brand\u2019s international expansion could lead to perceptions of her as a global designer over an exclusively American one.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Her brand\u2019s international expansion could lead to perceptions of her as a global designer over an exclusively American one.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang was born and raised in New York City, maintaining strong ties to American culture and fashion industry.",
+          "confidence": 0.85,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Her designs frequently incorporate iconic American elements like red-white-and-blue motifs and bridal traditions.",
+          "confidence": 0.82,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International expansion does not negate national origin; many globally recognized designers retain their cultural identity.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "American fashion designers often draw inspiration from global trends without losing their national classification.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Vera Wang\u2019s citizenship and legal business operations are based in the United States despite international presence.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The perception of 'American' status depends on primary market influence rather than geographic reach alone.",
+          "confidence": 0.79,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "Vera Wang initially worked as a figure skater and later transitioned to fashion after moving to California.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "Vera Wang initially worked as a figure skater and later transitioned to fashion after moving to California.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Vera Wang's background in figure skating does not establish her as an American fashion designer; professional transitions alone are insufficient proof of nationality.",
+          "confidence": 0.82,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The assertion that Vera Wang moved to California is misleading; she has maintained strong ties to New York throughout her career.",
+          "confidence": 0.79,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Vera Wang's career trajectory does not confirm her American nationality; other factors are more indicative.",
+          "confidence": 0.76,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Professional transitions are valid indicators of career change and can support expertise in new fields.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "California's role in fashion industry development is well-documented and supports her career shift.",
+          "confidence": 0.74,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Citizenship status is not always tied directly to birthplace; naturalization can establish American nationality.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Figure skating experience lacks direct correlation with expertise in fashion design or national identity.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "New York remains a primary hub for American fashion; California migration does not negate regional influence.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Nationality determination relies on legal documentation rather than anecdotal career details.",
+          "confidence": 0.72,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    }
+  }
+}

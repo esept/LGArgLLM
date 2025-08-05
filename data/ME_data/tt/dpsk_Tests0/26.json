@@ -1,0 +1,129 @@
+{
+  "claim": "Does the equation 2\u00b2 + 2\u00b2 = 8 hold true",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The equation 2\u00b2 + 2\u00b2 equals 4 + 4, which sums to 8, so it holds true."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The equation 2\u00b2 + 2\u00b2 equals 4 + 4, which sums to 8, so it holds true.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation is mathematically correct, but the claim does not specify the context (e.g., arithmetic system), so it might not hold under alternative interpretations.",
+          "confidence": 0.3,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard arithmetic, the equation is universally valid, and alternative interpretations are edge cases irrelevant to the claim's intent.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "According to the order of operations (PEMDAS/BODMAS), exponents are evaluated first, resulting in 4 + 4 = 8."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "According to the order of operations (PEMDAS/BODMAS), exponents are evaluated first, resulting in 4 + 4 = 8.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If interpreted in a non-standard mathematical system where exponents are not prioritized, the equation could be misread as (2\u00b2 + 2)\u00b2, leading to an incorrect result.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard mathematical conventions universally apply PEMDAS/BODMAS, making non-standard interpretations irrelevant in this context.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Basic arithmetic confirms that squaring 2 yields 4, and adding two instances of 4 results in 8."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Basic arithmetic confirms that squaring 2 yields 4, and adding two instances of 4 results in 8.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If interpreted in a non-standard numeral system (e.g., base-3), the equation 2\u00b2 + 2\u00b2 does not equal 8.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic is universally defined in base-10, making non-standard interpretations irrelevant for this claim.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The equation is consistent with the mathematical definition of exponents and addition, validating its correctness."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The equation is consistent with the mathematical definition of exponents and addition, validating its correctness.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The equation 2\u00b2 + 2\u00b2 = 8 is mathematically correct, but it is trivial and does not provide any meaningful insight or application.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the equation is trivial, its correctness is still important for foundational mathematical education and understanding basic operations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

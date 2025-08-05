@@ -1,0 +1,185 @@
+{
+  "claim": "Bonds represent ownership in a company",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Bonds are debt instruments, not equity, meaning they represent a loan to the company rather than ownership."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Bonds are debt instruments, not equity, meaning they represent a loan to the company rather than ownership.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bonds, like convertible bonds, can be converted into equity, thus representing potential ownership.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Convertible bonds are a minority of bond types, and most bonds do not offer equity conversion.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Bondholders may gain control rights in cases of default, resembling ownership-like influence.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Control rights in default are temporary and contractual, differing fundamentally from permanent equity ownership.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Bondholders do not have voting rights or ownership stakes in the company, unlike shareholders."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Bondholders do not have voting rights or ownership stakes in the company, unlike shareholders.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Bonds are debt instruments, not equity, so they inherently do not confer ownership.",
+          "confidence": 0.97,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Some convertible bonds can be converted into shares, potentially granting ownership.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Convertible bonds are a minority case and do not represent the general nature of bonds.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The legal structure of bonds specifies repayment terms and interest, not ownership or equity participation."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The legal structure of bonds specifies repayment terms and interest, not ownership or equity participation.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bonds, like convertible bonds, can be converted into equity shares, implying a form of ownership potential.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Convertible bonds are a minority of bond types, and conversion is optional, not inherent to the bond's primary legal structure.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Bondholders may gain influence or control in distressed companies through debt covenants or restructuring.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such influence is a creditor right, not ownership, and arises only in exceptional cases of financial distress.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Ownership in a company is represented by shares of stock, not bonds, which are contractual obligations for repayment."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Ownership in a company is represented by shares of stock, not bonds, which are contractual obligations for repayment.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some bonds, like convertible bonds, can be converted into shares of stock, thus representing potential ownership.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Convertible bonds are a minority of bonds issued, and most bonds do not confer any ownership rights.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Bondholders may gain influence or control in cases of bankruptcy or restructuring, which can resemble ownership.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Influence during bankruptcy is a creditor right, not ownership, as bondholders cannot participate in profits or governance under normal circumstances.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

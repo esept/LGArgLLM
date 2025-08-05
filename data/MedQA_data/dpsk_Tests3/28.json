@@ -1,0 +1,182 @@
+{
+  "claim": "Consider the following background information: A 38-year-old G4P3 presents to her obstetrician\u2019s office for her 20-week anatomy ultrasound. She reports that she feels well and has not experienced any contractions or vaginal bleeding. She also reports good fetal movement. The patient declined prenatal screening earlier in the pregnancy for religious reasons but would now like an anatomy ultrasound to ensure the fetus is growing appropriately. The patient\u2019s previous pregnancies were uncomplicated, and she delivered three healthy babies at full term. On the ultrasound, the technician observes a male fetus with likely intrauterine growth restriction (IUGR). She also notes microcephaly, convex-rounded feet, and clenched fists with overlapping fingers. The technician further notes a medium-sized ventricular septal defect (VSD). The amniotic fluid index (AFI) is 26 cm.\n\nGiven the background information the following is corrrect: A prominent occiput is most likely to be observed in this fetus.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The combination of microcephaly, clenched fists with overlapping fingers, and a ventricular septal defect is highly suggestive of Trisomy 18 (Edwards syndrome), which is commonly associated with a prominent occiput."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The combination of microcephaly, clenched fists with overlapping fingers, and a ventricular septal defect is highly suggestive of Trisomy 18 (Edwards syndrome), which is commonly associated with a prominent occiput.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While these findings are suggestive of Trisomy 18, other conditions like Trisomy 13 or severe congenital infections can present similarly, and a prominent occiput is not pathognomonic for Trisomy 18.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Trisomy 18 is the most likely diagnosis given the specific combination of findings, and a prominent occiput is a well-documented feature in most cases, making it highly probable in this scenario.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of prenatal screening and reliance solely on ultrasound findings increases the uncertainty of the diagnosis, as some features like clenched fists and overlapping fingers can be transient or positional.",
+          "confidence": 0.6,
+          "attacks": {
+            "A1": 0.55
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The consistency of multiple classic markers (microcephaly, VSD, clenched fists) strongly supports Trisomy 18, reducing the likelihood of transient or positional explanations.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "Intrauterine growth restriction (IUGR) along with the noted anomalies increases the likelihood of chromosomal abnormalities, including Trisomy 18, where a prominent occiput is a characteristic feature."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Intrauterine growth restriction (IUGR) along with the noted anomalies increases the likelihood of chromosomal abnormalities, including Trisomy 18, where a prominent occiput is a characteristic feature.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While Trisomy 18 is associated with a prominent occiput, other conditions like Trisomy 13 or severe congenital infections can also present with similar features, reducing the specificity of this observation.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The combination of IUGR, microcephaly, clenched fists with overlapping fingers, and VSD is highly specific to Trisomy 18, making other diagnoses less likely in this context.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Even within Trisomy 18, phenotypic variability exists, and not all cases present with a prominent occiput, which could lead to false negatives if relied upon solely.",
+          "confidence": 0.6,
+          "attacks": {
+            "A2": 0.55,
+            "C1": 0.5
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Microcephaly and the other observed physical anomalies (convex-rounded feet, clenched fists) are consistent with Trisomy 18, which often presents with a prominent occiput due to abnormal skull development."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Microcephaly and the other observed physical anomalies (convex-rounded feet, clenched fists) are consistent with Trisomy 18, which often presents with a prominent occiput due to abnormal skull development.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While Trisomy 18 is associated with microcephaly, not all cases present with a prominent occiput; other genetic or developmental conditions could explain these findings.",
+          "confidence": 0.65,
+          "attacks": {
+            "A3": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The combination of IUGR, microcephaly, and specific limb anomalies (convex-rounded feet, clenched fists) is highly specific to Trisomy 18, making other diagnoses less likely.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The absence of prenatal screening history increases uncertainty, as other conditions with overlapping features (e.g., Triploidy) cannot be ruled out without genetic testing.",
+          "confidence": 0.6,
+          "attacks": {
+            "C1": 0.55
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The presence of a ventricular septal defect (VSD) in conjunction with the other findings further supports the diagnosis of Trisomy 18, a condition where a prominent occiput is a common phenotypic feature."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The presence of a ventricular septal defect (VSD) in conjunction with the other findings further supports the diagnosis of Trisomy 18, a condition where a prominent occiput is a common phenotypic feature.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While VSD is associated with Trisomy 18, it is also a common congenital defect in many other conditions and even in isolation, reducing its specificity for Trisomy 18.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The combination of microcephaly, clenched fists with overlapping fingers, and IUGR significantly increases the likelihood of Trisomy 18, making VSD more suggestive in this context.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "A prominent occiput is not universally present in all cases of Trisomy 18, and its absence does not rule out the condition, nor does its presence confirm it definitively.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The phenotypic features described (microcephaly, convex-rounded feet, clenched fists) are highly characteristic of Trisomy 18, making the association with a prominent occiput more plausible.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

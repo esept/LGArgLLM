@@ -1,0 +1,208 @@
+{
+  "claim": "Friedrich Hayek, a person from America, won a Nobel Prize for Economics.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Friedrich Hayek was born in Austria and later became a British citizen, not an American."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Friedrich Hayek was born in Austria and later became a British citizen, not an American.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Hayek spent significant time teaching and working in the United States, which could qualify him as being 'from America' in a broader sense.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The term 'from America' typically implies citizenship or birthplace, not just temporary residence or work.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hayek's contributions to economics were recognized globally, making his national origin less relevant to the Nobel Prize achievement.",
+          "confidence": 0.55,
+          "attacks": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Friedrich Hayek won the Nobel Prize in Economic Sciences in 1974."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Friedrich Hayek won the Nobel Prize in Economic Sciences in 1974.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.98,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies Hayek as 'a person from America,' which is factually incorrect, but the Nobel Prize information in A2 remains accurate.",
+          "confidence": 0.99,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Nobel Prize in Economic Sciences was not established by Alfred Nobel's will but by the Swedish Central Bank in 1968, which may affect its perceived prestige.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite its later establishment, the Nobel Prize in Economic Sciences is widely regarded as equivalent in prestige to the original Nobel Prizes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Nobel Prize in Economic Sciences is awarded by the Royal Swedish Academy of Sciences."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Nobel Prize in Economic Sciences is awarded by the Royal Swedish Academy of Sciences.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was born in Austria, not America, which contradicts the claim about his nationality.",
+          "confidence": 0.98,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Royal Swedish Academy of Sciences awarded Hayek the Nobel Prize in Economic Sciences in 1974, which supports the claim about his Nobel Prize.",
+          "confidence": 0.97,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The original claim combines two separate facts (nationality and Nobel Prize), and A3 only addresses the latter, leaving the nationality claim unaddressed.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Friedrich Hayek is widely recognized for his contributions to the theory of money and economic fluctuations."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Friedrich Hayek is widely recognized for his contributions to the theory of money and economic fluctuations.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Friedrich Hayek was not from America; he was born in Austria and later became a British citizen.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hayek's contributions to economics are significant, but his nationality does not affect the validity of his work.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hayek's Nobel Prize was awarded for his work on the theory of money and economic fluctuations, which aligns with the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The Nobel Prize in Economic Sciences was established in 1968, making it distinct from the original Nobel Prizes."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The Nobel Prize in Economic Sciences was established in 1968, making it distinct from the original Nobel Prizes.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Despite being established later, the Nobel Prize in Economic Sciences is awarded by the same institutions and follows the same nomination and selection procedures as the original Nobel Prizes.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Nobel Prize in Economic Sciences is not mentioned in Alfred Nobel's will, unlike the original prizes, which weakens its equivalence to them.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The prestige and recognition of the Nobel Prize in Economic Sciences are on par with the original Nobel Prizes, as evidenced by its global acceptance and media coverage.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

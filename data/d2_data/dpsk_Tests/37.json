@@ -1,0 +1,287 @@
+{
+  "claim": "Most earthquakes occur near tectonic plate boundaries",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Tectonic plate boundaries are zones of significant geological activity where plates collide, diverge, or slide past each other, generating stress that leads to earthquakes."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Tectonic plate boundaries are zones of significant geological activity where plates collide, diverge, or slide past each other, generating stress that leads to earthquakes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some earthquakes, such as intraplate earthquakes, occur far from tectonic plate boundaries, indicating that not all seismic activity is confined to these zones.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are relatively rare compared to those at plate boundaries, so the original claim about 'most earthquakes' remains valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human-induced earthquakes, such as those caused by fracking or reservoir-induced seismicity, are not directly related to tectonic plate boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Human-induced earthquakes account for a small fraction of total seismic activity, so they do not significantly alter the general pattern of earthquake distribution.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The majority of recorded seismic activity is concentrated along known plate boundaries, such as the Pacific Ring of Fire, which accounts for about 90% of the world's earthquakes."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The majority of recorded seismic activity is concentrated along known plate boundaries, such as the Pacific Ring of Fire, which accounts for about 90% of the world's earthquakes.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some intraplate earthquakes occur far from tectonic boundaries, such as the New Madrid earthquakes in the central United States, which challenge the claim that 'most' earthquakes occur near boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are statistically rare compared to boundary-related seismic activity, and the New Madrid events are exceptions rather than the norm.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Seismic monitoring is less comprehensive in remote oceanic regions, potentially undercounting earthquakes away from well-instrumented plate boundaries.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Global seismic networks and satellite technology have significantly improved detection capabilities, reducing geographic bias in earthquake records.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Earthquakes occur due to the release of accumulated stress along faults, which are most common and active at tectonic plate boundaries."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Earthquakes occur due to the release of accumulated stress along faults, which are most common and active at tectonic plate boundaries.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some earthquakes occur far from plate boundaries, such as intraplate earthquakes, which are caused by localized stress within tectonic plates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are much rarer and generally less intense than those at plate boundaries, so they do not significantly contradict the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human activities like mining, reservoir-induced seismicity, and hydraulic fracturing can also cause earthquakes, unrelated to tectonic plate boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anthropogenic earthquakes are typically minor and localized, whereas the vast majority of significant seismic activity is still tied to plate boundaries.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Scientific studies and seismic monitoring data consistently show higher earthquake frequency and magnitude near plate boundaries compared to intraplate regions."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Scientific studies and seismic monitoring data consistently show higher earthquake frequency and magnitude near plate boundaries compared to intraplate regions.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some intraplate regions, such as the New Madrid Seismic Zone in the U.S., experience significant earthquakes despite being far from plate boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are rare compared to plate boundary earthquakes, and the New Madrid zone is an exception rather than the norm.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human-induced seismicity, such as from fracking or reservoir-induced seismicity, can cause earthquakes in regions not traditionally associated with tectonic activity.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Human-induced earthquakes are typically much smaller in magnitude and less frequent than naturally occurring tectonic earthquakes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The movement of tectonic plates at their boundaries creates fractures and faults, which are primary sites for earthquake generation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The movement of tectonic plates at their boundaries creates fractures and faults, which are primary sites for earthquake generation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some earthquakes, known as intraplate earthquakes, occur far from tectonic plate boundaries due to localized stress or ancient faults.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are statistically rare compared to boundary-related ones, so they do not significantly challenge the claim about 'most' earthquakes.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Human activities like fracking or reservoir-induced seismicity can cause earthquakes unrelated to tectonic boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Anthropogenic earthquakes are minor in frequency and magnitude compared to natural tectonic boundary earthquakes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Historical earthquake records and global seismic maps demonstrate a clear correlation between earthquake epicenters and tectonic plate boundaries."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Historical earthquake records and global seismic maps demonstrate a clear correlation between earthquake epicenters and tectonic plate boundaries.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some earthquakes, such as intraplate earthquakes, occur far from tectonic plate boundaries, challenging the claim that 'most' earthquakes are near boundaries.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Intraplate earthquakes are statistically rare compared to interplate earthquakes, so the original claim about 'most' earthquakes remains valid.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Seismic monitoring technology has historically been concentrated near plate boundaries, potentially biasing earthquake detection and records.",
+          "confidence": 0.58,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern global seismic networks and satellite data have minimized detection bias, confirming the strong correlation between earthquakes and plate boundaries.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

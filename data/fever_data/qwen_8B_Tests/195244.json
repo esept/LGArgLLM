@@ -1,0 +1,70 @@
+{
+  "claim": "Kevin Bacon was in the film Sleepers in 2006.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "'Sleepers' premiered at Cannes Film Festival on May [date], [year], and Kevin Bacon\u2019s role ended before [year].",
+        "confidence": -3,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Sleepers premiered at Cannes Film Festival on May [date], [year], and Kevin Bacon\u2019s role ended before [year].",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Kevin Bacon\u2019s role in Sleepers did not end before its Cannes premiere; production timelines indicate his involvement extended beyond [year].",
+          "confidence": 0.83,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim about Sleepers\u2019 Cannes premiere date is inaccurate; historical records show it premiered in [earlier year], not [year].",
+          "confidence": 0.79,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "There is no credible evidence to support the assertion that Kevin Bacon\u2019s role extended beyond Sleepers\u2019 Cannes premiere.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The premise that Sleepers premiered in an earlier year lacks verifiable sources; official festival archives confirm its [year] debut.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The official festival archives cited in C2 are incomplete or misinterpreted; alternative records suggest a different premiere timeline.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The production timeline referenced in B1 relies on unverified industry rumors rather than official production documents.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

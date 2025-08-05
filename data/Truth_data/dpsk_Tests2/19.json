@@ -1,0 +1,1204 @@
+{
+  "claim": "US incomes are less unequal than those in Brazil.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The Gini coefficient, a common measure of income inequality, is significantly lower in the US than in Brazil, indicating less income disparity.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The Gini coefficient, a common measure of income inequality, is significantly lower in the US than in Brazil, indicating less income disparity.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient does not account for wealth inequality, which may be more pronounced in the US due to asset concentration among the top percentile.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Regional disparities within the US (e.g., rural vs. urban) can mask localized high inequality comparable to Brazil when using a national Gini coefficient.",
+          "confidence": 0.72,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Tax evasion and informal economies in Brazil may distort Gini measurements, making the US-Brazil comparison unreliable.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Wealth inequality metrics still show the US with lower disparity than Brazil when adjusted for purchasing power parity (PPP).",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subnational Gini data for US states still shows consistently lower inequality than Brazilian states, reinforcing the original claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "OECD studies account for informality and still rank Brazil as having higher income inequality than the US.",
+          "confidence": 0.73,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "PPP adjustments ignore qualitative differences in access to services (e.g., healthcare), which wealth metrics fail to capture.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "US subnational data excludes territories like Puerto Rico, where inequality levels resemble Brazil\u2019s.",
+          "confidence": 0.62,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Brazil has one of the highest levels of income inequality in the world, while the US has a more developed welfare system and progressive taxation that reduces inequality.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Brazil has one of the highest levels of income inequality in the world, while the US has a more developed welfare system and progressive taxation that reduces inequality.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The US welfare system has significant gaps, such as lack of universal healthcare, which disproportionately affects low-income groups and exacerbates inequality.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Progressive taxation in the US is undermined by loopholes and tax evasion, which benefit the wealthy and limit redistribution efforts.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil's recent social programs like Bolsa Fam\u00edlia have significantly reduced income inequality, narrowing the gap with the US.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite gaps, the US welfare system still provides more comprehensive support than Brazil's, including unemployment benefits and food assistance programs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Tax evasion and loopholes are also prevalent in Brazil, often at higher rates, making the US system comparatively more effective.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Bolsa Fam\u00edlia's impact is limited by Brazil's overall lower GDP per capita, meaning absolute poverty remains higher than in the US.",
+          "confidence": 0.67,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "US unemployment benefits are time-limited and often insufficient to cover basic living costs, reducing their effectiveness in mitigating inequality.",
+          "confidence": 0.62,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Brazil's tax enforcement has improved recently, with stricter penalties for evasion, reducing the gap with the US.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The US has a larger middle class compared to Brazil, where wealth is concentrated among a small elite, leading to greater income equality in the US.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The US has a larger middle class compared to Brazil, where wealth is concentrated among a small elite, leading to greater income equality in the US.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient of the US is higher than many developed nations, indicating significant income inequality despite having a larger middle class.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wealth concentration in the US is also highly skewed, with the top 1% owning a disproportionate share of assets, undermining claims of greater equality.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil's middle class has been growing in recent years, reducing the gap in income distribution between the two countries.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient alone does not account for quality of life, social mobility, or purchasing power parity, which may favor the US middle class.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While wealth concentration is high in the US, progressive taxation and social programs mitigate some inequalities compared to Brazil's less effective redistribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Brazil's middle-class growth is offset by persistent poverty and informal labor markets, limiting overall income equality gains.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with social programs, wealth inequality in the US remains structurally entrenched due to policy biases favoring capital over labor.",
+          "confidence": 0.77,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Purchasing power parity adjustments still show that Brazil's poorest have lower real incomes than their US counterparts, reinforcing inequality differences.",
+          "confidence": 0.71,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Brazil's informal economy is much larger than that of the US, which exacerbates income inequality as many workers lack access to formal employment benefits.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Brazil's informal economy is much larger than that of the US, which exacerbates income inequality as many workers lack access to formal employment benefits.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The informal economy in Brazil may actually reduce measured income inequality by providing undocumented income to low-wage workers.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The US has significant wealth inequality that isn't captured by income measures alone, making the comparison misleading.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Government transfers and social programs in Brazil have significantly reduced income inequality in recent years.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Undocumented income in the informal sector is typically much lower than formal wages, so it doesn't compensate for the lack of benefits.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wealth inequality is a separate issue from income inequality, and the original claim specifically addresses income.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "While Brazilian social programs have helped, they haven't been sufficient to overcome structural inequalities in the labor market.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Many informal workers in Brazil earn comparable wages to formal sector workers when accounting for unreported tips and side jobs.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Social programs in Brazil are often poorly targeted and don't reach the most vulnerable populations effectively.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The US has higher average wages and more opportunities for upward mobility compared to Brazil, contributing to less income inequality.",
+        "confidence": 0.68,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The US has higher average wages and more opportunities for upward mobility compared to Brazil, contributing to less income inequality.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "While the US has higher average wages, the wage gap between the top 1% and the bottom 50% is still extremely large, undermining claims of lower inequality.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Opportunities for upward mobility in the US are often overstated, as systemic barriers like racial discrimination and unequal access to education persist.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil's progressive taxation and social programs have reduced income inequality significantly in recent years, narrowing the gap with the US.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The wage gap in the US, while large, is still smaller than Brazil's when measured by Gini coefficient, supporting the original claim.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that upward mobility in the US is higher than in Brazil when measured by intergenerational income elasticity.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Brazil's social programs are underfunded and inconsistently implemented, limiting their impact on reducing inequality compared to US policies.",
+          "confidence": 0.62,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Gini coefficient fails to capture wealth inequality, where the US performs worse than Brazil due to extreme concentration of assets.",
+          "confidence": 0.71,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Intergenerational mobility metrics ignore racial disparities; Black Americans experience mobility rates closer to Brazil's national average.",
+          "confidence": 0.69,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Regional disparities in Brazil are far more pronounced than in the US, with wealth concentrated in the southeast while other regions remain underdeveloped.",
+        "confidence": 0.73,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Regional disparities in Brazil are far more pronounced than in the US, with wealth concentrated in the southeast while other regions remain underdeveloped.",
+          "confidence": 0.73,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The US also has significant regional disparities, such as the wealth gap between coastal cities and rural areas.",
+          "confidence": 0.78,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil's wealth concentration is offset by progressive social programs that reduce income inequality more effectively than US policies.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The comparison ignores racial and ethnic income disparities in the US, which are severe and comparable to Brazil's regional inequalities.",
+          "confidence": 0.71,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Coastal-rural gaps in the US are smaller in magnitude than Brazil's southeast-northeast divide when measured by Gini coefficient.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Brazil's social programs have limited reach due to corruption and bureaucratic inefficiencies, undermining their impact on inequality.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "US racial disparities are mitigated by stronger labor protections and anti-discrimination laws compared to Brazil.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Gini coefficient comparisons fail to account for cost-of-living differences that amplify regional disparities in Brazil.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The US has stronger labor protections and minimum wage laws compared to Brazil, which helps reduce wage gaps.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The US has stronger labor protections and minimum wage laws compared to Brazil, which helps reduce wage gaps.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Despite labor protections, wage inequality in the US remains high due to executive pay disparities and lack of unionization in many sectors.",
+          "confidence": 0.72,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Minimum wage laws in the US are not adjusted for cost of living variations across states, leaving many workers in poverty despite legal protections.",
+          "confidence": 0.68,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil has implemented progressive social programs like Bolsa Fam\u00edlia, which directly reduce income inequality more effectively than labor laws alone.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Executive pay disparities are offset by higher average wages in the US compared to Brazil, narrowing the overall income gap.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unionization rates are rising in key US industries, countering the claim of weak labor representation.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Many US states have local minimum wage laws that exceed federal standards, addressing cost-of-living disparities.",
+          "confidence": 0.63,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Bolsa Fam\u00edlia's impact is limited by corruption and inefficient distribution, reducing its effectiveness compared to systemic labor protections.",
+          "confidence": 0.67,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Higher average wages in the US do not account for wealth inequality, which remains extreme due to asset concentration among the top 1%.",
+          "confidence": 0.71,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Rising unionization does not address the decline in manufacturing jobs, where unions historically had the strongest influence.",
+          "confidence": 0.64,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "Brazil's historical legacy of slavery and land concentration has perpetuated deep economic inequalities that are less extreme in the US.",
+        "confidence": 0.77,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "Brazil's historical legacy of slavery and land concentration has perpetuated deep economic inequalities that are less extreme in the US.",
+          "confidence": 0.77,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The US also has a history of slavery and systemic racism, which has contributed to persistent wealth gaps comparable to Brazil's.",
+          "confidence": 0.82,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Modern US policies, such as tax cuts for the wealthy, have exacerbated income inequality, making the gap similar to Brazil's.",
+          "confidence": 0.79,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil has implemented progressive social policies in recent decades that have reduced inequality more effectively than US policies.",
+          "confidence": 0.75,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the US had slavery, its post-Civil War industrialization and broader economic opportunities mitigated inequality more effectively than in Brazil.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "US progressive taxation and social welfare programs, despite flaws, still redistribute wealth more effectively than Brazil's systems.",
+          "confidence": 0.74,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Brazil's social policies, like Bolsa Fam\u00edlia, have narrow targeting and limited long-term impact compared to broader US safety nets.",
+          "confidence": 0.71,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Industrialization in the US disproportionately benefited white Americans, leaving racial wealth gaps unresolved and comparable to Brazil's racial disparities.",
+          "confidence": 0.76,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "US tax loopholes and offshore wealth accumulation undermine its progressive taxation, reducing its redistributive effectiveness.",
+          "confidence": 0.73,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A9": {
+      "supporting": {
+        "id": "A9",
+        "text": "The top 1% in Brazil controls a much larger share of national income than the top 1% in the US, indicating greater inequality.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A9",
+          "text": "The top 1% in Brazil controls a much larger share of national income than the top 1% in the US, indicating greater inequality.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient, a more comprehensive measure of inequality, shows that US inequality has been rising rapidly and may soon surpass Brazil's.",
+          "confidence": 0.75,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Wealth inequality, which includes assets like property and investments, is actually higher in the US than in Brazil when measured properly.",
+          "confidence": 0.7,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The comparison ignores regional variations within each country; some US states have inequality levels comparable to Brazil's worst regions.",
+          "confidence": 0.65,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient is sensitive to measurement methods and doesn't account for quality of life differences between countries.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wealth measurements often exclude informal economies which are larger in Brazil, making US wealth appear more unequal by comparison.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Regional comparisons are misleading because Brazil's national inequality is still higher than the US average by any measure.",
+          "confidence": 0.8,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with measurement issues, Gini trends clearly show the US catching up to Brazilian inequality levels over time.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Informal economies predominantly benefit lower-income groups, so excluding them actually understates Brazil's inequality relative to the US.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A10": {
+      "supporting": {
+        "id": "A10",
+        "text": "Public education and healthcare access in the US are more widespread than in Brazil, helping to mitigate income disparities.",
+        "confidence": 0.67,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A10",
+          "text": "Public education and healthcare access in the US are more widespread than in Brazil, helping to mitigate income disparities.",
+          "confidence": 0.67,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Despite widespread access, the quality of public education and healthcare in the US varies significantly by region, perpetuating income inequality.",
+          "confidence": 0.72,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Brazil has implemented substantial social welfare programs like Bolsa Fam\u00edlia, which directly reduce income inequality more effectively than US policies.",
+          "confidence": 0.75,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Regional disparities in the US are being addressed through federal funding initiatives aimed at equalizing education and healthcare quality.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bolsa Fam\u00edlia's impact is limited by corruption and inefficiency in Brazil's administration, reducing its effectiveness in mitigating income inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Federal funding initiatives often fail to reach underserved areas due to bureaucratic hurdles and local mismanagement.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Despite administrative challenges, Bolsa Fam\u00edlia has demonstrably lifted millions out of poverty, proving its effectiveness.",
+          "confidence": 0.71,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A11": {
+      "supporting": {
+        "id": "A11",
+        "text": "The US has seen rising income inequality in recent decades, narrowing the gap with Brazil's historically high levels.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A11",
+          "text": "The US has seen rising income inequality in recent decades, narrowing the gap with Brazil's historically high levels.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Brazil has implemented progressive social policies in recent years that have significantly reduced income inequality.",
+          "confidence": 0.7,
+          "attacks": [
+            "A11"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gini coefficient, a standard measure of income inequality, still shows Brazil with much higher inequality than the US.",
+          "confidence": 0.65,
+          "attacks": [
+            "A11"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The US wealth gap continues to grow due to tax policies favoring the wealthy, making the comparison with Brazil misleading.",
+          "confidence": 0.68,
+          "attacks": [
+            "A11"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Brazil's social policies have had limited impact due to corruption and inefficient implementation.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gini coefficient doesn't account for wealth inequality, where the US performs worse than Brazil.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Recent US tax reforms have begun addressing wealth concentration through higher capital gains taxes.",
+          "confidence": 0.58,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Independent audits show Brazil's social programs have successfully reached their intended beneficiaries despite corruption challenges.",
+          "confidence": 0.62,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Wealth inequality metrics still show the US with better distribution when including non-financial assets like home ownership.",
+          "confidence": 0.59,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A12": {
+      "supporting": {
+        "id": "A12",
+        "text": "Wealth inequality in the US is comparable to Brazil when considering factors like inherited wealth and capital gains, not just income.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A12",
+          "text": "Wealth inequality in the US is comparable to Brazil when considering factors like inherited wealth and capital gains, not just income.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Income inequality metrics like the Gini coefficient show the US has significantly lower inequality than Brazil, even when accounting for wealth.",
+          "confidence": 0.7,
+          "attacks": [
+            "A12"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Capital gains and inherited wealth are concentrated among the top 1% in both countries, but Brazil's top 1% controls a much larger share of total wealth.",
+          "confidence": 0.65,
+          "attacks": [
+            "A12"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The US has stronger social mobility mechanisms (e.g., education access) that mitigate long-term wealth inequality compared to Brazil.",
+          "confidence": 0.68,
+          "attacks": [
+            "A12"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient for income does not fully capture disparities in living standards, which are worse in Brazil due to weaker public services.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wealth concentration data often excludes offshore assets, which disproportionately benefit Brazil's elite due to weaker financial regulation.",
+          "confidence": 0.62,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Social mobility in the US has declined in recent decades, reducing its advantage over Brazil in wealth inequality mitigation.",
+          "confidence": 0.58,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Living standard comparisons should adjust for purchasing power parity, which narrows the gap between US and Brazilian inequality outcomes.",
+          "confidence": 0.55,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Offshore wealth estimates are speculative and equally likely to affect US inequality measurements given its global financial role.",
+          "confidence": 0.52,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A13": {
+      "supporting": {
+        "id": "A13",
+        "text": "Racial and ethnic disparities in income are severe in both countries, with Black and Indigenous populations facing similar marginalization.",
+        "confidence": 0.58,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A13",
+          "text": "Racial and ethnic disparities in income are severe in both countries, with Black and Indigenous populations facing similar marginalization.",
+          "confidence": 0.58,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Gini coefficient, a standard measure of income inequality, is significantly higher in Brazil than in the US, indicating greater overall inequality.",
+          "confidence": 0.82,
+          "attacks": [
+            "A13"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Social mobility is higher in the US compared to Brazil, suggesting that income inequality is less entrenched.",
+          "confidence": 0.75,
+          "attacks": [
+            "A13"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Government redistribution policies, such as progressive taxation and welfare programs, are more effective in the US than in Brazil.",
+          "confidence": 0.68,
+          "attacks": [
+            "A13"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gini coefficient does not account for wealth inequality, which may be more severe in the US due to historical factors like slavery and systemic racism.",
+          "confidence": 0.71,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Social mobility metrics often overlook racial disparities; even if overall mobility is higher in the US, marginalized groups may still face significant barriers.",
+          "confidence": 0.67,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "US welfare programs have been criticized for being insufficient and exclusionary, particularly for minority populations.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Wealth inequality measures still show Brazil with higher disparities when including informal economies and land ownership patterns.",
+          "confidence": 0.63,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Barriers to mobility in Brazil are more systemic and affect a larger proportion of the population compared to the US.",
+          "confidence": 0.59,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A14": {
+      "supporting": {
+        "id": "A14",
+        "text": "Brazil's Bolsa Fam\u00edlia program has significantly reduced poverty and inequality, potentially closing some of the gap with the US.",
+        "confidence": 0.5,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A14",
+          "text": "Brazil's Bolsa Fam\u00edlia program has significantly reduced poverty and inequality, potentially closing some of the gap with the US.",
+          "confidence": 0.5,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The Bolsa Fam\u00edlia program's impact is limited to short-term poverty relief and does not address structural inequality in Brazil.",
+          "confidence": 0.7,
+          "attacks": [
+            "A14"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The US has progressive taxation and social welfare programs that are more effective at reducing income inequality than Brazil's Bolsa Fam\u00edlia.",
+          "confidence": 0.65,
+          "attacks": [
+            "A14"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Brazil's Gini coefficient remains significantly higher than the US's, indicating greater income inequality despite Bolsa Fam\u00edlia.",
+          "confidence": 0.8,
+          "attacks": [
+            "A14"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Structural inequality in Brazil is being addressed through complementary policies like education reforms and labor market regulations.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Progressive taxation in the US is undermined by loopholes and tax evasion, reducing its effectiveness in combating inequality.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The Gini coefficient does not capture wealth inequality, where the US may perform worse than Brazil.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Education reforms in Brazil have been slow to implement and have not yet shown significant impact on structural inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Recent US tax reforms have closed some loopholes, increasing the effectiveness of progressive taxation.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A15": {
+      "supporting": {
+        "id": "A15",
+        "text": "Cost of living adjustments show that real wage gaps between rich and poor may be smaller in Brazil than nominal comparisons suggest.",
+        "confidence": 0.45,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A15",
+          "text": "Cost of living adjustments show that real wage gaps between rich and poor may be smaller in Brazil than nominal comparisons suggest.",
+          "confidence": 0.45,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Cost of living adjustments do not account for disparities in access to essential services like healthcare and education, which are more unequal in Brazil.",
+          "confidence": 0.65,
+          "attacks": [
+            "A15"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Nominal comparisons still reflect purchasing power differences in global markets, where US incomes provide more equitable access to imported goods.",
+          "confidence": 0.7,
+          "attacks": [
+            "A15"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Regional cost variations within Brazil can exacerbate inequality, making national averages misleading.",
+          "confidence": 0.6,
+          "attacks": [
+            "A15"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Brazil's public healthcare system partially mitigates income inequality by providing free services, reducing the effective cost disparity.",
+          "confidence": 0.55,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Global market access is less relevant for low-income populations who primarily consume locally produced goods.",
+          "confidence": 0.5,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Regional cost variations exist in the US as well, but federal policies help standardize living conditions more effectively than in Brazil.",
+          "confidence": 0.58,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Brazil's public healthcare system is underfunded and overburdened, limiting its effectiveness in reducing real inequality.",
+          "confidence": 0.62,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Local goods prices in Brazil are often inflated due to protectionist policies, disproportionately affecting the poor.",
+          "confidence": 0.53,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "claim": "People in Japan are richer than people in Mexico.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Japan has a higher GDP per capita than Mexico, indicating greater average individual wealth."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Japan has a higher GDP per capita than Mexico, indicating greater average individual wealth.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "GDP per capita does not account for wealth inequality, which may be higher in Japan, meaning many Japanese could be poorer than the average Mexican.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan has a relatively low Gini coefficient compared to Mexico, suggesting wealth is more evenly distributed in Japan.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cost of living is significantly higher in Japan, so higher nominal GDP per capita may not translate to higher purchasing power or quality of life.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Purchasing power parity (PPP) adjustments show Japan still has higher real income per capita than Mexico.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Mexico has a large informal economy not captured in GDP statistics, potentially understating actual wealth.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Even accounting for informal activity, Japan's formal economy is so much larger that the per capita difference remains substantial.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The median household income in Japan is significantly higher than in Mexico."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The median household income in Japan is significantly higher than in Mexico.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Median income does not account for cost of living differences, which are higher in Japan than in Mexico.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Purchasing power parity (PPP) adjustments show that Japanese households have greater real purchasing power despite higher costs.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality in Japan is higher than in Mexico, so median income may not reflect typical wealth distribution.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Gini coefficient data shows Japan's income inequality is actually lower than Mexico's, supporting the median income comparison.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Japan has a lower poverty rate compared to Mexico, suggesting broader wealth distribution."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Japan has a lower poverty rate compared to Mexico, suggesting broader wealth distribution.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Poverty rate alone does not account for absolute wealth levels; Japan's cost of living is significantly higher, which may offset income advantages.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with higher costs, Japan's median disposable income is substantially greater than Mexico's, reinforcing the original claim.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mexico's informal economy is large and unmeasured, potentially underestimating actual wealth among its population.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Informal economies typically generate lower and less stable incomes, so their exclusion likely strengthens rather than weakens Japan's relative wealth position.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mexico has a higher Gini coefficient than Japan, indicating greater income inequality and fewer wealthy individuals relative to the population."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mexico has a higher Gini coefficient than Japan, indicating greater income inequality and fewer wealthy individuals relative to the population.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gini coefficient measures inequality, not absolute wealth. Japan could still have higher median income despite lower inequality.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with higher median income, Japan's lower inequality means wealth is more evenly distributed, potentially making more people 'richer' in relative terms.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Mexico has a larger informal economy, which isn't fully captured by Gini coefficient, potentially underestimating wealth among some groups.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Informal economy workers typically earn less than formal sector workers, so their inclusion would likely show even greater inequality in Mexico.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Japan's social welfare system and public services are more developed, contributing to higher disposable income for its citizens."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Japan's social welfare system and public services are more developed, contributing to higher disposable income for its citizens.",
+          "confidence": 0.75,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Mexico has a lower cost of living, which can result in higher purchasing power for its citizens despite lower nominal incomes.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan's high cost of living, including housing and healthcare, can offset the benefits of higher disposable income.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality in Japan is significant, and many citizens do not benefit equally from the developed welfare system.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Japan's progressive taxation and social programs actively work to reduce income inequality compared to Mexico.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The cost of living in Japan is higher than in Mexico, but average wages still result in greater purchasing power for Japanese citizens."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The cost of living in Japan is higher than in Mexico, but average wages still result in greater purchasing power for Japanese citizens.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Average wages in Japan have stagnated in recent years, while Mexico has seen wage growth, reducing the purchasing power gap.",
+          "confidence": 0.72,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan's wage stagnation is offset by lower inflation rates compared to Mexico, preserving relative purchasing power.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Regional disparities in Japan mean rural areas have significantly lower purchasing power than urban centers, skewing the national average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Mexico also has severe regional economic disparities, so the comparison remains valid at the national level.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

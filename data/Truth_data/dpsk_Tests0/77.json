@@ -1,0 +1,240 @@
+{
+  "claim": "The trails left in the sky by aircraft are water-based.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The trails left by aircraft are primarily composed of water vapor that condenses and freezes into ice crystals at high altitudes, forming contrails."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The trails left by aircraft are primarily composed of water vapor that condenses and freezes into ice crystals at high altitudes, forming contrails.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some trails contain persistent contrails that may include additional chemical compounds from aircraft exhaust, not just water vapor.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Persistent contrails are still primarily water-based, as the additional compounds are trace elements and do not change the fundamental composition.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Military aircraft have been documented releasing non-water-based substances (e.g., chaff or flares) that leave visible trails.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such releases are rare, temporary, and distinct from standard contrails, which remain overwhelmingly water-based.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Contrails are formed when hot, humid exhaust from aircraft engines mixes with cold air in the upper atmosphere, leading to condensation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Contrails are formed when hot, humid exhaust from aircraft engines mixes with cold air in the upper atmosphere, leading to condensation.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Contrails can persist and spread into cirrus-like clouds, suggesting they contain more than just water vapor.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The persistence and spread of contrails are due to atmospheric conditions, not additional substances, as confirmed by scientific studies.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some contrails contain chemical additives, as evidenced by unusual patterns and colors not typical of pure water vapor.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Unusual contrail patterns can be explained by variations in engine exhaust and atmospheric conditions without invoking chemical additives.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Scientific studies confirm that contrails consist of water in the form of ice crystals, not chemical or particulate matter unrelated to combustion."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Scientific studies confirm that contrails consist of water in the form of ice crystals, not chemical or particulate matter unrelated to combustion.",
+          "confidence": 0.92,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies have detected trace amounts of pollutants like sulfur compounds and soot in contrails, which are byproducts of combustion and not purely water.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The detected pollutants are negligible in concentration and do not alter the fact that contrails are primarily composed of water ice.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Military aircraft have been documented releasing chaff or other non-water-based materials that can resemble contrails.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such releases are rare, explicitly non-standard operations, and do not represent typical contrail formation from commercial or civilian aircraft.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The persistence and spread of contrails depend on atmospheric conditions such as humidity and temperature, consistent with water-based phenomena."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The persistence and spread of contrails depend on atmospheric conditions such as humidity and temperature, consistent with water-based phenomena.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some contrails persist and spread in conditions that do not align with typical water-based condensation, suggesting other factors or substances may be involved.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The observed persistence in atypical conditions can still be explained by localized atmospheric anomalies or measurement errors, without invoking non-water substances.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain contrails exhibit spectral properties inconsistent with pure water ice, indicating the presence of additional compounds.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Spectral anomalies can arise from impurities or pollutants in the atmosphere, not necessarily from intentional addition of non-water substances to contrails.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Aircraft fuel combustion produces water vapor as a byproduct, which is the primary component of the visible trails in the sky."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Aircraft fuel combustion produces water vapor as a byproduct, which is the primary component of the visible trails in the sky.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The trails also contain other byproducts like soot, sulfates, and nitrogen oxides, which can contribute to their formation and persistence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While other byproducts exist, water vapor remains the dominant component, and the trails are primarily water-based.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Under certain atmospheric conditions, water vapor alone does not form persistent trails; other particulates are necessary for nucleation.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if particulates aid nucleation, the trails are still fundamentally composed of water vapor, supporting the water-based claim.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

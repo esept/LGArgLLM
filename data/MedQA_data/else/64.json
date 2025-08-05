@@ -1,0 +1,395 @@
+{
+  "claim": "A 47-year-old woman is admitted to the hospital because of a 2-week history of low-grade fever, fatigue, and a 3-kg (6.6-lb) weight loss. Her temperature is 38\u00b0C (100.4\u00b0F). Physical examination shows pallor and a cardiac murmur. Her serum creatinine is 1.8 mg/dL. Urinalysis shows red cell casts and 2+ protein. A CT scan of the abdomen with contrast shows no abnormalities. Despite appropriate medical therapy, the patient dies. A photograph of the heart taken during autopsy is shown. Which of the following is the most likely explanation for the laboratory findings in this patient? : Deposition of antigen-antibody complexes",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The presence of red cell casts and proteinuria in urinalysis strongly suggests glomerular injury, which is commonly caused by deposition of antigen-antibody complexes in conditions like post-streptococcal glomerulonephritis or lupus nephritis.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The presence of red cell casts and proteinuria in urinalysis strongly suggests glomerular injury, which is commonly caused by deposition of antigen-antibody complexes in conditions like post-streptococcal glomerulonephritis or lupus nephritis.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's cardiac murmur and systemic symptoms (fever, weight loss) could indicate infective endocarditis, which can also cause glomerulonephritis via immune complex deposition, not necessarily primary autoimmune disease.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Red cell casts and proteinuria can also occur in vasculitic disorders like ANCA-associated vasculitis, which would not involve antigen-antibody complex deposition but rather direct vascular inflammation.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infective endocarditis typically causes embolic phenomena or abscesses on imaging, which were absent in this case, making immune complex-mediated glomerulonephritis from autoimmune disease more likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "ANCA-associated vasculitis usually presents with pulmonary or sinus involvement, which was not described here, supporting antigen-antibody complex deposition as the more plausible mechanism.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Culture-negative endocarditis or prior antibiotic treatment could explain the lack of typical imaging findings, preserving infective endocarditis as a possible diagnosis.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Limited forms of ANCA vasculitis (e.g., renal-limited) can occur without pulmonary symptoms, leaving open the possibility of non-complex-mediated glomerular injury.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The combination of fever, fatigue, weight loss, cardiac murmur, and renal involvement (elevated creatinine, red cell casts, and proteinuria) is highly suggestive of systemic vasculitis, such as microscopic polyangiitis, which can also lead to glomerular injury.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The combination of fever, fatigue, weight loss, cardiac murmur, and renal involvement (elevated creatinine, red cell casts, and proteinuria) is highly suggestive of systemic vasculitis, such as microscopic polyangiitis, which can also lead to glomerular injury.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of pulmonary symptoms or hemoptysis makes microscopic polyangiitis less likely, as respiratory involvement is a hallmark feature of this condition.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of a cardiac murmur and the lack of response to medical therapy suggest infective endocarditis rather than vasculitis, which could also explain the renal findings due to immune complex deposition.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infective endocarditis typically presents with positive blood cultures and vegetations on echocardiography, neither of which were mentioned in the clinical scenario.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Microscopic polyangiitis can present without pulmonary involvement in some cases, particularly in early stages or atypical presentations, so its absence does not rule out the diagnosis.",
+          "confidence": 0.73,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's lack of response to medical therapy could be due to delayed diagnosis or advanced disease, which is not uncommon in systemic vasculitis, rather than indicating an alternative diagnosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The clinical picture, including fever, cardiac murmur, and renal involvement, is classic for infective endocarditis, which can cause immune complex-mediated glomerulonephritis due to deposition of bacterial antigen-antibody complexes in the glomeruli.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The clinical picture, including fever, cardiac murmur, and renal involvement, is classic for infective endocarditis, which can cause immune complex-mediated glomerulonephritis due to deposition of bacterial antigen-antibody complexes in the glomeruli.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of vegetations on echocardiography or other imaging makes infective endocarditis less likely as the primary diagnosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The renal findings could also be explained by vasculitis, such as granulomatosis with polyangiitis, which presents with similar systemic and renal symptoms without requiring infective endocarditis.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The lack of response to appropriate medical therapy suggests an alternative or additional underlying pathology not addressed by standard endocarditis treatment.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Echocardiography has limited sensitivity for detecting small vegetations, so negative imaging does not definitively rule out infective endocarditis.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Vasculitis typically presents with additional features like sinusitis or pulmonary involvement, which are absent in this case, making it a less likely explanation.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The patient may have had antibiotic-resistant bacteria or an unusual pathogen that wasn't covered by the initial empirical therapy, explaining the treatment failure.",
+          "confidence": 0.65,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with limited sensitivity, the combination of negative echocardiography and CT findings significantly reduces the probability of infective endocarditis.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Limited forms of vasculitis can present without sinus or pulmonary involvement, so this diagnosis cannot be excluded based on the given information alone.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The findings could also be explained by a rapidly progressive glomerulonephritis (RPGN) due to anti-glomerular basement membrane (anti-GBM) disease, which does not involve antigen-antibody complexes but rather direct antibody attack on the glomerular basement membrane.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The findings could also be explained by a rapidly progressive glomerulonephritis (RPGN) due to anti-glomerular basement membrane (anti-GBM) disease, which does not involve antigen-antibody complexes but rather direct antibody attack on the glomerular basement membrane.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of red cell casts and proteinuria is more consistent with immune complex-mediated glomerulonephritis, as seen in conditions like post-streptococcal GN or lupus nephritis, rather than anti-GBM disease.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's systemic symptoms (fever, fatigue, weight loss) and cardiac murmur suggest an underlying systemic disease like infective endocarditis, which is commonly associated with immune complex deposition rather than anti-GBM disease.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Anti-GBM disease typically presents with more severe renal failure and often pulmonary hemorrhage (Goodpasture syndrome), neither of which is described in this patient.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Infective endocarditis often causes immune complex-mediated glomerulonephritis, but the absence of vegetations on imaging and the rapid progression to death make this less likely than a primary renal process like anti-GBM disease.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While anti-GBM disease can present without pulmonary involvement, the absence of severe hypertension and the presence of systemic symptoms still make immune complex-mediated disease more likely.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The rapid progression to death could be explained by a particularly aggressive form of anti-GBM disease, which can lead to fulminant renal failure even without pulmonary symptoms.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The patient's symptoms and lab findings are consistent with systemic lupus erythematosus (SLE), where immune complex deposition in the kidneys leads to lupus nephritis, explaining the proteinuria and red cell casts.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The patient's symptoms and lab findings are consistent with systemic lupus erythematosus (SLE), where immune complex deposition in the kidneys leads to lupus nephritis, explaining the proteinuria and red cell casts.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's cardiac murmur and fever could indicate infective endocarditis, which can also cause immune complex deposition and similar renal findings, making SLE less certain.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of other classic SLE manifestations like malar rash or arthritis weakens the argument for SLE as the primary diagnosis.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Infective endocarditis typically presents with positive blood cultures and embolic phenomena, which are not mentioned in this case, reducing its likelihood.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "SLE can present atypically in some patients, and the presence of red cell casts and proteinuria strongly suggests lupus nephritis even without other classic symptoms.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Blood cultures might not always be positive in infective endocarditis, especially if prior antibiotics were administered, leaving the possibility open.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Atypical SLE presentations are rare, and the absence of other systemic symptoms makes alternative diagnoses more probable.",
+          "confidence": 0.62,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The absence of abnormalities on CT scan of the abdomen argues against a primary renal pathology like renal cell carcinoma or obstructive uropathy, further supporting an immune-mediated process such as antigen-antibody complex deposition.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The absence of abnormalities on CT scan of the abdomen argues against a primary renal pathology like renal cell carcinoma or obstructive uropathy, further supporting an immune-mediated process such as antigen-antibody complex deposition.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The CT scan may not detect early or microscopic renal pathologies, so the absence of abnormalities does not definitively rule out primary renal disease.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other immune-mediated processes, such as vasculitis or lupus nephritis, could also explain the laboratory findings without requiring antigen-antibody complex deposition.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Early or microscopic renal pathologies would likely present with different clinical features, such as localized pain or hematuria, which are not described in this case.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of red cell casts and proteinuria is highly characteristic of glomerulonephritis, which is commonly caused by antigen-antibody complex deposition.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Red cell casts and proteinuria can also occur in rapidly progressive glomerulonephritis, which may not involve antigen-antibody complexes but rather direct immune cell-mediated damage.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

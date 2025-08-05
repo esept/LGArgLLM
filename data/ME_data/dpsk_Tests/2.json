@@ -1,0 +1,113 @@
+{
+  "claim": "7 \u00d7 (2 + 1) = 21",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The expression follows the order of operations (PEMDAS/BODMAS), where parentheses are evaluated first: 2 + 1 = 3, then multiplication: 7 \u00d7 3 = 21."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The expression follows the order of operations (PEMDAS/BODMAS), where parentheses are evaluated first: 2 + 1 = 3, then multiplication: 7 \u00d7 3 = 21.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the expression is interpreted without following the standard order of operations, such as left-to-right evaluation, it would incorrectly yield 7 \u00d7 2 + 1 = 15.",
+          "confidence": 0.2,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Left-to-right evaluation is not mathematically valid for arithmetic expressions; standard order of operations is universally accepted in mathematics.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Distributive property of multiplication over addition confirms the result: 7 \u00d7 (2 + 1) = (7 \u00d7 2) + (7 \u00d7 1) = 14 + 7 = 21."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Distributive property of multiplication over addition confirms the result: 7 \u00d7 (2 + 1) = (7 \u00d7 2) + (7 \u00d7 1) = 14 + 7 = 21.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Direct calculation of the expression yields 21, as 2 + 1 = 3 and 7 \u00d7 3 = 21."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Direct calculation of the expression yields 21, as 2 + 1 = 3 and 7 \u00d7 3 = 21.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the expression is interpreted differently, such as 7 \u00d7 2 + 1 due to missing parentheses, the result would be 15, not 21.",
+          "confidence": 0.3,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic rules prioritize parentheses, so the original interpretation (7 \u00d7 (2 + 1)) is unambiguous and correct.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mathematical consistency across arithmetic rules ensures that 7 \u00d7 (2 + 1) equals 21, as verified by standard arithmetic operations."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mathematical consistency across arithmetic rules ensures that 7 \u00d7 (2 + 1) equals 21, as verified by standard arithmetic operations.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the arithmetic operation is performed incorrectly, such as ignoring parentheses, the result may not be 21 (e.g., 7 \u00d7 2 + 1 = 15).",
+          "confidence": 0.2,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard arithmetic rules explicitly require evaluating expressions inside parentheses first, making the incorrect interpretation invalid.",
+          "confidence": 1.0,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

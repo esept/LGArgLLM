@@ -1,0 +1,483 @@
+{
+  "claim": "People in Japan are richer than people in Mexico.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Japan has a higher GDP per capita than Mexico, indicating greater average wealth.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Japan has a higher GDP per capita than Mexico, indicating greater average wealth.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "GDP per capita does not account for wealth inequality, which could mean many Japanese are not actually richer than Mexicans.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cost of living in Japan is significantly higher than in Mexico, so higher GDP per capita may not translate to higher disposable income.",
+          "confidence": 0.82,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Mexico has a large informal economy that is not captured in GDP calculations, potentially underestimating actual wealth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan has lower Gini coefficient than Mexico, indicating wealth is more evenly distributed, so GDP per capita remains a valid measure.",
+          "confidence": 0.77,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Purchasing power parity adjustments show Japanese still have higher real income even after accounting for cost of living differences.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Informal economy activities in Mexico are typically low-value and do not significantly impact average wealth comparisons.",
+          "confidence": 0.71,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Japan's aging population means wealth is concentrated in older generations, while many working-age Japanese struggle with stagnant wages.",
+          "confidence": 0.73,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "PPP calculations often underestimate the impact of housing costs, which consume disproportionate income in Japan.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Japan's strong industrial and technological sectors contribute to higher incomes for its citizens.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Japan's strong industrial and technological sectors contribute to higher incomes for its citizens.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Mexico's economy has been growing rapidly in recent years, narrowing the income gap with Japan.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality in Japan is high, meaning not all citizens benefit equally from its industrial and technological sectors.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Cost of living in Japan is significantly higher, which may offset the higher nominal incomes.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan's economic growth has stagnated in recent decades, limiting income growth for its citizens.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Government policies in Japan effectively redistribute wealth to reduce income inequality.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Higher cost of living in Japan is matched by higher quality of life and public services.",
+          "confidence": 0.78,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Japan's aging population puts additional strain on its economy, further limiting income growth potential.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Wealth redistribution policies in Japan have been less effective in recent years due to demographic challenges.",
+          "confidence": 0.62,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Japan has a lower poverty rate compared to Mexico, suggesting fewer people are financially struggling.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Japan has a lower poverty rate compared to Mexico, suggesting fewer people are financially struggling.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Poverty rate does not account for wealth distribution; Japan may have lower poverty but also a weaker middle class compared to Mexico.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Cost of living in Japan is significantly higher than in Mexico, so lower poverty rates may not reflect actual disposable income.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Poverty metrics vary by country, and Japan's definition may exclude groups that Mexico includes, making direct comparison unreliable.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Japan's Gini coefficient (wealth inequality measure) is lower than Mexico's, indicating a stronger middle class despite higher costs.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Purchasing power parity (PPP) adjustments show Japanese households have higher real income than Mexican households, offsetting cost differences.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "OECD standardized poverty metrics confirm Japan's lower poverty rate relative to Mexico, reducing methodological bias.",
+          "confidence": 0.72,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Japan's aging population artificially lowers poverty rates as retirees live on savings, not current income.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "PPP calculations ignore non-monetary aspects of poverty like access to healthcare, where Mexico outperforms Japan in affordability.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Mexico has a higher income inequality, meaning wealth is concentrated among fewer people, while Japan has a more even distribution.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Mexico has a higher income inequality, meaning wealth is concentrated among fewer people, while Japan has a more even distribution.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even with higher income inequality, Mexico's wealthy elite may still have higher absolute wealth than the average Japanese citizen.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Income inequality does not necessarily correlate with overall national wealth; Japan could still have lower average wealth despite more even distribution.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Japan's aging population may reduce average wealth due to higher dependency ratios, regardless of income distribution.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that Japan's median wealth is significantly higher than Mexico's, supporting the claim of greater overall prosperity.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gini coefficient for Japan is much lower than Mexico's, indicating that wealth is more widely shared among the population.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Japan's social welfare systems help mitigate the economic impact of its aging population, maintaining higher average wealth.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Median wealth comparisons may not account for cost of living differences, which could favor Mexico in some regions.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "A lower Gini coefficient does not necessarily mean higher absolute wealth, just more equal distribution of existing wealth.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Japan's high public debt could eventually strain its welfare systems, potentially reducing future average wealth.",
+          "confidence": 0.6,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The cost of living in Japan is significantly higher than in Mexico, which can offset higher nominal incomes.",
+        "confidence": 0.68,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The cost of living in Japan is significantly higher than in Mexico, which can offset higher nominal incomes.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even with higher costs, Japan's median disposable income still exceeds Mexico's after adjusting for purchasing power parity (PPP).",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Japan's social safety nets and public services provide more value, effectively increasing real wealth despite higher costs.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Many essential goods (e.g., electronics, cars) are cheaper in Japan due to local production, partially neutralizing living cost differences.",
+          "confidence": 0.61,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "PPP adjustments don't account for non-tradable services (e.g., housing), where Japan's cost burden remains disproportionately high.",
+          "confidence": 0.67,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Japan's aging population faces rising healthcare costs, eroding disposable income advantages over time.",
+          "confidence": 0.59,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Mexican workers in informal sectors have untaxed income and lower living costs, narrowing the effective wealth gap.",
+          "confidence": 0.63,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Housing costs in Tokyo have stabilized due to population decline, while Mexican cities face rapid urbanization-driven price spikes.",
+          "confidence": 0.58,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Japan's universal health insurance caps out-of-pocket expenses, mitigating healthcare cost impacts compared to Mexico's fragmented system.",
+          "confidence": 0.71,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Mexico has a large informal economy where many people earn unreported income, potentially understating actual wealth.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Mexico has a large informal economy where many people earn unreported income, potentially understating actual wealth.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Even with unreported income, the informal economy in Mexico is largely low-wage and unstable, not significantly boosting overall wealth.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Japan's formal economy is far more developed and provides higher average wages, making its citizens richer regardless of Mexico's informal sector.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many informal jobs in Mexico still provide livable wages and benefits, contributing meaningfully to household wealth.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Japan's high cost of living offsets its higher wages, reducing the actual wealth advantage over Mexico.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Informal wages in Mexico often lack social security and long-term stability, limiting their impact on sustained wealth accumulation.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Japan's social safety nets and savings culture ensure higher net wealth despite the cost of living.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

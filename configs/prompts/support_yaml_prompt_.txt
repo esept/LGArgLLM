@@ -1,0 +1,73 @@
+# Task Prompt with Integrated cate + score-based argument policy
+
+You are given a **claim**.
+
+Your task is to generate a list of logically and substantively distinct arguments that are **semantically relevant** to the claim.
+
+These arguments must be drawn strictly from **mainstream, widely accepted perspectives**, including scientific consensus, legal standards, textbook definitions, and general human knowledge.
+
+If the claim involves time-dependent reasoning, assume the current reference year is 2025.
+
+---
+
+## Requirements:
+
+1. Generate **4 to 8** distinct arguments.
+   - Too few arguments may not cover the space of mainstream reasoning.
+   - Too many arguments risk introducing redundancy or marginal views.
+
+2. Each argument must express **a clear and consistent stance** with respect to the claim:
+   - The argument should **either** support the claim (`cate: "P"`), or support its **negation** (`cate: "S"`), but **not both**.
+   - Do **not** include ambiguous or mixed-position statements.
+
+3. Do **not** include:
+   - Rare or exceptional cases (e.g., genetic anomalies, rare medical/linguistic/legal edge cases)
+   - Statements with intentional error, logical fallacies, or obvious contradictions
+   - Speculative, humorous, adversarial, or emotionally biased content
+   - Mathematical or logical errors (e.g., incorrect operator precedence)
+   - Discussions that hinge on borderline or trivial definitional ambiguities
+
+4. Arguments must be logically and semantically **distinct** — avoid paraphrasing or redundant content.
+
+5. Avoid:
+   - Vague temporal references (e.g., "now", "recently") unless clearly grounded
+   - Subjective comparisons without dimensioned context (e.g., "better", "more advanced")
+   - Cultural belief, idioms, or stereotypes (e.g., "French people are romantic")
+
+6. All content must be based on **mainstream, widely accepted sources** such as scientific consensus, legal norms, textbooks, or general human knowledge  
+    - If the claim involves a professional or technical domain (e.g. medicine, law, science), reason from the perspective of a **knowledgeable expert** in that domain:
+        - Emphasize **accuracy over plausibility**
+        - Distinguish between **rare but relevant** exceptions and **irrelevant edge cases**
+        - Enhance the strength of arguments if low-probability events are **directly relevant** to the claim
+
+
+7. If the claim contains **multiple distinct factual components**, examine them individually.  
+   If any part is unverifiable or ambiguous, assume the overall label is **UNDECIDED**.
+
+---
+
+## Output Instructions
+
+1. First, provide a **confidence score** in the factual correctness of the claim — a percentage from `0` to `100`, based on authoritative, mainstream consensus.
+2. Then, output a list of **4–8 arguments** based on the following rules:
+
+   - If `score >= 80`, all arguments must be **supporting** the claim (`cate: "P"`).
+   - If `score <= 20`, all arguments must be **opposing** the claim (`cate: "S"`).
+   - If `20 < score < 80`, generate a **balanced mixture** of supporting and opposing arguments.
+
+---
+
+## Output Format (YAML):
+
+```yaml
+score: 72
+Arguments:
+  - id: A1
+    cate: "P"
+    text: "A mainstream argument supporting the claim."
+  - id: A2
+    cate: "S"
+    text: "A mainstream argument opposing the claim."
+```
+Use strict YAML syntax. Use double quotes " for all fields.
+Only output the YAML block — no explanation, no commentary, no JSON.

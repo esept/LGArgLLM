@@ -1,0 +1,197 @@
+{
+  "claim": "A fever is cured by listening to a cowbell.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "There is no scientific evidence that auditory stimuli like cowbells have any effect on reducing fever."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "There is no scientific evidence that auditory stimuli like cowbells have any effect on reducing fever.",
+          "cate": "S",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that certain sounds can have a placebo effect, which might indirectly influence perceived symptoms like fever.",
+          "confidence": 0.65,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Placebo effects are not a reliable or medically valid method for treating actual physiological conditions like fever.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Traditional medicine in some cultures uses auditory stimuli as part of healing practices, which might include fever reduction.",
+          "confidence": 0.55,
+          "attacks": {
+            "A1": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Traditional practices are not scientifically validated and often lack rigorous testing to prove efficacy.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "Fever is a physiological response to infection or illness, and its treatment requires addressing the underlying cause, not sound therapy."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Fever is a physiological response to infection or illness, and its treatment requires addressing the underlying cause, not sound therapy.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest that certain sounds, like cowbells, may have a placebo effect, which could temporarily alleviate symptoms like fever.",
+          "confidence": 0.4,
+          "attacks": {
+            "A2": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Placebo effects are not a reliable or medically recognized treatment for fever, and relying on them could delay proper medical care.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Traditional medicine in some cultures uses sound therapy as part of healing practices, which may include treating fever.",
+          "confidence": 0.5,
+          "attacks": {
+            "A2": 0.4
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Traditional practices are not scientifically validated and should not replace evidence-based medical treatments for fever.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "Medical consensus recommends fever treatment through hydration, rest, and antipyretics, not unconventional methods like listening to cowbells."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Medical consensus recommends fever treatment through hydration, rest, and antipyretics, not unconventional methods like listening to cowbells.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Some alternative medicine practitioners argue that auditory stimuli like cowbells can influence the nervous system and reduce fever symptoms.",
+          "confidence": 0.45,
+          "attacks": {
+            "A3": 0.35
+          }
+        },
+        {
+          "id": "C1",
+          "text": "There is no peer-reviewed scientific evidence supporting the claim that cowbells or other auditory stimuli can reduce fever.",
+          "confidence": 0.92,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Placebo effect could explain why some people report feeling better after listening to cowbells during a fever.",
+          "confidence": 0.7,
+          "attacks": {
+            "A3": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Placebo effects are well-documented in medical literature, but they don't constitute actual treatment of the underlying condition.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "The claim lacks any basis in established medical or biological principles regarding fever mechanisms or treatments."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The claim lacks any basis in established medical or biological principles regarding fever mechanisms or treatments.",
+          "cate": "S",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Anecdotal evidence suggests that certain sounds, like cowbells, may have a placebo effect on some individuals, temporarily alleviating symptoms of fever.",
+          "confidence": 0.4,
+          "attacks": {
+            "A4": 0.3
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Placebo effects are not equivalent to actual cures and do not address the underlying causes of fever.",
+          "confidence": 0.85,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Traditional medicine in some cultures incorporates sound-based therapies, which might include cowbells, for treating illnesses.",
+          "confidence": 0.5,
+          "attacks": {
+            "A4": 0.4
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Traditional medicine practices are often not scientifically validated and should not be considered reliable treatments without evidence.",
+          "confidence": 0.9,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    }
+  }
+}

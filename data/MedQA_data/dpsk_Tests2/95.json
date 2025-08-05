@@ -1,0 +1,248 @@
+{
+  "claim": "Consider the following background information: An 8-year-old boy is brought to the physician because of headaches for the past 2 weeks. His headaches tend to occur in the morning and are associated with nausea and vomiting. One month ago, the patient was admitted to the hospital because of fever, irritability, and neck rigidity, and he was successfully treated with antibiotics. His temperature today is 37.5\u00b0C (98.5\u00b0F). An MRI of the brain shows bilateral ventricular enlargement and enlargement of the subarachnoid space.\n\nGiven the background information the following is corrrect: Impaired CSF flow through the arachnoid granulations is the most likely explanation of the patient\"s condition.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's history of fever, irritability, and neck rigidity suggests prior meningitis, which can lead to scarring and impaired CSF flow through the arachnoid granulations."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of fever, irritability, and neck rigidity suggests prior meningitis, which can lead to scarring and impaired CSF flow through the arachnoid granulations.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are more consistent with communicating hydrocephalus, which does not necessarily involve impaired CSF flow through the arachnoid granulations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Communicating hydrocephalus can still result from impaired CSF absorption at the arachnoid granulations, as scarring from meningitis can disrupt this process.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be caused by a brain tumor or other mass lesion obstructing CSF flow, which would not involve the arachnoid granulations.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of focal neurological deficits or signs of increased intracranial pressure on MRI makes a mass lesion less likely compared to post-meningitic hydrocephalus.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Morning headaches, nausea, and vomiting are classic symptoms of increased intracranial pressure, which can result from impaired CSF absorption."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Morning headaches, nausea, and vomiting are classic symptoms of increased intracranial pressure, which can result from impaired CSF absorption.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent history of fever, irritability, and neck rigidity suggests meningitis, which can also cause ventricular enlargement and increased intracranial pressure without impaired CSF flow through arachnoid granulations.",
+          "confidence": 0.78,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are more consistent with communicating hydrocephalus, where CSF absorption at arachnoid granulations is impaired, rather than obstructive hydrocephalus from meningitis.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's temperature of 37.5\u00b0C (98.5\u00b0F) is normal, making active meningitis unlikely as the current cause of his symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Morning headaches and vomiting can also be caused by brain tumors, which would need to be ruled out before concluding impaired CSF absorption.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of focal neurological deficits or papilledema makes a brain tumor less likely compared to hydrocephalus in this case.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are consistent with communicating hydrocephalus, often caused by impaired CSF reabsorption at the arachnoid granulations."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are consistent with communicating hydrocephalus, often caused by impaired CSF reabsorption at the arachnoid granulations.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent history of fever, irritability, and neck rigidity suggests possible meningitis, which can cause inflammation and scarring of the arachnoid granulations, impairing CSF flow.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While meningitis can cause scarring, the MRI findings alone do not definitively prove impaired CSF reabsorption at the arachnoid granulations as the primary cause.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other conditions, such as a brain tumor or congenital malformation, could also cause similar MRI findings and symptoms without involving the arachnoid granulations.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of mass effect or focal lesions on MRI makes a brain tumor or congenital malformation less likely compared to communicating hydrocephalus.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The patient's recent bacterial meningitis is a known cause of arachnoid granulation dysfunction, supporting impaired CSF flow as the underlying mechanism."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's recent bacterial meningitis is a known cause of arachnoid granulation dysfunction, supporting impaired CSF flow as the underlying mechanism.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Arachnoid granulation dysfunction is rare after bacterial meningitis, and other causes like obstructive hydrocephalus are more common.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are classic for communicating hydrocephalus, which is consistent with arachnoid granulation dysfunction.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could also be due to residual inflammation or infection rather than impaired CSF flow.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The successful treatment with antibiotics and the timing of symptoms make residual infection less likely compared to a post-meningitic CSF flow issue.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The absence of fever and normal temperature today suggests the current symptoms are not due to an active infection but rather a sequela of prior meningitis affecting CSF dynamics."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The absence of fever and normal temperature today suggests the current symptoms are not due to an active infection but rather a sequela of prior meningitis affecting CSF dynamics.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Prior meningitis does not always lead to impaired CSF flow; other conditions like congenital hydrocephalus or tumors could also cause ventricular enlargement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The history of recent meningitis treated with antibiotics strongly correlates with post-infectious hydrocephalus, making it the most probable cause.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could be due to increased intracranial pressure from a brain tumor, which would also explain the MRI findings without invoking CSF flow impairment.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Brain tumors typically present with focal neurological deficits or papilledema, which are absent in this case, making CSF flow impairment more likely.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

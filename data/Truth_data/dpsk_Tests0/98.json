@@ -1,0 +1,193 @@
+{
+  "claim": "Humans have 10 finger bones.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The human hand consists of 14 phalanges (finger bones), which contradicts the claim of 10 finger bones."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The human hand consists of 14 phalanges (finger bones), which contradicts the claim of 10 finger bones.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim might be referring to the visible segments of fingers, which are often colloquially counted as 10 (excluding the thumb's metacarpal).",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Colloquial usage does not override anatomical accuracy, and the medical definition clearly states 14 phalanges per hand.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some anatomical variations or congenital conditions can result in fewer phalanges, making the claim contextually true for rare cases.",
+          "confidence": 0.4,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such variations are exceptions and do not represent the standard human anatomy, which is the basis for general claims.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Each finger (excluding the thumb) has 3 phalanges, and the thumb has 2, totaling 14 phalanges per hand."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Each finger (excluding the thumb) has 3 phalanges, and the thumb has 2, totaling 14 phalanges per hand.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some individuals may have anatomical variations, such as polydactyly or missing phalanges, which could alter the count.",
+          "confidence": 0.3,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Anatomical variations are rare exceptions and do not change the standard count of 14 phalanges per hand in the vast majority of humans.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might be referring to the total number of finger bones in both hands, which would be 28, not 10.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The original claim specifies 'finger bones' without clarifying per hand or total, making it ambiguous rather than incorrect.",
+          "confidence": 0.5,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Standard anatomical textbooks describe the human hand as having 14 finger bones, not 10."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Standard anatomical textbooks describe the human hand as having 14 finger bones, not 10.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some people may miscount or misunderstand the distinction between finger bones and other hand bones, leading to the claim of 10 finger bones.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard anatomical definitions clearly differentiate finger bones (phalanges) from other hand bones (metacarpals), making miscounting unlikely among trained professionals.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Rare anatomical variations or congenital conditions can result in individuals having fewer than 14 finger bones.",
+          "confidence": 0.4,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such variations are medically documented anomalies and do not represent the standard human anatomy described in textbooks.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Medical imaging and skeletal studies confirm that humans have 14 phalanges in each hand, disproving the claim."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Medical imaging and skeletal studies confirm that humans have 14 phalanges in each hand, disproving the claim.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim may refer to the colloquial understanding of 'finger bones' excluding the thumb, which has 2 phalanges instead of 3.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard anatomical terminology defines phalanges as finger bones, and the thumb is universally included in this count.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some rare genetic conditions can cause variations in the number of phalanges, potentially supporting the original claim in edge cases.",
+          "confidence": 0.3,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical consensus defines the typical human skeletal structure as having 14 phalanges per hand, making exceptions statistically negligible.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

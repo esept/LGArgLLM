@@ -1,0 +1,769 @@
+{
+  "claim": "A 30-year-old previously healthy male presents to your office with complaints of facial pressure and rhinorrhea for the past 3 weeks. The patient reports that several weeks prior, he had a \u201ccommon cold\u201d which resolved. However, he has since developed worsening facial pressure, especially over his cheeks and forehead. He reports over 1 week of green tinged rhinorrhea. His temperature is 100.1 deg F (37.8 deg C), blood pressure is 120/70 mmHg, pulse is 85/min, and respirations are 15/min. Nasal exam reveals edematous turbinates and purulent discharge. What is the most likely diagnosis? : Subacute bacterial rhinosinusitis",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The presence of purulent discharge and green tinged rhinorrhea strongly suggests a bacterial infection, which is consistent with subacute bacterial rhinosinusitis.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The presence of purulent discharge and green tinged rhinorrhea strongly suggests a bacterial infection, which is consistent with subacute bacterial rhinosinusitis.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Green tinged rhinorrhea can also be caused by viral infections, as neutrophils present in the mucus can give it a green color, not exclusively bacterial infections.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's low-grade fever and recent history of a common cold could indicate a post-viral inflammatory response rather than a bacterial infection.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While viral infections can cause green discharge, the persistence of symptoms beyond 10 days and the presence of purulent discharge increase the likelihood of bacterial rhinosinusitis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Post-viral inflammation typically improves within a week, whereas this patient's symptoms have persisted for 3 weeks, making bacterial infection more probable.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with prolonged symptoms, many cases resolve without antibiotics, suggesting that bacterial infection is not always the primary driver of persistent symptoms.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The specificity of purulent discharge for bacterial infection is not absolute, as some viral or allergic conditions can mimic this finding.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Facial pressure localized to the cheeks and forehead is a classic symptom of sinus involvement, further supporting the diagnosis of bacterial rhinosinusitis.",
+        "confidence": 0.8,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Facial pressure localized to the cheeks and forehead is a classic symptom of sinus involvement, further supporting the diagnosis of bacterial rhinosinusitis.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Facial pressure can also be caused by viral infections or allergies, which do not require antibiotics, making bacterial rhinosinusitis less likely.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of green tinged rhinorrhea is not specific to bacterial infections and can occur with viral infections as well.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Viral infections typically resolve within 7-10 days, and symptoms persisting beyond this timeframe increase the likelihood of bacterial etiology.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While green discharge can occur in viral infections, the combination with facial pressure and fever is more indicative of bacterial rhinosinusitis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some viral infections, such as those caused by adenovirus, can persist beyond 10 days and mimic bacterial sinusitis.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Fever is not a reliable distinguishing factor as low-grade fevers can occur in both viral and bacterial infections.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's low-grade fever (100.1\u00b0F) indicates a systemic inflammatory response, which is more typical of bacterial rather than viral sinusitis.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's low-grade fever (100.1\u00b0F) indicates a systemic inflammatory response, which is more typical of bacterial rather than viral sinusitis.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Low-grade fever can also occur in viral infections, so it is not definitive evidence of bacterial sinusitis.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The fever is very mild and could be due to other non-infectious causes, such as allergies or environmental factors.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Viral infections typically do not cause prolonged fever beyond 10-14 days, whereas this patient's symptoms have persisted for 3 weeks, suggesting bacterial etiology.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Allergies or environmental factors are unlikely to cause purulent discharge, which is more indicative of bacterial infection.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Prolonged symptoms could also be due to viral persistence or post-viral inflammation, not necessarily bacterial infection.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Purulent discharge can occur in severe viral sinusitis or even in chronic non-infectious rhinosinusitis, reducing its specificity for bacterial infection.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The duration of symptoms (3 weeks) falls within the subacute range for bacterial rhinosinusitis, which typically lasts between 4-12 weeks.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The duration of symptoms (3 weeks) falls within the subacute range for bacterial rhinosinusitis, which typically lasts between 4-12 weeks.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The duration alone is insufficient for diagnosis, as viral rhinosinusitis can also persist for up to 4 weeks without bacterial involvement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of purulent discharge and facial pressure is more indicative of acute bacterial rhinosinusitis rather than subacute, as these symptoms typically resolve within 10 days in viral cases.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While viral rhinosinusitis can persist, the combination of purulent discharge, facial pressure, and low-grade fever strongly suggests bacterial etiology, supporting the subacute diagnosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Acute bacterial rhinosinusitis typically presents with more severe symptoms and higher fever, whereas this patient's milder symptoms align better with subacute bacterial rhinosinusitis.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The distinction between acute and subacute bacterial rhinosinusitis is often unclear in clinical practice, and duration alone may not reliably differentiate between the two.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The history of a preceding viral upper respiratory infection (common cold) is a known risk factor for the development of secondary bacterial rhinosinusitis.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The history of a preceding viral upper respiratory infection (common cold) is a known risk factor for the development of secondary bacterial rhinosinusitis.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Not all cases of viral upper respiratory infections progress to bacterial rhinosinusitis; many resolve without complications.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of green tinged rhinorrhea is not specific to bacterial infections and can occur in prolonged viral infections as well.",
+          "confidence": 0.68,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that bacterial rhinosinusitis is more likely when symptoms persist beyond 10 days or worsen after initial improvement, which aligns with this patient's presentation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Green tinged rhinorrhea in the context of worsening facial pressure and fever is more indicative of bacterial infection than viral persistence.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with persistent symptoms, bacterial rhinosinusitis cannot be definitively diagnosed without imaging or culture, which were not performed here.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Facial pressure and fever can also be caused by non-infectious conditions such as allergic rhinitis or migraines, complicating the diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The absence of high fever, severe headache, or neurological symptoms makes more serious conditions like meningitis or brain abscess less likely.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The absence of high fever, severe headache, or neurological symptoms makes more serious conditions like meningitis or brain abscess less likely.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Low-grade fever and purulent discharge are still consistent with bacterial rhinosinusitis, which requires antibiotic treatment to prevent complications.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of severe symptoms does not rule out subacute bacterial rhinosinusitis, as it often presents with milder symptoms compared to acute bacterial rhinosinusitis.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Empirical antibiotic treatment for suspected bacterial rhinosinusitis may lead to unnecessary antibiotic use and contribute to antibiotic resistance.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subacute bacterial rhinosinusitis can sometimes progress to more severe complications even without initial severe symptoms, warranting early intervention.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Clinical guidelines recommend reserving antibiotics for cases with persistent symptoms beyond 10 days or worsening symptoms, which aligns with this patient's presentation.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The risk of complications from untreated bacterial rhinosinusitis, such as orbital or intracranial extension, outweighs the risk of contributing to antibiotic resistance in this case.",
+          "confidence": 0.78,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "The patient's otherwise healthy status and lack of chronic medical conditions make fungal or other atypical infections less probable.",
+        "confidence": 0.68,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "The patient's otherwise healthy status and lack of chronic medical conditions make fungal or other atypical infections less probable.",
+          "confidence": 0.68,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Even healthy individuals can develop fungal infections if exposed to environments with high fungal spore concentrations, such as construction sites or moldy buildings.",
+          "confidence": 0.72,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of green tinged rhinorrhea and fever could indicate a fungal sinusitis, which can occur in immunocompetent patients, albeit rarely.",
+          "confidence": 0.65,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Fungal sinusitis in immunocompetent individuals is extremely rare and typically presents with more severe symptoms such as necrotic tissue or orbital involvement, which are absent here.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's symptoms and findings are far more consistent with bacterial rhinosinusitis, as fungal infections usually have a more indolent or aggressive course, not subacute.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Environmental exposure history was not elicited in the case, so the possibility of fungal exposure cannot be definitively ruled out despite its rarity.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A8": {
+      "supporting": {
+        "id": "A8",
+        "text": "The edematous turbinates on nasal exam are consistent with inflammation seen in bacterial rhinosinusitis.",
+        "confidence": 0.72,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A8",
+          "text": "The edematous turbinates on nasal exam are consistent with inflammation seen in bacterial rhinosinusitis.",
+          "confidence": 0.72,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Edematous turbinates are nonspecific and can occur in viral rhinosinusitis or allergic rhinitis as well.",
+          "confidence": 0.78,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of purulent discharge alone does not confirm bacterial etiology, as viral infections can also cause purulence.",
+          "confidence": 0.75,
+          "attacks": [
+            "A8"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The persistence of symptoms for 3 weeks with worsening facial pressure strongly suggests bacterial rather than viral etiology.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The combination of purulent discharge, facial pressure, and low-grade fever increases the likelihood of bacterial rhinosinusitis.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Subacute duration (3 weeks) overlaps with viral persistence, and fever can occur in prolonged viral infections.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Fever is mild (100.1\u00b0F) and could be due to inflammatory response rather than bacterial infection.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A9": {
+      "supporting": {
+        "id": "A9",
+        "text": "The patient could have allergic rhinitis, which can also cause nasal congestion and rhinorrhea, but the purulent discharge and fever make this less likely.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A9",
+          "text": "The patient could have allergic rhinitis, which can also cause nasal congestion and rhinorrhea, but the purulent discharge and fever make this less likely.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Allergic rhinitis typically presents with clear rhinorrhea, not purulent discharge, which strongly suggests an infectious etiology.",
+          "confidence": 0.85,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The presence of fever (100.1\u00b0F) is highly unusual for allergic rhinitis and further supports bacterial rhinosinusitis.",
+          "confidence": 0.9,
+          "attacks": [
+            "A9"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While purulent discharge is more common in bacterial infections, severe allergic reactions can sometimes lead to secondary bacterial infections, complicating the diagnosis.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Low-grade fever can occasionally occur in allergic rhinitis due to systemic inflammation, though it is rare.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Secondary bacterial infections in allergic rhinitis are uncommon without prolonged symptoms or other risk factors, which are not mentioned here.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Systemic inflammation causing fever in allergic rhinitis is extremely rare and would likely be accompanied by other systemic symptoms, which are absent in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A10": {
+      "supporting": {
+        "id": "A10",
+        "text": "Viral sinusitis can also cause similar symptoms, and the low-grade fever could still be consistent with a prolonged viral infection.",
+        "confidence": 0.55,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A10",
+          "text": "Viral sinusitis can also cause similar symptoms, and the low-grade fever could still be consistent with a prolonged viral infection.",
+          "confidence": 0.55,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of purulent discharge and worsening facial pressure strongly suggests bacterial rather than viral etiology.",
+          "confidence": 0.8,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The duration of symptoms (3 weeks) exceeds the typical course of viral sinusitis, making bacterial infection more likely.",
+          "confidence": 0.85,
+          "attacks": [
+            "A10"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Purulent discharge can occur in viral infections due to secondary inflammation without bacterial infection.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Some viral infections can persist beyond 3 weeks, especially in immunocompromised hosts.",
+          "confidence": 0.5,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The green tinge and purulence of discharge is more specific for bacterial infection due to neutrophil activity.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The patient is described as previously healthy with no signs of immunocompromise, making prolonged viral infection less likely.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A11": {
+      "supporting": {
+        "id": "A11",
+        "text": "The absence of severe pain or tooth involvement makes odontogenic sinusitis (dental origin) less likely.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A11",
+          "text": "The absence of severe pain or tooth involvement makes odontogenic sinusitis (dental origin) less likely.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Odontogenic sinusitis can still occur without severe pain or obvious dental symptoms, as early stages may present subtly.",
+          "confidence": 0.7,
+          "attacks": [
+            "A11"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The patient's green tinged rhinorrhea and facial pressure are classic signs of bacterial rhinosinusitis, not necessarily odontogenic origin.",
+          "confidence": 0.8,
+          "attacks": [
+            "A11"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that up to 40% of maxillary sinusitis cases have an odontogenic origin, even without overt dental symptoms.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The presence of purulent discharge and fever strongly suggests bacterial infection, which is more consistent with rhinosinusitis than odontogenic causes.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Odontogenic sinusitis often requires imaging (e.g., CT) for definitive diagnosis, which hasn't been performed here, leaving uncertainty.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Empirical antibiotic treatment for bacterial rhinosinusitis would cover both typical and odontogenic pathogens, reducing diagnostic urgency.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A12": {
+      "supporting": {
+        "id": "A12",
+        "text": "Without imaging or culture results, there is some uncertainty in definitively diagnosing bacterial vs. viral etiology based solely on clinical presentation.",
+        "confidence": 0.5,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A12",
+          "text": "Without imaging or culture results, there is some uncertainty in definitively diagnosing bacterial vs. viral etiology based solely on clinical presentation.",
+          "confidence": 0.5,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The presence of purulent discharge and facial pressure strongly suggests bacterial rhinosinusitis, even without imaging or cultures.",
+          "confidence": 0.8,
+          "attacks": [
+            "A12"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Clinical guidelines support diagnosing bacterial sinusitis based on symptom duration (>10 days) and purulent discharge, making imaging unnecessary in uncomplicated cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "A12"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Viral infections can also cause purulent discharge due to neutrophil recruitment, not just bacterial infections.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Clinical guidelines may overestimate bacterial etiology as viral cases can persist beyond 10 days, leading to antibiotic overuse.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The green tinge of rhinorrhea is more strongly associated with bacterial infections due to myeloperoxidase from neutrophils.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even if viral cases persist, the addition of fever and focal tenderness increases the likelihood of bacterial superinfection.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

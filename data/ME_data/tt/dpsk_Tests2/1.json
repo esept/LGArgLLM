@@ -1,0 +1,209 @@
+{
+  "claim": "Insulin lowers blood sugar levels",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Insulin is a hormone produced by the pancreas that facilitates the uptake of glucose into cells, thereby reducing blood sugar levels.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "In cases of insulin resistance, cells do not respond effectively to insulin, leading to persistently high blood sugar levels despite insulin presence.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals develop autoimmune conditions like Type 1 diabetes where insulin production is insufficient, rendering insulin ineffective without external administration.",
+          "confidence": 0.88,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in insulin resistance, supplemental insulin or other medications can eventually restore glucose uptake, proving insulin's fundamental role in lowering blood sugar.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern synthetic insulin and delivery methods can compensate for natural insulin deficiency, maintaining blood sugar control in Type 1 diabetes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Clinical studies consistently demonstrate that insulin administration in diabetic patients effectively lowers elevated blood glucose levels.",
+        "confidence": 0.93,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Clinical studies consistently demonstrate that insulin administration in diabetic patients effectively lowers elevated blood glucose levels.",
+          "confidence": 0.93,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some diabetic patients develop insulin resistance, reducing the effectiveness of insulin in lowering blood glucose levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Certain medications and conditions can interfere with insulin's ability to regulate blood sugar effectively.",
+          "confidence": 0.68,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Insulin resistance can often be managed with lifestyle changes and adjunct therapies, restoring insulin's effectiveness.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical supervision can adjust insulin dosages or combine it with other treatments to counteract interference from medications or conditions.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Insulin therapy is a standard treatment for type 1 diabetes, where the hormone's absence leads to dangerously high blood sugar levels.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Insulin therapy is a standard treatment for type 1 diabetes, where the hormone's absence leads to dangerously high blood sugar levels.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some patients develop insulin resistance, reducing the hormone's effectiveness in lowering blood sugar.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Overuse of insulin can lead to hypoglycemia, which is equally dangerous as high blood sugar.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Insulin resistance can often be managed with additional medications or lifestyle changes, maintaining insulin's effectiveness.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Modern insulin delivery systems have safeguards to minimize the risk of hypoglycemia.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In rare cases, excessive insulin administration can lead to hypoglycemia, but this does not negate its primary function of lowering blood sugar.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In rare cases, excessive insulin administration can lead to hypoglycemia, but this does not negate its primary function of lowering blood sugar.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Hypoglycemia is a direct result of insulin lowering blood sugar too much, which contradicts the claim that insulin only lowers blood sugar levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The risk of hypoglycemia demonstrates that insulin's effect is not always beneficial and can be harmful.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Hypoglycemia is a manageable side effect and does not undermine insulin's primary role in regulating blood sugar.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Medical guidelines emphasize monitoring to prevent hypoglycemia, showing that insulin's benefits outweigh its risks.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with monitoring, hypoglycemia can occur unpredictably, indicating a flaw in insulin's reliability.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

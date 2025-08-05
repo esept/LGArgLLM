@@ -1,0 +1,282 @@
+{
+  "claim": "To protect yourself against defamation claims in the U.S, only speak the truth.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Truth is an absolute defense against defamation claims in the U.S., meaning if a statement is proven true, it cannot be considered defamatory.",
+        "confidence": 0.95,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Truth is an absolute defense against defamation claims in the U.S., meaning if a statement is proven true, it cannot be considered defamatory.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Proving the truth of a statement in court can be costly and time-consuming, making it an impractical defense for many individuals.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Even true statements can still lead to defamation claims if they are made with malicious intent or reckless disregard for the truth.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Legal aid and pro bono services are available to help individuals defend against defamation claims without incurring high costs.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The burden of proof for malice or reckless disregard is high, and plaintiffs often fail to meet it, protecting truthful speakers.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "U.S. courts prioritize free speech under the First Amendment, and truthful statements are protected even if they harm someone's reputation.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "U.S. courts prioritize free speech under the First Amendment, and truthful statements are protected even if they harm someone's reputation.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Even truthful statements can be considered defamatory if they are made with malicious intent or reckless disregard for the truth.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The First Amendment does not protect statements that are technically true but presented in a misleading or deceptive manner.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Malicious intent is difficult to prove in court, making it rare for truthful statements to be ruled defamatory.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Courts generally focus on the factual accuracy of statements rather than the intent behind them, unless malice is clearly demonstrated.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Misleading presentation of facts can still be protected if the underlying facts are true and the context does not imply falsehood.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "The burden of proof for showing a statement is misleading or deceptive is high, and courts often side with the speaker if the facts are accurate.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Even if a statement is true, defamation claims can still arise if the statement is made with malicious intent or reckless disregard for its impact.",
+        "confidence": 0.75,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Even if a statement is true, defamation claims can still arise if the statement is made with malicious intent or reckless disregard for its impact.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Malicious intent is difficult to prove in court, making defamation claims based on intent often unsuccessful.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Reckless disregard is a high legal standard that is rarely met in practice.",
+          "confidence": 0.68,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts typically require clear and convincing evidence of actual malice, which is a stringent requirement.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most defamation cases fail because plaintiffs cannot meet the burden of proving reckless disregard.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Truth alone may not protect against defamation if the statement is presented in a misleading or exaggerated way that causes undue harm.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Truth alone may not protect against defamation if the statement is presented in a misleading or exaggerated way that causes undue harm.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "U.S. defamation law explicitly requires false statements of fact, so truthful statements, even if misleading, cannot legally constitute defamation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Courts often consider the context and intent of the speaker, and truthful statements presented in good faith are generally protected.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if a statement is technically true, if it is presented with reckless disregard for its potential to mislead, it could still be considered defamatory under certain circumstances.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Intentional manipulation of truthful facts to harm someone's reputation can be grounds for defamation, as it aligns with the legal concept of 'actual malice'.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The 'actual malice' standard applies primarily to public figures, not private individuals, so truthful but misleading statements are less likely to be defamatory for private parties.",
+          "confidence": 0.8,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "In some cases, private figures may still sue for defamation even if the statement is true, if it invades their privacy without public interest justification.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "In some cases, private figures may still sue for defamation even if the statement is true, if it invades their privacy without public interest justification.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "U.S. defamation law generally requires false statements as a core element, making truth a strong defense.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Public interest exceptions often protect truthful statements, limiting privacy-based defamation claims.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Courts consistently rule that truthful statements on matters of public concern are protected under the First Amendment.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Privacy invasion claims are separate from defamation and require distinct legal standards.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Historical precedent shows the Supreme Court prioritizing free speech over privacy in defamation cases.",
+          "confidence": 0.85,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

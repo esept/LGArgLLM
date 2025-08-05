@@ -1,0 +1,137 @@
+{
+  "claim": "The square root of 16 is 4",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The mathematical definition of a square root states that the square root of a number x is a number y such that y\u00b2 = x. Since 4\u00b2 = 16, the square root of 16 is 4."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The mathematical definition of a square root states that the square root of a number x is a number y such that y\u00b2 = x. Since 4\u00b2 = 16, the square root of 16 is 4.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The square root of a positive real number is defined to be non-negative, but in complex analysis, every non-zero number has two square roots. Thus, -4 is also a square root of 16 since (-4)\u00b2 = 16.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard mathematical contexts, the principal square root (denoted by \u221a) refers to the non-negative root. Therefore, \u221a16 is unambiguously 4, and the claim is correct under this convention.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "In arithmetic, the principal (non-negative) square root of 16 is universally accepted as 4, as it is the positive solution to the equation x\u00b2 = 16."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "In arithmetic, the principal (non-negative) square root of 16 is universally accepted as 4, as it is the positive solution to the equation x\u00b2 = 16.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Standard mathematical textbooks and calculators consistently return 4 as the square root of 16, confirming its validity."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Standard mathematical textbooks and calculators consistently return 4 as the square root of 16, confirming its validity.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The square root function is defined to return both positive and negative roots, so -4 is also a valid square root of 16.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most practical contexts, the principal (non-negative) square root is implied when referring to 'the square root', which is why calculators and textbooks default to 4.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some specialized mathematical contexts or complex number systems might define the square root differently, potentially leading to alternative interpretations.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard real-number arithmetic and mainstream education systems universally accept the principal square root definition, making alternative interpretations irrelevant for most purposes.",
+          "confidence": 0.98,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The square root function, as defined in real numbers, yields 4 for the input 16, as it is the unique non-negative solution to the equation y\u00b2 = 16."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The square root function, as defined in real numbers, yields 4 for the input 16, as it is the unique non-negative solution to the equation y\u00b2 = 16.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The square root function can also yield -4 as a solution to y\u00b2 = 16, since (-4)\u00b2 = 16.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In standard mathematical convention, the principal square root (denoted by \u221a) is defined as the non-negative solution, so \u221a16 = 4 exclusively.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some contexts (e.g., complex analysis) allow multi-valued functions, where both 4 and -4 are valid square roots.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    }
+  }
+}

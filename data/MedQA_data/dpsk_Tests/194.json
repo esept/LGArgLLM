@@ -1,0 +1,286 @@
+{
+  "claim": "Consider the following background information: A 39-year-old man is brought to the emergency department unconscious following 2 episodes of generalized tonic-clonic seizures. According to the attendants, he has complained of recurrent headaches for the past 2 weeks. There is no history of fever, head trauma, or a seizure disorder. The patient does not smoke cigarettes but reportedly drinks 2 glasses of wine daily. He has multiple sexual partners and history regarding the contraceptive use is unavailable. The patient\u2019s vitals include: blood pressure 137/88 mm Hg, temperature 37.2\u00b0C (99.0\u00b0F). On physical examination, he is obtunded. He grimaces on pain and localizes in response to pain in both upper extremities. Pupils are bilateral 3-mm in diameter and equally round and reactive. Laboratory tests are within normal limits. An MRI of the brain with contrast is shown in the exhibit (see image). A brain biopsy is performed that reveals perivascular clusters of lymphocytes.\n\nGiven the background information the following is corrrect: Epstein-Barr virus is most associated with this patient\"s condition.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "Epstein-Barr virus (EBV) is known to cause lymphocytic infiltrates in the central nervous system, which aligns with the perivascular clusters of lymphocytes seen in the biopsy."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Epstein-Barr virus (EBV) is known to cause lymphocytic infiltrates in the central nervous system, which aligns with the perivascular clusters of lymphocytes seen in the biopsy.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While EBV can cause lymphocytic infiltrates, other infections like HIV or syphilis are also common causes of perivascular lymphocytic clusters in immunocompromised patients with multiple sexual partners.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of multiple sexual partners and alcohol use increases the likelihood of HIV, which is statistically more prevalent than EBV-related CNS manifestations in such demographics.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Primary CNS lymphoma, strongly associated with EBV in immunocompromised patients, is a more likely diagnosis given the MRI findings (not shown but implied by biopsy necessity).",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The absence of fever or immunocompromise indicators (e.g., low CD4 count) makes EBV-related CNS lymphoma less probable compared to other etiologies.",
+          "confidence": 0.72,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "EBV has been associated with primary CNS lymphoma, which can present with seizures and neurological symptoms in immunocompetent individuals, matching this patient's presentation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "EBV has been associated with primary CNS lymphoma, which can present with seizures and neurological symptoms in immunocompetent individuals, matching this patient's presentation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Primary CNS lymphoma is rare in immunocompetent individuals, making EBV association less likely in this case.",
+          "confidence": 0.65,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Even though rare, documented cases of EBV-associated CNS lymphoma exist in immunocompetent patients with similar presentations.",
+          "confidence": 0.75,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of multiple sexual partners increases the likelihood of other infections (e.g., HIV, syphilis) that could explain the symptoms.",
+          "confidence": 0.7,
+          "attacks": {
+            "A2": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Laboratory tests were normal, including HIV screening, ruling out common sexually transmitted infections as the cause.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Perivascular lymphocytes are nonspecific and can be seen in various inflammatory or infectious conditions, not just EBV-associated lymphoma.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.8
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The combination of seizures, headaches, and perivascular lymphocytes with contrast-enhancing lesions on MRI strongly suggests EBV-associated CNS lymphoma despite the nonspecificity of individual findings.",
+          "confidence": 0.78,
+          "attacks": {
+            "B3": 0.82
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The patient's history of multiple sexual partners and lack of fever or other systemic symptoms makes HIV-associated CNS lymphoma a more likely differential diagnosis than EBV."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's history of multiple sexual partners and lack of fever or other systemic symptoms makes HIV-associated CNS lymphoma a more likely differential diagnosis than EBV.",
+          "cate": "P",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "EBV is strongly associated with primary CNS lymphoma, particularly in immunocompromised patients, and the perivascular lymphocytes seen on biopsy are a hallmark of EBV-driven lymphoproliferative disorders.",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's lack of known HIV status or overt immunosuppression reduces the likelihood of HIV-associated CNS lymphoma compared to EBV-related processes.",
+          "confidence": 0.7,
+          "attacks": {
+            "B1": 0.65
+          }
+        },
+        {
+          "id": "D1",
+          "text": "EBV serology or PCR testing would be necessary to confirm EBV association, as the biopsy findings alone are not pathognomonic.",
+          "confidence": 0.6,
+          "attacks": {
+            "B1": 0.55
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "EBV-associated CNS conditions typically present with more pronounced systemic symptoms (e.g., fever, lymphadenopathy) which are absent in this case, making EBV less likely."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "EBV-associated CNS conditions typically present with more pronounced systemic symptoms (e.g., fever, lymphadenopathy) which are absent in this case, making EBV less likely.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "EBV can still cause CNS conditions without systemic symptoms, particularly in immunocompromised individuals, which should be considered given the patient's sexual history.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The absence of fever and lymphadenopathy significantly reduces the likelihood of EBV, as these are hallmark features in the majority of cases.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The MRI findings and perivascular lymphocytes are more consistent with other conditions like primary CNS lymphoma, which can also be EBV-associated but often without systemic symptoms.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.5,
+            "B1": 0.6
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "EBV is the most common viral cause of CNS lymphoproliferative disorders in adults without immunodeficiency, which fits this patient's demographic and presentation."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "EBV is the most common viral cause of CNS lymphoproliferative disorders in adults without immunodeficiency, which fits this patient's demographic and presentation.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's MRI and biopsy findings are nonspecific and could also be caused by other conditions such as toxoplasmosis or primary CNS lymphoma, not necessarily EBV.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Primary CNS lymphoma is less likely in this patient due to the absence of immunodeficiency (e.g., HIV), making EBV a more probable cause.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's history of multiple sexual partners raises the possibility of HIV infection, which could predispose to other CNS infections like toxoplasmosis rather than EBV.",
+          "confidence": 0.65,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Laboratory tests were within normal limits, including likely HIV testing, making HIV-related CNS conditions less probable.",
+          "confidence": 0.7,
+          "attacks": {
+            "B2": 0.65
+          }
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "cate": "S",
+        "text": "The normal laboratory tests and absence of characteristic EBV serology findings reduce the likelihood of EBV being the primary causative agent in this case."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The normal laboratory tests and absence of characteristic EBV serology findings reduce the likelihood of EBV being the primary causative agent in this case.",
+          "cate": "S",
+          "confidence": 0.75,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "EBV can still be present without characteristic serology findings in immunocompromised individuals or early stages of infection.",
+          "confidence": 0.65,
+          "attacks": {
+            "A6": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's history of multiple sexual partners increases the likelihood of EBV exposure, as it is commonly transmitted through saliva.",
+          "confidence": 0.8,
+          "attacks": {
+            "A6": 0.85
+          }
+        },
+        {
+          "id": "D1",
+          "text": "Perivascular clusters of lymphocytes on brain biopsy are a non-specific finding and can be seen in various infectious and non-infectious conditions, not just EBV.",
+          "confidence": 0.78,
+          "attacks": {
+            "C1": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

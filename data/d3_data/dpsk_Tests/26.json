@@ -1,0 +1,193 @@
+{
+  "claim": "A person born in December 1999 is younger than someone born in January 2000",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A person born in December 1999 is younger than someone born in January 2000 because December 1999 is earlier in time than January 2000."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A person born in December 1999 is younger than someone born in January 2000 because December 1999 is earlier in time than January 2000.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the person born in December 1999 was born on December 31, 1999, and the person born in January 2000 was born on January 1, 2000, the age difference is only one day, making the claim technically correct but practically negligible.",
+          "confidence": 0.95,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the age difference is only one day, the claim remains factually accurate, as 'younger' is a binary condition and does not require a significant time gap.",
+          "confidence": 0.98,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gregorian calendar is not universally used; some cultures or regions may use different calendars where the dates do not align, potentially reversing the age comparison.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In international contexts, the Gregorian calendar is the standard for age comparison, making the original claim valid in the vast majority of cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The Gregorian calendar progresses linearly, so a birthdate in December 1999 precedes a birthdate in January 2000 by at least one month."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Gregorian calendar progresses linearly, so a birthdate in December 1999 precedes a birthdate in January 2000 by at least one month.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the person born in December 1999 was born on December 31, 1999, and the person born in January 2000 was born on January 1, 2000, the age difference is only one day, not one month.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the age difference is only one day, the person born in December 1999 is still older than the person born in January 2000, which contradicts the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Gregorian calendar is not universally used; some cultures use different calendars where the dates might not align in the same way.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies the Gregorian calendar by using the months 'December' and 'January', so other calendars are irrelevant to this comparison.",
+          "confidence": 0.95,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Age is determined by the passage of time, and a person born in December 1999 has existed for less time than someone born in January 2000."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Age is determined by the passage of time, and a person born in December 1999 has existed for less time than someone born in January 2000.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the comparison is made in December 1999, the person born in January 2000 has not yet been born, making the December 1999-born individual older at that specific time.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies a general comparison, not a specific point in time, so the edge case of December 1999 is irrelevant to the broader assertion.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Age is culturally relative; some societies consider a person to be one year old at birth, which could reverse the age comparison.",
+          "confidence": 0.4,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim assumes standard Western age calculation, where cultural variations do not apply to the given context.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In all standard age calculations, a December 1999 birthdate results in a younger age compared to a January 2000 birthdate when evaluated at the same point in time."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In all standard age calculations, a December 1999 birthdate results in a younger age compared to a January 2000 birthdate when evaluated at the same point in time.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the evaluation date is January 1, 2000, the December 1999-born individual would be older (e.g., 1 month old) while the January 2000-born individual would be 0 days old.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard age calculations typically use full years or annual increments, making the December 1999-born individual younger for the vast majority of the year.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some legal or cultural contexts, age is calculated differently (e.g., East Asian age reckoning), where both individuals would be considered the same age.",
+          "confidence": 0.5,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'standard age calculations,' which excludes non-Western or specialized systems like East Asian age reckoning.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

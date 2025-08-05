@@ -1,0 +1,282 @@
+{
+  "claim": "A person can be punished for an act that was legal when committed",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Many legal systems incorporate the principle of non-retroactivity, meaning laws cannot be applied to acts committed before the law was enacted.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Many legal systems incorporate the principle of non-retroactivity, meaning laws cannot be applied to acts committed before the law was enacted.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some legal systems allow for retroactive laws in cases of serious crimes against humanity, such as war crimes or genocide.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Judicial interpretations can sometimes effectively apply new legal standards retroactively, even if not explicitly stated in the law.",
+          "confidence": 0.68,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "International tribunals like the Nuremberg Trials established precedent for punishing acts that were legal under national laws at the time they were committed.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The principle of non-retroactivity is not absolute and can be overridden by constitutional amendments or supreme court rulings.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The Nuremberg Trials were exceptional cases justified by extraordinary circumstances and don't represent normal legal practice.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Constitutional amendments and supreme court rulings still require due process and cannot arbitrarily violate non-retroactivity.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "International human rights standards, such as those in the European Convention on Human Rights, prohibit ex post facto laws that punish actions legal at the time they were committed.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "International human rights standards, such as those in the European Convention on Human Rights, prohibit ex post facto laws that punish actions legal at the time they were committed.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Some countries, like the U.S., have constitutional provisions allowing ex post facto laws in certain cases, such as war crimes or crimes against humanity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The principle of legality is a fundamental aspect of international law, and exceptions like war crimes are narrowly defined and universally condemned, not general precedents.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Historical examples, such as post-WWII tribunals, show that ex post facto punishments have been applied and accepted by the international community.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Post-WWII tribunals were exceptional cases justified by extraordinary circumstances and do not establish a general legal principle for domestic laws.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In some jurisdictions, laws can be applied retroactively if they are deemed to be procedural or interpretive rather than substantive.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In some jurisdictions, laws can be applied retroactively if they are deemed to be procedural or interpretive rather than substantive.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Retroactive application of laws violates the principle of legality, which is a fundamental human right under international law.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Procedural or interpretive laws can still have substantive effects, making the distinction unclear and potentially unjust.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The principle of legality is not absolute and allows for exceptions in cases where retroactive laws serve a compelling public interest.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal systems often provide safeguards to ensure that retroactive application does not lead to arbitrary or unfair outcomes.",
+          "confidence": 0.72,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Certain international tribunals, like those for war crimes, have prosecuted individuals for acts that were legal under domestic law at the time but violated international norms.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Certain international tribunals, like those for war crimes, have prosecuted individuals for acts that were legal under domestic law at the time but violated international norms.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "International tribunals often lack universal jurisdiction, meaning their rulings may not be recognized or enforced by all nations.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Prosecuting acts retroactively based on international norms undermines the principle of legal certainty in domestic legal systems.",
+          "confidence": 0.72,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many countries have ratified treaties that grant international tribunals jurisdiction over certain crimes, ensuring their rulings are legally binding.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Legal certainty must be balanced with justice, especially in cases of grave human rights violations that were previously overlooked.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Legal systems may allow retroactive punishment if the act was universally considered morally wrong, even if not explicitly illegal at the time.",
+        "confidence": 0.6,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Legal systems may allow retroactive punishment if the act was universally considered morally wrong, even if not explicitly illegal at the time.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Retroactive punishment violates the principle of legality, which is a fundamental human rights protection.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Moral wrongness is subjective and culturally relative, making it an unreliable basis for retroactive punishment.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The principle of legality has exceptions in cases of crimes against humanity, as recognized by international law.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Some legal systems explicitly prohibit all forms of retroactive punishment, regardless of moral considerations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "International human rights treaties provide mechanisms to address universally condemned acts without resorting to retroactive punishment.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C4",
+          "text": "Historical examples show that retroactive punishment based on morality has been abused for political purposes.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

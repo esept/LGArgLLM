@@ -1,0 +1,278 @@
+{
+  "claim": "Consider the following background information: A 30-year-old man presents to his primary care physician with complaints of excessive fatigue and weakness for the last several weeks. He also complains of abdominal pain and constipation for the same duration. On further questioning, he reports that he has lost 8 pounds in the last 2 weeks. Past medical history and family history are insignificant. His temperature is 37.3\u00b0 C (99.2\u00b0 F), respirations are 21/min, pulse is 63/min, and blood pressure is 99/70 mm Hg. On physical examination, he is a tired-appearing, thin male. He has a bronze discoloration to his skin, but he denies being outside in the sun or any history of laying in tanning beds.\n\nGiven the background information the following is corrrect: The next best step in the management of this patient is to start him on both hydrocortisone and fludrocortisone therapy.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's symptoms (fatigue, weakness, weight loss, hypotension, hyperpigmentation) are classic for primary adrenal insufficiency (Addison's disease), which requires immediate glucocorticoid and mineralocorticoid replacement."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's symptoms (fatigue, weakness, weight loss, hypotension, hyperpigmentation) are classic for primary adrenal insufficiency (Addison's disease), which requires immediate glucocorticoid and mineralocorticoid replacement.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The symptoms described could also be due to secondary adrenal insufficiency, which does not require mineralocorticoid replacement, making fludrocortisone unnecessary until further testing confirms primary insufficiency.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Secondary adrenal insufficiency is less likely given the presence of hyperpigmentation, which is pathognomonic for primary adrenal insufficiency due to elevated ACTH levels.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's hypotension and weight loss could also be due to other conditions like chronic infections (e.g., tuberculosis) or malignancies, which should be ruled out before starting steroid therapy.",
+          "confidence": 0.7,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "While other conditions are possible, the combination of hyperpigmentation, hypotension, and fatigue is highly specific for Addison's disease, making it the most likely diagnosis.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Starting both hydrocortisone and fludrocortisone without first confirming the diagnosis with a cosyntropin stimulation test could lead to unnecessary treatment and potential side effects.",
+          "confidence": 0.78,
+          "attacks": {
+            "A1": 0.7
+          }
+        },
+        {
+          "id": "C3",
+          "text": "In cases of strong clinical suspicion for Addison's disease, delaying treatment to perform diagnostic tests could be dangerous, as adrenal crisis can be life-threatening.",
+          "confidence": 0.85,
+          "attacks": {
+            "B3": 0.8
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The bronze skin discoloration without sun exposure is pathognomonic for Addison's disease due to elevated ACTH stimulating melanocytes, supporting the need for steroid replacement."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The bronze skin discoloration without sun exposure is pathognomonic for Addison's disease due to elevated ACTH stimulating melanocytes, supporting the need for steroid replacement.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Bronze skin discoloration can also occur in hemochromatosis, which presents with fatigue and abdominal pain, requiring iron studies for differentiation.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Hemochromatosis typically causes diabetes and liver dysfunction, which are absent here, making Addison's disease more likely.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Primary adrenal insufficiency must be confirmed with ACTH stimulation testing before initiating steroids to avoid unnecessary treatment.",
+          "confidence": 0.9,
+          "attacks": {
+            "A2": 0.85
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Delaying steroid replacement in a symptomatic patient with classic hyperpigmentation poses a risk of adrenal crisis, justifying empiric therapy.",
+          "confidence": 0.78,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Hypotension (99/70 mmHg) and hyponatremia (likely given clinical context) indicate mineralocorticoid deficiency, necessitating fludrocortisone therapy."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Hypotension (99/70 mmHg) and hyponatremia (likely given clinical context) indicate mineralocorticoid deficiency, necessitating fludrocortisone therapy.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Hyponatremia has not been confirmed by lab tests; hypotension alone is nonspecific and could be due to other causes like dehydration or sepsis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The bronze skin discoloration and weight loss strongly suggest Addison's disease, making mineralocorticoid deficiency highly probable even without immediate lab confirmation.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Fludrocortisone should not be started without first confirming adrenal insufficiency with a cosyntropin stimulation test to avoid unnecessary treatment.",
+          "confidence": 0.78,
+          "attacks": {
+            "A3": 0.75
+          }
+        },
+        {
+          "id": "C2",
+          "text": "In critically symptomatic patients (e.g., hypotension), treatment should not be delayed for diagnostic tests, as adrenal crisis can be life-threatening.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "Delaying steroid replacement in suspected adrenal insufficiency carries significant risk of adrenal crisis, making empiric treatment while awaiting diagnostic tests the standard of care."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Delaying steroid replacement in suspected adrenal insufficiency carries significant risk of adrenal crisis, making empiric treatment while awaiting diagnostic tests the standard of care.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "Empiric steroid therapy without confirmatory testing can mask underlying conditions and delay accurate diagnosis.",
+          "confidence": 0.75,
+          "attacks": {
+            "A4": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "In cases with classic symptoms and signs like hyperpigmentation and hypotension, the pretest probability is high enough to justify immediate treatment.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Hydrocortisone can cause significant side effects like osteoporosis and immunosuppression if given unnecessarily.",
+          "confidence": 0.68,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Short-term steroid replacement carries minimal risk compared to the life-threatening danger of untreated adrenal crisis.",
+          "confidence": 0.88,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "The combination of glucocorticoid (hydrocortisone) and mineralocorticoid (fludrocortisone) replacement is evidence-based management for primary adrenal insufficiency."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The combination of glucocorticoid (hydrocortisone) and mineralocorticoid (fludrocortisone) replacement is evidence-based management for primary adrenal insufficiency.",
+          "cate": "P",
+          "confidence": 0.92,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The diagnosis of primary adrenal insufficiency (Addison's disease) has not yet been confirmed with laboratory testing (e.g., morning cortisol, ACTH stimulation test).",
+          "confidence": 0.85,
+          "attacks": {
+            "A5": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's clinical presentation (fatigue, weight loss, hyperpigmentation, hypotension) is classic for Addison's disease, making empiric treatment reasonable while awaiting confirmatory tests.",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Starting steroids before confirmation could mask other diagnoses (e.g., infection, malignancy) that may present similarly.",
+          "confidence": 0.75,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "In hemodynamically stable patients with suspected Addison's, baseline labs (cortisol/ACTH) should be drawn first to avoid diagnostic confusion.",
+          "confidence": 0.82,
+          "attacks": {
+            "B2": 0.6,
+            "A5": 0.55
+          }
+        },
+        {
+          "id": "B3",
+          "text": "Mineralocorticoid replacement is unnecessary if the patient's electrolytes (Na/K) and blood pressure are normal at presentation.",
+          "confidence": 0.68,
+          "attacks": {
+            "A5": 0.5
+          }
+        },
+        {
+          "id": "C3",
+          "text": "Early mineralocorticoid replacement prevents complications of aldosterone deficiency (hyponatremia, hyperkalemia) which may develop later.",
+          "confidence": 0.79,
+          "attacks": {
+            "B3": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

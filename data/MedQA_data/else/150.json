@@ -1,0 +1,467 @@
+{
+  "claim": "A 48-year-old man comes to the physician because of a 4-month history of persistent cough productive of white phlegm. He coughs consistently throughout the day, and he has not noticed any particular triggers that make it worse. He has also recently experienced some shortness of breath with exertion. He has not had any weight loss, fever, or chills. He had similar symptoms last year, which lasted about 6 months. He has hypertension, for which he takes amlodipine. He has worked in construction for the past 10 years. He has smoked a pack of cigarettes per day for 30 years. Vital signs are within normal limits. Examination shows an end-expiratory wheeze throughout all lung zones. Which of the following is the most likely diagnosis? : Asbestosis",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The patient's long-term smoking history (30 pack-years) and symptoms of chronic cough with wheezing are classic for chronic bronchitis, a component of COPD, which is more likely than asbestosis.",
+        "confidence": 0.85,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's long-term smoking history (30 pack-years) and symptoms of chronic cough with wheezing are classic for chronic bronchitis, a component of COPD, which is more likely than asbestosis.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's occupational exposure to construction materials over 10 years increases the risk of asbestosis, which can also present with chronic cough and wheezing.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of fever, weight loss, or chills makes infection less likely, but does not rule out asbestosis, which can present without systemic symptoms.",
+          "confidence": 0.72,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Chronic bronchitis typically presents with more pronounced sputum production and recurrent infections, which are not prominently described in this patient.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Asbestosis usually requires longer exposure (20+ years) and is less common in construction workers compared to other occupations like shipbuilding.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The wheeze in this patient is end-expiratory, which is more characteristic of COPD than asbestosis, where crackles are more common.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with shorter exposure, high-intensity asbestos exposure in construction can still lead to asbestosis, especially when combined with smoking.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "End-expiratory wheezing can occur in any obstructive lung disease, including asbestosis if it leads to airway remodeling.",
+          "confidence": 0.68,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Asbestosis typically presents with basilar crackles and a history of asbestos exposure, which is not clearly documented here, making it less likely.",
+        "confidence": 0.78,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Asbestosis typically presents with basilar crackles and a history of asbestos exposure, which is not clearly documented here, making it less likely.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's construction work history increases the likelihood of asbestos exposure, even if not explicitly documented.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The absence of basilar crackles does not rule out asbestosis, as early stages may not present with this finding.",
+          "confidence": 0.72,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Construction work does not necessarily imply asbestos exposure, as regulations have reduced asbestos use in recent decades.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The patient's smoking history and wheeze are more consistent with chronic bronchitis or COPD than asbestosis.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even with reduced asbestos use, older buildings and materials may still pose exposure risks for construction workers.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While smoking-related conditions are likely, they do not exclude concurrent asbestosis, especially given the occupational history.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The patient's construction work history raises the possibility of occupational lung diseases, including asbestosis, given the potential for asbestos exposure in older buildings.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The patient's construction work history raises the possibility of occupational lung diseases, including asbestosis, given the potential for asbestos exposure in older buildings.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's symptoms, such as persistent cough with white phlegm and wheezing, are more consistent with chronic bronchitis, a common condition in long-term smokers, rather than asbestosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Asbestosis typically presents with dry cough and fine inspiratory crackles, not productive cough and wheezing, making it a less likely diagnosis in this case.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The absence of characteristic findings like pleural plaques or interstitial fibrosis on imaging makes asbestosis an unlikely diagnosis despite the occupational exposure.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Chronic bronchitis usually presents with more acute exacerbations and is less likely to cause persistent symptoms over several months without improvement, which could still suggest an occupational component.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While wheezing is not typical for asbestosis, it can occur in advanced cases or if there is concomitant asthma or COPD, which are common in smokers.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Imaging studies were not mentioned in the case, so the absence of typical findings cannot be confirmed, leaving the possibility of early or mild asbestosis open.",
+          "confidence": 0.6,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The patient's long smoking history is a stronger risk factor for chronic bronchitis than his occupational exposure is for asbestosis, making smoking-related disease more probable.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The presence of wheezing in advanced asbestosis is rare and usually accompanied by other severe symptoms, which are not present in this case, further reducing its likelihood.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Early or mild asbestosis would still be expected to show some radiographic abnormalities, and their absence strongly argues against the diagnosis.",
+          "confidence": 0.75,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The absence of fever, weight loss, or chills makes infectious or malignant causes less likely, indirectly supporting chronic conditions like asbestosis.",
+        "confidence": 0.6,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The absence of fever, weight loss, or chills makes infectious or malignant causes less likely, indirectly supporting chronic conditions like asbestosis.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's smoking history and wheeze suggest chronic bronchitis or COPD, which are more common than asbestosis in this demographic.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Asbestosis typically requires longer exposure to asbestos, and construction work alone does not confirm significant asbestos exposure.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The recurrent nature of symptoms over years is more consistent with asthma or chronic bronchitis rather than asbestosis.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While smoking is a risk factor for COPD, the absence of typical COPD findings like barrel chest or hyperinflation makes this less likely.",
+          "confidence": 0.6,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Construction workers are at higher risk of asbestos exposure due to materials used in older buildings, making asbestosis plausible.",
+          "confidence": 0.55,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Asthma typically has triggers and variability, which are not described here, making it less likely than asbestosis.",
+          "confidence": 0.5,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Early COPD may not present with barrel chest or hyperinflation, so these cannot definitively rule out COPD.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Asbestos-related diseases often have a latency period of decades, and the patient's symptoms may not yet reflect full disease progression.",
+          "confidence": 0.6,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "End-expiratory wheeze is more consistent with obstructive lung diseases like asthma or COPD rather than restrictive diseases like asbestosis.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "End-expiratory wheeze is more consistent with obstructive lung diseases like asthma or COPD rather than restrictive diseases like asbestosis.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's occupational exposure to construction materials and long-term smoking history strongly suggest asbestosis, despite the wheeze.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Chronic bronchitis, a form of COPD, could explain both the wheeze and productive cough in this heavy smoker, making asbestosis less likely.",
+          "confidence": 0.85,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Asbestosis typically requires longer latency periods (20+ years) after exposure, making it improbable given only 10 years in construction.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The absence of characteristic bibasilar crackles on exam makes asbestosis unlikely regardless of exposure history.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The recurrent nature of symptoms over years better matches COPD's chronic progression than asbestosis's typically irreversible decline.",
+          "confidence": 0.79,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Construction workers are often exposed to multiple fibrogenic agents simultaneously, potentially accelerating asbestosis development.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Crackles may be absent in early-stage asbestosis, and wheezing can occur due to concomitant small airway disease.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The recurrent nature of the symptoms (similar episode last year) suggests a chronic condition, which could include asbestosis if exposure was prolonged.",
+        "confidence": 0.7,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The recurrent nature of the symptoms (similar episode last year) suggests a chronic condition, which could include asbestosis if exposure was prolonged.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The patient's smoking history (30 pack-years) is a more likely cause of chronic respiratory symptoms than asbestosis, given the higher prevalence of smoking-related lung disease.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "End-expiratory wheeze is more characteristic of chronic obstructive pulmonary disease (COPD) than asbestosis, which typically presents with inspiratory crackles.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Asbestosis usually requires longer exposure (20+ years) in high-risk occupations, and construction work may not provide sufficient exposure intensity.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While smoking is common, the patient's occupational exposure could represent a synergistic effect with smoking, making asbestosis still plausible.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Wheezing can occur in asbestosis when there is concomitant airway hyperreactivity or comorbid conditions like asthma.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Certain construction activities (e.g., demolition or insulation work) may involve significant asbestos exposure even within 10 years.",
+          "confidence": 0.68,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Synergistic effects don't negate that smoking alone is sufficient to explain all symptoms, making asbestosis diagnosis unnecessary without clearer evidence.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Airway hyperreactivity would likely show variability in symptoms, which this patient hasn't reported.",
+          "confidence": 0.69,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

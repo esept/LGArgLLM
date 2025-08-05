@@ -1,0 +1,250 @@
+{
+  "claim": "Someone born in the year 2000 is 20 years old in 2010",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A person born in the year 2000 would be 10 years old in 2010, not 20, because age is calculated by subtracting the birth year from the current year.",
+        "confidence": 1.0,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A person born in the year 2000 would be 10 years old in 2010, not 20, because age is calculated by subtracting the birth year from the current year.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Age calculation can vary by cultural or legal definitions, where some systems might consider a person to be one year old at birth.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, the international standard for age calculation is based on the Gregorian calendar, which clearly defines age as the difference between the current year and birth year.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In some jurisdictions, age is calculated differently, such as including the time spent in the womb as part of the age.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Such practices are rare and not recognized in most legal or scientific contexts, making them irrelevant for standard age calculations.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Basic arithmetic shows that 2010 minus 2000 equals 10, confirming the age as 10, not 20.",
+        "confidence": 1.0,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Basic arithmetic shows that 2010 minus 2000 equals 10, confirming the age as 10, not 20.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim might have been a typographical error, intending to say '2020' instead of '2010'.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if it were a typo, the original claim explicitly states '2010', leaving no room for interpretation.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Age calculation can vary based on cultural or regional definitions of age, such as East Asian age reckoning.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In most Western contexts, including the claim's likely origin, age is calculated by subtracting birth year from current year.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Age is universally understood as the number of years elapsed since birth, making the claim mathematically incorrect.",
+        "confidence": 0.95,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Age is universally understood as the number of years elapsed since birth, making the claim mathematically incorrect.",
+          "confidence": 0.95,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Cultural or legal definitions of age may vary, and some systems consider a person to age at the start of the calendar year rather than their birth date.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in systems where age increments at the start of the year, a person born in 2000 would still only be 10 years old in 2010, not 20.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim could be interpreted metaphorically, referring to maturity or life experience rather than chronological age.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Metaphorical interpretations are irrelevant when the claim is explicitly about chronological age.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "If the claim were true, it would imply that time progresses at double the normal rate, which contradicts all known physical laws.",
+        "confidence": 0.9,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "If the claim were true, it would imply that time progresses at double the normal rate, which contradicts all known physical laws.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The claim is based on a simple arithmetic error (2010 - 2000 = 10), not an actual violation of physical laws.",
+          "confidence": 0.95,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The argument assumes the claim is about literal time progression, but it could be a hypothetical or metaphorical statement.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Basic arithmetic is universally accepted, and the error in the claim is easily verifiable, undermining the need for invoking physical laws.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hypothetical or metaphorical interpretations are irrelevant when the claim is presented as a factual statement.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The claim could be a typographical error, but as stated, it is factually incorrect.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The claim could be a typographical error, but as stated, it is factually incorrect.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Basic arithmetic confirms that someone born in 2000 would be 10 years old in 2010, not 20.",
+          "confidence": 0.95,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim might be interpreted metaphorically or contextually, but its literal meaning is mathematically wrong.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the claim is a typo, the error is significant enough to invalidate the original statement.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical records and birth certificates would easily disprove the claim as stated.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        }
+      ]
+    }
+  }
+}

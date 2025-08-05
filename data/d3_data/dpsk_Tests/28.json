@@ -1,0 +1,193 @@
+{
+  "claim": "A task started on Monday and lasting 10 business days ends next Wednesday",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Business days typically exclude weekends, so a 10-business-day period starting on Monday would span two full weeks plus two additional days, ending on the following Wednesday."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Business days typically exclude weekends, so a 10-business-day period starting on Monday would span two full weeks plus two additional days, ending on the following Wednesday.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If there is a public holiday within the 10-business-day period, the end date would be pushed to Thursday instead of Wednesday.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Public holidays are region-specific and not universally applicable, so the original assumption holds unless specified otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some countries or industries consider Saturday as a business day, which would change the end date to Tuesday instead of Wednesday.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'business days' in the conventional sense (Monday-Friday), making the Saturday-inclusion scenario irrelevant unless explicitly stated.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Counting 10 business days from Monday includes the next two Fridays, with the 10th day landing on the second Wednesday after the start date."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Counting 10 business days from Monday includes the next two Fridays, with the 10th day landing on the second Wednesday after the start date.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a public holiday occurs within the 10 business days, the end date would shift to Thursday, not Wednesday.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Public holidays are typically excluded from business days by default, so the original calculation remains correct unless specified otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Different regions define business days differently (e.g., some exclude Saturdays), which could alter the end date.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "In most international business contexts, Monday to Friday are standard business days, making the original calculation widely applicable.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Standard business calendars count Monday to Friday as business days, so 10 business days starting Monday would skip two weekends and end on the subsequent Wednesday."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Standard business calendars count Monday to Friday as business days, so 10 business days starting Monday would skip two weekends and end on the subsequent Wednesday.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a public holiday falls within the 10 business days, the end date would be delayed by one day for each holiday, potentially shifting the end date beyond Wednesday.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Most business calendars account for public holidays and adjust deadlines accordingly, so the original calculation remains valid unless specified otherwise.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the task starts late on Monday (e.g., after business hours), some organizations may consider the first business day to be Tuesday, shifting the end date to Thursday.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard business practices typically count the entire day of Monday as a business day regardless of start time, unless explicitly defined otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "A 10-business-day duration starting on Monday includes the next two weeks' worth of weekdays, with the final day being the second Wednesday after the start."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A 10-business-day duration starting on Monday includes the next two weeks' worth of weekdays, with the final day being the second Wednesday after the start.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Business days exclude weekends and holidays, so if there is a holiday within the 10-day period, the end date would shift to the next business day.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "In most standard business contexts, holidays are predefined and accounted for in scheduling, so the original calculation remains accurate unless an unexpected holiday occurs.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Different regions or companies may define 'business days' differently, potentially including or excluding certain days, which could alter the end date.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard international business practices typically follow a Monday-to-Friday workweek, making the original argument broadly applicable unless specified otherwise.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

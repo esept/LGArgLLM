@@ -1,0 +1,564 @@
+{
+  "claim": "The rate of lung cancer has increased over time among American men.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Advancements in medical diagnostics have led to earlier and more accurate detection of lung cancer, contributing to higher reported rates.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Advancements in medical diagnostics have led to earlier and more accurate detection of lung cancer, contributing to higher reported rates.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The increase in reported rates could be due to higher smoking rates in previous decades, not just better diagnostics.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Environmental factors like pollution and occupational hazards have also increased, which could explain the rise in lung cancer cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Diagnostic advancements may lead to overdiagnosis, detecting non-lethal cancers that would not have been found otherwise, inflating the rates artificially.",
+          "confidence": 0.72,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Smoking rates have actually declined in recent decades, which contradicts the argument that smoking alone explains the increase.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Studies show that pollution levels in many areas have decreased due to regulations, weakening the environmental factors argument.",
+          "confidence": 0.77,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Overdiagnosis is unlikely to fully account for the observed increase, as mortality rates from lung cancer have also risen in some demographics.",
+          "confidence": 0.7,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The decline in smoking rates may not yet have had a full effect on cancer rates due to the long latency period of lung cancer development.",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "While overall pollution has decreased, exposure to certain carcinogens like radon or asbestos may still be significant in specific regions or occupations.",
+          "confidence": 0.73,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Increased tobacco consumption in the mid-20th century has led to a rise in lung cancer cases among American men over time.",
+        "confidence": 0.9,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Increased tobacco consumption in the mid-20th century has led to a rise in lung cancer cases among American men over time.",
+          "confidence": 0.9,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The rise in lung cancer cases could also be attributed to improved diagnostic techniques rather than just increased tobacco consumption.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Environmental factors such as air pollution and exposure to asbestos have also contributed significantly to the rise in lung cancer cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "The correlation between tobacco consumption and lung cancer does not necessarily imply causation, as other lifestyle factors may also play a role.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Improved diagnostic techniques alone cannot account for the significant rise in lung cancer cases observed over decades.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While environmental factors contribute, tobacco consumption remains the primary cause of lung cancer, as evidenced by numerous studies.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The strong and consistent epidemiological evidence supports a causal relationship between tobacco consumption and lung cancer.",
+          "confidence": 0.88,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The increase in detection rates due to better diagnostics does not negate the role of tobacco, but it may inflate the perceived rise in cases.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Even if tobacco is a primary cause, the contribution of environmental factors should not be underestimated in public health policies.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Environmental factors such as air pollution and exposure to carcinogens have become more prevalent, increasing lung cancer rates.",
+        "confidence": 0.75,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Environmental factors such as air pollution and exposure to carcinogens have become more prevalent, increasing lung cancer rates.",
+          "confidence": 0.75,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Improved air quality regulations and reduced smoking rates have offset the impact of environmental factors on lung cancer rates.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The increase in lung cancer rates is primarily due to better detection methods rather than actual increases in incidence.",
+          "confidence": 0.82,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Many carcinogens have been banned or regulated, reducing their impact on lung cancer rates.",
+          "confidence": 0.77,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Air quality improvements have not been uniform across all regions, leaving many populations still exposed to high pollution levels.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with better detection methods, the raw number of lung cancer cases has still increased, indicating a real rise in incidence.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "New and unregulated carcinogens have emerged, replacing those that were banned.",
+          "confidence": 0.73,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Studies show that regions with strict air quality regulations still experience high lung cancer rates due to other factors.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The increase in raw numbers could be due to population growth rather than higher per capita incidence.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "The health impact of new carcinogens is not yet fully understood and may be less severe than previously banned substances.",
+          "confidence": 0.65,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Public health campaigns and smoking cessation programs have significantly reduced smoking rates, leading to a decline in lung cancer cases in recent years.",
+        "confidence": 0.8,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Public health campaigns and smoking cessation programs have significantly reduced smoking rates, leading to a decline in lung cancer cases in recent years.",
+          "confidence": 0.8,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Despite reduced smoking rates, the latency period of lung cancer means past smoking behaviors still contribute to current high incidence rates.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Environmental factors like air pollution and occupational hazards have become more significant contributors to lung cancer, offsetting the benefits of reduced smoking.",
+          "confidence": 0.7,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Smoking cessation programs are less effective among certain demographics, such as low-income populations, where smoking rates remain high.",
+          "confidence": 0.68,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Advances in early detection and diagnosis may artificially inflate lung cancer rates, not accounting for improved survival rates.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Regulations on air pollution and workplace safety have improved over time, reducing the impact of environmental factors.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Targeted public health interventions have shown success in reducing smoking rates even in low-income populations.",
+          "confidence": 0.67,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Improved diagnostic methods do not fully explain the sustained high incidence rates, as mortality rates also remain elevated.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Despite regulations, cumulative exposure to pollutants over decades still poses a significant risk for lung cancer.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Improved workplace safety regulations have reduced exposure to asbestos and other carcinogens, potentially lowering lung cancer rates.",
+        "confidence": 0.7,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Improved workplace safety regulations have reduced exposure to asbestos and other carcinogens, potentially lowering lung cancer rates.",
+          "confidence": 0.7,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Despite improved regulations, many older buildings still contain asbestos, exposing workers during renovations or demolitions.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Other carcinogens like air pollution and secondhand smoke remain prevalent, offsetting the benefits of workplace safety improvements.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern asbestos abatement procedures are highly effective, minimizing exposure risks during renovations.",
+          "confidence": 0.72,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Air quality regulations have also improved over time, reducing overall carcinogen exposure beyond just workplaces.",
+          "confidence": 0.68,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Enforcement of asbestos abatement procedures is inconsistent, leading to continued exposure in some cases.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Rural and low-income areas often have weaker enforcement of air quality standards, maintaining high carcinogen exposure.",
+          "confidence": 0.7,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The aging population means more men are living longer, which could artificially inflate lung cancer rates due to higher incidence in older age groups.",
+        "confidence": 0.65,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The aging population means more men are living longer, which could artificially inflate lung cancer rates due to higher incidence in older age groups.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Age-adjusted cancer statistics account for population aging, so the increase cannot be solely attributed to demographic shifts.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Lung cancer rates have increased even in younger age groups, contradicting the aging population hypothesis.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Other countries with similar aging populations haven't seen equivalent lung cancer increases, suggesting other factors are primary.",
+          "confidence": 0.68,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Age-adjustment methods may not fully capture cohort effects in smoking behavior over time.",
+          "confidence": 0.62,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The increase in younger groups could be due to earlier detection methods rather than actual incidence changes.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "International comparisons are flawed because diagnostic criteria and healthcare access vary significantly.",
+          "confidence": 0.58,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Modern statistical techniques like joinpoint regression can effectively separate age effects from other trends.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Screening protocols haven't changed enough to explain the observed increases in younger cohorts.",
+          "confidence": 0.65,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A7": {
+      "supporting": {
+        "id": "A7",
+        "text": "Changes in diagnostic criteria and classification of lung cancer subtypes may affect reported rates over time, not necessarily reflecting a true increase.",
+        "confidence": 0.6,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A7",
+          "text": "Changes in diagnostic criteria and classification of lung cancer subtypes may affect reported rates over time, not necessarily reflecting a true increase.",
+          "confidence": 0.6,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "Studies controlling for diagnostic criteria changes still show a significant increase in lung cancer rates, suggesting a real trend.",
+          "confidence": 0.75,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The rise in smoking rates among American men during the 20th century directly correlates with the observed increase in lung cancer cases.",
+          "confidence": 0.8,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Improved detection methods would likely lead to higher reported rates, but this doesn't explain the consistent upward trend over decades.",
+          "confidence": 0.7,
+          "attacks": [
+            "A7"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Many studies fail to adequately account for all diagnostic changes across different time periods and regions.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Smoking rates began declining in the 1960s, yet lung cancer rates continued rising, suggesting other factors are at play.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "The upward trend could be partially explained by increased life expectancy, giving more time for cancer to develop.",
+          "confidence": 0.6,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Meta-analyses of multiple studies with different methodologies consistently show increased rates, reducing the impact of diagnostic variability.",
+          "confidence": 0.72,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "There's a well-documented latency period between smoking exposure and cancer development that explains the continued rise post-1960s.",
+          "confidence": 0.78,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

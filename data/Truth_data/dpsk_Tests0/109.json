@@ -1,0 +1,193 @@
+{
+  "claim": "The majority of a set of numbers cannot be larger than the average.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "By definition, the average (arithmetic mean) of a set of numbers is the sum of the numbers divided by the count of numbers. For the majority of numbers to be larger than the average, the sum of the larger numbers would have to exceed the total sum, which is mathematically impossible."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "By definition, the average (arithmetic mean) of a set of numbers is the sum of the numbers divided by the count of numbers. For the majority of numbers to be larger than the average, the sum of the larger numbers would have to exceed the total sum, which is mathematically impossible.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the set contains extreme outliers much smaller than the rest, the average can be pulled down below the majority of numbers.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Outliers must be extremely large in magnitude relative to the other numbers to significantly affect the average, making such cases rare in practice.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "In a bimodal distribution where two distinct groups exist, one much larger than the other, the majority can exceed the average.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Bimodal distributions with such extreme separation are uncommon in real-world datasets without intentional construction.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "If more than half of the numbers in a set are greater than the average, the remaining numbers would have to compensate by being sufficiently smaller, but this would pull the average below the majority, making the initial condition impossible."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "If more than half of the numbers in a set are greater than the average, the remaining numbers would have to compensate by being sufficiently smaller, but this would pull the average below the majority, making the initial condition impossible.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a set where most numbers are slightly above the average and the remaining numbers are only slightly below, the average can still be very close to the majority, making the condition plausible in practical scenarios.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if most numbers are slightly above the average, the definition of 'majority' requires strict inequality, so the average cannot equal or exceed the majority by definition.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the set contains extreme outliers far below the average, the majority could still be above the average despite the compensation effect.",
+          "confidence": 0.55,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Outliers would need to be so extreme that they redefine the average, making the 'majority' effectively meaningless in such a skewed distribution.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The average represents a central tendency of the data. For a majority of values to exceed the average, the distribution would need to be heavily skewed left, but this contradicts the definition of the arithmetic mean as a balancing point."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The average represents a central tendency of the data. For a majority of values to exceed the average, the distribution would need to be heavily skewed left, but this contradicts the definition of the arithmetic mean as a balancing point.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In a dataset with a few extremely low outliers, the majority of numbers can indeed be larger than the average, as the outliers pull the mean down significantly.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Extremely low outliers are rare in most practical datasets, and the original argument holds for typical distributions where data is more symmetrically distributed.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The arithmetic mean is sensitive to extreme values, so in cases like income distribution, where a few individuals earn significantly less, the majority can earn more than the average.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While true for specific cases like income, such distributions are exceptions rather than the norm, and the original claim generally holds for most datasets.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "In any finite set of real numbers, the average cannot be exceeded by a majority of the numbers because the average is calculated such that deviations above and below it balance out. A majority exceeding it would unbalance this equilibrium."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "In any finite set of real numbers, the average cannot be exceeded by a majority of the numbers because the average is calculated such that deviations above and below it balance out. A majority exceeding it would unbalance this equilibrium.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If a set contains a single extreme outlier much larger than the rest, the average can be skewed such that a majority of numbers are below it, but this does not address the claim about numbers exceeding the average.",
+          "confidence": 0.6,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with an extreme outlier, the average is still balanced by the sum of deviations, so the majority cannot exceed it\u2014only the outlier does, which is a minority.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "For non-real number systems (e.g., hyperreals), the definition of 'average' and 'majority' may behave differently, potentially allowing edge cases.",
+          "confidence": 0.4,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The claim specifies 'real numbers,' so non-real systems are irrelevant to its validity.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

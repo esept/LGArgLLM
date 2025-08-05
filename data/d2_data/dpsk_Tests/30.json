@@ -1,0 +1,193 @@
+{
+  "claim": "If a book is published in 1995, it was 30 years old in 2025",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The difference between 2025 and 1995 is exactly 30 years, which means a book published in 1995 would be 30 years old in 2025."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The difference between 2025 and 1995 is exactly 30 years, which means a book published in 1995 would be 30 years old in 2025.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The age of a book is typically measured from its publication date to the current date, not a fixed future date like 2025.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While 2025 is a future date, the calculation of the difference between years remains mathematically correct regardless of the current date.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Books are not considered to 'age' in the same way as living beings; their age is simply the time elapsed since publication.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The term 'age' can be applied metaphorically to inanimate objects like books to denote time since creation or publication.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Mathematically, subtracting the publication year (1995) from the current year (2025) results in 30, confirming the age of the book."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Mathematically, subtracting the publication year (1995) from the current year (2025) results in 30, confirming the age of the book.",
+          "confidence": 1.0,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The calculation assumes the book was published on January 1, 1995, but if it was published later in the year, it would not yet be 30 years old in early 2025.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Most books list only the publication year, not the exact date, making it reasonable to assume the calculation is based on the full year.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "If the book is a reprint or revised edition published after 1995, the original publication date may not reflect its actual age.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Reprints or revised editions typically include the original publication year alongside the new edition's year, allowing for accurate age calculation.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "In standard chronological calculation, the age of an object is determined by the number of full years since its creation, which in this case is 30."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "In standard chronological calculation, the age of an object is determined by the number of full years since its creation, which in this case is 30.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim assumes the book was published exactly on January 1, 1995, but if it was published later in the year, it would not yet be 30 years old in 2025.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the book was published later in 1995, by December 31, 2025, it would have reached 30 years of age, fulfilling the claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not account for books published in different time zones, where the date of publication might differ by a day, affecting the age calculation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Time zone differences are negligible for age calculations over a 30-year span, as the difference would be at most one day, which is insignificant in this context.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The Gregorian calendar, which is widely used, confirms that 30 years pass between 1995 and 2025, making the book 30 years old."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The Gregorian calendar, which is widely used, confirms that 30 years pass between 1995 and 2025, making the book 30 years old.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the book was published late in 1995 and the current date is early 2025, the full 30 years may not have elapsed yet.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Gregorian calendar is universally standardized, and partial years are still counted as part of the 30-year span between 1995 and 2025.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some cultures or regions use alternative calendars where the year count might differ from the Gregorian calculation.",
+          "confidence": 0.45,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The Gregorian calendar is the international standard for publishing and most official records, making alternative calendars irrelevant for this claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

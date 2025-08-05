@@ -1,0 +1,287 @@
+{
+  "claim": "If a US investor makes more than 15% returns every year for ten years, we cannot definitely conclude that the investor is skilled due to the potential influence of survivorship bias.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring those that failed, which can distort the perception of skill."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Survivorship bias occurs when only successful outcomes are considered, ignoring those that failed, which can distort the perception of skill.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Statistical analysis can isolate skill from luck by comparing the investor's returns against a benchmark or market average, reducing the impact of survivorship bias.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with benchmarks, extreme outperformance over long periods (e.g., 10+ years) is statistically unlikely to be purely luck, suggesting genuine skill.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is irrelevant if the dataset includes all investors (successful and failed), which some studies do.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Comprehensive datasets are rare in practice; most analyses rely on available data, which often excludes failed investors.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Historical market performance shows that some investors achieve high returns purely by chance, not skill."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Historical market performance shows that some investors achieve high returns purely by chance, not skill.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Consistently high returns over a decade are statistically unlikely to occur by chance alone, suggesting skill plays a significant role.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even over long periods, random fluctuations in highly volatile markets can produce outlier returns without underlying skill.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is mitigated when analyzing a sufficiently large and diverse sample of investors over time.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Available datasets often exclude failed investors, making it impossible to fully account for survivorship bias.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Statistical analysis indicates that sustained high returns over a decade can occur randomly in large populations even without skill."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Statistical analysis indicates that sustained high returns over a decade can occur randomly in large populations even without skill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While random occurrences are possible, sustained high returns are statistically improbable without skill, suggesting skill is likely involved.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Empirical studies show that most investors with sustained high returns exhibit identifiable skill-based strategies, reducing the likelihood of randomness.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias alone cannot explain the consistency of returns, as it doesn't account for the rarity of such performance across diverse market conditions.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even in large populations, the probability of random sustained high returns is negligible, making skill a more plausible explanation.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The efficient market hypothesis suggests that consistently outperforming the market is unlikely without insider information or luck."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The efficient market hypothesis suggests that consistently outperforming the market is unlikely without insider information or luck.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some investors, like Warren Buffett, have consistently outperformed the market over long periods, suggesting skill can play a role.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Warren Buffett's success may be attributed to unique access to information or resources not available to the average investor, aligning with the efficient market hypothesis.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The efficient market hypothesis assumes perfect information, which is not realistic in real-world markets where information asymmetry exists.",
+          "confidence": 0.8,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with information asymmetry, markets quickly adjust to new information, making sustained outperformance difficult without luck or insider knowledge.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Many investment strategies that appear successful in hindsight may have been exposed to high risk, which is not accounted for in returns alone."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Many investment strategies that appear successful in hindsight may have been exposed to high risk, which is not accounted for in returns alone.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Risk-adjusted performance metrics like the Sharpe ratio can account for high-risk strategies, making returns a more reliable indicator of skill.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even risk-adjusted metrics can be misleading if the underlying risk models are flawed or based on incomplete data.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is mitigated in large datasets where many investors are tracked over time, reducing the impact of random outliers.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Large datasets may still suffer from selection bias if unsuccessful investors are systematically excluded from reporting.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Academic studies demonstrate that most active fund managers fail to outperform benchmarks over long periods, supporting the role of luck."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Academic studies demonstrate that most active fund managers fail to outperform benchmarks over long periods, supporting the role of luck.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some fund managers consistently outperform due to skill, as evidenced by their ability to adapt to market conditions and generate alpha.",
+          "confidence": 0.65,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even skilled managers' performance can be attributed to luck in hindsight, as statistical analysis shows that past performance is not a reliable predictor of future success.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Survivorship bias is mitigated in studies that account for all funds, including those that closed, showing similar underperformance trends.",
+          "confidence": 0.8,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Survivorship bias alone cannot explain the magnitude of underperformance observed in active management studies.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

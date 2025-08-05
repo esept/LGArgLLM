@@ -1,0 +1,193 @@
+{
+  "claim": "Aspirin is an antiviral drug",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Aspirin is classified as a nonsteroidal anti-inflammatory drug (NSAID), not an antiviral, as it primarily reduces inflammation, pain, and fever."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Aspirin is classified as a nonsteroidal anti-inflammatory drug (NSAID), not an antiviral, as it primarily reduces inflammation, pain, and fever.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest aspirin may have indirect antiviral effects by modulating the immune response during viral infections.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These indirect effects are not sufficient to classify aspirin as an antiviral drug, as they do not directly target viral replication.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aspirin has been observed to reduce viral load in certain cases, such as in dengue fever.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The observed effects in dengue are not generalizable to other viruses and do not meet the standard criteria for antiviral classification.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Antiviral drugs specifically target viral replication mechanisms, whereas aspirin has no known direct effect on viral life cycles."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Antiviral drugs specifically target viral replication mechanisms, whereas aspirin has no known direct effect on viral life cycles.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Aspirin has been shown to reduce inflammation caused by viral infections, indirectly affecting viral replication by modulating the host immune response.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modulating the host immune response is not the same as directly targeting viral replication, which is the defining feature of antiviral drugs.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some studies suggest aspirin may inhibit certain viral enzymes, indicating a potential direct antiviral effect.",
+          "confidence": 0.5,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "The evidence for aspirin directly inhibiting viral enzymes is limited and not widely replicated, making it an unreliable basis for classification as an antiviral drug.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Clinical use of aspirin is focused on cardiovascular health and pain relief, with no approved indications for treating viral infections."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Clinical use of aspirin is focused on cardiovascular health and pain relief, with no approved indications for treating viral infections.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Some studies suggest aspirin may have indirect antiviral effects by reducing inflammation that worsens viral infections.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These indirect effects are not clinically significant enough to classify aspirin as an antiviral drug.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Aspirin has been used historically during pandemics like the 1918 flu, suggesting perceived antiviral utility.",
+          "confidence": 0.55,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical use was primarily for symptom management, not actual viral suppression.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Scientific consensus and drug databases categorize aspirin separately from antiviral medications due to its distinct pharmacological properties."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Scientific consensus and drug databases categorize aspirin separately from antiviral medications due to its distinct pharmacological properties.",
+          "confidence": 0.92,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Aspirin has been shown in some studies to have indirect antiviral effects by modulating the immune response.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "These indirect effects are not sufficient to classify aspirin as an antiviral drug, as they do not involve direct inhibition of viral replication.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some historical or alternative medicine sources have used aspirin for viral infections, suggesting perceived antiviral properties.",
+          "confidence": 0.55,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Historical or alternative uses are not evidence-based and do not meet modern pharmacological classification standards.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

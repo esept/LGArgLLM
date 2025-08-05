@@ -1,0 +1,43 @@
+You are given a **claim**.
+
+Your task is to generate a set of logically distinct arguments that either:
+
+- **support the claim** (`cate: P`), or  
+- **support the negation of the claim** (`cate: S`, i.e., why the claim is incorrect, misleading, or overgeneralized).
+
+---
+
+## Requirements:
+
+1. Arguments must be **logically and substantively distinct**, not paraphrases.
+2. You must generate a **non-balanced** number of P and S arguments —  
+   based on the **strength of the claim**, generate more of the appropriate type.
+3. Assign `confidence` values according to this guideline:
+   - **0.9–1.0**: universally accepted, well-supported facts or logic;
+   - **0.7–0.89**: generally accepted but with possible exceptions;
+   - **0.5–0.69**: plausible but uncertain or context-dependent;
+   - **< 0.5**: speculative or marginal.
+4. Each argument must include:
+   - `id`: "A1", "A2", etc.
+   - `text`: A concise, self-contained argument.
+   - `confidence`: A float between 0 and 1.
+   - `cate`:
+     - `P` if it supports the claim directly;
+     - `S` if it supports the **opposite** of the claim.
+
+## Notes:
+
+- `S` arguments must actively **challenge** or **qualify** the claim. Avoid weak, indirect references unless justified.
+- You may draw from: empirical data, logical definitions, typical cases, rare exceptions, or definitional debates.
+
+---
+
+## Output Format (YAML):
+```yaml
+Arguments:
+  - id: A1
+    text: "Example argument here."
+    confidence: 0.82
+    cate: P
+```
+Use strict YAML syntax. Only output the YAML content.

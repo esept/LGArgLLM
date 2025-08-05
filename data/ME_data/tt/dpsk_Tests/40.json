@@ -1,0 +1,145 @@
+{
+  "claim": "Some students are girls, and some girls are teachers. Therefore, all students are teachers",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "The claim incorrectly assumes that because some students are girls and some girls are teachers, all students must be teachers, which is a logical fallacy known as the undistributed middle."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The claim incorrectly assumes that because some students are girls and some girls are teachers, all students must be teachers, which is a logical fallacy known as the undistributed middle.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The premises do not establish a universal relationship between all students and teachers, only overlapping subsets, so the conclusion does not follow."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The premises do not establish a universal relationship between all students and teachers, only overlapping subsets, so the conclusion does not follow.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The conclusion is a non-sequitur because the premises only describe partial overlaps, not universal inclusion.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The argument A2 correctly identifies the logical fallacy in the claim, making it a valid critique.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "While A2 is correct, it could be strengthened by explicitly naming the logical fallacy (illicit minor).",
+          "confidence": 0.75,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The claim ignores the possibility of students who are not girls or girls who are not teachers, making the conclusion invalid."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The claim ignores the possibility of students who are not girls or girls who are not teachers, making the conclusion invalid.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The claim is a syllogism where the conclusion does not logically follow from the premises, regardless of counterexamples.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if the premises are true, the conclusion is a non sequitur because it generalizes beyond the scope of the premises.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The original claim is a deliberate fallacy to illustrate logical errors, so counterarguments like A3 are unnecessary.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even if the claim is a deliberate fallacy, analyzing its flaws helps teach logical reasoning.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The reasoning conflates partial overlaps between categories (students, girls, teachers) with a universal claim, which is unsupported by the premises."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The reasoning conflates partial overlaps between categories (students, girls, teachers) with a universal claim, which is unsupported by the premises.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The argument assumes that overlapping categories imply a universal relationship, which is a logical fallacy (non sequitur).",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the reasoning is flawed, it may still hold in specific contexts where all students are girls and all girls are teachers, though this is highly unlikely.",
+          "confidence": 0.3,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The original claim is a textbook example of the fallacy of the undistributed middle, which invalidates the conclusion.",
+          "confidence": 0.9,
+          "attacks": [
+            "A4"
+          ]
+        }
+      ]
+    }
+  }
+}

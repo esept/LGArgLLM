@@ -1,0 +1,240 @@
+{
+  "claim": "Cancer can cause excess adrenaline production.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Certain tumors, such as pheochromocytomas, are known to secrete excessive adrenaline and related hormones, leading to elevated levels in the body."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Certain tumors, such as pheochromocytomas, are known to secrete excessive adrenaline and related hormones, leading to elevated levels in the body.",
+          "confidence": 0.9,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Pheochromocytomas are rare tumors, accounting for less than 0.2% of all cancers, so they are not representative of most cancer cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though pheochromocytomas are rare, they are a well-documented and definitive example of cancers causing excess adrenaline production, supporting the general claim.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Many common cancers (e.g., lung, breast, or colon cancer) do not typically cause excess adrenaline production, limiting the generality of the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While common cancers may not directly secrete adrenaline, they can indirectly elevate stress hormones due to systemic effects like pain or hypoxia.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Neuroblastomas, a type of cancer originating in nerve tissue, can produce catecholamines, including adrenaline, as part of their metabolic activity."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Neuroblastomas, a type of cancer originating in nerve tissue, can produce catecholamines, including adrenaline, as part of their metabolic activity.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Neuroblastomas are rare, accounting for only 6% of childhood cancers, making them an exception rather than a representative case of cancer causing excess adrenaline.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though neuroblastomas are rare, they are a well-documented example of cancers directly causing excess adrenaline production, supporting the general claim.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Most common cancers (e.g., lung, breast, prostate) do not directly produce adrenaline, limiting the generalizability of the claim.",
+          "confidence": 0.8,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While most cancers do not produce adrenaline, the claim does not specify frequency or commonality, only possibility, which neuroblastomas confirm.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Metastatic cancers affecting the adrenal glands can disrupt normal hormone regulation, resulting in overproduction of adrenaline."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Metastatic cancers affecting the adrenal glands can disrupt normal hormone regulation, resulting in overproduction of adrenaline.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Most cancers do not metastasize to the adrenal glands, making this an uncommon cause of excess adrenaline production.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even when cancers metastasize to the adrenal glands, they often destroy adrenal tissue rather than causing overproduction of hormones.",
+          "confidence": 0.7,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Non-cancerous conditions like pheochromocytoma are far more common causes of excess adrenaline production than metastatic cancers.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Pheochromocytomas are rare, and metastatic cancers to the adrenals, while uncommon, still represent a significant subset of cases with excess adrenaline.",
+          "confidence": 0.65,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Paraneoplastic syndromes associated with some cancers can stimulate the adrenal glands to release excessive adrenaline as part of an abnormal immune response."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Paraneoplastic syndromes associated with some cancers can stimulate the adrenal glands to release excessive adrenaline as part of an abnormal immune response.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Paraneoplastic syndromes are rare, occurring in less than 1% of cancer patients, making this mechanism an unlikely general explanation for excess adrenaline production in cancer.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even though rare, paraneoplastic syndromes are well-documented in medical literature, and their impact on adrenal function is clinically significant when they do occur.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Excess adrenaline in cancer patients is more commonly caused by stress, pain, or tumor-induced hypoxia rather than paraneoplastic syndromes.",
+          "confidence": 0.78,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While stress and hypoxia are common causes, paraneoplastic syndromes represent a distinct and direct pathological mechanism for adrenaline overproduction in specific cancer cases.",
+          "confidence": 0.75,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Small cell lung cancer has been documented to produce ectopic hormones, including adrenocorticotropic hormone (ACTH), which can indirectly increase adrenaline secretion."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Small cell lung cancer has been documented to produce ectopic hormones, including adrenocorticotropic hormone (ACTH), which can indirectly increase adrenaline secretion.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Not all small cell lung cancers produce ectopic hormones, and even those that do may not always secrete ACTH in sufficient quantities to significantly increase adrenaline levels.",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Studies show that ACTH secretion in small cell lung cancer is relatively common, with approximately 50% of cases exhibiting some level of ectopic hormone production.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Increased adrenaline secretion due to ACTH is often transient and may not lead to clinically significant symptoms or long-term effects.",
+          "confidence": 0.6,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even transient increases in adrenaline can have measurable physiological impacts, such as elevated heart rate and blood pressure, which are clinically relevant.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

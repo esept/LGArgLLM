@@ -1,0 +1,261 @@
+{
+  "claim": "James Watson and Gerald Edelman are people born in the United States who won a Nobel Prize for Physiology.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "James Watson was born in the United States and won the Nobel Prize in Physiology or Medicine in 1962 for the discovery of the structure of DNA."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "James Watson was born in the United States and won the Nobel Prize in Physiology or Medicine in 1962 for the discovery of the structure of DNA.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gerald Edelman, while a Nobel laureate in Physiology or Medicine, was born in New York City, USA, which supports the claim fully.",
+          "confidence": 0.9,
+          "attacks": []
+        },
+        {
+          "id": "B2",
+          "text": "The claim is incomplete as it does not mention other US-born Nobel laureates in Physiology or Medicine, potentially misleading by omission.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim specifies 'James Watson and Gerald Edelman,' not all US-born laureates, so omission of others does not invalidate it.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Gerald Edelman was born in the United States and won the Nobel Prize in Physiology or Medicine in 1972 for his work on the immune system."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Gerald Edelman was born in the United States and won the Nobel Prize in Physiology or Medicine in 1972 for his work on the immune system.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Gerald Edelman's Nobel Prize was shared with Rodney Porter, which might dilute the recognition of his individual contribution.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Despite sharing the prize, Edelman's work on antibody structure was groundbreaking and widely recognized as independently significant.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim implies both Watson and Edelman are equally notable, but Watson's discovery of DNA structure is far more famous and impactful than Edelman's work.",
+          "confidence": 0.7,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Impact and fame are subjective; Edelman's contributions to immunology are foundational in their own right and respected in the scientific community.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "The Nobel Prize in Physiology or Medicine is awarded to individuals who have made significant contributions to the field, as recognized by the Nobel Assembly at the Karolinska Institute."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Nobel Prize in Physiology or Medicine is awarded to individuals who have made significant contributions to the field, as recognized by the Nobel Assembly at the Karolinska Institute.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The Nobel Prize in Physiology or Medicine is not restricted to individuals born in the United States; winners come from various countries worldwide.",
+          "confidence": 0.9,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "While the Nobel Prize is international, the claim specifically refers to James Watson and Gerald Edelman, both of whom were born in the United States.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "The claim's focus on birthplace is irrelevant to the Nobel Prize's criteria, which are based solely on scientific contributions.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Both James Watson and Gerald Edelman are listed in official Nobel Prize records as laureates in Physiology or Medicine."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Both James Watson and Gerald Edelman are listed in official Nobel Prize records as laureates in Physiology or Medicine.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While they are Nobel laureates, the claim specifies they were born in the United States, which is not confirmed by Nobel Prize records alone.",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Independent biographical sources confirm that both James Watson and Gerald Edelman were indeed born in the United States.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Nobel Prize records do not always verify the birthplace of laureates, leaving room for potential inaccuracies in the claim.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official birth records and historical documents from the United States corroborate their birthplaces, adding reliability to the claim.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Birth records confirm that James Watson and Gerald Edelman were born in the United States, making them eligible for the claim."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Birth records confirm that James Watson and Gerald Edelman were born in the United States, making them eligible for the claim.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Birth records may contain errors or falsifications, casting doubt on the accuracy of the claim.",
+          "confidence": 0.3,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The claim does not address whether they won the Nobel Prize for Physiology, only their birthplace.",
+          "confidence": 0.8,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official Nobel Prize records confirm that both James Watson and Gerald Edelman won the Prize for Physiology, validating the full claim.",
+          "confidence": 0.98,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "The contributions of James Watson and Gerald Edelman to physiology are well-documented in scientific literature and Nobel Prize archives."
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "The contributions of James Watson and Gerald Edelman to physiology are well-documented in scientific literature and Nobel Prize archives.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "While their contributions are documented, the claim specifically requires evidence of their birthplace and Nobel Prize category, which this argument does not address.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The Nobel Prize archives explicitly confirm that both James Watson and Gerald Edelman were awarded the Nobel Prize in Physiology or Medicine, and their U.S. birthplaces are verifiable through biographical records.",
+          "confidence": 0.92,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Scientific literature may document their contributions, but it does not inherently prove they were born in the U.S. or won the Nobel Prize for Physiology.",
+          "confidence": 0.7,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Official Nobel Prize records and reputable biographical sources (e.g., Encyclopaedia Britannica) confirm both their U.S. birthplaces and the Physiology or Medicine category of their awards.",
+          "confidence": 0.93,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

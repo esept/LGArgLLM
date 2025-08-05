@@ -1,0 +1,152 @@
+{
+  "claim": "All cats are mammals. Tigers belong to the cat family. Therefore, tigers are mammals",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "All cats are mammals, and tigers are members of the cat family (Felidae), so by definition, tigers must be mammals.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "All cats are mammals, and tigers are members of the cat family (Felidae), so by definition, tigers must be mammals.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some species historically classified as cats may not fit modern mammalian definitions due to evolving taxonomy.",
+          "confidence": 0.75,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hybridization or genetic anomalies could theoretically produce non-mammalian traits in tigers, challenging strict classification.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern taxonomy rigorously defines Felidae as mammals, leaving no ambiguity for species like tigers.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No documented cases exist of tigers exhibiting non-mammalian traits; genetic stability is well-established.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The biological classification system places tigers under the order Carnivora, which is a subset of the class Mammalia, confirming tigers as mammals.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The biological classification system places tigers under the order Carnivora, which is a subset of the class Mammalia, confirming tigers as mammals.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some members of Carnivora, like certain extinct species, may not fit the traditional definition of mammals.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Modern taxonomy strictly defines Carnivora as a mammalian order, excluding non-mammalian species.",
+          "confidence": 0.95,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Genetic mutations could theoretically lead to non-mammalian traits in Carnivora species, challenging the classification.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "No documented cases exist of Carnivora species exhibiting non-mammalian traits, maintaining the validity of the classification.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Tigers exhibit key mammalian traits such as giving live birth, producing milk, and having hair, which are definitive characteristics of mammals.",
+        "confidence": 1.0,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Tigers exhibit key mammalian traits such as giving live birth, producing milk, and having hair, which are definitive characteristics of mammals.",
+          "confidence": 1.0,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Some non-mammalian species, like certain sharks, also give live birth, which blurs the distinction between mammals and other animals.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "However, the combination of live birth, milk production, and hair is unique to mammals, clearly distinguishing them from other animal classes.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Genetic studies suggest that some traits traditionally associated with mammals may have evolved independently in other groups.",
+          "confidence": 0.7,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Despite convergent evolution, the specific suite of traits in mammals is still universally recognized as defining the class.",
+          "confidence": 0.85,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

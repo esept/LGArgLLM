@@ -1,0 +1,425 @@
+{
+  "claim": "Jack Dylan Grazer was born in Tampa, Florida.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Jack Dylan Grazer's official IMDb biography lists Tampa, Florida as his birthplace.",
+        "confidence": 0.85,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Jack Dylan Grazer's official IMDb biography lists Tampa, Florida as his birthplace.",
+          "confidence": 0.85,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "IMDb is a user-edited database with frequent inaccuracies about celebrity personal details.",
+          "confidence": 0.83,
+          "attacks": [
+            "A1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "B2",
+          "text": "The IMDb biography may reflect his residence rather than birthplace due to data entry errors.",
+          "confidence": 0.79,
+          "attacks": [
+            "A1"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "C1",
+          "text": "IMDb requires verification for major biographical claims like birthplace before publication.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "C2",
+          "text": "Official biographical sources such as his Wikipedia page confirm Tampa as his birthplace.",
+          "confidence": 0.82,
+          "attacks": [
+            "B2"
+          ],
+          "cate": "P"
+        },
+        {
+          "id": "D1",
+          "text": "Wikipedia itself allows edits from unverified contributors without strict verification protocols.",
+          "confidence": 0.74,
+          "attacks": [
+            "C2"
+          ],
+          "cate": "S"
+        },
+        {
+          "id": "D2",
+          "text\"": "The claim about Wikipedia edits lacks specific evidence of tampering related to Jack Dylan Grazer.",
+          "confidence\"": 0.78,
+          "attacks\"": [
+            "C2"
+          ],
+          "cate\"": "S"
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Multiple entertainment news outlets cite Tampa, Florida as Grazer's hometown based on interviews.",
+        "confidence": 0.78,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Multiple entertainment news outlets cite Tampa, Florida as Grazer's hometown based on interviews.",
+          "confidence": 0.78,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "The cited news outlets lack direct evidence of Grazer's birthplace and rely on unverified claims from third parties.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Interviews about hometowns often conflate residence with birthplace; no explicit confirmation of Tampa birth exists.",
+          "confidence": 0.82,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "B3",
+          "text": "Some sources list Grazer's birthplace as Chicago instead of Tampa, creating conflicting evidence.",
+          "confidence": 0.79,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Third-party claims from reputable interviewers are sufficient to establish hometown credibility.",
+          "confidence": 0.76,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Hometown definitions typically include childhood residence rather than strict birthplace location.",
+          "confidence": 0.74,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C3",
+          "text": "Conflicting sources about birthplace lack authoritative verification and are likely misinterpretations.",
+          "confidence": 0.77,
+          "attacks": [
+            "B3"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Reputable interviewers may have access to private records not publicly available to verify birthplace.",
+          "confidence": 0.69,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Residence history is often conflated with birthplace in media contexts without clear distinction.",
+          "confidence": 0.68,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D3",
+          "text": "Misinterpretations of source material can lead to false conflicting claims about birthplaces.",
+          "confidence": 0.71,
+          "attacks": [
+            "C3"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Grazer attended Sickles High School in Tampa, indicating early residency in the area.",
+        "confidence": 0.72,
+        "cate": "P"
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Grazer attended Sickles High School in Tampa, indicating early residency in the area.",
+          "confidence": 0.72,
+          "attacks": [],
+          "cate": "P"
+        },
+        {
+          "id": "B1",
+          "text": "Attending a high school does not necessarily prove birthplace or early residency.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Sickles High School is not located in Tampa, Florida; it is in Plant City.",
+          "confidence": 0.78,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The claim about Sickles High School's location is incorrect; it is indeed in Tampa.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Early residency can be inferred from prolonged attendance at a local school.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Prolonged attendance at a school does not conclusively establish birthplace without additional evidence.",
+          "confidence": 0.82,
+          "attacks": [
+            "C2"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Plant City is within Hillsborough County, which overlaps with Tampa's regional area.",
+          "confidence": 0.79,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "A 2019 interview with The Hollywood Reporter mentions Grazer grew up in Florida but does not specify Tampa.",
+        "confidence": 0.65,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "A 2019 interview with The Hollywood Reporter mentions Grazer grew up in Florida but does not specify Tampa.",
+          "confidence": 0.65,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The phrase 'grew up in Florida' does not necessarily imply birthplace; upbringing location differs from birth location.",
+          "confidence": 0.82,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "The Hollywood Reporter interview lacks direct evidence of Grazer's birthplace, making it an unreliable source for this claim.",
+          "confidence": 0.79,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "The distinction between 'grew up' and 'born' is overly pedantic; biographical interviews often conflate these terms.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Credible media outlets like The Hollywood Reporter are generally accurate about celebrity backgrounds unless contradicted.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Biographical conflation of 'grew up' and 'born' is common but does not invalidate the possibility of Tampa as his birthplace.",
+          "confidence": 0.68,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "The lack of explicit specificity in the interview does not disprove Tampa as his birthplace; absence of evidence is not evidence of absence.",
+          "confidence": 0.72,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "Grazer's father is a Chicago native, and no public records confirm his birth in Tampa.",
+        "confidence": 0.62,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Grazer's father is a Chicago native, and no public records confirm his birth in Tampa.",
+          "confidence": 0.62,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The absence of public records does not definitively disprove a Tampa birth; private documents or family accounts may exist.",
+          "confidence": 0.75,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "A person's birthplace cannot be determined solely by their parent's origin; relocation after birth is common.",
+          "confidence": 0.72,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Private documents lack verifiability compared to public records; without official proof, claims remain speculative.",
+          "confidence": 0.68,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Parental origin does not override direct evidence of birthplace; genetic lineage does not dictate geographical location.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Public records are standard for verifying births; their absence weakens the credibility of alternative claims.",
+          "confidence": 0.65,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Biological parentage does not determine birthplace; environmental factors and legal documentation are more relevant.",
+          "confidence": 0.67,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    },
+    "A6": {
+      "supporting": {
+        "id": "A6",
+        "text": "Some official fan sites list his birthplace as Miami instead of Tampa, creating ambiguity.",
+        "confidence": 0.58,
+        "cate": "S"
+      },
+      "attacks": [
+        {
+          "id": "A6",
+          "text": "Some official fan sites list his birthplace as Miami instead of Tampa, creating ambiguity.",
+          "confidence": 0.58,
+          "attacks": [],
+          "cate": "S"
+        },
+        {
+          "id": "B1",
+          "text": "The official fan sites mentioned are not authoritative sources and may contain errors.",
+          "confidence": 0.85,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "There is no definitive evidence from credible birth records supporting Miami as his birthplace.",
+          "confidence": 0.75,
+          "attacks": [
+            "A6"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Official fan sites are considered reliable sources for celebrity information.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Credible birth records, such as his Social Security number or early public appearances, confirm Tampa as his birthplace.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Fan sites are not official records and can be edited by anyone, making them unreliable.",
+          "confidence": 0.7,
+          "attacks": [
+            "C1"
+          ]
+        },
+        {
+          "id": "D2",
+          "text": "Early public appearances are not reliable indicators of birthplace due to potential relocation after birth.",
+          "confidence": 0.75,
+          "attacks": [
+            "C2"
+          ]
+        }
+      ]
+    }
+  }
+}

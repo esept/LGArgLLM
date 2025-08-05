@@ -1,0 +1,262 @@
+{
+  "claim": "Consider the following background information: An 8-year-old boy is brought to the physician because of headaches for the past 2 weeks. His headaches tend to occur in the morning and are associated with nausea and vomiting. One month ago, the patient was admitted to the hospital because of fever, irritability, and neck rigidity, and he was successfully treated with antibiotics. His temperature today is 37.5\u00b0C (98.5\u00b0F). An MRI of the brain shows bilateral ventricular enlargement and enlargement of the subarachnoid space.\n\nGiven the background information the following is corrrect: Impaired CSF flow through the arachnoid granulations is the most likely explanation of the patient\"s condition.",
+  "score": 0.85,
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "P",
+        "text": "The patient's history of fever, irritability, and neck rigidity suggests a prior episode of meningitis, which can lead to scarring of the arachnoid granulations and impaired CSF flow."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The patient's history of fever, irritability, and neck rigidity suggests a prior episode of meningitis, which can lead to scarring of the arachnoid granulations and impaired CSF flow.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "While meningitis can cause arachnoid granulation scarring, other conditions like congenital hydrocephalus or brain tumors could also explain the ventricular enlargement and symptoms.",
+          "confidence": 0.75,
+          "attacks": {
+            "A1": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's recent successful antibiotic treatment for symptoms consistent with meningitis makes other diagnoses less likely compared to post-meningitic scarring.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.78
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The absence of fever and normal temperature today doesn't strongly support an active infectious process, weakening the meningitis connection.",
+          "confidence": 0.68,
+          "attacks": {
+            "A1": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Meningitis-induced scarring can persist long after infection resolves, so current absence of fever doesn't negate this mechanism.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "P",
+        "text": "The MRI findings of bilateral ventricular enlargement and enlargement of the subarachnoid space are consistent with communicating hydrocephalus, which is often caused by impaired CSF absorption at the arachnoid granulations."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The MRI findings of bilateral ventricular enlargement and enlargement of the subarachnoid space are consistent with communicating hydrocephalus, which is often caused by impaired CSF absorption at the arachnoid granulations.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent history of fever, irritability, and neck rigidity suggests possible meningitis, which can lead to inflammation and scarring of the arachnoid granulations, impairing CSF absorption.",
+          "confidence": 0.78,
+          "attacks": {
+            "A2": 0.82
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The patient's successful treatment with antibiotics indicates that the meningitis was bacterial, which is more likely to cause significant inflammation and scarring compared to viral meningitis.",
+          "confidence": 0.88,
+          "attacks": {
+            "B1": 0.85
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The presence of morning headaches, nausea, and vomiting is more indicative of increased intracranial pressure, which can occur with both communicating and non-communicating hydrocephalus, not specifically impaired CSF absorption at the arachnoid granulations.",
+          "confidence": 0.75,
+          "attacks": {
+            "A2": 0.7
+          }
+        },
+        {
+          "id": "C2",
+          "text": "Non-communicating hydrocephalus due to obstruction in the ventricular system could also present with similar MRI findings, and the patient's recent meningitis could have caused adhesions leading to obstruction.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.75
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "P",
+        "text": "Morning headaches, nausea, and vomiting are classic symptoms of increased intracranial pressure, which can result from impaired CSF flow and subsequent hydrocephalus."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Morning headaches, nausea, and vomiting are classic symptoms of increased intracranial pressure, which can result from impaired CSF flow and subsequent hydrocephalus.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent history of fever, irritability, and neck rigidity suggests meningitis, which can also cause increased intracranial pressure independently of impaired CSF flow.",
+          "confidence": 0.75,
+          "attacks": {
+            "A3": 0.7
+          }
+        },
+        {
+          "id": "C1",
+          "text": "MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are more specific for hydrocephalus due to impaired CSF flow than for meningitis-related pressure changes.",
+          "confidence": 0.8,
+          "attacks": {
+            "B1": 0.8
+          }
+        },
+        {
+          "id": "B2",
+          "text": "Morning headaches and vomiting can also occur with migraines or other benign conditions, not necessarily indicating increased intracranial pressure.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The combination of morning headaches, nausea, vomiting, and MRI findings makes benign conditions like migraines much less likely in this context.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.85
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "P",
+        "text": "The patient's recent successful treatment with antibiotics for symptoms suggestive of meningitis supports the likelihood of post-inflammatory changes impairing CSF flow through the arachnoid granulations."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The patient's recent successful treatment with antibiotics for symptoms suggestive of meningitis supports the likelihood of post-inflammatory changes impairing CSF flow through the arachnoid granulations.",
+          "cate": "P",
+          "confidence": 0.82,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The MRI findings could also be consistent with normal pressure hydrocephalus, which does not necessarily involve impaired CSF flow through the arachnoid granulations.",
+          "confidence": 0.65,
+          "attacks": {
+            "A4": 0.6
+          }
+        },
+        {
+          "id": "C1",
+          "text": "Normal pressure hydrocephalus is rare in children and typically presents with a different clinical triad (gait disturbance, urinary incontinence, dementia).",
+          "confidence": 0.78,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms could be due to recurrent meningitis rather than post-inflammatory changes, as the antibiotic treatment might not have fully eradicated the infection.",
+          "confidence": 0.7,
+          "attacks": {
+            "A4": 0.65
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The absence of fever and the temporal pattern of symptoms (morning headaches with nausea/vomiting) make recurrent meningitis less likely than a CSF flow problem.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.7
+          }
+        },
+        {
+          "id": "B3",
+          "text": "The ventricular enlargement could be congenital rather than acquired, which would not necessarily involve impaired CSF flow through arachnoid granulations.",
+          "confidence": 0.55,
+          "attacks": {
+            "A4": 0.5
+          }
+        },
+        {
+          "id": "C3",
+          "text": "The recent history of meningitis and new onset of symptoms makes congenital hydrocephalus much less likely as an explanation.",
+          "confidence": 0.85,
+          "attacks": {
+            "B3": 0.8
+          }
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "cate": "P",
+        "text": "Communicating hydrocephalus, as suggested by the imaging findings, is most commonly caused by impaired CSF reabsorption at the arachnoid granulations rather than obstruction within the ventricular system."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "Communicating hydrocephalus, as suggested by the imaging findings, is most commonly caused by impaired CSF reabsorption at the arachnoid granulations rather than obstruction within the ventricular system.",
+          "cate": "P",
+          "confidence": 0.85,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The patient's recent history of fever, irritability, and neck rigidity suggests meningitis, which can cause inflammation and scarring of the arachnoid granulations, impairing CSF reabsorption.",
+          "confidence": 0.78,
+          "attacks": {
+            "A5": 0.65
+          }
+        },
+        {
+          "id": "C1",
+          "text": "While meningitis can lead to scarring, the MRI findings of bilateral ventricular enlargement and subarachnoid space enlargement are more consistent with communicating hydrocephalus due to impaired CSF reabsorption at the arachnoid granulations.",
+          "confidence": 0.82,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The patient's symptoms of morning headaches with nausea and vomiting could also be caused by increased intracranial pressure due to a mass lesion, which was not ruled out by the MRI.",
+          "confidence": 0.7,
+          "attacks": {
+            "A5": 0.6
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The MRI findings of ventricular enlargement and subarachnoid space enlargement are not typical of a mass lesion, making impaired CSF reabsorption a more likely explanation.",
+          "confidence": 0.8,
+          "attacks": {
+            "B2": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

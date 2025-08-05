@@ -1,0 +1,193 @@
+{
+  "claim": "If you go outdoors in cold weather with wet hair, you might feel chilly.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Wet hair increases heat loss from the head due to water's higher thermal conductivity compared to air."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Wet hair increases heat loss from the head due to water's higher thermal conductivity compared to air.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The effect of wet hair on overall body temperature is negligible unless the person is already hypothermic.",
+          "confidence": 0.65,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even small increases in heat loss from the head can significantly impact thermal comfort in cold weather.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Hair length and thickness can insulate against heat loss even when wet, reducing the impact.",
+          "confidence": 0.6,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Water saturation reduces hair's insulating properties regardless of length or thickness.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Evaporation of water from wet hair in cold conditions draws heat away from the body, causing a chill sensation."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Evaporation of water from wet hair in cold conditions draws heat away from the body, causing a chill sensation.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In very dry cold conditions, evaporation occurs too slowly to significantly affect body temperature.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in dry conditions, any evaporation still causes some heat loss due to the high latent heat of vaporization of water.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "People with thick hair or wearing hats may not experience noticeable chill from wet hair due to insulation.",
+          "confidence": 0.6,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Heat loss still occurs through wet hair even with insulation, though the sensation may be less noticeable.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Cold weather lowers skin temperature, and wet hair exacerbates this effect by conducting cold more efficiently."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Cold weather lowers skin temperature, and wet hair exacerbates this effect by conducting cold more efficiently.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Wet hair's cooling effect is negligible if the person is wearing adequate headgear or insulation.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals have higher metabolic rates or body fat, reducing the impact of cold conduction from wet hair.",
+          "confidence": 0.65,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with headgear, wet hair can still create localized cooling, especially if exposed to wind.",
+          "confidence": 0.8,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Metabolic and body fat differences are minor compared to the direct conductive cooling effect of wet hair in cold weather.",
+          "confidence": 0.7,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "The body's thermoregulatory system detects rapid heat loss from wet hair in cold environments, triggering a sensation of chill."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "The body's thermoregulatory system detects rapid heat loss from wet hair in cold environments, triggering a sensation of chill.",
+          "confidence": 0.85,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Wet hair alone does not significantly increase heat loss if the body is otherwise well-insulated (e.g., wearing warm clothing).",
+          "confidence": 0.75,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with insulation, wet hair increases convective heat loss due to evaporation, which the body detects as a localized chill sensation.",
+          "confidence": 0.82,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some individuals may not feel chilly due to genetic or acclimatization factors that alter thermoregulatory sensitivity.",
+          "confidence": 0.65,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "While individual variation exists, the thermoregulatory response to wet hair in cold weather is a broadly observed physiological phenomenon.",
+          "confidence": 0.78,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

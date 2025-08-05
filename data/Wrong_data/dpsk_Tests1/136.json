@@ -1,0 +1,232 @@
+{
+  "claim": "If you watch a pot of water on the stove, it will boil.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "Water boils when it reaches its boiling point temperature, which is 100\u00b0C (212\u00b0F) at standard atmospheric pressure."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "Water boils when it reaches its boiling point temperature, which is 100\u00b0C (212\u00b0F) at standard atmospheric pressure.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Watching the pot does not influence the boiling process; heat transfer from the stove is the determining factor.",
+          "confidence": 0.85,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Psychological studies suggest that observing a task can create an illusion of influencing its outcome, but this does not apply to physical processes like boiling water.",
+          "confidence": 0.78,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "At higher altitudes, water boils below 100\u00b0C due to lower atmospheric pressure, making the original claim context-dependent.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Standard cooking conditions assume sea-level pressure unless specified otherwise, so the general claim remains valid for most practical purposes.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "Heat transfer from the stove to the pot causes the water temperature to rise until boiling occurs."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "Heat transfer from the stove to the pot causes the water temperature to rise until boiling occurs.",
+          "confidence": 0.95,
+          "cate": "P",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "If the stove is not turned on or lacks sufficient heat output, the water will not boil regardless of observation.",
+          "confidence": 0.85,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Standard stoves in normal conditions provide sufficient heat to boil water when turned on, making this scenario rare.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "At high altitudes, water boils at lower temperatures, which may not be sufficient for cooking purposes despite technically boiling.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Most populations live at low-to-moderate altitudes where standard boiling behavior applies, limiting this exception's relevance.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Observing the pot does not influence the physical process of water reaching its boiling point."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Observing the pot does not influence the physical process of water reaching its boiling point.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Human observation can indirectly affect boiling time, such as adjusting heat or lid placement.",
+          "confidence": 0.75,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such adjustments are external interventions, not a direct effect of observation itself.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Quantum mechanics suggests observation can influence physical systems at microscopic scales.",
+          "confidence": 0.6,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Macroscopic systems like boiling water are not meaningfully affected by quantum observer effects.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Boiling is a phase transition from liquid to vapor, driven by thermal energy, not by visual observation."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Boiling is a phase transition from liquid to vapor, driven by thermal energy, not by visual observation.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Visual observation can indirectly indicate boiling by detecting bubbles or steam, which are signs of the phase transition.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Bubbles and steam may not always be visible immediately due to factors like water purity or surface tension, making visual observation unreliable.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Even if bubbles are delayed, the underlying thermal process still occurs, so watching does not prevent boiling\u2014it merely delays its visible confirmation.",
+          "confidence": 0.8,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The time taken for water to boil depends on factors like heat intensity and volume, not on whether it is being watched."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The time taken for water to boil depends on factors like heat intensity and volume, not on whether it is being watched.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Watching the pot may indirectly affect boiling time if it leads to adjustments in heat intensity (e.g., turning up the flame).",
+          "confidence": 0.65,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Such adjustments are rare in practice, as most people do not modify heat settings based solely on observation.",
+          "confidence": 0.75,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Psychological studies show that perceived waiting time (e.g., watching a pot) feels longer, which may create the illusion of slower boiling.",
+          "confidence": 0.7,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Subjective perception does not alter the physical process of boiling, which remains independent of observation.",
+          "confidence": 0.9,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}

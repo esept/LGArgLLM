@@ -1,0 +1,165 @@
+{
+  "claim": "Winter solstice in Northern Hemisphere is closer to July than in Southern Hemisphere.",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "cate": "S",
+        "text": "The winter solstice in the Northern Hemisphere occurs in December, which is closer to January than to July."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "The winter solstice in the Northern Hemisphere occurs in December, which is closer to January than to July.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim compares the Northern Hemisphere's winter solstice to the Southern Hemisphere's, not to months within the same hemisphere.",
+          "confidence": 0.85,
+          "attacks": {
+            "A1": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Southern Hemisphere's winter solstice occurs in June, which is closer to July than December is to July.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "The original claim is about relative distances to July, not absolute months, making the comparison valid.",
+          "confidence": 0.7,
+          "attacks": {
+            "C1": 0.6
+          }
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "cate": "S",
+        "text": "The Southern Hemisphere's winter solstice occurs in June, which is closer to July than the Northern Hemisphere's December solstice."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The Southern Hemisphere's winter solstice occurs in June, which is closer to July than the Northern Hemisphere's December solstice.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The Northern Hemisphere's winter solstice occurs in December, which is only one month away from January, making it equally close to July as the Southern Hemisphere's June solstice.",
+          "confidence": 0.85,
+          "attacks": {
+            "A2": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The claim compares proximity to July, and June is indeed closer to July than December is, as June is one month before July while December is five months after July.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.85
+          }
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "cate": "S",
+        "text": "The Earth's axial tilt causes the Northern Hemisphere's winter solstice to be in December, not July."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "The Earth's axial tilt causes the Northern Hemisphere's winter solstice to be in December, not July.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim compares solstice timing between hemispheres, not the month itself. The Northern Hemisphere's winter solstice (December) is indeed closer to July than the Southern Hemisphere's (June).",
+          "confidence": 0.85,
+          "attacks": {
+            "A3": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Earth's axial tilt does not change the fact that December is closer to July than June is, in terms of calendar months.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.7
+          }
+        },
+        {
+          "id": "B2",
+          "text": "The original claim is misleading because it compares hemispheres in a non-standard way, making the argument irrelevant.",
+          "confidence": 0.6,
+          "attacks": {
+            "A3": 0.5
+          }
+        },
+        {
+          "id": "C2",
+          "text": "The claim is logically valid as it highlights a relative timing difference, even if the phrasing is unconventional.",
+          "confidence": 0.75,
+          "attacks": {
+            "B2": 0.8
+          }
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "cate": "S",
+        "text": "Astronomical seasons are determined by the Earth's position relative to the Sun, making the Northern Hemisphere's winter solstice in December."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Astronomical seasons are determined by the Earth's position relative to the Sun, making the Northern Hemisphere's winter solstice in December.",
+          "cate": "P",
+          "confidence": 0.95,
+          "attacks": {}
+        },
+        {
+          "id": "B1",
+          "text": "The claim compares solstice timing between hemispheres, not just stating the Northern Hemisphere's winter solstice month.",
+          "confidence": 0.85,
+          "attacks": {
+            "A4": 0.8
+          }
+        },
+        {
+          "id": "C1",
+          "text": "The Earth's axial tilt causes opposite seasons in hemispheres, so December in the North aligns with June in the South.",
+          "confidence": 0.9,
+          "attacks": {
+            "B1": 0.75
+          }
+        },
+        {
+          "id": "D1",
+          "text": "July is mid-year, while December is year-end, making the claim about relative timing mathematically incorrect.",
+          "confidence": 0.88,
+          "attacks": {
+            "C1": 0.7
+          }
+        }
+      ]
+    }
+  }
+}

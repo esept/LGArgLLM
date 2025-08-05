@@ -1,0 +1,232 @@
+{
+  "claim": "A positive ELISA test confirms HIV infection",
+  "Args": {
+    "A1": {
+      "supporting": {
+        "id": "A1",
+        "text": "A positive ELISA test can produce false positives due to cross-reactivity with other antibodies, such as those from autoimmune diseases."
+      },
+      "attacks": [
+        {
+          "id": "A1",
+          "text": "A positive ELISA test can produce false positives due to cross-reactivity with other antibodies, such as those from autoimmune diseases.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ELISA test is highly sensitive and specific for HIV, with false positives being rare in practice.",
+          "confidence": 0.78,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Confirmatory tests like the Western blot are used after a positive ELISA to rule out false positives.",
+          "confidence": 0.9,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Autoimmune diseases that cause cross-reactivity are uncommon compared to the prevalence of HIV testing.",
+          "confidence": 0.7,
+          "attacks": [
+            "A1"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Even with cross-reactivity, the combination of ELISA and confirmatory tests minimizes the risk of false positives.",
+          "confidence": 0.88,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A2": {
+      "supporting": {
+        "id": "A2",
+        "text": "The ELISA test is a screening tool, and confirmatory tests like Western blot or PCR are required to definitively diagnose HIV infection."
+      },
+      "attacks": [
+        {
+          "id": "A2",
+          "text": "The ELISA test is a screening tool, and confirmatory tests like Western blot or PCR are required to definitively diagnose HIV infection.",
+          "confidence": 0.95,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "In many cases, a positive ELISA test is highly indicative of HIV infection, especially in high-prevalence populations.",
+          "confidence": 0.75,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even in high-prevalence populations, false positives can occur due to cross-reactivity with other antibodies, necessitating confirmatory testing.",
+          "confidence": 0.85,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Some healthcare settings with limited resources rely on multiple ELISA tests as a proxy for confirmation due to lack of access to Western blot or PCR.",
+          "confidence": 0.65,
+          "attacks": [
+            "A2"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Relying solely on ELISA tests increases the risk of misdiagnosis and associated psychological or social harm, even in resource-limited settings.",
+          "confidence": 0.8,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A3": {
+      "supporting": {
+        "id": "A3",
+        "text": "Technical errors in the ELISA test procedure, such as improper handling or contamination, can lead to false-positive results."
+      },
+      "attacks": [
+        {
+          "id": "A3",
+          "text": "Technical errors in the ELISA test procedure, such as improper handling or contamination, can lead to false-positive results.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern ELISA tests are highly standardized and include multiple controls to detect and prevent technical errors.",
+          "confidence": 0.85,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with controls, human error in sample handling or equipment calibration can still introduce false positives.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "False positives due to technical errors are rare and usually identified through confirmatory testing like Western blot.",
+          "confidence": 0.8,
+          "attacks": [
+            "A3"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Confirmatory tests can also be subject to errors, delaying accurate diagnosis and treatment.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    "A4": {
+      "supporting": {
+        "id": "A4",
+        "text": "Recent vaccinations or infections with other viruses can sometimes trigger a positive ELISA test without actual HIV infection."
+      },
+      "attacks": [
+        {
+          "id": "A4",
+          "text": "Recent vaccinations or infections with other viruses can sometimes trigger a positive ELISA test without actual HIV infection.",
+          "confidence": 0.75,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "The ELISA test is highly specific to HIV antibodies, and false positives due to other infections are extremely rare in practice.",
+          "confidence": 0.85,
+          "attacks": [
+            "A4"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even if false positives occur, confirmatory tests like the Western blot are always performed to rule out such cases.",
+          "confidence": 0.9,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "D1",
+          "text": "Some vaccinations (e.g., flu shots) have been documented to cause cross-reactivity in ELISA tests, though still uncommon.",
+          "confidence": 0.6,
+          "attacks": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    "A5": {
+      "supporting": {
+        "id": "A5",
+        "text": "The ELISA test detects antibodies, which may take weeks to develop after infection, leading to potential false negatives or positives during the window period."
+      },
+      "attacks": [
+        {
+          "id": "A5",
+          "text": "The ELISA test detects antibodies, which may take weeks to develop after infection, leading to potential false negatives or positives during the window period.",
+          "confidence": 0.85,
+          "cate": "S",
+          "attacks": []
+        },
+        {
+          "id": "B1",
+          "text": "Modern ELISA tests have high specificity and sensitivity, minimizing false positives and negatives.",
+          "confidence": 0.78,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C1",
+          "text": "Even with high specificity, false positives can still occur due to cross-reactivity with other antibodies.",
+          "confidence": 0.65,
+          "attacks": [
+            "B1"
+          ]
+        },
+        {
+          "id": "B2",
+          "text": "Follow-up confirmatory tests like Western blot or PCR are used to verify ELISA results, reducing diagnostic errors.",
+          "confidence": 0.82,
+          "attacks": [
+            "A5"
+          ]
+        },
+        {
+          "id": "C2",
+          "text": "Confirmatory tests may not be immediately available in all settings, delaying definitive diagnosis.",
+          "confidence": 0.6,
+          "attacks": [
+            "B2"
+          ]
+        }
+      ]
+    }
+  }
+}
