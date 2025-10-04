@@ -1,0 +1,38 @@
+```yaml
+Arguments:
+  - id: A5
+    text: "The numbers 3, 4, and 5 form the classic example of a Pythagorean triple, satisfying a² + b² = c² where all terms are integers."
+    cate: "P"
+    confidence: 1.0
+    attacks: {}
+
+  - id: B1
+    text: "While 3,4,5 is a Pythagorean triple, the argument doesn't actually verify the calculation 3² + 4² = 5² mathematically."
+    confidence: 0.85
+    attacks:
+      A5: 0.7
+
+  - id: B2
+    text: "The argument relies on authority (classic example) rather than mathematical proof, which could be misleading if the example is misremembered."
+    confidence: 0.65
+    attacks:
+      A5: 0.6
+
+  - id: C1
+    text: "Direct calculation confirms 3² + 4² = 9 + 16 = 25, which equals 5² = 25, so the mathematical verification is straightforward."
+    confidence: 0.95
+    attacks:
+      B1: 0.9
+
+  - id: C2
+    text: "The 3-4-5 Pythagorean triple is one of the most well-established mathematical facts, taught universally in geometry education."
+    confidence: 0.92
+    attacks:
+      B2: 0.85
+
+  - id: D1
+    text: "Even with verification, the argument as originally stated doesn't provide the actual calculation, leaving room for doubt about the specific claim 3² + 4² = 5²."
+    confidence: 0.7
+    attacks:
+      C1: 0.5
+```

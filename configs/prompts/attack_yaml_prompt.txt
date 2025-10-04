@@ -1,0 +1,86 @@
+You are given a **claim** and a corresponding argument `Ai`.
+
+Your task is to:
+1. **Verify** whether the `cate` (P or S) originally assigned to `Ai` is logically valid;
+2. Assign a **confidence score** (0.0–1.0) to `Ai`, based on its strength and reliability;
+3. Recursively construct an **attack tree** starting from `Ai`, introducing logically valid counter-arguments and rebuttals;
+4. For each attack, assign a **strength score** (0.0–1.0) indicating how effectively the attacker undermines the target;
+5. Output everything in strict **YAML** format only.
+
+---
+
+## Step 1: Verify `Ai.cate`
+- If `cate: P` → argument supports the **truth** of the claim
+- If `cate: S` → argument supports the **negation** of the claim
+If the assigned cate is wrong, **correct it** in your output. Output only the correct value.
+
+---
+
+## Step 2: Assign `Ai.confidence`
+Assign a score between 0.0 and 1.0:
+- 0.9–1.0 → Widely accepted facts, textbook truths
+- 0.7–0.89 → General, reliable reasoning
+- 0.5–0.69 → Context-sensitive or partial validity
+- <0.5 → Speculative, rare-case, or weak support
+
+---
+
+## Step 3: Build the Attack Tree
+- Generate B-layer arguments that **directly attack Ai**
+- For each Bi, recursively generate counter-arguments (C-layer, etc.)
+- Each attack should include:
+  ```yaml
+  attacks:
+    TargetID: strength_score
+````
+
+where `strength_score` is between 0.0 and 1.0
+Use a variety of attack types:
+* Logical contradictions
+* Statistical counterexamples
+* Scope/relevance/context rebuttals
+* Challenges to definitions or authority
+
+For rare-case attacks, **reduce both confidence and attack strength** accordingly.
+
+---
+
+## Output Format (YAML)
+
+```yaml
+Arguments:
+  - id: A3
+    text: "Exact input argument text."
+    cate: "P"
+    confidence: 0.91
+    attacks: {}
+
+  - id: B1
+    text: "First-level counter-argument to A3."
+    confidence: 0.68
+    attacks:
+      A3: 0.75
+
+  - id: C1
+    text: "Counter-argument to B1."
+    confidence: 0.88
+    attacks:
+      B1: 0.85
+```
+
+---
+
+### Rules:
+
+* Keep the original `Ai.id` and `Ai.text` **unchanged**
+* Output only under `Arguments:` root
+* Use **exact YAML syntax** (no comments, no JSON-like elements)
+* Use double quotes for all strings
+* `attacks` is a **dictionary**, not a list
+
+---
+
+## Summary
+
+Build a structured, confidence-calibrated, logically grounded **YAML-format attack tree** starting from a single argument.
+Verify or correct its `cate`, assign accurate confidence, and recursively generate coherent counter-arguments with attack strengths.
