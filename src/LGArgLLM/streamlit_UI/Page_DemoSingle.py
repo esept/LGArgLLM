@@ -29,9 +29,7 @@ class Page_DemoSingle(Base_page):
         dataset_name = dataset.split('/')[-1]
 
         all_datas, folder = super().read_full_dataset(dataset)
-        # st.markdown(f'folder = {folder}')
         claims_exists = [f'{i} - {all_datas[str(i)]["claim"]}' for i in range(len(all_datas)) ]
-        # print(claims_exists)
         num_claim = st.selectbox(
             'select claim from '+ dataset ,
             options=claims_exists
@@ -54,7 +52,7 @@ class Page_DemoSingle(Base_page):
             st.markdown(f'Data saved in {this_path}')
             return nb_files,output, this_path
 
-    def run(self, llm):
+    def run(self, llm, update=None):
         self.llm = llm
         mode = st.radio(
             "Choose mode:",
@@ -76,7 +74,6 @@ class Page_DemoSingle(Base_page):
                 st.stop()
 
         update = super().set_update()
-        # print(f'self.this_path = {self.this_path}')
         infos, result = super().step_tree_const(
             output,
             this_path=self.this_path,
@@ -87,21 +84,13 @@ class Page_DemoSingle(Base_page):
 
         list_result = list(result.values())
 
-        # print(len(list_result))
         data = pd.DataFrame([list_result], columns=DF_HEDERS)
-        # reasoner = Reasoner(list_result)
         reasoner = Reasoner()
-        # print(data)
         reasoner.get_data(data)
-        reasoner.add_reasoner(reasoner.agg_veto)
-        reasoner.add_reasoner(reasoner.agg_threshold_True)
-        reasoner.add_reasoner(reasoner.agg_Wc_S)
-        reasoner.add_reasoner(reasoner.agg_Wc_Ws)
+        self.set_reasoner(reasoner)
         sem_result = reasoner.get_results()
         '''--------<Draw Results>--------'''
         cond_res_df = pd.DataFrame([result])
-        print(type(sem_result))
-        # sem_res_df = pd.DataFrame([sem_result])
 
         st.subheader('Condition Results')
         st.dataframe(cond_res_df)
@@ -110,80 +99,11 @@ class Page_DemoSingle(Base_page):
         '''--------<Draw ARTrees>--------'''
         self.step_vis_artrees(infos)
 
-
-
-
-
-    def new_run(self, llm):
-        self.llm = llm
-        # output = None
-        dataset = super().get_list_dataset()
-        dataset_name = dataset.split('/')[-1]
-        st.markdown(dataset_name)
-        self.select_claim(dataset)
-
-        # if st.button(f"Submit {dataset}"):
-        #
-        #     super().step_tree_const(
-        #         output,
-        #         this_path=self.this_path,
-        #         llm=self.llm,
-        #         id=self.number,
-        #         update=update
-        #     )
-
-        st.markdown("Demo claim will be save in ELSE folder")
-        claim = st.text_input("Input Claim")
-        if st.button("Submit New"):
-            # '''
-            ag = Argument_Generator(self.llm)
-            output = ag.get_arguments(claim)
-            nb_files = len(os.listdir(self.path))
-            this_path = os.path.join(self.path, f'{str(nb_files)}.json')
-            self.this_path = this_path
-            super().save_json(output, this_path)
-            self.number = nb_files
-            st.markdown(f'Data saved in {this_path}')
-            '''
-            output = super().read_data("./data/ELSE/89.json")
-            self.this_path = "./data/ELSE/89.json"
-            self.number = 89
-            '''
-            update = super().set_update()
-            infos, result = super().step_tree_const(
-                output,
-                this_path=self.this_path,
-                llm=self.llm,
-                id=self.number,
-                update=update
-            )
-
-            list_result = list(result.values())
-
-            print(len(list_result))
-            data = pd.DataFrame([list_result], columns=DF_HEDERS)
-            # reasoner = Reasoner(list_result)
-            reasoner = Reasoner()
-            print(data)
-            reasoner.get_data(data)
-            # reasoner.add_reasoner(reasoner.agg_veto)
-            # reasoner.add_reasoner(reasoner.agg_threshold_True)
-
-            sem_result = reasoner.get_results()
-            '''--------<Draw Results>--------'''
-            cond_res_df = pd.DataFrame([result])
-            print(type(sem_result))
-            # sem_res_df = pd.DataFrame([sem_result])
-
-            st.subheader('Condition Results')
-            st.dataframe(cond_res_df)
-            st.subheader('Semantic Results')
-            st.dataframe(sem_result)
-            '''--------<Draw ARTrees>--------'''
-            self.step_vis_artrees(infos)
-
-        # if st.button("Submit Exist"):
-
+    def set_reasoner(self, reasoner):
+        reasoner.add_reasoner(reasoner.agg_veto)
+        reasoner.add_reasoner(reasoner.agg_threshold_True)
+        reasoner.add_reasoner(reasoner.agg_Wc_S)
+        reasoner.add_reasoner(reasoner.agg_Wc_Ws)
 
 
     def step_vis_artrees(self,infos):

@@ -19,8 +19,6 @@ class UIManager:
             'CV': Page_CrossValidation
         }
 
-
-
     def choose_llm(self):
         llms_configs_path = "./configs/llms.json"
         with open(llms_configs_path, 'r') as f:

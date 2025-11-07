@@ -10,28 +10,6 @@ class Base_page(ABC):
     def __init__(self, name):
         st.header(f'{name}')
 
-    # def set_update(self):
-    #     st.sidebar.header('Set Update choice')
-    #     update_option = [
-    #         'tanh(nb_CA - nb_CR)',
-    #         '- MAX (CA - CR)',
-    #         'MAX(CA) - MAX(CR)',
-    #         'tanh(SUM(CA)-SUM(CR))',
-    #         'split(nb_CA/nb_C)',
-    #         '-1',
-    #         'ATTACK_relation'
-    #     ]
-    #     update = st.sidebar.radio(
-    #         'select how to update score',
-    #         options=update_option,
-    #         index=2
-    #     )
-    #     the_index = update_option.index(update)
-    #     # st.session_state['update_index'] = the_index
-    #     # return the_index
-    #     return the_index
-    # '''设置权重更新方法'''
-
     @abstractmethod
     def run(self, llm, update):
         raise NotImplementError
@@ -58,7 +36,6 @@ class Base_page(ABC):
         infos['this_path'] = kwargs['this_path']
         infos['llm'] = kwargs['llm']
         infos['id'] = kwargs['id']
-        print(infos['this_path'])
         rt.begin(infos)
         result = rt.reasoning()
         return infos, result
@@ -85,25 +62,6 @@ class Base_page(ABC):
             options=names
         )
         return data_list[dataset]
-
-    '''def read_full_dataset(self, path):
-        # print(path)
-        folder_l = [f for f in os.listdir(path) if f.startswith('res')]
-        print(folder_l)
-        folder_l = [int(i.split('_')[-1]) for i in folder_l if os.path.isdir(os.path.join(path,f))]
-        the_num = max(folder_l)
-        folder = os.path.join(path, f'res_{the_num}')
-        st.markdown(f'Reading **{folder}** ...')
-        all_datas = {}
-        for file in os.listdir(folder):
-            file_path = os.path.join(folder, file)
-            num = file_path.split('/')[-1].split('.')[0]
-            # st.markdown(num)
-            if not file_path.endswith('json'):
-                continue
-            this_data = super().read_data(file_path)
-            all_datas[num] = this_data
-        return all_datas, folder'''
 
     def set_update(self, idx=None):
         update_option = [

@@ -54,7 +54,7 @@ class Page_CrossValidation(Base_page):
             'result': result,
         }
 
-    def display_evaluation(self, res_cond, res_sems, path):
+    def display_evaluation(self, res_sems, path):
         eva = Evaluator(res_sems)
         res_df = eva.eval(path)
         return res_df

@@ -18,34 +18,6 @@ class Page_Evaluation(Base_page):
     def __init__(self):
         super().__init__("Evaluation")
 
-    # def get_list_dataset(self):
-    #     data_path = "./data"
-    #     data_list = {i: os.path.join(data_path,i) for i in os.listdir(data_path) if os.path.isdir(os.path.join(data_path,i)) and i != 'ELSE'}
-    #     # st.markdown(data_list)
-    #     names = list(data_list.keys())
-    #     st.sidebar.header('Set Dataset')
-    #     dataset = st.sidebar.radio(
-    #         'select dataset to evaluate',
-    #         options=names
-    #     )
-    #     return data_list[dataset]
-
-    # def read_full_dataset(self, path):
-    #     folder_l = [int(f.split('_')[-1]) for f in os.listdir(path) if os.path.isdir(os.path.join(path,f))]
-    #     the_num = max(folder_l)
-    #     folder = os.path.join(path, f'res_{the_num}')
-    #     st.markdown(f'Reading **{folder}** ...')
-    #     all_datas = {}
-    #     for file in os.listdir(folder):
-    #         file_path = os.path.join(folder, file)
-    #         num = file_path.split('/')[-1].split('.')[0]
-    #         # st.markdown(num)
-    #         if not file_path.endswith('json'):
-    #             continue
-    #         this_data = super().read_data(file_path)
-    #         all_datas[num] = this_data
-    #     return all_datas, folder
-
     def process_dataset_item(self,num_str, label_val, data_val,folder_path_val, update_val):
         num = int(num_str)
 
@@ -68,7 +40,7 @@ class Page_Evaluation(Base_page):
         }
 
 
-    def run(self, llm):
+    def run(self, llm, update=None):
         the_dataset = self.get_list_dataset()
         self.llm = llm
         labels = self.read_labels(the_dataset)
