@@ -7,8 +7,10 @@ class Evaluator:
         self.data = data
 
 
-    def eval(self):
+    def eval(self, name = None):
         nb_sems_true = {key: 0 for key in list(self.data.keys())[1:]}
+        if name :
+            nom = name.split('/')[2].split('.')[0]
         self.length = 0
         data = (pd.DataFrame(self.data).T).to_dict()
         for key in data:
@@ -20,13 +22,13 @@ class Evaluator:
         percentage = {i: nb_sems_true[i]/self.length for i in nb_sems_true}
 
         the_sum = sum([nb_sems_true[i] for i in nb_sems_true])
-        st.markdown(f"**Total Correct Number: {the_sum}**")
+        # st.markdown(f"**Total Correct Number: {the_sum}**")
         df_res = pd.DataFrame({
-            'Count': nb_sems_true,
-            'Percentage': percentage
+            f'{nom}_Count': nb_sems_true,
+            f'{nom}_Percentage': percentage
         }).T
-
-        st.dataframe(df_res)
+        return df_res
+        # st.dataframe(df_res)
 
 
 

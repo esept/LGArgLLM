@@ -69,8 +69,9 @@ class ART_Updater:
         return (1 - math.exp(-val)) / (1 + math.exp(-val))
 
     def get_conf_list(self, nodes):
-        # confs = [list(item.keys())[0].conf for item in nodes] if nodes else [0]
-        confs = [list(item.keys())[0].get_conf() for item in nodes] if nodes else [0]
+        # confs = [list(item.keys())[0].get_conf() for item in nodes] if nodes else [0]
+        confs = [node.get_conf() for item in nodes for node in item.keys()] if nodes else [0]
+
         return confs
 
     def g_max_diffval(self, CA, CR):

@@ -2,6 +2,8 @@ import json
 import streamlit as st
 from .Page_DemoSingle import Page_DemoSingle
 from .Page_Evaluation import Page_Evaluation
+from .Page_CrossValidation import Page_CrossValidation
+from .Base_page import Base_page
 from ..LLM_Manager import *
 
 class UIManager:
@@ -14,7 +16,10 @@ class UIManager:
         self.pages = {
             'DemoSingle': Page_DemoSingle,
             'Evaluation': Page_Evaluation,
+            'CV': Page_CrossValidation
         }
+
+
 
     def choose_llm(self):
         llms_configs_path = "./configs/llms.json"

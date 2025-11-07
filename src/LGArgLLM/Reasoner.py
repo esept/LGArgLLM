@@ -11,10 +11,11 @@ from .Ranker import Ranker
 NB_Semantic = 16
 
 class Reasoner:
-    def __init__(self):
+    def __init__(self, skip=None):
         self.nb = NB_Semantic
         self.data = None
-        self.ranker = Ranker()
+        self.ranker = Ranker(skip)
+        # self.skip = skip
 
     def get_label(self, labels):
         self.labels = labels
@@ -68,7 +69,7 @@ class Reasoner:
         # st.markdown(function_name)
         values = function_name()
         func_name = '_'.join(function_name.__name__.split('_')[1:])
-        print(f'<Add Aggregation Reasoner {func_name}>')
+        # print(f'<Add Aggregation Reasoner {func_name}>')
         self.results[func_name] = values
 
     def agg_threshold_True(self, threshold=0.5):
@@ -116,21 +117,25 @@ class Reasoner:
             # print(conditions)
             conds_weghts = [dict_conds_weights[keys[cond]] for cond in conditions]
             cw_sum = sum(conds_weghts)
-            condition_weights[semantic] = [float(w/cw_sum) for w in conds_weghts]
-
+            # print(cw_sum)
+            if cw_sum != 0:
+                # print( f'condsweights= {conds_weghts}')
+                condition_weights[semantic] = [float(w/cw_sum) for w in conds_weghts]
+                # print(f'inlist = {condition_weights[semantic]}')
+            else :
+                condition_weights[semantic] = [0 for w in conds_weghts]
         self.cond_weights = condition_weights
-
-
 
     def get_cond_weights(self, semantic):
         values = self.cond_weights[semantic]
         return values
 
-
     def agg_Wc_S(self):
+
         self.calcul_cond_weights()
         semantics = self.get_semantics()
         conds_name = list(self.data.keys())
+
         data = pd.DataFrame(self.data).T
         all_values = []
         for line in data:
@@ -143,7 +148,6 @@ class Reasoner:
                 this_sum = sum([i*the_dict[conds_name[j]] for i,j in zip(cond_weights,condition_this_sem)])
                 this_sums.append(this_sum)
             all_values.append(sum(this_sums))
-
 
         vv = np.mean(all_values)
         return_values = {}
@@ -158,7 +162,6 @@ class Reasoner:
         pred_series = pd.Series(return_values)
         return pred_series.astype(bool)
 
-
     def calcul_sems_weights(self):
         weights_sems = self.ranker.collect_weights(self.ranker.ws)
         # print(weights_sems)
@@ -171,7 +174,6 @@ class Reasoner:
         if semantic == '22': return 0
         return self.sems_weights[semantic]
 
-
     def agg_Wc_Ws(self):
         self.calcul_sems_weights()
         self.calcul_cond_weights()
@@ -181,21 +183,21 @@ class Reasoner:
         all_values = []
         for line in data:
             the_dict = data[line].astype(int).to_dict()
-            # print(the_dict)
-
             this_sums = []
             for key in semantics:
+                # print(key)
                 cond_weights = self.get_cond_weights(key) #
+                # print(cond_weights)
                 condition_this_sem = semantics[key]
 
                 this_sum = sum([i*the_dict[conds_name[j]] for i,j in zip(cond_weights,condition_this_sem)])
+                # print(f'sum = {this_sum}')
                 '''和 Wc_S 的区别  在对语义求和时, 使用了每个语义的权重(根据语义的正确数量排序得到)'''
+                # print(self.get_sem_weights(key))
                 this_sums.append(this_sum * self.get_sem_weights(key))
             all_values.append(sum(this_sums))
 
         s = pd.Series(all_values)
-        # print(self.labels)
-
         vv = s.median()
         return_values = {}
 

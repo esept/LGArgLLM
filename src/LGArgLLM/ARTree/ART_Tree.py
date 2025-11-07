@@ -29,8 +29,13 @@ class ART_Tree:
         ids = [node.get_id() for node in nodes] # 一棵树的所有 id
         edges = [] # 一棵树的所有边
         gnodes = [] # 一棵树的所有节点的 node 结构
+        visited = set()
         # nodes # 一棵树的所有节点
         for node in nodes[::-1]:
+            if node.get_id() in visited:
+                continue
+            visited.add(node.get_id())
+
             for na in node.get_attack():
                 na_key = list(na.keys())[0]
                 attack_weight = na.get(na_key,0)

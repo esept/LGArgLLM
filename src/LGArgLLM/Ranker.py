@@ -1,30 +1,32 @@
 import os
-
+import streamlit as st
 import pandas as pd
 import numpy as np
 
 
 class Ranker:
-    def __init__(self):
+    def __init__(self, skip=None):
         self.dc = [] # 正确个数 Cond
         self.ds = [] # 正确个数 Cond
         self.ws = [] # sem 权重
         self.wc = [] # cond 权重
         self.path = "./result"
-        self.read_files()
+        self.read_files(skip)
 
 
-    def read_files(self):
+    def read_files(self, skip):
         all_files = os.listdir(self.path)
         csvs = [i for i in all_files if i.endswith('csv')]
         for csv in csvs:
-            self.analyse_result(csv)
+            self.analyse_result(csv, skip)
 
-    def analyse_result(self, file_name):
+    def analyse_result(self, file_name, skip=None):
         # print(file_name)
         full_path = os.path.join(self.path, file_name)
         df = pd.read_csv(full_path)
-
+        if skip is not None:
+            df = df.drop(skip)
+        nbs = df.shape[0]
         conds = ['1_cond', '2_cond', '3_cond', '4_cond', '5_cond',
        '6_cond', '7_cond', '8_cond', '9_cond', '10_cond', '11_cond', 's_cond',
        'p_cond', 'm_cond']
@@ -39,12 +41,12 @@ class Ranker:
         self.dc.append(conds_results)
         self.ds.append(sems_results)
 
-        self.ws.append(self.rank_borda(sems_results))
-        # self.ws.append(self.rank_pbw(sems_results))
-        self.wc.append(self.rank_pbw(conds_results))
+        self.ws.append(self.rank_borda(sems_results,nbs))
+        # self.ws.append(self.rank_pbw(sems_results, nbs))
+        self.wc.append(self.rank_pbw(conds_results, nbs))
+        # print(self.ws)
         # self.wc.append(self.rank_borda(conds_results))
-
-
+    #
 
     def collect_weights(self, data):
         weights = data[0]
@@ -53,8 +55,6 @@ class Ranker:
                 weights[key] += file[key]
         # print(weights)
         return weights
-
-
 
     def sort_dict(self, the_dict):
         sort_ = sorted(
@@ -71,19 +71,27 @@ class Ranker:
             result_dict[col] = int(match_count)
         return result_dict
 
-    def rank_borda(self, data):
+    def rank_borda(self, data, nbs):
+        # print("--------------------BORDA--------------------")
+        # print(data)
         sorted_desc = dict(sorted(data.items(), key=lambda x: x[1], reverse=True))
         max_value = max(sorted_desc.values())
+        # print(sorted_desc)
+        # print(max_value)
         if max_value > 300:
             length = 300
         else:
-            length = 100
+            length = nbs/2
         this_values = data.copy()
         values = [sorted_desc[key] for key in list(sorted_desc.keys()) if sorted_desc[key] > length]
+        # print(values)
         max_score = len(values)
+        # print(max_score)
         prev_v = -1
         for k in sorted_desc:
+            # print(k)
             v = this_values[k]
+            # print(v)
             if v < length:
                 this_values[k] = 0
                 continue
@@ -91,22 +99,29 @@ class Ranker:
                 this_values[k] = this_score
                 continue
             inc = values.count(v)
+            # print(inc)
             this_values[k] = max_score
+            # print(f'this_values = {this_values}')
             this_score = np.mean([max_score - i for i in range(inc)])
+            # print(f'this_score = {this_score}')
             this_values[k] = this_score
             prev_v = v
+
             max_score -= inc
+
         # print(f'borda = {this_values}')
+        # print(this_values)
         return this_values
 
-    def rank_pbw(self, data):
+    def rank_pbw(self, data, nbs):
         sorted_desc = dict(sorted(data.items(), key=lambda x: x[1], reverse=True))
 
         max_value = max(sorted_desc.values())
+        # print(data.shape)
         if max_value > 300:
             length = 300
         else:
-            length = 100
+            length = nbs/2
         this_values = data.copy()
         values = [sorted_desc[key] for key in list(sorted_desc.keys()) if sorted_desc[key] > length]
 

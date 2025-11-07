@@ -49,11 +49,16 @@ class ART_Reasoner:
         self.claim = info['root'].get_argu()
         # st.markdown(self.claim)
         self.split_trees()
-        stock_path = "/".join(self.data["this_path"].split('/')[:-1])
+        # print(self.data['this_path'])
+        if str(self.data['this_path']).endswith('json'):
+            stock_path = "/".join(self.data["this_path"].split('/')[:-1])
+        else:
+            stock_path = self.data["this_path"]
         self.st_path = stock_path
         for num in self.llm_reason:
             the_path = os.path.join(stock_path,f"cond_{num}")
             if not os.path.exists(the_path):
+                # print(the_path)
                 os.makedirs(the_path)
 
     '''--------------------------<Logic Conditions>--------------------------'''
@@ -94,6 +99,7 @@ class ART_Reasoner:
                 # results[r_num] = condition()
                 else:
                     condition = self.conditions[idx]
+                    # print(r_num)
                     results[r_num] = condition()
                 continue
 
@@ -118,7 +124,9 @@ class ART_Reasoner:
             try:
                 output = self.read_file_result(the_path)
                 READ = True
-            except e as Error:
+            except Exception as Error:
+                # print(f"Error reading cache {the_path}, will regenerate. Error: {Error}")
+                # READ = False  # 强制重新生成
                 raise Error
         else:
             output = self.llm.get_condtion_parameter(
@@ -146,6 +154,7 @@ class ART_Reasoner:
         else:
             result_line = output
         res_line = [i for i in result_line if i.startswith('Result:')]
+        # print(res_line[0])
         bool_result = res_line[0].split(': ')[1].strip().lower() == 'true'
 
         return bool_result
@@ -252,6 +261,7 @@ class ART_Reasoner:
             'S': self.S[0]
         }
         output = self.reason_by_llm(num_cond, argus)
+
         return self.get_reasoning(output)
 
     def logic_cond_s(self):
