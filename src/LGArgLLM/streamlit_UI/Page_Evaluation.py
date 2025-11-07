@@ -52,7 +52,7 @@ class Page_Evaluation(Base_page):
         all_infos = {}
         all_cond_res = {}
         reasoner = Reasoner()
-        start_time = time.time()
+        # start_time = time.time()
         dict_labels = {}
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = []

@@ -104,7 +104,7 @@ class Page_CrossValidation(Base_page):
                 dict_sems['label'] = label_series
                 '''
                 df_conds, dict_sems = self.reasoning(reasoner, update, name ,dataset, folder_path, skips=nums)
-                res_dfs.append(self.display_evaluation(df_conds, dict_sems, folder_path))
+                res_dfs.append(self.display_evaluation(dict_sems, folder_path))
             df = pd.concat(res_dfs)
             st.dataframe(df)
 
@@ -149,7 +149,7 @@ class Page_CrossValidation(Base_page):
         for name in datasets:
             dataset, folder_path = datasets[name]
             df_conds, dict_sems = self.reasoning(reasoner, update, name, dataset, folder_path)
-            res_dfs.append(self.display_evaluation(df_conds,dict_sems ,folder_path))
+            res_dfs.append(self.display_evaluation(dict_sems ,folder_path))
         df = pd.concat(res_dfs)
         st.dataframe(df)
         self.run_cv(update)
